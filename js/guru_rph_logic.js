@@ -247,18 +247,21 @@ generatedSlots.push({
             class: slot.class,
             unit: randomSP.unit, 
             standard: randomSP.standard,
-            objective: randomSP.objectives || 'Objektif tidak ditemui dalam data JSON.', // Pastikan ada koma
-            aktiviti: (randomSP.activities || []).join('\n- '), // Pastikan ada koma
-            penilaian: (randomSP.assessment || []).join('\n- '), // Pastikan ada koma
-            aids: (randomSP.aids || []).join('\n- '),
-            refleksi: '20/30 murid menguasai. Perlu pengukuhan lanjut. [Draf Refleksi]', // Baris terakhir: Tiada koma diperlukan
-        });
-    });            
-            // Perubahan sebelumnya untuk aktiviti/penilaian/aids dikekalkan
+            
+            // PASTIKAN ADA KOMA DI SINI
+            objective: randomSP.objectives || 'Objektif tidak ditemui dalam data JSON.', 
+            
+            // PASTIKAN ADA KOMA DI SINI
             aktiviti: (randomSP.activities || []).join('\n- '), 
-            penilaian: (randomSP.assessment || []).join('\n- '),
+            
+            // !!! KOMAN WAJIB DI SINI !!! (Selepas ini, skrip anda akan memproses Baris 259)
+            penilaian: (randomSP.assessment || []).join('\n- '), 
+            
+            // Baris 259 (Jika koma di atas sudah ada, baris ini OK)
             aids: (randomSP.aids || []).join('\n- '),
-            refleksi: '20/30 murid menguasai. Perlu pengukuhan lanjut. [Draf Refleksi]',
+            
+            // Baris terakhir, tiada koma diperlukan
+            refleksi: '20/30 murid menguasai. Perlu pengukuhan lanjut. [Draf Refleksi]', 
         });
     });
 
@@ -447,6 +450,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
 
 
 
