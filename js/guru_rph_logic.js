@@ -80,7 +80,7 @@ function loadExistingTimetable(userUID) {
             
             // JANA BORANG JADUAL WAKTU DI SINI
             const formHTML = generateTimetableForm(existingData);
-            container.innerHTML = formHTML + `<button id="save-timetable-btn-bottom" class="btn btn-primary mt-3">Simpan Jadual Waktu</button>`;
+            container.innerHTML = formHTML; // <-- HANYA MASUKKAN BORANG SAHAJA
             
             // Re-attach listener to the newly created button (if needed, but already attached to the top button in DOMContentLoaded)
             // It's cleaner to keep the listener on the fixed button outside the dynamically loaded content. 
@@ -413,3 +413,4 @@ window.loadRPHtoEdit = function(rphID) {
             }
         });
 }
+
