@@ -9,14 +9,30 @@
  */
 function showNotification(message, type) {
     const container = document.querySelector('.container');
-    const notificationDiv = document.createElement('div');
-    notificationDiv.className = `notification ${type}`;
-    notificationDiv.textContent = message;
+    // Cari elemen notifikasi sedia ada atau cipta baru
+    let notificationDiv = document.querySelector('.notification-alert');
 
-    container.insertBefore(notificationDiv, container.firstChild);
+    if (!notificationDiv) {
+        notificationDiv = document.createElement('div');
+        notificationDiv.className = 'notification-alert';
+        if (container) {
+             container.insertBefore(notificationDiv, container.firstChild);
+        } else {
+            // Fallback jika .container tiada, guna body
+            document.body.insertBefore(notificationDiv, document.body.firstChild);
+        }
+    }
+    
+    // Reset kelas sedia ada dan tetapkan mesej
+    notificationDiv.className = `notification-alert alert alert-${type}`;
+    notificationDiv.textContent = message;
+    
+    // Paparkan
+    notificationDiv.style.display = 'block';
 
     setTimeout(() => {
-        notificationDiv.remove();
+        notificationDiv.style.display = 'none';
+        notificationDiv.textContent = '';
     }, 5000);
 }
 
@@ -32,6 +48,7 @@ function displayRPHList(dataArray, tableId) {
 
     dataArray.forEach(item => {
         const row = tbody.insertRow();
+        // Asumsi 'date' adalah objek Timestamp Firestore yang mempunyai .toDate()
         const dateObject = item.date.toDate(); 
         const dateString = dateObject.toLocaleDateString('ms-MY');
 
@@ -75,7 +92,8 @@ function generateTimetableForm(existingData = []) {
         </div>`;
     });
 
-    return `<form id="timetable-form">${html}</form>`;
+    // Perlu ada div dengan ID 'timetable-form-container' dalam HTML
+    return `<form id="timetable-form">${html}</form>`; 
 }
 
 function generateSlotInput(day, index, slotData = { time: '', subject: '', class: '' }) {
@@ -99,7 +117,7 @@ window.removeTimeSlot = function(buttonElement) {
 
 
 // ------------------------------------------------------------------
-// FUNGSI RPH GENERATION (BARU)
+// FUNGSI RPH GENERATION (PEMBAIKAN UTAMA)
 // ------------------------------------------------------------------
 
 /**
@@ -107,10 +125,11 @@ window.removeTimeSlot = function(buttonElement) {
  * Menjana satu set medan input untuk satu slot RPH.
  */
 function generateRPHSlotInput(slotData, subjectData, slotIndex) {
-    // SubjectData mengandungi tatasusunan SK dan SP. Kita perlukan SK unik sahaja.
-    const skOptions = subjectData ? [...new Set(subjectData.map(item => item.SK))] : [];
     const subjectCode = slotData.subject.toLowerCase();
     
+    // 💡 PEMBAIKAN: Semak Sama Ada subjectData adalah Array sebelum menggunakan .map()
+    const skOptions = (subjectData && Array.isArray(subjectData)) ? [...new Set(subjectData.map(item => item.SK))] : [];
+
     let html = `<div class="rph-slot-group card-slot mt-3 p-3 border" data-slot-index="${slotIndex}" data-subject-code="${subjectCode}">
         <input type="hidden" name="time" value="${slotData.time}">
         <input type="hidden" name="subject" value="${slotData.subject}">
@@ -153,17 +172,20 @@ function generateRPHSlotInput(slotData, subjectData, slotIndex) {
  */
 function displayRPHSlots(slotsArray, subjectDataMap) {
     const container = document.getElementById('rph-slots-container');
+    if (!container) return; // Pastikan bekas wujud
+    
     container.innerHTML = '';
     
     slotsArray.forEach((slot, index) => {
         const subjectCode = slot.subject.toLowerCase();
-        const subjectData = subjectDataMap[subjectCode];
+        // Akses data subjek melalui peta data yang mengandungi semua data SP
+        const allSubjectData = subjectDataMap[subjectCode]; 
         
-        // Hanya jana jika data subjek ditemui
-        if (subjectData) {
-            container.insertAdjacentHTML('beforeend', generateRPHSlotInput(slot, subjectData, index));
+        // Hanya jana jika data subjek ditemui dan sah
+        if (allSubjectData && Array.isArray(allSubjectData)) {
+            container.insertAdjacentHTML('beforeend', generateRPHSlotInput(slot, allSubjectData, index));
         } else {
-            container.insertAdjacentHTML('beforeend', `<p class="alert alert-warning">Amaran: Data untuk subjek ${slot.subject} tidak ditemui (Fail JSON hilang).</p>`);
+            container.insertAdjacentHTML('beforeend', `<p class="alert alert-warning">Amaran: Data untuk subjek ${slot.subject} tidak ditemui / tidak sah. Sila isi manual.</p>`);
         }
     });
     
@@ -176,17 +198,15 @@ function displayRPHSlots(slotsArray, subjectDataMap) {
  * Mengendalikan logik bersarang dropdown (SK dipilih -> SP diisi).
  */
 function initializeRPHSelectListeners(subjectDataMap) {
+    // Pastikan peta data boleh diakses oleh updateSPDropdown
+    window.subjectDataMap = subjectDataMap; 
+
     document.querySelectorAll('.select-sk').forEach(selectSK => {
-        
-        // Hapus listener lama jika ada (untuk borang yang dijana semula)
+        // Hapus listener lama jika ada
         selectSK.removeEventListener('change', updateSPDropdown);
-        
         // Tambah listener baru
         selectSK.addEventListener('change', updateSPDropdown);
     });
-
-    // Pasang subjectDataMap ke window untuk diakses oleh listener
-    window.subjectDataMap = subjectDataMap;
 }
 
 /**
@@ -202,14 +222,15 @@ function updateSPDropdown(event) {
     
     selectSP.innerHTML = '<option value="">-- Pilih SP --</option>'; // Kosongkan SP
 
-    if (selectedSK && subjectData) {
+    if (selectedSK && subjectData && Array.isArray(subjectData)) {
         // Tapis SP yang sepadan dengan SK yang dipilih
         const spOptions = subjectData
             .filter(item => item.SK === selectedSK)
             .map(item => item.SP);
 
         // Tambah pilihan SP
-        spOptions.forEach(sp => {
+        // Gunakan Set untuk memastikan pilihan unik
+        [...new Set(spOptions)].forEach(sp => {
             selectSP.innerHTML += `<option value="${sp}">${sp}</option>`;
         });
     }
@@ -232,11 +253,10 @@ function handleFormSubmission(event) {
     
     const action = event.submitter.getAttribute('data-action');
     
-    // TODO: Fungsi ini perlu dikemaskini untuk mengumpul data RPH sebenar
     const rphData = {
         date: document.getElementById('rph-date').value,
         id: document.getElementById('rph-document-id').value,
-        slots_data: collectRPHSlotsData() // Panggil fungsi baru
+        slots_data: collectRPHSlotsData()
     };
 
     const status = (action === 'draft') ? 'Draf' : 'Menunggu Semakan';
@@ -274,7 +294,7 @@ function initializeTabSwitching() {
     const tabs = document.querySelectorAll('.btn-tab');
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            const targetId = tab.getAttribute('data-target');
+            const targetId = tab.getAttribute('data-tab');
             
             document.querySelectorAll('.tab-content').forEach(content => {
                 content.classList.add('hidden');
@@ -290,7 +310,6 @@ function initializeTabSwitching() {
 }
 
 function collectTimetableFormData() {
-    // Logik sedia ada...
     const timetableData = [];
     const daySections = document.querySelectorAll('#timetable-form-container .day-section');
 
@@ -326,7 +345,7 @@ function getDayNameFromDate(dateInput) {
 document.addEventListener('DOMContentLoaded', () => {
     initializeTabSwitching();
 
-    const rphForm = document.getElementById('rph-form');
+    const rphForm = document.getElementById('rph-form'); // Asumsi borang RPH mempunyai ID 'rph-form'
     if (rphForm) {
         rphForm.addEventListener('submit', handleFormSubmission);
     }
