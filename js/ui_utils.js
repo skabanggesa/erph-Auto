@@ -1,6 +1,6 @@
 // =======================================================
 // UI UTILITIES LOGIC (js/ui_utils.js)
-// Kemas kini: Memulihkan dan Menstruktur Semula Logik Jadual Waktu dan RPH
+// Kemas kini: Memulihkan Logik Jadual Waktu dan RPH
 // =======================================================
 
 /**
@@ -71,23 +71,26 @@ function displayRPHList(dataArray, tableId) {
 }
 
 // ------------------------------------------------------------------
-// FUNGSI JADUAL WAKTU (TIMETABLE) - SEMUA FUNGSI INI KINI DIPULIHKAN
+// FUNGSI JADUAL WAKTU (TIMETABLE) 
 // ------------------------------------------------------------------
 
 /**
  * Menjana borang HTML input Jadual Waktu.
  */
 function generateTimetableForm(existingData = []) {
+    console.log("Mula menjana borang Jadual Waktu. Data sedia ada:", existingData.length); 
     const daysOfWeek = ['Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat'];
     let html = '';
     
     daysOfWeek.forEach(day => {
+        // Ambil data sedia ada atau sediakan slot kosong jika tiada data
         const dayData = existingData.find(d => d.day === day) || { day: day, slots: [{ time: '', subject: '', class: '' }] };
         
         html += `<div class="day-section card mt-2" data-day="${day}">
             <h4>${day}</h4>
             <div class="slots-container" id="slots-${day}">`;
             
+        // Pastikan ada sekurang-kurangnya satu slot untuk borang kosong
         const slotsToRender = dayData.slots.length > 0 ? dayData.slots : [{ time: '', subject: '', class: '' }];
 
         slotsToRender.forEach((slot, index) => {
@@ -99,10 +102,11 @@ function generateTimetableForm(existingData = []) {
         </div>`;
     });
 
-    // Mengembalikan borang dalam tag <form> untuk memudahkan pengumpulan data
-    return `<form id="timetable-form">${html}</form>`; 
+    const formHTML = `<form id="timetable-form">${html}</form>`;
+    console.log("Borang Jadual Waktu Selesai Dijana. Panjang HTML:", formHTML.length); 
+    return formHTML; 
 }
-window.generateTimetableForm = generateTimetableForm; // Dedahkan ke window jika diperlukan oleh guru_rph_logic.js
+window.generateTimetableForm = generateTimetableForm; 
 
 /**
  * Menjana HTML untuk satu slot waktu.
@@ -161,7 +165,7 @@ function collectTimetableFormData() {
 
     return timetableData.filter(d => d.slots.length > 0);
 }
-window.collectTimetableFormData = collectTimetableFormData; // Dedahkan untuk kegunaan guru_rph_logic.js
+window.collectTimetableFormData = collectTimetableFormData; 
 
 
 // ------------------------------------------------------------------
@@ -253,7 +257,7 @@ window.displayRPHSlots = displayRPHSlots;
 
 
 /**
- * FUNGSI BARU: Mengisi semula borang editor RPH menggunakan data yang disimpan. (Diguna untuk Edit Draf)
+ * Mengisi semula borang editor RPH menggunakan data yang disimpan. (Diguna untuk Edit Draf)
  */
 function loadRPHFormWithData(slots_data) {
     const container = document.getElementById('rph-slots-container'); 
@@ -264,11 +268,7 @@ function loadRPHFormWithData(slots_data) {
     
     container.innerHTML = '';
     
-    // Untuk tujuan edit, kita hanya perlu data yang disimpan. 
-    // Kita tidak memerlukan data JSON subjek untuk mengisi semula draf.
     slots_data.forEach((slot, index) => {
-        // Panggil generateRPHSlotInput, passing `slot` sebagai data utama 
-        // dan `null` untuk subjectData kerana ia tidak diperlukan.
         container.insertAdjacentHTML('beforeend', generateRPHSlotInput(slot, null, index));
     });
 }
