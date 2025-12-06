@@ -26,16 +26,16 @@
             </div>
 
             <div id="rph-editor-section" class="card mt-2 hidden">
-                <h3>Rancangan Pengajaran Harian</h3>
+                <h3>Sediakan RPH (Draf)</h3>
                 <form id="rph-form">
                     <div id="rph-slots-container">
-                        <p class="placeholder-text">Sila pilih tarikh dan tekan 'Jana RPH' untuk memuatkan slot waktu.</p>
+                        <p>Sila jana RPH terlebih dahulu.</p>
                     </div>
 
-                    <div id="rph-action-buttons">
-                        <button type="submit" data-action="draft" class="btn btn-secondary">Simpan Draf</button>
-                        <button type="submit" data-action="submit" class="btn btn-success">Hantar ke Pentadbir</button>
+                    <div class="form-actions mt-3">
                         <input type="hidden" id="rph-document-id">
+                        <button type="submit" class="btn btn-success">Simpan Draf</button>
+                        <button type="button" id="submit-rph-btn" class="btn btn-warning">Serah ke Pentadbir</button>
                     </div>
                 </form>
             </div>
@@ -55,25 +55,23 @@
             </table>
         </div>
 
-<div id="timetable-tab" class="tab-content hidden">
-    <h2>📅 Urus Data Jadual Waktu</h2>
-    <p>Masukkan Jadual Waktu anda untuk membolehkan penjanaan RPH automatik.</p>
-    <div id="timetable-input-form" class="card">
-        <p>Memuatkan borang Jadual Waktu...</p>
+        <div id="timetable-tab" class="tab-content hidden">
+            <h2>📅 Urus Data Jadual Waktu</h2>
+            <p>Masukkan Jadual Waktu anda untuk membolehkan penjanaan RPH automatik.</p>
+            <div id="timetable-input-form" class="card">
+                <p>Memuatkan borang Jadual Waktu...</p>
+            </div>
+            <button id="save-timetable-btn" class="btn btn-primary mt-3">Simpan Jadual Waktu</button>
+        </div>
     </div>
-    <button id="save-timetable-btn" class="btn btn-primary mt-3">Simpan Jadual Waktu</button>
-</div>
 
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
-    <script src="js/app.js"></script>
-    <script src="js/auth.js"></script>
-    <script src="js/ui_utils.js"></script>
-    <script src="js/guru_rph_logic.js"></script>
+    <script src="app.js"></script>
+    <script src="auth.js"></script>
+    <script src="ui_utils.js"></script>
+    <script src="guru_rph_logic.js"></script>
 </body>
 </html>
-
-
-
