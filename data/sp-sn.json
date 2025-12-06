@@ -1,0 +1,1026 @@
+{
+  "TAHUN 1": {
+    "Unit 1: Pengenalan bilik sains / peraturan keselamatan": {
+      "Manipulatif (mengendalikan alat / bahan asas dengan selamat)": [
+        {
+          "standards": "1.1.1 Mengamalkan peraturan keselamatan asas di bilik sains",
+          "objectives": "Murid dapat menyatakan dan mengamalkan peraturan keselamatan asas di bilik sains.",
+          "activities": [
+            "Membaca dan membincangkan peraturan keselamatan",
+            "Amali cara mengendalikan bahan asas dengan betul"
+          ],
+          "assessment": ["Pemerhatian amali", "Soal jawab lisan"],
+          "aids": ["Poster peraturan keselamatan", "Alat asas sains"]
+        },
+        {
+          "standards": "1.1.2 Mengendalikan peralatan asas dengan selamat",
+          "objectives": "Murid dapat menunjukkan cara mengendalikan peralatan sains asas dengan selamat.",
+          "activities": [
+            "Demonstrasi penggunaan peralatan",
+            "Latihan kumpulan menggunakan alat asas"
+          ],
+          "assessment": ["Senarai semak amali", "Pemerhatian guru"],
+          "aids": ["Pembaris, bikar, termometer", "Kad arahan"]
+        }
+      ],
+      "Berkomunikasi (merekod maklumat / idea secara mudah)": [
+        {
+          "standards": "1.1.3 Merekod peraturan keselamatan asas",
+          "objectives": "Murid dapat menulis atau melukis peraturan keselamatan asas.",
+          "activities": [
+            "Menulis nota ringkas",
+            "Melukis poster keselamatan"
+          ],
+          "assessment": ["Hasil kerja murid", "Senarai semak"],
+          "aids": ["Kertas lukisan", "Pensel warna"]
+        }
+      ]
+    },
+    "Unit 2: Ciri makhluk hidup / bukan hidup": {
+      "Memerhati menggunakan deria": [
+        {
+          "standards": "1.2.1 Memerhati perbezaan makhluk hidup dan bukan hidup",
+          "objectives": "Murid dapat mengenal pasti persamaan dan perbezaan antara makhluk hidup dan bukan hidup.",
+          "activities": [
+            "Pemerhatian objek sebenar",
+            "Perbincangan kelas"
+          ],
+          "assessment": ["Senarai semak pemerhatian", "Soal jawab"],
+          "aids": ["Objek sebenar", "Carta perbandingan"]
+        },
+        {
+          "standards": "1.2.2 Memerhati ciri asas makhluk hidup",
+          "objectives": "Murid dapat menyatakan bahawa makhluk hidup bergerak, membesar, bernafas, makan dan membiak.",
+          "activities": [
+            "Menonton video ringkas",
+            "Membuat carta ciri makhluk hidup"
+          ],
+          "assessment": ["Soal jawab", "Nota murid"],
+          "aids": ["Video", "Carta makhluk hidup"]
+        }
+      ],
+      "Menyusun / mengklasifikasi mudah (mengasing objek ikut sifat asas)": [
+        {
+          "standards": "1.2.3 Mengelaskan objek kepada hidup dan bukan hidup",
+          "objectives": "Murid dapat mengelaskan objek kepada dua kumpulan iaitu hidup dan bukan hidup.",
+          "activities": [
+            "Aktiviti mengasing objek",
+            "Melengkapkan lembaran kerja"
+          ],
+          "assessment": ["Lembaran kerja", "Pemerhatian aktiviti kumpulan"],
+          "aids": ["Kad gambar objek", "Lembaran kerja"]
+        }
+      ]
+    },
+    "Unit 3: Deria / pengindraan": {
+      "Memerhati menggunakan deria": [
+        {
+          "standards": "1.3.1 Mengenal pasti fungsi lima deria",
+          "objectives": "Murid dapat mengenal pasti deria penglihatan, pendengaran, rasa, bau, dan sentuhan.",
+          "activities": [
+            "Permainan deria (bau, rasa, sentuhan)",
+            "Melabel carta deria"
+          ],
+          "assessment": ["Soal jawab", "Pemerhatian aktiviti"],
+          "aids": ["Objek untuk deria", "Carta lima deria"]
+        },
+        {
+          "standards": "1.3.2 Memerhati menggunakan deria dalam aktiviti harian",
+          "objectives": "Murid dapat menyatakan contoh penggunaan deria dalam kehidupan seharian.",
+          "activities": [
+            "Diskusi contoh harian",
+            "Latihan kumpulan"
+          ],
+          "assessment": ["Nota murid", "Soal jawab"],
+          "aids": ["Kad situasi", "Carta deria"]
+        }
+      ],
+      "Berkomunikasi (merekod maklumat / idea secara mudah)": [
+        {
+          "standards": "1.3.3 Merekod maklumat menggunakan deria",
+          "objectives": "Murid dapat merekodkan maklumat mudah hasil pemerhatian menggunakan deria.",
+          "activities": [
+            "Melengkapkan lembaran kerja",
+            "Melukis apa yang diperhati"
+          ],
+          "assessment": ["Hasil kerja murid", "Senarai semak"],
+          "aids": ["Kertas kerja", "Pensel warna"]
+        }
+      ]
+    },
+    "Unit 4: Bentuk, saiz, warna, sifat fizikal objek": {
+      "Memerhati menggunakan deria": [
+        {
+          "standards": "1.4.1 Memerhati sifat fizikal objek",
+          "objectives": "Murid dapat mengenal pasti bentuk, saiz, warna dan sifat fizikal objek.",
+          "activities": [
+            "Pemerhatian pelbagai objek",
+            "Catat ciri setiap objek"
+          ],
+          "assessment": ["Senarai semak", "Laporan ringkas"],
+          "aids": ["Objek sebenar", "Carta ciri objek"]
+        },
+        {
+          "standards": "1.4.2 Mengenal perbezaan objek melalui deria",
+          "objectives": "Murid dapat menyatakan persamaan dan perbezaan sifat objek.",
+          "activities": [
+            "Aktiviti perbandingan objek",
+            "Diskusi kelas"
+          ],
+          "assessment": ["Soal jawab", "Nota murid"],
+          "aids": ["Kad objek", "Carta banding beza"]
+        }
+      ],
+      "Menyusun / mengklasifikasi mudah (mengasing objek ikut sifat asas)": [
+        {
+          "standards": "1.4.3 Mengelaskan objek mengikut ciri fizikal",
+          "objectives": "Murid dapat mengasingkan objek berdasarkan bentuk, saiz dan warna.",
+          "activities": [
+            "Mengasingkan objek dalam kotak",
+            "Permainan kumpulan 'Cari Pasangan'"
+          ],
+          "assessment": ["Lembaran kerja", "Pemerhatian aktiviti"],
+          "aids": ["Kotak objek", "Kad warna dan bentuk"]
+        }
+      ]
+    },
+    "Unit 5: Hubungan ruang dan masa": {
+      "Menghubungkait ruang dan masa / urutan peristiwa": [
+        {
+          "standards": "1.5.1 Menyusun peristiwa mengikut urutan masa",
+          "objectives": "Murid dapat menyusun gambar peristiwa mengikut urutan masa yang betul.",
+          "activities": [
+            "Menyusun gambar rutin harian",
+            "Melengkapkan lembaran kerja urutan peristiwa"
+          ],
+          "assessment": ["Hasil kerja murid", "Soal jawab"],
+          "aids": ["Gambar rutin harian", "Lembaran kerja"]
+        },
+        {
+          "standards": "1.5.2 Menghubungkait ruang dalam aktiviti harian",
+          "objectives": "Murid dapat mengenal pasti kedudukan objek dalam ruang.",
+          "activities": [
+            "Permainan 'Letak di mana?'",
+            "Melengkapkan lembaran kedudukan"
+          ],
+          "assessment": ["Senarai semak", "Soal jawab"],
+          "aids": ["Kad gambar objek", "Carta ruang"]
+        }
+      ],
+      "Meramal sederhana berdasarkan pengalaman / pemerhatian": [
+        {
+          "standards": "1.5.3 Meramal peristiwa seterusnya berdasarkan pengalaman",
+          "objectives": "Murid dapat membuat ramalan peristiwa mudah berdasarkan pengalaman harian.",
+          "activities": [
+            "Perbincangan 'Apa berlaku selepas ini?'",
+            "Aktiviti melengkapkan cerita bergambar"
+          ],
+          "assessment": ["Soal jawab", "Senarai semak"],
+          "aids": ["Kad cerita bergambar", "Carta ramalan"]
+        }
+      ]
+    }
+  },
+  "TAHUN 2": {
+    "Unit 1: Habitat & keperluan makhluk hidup": {
+      "Memerhati & mengukur (pada tahap asas)": [
+        {
+          "standards": "2.1.1 Memerhati habitat semula jadi makhluk hidup",
+          "objectives": "Murid dapat mengenal pasti pelbagai habitat semula jadi seperti hutan, sungai, dan laut.",
+          "activities": [
+            "Pemerhatian gambar habitat",
+            "Perbincangan kelas tentang habitat berbeza"
+          ],
+          "assessment": ["Soal jawab", "Senarai semak"],
+          "aids": ["Gambar habitat", "Kad maklumat"]
+        }
+      ],
+      "Mengklasifikasi objek / fenomena berdasarkan karakteristik": [
+        {
+          "standards": "2.1.2 Mengelaskan haiwan dan tumbuhan mengikut habitat",
+          "objectives": "Murid dapat mengelaskan tumbuhan dan haiwan mengikut habitat semula jadi mereka.",
+          "activities": [
+            "Aktiviti mengasingkan gambar haiwan/tumbuhan",
+            "Melengkapkan carta pengelasan"
+          ],
+          "assessment": ["Hasil kerja murid", "Senarai semak"],
+          "aids": ["Kad bergambar", "Carta habitat"]
+        }
+      ],
+      "Berkomunikasi / merekod maklumat secara lebih teratur": [
+        {
+          "standards": "2.1.3 Merekod keperluan asas makhluk hidup",
+          "objectives": "Murid dapat merekodkan keperluan asas makhluk hidup (makan, air, udara, tempat tinggal).",
+          "activities": [
+            "Menulis jadual keperluan asas",
+            "Melukis poster ringkas"
+          ],
+          "assessment": ["Lembaran kerja", "Pemerhatian"],
+          "aids": ["Kertas kerja", "Pensel warna"]
+        }
+      ]
+    },
+    "Unit 2: Kitaran hidup / pertumbuhan tumbuhan / haiwan": {
+      "Memerhati & mengukur (pada tahap asas)": [
+        {
+          "standards": "2.2.1 Memerhati kitaran hidup haiwan tertentu",
+          "objectives": "Murid dapat mengenal pasti peringkat kitaran hidup haiwan seperti rama-rama dan katak.",
+          "activities": [
+            "Pemerhatian gambar/animasi kitaran hidup",
+            "Diskusi kelas"
+          ],
+          "assessment": ["Soal jawab", "Senarai semak"],
+          "aids": ["Gambar kitaran hidup", "Video ringkas"]
+        }
+      ],
+      "Menyusun peristiwa / perubahan mengikut urutan masa": [
+        {
+          "standards": "2.2.2 Menyusun peringkat kitaran hidup tumbuhan dan haiwan",
+          "objectives": "Murid dapat menyusun peringkat kitaran hidup mengikut urutan masa yang betul.",
+          "activities": [
+            "Melengkapkan carta urutan kitaran hidup",
+            "Aktiviti kumpulan menyusun kad"
+          ],
+          "assessment": ["Lembaran kerja", "Hasil kumpulan"],
+          "aids": ["Kad urutan", "Carta kitaran hidup"]
+        }
+      ],
+      "Berkomunikasi / merekod maklumat secara lebih teratur": [
+        {
+          "standards": "2.2.3 Merekod pertumbuhan tumbuhan melalui pemerhatian",
+          "objectives": "Murid dapat merekodkan perubahan tumbuhan dari biji benih hingga tumbesaran asas.",
+          "activities": [
+            "Membuat jurnal pertumbuhan",
+            "Mengukur tinggi tumbuhan dengan pembaris"
+          ],
+          "assessment": ["Jurnal murid", "Pemerhatian guru"],
+          "aids": ["Biji benih", "Pembaris", "Kertas graf"]
+        }
+      ]
+    },
+    "Unit 3: Wujudnya perubahan (cth: larutan, pencampuran)": {
+      "Memerhati & mengukur (pada tahap asas)": [
+        {
+          "standards": "2.3.1 Memerhati perubahan semasa pencampuran bahan",
+          "objectives": "Murid dapat menyatakan perubahan yang berlaku apabila bahan dicampur.",
+          "activities": [
+            "Amali mencampurkan bahan seperti gula dan air",
+            "Membincangkan hasil pemerhatian"
+          ],
+          "assessment": ["Senarai semak", "Soal jawab"],
+          "aids": ["Gelas plastik", "Air", "Gula"]
+        }
+      ],
+      "Membuat inferens / sederhana penjelasan dari data pemerhatian": [
+        {
+          "standards": "2.3.2 Membuat inferens tentang perubahan bahan",
+          "objectives": "Murid dapat membuat inferens mudah tentang mengapa bahan berubah apabila dicampur.",
+          "activities": [
+            "Diskusi kelas",
+            "Menulis nota ringkas inferens"
+          ],
+          "assessment": ["Nota murid", "Soal jawab"],
+          "aids": ["Kad penjelasan", "Carta perubahan"]
+        }
+      ],
+      "Meramal berdasarkan pola yang dilihat": [
+        {
+          "standards": "2.3.3 Meramal perubahan bahan lain berdasarkan pemerhatian",
+          "objectives": "Murid dapat meramal hasil apabila bahan lain dicampurkan.",
+          "activities": [
+            "Aktiviti ramalan hasil pencampuran",
+            "Perbincangan hasil sebenar"
+          ],
+          "assessment": ["Soal jawab", "Senarai semak"],
+          "aids": ["Pelbagai bahan untuk dicampur", "Kertas kerja ramalan"]
+        }
+      ]
+    },
+    "Unit 4: Sumber dan kegunaan air": {
+      "Memerhati & mengukur (pada tahap asas)": [
+        {
+          "standards": "2.4.1 Memerhati sumber air semula jadi dan buatan",
+          "objectives": "Murid dapat mengenal pasti pelbagai sumber air seperti sungai, tasik, dan empangan.",
+          "activities": [
+            "Pemerhatian gambar sumber air",
+            "Diskusi kelas"
+          ],
+          "assessment": ["Soal jawab", "Senarai semak"],
+          "aids": ["Gambar sumber air", "Kad maklumat"]
+        }
+      ],
+      "Mengklasifikasi objek / fenomena berdasarkan karakteristik": [
+        {
+          "standards": "2.4.2 Mengelaskan kegunaan air",
+          "objectives": "Murid dapat mengelaskan kegunaan air dalam kehidupan seharian.",
+          "activities": [
+            "Melengkapkan carta kegunaan air",
+            "Aktiviti kumpulan mengasingkan gambar"
+          ],
+          "assessment": ["Lembaran kerja", "Pemerhatian aktiviti"],
+          "aids": ["Kad bergambar", "Carta kegunaan"]
+        }
+      ],
+      "Berkomunikasi / merekod maklumat secara lebih teratur": [
+        {
+          "standards": "2.4.3 Merekod cara menjimatkan air",
+          "objectives": "Murid dapat merekodkan cara-cara menjimatkan air di rumah dan sekolah.",
+          "activities": [
+            "Menulis senarai cara menjimatkan air",
+            "Melukis poster kempen menjimatkan air"
+          ],
+          "assessment": ["Hasil kerja murid", "Soal jawab"],
+          "aids": ["Kertas lukisan", "Poster contoh"]
+        }
+      ]
+    },
+    "Unit 5: Pengaruh cahaya / haba sederhana": {
+      "Memerhati & mengukur (pada tahap asas)": [
+        {
+          "standards": "2.5.1 Memerhati kesan cahaya terhadap objek",
+          "objectives": "Murid dapat menyatakan kesan cahaya terhadap bayang-bayang dan tumbuhan.",
+          "activities": [
+            "Eksperimen bayang-bayang",
+            "Pemerhatian tumbuhan yang terkena cahaya"
+          ],
+          "assessment": ["Senarai semak", "Laporan ringkas"],
+          "aids": ["Lampu suluh", "Tumbuhan pasu"]
+        }
+      ],
+      "Membuat inferens / sederhana penjelasan dari data pemerhatian": [
+        {
+          "standards": "2.5.2 Membuat inferens tentang pengaruh haba",
+          "objectives": "Murid dapat membuat inferens mudah tentang kesan haba ke atas objek.",
+          "activities": [
+            "Pemerhatian ais mencair",
+            "Perbincangan kelas"
+          ],
+          "assessment": ["Nota murid", "Soal jawab"],
+          "aids": ["Ais ketul", "Bekas plastik"]
+        }
+      ],
+      "Meramal berdasarkan pola yang dilihat": [
+        {
+          "standards": "2.5.3 Meramal kesan cahaya/ haba terhadap objek lain",
+          "objectives": "Murid dapat meramal kesan cahaya dan haba pada bahan lain berdasarkan pengalaman.",
+          "activities": [
+            "Aktiviti ramalan kesan haba",
+            "Diskusi hasil sebenar"
+          ],
+          "assessment": ["Soal jawab", "Senarai semak"],
+          "aids": ["Pelbagai bahan", "Kad ramalan"]
+        }
+      ]
+    }
+  },
+  "TAHUN 3": {
+    "Unit 1: Fungsi bahagian tumbuhan / haiwan": {
+      "Kemahiran Saintifik": [
+        {
+          "standards": "3.1.1 Mengenal pasti fungsi akar, batang, daun, bunga dan buah pada tumbuhan.",
+          "objectives": "Murid dapat menjelaskan peranan bahagian tumbuhan terhadap kelangsungan hidup.",
+          "skills": ["Memerhati & menyukat menggunakan alat asas", "Mengklasifikasi & mengasing objek / sifat", "Berkomunikasi melalui graf / jadual sederhana"],
+          "activities": [
+            "Melabel rajah bahagian tumbuhan",
+            "Perbincangan fungsi setiap bahagian"
+          ],
+          "assessment": ["Lembaran kerja pelabelan", "Soal jawab"],
+          "aids": ["Rajah tumbuhan", "Kad label"]
+        },
+        {
+          "standards": "3.1.2 Menjelaskan fungsi asas bahagian luar tubuh haiwan (mata, telinga, mulut, kaki).",
+          "objectives": "Murid dapat mengaitkan fungsi bahagian tubuh haiwan dengan cara hidupnya.",
+          "skills": ["Memerhati & menyukat menggunakan alat asas", "Membuat inferens lebih kompleks", "Berkomunikasi melalui graf / jadual sederhana"],
+          "activities": [
+            "Pemerhatian haiwan sebenar atau gambar",
+            "Membuat carta fungsi bahagian tubuh"
+          ],
+          "assessment": ["Laporan pemerhatian", "Carta fungsi"],
+          "aids": ["Gambar haiwan", "Carta kosong"]
+        },
+        {
+          "standards": "3.1.3 Membandingkan fungsi bahagian tumbuhan dengan haiwan.",
+          "objectives": "Murid dapat menyatakan persamaan dan perbezaan fungsi bahagian tumbuhan dan haiwan.",
+          "skills": ["Mengklasifikasi & mengasing objek / sifat", "Mentafsir data sederhana", "Menulis laporan ringkas"],
+          "activities": [
+            "Aktiviti perbandingan menggunakan Venn diagram",
+            "Perbincangan kelas"
+          ],
+          "assessment": ["Diagram Venn", "Laporan perbandingan"],
+          "aids": ["Template Venn diagram", "Kad maklumat"]
+        }
+      ]
+    },
+    "Unit 2: Sistem tubuh asas": {
+      "Kemahiran Saintifik": [
+        {
+          "standards": "3.2.1 Mengenal pasti organ asas sistem penghadaman manusia.",
+          "objectives": "Murid dapat melabel organ penghadaman manusia dan fungsinya.",
+          "skills": ["Memerhati & menyukat menggunakan alat asas", "Mengklasifikasi & mengasing objek / sifat", "Berkomunikasi melalui graf / jadual sederhana"],
+          "activities": [
+            "Melabel rajah sistem penghadaman",
+            "Simulasi proses penghadaman"
+          ],
+          "assessment": ["Kuiz pelabelan", "Pemerhatian simulasi"],
+          "aids": ["Rajah sistem penghadaman", "Model 3D"]
+        },
+        {
+          "standards": "3.2.2 Menjelaskan fungsi asas sistem pernafasan manusia.",
+          "objectives": "Murid dapat menerangkan proses pernafasan menggunakan rajah.",
+          "skills": ["Memerhati & menyukat menggunakan alat asas", "Membuat inferens lebih kompleks", "Mentafsir data sederhana"],
+          "activities": [
+            "Demonstrasi pernafasan menggunakan model",
+            "Mengukur kadar pernafasan"
+          ],
+          "assessment": ["Laporan demonstrasi", "Pengukuran kadar pernafasan"],
+          "aids": ["Model pernafasan", "Jam randik"]
+        },
+        {
+          "standards": "3.2.3 Membandingkan sistem asas tubuh manusia dengan haiwan.",
+          "objectives": "Murid dapat menyatakan perbezaan organ dan fungsinya antara manusia dan haiwan.",
+          "skills": ["Mengklasifikasi & mengasing objek / sifat", "Mengawal pembolehubah asas dalam penyiasatan", "Berkomunikasi melalui jadual"],
+          "activities": [
+            "Kajian perbandingan menggunakan jadual",
+            "Perbincangan kumpulan"
+          ],
+          "assessment": ["Jadual perbandingan", "Pembentangan kumpulan"],
+          "aids": ["Kad maklumat haiwan", "Template jadual"]
+        }
+      ]
+    },
+    "Unit 3: Tenaga – jenis asas": {
+      "Kemahiran Saintifik": [
+        {
+          "standards": "3.3.1 Mengenal pasti jenis tenaga asas (haba, cahaya, bunyi, elektrik).",
+          "objectives": "Murid dapat memberi contoh tenaga asas dalam kehidupan harian.",
+          "skills": ["Memerhati & menyukat menggunakan alat asas", "Mengklasifikasi & mengasing objek / sifat", "Berkomunikasi melalui jadual sederhana"],
+          "activities": [
+            "Mencari contoh tenaga dalam persekitaran",
+            "Mengelaskan sumber tenaga"
+          ],
+          "assessment": ["Senarai contoh", "Jadual pengelasan"],
+          "aids": ["Gambar sumber tenaga", "Kad pengelasan"]
+        },
+        {
+          "standards": "3.3.2 Menunjukkan kesan tenaga haba dan cahaya terhadap objek.",
+          "objectives": "Murid dapat menjalankan aktiviti ringkas tentang kesan tenaga haba dan cahaya.",
+          "skills": ["Merancang dan melaksanakan aktiviti penyiasatan kecil", "Membuat inferens lebih kompleks", "Mentafsir data sederhana"],
+          "activities": [
+            "Eksperimen kesan haba pada air",
+            "Pemerhatian bayang-bayang"
+          ],
+          "assessment": ["Laporan eksperimen", "Pemerhatian"],
+          "aids": ["Termometer", "Lampu suluh"]
+        },
+        {
+          "standards": "3.3.3 Membandingkan pelbagai jenis tenaga berdasarkan pemerhatian.",
+          "objectives": "Murid dapat menyusun jenis tenaga dan fungsinya mengikut kegunaan.",
+          "skills": ["Mengklasifikasi & mengasing objek / sifat", "Menulis laporan ringkas", "Membuat inferens lebih kompleks"],
+          "activities": [
+            "Membuat carta alir tenaga",
+            "Perbincangan aplikasi tenaga"
+          ],
+          "assessment": ["Carta alir", "Laporan aplikasi"],
+          "aids": ["Template carta alir", "Contoh aplikasi"]
+        }
+      ]
+    },
+    "Unit 4: Kesan persekitaran / pemeliharaan alam sekitar": {
+      "Kemahiran Saintifik": [
+        {
+          "standards": "3.4.1 Mengenal pasti faktor yang mempengaruhi perubahan alam sekitar.",
+          "objectives": "Murid dapat menyatakan kesan pencemaran kepada manusia, tumbuhan, dan haiwan.",
+          "skills": ["Memerhati & menyukat menggunakan alat asas", "Mengklasifikasi & mengasing objek / sifat", "Mengawal pembolehubah asas dalam penyiasatan"],
+          "activities": [
+            "Pemerhatian kawasan tercemar",
+            "Analisis gambar sebelum dan selepas"
+          ],
+          "assessment": ["Laporan pemerhatian", "Analisis gambar"],
+          "aids": ["Gambar pencemaran", "Kertas graf"]
+        },
+        {
+          "standards": "3.4.2 Menjelaskan langkah pemeliharaan dan pemuliharaan alam sekitar.",
+          "objectives": "Murid dapat memberi cadangan menjaga alam sekitar.",
+          "skills": ["Membuat inferens lebih kompleks", "Berkomunikasi melalui graf / jadual sederhana", "Menulis laporan ringkas"],
+          "activities": [
+            "Brainstorming langkah pemuliharaan",
+            "Membuat poster kempen"
+          ],
+          "assessment": ["Senarai cadangan", "Poster kempen"],
+          "aids": ["Kertas poster", "Bahan rujukan"]
+        },
+        {
+          "standards": "3.4.3 Meramal kesan jangka panjang jika alam sekitar tidak dipelihara.",
+          "objectives": "Murid dapat membuat ramalan tentang akibat pencemaran berterusan.",
+          "skills": ["Meramal berdasarkan data / pola", "Mentafsir data sederhana", "Mengklasifikasi & mengasing objek / sifat"],
+          "activities": [
+            "Simulasi kesan pencemaran",
+            "Perbincangan ramalan"
+          ],
+          "assessment": ["Laporan ramalan", "Pembentangan"],
+          "aids": ["Model simulasi", "Data pencemaran"]
+        }
+      ]
+    },
+    "Unit 5: Bahan dan sifat": {
+      "Kemahiran Saintifik": [
+        {
+          "standards": "3.5.1 Mengenal pasti sifat bahan (keras, lembut, lentur, larut).",
+          "objectives": "Murid dapat mengklasifikasikan bahan berdasarkan sifatnya.",
+          "skills": ["Memerhati & menyukat menggunakan alat asas", "Mengklasifikasi & mengasing objek / sifat", "Berkomunikasi melalui jadual sederhana"],
+          "activities": [
+            "Ujian sifat bahan",
+            "Pengelasan bahan"
+          ],
+          "assessment": ["Jadual sifat", "Laporan pengelasan"],
+          "aids": ["Pelbagai bahan", "Borang ujian"]
+        },
+        {
+          "standards": "3.5.2 Menjalankan eksperimen mudah menggunakan bahan dengan pelbagai sifat.",
+          "objectives": "Murid dapat menyiasat kegunaan bahan berdasarkan sifatnya.",
+          "skills": ["Merancang dan melaksanakan aktiviti penyiasatan kecil", "Mengawal pembolehubah asas dalam penyiasatan", "Mentafsir data sederhana"],
+          "activities": [
+            "Eksperimen kekuatan bahan",
+            "Ujian kelarutan"
+          ],
+          "assessment": ["Laporan eksperimen", "Analisis data"],
+          "aids": ["Bahan ujian", "Alat pengukur"]
+        },
+        {
+          "standards": "3.5.3 Membuat inferens daripada pemerhatian tentang kegunaan bahan.",
+          "objectives": "Murid dapat menyimpulkan hubungan sifat bahan dengan penggunaannya.",
+          "skills": ["Membuat inferens lebih kompleks", "Meramal berdasarkan data / pola", "Menulis laporan ringkas"],
+          "activities": [
+            "Analisis kegunaan bahan harian",
+            "Perbincangan aplikasi"
+          ],
+          "assessment": ["Laporan inferens", "Pembentangan"],
+          "aids": ["Contoh produk", "Kad aplikasi"]
+        }
+      ]
+    }
+  },
+  "TAHUN 4": {
+    "Unit 1: Sistem tubuh - peredaran darah, rangka, otot": {
+      "Kemahiran Saintifik Lanjutan": [
+        {
+          "standards": "4.1.1 Mengenal pasti organ utama dalam sistem peredaran darah, rangka dan otot.",
+          "objectives": "Murid dapat melabel organ utama sistem peredaran darah, rangka dan otot.",
+          "skills": ["Memerhati & membuat pemerhatian kualitatif & kuantitatif", "Mengukur dengan alat dan merekod tepat", "Mengklasifikasi & menentukan kategori kompleks"],
+          "activities": [
+            "Melabel diagram sistem tubuh",
+            "Pemerhatian model 3D"
+          ],
+          "assessment": ["Diagram pelabelan", "Pemerhatian"],
+          "aids": ["Model anatomi", "Diagram sistem"]
+        },
+        {
+          "standards": "4.1.2 Menjelaskan fungsi asas sistem peredaran darah, rangka dan otot.",
+          "objectives": "Murid dapat menerangkan bagaimana sistem tubuh bekerja untuk pergerakan dan kelangsungan hidup.",
+          "skills": ["Membuat inferens berasaskan data", "Berkomunikasi hasil melalui graf / jadual / lukisan", "Mentafsir data, menganalisis pola"],
+          "activities": [
+            "Simulasi sistem peredaran darah",
+            "Analisis fungsi setiap sistem"
+          ],
+          "assessment": ["Laporan simulasi", "Analisis fungsi"],
+          "aids": ["Model simulasi", "Bahan multimedia"]
+        },
+        {
+          "standards": "4.1.3 Meramal kesan jika organ dalam sistem tubuh tidak berfungsi.",
+          "objectives": "Murid dapat membuat ramalan tentang kesan kerosakan organ terhadap tubuh manusia.",
+          "skills": ["Meramal trend dari data", "Membuat hipotesis", "Menilai hasil & membuat penambahbaikan penyiasatan"],
+          "activities": [
+            "Kajian kes gangguan sistem tubuh",
+            "Perbincangan ramalan kesan"
+          ],
+          "assessment": ["Laporan kajian kes", "Pembentangan ramalan"],
+          "aids": ["Kajian kes", "Data perubatan asas"]
+        }
+      ]
+    },
+    "Unit 2: Kegunaan tenaga elektrik, magnet": {
+      "Kemahiran Saintifik Lanjutan": [
+        {
+          "standards": "4.2.1 Mengenal pasti kegunaan tenaga elektrik dan magnet dalam kehidupan harian.",
+          "objectives": "Murid dapat menyenaraikan peralatan yang menggunakan elektrik dan magnet.",
+          "skills": ["Memerhati & membuat pemerhatian kualitatif & kuantitatif", "Mengklasifikasi & menentukan kategori kompleks", "Menulis laporan ringkas"],
+          "activities": [
+            "Inventori peralatan elektrik di sekolah",
+            "Eksperimen sifat magnet"
+          ],
+          "assessment": ["Senarai inventori", "Laporan eksperimen"],
+          "aids": ["Peralatan elektrik", "Magnet berbagai jenis"]
+        },
+        {
+          "standards": "4.2.2 Menjalankan eksperimen mudah tentang kesan tenaga elektrik dan magnet.",
+          "objectives": "Murid dapat merancang dan melaksanakan eksperimen tentang kesan tenaga elektrik dan magnet.",
+          "skills": ["Merancang eksperimen / penyiasatan", "Mengawal pembolehubah dalam eksperimen", "Mengukur dengan alat dan merekod tepat"],
+          "activities": [
+            "Membina litar elektrik mudah",
+            "Eksperimen daya magnet"
+          ],
+          "assessment": ["Laporan eksperimen", "Rubrik perancangan"],
+          "aids": ["Kit litar elektrik", "Bahan magnetik"]
+        },
+        {
+          "standards": "4.2.3 Membuat inferens daripada pemerhatian tentang tenaga elektrik dan magnet.",
+          "objectives": "Murid dapat membuat kesimpulan daripada eksperimen yang dijalankan.",
+          "skills": ["Membuat inferens berasaskan data", "Mentafsir data, menganalisis pola", "Berkomunikasi hasil melalui graf / jadual / lukisan"],
+          "activities": [
+            "Analisis data eksperimen",
+            "Perbincangan kesimpulan"
+          ],
+          "assessment": ["Laporan analisis", "Kesimpulan bertulis"],
+          "aids": ["Data eksperimen", "Template analisis"]
+        }
+      ]
+    },
+    "Unit 3: Gelombang bunyi / cahaya sederhana": {
+      "Kemahiran Saintifik Lanjutan": [
+        {
+          "standards": "4.3.1 Mengenal pasti sifat asas bunyi dan cahaya.",
+          "objectives": "Murid dapat menyatakan ciri-ciri bunyi dan cahaya berdasarkan pemerhatian.",
+          "skills": ["Memerhati & membuat pemerhatian kualitatif & kuantitatif", "Mengukur dengan alat dan merekod tepat", "Mengklasifikasi & menentukan kategori kompleks"],
+          "activities": [
+            "Eksperimen pantulan bunyi",
+            "Pemerhatian sifat cahaya"
+          ],
+          "assessment": ["Laporan eksperimen", "Pemerhatian sifat"],
+          "aids": ["Sumber bunyi", "Cermin, prisma"]
+        },
+        {
+          "standards": "4.3.2 Menjalankan eksperimen ringkas tentang pantulan bunyi dan cahaya.",
+          "objectives": "Murid dapat merancang dan melaksanakan eksperimen mengenai sifat bunyi dan cahaya.",
+          "skills": ["Merancang eksperimen / penyiasatan", "Mengawal pembolehubah dalam eksperimen", "Membuat hipotesis"],
+          "activities": [
+            "Eksperimen pantulan cahaya",
+            "Ujian penghantaran bunyi"
+          ],
+          "assessment": ["Laporan eksperimen", "Hipotesis"],
+          "aids": ["Alat eksperimen bunyi/cahaya", "Borang perancangan"]
+        },
+        {
+          "standards": "4.3.3 Mentafsir data daripada eksperimen bunyi dan cahaya.",
+          "objectives": "Murid dapat menganalisis pola dan membuat kesimpulan daripada eksperimen bunyi dan cahaya.",
+          "skills": ["Mentafsir data, menganalisis pola", "Meramal trend dari data", "Berkomunikasi hasil melalui graf / jadual / lukisan"],
+          "activities": [
+            "Analisis data eksperimen",
+            "Pembentangan hasil"
+          ],
+          "assessment": ["Laporan analisis", "Graf data"],
+          "aids": ["Data eksperimen", "Perisian graf mudah"]
+        }
+      ]
+    },
+    "Unit 4: Perubahan kimia asas": {
+      "Kemahiran Saintifik Lanjutan": [
+        {
+          "standards": "4.4.1 Mengenal pasti contoh perubahan kimia dalam kehidupan seharian.",
+          "objectives": "Murid dapat membezakan perubahan kimia daripada perubahan fizikal.",
+          "skills": ["Memerhati & membuat pemerhatian kualitatif & kuantitatif", "Mengklasifikasi & menentukan kategori kompleks", "Menulis laporan ringkas"],
+          "activities": [
+            "Eksperimen perubahan kimia mudah",
+            "Perbandingan perubahan fizikal dan kimia"
+          ],
+          "assessment": ["Laporan eksperimen", "Jadual perbandingan"],
+          "aids": ["Bahan kimia selamat", "Alat makmal asas"]
+        },
+        {
+          "standards": "4.4.2 Menjalankan eksperimen mudah tentang tindak balas kimia asas.",
+          "objectives": "Murid dapat menjalankan penyiasatan tentang perubahan kimia menggunakan bahan harian.",
+          "skills": ["Merancang eksperimen / penyiasatan", "Mengawal pembolehubah dalam eksperimen", "Mengukur dengan alat dan merekod tepat"],
+          "activities": [
+            "Eksperimen tindak balas asid-bes",
+            "Ujian perubahan warna"
+          ],
+          "assessment": ["Laporan eksperimen", "Kawalan pembolehubah"],
+          "aids": ["Bahan harian", "Petunjuk pH"]
+        },
+        {
+          "standards": "4.4.3 Membuat inferens daripada data eksperimen perubahan kimia.",
+          "objectives": "Murid dapat membuat kesimpulan tentang hasil tindak balas kimia yang dijalankan.",
+          "skills": ["Membuat inferens berasaskan data", "Mentafsir data, menganalisis pola", "Menilai hasil & membuat penambahbaikan penyiasatan"],
+          "activities": [
+            "Analisis data eksperimen",
+            "Perbincangan penambahbaikan"
+          ],
+          "assessment": ["Laporan inferens", "Cadangan penambahbaikan"],
+          "aids": ["Data eksperimen", "Template analisis"]
+        }
+      ]
+    },
+    "Unit 5: Bumi & atmosfera asas": {
+      "Kemahiran Saintifik Lanjutan": [
+        {
+          "standards": "4.5.1 Mengenal pasti komponen asas bumi, air dan atmosfera.",
+          "objectives": "Murid dapat melabel bahagian utama bumi, air dan atmosfera.",
+          "skills": ["Memerhati & membuat pemerhatian kualitatif & kuantitatif", "Mengklasifikasi & menentukan kategori kompleks", "Menulis laporan ringkas"],
+          "activities": [
+            "Melabel diagram bumi dan atmosfera",
+            "Pemerhatian model bumi"
+          ],
+          "assessment": ["Diagram pelabelan", "Pemerhatian"],
+          "aids": ["Model bumi", "Diagram atmosfera"]
+        },
+        {
+          "standards": "4.5.2 Menjelaskan fenomena asas cuaca dan kitaran air.",
+          "objectives": "Murid dapat menerangkan proses hujan, awan dan cuaca harian.",
+          "skills": ["Membuat inferens berasaskan data", "Menyusun kronologi / hubungan ruang masa", "Berkomunikasi hasil melalui graf / jadual / lukisan"],
+          "activities": [
+            "Simulasi kitaran air",
+            "Pemerhatian cuaca harian"
+          ],
+          "assessment": ["Laporan simulasi", "Jurnal cuaca"],
+          "aids": ["Model kitaran air", "Alat ukur cuaca"]
+        },
+        {
+          "standards": "4.5.3 Meramal perubahan cuaca berdasarkan pemerhatian.",
+          "objectives": "Murid dapat meramalkan keadaan cuaca harian menggunakan data pemerhatian.",
+          "skills": ["Meramal trend dari data", "Mentafsir data, menganalisis pola", "Menilai hasil & membuat penambahbaikan penyiasatan"],
+          "activities": [
+            "Analisis data cuaca",
+            "Ramalan cuaca berdasarkan pola"
+          ],
+          "assessment": ["Ramalan cuaca", "Analisis pola"],
+          "aids": ["Data cuaca", "Carta ramalan"]
+        }
+      ]
+    }
+  },
+  "TAHUN 5": {
+    "Unit 1: Sistem tubuh lanjutan (perkumuhan, sistem koordinasi)": {
+      "Kemahiran Saintifik Kompleks": [
+        {
+          "standards": "5.1.1 Mengenal pasti komponen utama sistem perkumuhan dan fungsinya",
+          "objectives": "Murid dapat melabel organ utama sistem perkumuhan dan menerangkan fungsi asas setiap organ.",
+          "skills": ["Pemerhatian & pengukuran tepat", "Klasifikasi lebih kompleks", "Komunikasi saintifik (graf, jadual, laporan)"],
+          "activities": [
+            "Melabel rajah organ perkumuhan dan membincangkan fungsinya",
+            "Aktiviti pengukuran (contoh: mengukur jumlah air minum dan membandingkan dengan isipadu cecair yang dikeluarkan secara teori)",
+            "Perbincangan kajian kes ringkas tentang gangguan perkumuhan"
+          ],
+          "assessment": ["Lembaran kerja pelabelan", "Laporan ringkas hasil perbincangan", "Soal jawab bertulis"],
+          "aids": ["Rajah sistem perkumuhan bersaiz besar", "Bekas ukur (gelas ukur) untuk aktiviti anggaran isipadu", "Kad kajian kes"]
+        },
+        {
+          "standards": "5.1.2 Menjelaskan peranan sistem koordinasi (saraf & hormon) dalam kawalan badan",
+          "objectives": "Murid dapat menerangkan bagaimana rangsangan dihantar dan ditafsir melalui saraf/hormon serta contoh tindak balas cepat dan lambat.",
+          "skills": ["Merancang / melaksanakan eksperimen lebih teliti", "Mentafsir & analisis data lebih menyeluruh", "Mengawal pembolehubah & menguji hipotesis"],
+          "activities": [
+            "Eksperimen reaksi (contoh: ujian 'ruler drop' untuk masa tindak balas), catat dan grafkan keputusan",
+            "Perbincangan tentang perbezaan tindak balas saraf dan tindak balas berasaskan hormon",
+            "Membuat hipotesis tentang faktor yang mempengaruhi masa tindak balas (contoh: umur/latihan) dan menguji hipotesis mudah"
+          ],
+          "assessment": ["Laporan eksperimen termasuk graf masa tindak balas", "Rubrik penilaian kawalan pembolehubah", "Pembentangan ringkas hasil eksperimen"],
+          "aids": ["Pembaris untuk ujian 'ruler drop', borang rekod", "Carta untuk plot graf", "Contoh video tindak balas saraf/hormon"]
+        },
+        {
+          "standards": "5.1.3 Menghubungkait fungsi sistem tubuh dan membuat inferens tentang kesan kerosakan",
+          "objectives": "Murid dapat menerangkan bagaimana sistem perkumuhan dan koordinasi saling berkaitan serta meramal kesan sekiranya salah satu komponen terganggu.",
+          "skills": ["Inferens & interpretasi hubungan pola", "Ramalan lebih kompleks", "Mencadangkan penambahbaikan"],
+          "activities": [
+            "Analisis kes: berikan senario gangguan fungsi dan minta murid meramal kesan pada tubuh",
+            "Bengkel kumpulan: cipta carta hubungan antara sistem (contoh: bagaimana gangguan hormon menjejaskan keseimbangan cecair)",
+            "Sediakan cadangan pemulihan/penjagaan berdasarkan inferens"
+          ],
+          "assessment": ["Laporan analisis kes", "Senarai semak kualiti inferens", "Pembentangan cadangan kumpulan"],
+          "aids": ["Kad senario kes", "Template carta hubungan sistem", "Lembaran penilaian rubrik"]
+        }
+      ]
+    },
+    "Unit 2: Tenaga & penggunaan tenaga (tenaga boleh diperbaharui)": {
+      "Kemahiran Saintifik Kompleks": [
+        {
+          "standards": "5.2.1 Membezakan sumber tenaga boleh diperbaharui dan tidak boleh diperbaharui serta penggunaan umum",
+          "objectives": "Murid dapat mengenal pasti pelbagai sumber tenaga, menerangkan kelebihan/kekurangan dan mengklasifikasikannya.",
+          "skills": ["Klasifikasi lebih kompleks", "Pemerhatian & pengukuran tepat", "Komunikasi saintifik (graf, jadual, laporan)"],
+          "activities": [
+            "Aktiviti pengelasan kad sumber tenaga (solar, angin, hidro, arang batu, minyak)",
+            "Menyiapkan carta perbandingan kos/impak alam sekitar secara ringkas",
+            "Perbincangan kelas tentang penggunaan tenaga di rumah/sekolah"
+          ],
+          "assessment": ["Kuiz pengenalpastian sumber tenaga", "Carta perbandingan yang lengkap", "Refleksi bertulis"],
+          "aids": ["Kad gambar sumber tenaga", "Template carta perbandingan", "Sumber multimedia ringkas"]
+        },
+        {
+          "standards": "5.2.2 Menjalankan penyiasatan ringkas untuk menilai prestasi sumber tenaga boleh diperbaharui",
+          "objectives": "Murid dapat merancang dan melaksanakan eksperimen mudah untuk mengukur prestasi (contoh: keluaran kuasa panel solar kecil atau kelajuan kipas mini dikuasakan angin).",
+          "skills": ["Merancang / melaksanakan eksperimen lebih teliti", "Mengawal pembolehubah & menguji hipotesis", "Mentafsir & analisis data lebih menyeluruh"],
+          "activities": [
+            "Eksperimen: bandingkan keluaran lampu/voltan panel solar di bawah cahaya berlainan, rekod dan grafkan data",
+            "Uji model kipas angin mini untuk melihat perubahan putaran pada kelajuan angin berbeza",
+            "Diskusi tentang kebolehpercayaan dan faktor yang menjejaskan keputusan"
+          ],
+          "assessment": ["Laporan eksperimen lengkap dengan graf dan interpretasi", "Rubrik kawalan pembolehubah", "Soal selidik kecil tentang kesahan keputusan"],
+          "aids": ["Kit solar kecil / panel mini, lampu LED, multimeter (jika tersedia)", "Kipas mini/alat pengukur kelajuan sederhana", "Lampu suluh / sumber cahaya boleh laras"]
+        },
+        {
+          "standards": "5.2.3 Menilai penggunaan tenaga dan mencadangkan strategi penjimatan/alternatif",
+          "objectives": "Murid dapat menganalisis penggunaan tenaga harian dan mencadangkan langkah penjimatan atau penggunaan sumber boleh diperbaharui.",
+          "skills": ["Inferens & interpretasi hubungan pola", "Ramalan lebih kompleks", "Mencadangkan penambahbaikan"],
+          "activities": [
+            "Audit tenaga mudah di rumah/sekolah (anggar penggunaan peralatan)",
+            "Hitung anggaran penjimatan jika menggantikan peralatan kepada alternatif cekap tenaga",
+            "Sediakan kempen mini (poster/laman pembentangan) tentang penjimatan tenaga"
+          ],
+          "assessment": ["Laporan audit ringkas beserta cadangan", "Poster kempen yang menonjolkan data dan cadangan", "Pembentangan kumpulan"],
+          "aids": ["Lembaran audit tenaga", "Kalkulator mudah", "Bahan kraf untuk poster"]
+        }
+      ]
+    },
+    "Unit 3: Sifat bahan, campuran & pemisahan": {
+      "Kemahiran Saintifik Kompleks": [
+        {
+          "standards": "5.3.1 Mengenal pasti sifat bahan (contoh: lentur, keras, larut, tak larut) melalui pemeriksaan dan pengukuran",
+          "objectives": "Murid dapat menguji dan merekod sifat beberapa bahan, serta mengklasifikasikannya mengikut sifat utama.",
+          "skills": ["Pemerhatian & pengukuran tepat", "Klasifikasi lebih kompleks", "Mentafsir & analisis data lebih menyeluruh"],
+          "activities": [
+            "Ujian ringkas: lentur vs keras (uji lenturan), larut vs tak larut (uji dalam air), catat hasil",
+            "Rekod keputusan dalam jadual dan buat graf perbandingan sifat",
+            "Perbincangan tentang hubungan sifat bahan dengan penggunaannya"
+          ],
+          "assessment": ["Jadual rekod eksperimen", "Analisis bertulis tentang hasil", "Soal jawab lisan"],
+          "aids": ["Contoh bahan (plastik, kain, kayu, garam, gula)", "Bekas kecil, sudu, gelas ukur", "Borang rekod eksperimen"]
+        },
+        {
+          "standards": "5.3.2 Menjalankan teknik pemisahan campuran mudah (saringan, penapisan, penyejatan, magnet)",
+          "objectives": "Murid dapat memilih dan melaksanakan kaedah pemisahan yang sesuai untuk jenis campuran tertentu.",
+          "skills": ["Merancang / melaksanakan eksperimen lebih teliti", "Mengawal pembolehubah & menguji hipotesis", "Menilai kesahan / ketepatan eksperimen"],
+          "activities": [
+            "Eksperimen pemisahan: asingkan campuran pasir & garam (saringan + penapisan + penyejatan)",
+            "Uji pemisahan menggunakan magnet untuk bahan berasaskan logam",
+            "Bandingkan hasil pemisahan dan bincangkan kelemahan/kelebihan setiap kaedah"
+          ],
+          "assessment": ["Produk campuran yang dipisah (hasil kerja) dan laporan eksperimen", "Rubrik penilaian kawalan pembolehubah", "Laporan ringkas tentang ketepatan kaedah"],
+          "aids": ["Saringan, kertas penapis, bekas, penghawa (untuk penyejatan - sumber haba selamat/air panas dari guru)", "Magnet kecil, garam, pasir", "Label dan borang pemerhatian"]
+        },
+        {
+          "standards": "5.3.3 Menilai ketulenan dan mencadangkan penambahbaikan kaedah pemisahan",
+          "objectives": "Murid dapat menilai keberkesanan pemisahan dan mencadangkan langkah penambahbaikan berdasarkan bukti.",
+          "skills": ["Mentafsir & analisis data lebih menyeluruh", "Mencadangkan penambahbaikan", "Komunikasi saintifik (graf, jadual, laporan)"],
+          "activities": [
+            "Bandingkan hasil beberapa kumpulan yang menggunakan kaedah berlainan, ukurkan kualiti (contoh: kekeruhan air, jumlah residu)",
+            "Sediakan graf perbandingan keberkesanan",
+            "Sesi refleksi: tulis penambahbaikan untuk eksperimen"
+          ],
+          "assessment": ["Laporan perbandingan lengkap dengan graf", "Senarai cadangan penambahbaikan", "Pembentangan hasil dan justifikasi"],
+          "aids": ["Alat ukur sederhana (penimbangan kecil, bekas jelas untuk banding visual)", "Template graf dan jadual", "Kamera atau telefon untuk dokumentasi (jika dibenarkan)"]
+        }
+      ]
+    },
+    "Unit 4: Bentuk struktur, daya & kestabilan": {
+      "Kemahiran Saintifik Kompleks": [
+        {
+          "standards": "5.4.1 Mengenal pasti bagaimana bentuk (contoh: segitiga, lengkungan) mempengaruhi kekuatan struktur",
+          "objectives": "Murid dapat menerangkan mengapa bentuk tertentu lebih stabil dan aplikasinya dalam reka bentuk asas.",
+          "skills": ["Klasifikasi lebih kompleks", "Pemerhatian & pengukuran tepat", "Mentafsir & analisis data lebih menyeluruh"],
+          "activities": [
+            "Aktiviti reka bentuk: bina jambatan mini daripada bahan terhad (straw, lidi, pita) dengan bentuk berlainan",
+            "Uji beban meningkat sehingga runtuh dan rekod beban maksimum",
+            "Bandingkan keputusan mengikut bentuk struktur"
+          ],
+          "assessment": ["Rekod beban maksimum dan laporan analisis", "Rubrik reka bentuk dan kestabilan", "Dokumentasi foto/model"],
+          "aids": ["Bahan binaan ringkas (straw, lidi, pita)", "Beban kecil (syiling, batu kecil) atau pemberat lain", "Skala kecil atau pengukur berat"]
+        },
+        {
+          "standards": "5.4.2 Menilai kesan daya (tolakan, tarikan, tork) terhadap kestabilan objek",
+          "objectives": "Murid dapat mengukur kesan daya dan menerangkan bagaimana daya mempengaruhi keseimbangan dan kestabilan.",
+          "skills": ["Merancang / melaksanakan eksperimen lebih teliti", "Mengawal pembolehubah & menguji hipotesis", "Menilai kesahan / ketepatan eksperimen"],
+          "activities": [
+            "Eksperimen: uji titik tumpu dan lebar asas pada model untuk melihat perubahan kestabilan (contoh: tambah beban di atas/tepi)",
+            "Rekod sudut condong/bilangan beban sebelum terbalik",
+            "Bincang bagaimana mengurangkan tork untuk meningkatkan kestabilan"
+          ],
+          "assessment": ["Laporan eksperimen disertai jadual dan graf", "Rubrik pengawalan pembolehubah", "Refleksi kritikal tentang ketepatan pengukuran"],
+          "aids": ["Model kecil, pemberat, pembaris, sudut pengukur mudah", "Borang rekod", "Carta contoh untuk plot data"]
+        },
+        {
+          "standards": "5.4.3 Menghasilkan reka bentuk yang ditambahbaik dan membuat justifikasi saintifik",
+          "objectives": "Murid dapat mereka bentuk struktur yang lebih stabil berdasarkan data dan membentangkan justifikasi sains di sebalik reka bentuk.",
+          "skills": ["Mencadangkan penambahbaikan", "Komunikasi saintifik (graf, jadual, laporan)", "Ramalan lebih kompleks"],
+          "activities": [
+            "Fasa reka semula: kumpulan menambahbaik jambatan/model berdasarkan penemuan awal",
+            "Uji semula dan bandingkan prestasi sebelum/selepas penambahbaikan",
+            "Sediakan laporan dan pembentangan yang menjelaskan pilihan reka bentuk"
+          ],
+          "assessment": ["Laporan perbandingan sebelum/selepas", "Pembentangan kumpulan dengan justifikasi saintifik", "Rubrik penilaian kreativiti dan bukti data"],
+          "aids": ["Bahan pembinaan tambahan untuk penambahbaikan", "Template laporan dan slaid pembentangan", "Alat ukur untuk rekod prestasi"]
+        }
+      ]
+    },
+    "Unit 5: Perubahan bumi (erosion, gempa bumi, air)": {
+      "Kemahiran Saintifik Kompleks": [
+        {
+          "standards": "5.5.1 Memerhati dan menerangkan proses hakisan, pengendapan dan faktor yang mempercepatkan hakisan",
+          "objectives": "Murid dapat menjalankan model ringkas hakisan dan menerangkan proses serta faktor yang terlibat.",
+          "skills": ["Pemerhatian & pengukuran tepat", "Merancang / melaksanakan eksperimen lebih teliti", "Mentafsir & analisis data lebih menyeluruh"],
+          "activities": [
+            "Model hakisan: alirkan air atas tanah dalam dulang dan catat perubahan tanah/ratakan masa",
+            "Ukur jarak atau jumlah tanah yang berpindah dan grafkan data",
+            "Bincang bagaimana tumbuhan/mudahkan memperlahankan hakisan"
+          ],
+          "assessment": ["Laporan eksperimen termasuk foto dan graf", "Soalan bertulis tentang faktor hakisan", "Rubrik pengukuran tepat"],
+          "aids": ["Dulang, tanah/surf sand, air, pembaris, kamera", "Borang rekod dan grid graf", "Contoh gambar kawasan terhakis"]
+        },
+        {
+          "standards": "5.5.2 Memahami asas gempa bumi dan kesan terhadap struktur permukaan bumi",
+          "objectives": "Murid dapat menerangkan punca gempa bumi, gejala, dan kesan kepada manusia dan struktur.",
+          "skills": ["Membuat inferens & interpretasi hubungan pola", "Mengawal pembolehubah & menguji hipotesis", "Menilai kesahan / ketepatan eksperimen"],
+          "activities": [
+            "Model gempa: bina struktur kecil di atas platform yang digerakkan (contoh: menggegarkan kotak) dan rekod kerosakan relatif",
+            "Analisis pola kerosakan mengikut reka bentuk struktur",
+            "Perbincangan langkah mitigasi mudah"
+          ],
+          "assessment": ["Laporan eksperimen dan graf perbandingan kestabilan struktur", "Analisis tertulis tentang hubungan reka bentuk vs kerosakan", "Soal jawab lisan"],
+          "aids": ["Kotak getar ringkas (atau tangan digoncang secara terkawal), model struktur kecil", "Bentuk rekod kerosakan, kamera untuk dokumentasi", "Sumber grafik tentang plat tektonik dan seismik"]
+        },
+        {
+          "standards": "5.5.3 Meramal impak jangka panjang perubahan bumi dan mencadangkan langkah pemuliharaan/mitigasi",
+          "objectives": "Murid dapat membuat ramalan tentang kesan hakisan/gempa dan mencadangkan langkah pemuliharaan atau mitigasi yang sesuai.",
+          "skills": ["Ramalan lebih kompleks", "Mencadangkan penambahbaikan", "Komunikasi saintifik (graf, jadual, laporan)"],
+          "activities": [
+            "Analisis kes pantai/hilir sungai yang mengalami hakisan dan sediakan pelan ringkas mitigasi (contoh: penanaman semula pokok, struktur pelindung)",
+            "Buat peta ringkas kawasan yang berisiko berdasarkan data yang dikumpul",
+            "Pembentangan cadangan kepada kelas"
+          ],
+          "assessment": ["Pelan mitigasi bertulis lengkap dengan justifikasi saintifik", "Peta risiko dan laporan ringkas", "Pembentangan kumpulan dan soal jawab"],
+          "aids": ["Peta asas kawasan, foto udara atau gambar satelit (jika ada)", "Carta template pelan mitigasi", "Bahan lukisan dan alat pembentangan"]
+        }
+      ]
+    }
+  },
+  "TAHUN 6": {
+    "Unit 1: Daya & kesannya, kelajuan objek": {
+      "Kemahiran Saintifik Maju": [
+        {
+          "standards": "6.1.1 Memerhati kesan daya terhadap bentuk, arah dan kelajuan objek",
+          "objectives": "Murid dapat membuat pemerhatian kualitatif dan kuantitatif kesan daya ke atas objek.",
+          "skills": ["Pemerhatian kualitatif & kuantitatif dengan alat", "Inferens dengan mengenal pasti hubungan antara pembolehubah", "Merancang & melaksanakan eksperimen dengan kawalan pembolehubah"],
+          "activities": ["Eksperimen menolak dan menarik objek", "Mengukur kelajuan objek menggunakan jam randik"],
+          "assessment": ["Lembaran kerja", "Soal jawab"],
+          "aids": ["Troli kecil", "Jam randik"]
+        }
+      ]
+    },
+    "Unit 2: Mesin ringkas / struktur & kestabilan": {
+      "Kemahiran Saintifik Maju": [
+        {
+          "standards": "6.2.1 Mengukur daya dan beban dalam penggunaan mesin ringkas",
+          "objectives": "Murid dapat mengukur daya ke atas pelbagai jenis mesin ringkas dengan unit piawai.",
+          "skills": ["Pengukuran & penggunaan unit piawai / unit turunan", "Membuat hipotesis dan menguji", "Mengesan anomali dalam data"],
+          "activities": ["Mengukur daya dengan spring balance", "Membandingkan daya dengan beban"],
+          "assessment": ["Laporan pengukuran", "Kuiz ringkas"],
+          "aids": ["Spring balance", "Tuas", "Katrol"]
+        }
+      ]
+    },
+    "Unit 3: Pemindahan haba, arus elektrik & litar mudah": {
+      "Kemahiran Saintifik Maju": [
+        {
+          "standards": "6.3.1 Mentafsir data pemindahan haba dalam bahan berbeza",
+          "objectives": "Murid dapat mentafsir data suhu bahan berbeza melalui analisis statistik asas.",
+          "skills": ["Mentafsir data & analisis statistik asas", "Merancang & melaksanakan eksperimen dengan kawalan pembolehubah", "Komunikasi saintifik lanjutan (graf, carta, laporan)"],
+          "activities": ["Mengukur suhu bahan terkena haba", "Mengira purata perubahan suhu"],
+          "assessment": ["Laporan data", "Soal selidik"],
+          "aids": ["Termometer", "Pemanas air", "Bahan logam/plastik"]
+        }
+      ]
+    },
+    "Unit 4: Sumber tenaga & penjimatan tenaga": {
+      "Kemahiran Saintifik Maju": [
+        {
+          "standards": "6.4.1 Membuat ramalan trend penggunaan tenaga berdasarkan data",
+          "objectives": "Murid dapat meramalkan penggunaan tenaga masa depan daripada data trend.",
+          "skills": ["Ramalan berdasarkan pola / trend", "Menilai eksperimen dan mencadangkan penambahbaikan", "Mendefinisi konsep secara operasi (menjelaskan maksud konsep berdasarkan pemerhatian / pelaksanaan)"],
+          "activities": ["Menganalisis graf penggunaan elektrik", "Membuat ramalan trend"],
+          "assessment": ["Kuiz ramalan", "Laporan data"],
+          "aids": ["Kertas graf", "Projekor"]
+        }
+      ]
+    },
+    "Unit 5: Pemeliharaan alam sekitar & teknologi lestari": {
+      "Kemahiran Saintifik Maju": [
+        {
+          "standards": "6.5.1 Mengklasifikasi kaedah teknologi lestari mengikut ciri kompleks",
+          "objectives": "Murid dapat mengklasifikasi teknologi lestari berdasarkan ciri-ciri utamanya.",
+          "skills": ["Klasifikasi & analisis kategori berdasarkan ciri kompleks", "Komunikasi saintifik lanjutan (graf, carta, laporan)", "Membuat hipotesis dan menguji"],
+          "activities": ["Kajian kes tenaga solar dan biogas", "Membandingkan ciri lestari"],
+          "assessment": ["Laporan perbincangan", "Poster maklumat"],
+          "aids": ["Internet", "Buku rujukan"]
+        }
+      ]
+    },
+    "Unit 6: Bumi & angkasa (gerhana, sistem suria, galaksi)": {
+      "Kemahiran Saintifik Maju": [
+        {
+          "standards": "6.6.1 Menyusun kronologi peristiwa gerhana",
+          "objectives": "Murid dapat menyusun kronologi peristiwa gerhana berdasarkan model dan gambarajah.",
+          "skills": ["Menyusun kronologi & memahami hubungan ruang / masa / matematik", "Pemerhatian kualitatif & kuantitatif dengan alat", "Mendefinisi konsep secara operasi (menjelaskan maksud konsep berdasarkan pemerhatian / pelaksanaan)"],
+          "activities": ["Aktiviti model gerhana", "Menyusun gambar mengikut urutan"],
+          "assessment": ["Kuiz kronologi", "Peta minda"],
+          "aids": ["Model gerhana", "Kad gambar"]
+        }
+      ]
+    }
+  }
+}

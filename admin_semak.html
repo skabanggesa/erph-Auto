@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papan Pemuka Pentadbir - Semakan RPH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <h1>Papan Pemuka Pentadbir</h1>
+            <nav>
+                <button class="btn btn-tab active" data-tab="review-tab">Semakan RPH</button>
+                <button class="btn btn-tab" data-tab="analytics-tab">Analisis & Laporan</button>
+                <button id="logout-btn-admin" class="btn btn-danger">Log Keluar</button>
+            </nav>
+        </header>
+
+        <div id="review-tab" class="tab-content active">
+            <h2>🧐 RPH Menunggu Semakan</h2>
+            <p>Senarai RPH yang dihantar oleh semua guru untuk tindakan kelulusan.</p>
+            <table id="pending-rph-list" class="data-table">
+                <thead>
+                    <tr>
+                        <th>Tarikh RPH</th>
+                        <th>Guru</th>
+                        <th>Kelas</th>
+                        <th>Tindakan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+
+        <div id="rph-detail-viewer" class="card mt-2 hidden">
+            <h3>RPH Butiran: <span id="rph-guru-name"></span> (<span id="rph-date-display"></span>)</h3>
+            <div id="rph-content-display">
+                </div>
+            
+            <div class="review-actions mt-2">
+                <h4>Maklum Balas Pentadbir:</h4>
+                <textarea id="admin-comment-input" placeholder="Masukkan komen jika menolak RPH ini..." rows="3"></textarea>
+                <button id="approve-rph-btn" class="btn btn-success">Luluskan RPH</button>
+                <button id="reject-rph-btn" class="btn btn-danger">Tolak & Hantar Komen</button>
+            </div>
+            <input type="hidden" id="current-review-rph-id">
+        </div>
+
+        <div id="analytics-tab" class="tab-content hidden">
+            <h2>📈 Analisis Penghantaran</h2>
+            <div id="analytics-data-display" class="card">
+                <p>Contoh: Jumlah RPH Dihantar: 50 | Purata Kelulusan: 95%</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="app.js"></script>
+    <script src="auth.js"></script>
+    <script src="admin_review_logic.js"></script>
+    <script src="ui_utils.js"></script>
+</body>
+</html>

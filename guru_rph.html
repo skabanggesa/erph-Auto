@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papan Pemuka Guru - Penjanaan RPH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <h1>Selamat Datang, <span id="user-name">Guru</span>!</h1>
+            <nav>
+                <button class="btn btn-tab active" data-tab="rph-tab">Jana & Semak RPH</button>
+                <button class="btn btn-tab" data-tab="timetable-tab">Urus Jadual Waktu</button>
+                <button id="logout-btn" class="btn btn-danger">Log Keluar</button>
+            </nav>
+        </header>
+
+        <div id="rph-tab" class="tab-content active">
+            <h2>📝 Penjanaan RPH Automatik</h2>
+            <div class="card card-rph-input">
+                <label for="rph-date">Pilih Tarikh RPH:</label>
+                <input type="date" id="rph-date" required>
+                <button id="generate-rph-btn" class="btn btn-primary mt-1">Jana RPH</button>
+            </div>
+
+            <div id="rph-editor-section" class="card mt-2 hidden">
+                <h3>Rancangan Pengajaran Harian</h3>
+                <form id="rph-form">
+                    <div id="rph-slots-container">
+                        <p class="placeholder-text">Sila pilih tarikh dan tekan 'Jana RPH' untuk memuatkan slot waktu.</p>
+                    </div>
+
+                    <div id="rph-action-buttons">
+                        <button type="submit" data-action="draft" class="btn btn-secondary">Simpan Draf</button>
+                        <button type="submit" data-action="submit" class="btn btn-success">Hantar ke Pentadbir</button>
+                        <input type="hidden" id="rph-document-id">
+                    </div>
+                </form>
+            </div>
+
+            <h3 class="mt-3">Senarai RPH Saya</h3>
+            <table id="teacher-rph-list" class="data-table">
+                <thead>
+                    <tr>
+                        <th>Tarikh</th>
+                        <th>Hari</th>
+                        <th>Status</th>
+                        <th>Tindakan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+
+        <div id="timetable-tab" class="tab-content hidden">
+            <h2>📅 Urus Data Jadual Waktu</h2>
+            <p>Masukkan Jadual Waktu anda termasuk Kod Standard Pembelajaran (SP) untuk membolehkan automasi.</p>
+            <div id="timetable-input-form" class="card">
+                <p>Borang untuk Isnin - Jumaat akan dipaparkan.</p>
+                <button id="save-timetable-btn" class="btn btn-primary">Simpan Jadual Waktu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="app.js"></script>
+    <script src="auth.js"></script>
+    <script src="guru_rph_logic.js"></script>
+    <script src="ui_utils.js"></script>
+</body>
+</html>

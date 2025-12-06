@@ -1,0 +1,681 @@
+{
+  "TAHUN 1": {
+    "Unit 1: Kebersihan Diri": {
+      "Mengamalkan kebersihan diri": [
+        {
+          "standards": "1.1.1 Mengamalkan kebersihan diri seperti membasuh tangan, muka, dan menyikat rambut.",
+          "objectives": "Murid dapat melaksanakan amalan kebersihan diri asas setiap hari dengan bimbingan.",
+          "activities": [
+            "Demonstrasi membasuh tangan dengan sabun",
+            "Lagu 'Bersih Itu Sihat'",
+            "Latihan harian: sikat rambut dan lap muka"
+          ],
+          "assessment": [
+            "Pemerhatian amalan harian",
+            "Senarai semak kebersihan diri",
+            "Soal jawab lisan ringkas"
+          ],
+          "aids": [
+            "Sabun, air, tuala",
+            "Cermin kecil",
+            "Kad gambar langkah kebersihan"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Pemakanan Sihat": {
+      "Mengenal makanan berkhasiat": [
+        {
+          "standards": "1.2.1 Mengenal jenis makanan berkhasiat dan tidak berkhasiat dalam kehidupan harian.",
+          "objectives": "Murid dapat membezakan antara makanan sihat dan tidak sihat melalui gambar dan contoh sebenar.",
+          "activities": [
+            "Permainan 'Susun Makanan Sihat'",
+            "Lukis makanan kegemaran yang sihat",
+            "Perbincangan: 'Makanan Kegemaran Saya'"
+          ],
+          "assessment": [
+            "Penilaian lukisan murid",
+            "Kuiz gambar makanan",
+            "Pemerhatian semasa permainan"
+          ],
+          "aids": [
+            "Kad gambar makanan sihat/tidak sihat",
+            "Kertas warna dan pensel",
+            "Poster piramid makanan kanak-kanak"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Keselamatan Diri dan Persekitaran": {
+      "Mengetahui cara menjaga keselamatan diri": [
+        {
+          "standards": "1.3.1 Menyatakan cara asas menjaga keselamatan diri di sekolah dan di rumah.",
+          "objectives": "Murid dapat menyebut tiga cara menjaga keselamatan diri dalam situasi harian.",
+          "activities": [
+            "Simulasi: 'Apa yang Perlu Dilakukan Jika Terjatuh?'",
+            "Permainan peranan: 'Saya Selamat di Sekolah'",
+            "Nyanyian: 'Jangan Main dengan Api'"
+          ],
+          "assessment": [
+            "Soal jawab lisan",
+            "Pemerhatian semasa simulasi",
+            "Lukisan situasi selamat/tidak selamat"
+          ],
+          "aids": [
+            "Kad situasi keselamatan",
+            "Boneka untuk permainan peranan",
+            "Poster keselamatan asas"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Emosi dan Perasaan Asas": {
+      "Mengenal dan mengurus emosi asas": [
+        {
+          "standards": "1.4.1 Mengenal emosi asas (gembira, sedih, marah, takut) dan cara mengurusnya.",
+          "objectives": "Murid dapat menamakan emosi asas dan menunjukkan cara tenang apabila marah atau takut.",
+          "activities": [
+            "Permainan kad muka emosi",
+            "Aktiviti 'Tarik Nafas Dalam – Tenangkan Diri'",
+            "Cerita bergambar tentang perasaan"
+          ],
+          "assessment": [
+            "Pemerhatian reaksi emosi",
+            "Ujian padanan emosi",
+            "Catatan anekdot pengurusan emosi"
+          ],
+          "aids": [
+            "Kad emosi bergambar",
+            "Cermin kecil",
+            "Buku cerita emosi"
+          ]
+        }
+      ]
+    }
+  },
+  "TAHUN 2": {
+    "Unit 1: Penjagaan Tubuh Badan": {
+      "Mengamalkan rutin penjagaan tubuh badan": [
+        {
+          "standards": "2.1.1 Mengamalkan rutin harian penjagaan tubuh badan seperti mandi, potong kuku dan pakai pakaian bersih.",
+          "objectives": "Murid dapat menjalankan rutin penjagaan tubuh badan secara konsisten setiap hari.",
+          "activities": [
+            "Jadual rutin harian (lukis aktiviti pagi/petang)",
+            "Permainan peranan: 'Hari Saya'",
+            "Pemeriksaan kuku dan pakaian (simulasi)"
+          ],
+          "assessment": [
+            "Senarai semak rutin harian",
+            "Pemerhatian kebersihan fizikal",
+            "Refleksi lisan: 'Apa yang saya lakukan setiap pagi?'"
+          ],
+          "aids": [
+            "Kad jadual harian",
+            "Kalendar kebersihan",
+            "Cermin dan sisir"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Pemakanan Seimbang": {
+      "Mengenal konsep pemakanan seimbang": [
+        {
+          "standards": "2.2.1 Mengenal konsep pemakanan seimbang melalui kumpulan makanan utama.",
+          "objectives": "Murid dapat mengenal empat kumpulan makanan utama dan kepentingannya.",
+          "activities": [
+            "Aktiviti susun piramid makanan",
+            "Bawa makanan bekal – kongsikan kandungan sihat",
+            "Permainan 'Saya Makan Seimbang Hari Ini'"
+          ],
+          "assessment": [
+            "Penilaian susunan piramid",
+            "Pemerhatian kandungan bekal",
+            "Soal jawab lisan tentang makanan kegemaran"
+          ],
+          "aids": [
+            "Model piramid makanan",
+            "Kad kumpulan makanan",
+            "Pinggan contoh makanan seimbang"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Kesihatan Gigi": {
+      "Mengamalkan penjagaan gigi dengan betul": [
+        {
+          "standards": "2.3.1 Menyikat gigi dengan teknik betul dua kali sehari dan mengelakkan makanan manis berlebihan.",
+          "objectives": "Murid dapat menunjukkan cara menyikat gigi yang betul dan menyatakan kepentingan menjaga gigi.",
+          "activities": [
+            "Demonstrasi menyikat gigi pada model gigi",
+            "Lagu 'Sikat Gigi Dua Kali Sehari'",
+            "Perbincangan: 'Gigi Berlubang – Kenapa?'"
+          ],
+          "assessment": [
+            "Pemerhatian teknik menyikat",
+            "Soal jawab tentang jadual sikat gigi",
+            "Lukisan 'Gigi Sihat vs Gigi Rosak'"
+          ],
+          "aids": [
+            "Model gigi dan berus gigi besar",
+            "Ubat gigi mainan",
+            "Poster penjagaan gigi"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Keselamatan di Rumah dan Sekolah": {
+      "Mengetahui cara selamat di rumah dan sekolah": [
+        {
+          "standards": "2.4.1 Menyatakan peraturan keselamatan asas di rumah dan di sekolah.",
+          "objectives": "Murid dapat mengenalpasti situasi berbahaya dan menyatakan cara mengelakkannya.",
+          "activities": [
+            "Lawatan mini: 'Cari Bahaya di Kelas'",
+            "Permainan peranan: 'Apa yang Perlu Saya Buat?'",
+            "Lukis peta keselamatan kelas"
+          ],
+          "assessment": [
+            "Peta keselamatan murid",
+            "Pemerhatian semasa permainan peranan",
+            "Senarai semak pemahaman peraturan"
+          ],
+          "aids": [
+            "Kad situasi bahaya",
+            "Stiker 'Selamat' dan 'Bahaya'",
+            "Peta kosong kelas"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Emosi dan Perhubungan Asas": {
+      "Mengurus emosi dan menghormati orang lain": [
+        {
+          "standards": "2.5.1 Mengurus emosi sendiri dan menunjukkan sikap menghormati rakan dan guru.",
+          "objectives": "Murid dapat mengawal emosi dan berinteraksi dengan hormat dalam kumpulan.",
+          "activities": [
+            "Aktiviti 'Kata Baik Hari Ini'",
+            "Perbincangan: 'Bagaimana Rasa Jika Dipanggil Nama Buruk?'",
+            "Latihan 'Minta Maaf dan Terima Kasih'"
+          ],
+          "assessment": [
+            "Pemerhatian interaksi sosial",
+            "Catatan tingkah laku harian",
+            "Refleksi berkumpulan"
+          ],
+          "aids": [
+            "Kad 'Kata Baik'",
+            "Boneka untuk perbincangan emosi",
+            "Carta nilai murni"
+          ]
+        }
+      ]
+    }
+  },
+  "TAHUN 3": {
+    "Unit 1: Gaya Hidup Sihat": {
+      "Mengamalkan aktiviti gaya hidup sihat": [
+        {
+          "standards": "3.1.1 Mengamalkan tidur mencukupi, senaman harian dan minum air secukupnya.",
+          "objectives": "Murid dapat menjalankan tiga amalan gaya hidup sihat setiap hari.",
+          "activities": [
+            "Senaman 10 minit setiap pagi",
+            "Jurnal air minuman harian",
+            "Perbincangan: 'Berapa Jam Saya Tidur?'"
+          ],
+          "assessment": [
+            "Jurnal harian (air, tidur, senaman)",
+            "Pemerhatian penyertaan senaman",
+            "Soal jawab lisan"
+          ],
+          "aids": [
+            "Botol air berpenanda",
+            "Carta jurnal gaya hidup",
+            "Video senaman kanak-kanak"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Kebersihan Persekitaran": {
+      "Menjaga kebersihan persekitaran": [
+        {
+          "standards": "3.2.1 Menjaga kebersihan kelas, sekolah dan kawasan sekitar dengan membuang sampah pada tempatnya.",
+          "objectives": "Murid dapat menyertai aktiviti kebersihan dan menjelaskan kepentingannya.",
+          "activities": [
+            "Kempen '5 Minit Bersih Sekolah'",
+            "Buat tong sampah berlabel (kitar semula)",
+            "Permainan: 'Sampah ke Mana?'"
+          ],
+          "assessment": [
+            "Pemerhatian penyertaan kempen",
+            "Penilaian tong sampah kumpulan",
+            "Refleksi lisan: 'Kenapa Persekitaran Perlu Bersih?'"
+          ],
+          "aids": [
+            "Tong sampah berwarna",
+            "Stiker kitar semula",
+            "Sarung tangan (mainan)"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Pencegahan Penyakit Mudah Berjangkit": {
+      "Mengetahui cara mencegah penyakit berjangkit": [
+        {
+          "standards": "3.3.1 Menyatakan cara mencegah penyakit berjangkit seperti selesema dan cirit-birit.",
+          "objectives": "Murid dapat menjelaskan tiga langkah pencegahan penyakit berjangkit dan mengamalkannya.",
+          "activities": [
+            "Simulasi cuci tangan dengan glitter (kuman)",
+            "Drama pendek: 'Jangan Kongsi Botol Air!'",
+            "Lukis poster 'Cegah Selesema'"
+          ],
+          "assessment": [
+            "Demonstrasi cuci tangan",
+            "Penilaian poster",
+            "Kuiz lisan: langkah pencegahan"
+          ],
+          "aids": [
+            "Glitter, sabun, air",
+            "Kertas poster",
+            "Video animasi penyakit berjangkit"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Keselamatan Jalan Raya": {
+      "Mengamalkan peraturan keselamatan jalan raya": [
+        {
+          "standards": "3.4.1 Mengamalkan peraturan keselamatan jalan raya seperti menyeberang di zebra keretapi dan memakai tali pinggang keledar.",
+          "objectives": "Murid dapat menunjukkan cara menyeberang jalan dengan selamat dan menyatakan peraturan asas jalan raya.",
+          "activities": [
+            "Simulasi zebra keretapi di halaman sekolah",
+            "Permainan peranan: 'Penumpang Baik'",
+            "Lukis peta jalan selamat ke sekolah"
+          ],
+          "assessment": [
+            "Pemerhatian simulasi menyeberang",
+            "Peta jalan murid",
+            "Soal jawab peraturan jalan raya"
+          ],
+          "aids": [
+            "Kon dan garisan zebra (kapur/plester)",
+            "Tali pinggang keledar mainan",
+            "Kad situasi jalan raya"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Perhubungan Sihat": {
+      "Mengamalkan komunikasi berhemah": [
+        {
+          "standards": "3.5.1 Mengamalkan komunikasi berhemah seperti bercakap dengan sopan dan mendengar apabila orang lain bercakap.",
+          "objectives": "Murid dapat berkomunikasi dengan sopan dan menghormati giliran bercakap.",
+          "activities": [
+            "Aktiviti 'Giliran Bercakap dengan Mikrofon Mainan'",
+            "Permainan: 'Ucap dengan Baik'",
+            "Perbincangan: 'Apa yang Buat Rakan Rasa Diiktiraf?'"
+          ],
+          "assessment": [
+            "Pemerhatian semasa perbincangan berkumpulan",
+            "Senarai semak komunikasi berhemah",
+            "Refleksi lisan"
+          ],
+          "aids": [
+            "Mikrofon mainan",
+            "Kad frasa sopan ('Tolong', 'Terima kasih')",
+            "Cermin untuk latihan ekspresi muka"
+          ]
+        }
+      ]
+    }
+  },
+  "TAHUN 4": {
+    "Unit 1: Penjagaan Kesihatan Diri": {
+      "Mengenal tanda kesihatan tubuh badan": [
+        {
+          "standards": "4.1.1 Mengenal tanda tubuh sihat (tenaga, kulit bersih) dan tidak sihat (demam, letih).",
+          "objectives": "Murid dapat mengenalpasti tanda tubuh sihat dan tidak sihat serta tindakan yang perlu diambil.",
+          "activities": [
+            "Permainan kad: 'Sihat atau Tidak Sihat?'",
+            "Lukis 'Badan Saya Hari Ini'",
+            "Perbincangan: 'Bila Perlu Jumpa Doktor?'"
+          ],
+          "assessment": [
+            "Padanan kad tanda sihat/tidak sihat",
+            "Lukisan dan penerangan lisan",
+            "Senarai semak pemahaman tanda kesihatan"
+          ],
+          "aids": [
+            "Kad gambar tanda kesihatan",
+            "Termometer mainan",
+            "Carta tanda tubuh sihat"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Keseimbangan Diet dan Nutrisi": {
+      "Mengamalkan pemakanan seimbang": [
+        {
+          "standards": "4.2.1 Merancang hidangan seimbang mengikut kumpulan makanan utama.",
+          "objectives": "Murid dapat merancang menu sehari yang seimbang dan menjelaskan kandungannya.",
+          "activities": [
+            "Aktiviti potong & tampal: 'Menu Sihat Saya'",
+            "Permainan: 'Bina Pinggan Sihat'",
+            "Perbincangan: 'Apa yang Kurang dalam Bekal Saya?'"
+          ],
+          "assessment": [
+            "Penilaian menu murid",
+            "Pembentangan ringkas",
+            "Kuiz nutrisi"
+          ],
+          "aids": [
+            "Majalah makanan untuk potong",
+            "Pinggan kertas bersektor",
+            "Kad nutrisi bergambar"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Kesihatan Reproduktif Asas": {
+      "Memahami perubahan akil baligh asas": [
+        {
+          "standards": "4.3.1 Mengenal perubahan fizikal asas lelaki dan perempuan semasa akil baligh.",
+          "objectives": "Murid dapat menyatakan perubahan fizikal asas lelaki dan perempuan secara umum dan sopan.",
+          "activities": [
+            "Perbincangan berasingan (lelaki/perempuan) dengan guru kaunseling",
+            "Lukis carta perubahan fizikal (umum)",
+            "Tonton video pendidikan kesihatan reproduktif kanak-kanak"
+          ],
+          "assessment": [
+            "Soal jawab tertutup (buku tulis)",
+            "Pemerhatian pemahaman konsep",
+            "Refleksi bertulis: 'Saya Akan Lebih Bertanggungjawab'"
+          ],
+          "aids": [
+            "Video pendidikan PK (disemak KPM)",
+            "Buku rujukan PK Tahun 4",
+            "Carta perubahan fizikal (neutral)"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Keselamatan Awam dan Kebakaran": {
+      "Mengetahui tindakan keselamatan awam": [
+        {
+          "standards": "4.4.1 Menyatakan tindakan keselamatan semasa kebakaran, banjir dan kecemasan awam.",
+          "objectives": "Murid dapat menyatakan nombor kecemasan dan langkah asas keselamatan awam.",
+          "activities": [
+            "Simulasi evakuasi kebakaran",
+            "Latihan panggil 999 (mainan telefon)",
+            "Lukis peta laluan keluar kecemasan"
+          ],
+          "assessment": [
+            "Pemerhatian simulasi evakuasi",
+            "Ujian lisan: nombor kecemasan",
+            "Penilaian peta laluan keluar"
+          ],
+          "aids": [
+            "Loceng kebakaran (simulasi bunyi)",
+            "Telefon mainan",
+            "Peta sekolah kosong"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Kawalan Emosi dan Tekanan": {
+      "Mengurus emosi dan tekanan ringan": [
+        {
+          "standards": "4.5.1 Mengenal tanda tekanan ringan dan menggunakan teknik asas untuk menguruskannya.",
+          "objectives": "Murid dapat mengenal tanda tekanan (marah, gelisah) dan menggunakan teknik tarik nafas atau bercakap dengan guru.",
+          "activities": [
+            "Latihan 'Tarik Nafas – Hitung 5 Saat'",
+            "Aktiviti 'Kotak Perasaan – Tulis & Simpan'",
+            "Perbincangan: 'Siapa yang Boleh Saya Percaya?'"
+          ],
+          "assessment": [
+            "Pemerhatian penggunaan teknik tenang",
+            "Catatan penggunaan 'kotak perasaan'",
+            "Refleksi lisan"
+          ],
+          "aids": [
+            "Botol 'tenang' (air + glitter)",
+            "Kotak perasaan",
+            "Kad teknik kawalan emosi"
+          ]
+        }
+      ]
+    }
+  },
+  "TAHUN 5": {
+    "Unit 1: Penjagaan Diri Semasa Akil Baligh": {
+      "Mengamalkan penjagaan diri ketika akil baligh": [
+        {
+          "standards": "5.1.1 Mengamalkan kebersihan diri khusus semasa akil baligh (cth: penggunaan tuala wanita, mandi kerap).",
+          "objectives": "Murid dapat menjalankan amalan kebersihan khusus mengikut jantina dengan keyakinan dan privasi.",
+          "activities": [
+            "Sesi terpisah lelaki/perempuan dengan guru PK",
+            "Latihan simulasi penggunaan tuala wanita (dengan kain)",
+            "Perbincangan: 'Rahsia Tubuh – Siapa Boleh Tahu?'"
+          ],
+          "assessment": [
+            "Soal jawab bertulis (privasi dijamin)",
+            "Senarai semak amalan kebersihan",
+            "Pemerhatian pemahaman konsep privasi"
+          ],
+          "aids": [
+            "Buku panduan PK Tahun 5 (KPM)",
+            "Kain dan model simulasi",
+            "Kad amalan kebersihan akil baligh"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Penyakit Tidak Berjangkit": {
+      "Mengetahui punca dan pencegahan penyakit tidak berjangkit": [
+        {
+          "standards": "5.2.1 Menyatakan punca penyakit tidak berjangkit seperti diabetes dan hipertensi serta cara pencegahannya.",
+          "objectives": "Murid dapat menjelaskan hubungan antara gaya hidup dan penyakit tidak berjangkit.",
+          "activities": [
+            "Perbincangan: 'Gula dalam Minuman – Berapa Banyak?'",
+            "Aktiviti ukur gula dalam minuman kegemaran",
+            "Lukis poster: 'Cegah Diabetes Sejak Kecil'"
+          ],
+          "assessment": [
+            "Penilaian poster",
+            "Kuiz lisan punca penyakit",
+            "Refleksi bertulis: 'Gaya Hidup Saya'"
+          ],
+          "aids": [
+            "Botol minuman berlabel gula",
+            "Carta penyakit tidak berjangkit",
+            "Video pendek tentang diabetes kanak-kanak"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Pencegahan Penyalahgunaan Bahan": {
+      "Memahami bahaya rokok, alkohol dan dadah": [
+        {
+          "standards": "5.3.1 Menjelaskan bahaya rokok, alkohol dan dadah terhadap kesihatan fizikal dan mental.",
+          "objectives": "Murid dapat menyatakan kesan buruk bahan tersebut dan menolak ajakan mencuba.",
+          "activities": [
+            "Tonton video testimoni (disaring)",
+            "Permainan peranan: 'Apa Jawapan Saya Jika Diajak?'",
+            "Lukis 'Masa Depan Saya Tanpa Dadah'"
+          ],
+          "assessment": [
+            "Pembentangan peranan",
+            "Penilaian lukisan",
+            "Soal jawab: 'Apa yang Saya Lakukan Jika...?'"
+          ],
+          "aids": [
+            "Video anti-dadah (KPM-approved)",
+            "Kad situasi tekanan rakan sebaya",
+            "Poster 'Kata Tidak dengan Yakin'"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Kesihatan Mental Asas": {
+      "Mengenal tanda tekanan mental asas": [
+        {
+          "standards": "5.4.1 Mengenal tanda tekanan mental asas seperti murung, tidak mahu makan dan menarik diri.",
+          "objectives": "Murid dapat mengenal tanda tekanan mental pada diri sendiri dan rakan, serta tahu siapa untuk diminta bantuan.",
+          "activities": [
+            "Perbincangan: 'Bila Rakan Nampak Sedih?'",
+            "Aktiviti 'Peta Sokongan – Siapa Boleh Bantu Saya?'",
+            "Lukis 'Perasaan Saya Hari Ini'"
+          ],
+          "assessment": [
+            "Peta sokongan murid",
+            "Pemerhatian empati semasa perbincangan",
+            "Refleksi bertulis"
+          ],
+          "aids": [
+            "Kad emosi lanjutan",
+            "Gambar situasi tekanan",
+            "Senarai orang boleh dipercayai (guru, ibu bapa, kaunselor)"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Keselamatan Diri dalam Kecemasan": {
+      "Mengamalkan langkah keselamatan semasa kecemasan": [
+        {
+          "standards": "5.5.1 Melakukan langkah keselamatan asas semasa kecemasan seperti gempa bumi, kebakaran dan keganasan.",
+          "objectives": "Murid dapat melaksanakan prosedur 'Duck, Cover, Hold' dan evakuasi dengan tenang.",
+          "activities": [
+            "Simulasi kecemasan pelbagai (bergilir)",
+            "Latihan panggil bantuan dengan maklumat tepat",
+            "Bina kit kecemasan mini (kertas)"
+          ],
+          "assessment": [
+            "Pemerhatian simulasi",
+            "Ujian lisan: maklumat kecemasan",
+            "Penilaian kit kecemasan mini"
+          ],
+          "aids": [
+            "Sirene simulasi",
+            "Kad maklumat kecemasan",
+            "Bahan kit kecemasan (contoh)"
+          ]
+        }
+      ]
+    }
+  },
+  "TAHUN 6": {
+    "Unit 1: Kesihatan Reproduktif dan Sosial": {
+      "Memahami kepentingan kesihatan reproduktif dan sosial": [
+        {
+          "standards": "6.1.1 Menjelaskan kepentingan menjaga kesihatan reproduktif dan menjalin hubungan sosial yang sihat.",
+          "objectives": "Murid dapat menjelaskan batasan fizikal dan sosial yang sesuai serta menghormati privasi diri dan orang lain.",
+          "activities": [
+            "Forum mini: 'Hubungan Sihat vs Tidak Sihat'",
+            "Perbincangan: 'Apa Itu Persetujuan?'",
+            "Lukis carta 'Hak dan Tanggungjawab Remaja'"
+          ],
+          "assessment": [
+            "Pembentangan forum",
+            "Penilaian carta hak",
+            "Soal jawab bertulis (anonim)"
+          ],
+          "aids": [
+            "Video pendidikan reproduktif (KPM)",
+            "Kad situasi sosial",
+            "Buku rujukan PK Tahun 6"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Penyakit Berjangkit dan Tidak Berjangkit": {
+      "Mengetahui langkah pencegahan penyakit berjangkit dan tidak berjangkit": [
+        {
+          "standards": "6.2.1 Menyatakan langkah pencegahan penyakit berjangkit (HIV/AIDS, hepatitis) dan tidak berjangkit (obesiti, kencing manis).",
+          "objectives": "Murid dapat membezakan jenis penyakit dan menjelaskan langkah pencegahan holistik.",
+          "activities": [
+            "Permainan 'Betul atau Salah: Mitos Penyakit'",
+            "Kuiz interaktif: 'Cara Jangkitan & Pencegahan'",
+            "Projek kumpulan: 'Kempen Sihat Sekolah'"
+          ],
+          "assessment": [
+            "Kuiz interaktif",
+            "Penilaian projek kempen",
+            "Refleksi: 'Apa yang Saya Pelajari Hari Ini?'"
+          ],
+          "aids": [
+            "Kad mitos & fakta",
+            "Komputer/tablet untuk kuiz",
+            "Bahan kempen (kertas, marker)"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Gaya Hidup Aktif dan Sihat": {
+      "Mengamalkan gaya hidup aktif": [
+        {
+          "standards": "6.3.1 Mengamalkan gaya hidup aktif melalui senaman, rehat mencukupi dan pengurangan skrin masa.",
+          "objectives": "Murid dapat merancang jadual harian sihat yang seimbang antara aktiviti fizikal dan digital.",
+          "activities": [
+            "Aktiviti 'Cabaran 60 Minit Aktif Sehari'",
+            "Analisis skrin masa sendiri (minggu lalu)",
+            "Bina jadual harian sihat"
+          ],
+          "assessment": [
+            "Jadual harian murid",
+            "Catatan penyertaan cabaran",
+            "Refleksi bertulis: 'Saya Kurangkan Masa Skrin'"
+          ],
+          "aids": [
+            "Jam randik/penjejak aktiviti",
+            "Templat jadual harian",
+            "Carta cabaran aktiviti"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Pencegahan Jenayah dan Penderaan": {
+      "Menyedari bahaya jenayah, buli dan penderaan": [
+        {
+          "standards": "6.4.1 Mengenal bentuk jenayah, buli dan penderaan serta tindakan yang perlu diambil.",
+          "objectives": "Murid dapat mengenal pasti tanda penderaan dan tahu cara melaporkan dengan selamat.",
+          "activities": [
+            "Drama pendek: 'Saya Tidak Sendiri'",
+            "Perbincangan: 'Apa Itu Buli? Jenis dan Tanda'",
+            "Latihan: 'Lapor kepada Siapa?'"
+          ],
+          "assessment": [
+            "Pemerhatian empati dalam drama",
+            "Senarai sumber bantuan murid",
+            "Soal jawab: 'Apa yang Perlu Saya Lakukan?'"
+          ],
+          "aids": [
+            "Video anti-buli (KPM)",
+            "Kad sumber bantuan (Talian Kasih, Kaunselor)",
+            "Skrip drama pendek"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Kesedaran Kesihatan Mental": {
+      "Mengamalkan keseimbangan mental, emosi dan sosial": [
+        {
+          "standards": "6.5.1 Mengamalkan teknik menjaga keseimbangan mental, emosi dan sosial seperti mindfulness, bercakap dengan rakan dan aktiviti relaksasi.",
+          "objectives": "Murid dapat menggunakan sekurang-kurangnya dua teknik untuk mengekalkan kesejahteraan mental.",
+          "activities": [
+            "Sesi mindfulness 5 minit (tarik nafas, fokus)",
+            "Aktiviti 'Surat untuk Diri Sendiri'",
+            "Perbincangan: 'Cara Saya Redakan Tekanan Sebelum Ujian'"
+          ],
+          "assessment": [
+            "Catatan penggunaan teknik",
+            "Surat untuk diri sendiri",
+            "Penilaian penyertaan dalam sesi mindfulness"
+          ],
+          "aids": [
+            "Muzik relaksasi",
+            "Kertas surat",
+            "Kad teknik kesejahteraan mental"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1037 @@
+[
+  {
+    "date": "2025-02-17",
+    "weekday": "Monday",
+    "week": 1
+  },
+  {
+    "date": "2025-02-18",
+    "weekday": "Tuesday",
+    "week": 1
+  },
+  {
+    "date": "2025-02-19",
+    "weekday": "Wednesday",
+    "week": 1
+  },
+  {
+    "date": "2025-02-20",
+    "weekday": "Thursday",
+    "week": 1
+  },
+  {
+    "date": "2025-02-21",
+    "weekday": "Friday",
+    "week": 1
+  },
+  {
+    "date": "2025-02-24",
+    "weekday": "Monday",
+    "week": 2
+  },
+  {
+    "date": "2025-02-25",
+    "weekday": "Tuesday",
+    "week": 2
+  },
+  {
+    "date": "2025-02-26",
+    "weekday": "Wednesday",
+    "week": 2
+  },
+  {
+    "date": "2025-02-27",
+    "weekday": "Thursday",
+    "week": 2
+  },
+  {
+    "date": "2025-02-28",
+    "weekday": "Friday",
+    "week": 2
+  },
+  {
+    "date": "2025-03-03",
+    "weekday": "Monday",
+    "week": 3
+  },
+  {
+    "date": "2025-03-04",
+    "weekday": "Tuesday",
+    "week": 3
+  },
+  {
+    "date": "2025-03-05",
+    "weekday": "Wednesday",
+    "week": 3
+  },
+  {
+    "date": "2025-03-06",
+    "weekday": "Thursday",
+    "week": 3
+  },
+  {
+    "date": "2025-03-07",
+    "weekday": "Friday",
+    "week": 3
+  },
+  {
+    "date": "2025-03-10",
+    "weekday": "Monday",
+    "week": 4
+  },
+  {
+    "date": "2025-03-11",
+    "weekday": "Tuesday",
+    "week": 4
+  },
+  {
+    "date": "2025-03-12",
+    "weekday": "Wednesday",
+    "week": 4
+  },
+  {
+    "date": "2025-03-13",
+    "weekday": "Thursday",
+    "week": 4
+  },
+  {
+    "date": "2025-03-14",
+    "weekday": "Friday",
+    "week": 4
+  },
+  {
+    "date": "2025-03-17",
+    "weekday": "Monday",
+    "week": 5
+  },
+  {
+    "date": "2025-03-18",
+    "weekday": "Tuesday",
+    "week": 5
+  },
+  {
+    "date": "2025-03-19",
+    "weekday": "Wednesday",
+    "week": 5
+  },
+  {
+    "date": "2025-03-20",
+    "weekday": "Thursday",
+    "week": 5
+  },
+  {
+    "date": "2025-03-21",
+    "weekday": "Friday",
+    "week": 5
+  },
+  {
+    "date": "2025-03-24",
+    "weekday": "Monday",
+    "week": 6
+  },
+  {
+    "date": "2025-03-25",
+    "weekday": "Tuesday",
+    "week": 6
+  },
+  {
+    "date": "2025-03-26",
+    "weekday": "Wednesday",
+    "week": 6
+  },
+  {
+    "date": "2025-03-27",
+    "weekday": "Thursday",
+    "week": 6
+  },
+  {
+    "date": "2025-03-28",
+    "weekday": "Friday",
+    "week": 6
+  },
+  {
+    "date": "2025-03-31",
+    "weekday": "Monday",
+    "week": 7
+  },
+  {
+    "date": "2025-04-01",
+    "weekday": "Tuesday",
+    "week": 7
+  },
+  {
+    "date": "2025-04-02",
+    "weekday": "Wednesday",
+    "week": 7
+  },
+  {
+    "date": "2025-04-03",
+    "weekday": "Thursday",
+    "week": 7
+  },
+  {
+    "date": "2025-04-04",
+    "weekday": "Friday",
+    "week": 7
+  },
+  {
+    "date": "2025-04-07",
+    "weekday": "Monday",
+    "week": 8
+  },
+  {
+    "date": "2025-04-08",
+    "weekday": "Tuesday",
+    "week": 8
+  },
+  {
+    "date": "2025-04-09",
+    "weekday": "Wednesday",
+    "week": 8
+  },
+  {
+    "date": "2025-04-10",
+    "weekday": "Thursday",
+    "week": 8
+  },
+  {
+    "date": "2025-04-11",
+    "weekday": "Friday",
+    "week": 8
+  },
+  {
+    "date": "2025-04-14",
+    "weekday": "Monday",
+    "week": 9
+  },
+  {
+    "date": "2025-04-15",
+    "weekday": "Tuesday",
+    "week": 9
+  },
+  {
+    "date": "2025-04-16",
+    "weekday": "Wednesday",
+    "week": 9
+  },
+  {
+    "date": "2025-04-17",
+    "weekday": "Thursday",
+    "week": 9
+  },
+  {
+    "date": "2025-04-18",
+    "weekday": "Friday",
+    "week": 9
+  },
+  {
+    "date": "2025-04-21",
+    "weekday": "Monday",
+    "week": 10
+  },
+  {
+    "date": "2025-04-22",
+    "weekday": "Tuesday",
+    "week": 10
+  },
+  {
+    "date": "2025-04-23",
+    "weekday": "Wednesday",
+    "week": 10
+  },
+  {
+    "date": "2025-04-24",
+    "weekday": "Thursday",
+    "week": 10
+  },
+  {
+    "date": "2025-04-25",
+    "weekday": "Friday",
+    "week": 10
+  },
+  {
+    "date": "2025-04-28",
+    "weekday": "Monday",
+    "week": 11
+  },
+  {
+    "date": "2025-04-29",
+    "weekday": "Tuesday",
+    "week": 11
+  },
+  {
+    "date": "2025-04-30",
+    "weekday": "Wednesday",
+    "week": 11
+  },
+  {
+    "date": "2025-05-01",
+    "weekday": "Thursday",
+    "week": 11
+  },
+  {
+    "date": "2025-05-02",
+    "weekday": "Friday",
+    "week": 11
+  },
+  {
+    "date": "2025-05-05",
+    "weekday": "Monday",
+    "week": 12
+  },
+  {
+    "date": "2025-05-06",
+    "weekday": "Tuesday",
+    "week": 12
+  },
+  {
+    "date": "2025-05-07",
+    "weekday": "Wednesday",
+    "week": 12
+  },
+  {
+    "date": "2025-05-08",
+    "weekday": "Thursday",
+    "week": 12
+  },
+  {
+    "date": "2025-05-09",
+    "weekday": "Friday",
+    "week": 12
+  },
+  {
+    "date": "2025-05-12",
+    "weekday": "Monday",
+    "week": 13
+  },
+  {
+    "date": "2025-05-13",
+    "weekday": "Tuesday",
+    "week": 13
+  },
+  {
+    "date": "2025-05-14",
+    "weekday": "Wednesday",
+    "week": 13
+  },
+  {
+    "date": "2025-05-15",
+    "weekday": "Thursday",
+    "week": 13
+  },
+  {
+    "date": "2025-05-16",
+    "weekday": "Friday",
+    "week": 13
+  },
+  {
+    "date": "2025-05-19",
+    "weekday": "Monday",
+    "week": 14
+  },
+  {
+    "date": "2025-05-20",
+    "weekday": "Tuesday",
+    "week": 14
+  },
+  {
+    "date": "2025-05-21",
+    "weekday": "Wednesday",
+    "week": 14
+  },
+  {
+    "date": "2025-05-22",
+    "weekday": "Thursday",
+    "week": 14
+  },
+  {
+    "date": "2025-05-23",
+    "weekday": "Friday",
+    "week": 14
+  },
+  {
+    "date": "2025-05-26",
+    "weekday": "Monday",
+    "week": 15
+  },
+  {
+    "date": "2025-05-27",
+    "weekday": "Tuesday",
+    "week": 15
+  },
+  {
+    "date": "2025-05-28",
+    "weekday": "Wednesday",
+    "week": 15
+  },
+  {
+    "date": "2025-06-10",
+    "weekday": "Tuesday",
+    "week": 16
+  },
+  {
+    "date": "2025-06-11",
+    "weekday": "Wednesday",
+    "week": 16
+  },
+  {
+    "date": "2025-06-12",
+    "weekday": "Thursday",
+    "week": 16
+  },
+  {
+    "date": "2025-06-13",
+    "weekday": "Friday",
+    "week": 16
+  },
+  {
+    "date": "2025-06-16",
+    "weekday": "Monday",
+    "week": 17
+  },
+  {
+    "date": "2025-06-17",
+    "weekday": "Tuesday",
+    "week": 17
+  },
+  {
+    "date": "2025-06-18",
+    "weekday": "Wednesday",
+    "week": 17
+  },
+  {
+    "date": "2025-06-19",
+    "weekday": "Thursday",
+    "week": 17
+  },
+  {
+    "date": "2025-06-20",
+    "weekday": "Friday",
+    "week": 17
+  },
+  {
+    "date": "2025-06-23",
+    "weekday": "Monday",
+    "week": 18
+  },
+  {
+    "date": "2025-06-24",
+    "weekday": "Tuesday",
+    "week": 18
+  },
+  {
+    "date": "2025-06-25",
+    "weekday": "Wednesday",
+    "week": 18
+  },
+  {
+    "date": "2025-06-26",
+    "weekday": "Thursday",
+    "week": 18
+  },
+  {
+    "date": "2025-06-27",
+    "weekday": "Friday",
+    "week": 18
+  },
+  {
+    "date": "2025-06-30",
+    "weekday": "Monday",
+    "week": 19
+  },
+  {
+    "date": "2025-07-01",
+    "weekday": "Tuesday",
+    "week": 19
+  },
+  {
+    "date": "2025-07-02",
+    "weekday": "Wednesday",
+    "week": 19
+  },
+  {
+    "date": "2025-07-03",
+    "weekday": "Thursday",
+    "week": 19
+  },
+  {
+    "date": "2025-07-04",
+    "weekday": "Friday",
+    "week": 19
+  },
+  {
+    "date": "2025-07-07",
+    "weekday": "Monday",
+    "week": 20
+  },
+  {
+    "date": "2025-07-08",
+    "weekday": "Tuesday",
+    "week": 20
+  },
+  {
+    "date": "2025-07-09",
+    "weekday": "Wednesday",
+    "week": 20
+  },
+  {
+    "date": "2025-07-10",
+    "weekday": "Thursday",
+    "week": 20
+  },
+  {
+    "date": "2025-07-11",
+    "weekday": "Friday",
+    "week": 20
+  },
+  {
+    "date": "2025-07-14",
+    "weekday": "Monday",
+    "week": 21
+  },
+  {
+    "date": "2025-07-15",
+    "weekday": "Tuesday",
+    "week": 21
+  },
+  {
+    "date": "2025-07-16",
+    "weekday": "Wednesday",
+    "week": 21
+  },
+  {
+    "date": "2025-07-17",
+    "weekday": "Thursday",
+    "week": 21
+  },
+  {
+    "date": "2025-07-18",
+    "weekday": "Friday",
+    "week": 21
+  },
+  {
+    "date": "2025-07-21",
+    "weekday": "Monday",
+    "week": 22
+  },
+  {
+    "date": "2025-07-22",
+    "weekday": "Tuesday",
+    "week": 22
+  },
+  {
+    "date": "2025-07-23",
+    "weekday": "Wednesday",
+    "week": 22
+  },
+  {
+    "date": "2025-07-24",
+    "weekday": "Thursday",
+    "week": 22
+  },
+  {
+    "date": "2025-07-25",
+    "weekday": "Friday",
+    "week": 22
+  },
+  {
+    "date": "2025-07-28",
+    "weekday": "Monday",
+    "week": 23
+  },
+  {
+    "date": "2025-07-29",
+    "weekday": "Tuesday",
+    "week": 23
+  },
+  {
+    "date": "2025-07-30",
+    "weekday": "Wednesday",
+    "week": 23
+  },
+  {
+    "date": "2025-07-31",
+    "weekday": "Thursday",
+    "week": 23
+  },
+  {
+    "date": "2025-08-01",
+    "weekday": "Friday",
+    "week": 23
+  },
+  {
+    "date": "2025-08-04",
+    "weekday": "Monday",
+    "week": 24
+  },
+  {
+    "date": "2025-08-05",
+    "weekday": "Tuesday",
+    "week": 24
+  },
+  {
+    "date": "2025-08-06",
+    "weekday": "Wednesday",
+    "week": 24
+  },
+  {
+    "date": "2025-08-07",
+    "weekday": "Thursday",
+    "week": 24
+  },
+  {
+    "date": "2025-08-08",
+    "weekday": "Friday",
+    "week": 24
+  },
+  {
+    "date": "2025-08-11",
+    "weekday": "Monday",
+    "week": 25
+  },
+  {
+    "date": "2025-08-12",
+    "weekday": "Tuesday",
+    "week": 25
+  },
+  {
+    "date": "2025-08-13",
+    "weekday": "Wednesday",
+    "week": 25
+  },
+  {
+    "date": "2025-08-14",
+    "weekday": "Thursday",
+    "week": 25
+  },
+  {
+    "date": "2025-08-15",
+    "weekday": "Friday",
+    "week": 25
+  },
+  {
+    "date": "2025-08-18",
+    "weekday": "Monday",
+    "week": 26
+  },
+  {
+    "date": "2025-08-19",
+    "weekday": "Tuesday",
+    "week": 26
+  },
+  {
+    "date": "2025-08-20",
+    "weekday": "Wednesday",
+    "week": 26
+  },
+  {
+    "date": "2025-08-21",
+    "weekday": "Thursday",
+    "week": 26
+  },
+  {
+    "date": "2025-08-22",
+    "weekday": "Friday",
+    "week": 26
+  },
+  {
+    "date": "2025-08-25",
+    "weekday": "Monday",
+    "week": 27
+  },
+  {
+    "date": "2025-08-26",
+    "weekday": "Tuesday",
+    "week": 27
+  },
+  {
+    "date": "2025-08-27",
+    "weekday": "Wednesday",
+    "week": 27
+  },
+  {
+    "date": "2025-08-28",
+    "weekday": "Thursday",
+    "week": 27
+  },
+  {
+    "date": "2025-08-29",
+    "weekday": "Friday",
+    "week": 27
+  },
+  {
+    "date": "2025-09-01",
+    "weekday": "Monday",
+    "week": 28
+  },
+  {
+    "date": "2025-09-02",
+    "weekday": "Tuesday",
+    "week": 28
+  },
+  {
+    "date": "2025-09-03",
+    "weekday": "Wednesday",
+    "week": 28
+  },
+  {
+    "date": "2025-09-04",
+    "weekday": "Thursday",
+    "week": 28
+  },
+  {
+    "date": "2025-09-05",
+    "weekday": "Friday",
+    "week": 28
+  },
+  {
+    "date": "2025-09-08",
+    "weekday": "Monday",
+    "week": 29
+  },
+  {
+    "date": "2025-09-09",
+    "weekday": "Tuesday",
+    "week": 29
+  },
+  {
+    "date": "2025-09-10",
+    "weekday": "Wednesday",
+    "week": 29
+  },
+  {
+    "date": "2025-09-11",
+    "weekday": "Thursday",
+    "week": 29
+  },
+  {
+    "date": "2025-09-12",
+    "weekday": "Friday",
+    "week": 29
+  },
+  {
+    "date": "2025-09-22",
+    "weekday": "Monday",
+    "week": 30
+  },
+  {
+    "date": "2025-09-23",
+    "weekday": "Tuesday",
+    "week": 30
+  },
+  {
+    "date": "2025-09-24",
+    "weekday": "Wednesday",
+    "week": 30
+  },
+  {
+    "date": "2025-09-25",
+    "weekday": "Thursday",
+    "week": 30
+  },
+  {
+    "date": "2025-09-26",
+    "weekday": "Friday",
+    "week": 30
+  },
+  {
+    "date": "2025-09-29",
+    "weekday": "Monday",
+    "week": 31
+  },
+  {
+    "date": "2025-09-30",
+    "weekday": "Tuesday",
+    "week": 31
+  },
+  {
+    "date": "2025-10-01",
+    "weekday": "Wednesday",
+    "week": 31
+  },
+  {
+    "date": "2025-10-02",
+    "weekday": "Thursday",
+    "week": 31
+  },
+  {
+    "date": "2025-10-03",
+    "weekday": "Friday",
+    "week": 31
+  },
+  {
+    "date": "2025-10-06",
+    "weekday": "Monday",
+    "week": 32
+  },
+  {
+    "date": "2025-10-07",
+    "weekday": "Tuesday",
+    "week": 32
+  },
+  {
+    "date": "2025-10-08",
+    "weekday": "Wednesday",
+    "week": 32
+  },
+  {
+    "date": "2025-10-09",
+    "weekday": "Thursday",
+    "week": 32
+  },
+  {
+    "date": "2025-10-10",
+    "weekday": "Friday",
+    "week": 32
+  },
+  {
+    "date": "2025-10-13",
+    "weekday": "Monday",
+    "week": 33
+  },
+  {
+    "date": "2025-10-14",
+    "weekday": "Tuesday",
+    "week": 33
+  },
+  {
+    "date": "2025-10-15",
+    "weekday": "Wednesday",
+    "week": 33
+  },
+  {
+    "date": "2025-10-16",
+    "weekday": "Thursday",
+    "week": 33
+  },
+  {
+    "date": "2025-10-17",
+    "weekday": "Friday",
+    "week": 33
+  },
+  {
+    "date": "2025-10-20",
+    "weekday": "Monday",
+    "week": 34
+  },
+  {
+    "date": "2025-10-21",
+    "weekday": "Tuesday",
+    "week": 34
+  },
+  {
+    "date": "2025-10-22",
+    "weekday": "Wednesday",
+    "week": 34
+  },
+  {
+    "date": "2025-10-23",
+    "weekday": "Thursday",
+    "week": 34
+  },
+  {
+    "date": "2025-10-24",
+    "weekday": "Friday",
+    "week": 34
+  },
+  {
+    "date": "2025-10-27",
+    "weekday": "Monday",
+    "week": 35
+  },
+  {
+    "date": "2025-10-28",
+    "weekday": "Tuesday",
+    "week": 35
+  },
+  {
+    "date": "2025-10-29",
+    "weekday": "Wednesday",
+    "week": 35
+  },
+  {
+    "date": "2025-10-30",
+    "weekday": "Thursday",
+    "week": 35
+  },
+  {
+    "date": "2025-10-31",
+    "weekday": "Friday",
+    "week": 35
+  },
+  {
+    "date": "2025-11-03",
+    "weekday": "Monday",
+    "week": 36
+  },
+  {
+    "date": "2025-11-04",
+    "weekday": "Tuesday",
+    "week": 36
+  },
+  {
+    "date": "2025-11-05",
+    "weekday": "Wednesday",
+    "week": 36
+  },
+  {
+    "date": "2025-11-06",
+    "weekday": "Thursday",
+    "week": 36
+  },
+  {
+    "date": "2025-11-07",
+    "weekday": "Friday",
+    "week": 36
+  },
+  {
+    "date": "2025-11-10",
+    "weekday": "Monday",
+    "week": 37
+  },
+  {
+    "date": "2025-11-11",
+    "weekday": "Tuesday",
+    "week": 37
+  },
+  {
+    "date": "2025-11-12",
+    "weekday": "Wednesday",
+    "week": 37
+  },
+  {
+    "date": "2025-11-13",
+    "weekday": "Thursday",
+    "week": 37
+  },
+  {
+    "date": "2025-11-14",
+    "weekday": "Friday",
+    "week": 37
+  },
+  {
+    "date": "2025-11-17",
+    "weekday": "Monday",
+    "week": 38
+  },
+  {
+    "date": "2025-11-18",
+    "weekday": "Tuesday",
+    "week": 38
+  },
+  {
+    "date": "2025-11-19",
+    "weekday": "Wednesday",
+    "week": 38
+  },
+  {
+    "date": "2025-11-20",
+    "weekday": "Thursday",
+    "week": 38
+  },
+  {
+    "date": "2025-11-21",
+    "weekday": "Friday",
+    "week": 38
+  },
+  {
+    "date": "2025-11-24",
+    "weekday": "Monday",
+    "week": 39
+  },
+  {
+    "date": "2025-11-25",
+    "weekday": "Tuesday",
+    "week": 39
+  },
+  {
+    "date": "2025-11-26",
+    "weekday": "Wednesday",
+    "week": 39
+  },
+  {
+    "date": "2025-11-27",
+    "weekday": "Thursday",
+    "week": 39
+  },
+  {
+    "date": "2025-11-28",
+    "weekday": "Friday",
+    "week": 39
+  },
+  {
+    "date": "2025-12-01",
+    "weekday": "Monday",
+    "week": 40
+  },
+  {
+    "date": "2025-12-02",
+    "weekday": "Tuesday",
+    "week": 40
+  },
+  {
+    "date": "2025-12-03",
+    "weekday": "Wednesday",
+    "week": 40
+  },
+  {
+    "date": "2025-12-04",
+    "weekday": "Thursday",
+    "week": 40
+  },
+  {
+    "date": "2025-12-05",
+    "weekday": "Friday",
+    "week": 40
+  },
+  {
+    "date": "2025-12-08",
+    "weekday": "Monday",
+    "week": 41
+  },
+  {
+    "date": "2025-12-09",
+    "weekday": "Tuesday",
+    "week": 41
+  },
+  {
+    "date": "2025-12-10",
+    "weekday": "Wednesday",
+    "week": 41
+  },
+  {
+    "date": "2025-12-11",
+    "weekday": "Thursday",
+    "week": 41
+  },
+  {
+    "date": "2025-12-12",
+    "weekday": "Friday",
+    "week": 41
+  },
+  {
+    "date": "2025-12-15",
+    "weekday": "Monday",
+    "week": 42
+  },
+  {
+    "date": "2025-12-16",
+    "weekday": "Tuesday",
+    "week": 42
+  },
+  {
+    "date": "2025-12-17",
+    "weekday": "Wednesday",
+    "week": 42
+  },
+  {
+    "date": "2025-12-18",
+    "weekday": "Thursday",
+    "week": 42
+  },
+  {
+    "date": "2025-12-19",
+    "weekday": "Friday",
+    "week": 42
+  }
+]

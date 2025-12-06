@@ -1,0 +1,3604 @@
+{
+  "TAHUN 1": {
+    "Unit 1: Nombor Bulat hingga 100": {
+      "Mengenal dan Menulis Nombor": [
+        {
+          "standards": "1.1.1 Menamakan nombor hingga 100",
+          "objectives": "Murid dapat menamakan nombor 1 hingga 100 secara lisan dengan betul.",
+          "activities": [
+            "Nyanyian lagu nombor 1–100",
+            "Permainan 'Panggil Nombor' menggunakan kad nombor",
+            "Menyebut nombor dalam urutan menaik dan menurun"
+          ],
+          "assessment": [
+            "Pemerhatian semasa murid menyebut nombor",
+            "Senarai semak penguasaan nombor 1–100"
+          ],
+          "aids": [
+            "Kad nombor 1–100",
+            "Carta nombor besar",
+            "Audio lagu nombor"
+          ]
+        },
+        {
+          "standards": "1.1.2 Menulis nombor dalam angka hingga 100",
+          "objectives": "Murid dapat menulis nombor 1 hingga 100 dalam bentuk angka dengan betul.",
+          "activities": [
+            "Menyalin nombor dari carta ke buku latihan",
+            "Isi tempat kosong pada garis nombor",
+            "Aktiviti menulis nombor pada whiteboard kecil"
+          ],
+          "assessment": [
+            "Lembaran kerja menulis nombor",
+            "Pemeriksaan ketepatan bentuk digit"
+          ],
+          "aids": [
+            "Lembaran latihan nombor",
+            "Garis nombor bercetak",
+            "Whiteboard dan pen marker"
+          ]
+        }
+      ],
+      "Membilang": [
+        {
+          "standards": "1.2.1 Membilang objek dalam kumpulan hingga 100",
+          "objectives": "Murid dapat membilang objek sebenar atau gambar dalam kumpulan hingga 100 dengan tepat.",
+          "activities": [
+            "Membilang guli, batang ais krim, atau biji kacang",
+            "Membilang gambar haiwan pada kad",
+            "Permainan kumpulan: 'Kira dan Laporkan'"
+          ],
+          "assessment": [
+            "Pemerhatian ketepatan pengiraan",
+            "Rekod bilangan objek dalam lembaran"
+          ],
+          "aids": [
+            "Objek konkrit (guli, manik, batang ais krim)",
+            "Kad gambar berbilang objek",
+            "Bekas pembilang"
+          ]
+        },
+        {
+          "standards": "1.2.2 Membilang secara menaik dan menurun dalam lingkungan 100",
+          "objectives": "Murid dapat membilang secara menaik (1–100) dan menurun (100–1) dengan lancar.",
+          "activities": [
+            "Membilang langkah semasa berjalan di koridor",
+            "Gunakan garis nombor besar di lantai",
+            "Permainan 'Roket Nombor' (membilang menurun sebelum 'lancar')"
+          ],
+          "assessment": [
+            "Ujian lisan membilang menaik/menurun",
+            "Catatan guru tentang kelancaran dan keyakinan"
+          ],
+          "aids": [
+            "Garis nombor besar (1–100)",
+            "Kad nombor untuk susun semula",
+            "Mainan roket nombor"
+          ]
+        }
+      ],
+      "Nilai Tempat (Puluh dan Sa)": [
+        {
+          "standards": "1.3.1 Mengenal nilai tempat puluh dan sa bagi nombor hingga 100",
+          "objectives": "Murid dapat mengenal pasti nilai tempat puluh dan sa dalam nombor dua digit.",
+          "activities": [
+            "Gunakan dekak-dekak atau blok asas sepuluh",
+            "Aktiviti 'Pisahkan Puluh dan Sa' dengan kad nombor",
+            "Bina nombor menggunakan kad nilai tempat"
+          ],
+          "assessment": [
+            "Lembaran kerja nilai tempat",
+            "Soal jawab lisan: 'Berapa puluh? Berapa sa?'"
+          ],
+          "aids": [
+            "Dekak-dekak",
+            "Blok asas sepuluh (base-10 blocks)",
+            "Kad nilai tempat (puluh/sa)"
+          ]
+        },
+        {
+          "standards": "1.3.2 Menyatakan nilai digit bagi nombor dua digit",
+          "objectives": "Murid dapat menyatakan nilai digit (contoh: dalam 45, digit 4 bernilai 40 dan 5 bernilai 5).",
+          "activities": [
+            "Gunakan kad nilai digit (40 dan 5 untuk nombor 45)",
+            "Padankan nombor dengan kad nilai digit",
+            "Permainan 'Cari Nilai Saya' secara berpasangan"
+          ],
+          "assessment": [
+            "Lembaran padanan nilai digit",
+            "Pentaksiran lisan semasa permainan"
+          ],
+          "aids": [
+            "Kad nilai digit (10, 20, ..., 90 dan 1–9)",
+            "Carta nilai tempat besar",
+            "Blok asas sepuluh"
+          ]
+        }
+      ],
+      "Operasi Tambah (Tanpa Mengumpul Semula)": [
+        {
+          "standards": "1.4.1 Menambah dua nombor dalam lingkungan 18",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah hingga 18 menggunakan objek konkrit.",
+          "activities": [
+            "Tambah guli dalam dua bekas",
+            "Gunakan kad gambar untuk membina ayat matematik",
+            "Permainan 'Tambahan Cepat' dengan kad nombor"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah",
+            "Pemerhatian penggunaan strategi tambah"
+          ],
+          "aids": [
+            "Guli/manik",
+            "Kad ayat matematik",
+            "Carta fakta asas tambah"
+          ]
+        },
+        {
+          "standards": "1.4.2 Menyelesaikan masalah harian melibatkan penambahan hingga 18",
+          "objectives": "Murid dapat menyelesaikan situasi harian mudah menggunakan operasi tambah hingga 18.",
+          "activities": [
+            "Drama pendek: 'Saya ada 5 epal, dapat 3 lagi'",
+            "Gunakan kad cerita bergambar",
+            "Bina ayat matematik daripada situasi sebenar"
+          ],
+          "assessment": [
+            "Penyelesaian masalah dalam lembaran kerja",
+            "Pentaksiran semasa drama atau perbincangan"
+          ],
+          "aids": [
+            "Kad cerita harian",
+            "Objek sebenar (epal plastik, gula-gula mainan)",
+            "Lembaran situasi harian"
+          ]
+        }
+      ],
+      "Operasi Tolak (Tanpa Mengumpul Semula)": [
+        {
+          "standards": "1.5.1 Menolak dua nombor dalam lingkungan 18",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tolak hingga 18 menggunakan objek konkrit.",
+          "activities": [
+            "Ambil guli dari bekas dan kira baki",
+            "Gunakan kad gambar untuk membina ayat matematik tolak",
+            "Permainan 'Tolak & Menang' secara berpasangan"
+          ],
+          "assessment": [
+            "Lembaran operasi tolak",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Objek konkrit (guli, manik, kad gambar)",
+            "Kad ayat matematik tolak",
+            "Garisan nombor kecil"
+          ]
+        },
+        {
+          "standards": "1.5.2 Menyelesaikan masalah harian melibatkan penolakan hingga 18",
+          "objectives": "Murid dapat menyelesaikan situasi harian mudah menggunakan operasi tolak hingga 18.",
+          "activities": [
+            "Drama: 'Saya ada 10 gula-gula, makan 4'",
+            "Gunakan kad situasi harian bergambar",
+            "Bina ayat matematik daripada pengalaman sendiri"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah tolak",
+            "Pemerhatian semasa persembahan drama mini"
+          ],
+          "aids": [
+            "Kad cerita tolak",
+            "Objek sebenar (gula-gula mainan, kad buah)",
+            "Buku catatan situasi harian"
+          ]
+        }
+      ],
+      "Fakta Asas Tambah dan Tolak": [
+        {
+          "standards": "1.6.1 Menyatakan fakta asas tambah hingga 18 dengan cepat",
+          "objectives": "Murid dapat menyatakan fakta tambah (contoh: 7 + 5 = 12) secara spontan.",
+          "activities": [
+            "Kuiz fakta tambah 1 minit",
+            "Permainan kad 'Padanan Cepat'",
+            "Nyanyian fakta tambah berirama"
+          ],
+          "assessment": [
+            "Ujian lisan fakta tambah",
+            "Rekod masa menjawab 10 soalan"
+          ],
+          "aids": [
+            "Kad fakta tambah",
+            "Jam randik",
+            "Carta fakta asas berwarna"
+          ]
+        },
+        {
+          "standards": "1.6.2 Menyatakan fakta asas tolak hingga 18 dengan cepat",
+          "objectives": "Murid dapat menyatakan fakta tolak (contoh: 12 – 5 = 7) secara spontan.",
+          "activities": [
+            "Permainan 'Tolak Kilat' dalam kumpulan",
+            "Gunakan roda fakta tolak berputar",
+            "Latihan berpasangan dengan kad soalan"
+          ],
+          "assessment": [
+            "Ujian lisan fakta tolak",
+            "Senarai semak penguasaan fakta asas"
+          ],
+          "aids": [
+            "Roda fakta tolak",
+            "Kad soalan tolak",
+            "Carta fakta tolak"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Pecahan": {
+      "Mengenal Separuh dan Suku": [
+        {
+          "standards": "2.1.1 Mengenal konsep separuh (½) melalui lipatan dan bahagian sama",
+          "objectives": "Murid dapat mengenal dan menunjukkan separuh daripada objek atau bentuk yang dibahagi sama.",
+          "activities": [
+            "Lipat kertas menjadi dua bahagian sama",
+            "Warnakan separuh daripada bulatan atau segi empat",
+            "Bahagi epal plastik kepada dua bahagian sama"
+          ],
+          "assessment": [
+            "Lembaran kerja mewarnakan separuh",
+            "Pemerhatian semasa aktiviti lipatan"
+          ],
+          "aids": [
+            "Kertas A4 pelbagai warna",
+            "Kad bentuk (bulatan, segi empat)",
+            "Epal plastik atau model makanan"
+          ]
+        },
+        {
+          "standards": "2.1.2 Mengenal konsep suku (¼) melalui lipatan dan bahagian sama",
+          "objectives": "Murid dapat mengenal dan menunjukkan suku daripada objek atau bentuk yang dibahagi kepada empat bahagian sama.",
+          "activities": [
+            "Lipat kertas menjadi empat bahagian sama",
+            "Bahagi pizza mainan kepada 4 keping",
+            "Warnakan satu daripada empat bahagian bentuk"
+          ],
+          "assessment": [
+            "Lembaran kerja mewarnakan suku",
+            "Soal jawab lisan: 'Mana satu suku?'"
+          ],
+          "aids": [
+            "Kertas untuk lipatan",
+            "Model pizza atau kek mainan",
+            "Kad pecahan visual"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Wang": {
+      "Mengenal Duit Syiling dan Wang Kertas": [
+        {
+          "standards": "3.1.1 Mengenal duit syiling dan wang kertas Malaysia hingga RM10",
+          "objectives": "Murid dapat mengenal pasti dan menamakan duit syiling (5 sen hingga RM1) dan wang kertas (RM1 hingga RM10).",
+          "activities": [
+            "Pameran 'Duit Saya' dengan contoh sebenar atau replika",
+            "Permainan 'Cari Duit' dalam kotak misteri",
+            "Susun duit mengikut nilai menaik"
+          ],
+          "assessment": [
+            "Ujian pengenalan duit (tunjuk dan namakan)",
+            "Senarai semak pengenalan wang"
+          ],
+          "aids": [
+            "Duit sebenar atau replika",
+            "Kad gambar wang Malaysia",
+            "Carta nilai wang"
+          ]
+        },
+        {
+          "standards": "3.1.2 Menyatakan nilai wang hingga RM10",
+          "objectives": "Murid dapat menyatakan nilai setiap duit syiling dan wang kertas dengan betul.",
+          "activities": [
+            "Padankan wang dengan kad nilai (contoh: RM5 ↔ kad 'lima ringgit')",
+            "Permainan kedai: 'Berapa harga ini?'",
+            "Nyanyian nilai wang berirama"
+          ],
+          "assessment": [
+            "Soal jawab lisan nilai wang",
+            "Lembaran padanan wang dan nilai"
+          ],
+          "aids": [
+            "Replika wang pelbagai nilai",
+            "Kad perkataan nilai (lima sen, dua ringgit, dsb.)",
+            "Barangan mainan untuk kedai"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Masa dan Waktu": {
+      "Mengenal Waktu Harian dan Jam Analog": [
+        {
+          "standards": "4.1.1 Mengenal waktu dalam sehari (pagi, tengah hari, petang, malam)",
+          "objectives": "Murid dapat mengaitkan aktiviti harian dengan waktu (pagi, petang, malam).",
+          "activities": [
+            "Susun kad aktiviti mengikut urutan waktu (bangun pagi, tidur malam)",
+            "Lukis aktiviti pada waktu tertentu",
+            "Perbincangan: 'Apa kamu buat waktu petang?'"
+          ],
+          "assessment": [
+            "Lembaran susun aktiviti mengikut waktu",
+            "Pentaksiran lisan semasa perbincangan"
+          ],
+          "aids": [
+            "Kad gambar aktiviti harian",
+            "Carta waktu sehari",
+            "Jam besar tanpa nombor (untuk konteks)"
+          ]
+        },
+        {
+          "standards": "4.1.2 Membaca waktu pada jam analog (jam tepat dan separuh jam)",
+          "objectives": "Murid dapat membaca dan menyatakan waktu jam tepat dan separuh jam pada muka jam analog.",
+          "activities": [
+            "Gunakan jam analog besar untuk tunjuk waktu",
+            "Permainan 'Tunjuk Waktu' secara berpasangan",
+            "Lukis jarum jam pada muka jam kosong"
+          ],
+          "assessment": [
+            "Lembaran lukis jarum jam",
+            "Ujian lisan: 'Pukul berapa sekarang?'"
+          ],
+          "aids": [
+            "Jam analog boleh gerak",
+            "Lembaran muka jam kosong",
+            "Kad waktu (pukul 3, pukul 4.30)"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Ukuran dan Sukatan": {
+      "Membanding Ukuran Menggunakan Unit Bukan Piawai": [
+        {
+          "standards": "5.1.1 Membanding panjang dua objek menggunakan unit bukan piawai",
+          "objectives": "Murid dapat membanding dan menyatakan objek yang lebih panjang atau lebih pendek menggunakan jengkal, pensel, atau batang ais krim.",
+          "activities": [
+            "Ukur meja menggunakan jengkal",
+            "Banding panjang tali menggunakan klip kertas",
+            "Aktiviti 'Siapa Lebih Panjang?' dalam kumpulan"
+          ],
+          "assessment": [
+            "Lembaran rekod perbandingan panjang",
+            "Pemerhatian semasa aktiviti ukuran"
+          ],
+          "aids": [
+            "Tali, pensel, batang ais krim",
+            "Klip kertas sebagai unit ukuran",
+            "Carta rekod ukuran"
+          ]
+        },
+        {
+          "standards": "5.1.2 Membanding berat dan isipadu cecair menggunakan unit bukan piawai",
+          "objectives": "Murid dapat membanding berat (lebih berat/ringan) dan isipadu cecair (lebih banyak/sedikit) menggunakan alat harian.",
+          "activities": [
+            "Timbang beg gula vs beg kapas menggunakan tangan",
+            "Tuang air ke dalam bekas berbeza saiz, banding isipadu",
+            "Permainan 'Teka Berat' dengan beg misteri"
+          ],
+          "assessment": [
+            "Lembaran catatan perbandingan",
+            "Soal jawab lisan: 'Mana lebih berat?'"
+          ],
+          "aids": [
+            "Beg berisi objek berbeza berat",
+            "Bekas air lutsinar pelbagai saiz",
+            "Air berwarna untuk isipadu"
+          ]
+        }
+      ]
+    },
+    "Unit 6: Ruang": {
+      "Mengenal Bentuk 2D dan 3D": [
+        {
+          "standards": "6.1.1 Mengenal dan menamakan bentuk 2D: segi empat, segi tiga, bulatan",
+          "objectives": "Murid dapat mengenal pasti dan menamakan bentuk dua dimensi dalam persekitaran.",
+          "activities": [
+            "Cari bentuk 2D di dalam kelas",
+            "Bina bentuk menggunakan batang ais krim dan playdough",
+            "Permainan 'Teka Bentuk' dengan kad gambar"
+          ],
+          "assessment": [
+            "Lembaran padanan bentuk dan nama",
+            "Pentaksiran semasa aktiviti cari bentuk"
+          ],
+          "aids": [
+            "Kad bentuk 2D",
+            "Objek sebenar (buku = segi empat, jam = bulatan)",
+            "Batang ais krim dan playdough"
+          ]
+        },
+        {
+          "standards": "6.1.2 Mengenal dan menamakan bentuk 3D: kubus, kuboid, sfera",
+          "objectives": "Murid dapat mengenal pasti dan menamakan bentuk tiga dimensi dalam kehidupan seharian.",
+          "activities": [
+            "Kumpulkan objek 3D dari rumah (kotak, bola, tin susu)",
+            "Bina menara menggunakan kotak (kuboid) dan tin (sfera/toroid)",
+            "Main 'Tangkap Bentuk' – guru sebut, murid tunjuk"
+          ],
+          "assessment": [
+            "Senarai semak pengenalan bentuk 3D",
+            "Lembaran kerja kenal pasti bentuk 3D"
+          ],
+          "aids": [
+            "Kotak (kuboid), dadu (kubus), bola (sfera)",
+            "Kad gambar bentuk 3D",
+            "Carta ciri bentuk 3D"
+          ]
+        }
+      ]
+    },
+    "Unit 7: Perwakilan Data": {
+      "Mengumpul dan Menyusun Data": [
+        {
+          "standards": "7.1.1 Mengumpul data melalui pemerhatian dan soal selidik mudah",
+          "objectives": "Murid dapat mengumpul data tentang minat rakan (contoh: warna kegemaran) melalui soal selidik lisan.",
+          "activities": [
+            "Tanya rakan: 'Warna kegemaran kamu?'",
+            "Kumpul data menggunakan kad warna",
+            "Catat jawapan dalam jadual mudah"
+          ],
+          "assessment": [
+            "Rekod data dalam jadual",
+            "Pentaksiran semasa proses pengumpulan"
+          ],
+          "aids": [
+            "Kad warna (merah, biru, hijau)",
+            "Jadual rekod kosong",
+            "Stiker untuk tanda jawapan"
+          ]
+        },
+        {
+          "standards": "7.1.2 Menyusun data menggunakan objek atau gambar",
+          "objectives": "Murid dapat menyusun data yang dikumpul dalam bentuk carta objek atau carta gambar.",
+          "activities": [
+            "Susun kasut mengikut warna di lantai",
+            "Lekat gambar buah mengikut jenis di papan kenyataan",
+            "Bina carta gambar 'Haiwan Peliharaan Kelas'"
+          ],
+          "assessment": [
+            "Pemerhatian ketepatan penyusunan",
+            "Pentaksiran hasil carta gambar"
+          ],
+          "aids": [
+            "Gambar haiwan/buah/warna",
+            "Papan kenyataan atau kertas mahjung",
+            "Gambar kasut atau objek sebenar"
+          ]
+        }
+      ]
+    }
+  },
+  "TAHUN 2": {
+    "Unit 1: Nombor Bulat hingga 1000": {
+      "Membilang, Menulis, dan Membandingkan Nombor": [
+        {
+          "standards": "2.1.1 Membilang nombor hingga 1000 secara menaik dan menurun",
+          "objectives": "Murid dapat membilang nombor hingga 1000 dalam urutan menaik dan menurun dengan lancar.",
+          "activities": [
+            "Gunakan garis nombor besar di lantai untuk berjalan sambil membilang",
+            "Permainan 'Lompat Nombor' – murid lompat ke nombor tertentu",
+            "Nyanyian lagu membilang 100–1000"
+          ],
+          "assessment": [
+            "Ujian lisan membilang 100–1000",
+            "Pemerhatian ketepatan dan kelancaran"
+          ],
+          "aids": [
+            "Garis nombor besar (100–1000)",
+            "Kad nombor untuk susun semula",
+            "Jam randik untuk masa bilangan"
+          ]
+        },
+        {
+          "standards": "2.1.2 Menulis dan membandingkan nombor hingga 1000",
+          "objectives": "Murid dapat menulis nombor hingga 1000 dalam angka dan membandingkan dua nombor menggunakan simbol >, <, =.",
+          "activities": [
+            "Isi tempat kosong pada jadual nombor",
+            "Permainan 'Nombor Lebih Besar' – banding kad nombor",
+            "Gunakan blok asas sepuluh untuk bina dan banding nombor"
+          ],
+          "assessment": [
+            "Lembaran kerja tulis dan banding nombor",
+            "Soal jawab lisan: 'Mana lebih besar, 345 atau 354?'"
+          ],
+          "aids": [
+            "Blok asas sepuluh (ratus, puluh, sa)",
+            "Kad nombor 100–1000",
+            "Simbol >, <, = besar untuk papan"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Penambahan Hingga 1000": {
+      "Penambahan Tanpa dan Dengan Mengumpul Semula": [
+        {
+          "standards": "2.2.1 Menambah dua nombor hingga 1000 tanpa mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah hingga 1000 tanpa mengumpul semula menggunakan objek konkrit atau algoritma.",
+          "activities": [
+            "Gunakan dekak-dekak untuk tambah tanpa kumpul semula",
+            "Tulis ayat matematik pada whiteboard",
+            "Permainan 'Tambah Cepat' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah tanpa kumpul semula",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Dekak-dekak",
+            "Whiteboard dan pen marker",
+            "Kad ayat matematik"
+          ]
+        },
+        {
+          "standards": "2.2.2 Menambah dua nombor hingga 1000 dengan mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah hingga 1000 dengan mengumpul semula menggunakan blok asas sepuluh atau algoritma.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses kumpul semula",
+            "Aktiviti 'Pecahkan Ratus' – daripada 10 puluh jadi 1 ratus",
+            "Selesaikan masalah harian: 'Ali ada 456 biji guli, dapat lagi 278'"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah dengan kumpul semula",
+            "Penyelesaian masalah dalam buku latihan"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah tambah dengan kumpul semula",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Penolakan Hingga 1000": {
+      "Penolakan Tanpa dan Dengan Mengumpul Semula": [
+        {
+          "standards": "2.3.1 Menolak dua nombor hingga 1000 tanpa mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tolak hingga 1000 tanpa mengumpul semula menggunakan objek konkrit atau algoritma.",
+          "activities": [
+            "Gunakan dekak-dekak untuk tolak tanpa kumpul semula",
+            "Tulis ayat matematik pada kad",
+            "Permainan 'Ambil & Kira' – ambil objek dan kira baki"
+          ],
+          "assessment": [
+            "Lembaran operasi tolak tanpa kumpul semula",
+            "Pemerhatian semasa aktiviti"
+          ],
+          "aids": [
+            "Dekak-dekak",
+            "Kad ayat matematik tolak",
+            "Objek konkrit (manik, guli)"
+          ]
+        },
+        {
+          "standards": "2.3.2 Menolak dua nombor hingga 1000 dengan mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tolak hingga 1000 dengan mengumpul semula menggunakan blok asas sepuluh atau algoritma.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses pinjam",
+            "Aktiviti 'Pinjam Satu' – tukar 1 ratus kepada 10 puluh",
+            "Selesaikan masalah harian: 'Ibu ada 800 biji kacang, guna 345'"
+          ],
+          "assessment": [
+            "Lembaran operasi tolak dengan kumpul semula",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah tolak dengan kumpul semula",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Pendaraban (Dasar)": {
+      "Memperkenalkan Sifir 2, 5, 10": [
+        {
+          "standards": "2.4.1 Mengenal konsep pendaraban sebagai penambahan berulang (sifir 2, 5, 10)",
+          "objectives": "Murid dapat menyatakan pendaraban sebagai penambahan berulang (contoh: 3 × 5 = 5 + 5 + 5).",
+          "activities": [
+            "Gunakan kad gambar untuk tunjuk kumpulan (contoh: 4 kumpulan 5 epal)",
+            "Nyanyian sifir 2, 5, 10 berirama",
+            "Bina ayat matematik daripada gambar kumpulan"
+          ],
+          "assessment": [
+            "Lembaran padanan penambahan berulang dengan pendaraban",
+            "Ujian lisan: 'Berapa 4 × 2?'"
+          ],
+          "aids": [
+            "Kad gambar kumpulan objek",
+            "Carta sifir 2, 5, 10",
+            "Mainan kumpulan (guli, manik)"
+          ]
+        },
+        {
+          "standards": "2.4.2 Menyatakan fakta asas pendaraban sifir 2, 5, 10 secara spontan",
+          "objectives": "Murid dapat menyatakan fakta asas pendaraban sifir 2, 5, 10 secara cepat dan tepat.",
+          "activities": [
+            "Kuiz sifir 1 minit",
+            "Permainan kad 'Padanan Sifir'",
+            "Lompat nombor sifir 5 (5, 10, 15...)"
+          ],
+          "assessment": [
+            "Ujian lisan fakta sifir",
+            "Rekod masa menjawab 10 soalan sifir"
+          ],
+          "aids": [
+            "Kad sifir 2, 5, 10",
+            "Jam randik",
+            "Garis nombor sifir"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Pembahagian (Dasar)": {
+      "Pembahagian Sebagai Pengumpulan Semula dan Kongsi Sama Rata": [
+        {
+          "standards": "2.5.1 Mengenal konsep pembahagian sebagai pengumpulan semula (sifir 2, 5, 10)",
+          "objectives": "Murid dapat menyatakan pembahagian sebagai pengumpulan semula (contoh: 10 ÷ 2 = 5 kumpulan 2).",
+          "activities": [
+            "Bahagi guli dalam bekas sama rata",
+            "Gunakan kad gambar untuk tunjuk pembahagian sebagai kumpulan",
+            "Permainan 'Kongsi Sama Rata' dengan objek mainan"
+          ],
+          "assessment": [
+            "Lembaran kerja padanan pembahagian dengan kumpulan",
+            "Pentaksiran semasa aktiviti kongsi"
+          ],
+          "aids": [
+            "Guli/manik",
+            "Kad gambar pembahagian",
+            "Bekas plastik untuk kumpulan"
+          ]
+        },
+        {
+          "standards": "2.5.2 Mengenal konsep pembahagian sebagai kongsi sama rata (sifir 2, 5, 10)",
+          "objectives": "Murid dapat menyatakan pembahagian sebagai kongsi sama rata (contoh: 10 ÷ 2 = 5 diberi kepada 2 orang).",
+          "activities": [
+            "Kongsi gula-gula mainan kepada rakan",
+            "Drama pendek: 'Saya ada 15 gula-gula, kongsi kepada 5 rakan'",
+            "Gunakan blok asas sepuluh untuk tunjuk pembahagian"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah pembahagian",
+            "Pemerhatian semasa drama mini"
+          ],
+          "aids": [
+            "Gula-gula mainan",
+            "Kad cerita pembahagian",
+            "Blok asas sepuluh"
+          ]
+        }
+      ]
+    },
+    "Unit 6: Pecahan (Separuh, Suku, Satu Per Tiga)": {
+      "Memahami dan Menamakan Pecahan Wajar Mudah": [
+        {
+          "standards": "2.6.1 Mengenal dan menamakan pecahan ½, ⅓, ¼ sebagai sebahagian daripada satu keseluruhan",
+          "objectives": "Murid dapat mengenal pasti dan menamakan pecahan ½, ⅓, ¼ melalui lipatan dan bahagian sama.",
+          "activities": [
+            "Lipat kertas menjadi 2, 3, 4 bahagian sama",
+            "Warnakan satu bahagian daripada bentuk dibahagi",
+            "Gunakan pizza mainan untuk tunjuk pecahan"
+          ],
+          "assessment": [
+            "Lembaran mewarnakan pecahan",
+            "Soal jawab lisan: 'Ini ⅓ atau ¼?'"
+          ],
+          "aids": [
+            "Kertas A4 pelbagai warna",
+            "Pizza mainan atau model kek",
+            "Kad pecahan visual"
+          ]
+        },
+        {
+          "standards": "2.6.2 Membandingkan pecahan ½, ⅓, ¼ menggunakan model visual",
+          "objectives": "Murid dapat membandingkan saiz pecahan ½, ⅓, ¼ dan menyatakan yang mana lebih besar/kecil.",
+          "activities": [
+            "Susun kad pecahan mengikut saiz",
+            "Gunakan bulatan kertas untuk banding saiz bahagian",
+            "Permainan 'Pecahan Terbesar' dalam kumpulan"
+          ],
+          "assessment": [
+            "Lembaran banding pecahan",
+            "Pentaksiran lisan: 'Mana lebih besar, ½ atau ¼?'"
+          ],
+          "aids": [
+            "Kad pecahan visual (½, ⅓, ¼)",
+            "Bulatan kertas untuk potong dan banding",
+            "Carta perbandingan pecahan"
+          ]
+        }
+      ]
+    },
+    "Unit 7: Wang Hingga RM100": {
+      "Mengenal, Mengira, dan Menyelesaikan Masalah Melibatkan Wang": [
+        {
+          "standards": "2.7.1 Mengenal dan mengira nilai wang hingga RM100",
+          "objectives": "Murid dapat mengenal pasti dan mengira jumlah wang hingga RM100 menggunakan duit syiling dan wang kertas.",
+          "activities": [
+            "Kedai mainan: beli barang dengan wang mainan",
+            "Jumlahkan wang dalam beg dan catat jumlah",
+            "Padankan kad wang dengan nilai (RM50, RM20, dsb.)"
+          ],
+          "assessment": [
+            "Lembaran hitung jumlah wang",
+            "Pemerhatian semasa permainan kedai"
+          ],
+          "aids": [
+            "Wang replika hingga RM100",
+            "Barangan mainan dengan harga",
+            "Kad nilai wang"
+          ]
+        },
+        {
+          "standards": "2.7.2 Menyelesaikan masalah harian mudah melibatkan wang hingga RM100",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti membeli barang dan mencari baki menggunakan operasi tambah/tolak.",
+          "activities": [
+            "Drama: 'Beli roti RM2, bayar RM5, berapa baki?'",
+            "Gunakan kad cerita masalah wang",
+            "Bina ayat matematik dari situasi sebenar"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah wang",
+            "Pentaksiran semasa persembahan drama"
+          ],
+          "aids": [
+            "Kad cerita wang",
+            "Objek sebenar (roti plastik, botol air mainan)",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 8: Masa dan Waktu (Tahun dan Bulan)": {
+      "Membaca Waktu dan Hubungan Unit Masa": [
+        {
+          "standards": "2.8.1 Membaca waktu pada jam analog hingga lima minit",
+          "objectives": "Murid dapat membaca dan menyatakan waktu pada jam analog hingga lima minit (contoh: pukul 3.15, 4.25).",
+          "activities": [
+            "Gunakan jam analog besar untuk tunjuk waktu",
+            "Permainan 'Tunjuk Waktu' secara berpasangan",
+            "Lukis jarum jam pada muka jam kosong"
+          ],
+          "assessment": [
+            "Lembaran lukis jarum jam",
+            "Ujian lisan: 'Pukul berapa ini?'"
+          ],
+          "aids": [
+            "Jam analog boleh gerak",
+            "Lembaran muka jam kosong",
+            "Kad waktu (pukul 3.15, 4.25)"
+          ]
+        },
+        {
+          "standards": "2.8.2 Mengetahui hubungan antara unit masa (hari dan minggu, bulan dan tahun)",
+          "objectives": "Murid dapat menyatakan hubungan antara hari–minggu dan bulan–tahun (contoh: 1 minggu = 7 hari, 1 tahun = 12 bulan).",
+          "activities": [
+            "Gunakan kalendar untuk kira hari dalam minggu/bulan",
+            "Permainan 'Kira Hari' – berapa hari dalam 2 minggu?",
+            "Bina carta hubungan unit masa"
+          ],
+          "assessment": [
+            "Lembaran padanan unit masa",
+            "Soal jawab lisan: 'Berapa bulan dalam setahun?'"
+          ],
+          "aids": [
+            "Kalendar sekolah",
+            "Carta hubungan masa (hari, minggu, bulan, tahun)",
+            "Kad soalan hubungan masa"
+          ]
+        }
+      ]
+    },
+    "Unit 9: Ukuran (Panjang, Jisim, Isipadu Cecair)": {
+      "Mengukur Menggunakan Unit Piawai": [
+        {
+          "standards": "2.9.1 Mengukur panjang objek menggunakan unit piawai (cm, m)",
+          "objectives": "Murid dapat mengukur panjang objek seperti buku, meja, atau tali menggunakan pembaris atau pita ukur dalam unit cm dan m.",
+          "activities": [
+            "Ukur panjang buku teks dan rekod dalam cm",
+            "Ukur tinggi rakan menggunakan pita ukur",
+            "Permainan 'Siapa Paling Panjang?' – ukur tali"
+          ],
+          "assessment": [
+            "Lembaran rekod ukuran panjang",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Pembaris, pita ukur",
+            "Objek untuk diukur (buku, tali, meja)",
+            "Lembaran rekod ukuran"
+          ]
+        },
+        {
+          "standards": "2.9.2 Mengukur jisim dan isipadu cecair menggunakan unit piawai (g, kg, ml, liter)",
+          "objectives": "Murid dapat mengukur jisim objek ringan (g/kg) dan isipadu cecair (ml/liter) menggunakan timbangan dan bikar.",
+          "activities": [
+            "Timbang buah-buahan ringan dalam gram",
+            "Tuang air ke dalam bikar dan baca isipadu dalam ml",
+            "Permainan 'Isipadu Mana Lebih Banyak?'"
+          ],
+          "assessment": [
+            "Lembaran rekod jisim dan isipadu",
+            "Soal jawab lisan: 'Berapa gram ini?'"
+          ],
+          "aids": [
+            "Timbangan digital atau analog",
+            "Bikar ukur (ml, liter)",
+            "Air berwarna, buah-buahan mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 10: Bentuk 2D dan 3D": {
+      "Menerangkan Ciri-Ciri Asas Bentuk": [
+        {
+          "standards": "2.10.1 Menerangkan ciri-ciri bentuk 2D (bilangan sisi, bucu)",
+          "objectives": "Murid dapat mengenal pasti dan menyatakan bilangan sisi dan bucu bagi bentuk 2D seperti segi empat, segi tiga, bulatan.",
+          "activities": [
+            "Gunakan kad bentuk 2D untuk kira sisi dan bucu",
+            "Bina bentuk dengan batang ais krim dan kira ciri",
+            "Permainan 'Cari Ciri' – guru sebut ciri, murid tunjuk bentuk"
+          ],
+          "assessment": [
+            "Lembaran kenal pasti ciri bentuk 2D",
+            "Pentaksiran lisan: 'Berapa bucu segi tiga?'"
+          ],
+          "aids": [
+            "Kad bentuk 2D",
+            "Batang ais krim, playdough",
+            "Carta ciri bentuk 2D"
+          ]
+        },
+        {
+          "standards": "2.10.2 Menerangkan ciri-ciri bentuk 3D (permukaan, bucu, sisi lurus/melengkung)",
+          "objectives": "Murid dapat mengenal pasti dan menyatakan ciri-ciri bentuk 3D seperti kubus, kuboid, sfera (contoh: permukaan rata atau melengkung).",
+          "activities": [
+            "Sentuh dan huraikan ciri bentuk 3D",
+            "Bina menara dengan bentuk 3D dan huraikan ciri",
+            "Permainan 'Teka Bentuk' – guru huraikan ciri, murid teka"
+          ],
+          "assessment": [
+            "Senarai semak ciri bentuk 3D",
+            "Lembaran label ciri bentuk"
+          ],
+          "aids": [
+            "Model bentuk 3D (kubus, kuboid, sfera)",
+            "Kad gambar bentuk 3D",
+            "Carta ciri bentuk 3D"
+          ]
+        }
+      ]
+    },
+    "Unit 11: Pengurusan Data (Carta Palang Mudah)": {
+      "Membina dan Mentafsir Carta Palang": [
+        {
+          "standards": "2.11.1 Membina carta palang mudah berdasarkan data yang dikumpul",
+          "objectives": "Murid dapat membina carta palang mudah menggunakan data yang dikumpul (contoh: warna kegemaran rakan).",
+          "activities": [
+            "Kumpul data warna kegemaran rakan",
+            "Gunakan blok atau stiker untuk bina carta palang",
+            "Label paksi mendatar dan tegak"
+          ],
+          "assessment": [
+            "Hasil carta palang murid",
+            "Pemerhatian ketepatan pembinaan"
+          ],
+          "aids": [
+            "Kad warna untuk undi",
+            "Kertas mahjung dan stiker",
+            "Pensel warna untuk label"
+          ]
+        },
+        {
+          "standards": "2.11.2 Mentafsir maklumat daripada carta palang mudah",
+          "objectives": "Murid dapat membaca dan mentafsir maklumat daripada carta palang (contoh: warna paling popular, berapa orang suka biru).",
+          "activities": [
+            "Tafsir carta palang yang dibina sendiri",
+            "Soal jawab: 'Mana paling banyak?', 'Berapa orang suka merah?'",
+            "Permainan 'Teka Jawapan' berdasarkan carta"
+          ],
+          "assessment": [
+            "Lembaran soalan tafsiran carta",
+            "Pentaksiran lisan semasa perbincangan"
+          ],
+          "aids": [
+            "Contoh carta palang siap",
+            "Kad soalan tafsiran",
+            "Papan putih untuk perbincangan"
+          ]
+        }
+      ]
+    }
+  },
+  "TAHUN 3": {
+    "Unit 1: Nombor Bulat hingga 10,000": {
+      "Membaca, Menulis, dan Membandingkan Nombor": [
+        {
+          "standards": "3.1.1 Membaca dan menulis nombor hingga 10,000 dalam angka dan perkataan",
+          "objectives": "Murid dapat membaca dan menulis nombor hingga 10,000 dalam bentuk angka dan perkataan dengan betul.",
+          "activities": [
+            "Nyanyian lagu nombor hingga 10,000",
+            "Tulis nombor dari perkataan ke angka (contoh: 'tujuh ribu tiga ratus' → 7300)",
+            "Permainan 'Cari Nombor' – cari nombor pada carta besar"
+          ],
+          "assessment": [
+            "Lembaran tulis nombor dari perkataan",
+            "Ujian lisan: 'Baca nombor ini'"
+          ],
+          "aids": [
+            "Carta nombor 1–10,000",
+            "Kad perkataan nombor (ribu, ratus, puluh, sa)",
+            "Whiteboard dan pen marker"
+          ]
+        },
+        {
+          "standards": "3.1.2 Membandingkan dan menyusun nombor hingga 10,000",
+          "objectives": "Murid dapat membandingkan dua nombor hingga 10,000 dan menyusunnya mengikut urutan menaik atau menurun.",
+          "activities": [
+            "Susun kad nombor mengikut urutan",
+            "Permainan 'Nombor Terbesar' – banding nombor dalam kumpulan",
+            "Gunakan blok asas sepuluh untuk tunjuk nilai tempat"
+          ],
+          "assessment": [
+            "Lembaran susun nombor menaik/menurun",
+            "Pemerhatian semasa aktiviti permainan"
+          ],
+          "aids": [
+            "Kad nombor 1000–10,000",
+            "Blok asas sepuluh (ribu, ratus, puluh, sa)",
+            "Simbol >, <, = besar"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Penambahan Hingga 10,000": {
+      "Penambahan Tanpa dan Dengan Mengumpul Semula": [
+        {
+          "standards": "3.2.1 Menambah dua nombor hingga 10,000 tanpa mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah hingga 10,000 tanpa mengumpul semula menggunakan algoritma atau objek konkrit.",
+          "activities": [
+            "Gunakan dekak-dekak untuk tambah tanpa kumpul semula",
+            "Tulis ayat matematik pada papan putih",
+            "Permainan 'Tambah Cepat' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah tanpa kumpul semula",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Dekak-dekak",
+            "Whiteboard dan pen marker",
+            "Kad ayat matematik"
+          ]
+        },
+        {
+          "standards": "3.2.2 Menambah dua nombor hingga 10,000 dengan mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah hingga 10,000 dengan mengumpul semula menggunakan algoritma atau blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses kumpul semula",
+            "Aktiviti 'Pecahkan Ratus/Ribu' – daripada 10 puluh jadi 1 ratus",
+            "Selesaikan masalah harian: 'Syarikat ada 4,567 buku, beli lagi 2,893'"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah dengan kumpul semula",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah tambah dengan kumpul semula",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Penolakan Hingga 10,000": {
+      "Penolakan Tanpa dan Dengan Mengumpul Semula": [
+        {
+          "standards": "3.3.1 Menolak dua nombor hingga 10,000 tanpa mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tolak hingga 10,000 tanpa mengumpul semula menggunakan algoritma atau objek konkrit.",
+          "activities": [
+            "Gunakan dekak-dekak untuk tolak tanpa kumpul semula",
+            "Tulis ayat matematik pada kad",
+            "Permainan 'Ambil & Kira' – ambil objek dan kira baki"
+          ],
+          "assessment": [
+            "Lembaran operasi tolak tanpa kumpul semula",
+            "Pemerhatian semasa aktiviti"
+          ],
+          "aids": [
+            "Dekak-dekak",
+            "Kad ayat matematik tolak",
+            "Objek konkrit (manik, guli)"
+          ]
+        },
+        {
+          "standards": "3.3.2 Menolak dua nombor hingga 10,000 dengan mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tolak hingga 10,000 dengan mengumpul semula menggunakan algoritma atau blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses pinjam",
+            "Aktiviti 'Pinjam Satu' – tukar 1 ribu kepada 10 ratus",
+            "Selesaikan masalah harian: 'Ibu ada 8,000 biji kacang, guna 3,456'"
+          ],
+          "assessment": [
+            "Lembaran operasi tolak dengan kumpul semula",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah tolak dengan kumpul semula",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Pendaraban (Dengan Nombor Satu Digit)": {
+      "Pendaraban Dengan Satu Digit": [
+        {
+          "standards": "3.4.1 Menyelesaikan pendaraban dua nombor (nombor dua digit × satu digit) tanpa mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan pendaraban dua digit dengan satu digit tanpa mengumpul semula menggunakan algoritma atau model visual.",
+          "activities": [
+            "Gunakan grid atau kotak untuk pendaraban",
+            "Tulis ayat matematik pada papan",
+            "Permainan 'Padanan Hasil Darab'"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban tanpa kumpul semula",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Grid pendaraban",
+            "Kad ayat matematik",
+            "Carta sifir 1–9"
+          ]
+        },
+        {
+          "standards": "3.4.2 Menyelesaikan pendaraban dua nombor (nombor dua digit × satu digit) dengan mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan pendaraban dua digit dengan satu digit dengan mengumpul semula menggunakan algoritma atau blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses kumpul semula",
+            "Aktiviti 'Kumpul Semula Darab' – daripada 10 sa jadi 1 puluh",
+            "Selesaikan masalah harian: 'Setiap beg ada 24 guli, 7 beg = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban dengan kumpul semula",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah pendaraban dengan kumpul semula",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Pembahagian (Dengan Nombor Satu Digit)": {
+      "Pembahagian Dengan Satu Digit": [
+        {
+          "standards": "3.5.1 Menyelesaikan pembahagian dua nombor (nombor dua digit ÷ satu digit) tanpa baki",
+          "objectives": "Murid dapat menyelesaikan pembahagian dua digit dengan satu digit tanpa baki menggunakan algoritma atau model kongsi sama rata.",
+          "activities": [
+            "Bahagi guli dalam bekas sama rata",
+            "Gunakan kad gambar untuk tunjuk pembahagian",
+            "Permainan 'Kongsi Sama Rata' dengan objek mainan"
+          ],
+          "assessment": [
+            "Lembaran operasi pembahagian tanpa baki",
+            "Pentaksiran semasa aktiviti kongsi"
+          ],
+          "aids": [
+            "Guli/manik",
+            "Kad gambar pembahagian",
+            "Bekas plastik untuk kumpulan"
+          ]
+        },
+        {
+          "standards": "3.5.2 Menyelesaikan pembahagian dua nombor (nombor dua digit ÷ satu digit) dengan baki",
+          "objectives": "Murid dapat menyelesaikan pembahagian dua digit dengan satu digit dengan baki menggunakan algoritma atau model visual.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk baki",
+            "Drama pendek: 'Saya ada 25 gula-gula, kongsi kepada 4 rakan, berapa baki?'",
+            "Selesaikan masalah harian: '28 buku dibahagi 5 orang'"
+          ],
+          "assessment": [
+            "Lembaran operasi pembahagian dengan baki",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Kad cerita pembahagian",
+            "Objek sebenar (gula-gula, buku mainan)"
+          ]
+        }
+      ]
+    },
+    "Unit 6: Pecahan (Pecahan Wajar)": {
+      "Memahami dan Menulis Pecahan Wajar": [
+        {
+          "standards": "3.6.1 Memahami pecahan wajar dengan pengangka 1 dan penyebut hingga 10",
+          "objectives": "Murid dapat memahami dan menamakan pecahan wajar seperti ½, ⅓, ¼, ⅕, ..., ¹⁄₁₀ sebagai sebahagian daripada satu keseluruhan.",
+          "activities": [
+            "Lipat kertas menjadi 2, 3, 4, 5, 6, 8, 10 bahagian sama",
+            "Warnakan satu bahagian daripada bentuk dibahagi",
+            "Gunakan pizza mainan untuk tunjuk pecahan"
+          ],
+          "assessment": [
+            "Lembaran mewarnakan pecahan",
+            "Soal jawab lisan: 'Ini ¹⁄₈ atau ¹⁄₁₀?'"
+          ],
+          "aids": [
+            "Kertas A4 pelbagai warna",
+            "Pizza mainan atau model kek",
+            "Kad pecahan visual"
+          ]
+        },
+        {
+          "standards": "3.6.2 Menulis pecahan setara bagi pecahan wajar mudah",
+          "objectives": "Murid dapat menulis pecahan setara bagi pecahan wajar mudah seperti ½ = ²⁄₄ = ³⁄₆.",
+          "activities": [
+            "Gunakan bulatan kertas untuk tunjuk pecahan setara",
+            "Padankan kad pecahan setara",
+            "Permainan 'Cari Pasangan Setara' dalam kumpulan"
+          ],
+          "assessment": [
+            "Lembaran padanan pecahan setara",
+            "Pentaksiran lisan: 'Apa setara ½?'"
+          ],
+          "aids": [
+            "Kad pecahan setara",
+            "Bulatan kertas untuk potong dan banding",
+            "Carta pecahan setara"
+          ]
+        }
+      ]
+    },
+    "Unit 7: Perpuluhan (Perpuluhan hingga dua tempat perpuluhan)": {
+      "Mengenal dan Menulis Perpuluhan": [
+        {
+          "standards": "3.7.1 Mengenal dan menulis perpuluhan hingga dua tempat perpuluhan dalam konteks wang",
+          "objectives": "Murid dapat mengenal pasti dan menulis perpuluhan hingga dua tempat perpuluhan (contoh: RM5.75, RM12.30) dalam konteks wang.",
+          "activities": [
+            "Gunakan wang replika untuk tunjuk perpuluhan",
+            "Tulis harga barang dalam bentuk perpuluhan",
+            "Permainan kedai: 'Berapa harga ini? Tulis dalam RMXX.XX'"
+          ],
+          "assessment": [
+            "Lembaran tulis harga dalam perpuluhan",
+            "Pemerhatian semasa permainan kedai"
+          ],
+          "aids": [
+            "Wang replika (RM1, RM5, RM10, sen)",
+            "Barangan mainan dengan harga",
+            "Kad harga perpuluhan"
+          ]
+        },
+        {
+          "standards": "3.7.2 Mengenal dan menulis perpuluhan hingga dua tempat perpuluhan dalam konteks ukuran",
+          "objectives": "Murid dapat mengenal pasti dan menulis perpuluhan hingga dua tempat perpuluhan (contoh: 3.50 cm, 1.25 kg) dalam konteks ukuran.",
+          "activities": [
+            "Ukur panjang objek dan rekod dalam cm (contoh: 12.50 cm)",
+            "Timbang objek ringan dan rekod dalam kg (contoh: 0.75 kg)",
+            "Permainan 'Isipadu Cecair' – tuang air dan baca dalam liter (1.50 L)"
+          ],
+          "assessment": [
+            "Lembaran rekod ukuran dalam perpuluhan",
+            "Soal jawab lisan: 'Berapa cm ini?'"
+          ],
+          "aids": [
+            "Pembaris, pita ukur",
+            "Timbangan digital",
+            "Bikar ukur (ml, liter)"
+          ]
+        }
+      ]
+    },
+    "Unit 8: Wang Hingga RM1000": {
+      "Menyelesaikan Masalah Harian Melibatkan Wang": [
+        {
+          "standards": "3.8.1 Menyelesaikan masalah harian melibatkan tambah dan tolak wang hingga RM1000",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti membeli barang dan mencari baki menggunakan operasi tambah/tolak wang hingga RM1000.",
+          "activities": [
+            "Drama: 'Beli buku RM15.50, bayar RM20, berapa baki?'",
+            "Gunakan kad cerita masalah wang",
+            "Bina ayat matematik dari situasi sebenar"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah wang",
+            "Pentaksiran semasa persembahan drama"
+          ],
+          "aids": [
+            "Kad cerita wang",
+            "Objek sebenar (buku plastik, botol air mainan)",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "3.8.2 Menyelesaikan masalah harian melibatkan pendaraban dan pembahagian wang hingga RM1000",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti harga 5 unit atau harga seunit menggunakan pendaraban/pembahagian wang hingga RM1000.",
+          "activities": [
+            "Drama: 'Satu roti RM1.50, 4 roti = ?', 'RM10 untuk 5 epal, berapa seunit?'",
+            "Gunakan kad cerita masalah pendaraban/pembahagian wang",
+            "Permainan 'Kira Harga' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah pendaraban/pembahagian wang",
+            "Pemerhatian semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita wang",
+            "Objek sebenar (roti plastik, epal mainan)",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 9: Masa dan Waktu (Operasi Melibatkan Masa)": {
+      "Operasi Tambah dan Tolak Unit Masa": [
+        {
+          "standards": "3.9.1 Melakukan operasi tambah melibatkan unit masa (jam dan minit)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah melibatkan jam dan minit (contoh: 2 jam 30 minit + 1 jam 45 minit).",
+          "activities": [
+            "Gunakan jam analog besar untuk tunjuk tambah masa",
+            "Permainan 'Tambah Waktu' – tambah masa dalam kumpulan",
+            "Selesaikan masalah harian: 'Mula sekolah pukul 7.30, tamat pukul 12.15'"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah masa",
+            "Pentaksiran semasa aktiviti jam analog"
+          ],
+          "aids": [
+            "Jam analog boleh gerak",
+            "Lembaran muka jam kosong",
+            "Kad soalan masa"
+          ]
+        },
+        {
+          "standards": "3.9.2 Melakukan operasi tolak melibatkan unit masa (jam dan minit)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tolak melibatkan jam dan minit (contoh: 3 jam 20 minit – 1 jam 50 minit).",
+          "activities": [
+            "Gunakan jam analog untuk tunjuk tolak masa",
+            "Permainan 'Tolak Waktu' – tolak masa dalam pasangan",
+            "Selesaikan masalah harian: 'Mula kerja pukul 8.00, tamat pukul 4.30'"
+          ],
+          "assessment": [
+            "Lembaran operasi tolak masa",
+            "Pemerhatian semasa aktiviti"
+          ],
+          "aids": [
+            "Jam analog boleh gerak",
+            "Lembaran muka jam kosong",
+            "Kad soalan masa"
+          ]
+        }
+      ]
+    },
+    "Unit 10: Ukuran (Panjang, Jisim, Isipadu Cecair - Operasi Asas)": {
+      "Operasi Asas Dalam Ukuran": [
+        {
+          "standards": "3.10.1 Melakukan operasi tambah dan tolak melibatkan panjang (cm, m)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah dan tolak melibatkan panjang dalam unit cm dan m.",
+          "activities": [
+            "Ukur panjang dua objek, tambah/tolak hasilnya",
+            "Gunakan garis nombor untuk tunjuk operasi panjang",
+            "Selesaikan masalah harian: 'Tali A 2.5 m, Tali B 1.75 m, jumlahnya?'"
+          ],
+          "assessment": [
+            "Lembaran operasi panjang",
+            "Pemerhatian ketepatan pengukuran dan pengiraan"
+          ],
+          "aids": [
+            "Pembaris, pita ukur",
+            "Tali, papan kayu untuk diukur",
+            "Lembaran rekod ukuran"
+          ]
+        },
+        {
+          "standards": "3.10.2 Melakukan operasi tambah dan tolak melibatkan jisim (g, kg) dan isipadu cecair (ml, liter)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah dan tolak melibatkan jisim dan isipadu cecair dalam unit piawai.",
+          "activities": [
+            "Timbang dua objek, tambah/tolak jisimnya",
+            "Tuang dua cecair, tambah/tolak isipadunya",
+            "Selesaikan masalah harian: 'Air A 500 ml, Air B 350 ml, jumlahnya?'"
+          ],
+          "assessment": [
+            "Lembaran operasi jisim dan isipadu",
+            "Soal jawab lisan: 'Berapa jumlahnya?'"
+          ],
+          "aids": [
+            "Timbangan digital",
+            "Bikar ukur (ml, liter)",
+            "Air berwarna, objek ringan"
+          ]
+        }
+      ]
+    },
+    "Unit 11: Garis dan Sudut": {
+      "Mengenal Garis dan Jenis Sudut": [
+        {
+          "standards": "3.11.1 Mengenal garis lurus dan garis melengkung",
+          "objectives": "Murid dapat mengenal pasti dan membezakan antara garis lurus dan garis melengkung dalam bentuk 2D dan persekitaran.",
+          "activities": [
+            "Cari garis lurus dan melengkung di dalam kelas",
+            "Lukis garis lurus dan melengkung pada kertas",
+            "Permainan 'Teka Garis' – guru tunjuk, murid teka jenis garis"
+          ],
+          "assessment": [
+            "Lembaran kenal pasti garis",
+            "Pemerhatian semasa aktiviti lukisan"
+          ],
+          "aids": [
+            "Kad gambar bentuk 2D",
+            "Pensel, pembaris",
+            "Carta garis lurus vs melengkung"
+          ]
+        },
+        {
+          "standards": "3.11.2 Mengenal jenis sudut: sudut tegak, sudut tirus, sudut cakah",
+          "objectives": "Murid dapat mengenal pasti dan menamakan jenis sudut (tegak, tirus, cakah) menggunakan model atau objek sebenar.",
+          "activities": [
+            "Gunakan sudut model (kertas lipat) untuk tunjuk jenis sudut",
+            "Cari sudut di persekitaran (meja, pintu, buku)",
+            "Permainan 'Teka Sudut' – guru tunjuk sudut, murid teka nama"
+          ],
+          "assessment": [
+            "Lembaran label jenis sudut",
+            "Soal jawab lisan: 'Ini sudut apa?'"
+          ],
+          "aids": [
+            "Model sudut (kertas lipat, sudut plastik)",
+            "Kad gambar sudut",
+            "Carta jenis sudut"
+          ]
+        }
+      ]
+    },
+    "Unit 12: Perimeter dan Luas": {
+      "Mengira Perimeter dan Luas Segi Empat": [
+        {
+          "standards": "3.12.1 Mengira perimeter segi empat sama dan segi empat tepat",
+          "objectives": "Murid dapat mengira perimeter segi empat sama dan segi empat tepat menggunakan rumus atau kaedah pengukuran.",
+          "activities": [
+            "Ukur sisi segi empat dan jumlahkan untuk cari perimeter",
+            "Gunakan blok asas sepuluh untuk bina segi empat dan kira perimeter",
+            "Selesaikan masalah harian: 'Pagar taman segi empat 5m x 3m, berapa panjang pagar?'"
+          ],
+          "assessment": [
+            "Lembaran hitung perimeter",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Pembaris, pita ukur",
+            "Blok asas sepuluh",
+            "Lembaran bentuk segi empat"
+          ]
+        },
+        {
+          "standards": "3.12.2 Mengira luas segi empat sama dan segi empat tepat",
+          "objectives": "Murid dapat mengira luas segi empat sama dan segi empat tepat menggunakan rumus atau kaedah petak.",
+          "activities": [
+            "Gunakan petak kertas untuk kira luas",
+            "Bina segi empat dengan blok asas sepuluh dan kira luas",
+            "Selesaikan masalah harian: 'Lantai 4m x 3m, berapa luasnya?'"
+          ],
+          "assessment": [
+            "Lembaran hitung luas",
+            "Pentaksiran semasa aktiviti petak"
+          ],
+          "aids": [
+            "Kertas petak (grid paper)",
+            "Blok asas sepuluh",
+            "Lembaran bentuk segi empat"
+          ]
+        }
+      ]
+    },
+    "Unit 13: Pengurusan Data (Carta Palang)": {
+      "Mentafsir Carta Palang dengan Skala": [
+        {
+          "standards": "3.13.1 Membina carta palang dengan skala mudah (1 unit = 1, 2, 5, 10)",
+          "objectives": "Murid dapat membina carta palang menggunakan data yang dikumpul dan menentukan skala yang sesuai (1 unit = 1, 2, 5, 10).",
+          "activities": [
+            "Kumpul data bilangan buku yang dibaca oleh rakan",
+            "Bina carta palang dengan skala 1 unit = 2 orang",
+            "Label paksi mendatar dan tegak dengan skala"
+          ],
+          "assessment": [
+            "Hasil carta palang murid",
+            "Pemerhatian ketepatan pembinaan dan skala"
+          ],
+          "aids": [
+            "Kad data untuk undi",
+            "Kertas mahjung dan stiker",
+            "Pensel warna untuk label"
+          ]
+        },
+        {
+          "standards": "3.13.2 Mentafsir maklumat daripada carta palang dengan skala",
+          "objectives": "Murid dapat membaca dan mentafsir maklumat daripada carta palang dengan skala (contoh: 1 unit = 5 orang, berapa orang suka biru?).",
+          "activities": [
+            "Tafsir carta palang yang dibina sendiri",
+            "Soal jawab: 'Mana paling banyak?', 'Berapa orang suka merah jika 1 unit = 5?'",
+            "Permainan 'Teka Jawapan' berdasarkan carta"
+          ],
+          "assessment": [
+            "Lembaran soalan tafsiran carta",
+            "Pentaksiran lisan semasa perbincangan"
+          ],
+          "aids": [
+            "Contoh carta palang dengan skala",
+            "Kad soalan tafsiran",
+            "Papan putih untuk perbincangan"
+          ]
+        }
+      ]
+    }
+  },
+  "TAHUN 4": {
+    "Unit 1: Nombor Bulat hingga 100,000": {
+      "Membaca, Menulis, dan Membandingkan Nombor": [
+        {
+          "standards": "4.1.1 Membaca dan menulis nombor hingga 100,000 dalam angka dan perkataan",
+          "objectives": "Murid dapat membaca dan menulis nombor hingga 100,000 dalam bentuk angka dan perkataan dengan betul.",
+          "activities": [
+            "Nyanyian lagu nombor hingga 100,000",
+            "Tulis nombor dari perkataan ke angka (contoh: 'empat puluh lima ribu tiga ratus' → 45,300)",
+            "Permainan 'Cari Nombor' – cari nombor pada carta besar"
+          ],
+          "assessment": [
+            "Lembaran tulis nombor dari perkataan",
+            "Ujian lisan: 'Baca nombor ini'"
+          ],
+          "aids": [
+            "Carta nombor 1–100,000",
+            "Kad perkataan nombor (ribu, ratus, puluh, sa)",
+            "Whiteboard dan pen marker"
+          ]
+        },
+        {
+          "standards": "4.1.2 Membandingkan dan menyusun nombor hingga 100,000",
+          "objectives": "Murid dapat membandingkan dua nombor hingga 100,000 dan menyusunnya mengikut urutan menaik atau menurun.",
+          "activities": [
+            "Susun kad nombor mengikut urutan",
+            "Permainan 'Nombor Terbesar' – banding nombor dalam kumpulan",
+            "Gunakan blok asas sepuluh untuk tunjuk nilai tempat"
+          ],
+          "assessment": [
+            "Lembaran susun nombor menaik/menurun",
+            "Pemerhatian semasa aktiviti permainan"
+          ],
+          "aids": [
+            "Kad nombor 10,000–100,000",
+            "Blok asas sepuluh (puluh ribu, ribu, ratus, puluh, sa)",
+            "Simbol >, <, = besar"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Penambahan Hingga 100,000": {
+      "Penambahan Tanpa dan Dengan Mengumpul Semula": [
+        {
+          "standards": "4.2.1 Menambah dua nombor hingga 100,000 tanpa mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah hingga 100,000 tanpa mengumpul semula menggunakan algoritma atau objek konkrit.",
+          "activities": [
+            "Gunakan dekak-dekak untuk tambah tanpa kumpul semula",
+            "Tulis ayat matematik pada papan putih",
+            "Permainan 'Tambah Cepat' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah tanpa kumpul semula",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Dekak-dekak",
+            "Whiteboard dan pen marker",
+            "Kad ayat matematik"
+          ]
+        },
+        {
+          "standards": "4.2.2 Menambah dua nombor hingga 100,000 dengan mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah hingga 100,000 dengan mengumpul semula menggunakan algoritma atau blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses kumpul semula",
+            "Aktiviti 'Pecahkan Ratus/Ribu/Puluh Ribu' – daripada 10 ratus jadi 1 ribu",
+            "Selesaikan masalah harian: 'Syarikat ada 45,678 buku, beli lagi 28,934'"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah dengan kumpul semula",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah tambah dengan kumpul semula",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Penolakan Hingga 100,000": {
+      "Penolakan Tanpa dan Dengan Mengumpul Semula": [
+        {
+          "standards": "4.3.1 Menolak dua nombor hingga 100,000 tanpa mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tolak hingga 100,000 tanpa mengumpul semula menggunakan algoritma atau objek konkrit.",
+          "activities": [
+            "Gunakan dekak-dekak untuk tolak tanpa kumpul semula",
+            "Tulis ayat matematik pada kad",
+            "Permainan 'Ambil & Kira' – ambil objek dan kira baki"
+          ],
+          "assessment": [
+            "Lembaran operasi tolak tanpa kumpul semula",
+            "Pemerhatian semasa aktiviti"
+          ],
+          "aids": [
+            "Dekak-dekak",
+            "Kad ayat matematik tolak",
+            "Objek konkrit (manik, guli)"
+          ]
+        },
+        {
+          "standards": "4.3.2 Menolak dua nombor hingga 100,000 dengan mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tolak hingga 100,000 dengan mengumpul semula menggunakan algoritma atau blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses pinjam",
+            "Aktiviti 'Pinjam Satu' – tukar 1 puluh ribu kepada 10 ribu",
+            "Selesaikan masalah harian: 'Ibu ada 80,000 biji kacang, guna 34,567'"
+          ],
+          "assessment": [
+            "Lembaran operasi tolak dengan kumpul semula",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah tolak dengan kumpul semula",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Pendaraban (Dengan Nombor Dua Digit)": {
+      "Pendaraban Dengan Dua Digit": [
+        {
+          "standards": "4.4.1 Menyelesaikan pendaraban dua nombor (nombor dua digit × dua digit) tanpa mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan pendaraban dua digit dengan dua digit tanpa mengumpul semula menggunakan algoritma atau grid.",
+          "activities": [
+            "Gunakan grid pendaraban (box method)",
+            "Tulis ayat matematik pada papan",
+            "Permainan 'Padanan Hasil Darab'"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban tanpa kumpul semula",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Grid pendaraban",
+            "Kad ayat matematik",
+            "Carta sifir 1–9"
+          ]
+        },
+        {
+          "standards": "4.4.2 Menyelesaikan pendaraban dua nombor (nombor dua digit × dua digit) dengan mengumpul semula",
+          "objectives": "Murid dapat menyelesaikan pendaraban dua digit dengan dua digit dengan mengumpul semula menggunakan algoritma atau blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses kumpul semula",
+            "Aktiviti 'Kumpul Semula Darab' – daripada 10 sa jadi 1 puluh",
+            "Selesaikan masalah harian: 'Setiap beg ada 24 guli, 35 beg = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban dengan kumpul semula",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah pendaraban dengan kumpul semula",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Pembahagian (Dengan Nombor Dua Digit)": {
+      "Pembahagian Dengan Dua Digit": [
+        {
+          "standards": "4.5.1 Menyelesaikan pembahagian dua nombor (nombor tiga digit ÷ dua digit) tanpa baki",
+          "objectives": "Murid dapat menyelesaikan pembahagian tiga digit dengan dua digit tanpa baki menggunakan algoritma atau model kongsi sama rata.",
+          "activities": [
+            "Bahagi guli dalam bekas sama rata",
+            "Gunakan kad gambar untuk tunjuk pembahagian",
+            "Permainan 'Kongsi Sama Rata' dengan objek mainan"
+          ],
+          "assessment": [
+            "Lembaran operasi pembahagian tanpa baki",
+            "Pentaksiran semasa aktiviti kongsi"
+          ],
+          "aids": [
+            "Guli/manik",
+            "Kad gambar pembahagian",
+            "Bekas plastik untuk kumpulan"
+          ]
+        },
+        {
+          "standards": "4.5.2 Menyelesaikan pembahagian dua nombor (nombor tiga digit ÷ dua digit) dengan baki",
+          "objectives": "Murid dapat menyelesaikan pembahagian tiga digit dengan dua digit dengan baki menggunakan algoritma atau model visual.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk baki",
+            "Drama pendek: 'Saya ada 125 gula-gula, kongsi kepada 15 rakan, berapa baki?'",
+            "Selesaikan masalah harian: '180 buku dibahagi 25 orang'"
+          ],
+          "assessment": [
+            "Lembaran operasi pembahagian dengan baki",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Kad cerita pembahagian",
+            "Objek sebenar (gula-gula, buku mainan)"
+          ]
+        }
+      ]
+    },
+    "Unit 6: Pecahan (Pecahan Setara, Penambahan & Penolakan)": {
+      "Pecahan Setara dan Operasi Asas": [
+        {
+          "standards": "4.6.1 Memahami dan menulis pecahan setara bagi pecahan wajar",
+          "objectives": "Murid dapat menulis pecahan setara bagi pecahan wajar mudah (contoh: ½ = ²⁄₄ = ³⁄₆) menggunakan model visual atau kaedah darab/pbahagi.",
+          "activities": [
+            "Gunakan bulatan kertas untuk tunjuk pecahan setara",
+            "Padankan kad pecahan setara",
+            "Permainan 'Cari Pasangan Setara' dalam kumpulan"
+          ],
+          "assessment": [
+            "Lembaran padanan pecahan setara",
+            "Pentaksiran lisan: 'Apa setara ⅔?'"
+          ],
+          "aids": [
+            "Kad pecahan setara",
+            "Bulatan kertas untuk potong dan banding",
+            "Carta pecahan setara"
+          ]
+        },
+        {
+          "standards": "4.6.2 Menambah dan menolak pecahan wajar dengan penyebut yang sama",
+          "objectives": "Murid dapat menambah dan menolak pecahan wajar dengan penyebut yang sama menggunakan model atau algoritma.",
+          "activities": [
+            "Gunakan kad pecahan untuk tunjuk tambah/tolak",
+            "Lukis bulatan dan warnakan bahagian untuk tambah/tolak",
+            "Selesaikan masalah harian: 'Saya makan ¼ pizza, adik makan ²⁄₄, jumlahnya?'"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah/tolak pecahan",
+            "Pemerhatian semasa aktiviti visual"
+          ],
+          "aids": [
+            "Kad pecahan visual",
+            "Bulatan kertas untuk warna",
+            "Lembaran kerja pecahan"
+          ]
+        }
+      ]
+    },
+    "Unit 7: Perpuluhan (Penambahan & Penolakan)": {
+      "Operasi Asas Perpuluhan": [
+        {
+          "standards": "4.7.1 Menambah perpuluhan hingga tiga tempat perpuluhan",
+          "objectives": "Murid dapat menambah perpuluhan hingga tiga tempat perpuluhan (contoh: 3.456 + 2.789) menggunakan algoritma atau model visual.",
+          "activities": [
+            "Gunakan grid perpuluhan untuk tambah",
+            "Tulis ayat matematik pada papan",
+            "Permainan 'Tambah Perpuluhan' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah perpuluhan",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Grid perpuluhan",
+            "Kad ayat matematik perpuluhan",
+            "Carta nilai tempat perpuluhan"
+          ]
+        },
+        {
+          "standards": "4.7.2 Menolak perpuluhan hingga tiga tempat perpuluhan",
+          "objectives": "Murid dapat menolak perpuluhan hingga tiga tempat perpuluhan (contoh: 5.678 – 2.345) menggunakan algoritma atau blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses pinjam",
+            "Aktiviti 'Pinjam Satu' – tukar 1 unit kepada 10 persepuluh",
+            "Selesaikan masalah harian: 'Air 3.500 L, guna 1.250 L, baki?'"
+          ],
+          "assessment": [
+            "Lembaran operasi tolak perpuluhan",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah tolak perpuluhan",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 8: Peratusan (Pengenalan Asas)": {
+      "Memahami Konsep Peratus": [
+        {
+          "standards": "4.8.1 Memahami maksud peratus (%) dan menukar peratus kepada pecahan daripada 100",
+          "objectives": "Murid dapat menyatakan peratus sebagai pecahan daripada 100 (contoh: 25% = ²⁵⁄₁₀₀) dan sebaliknya.",
+          "activities": [
+            "Gunakan grid 10x10 untuk tunjuk peratus",
+            "Warnakan 30 petak untuk tunjuk 30%",
+            "Permainan 'Cari Peratus' – padankan peratus dengan pecahan"
+          ],
+          "assessment": [
+            "Lembaran padanan peratus dan pecahan",
+            "Soal jawab lisan: 'Apa 50% dalam pecahan?'"
+          ],
+          "aids": [
+            "Grid 100 petak",
+            "Kad peratus dan pecahan",
+            "Pensel warna untuk warna petak"
+          ]
+        },
+        {
+          "standards": "4.8.2 Menukar peratus kepada perpuluhan dan sebaliknya",
+          "objectives": "Murid dapat menukar peratus kepada perpuluhan (contoh: 75% = 0.75) dan sebaliknya menggunakan kaedah pembahagian/pendaraban.",
+          "activities": [
+            "Gunakan carta penukaran peratus-perpuluhan",
+            "Permainan 'Penukaran Pantas' – tukar peratus ke perpuluhan",
+            "Selesaikan masalah harian: 'Diskaun 20%, berapa perpuluhan?'"
+          ],
+          "assessment": [
+            "Lembaran penukaran peratus-perpuluhan",
+            "Pentaksiran lisan: 'Berapa 40% dalam perpuluhan?'"
+          ],
+          "aids": [
+            "Carta penukaran peratus-perpuluhan",
+            "Kad soalan penukaran",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 9: Wang Hingga RM100,000": {
+      "Menyelesaikan Masalah Harian Melibatkan Wang": [
+        {
+          "standards": "4.9.1 Menyelesaikan masalah harian melibatkan tambah dan tolak wang hingga RM100,000",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti membeli barang dan mencari baki menggunakan operasi tambah/tolak wang hingga RM100,000.",
+          "activities": [
+            "Drama: 'Beli rumah RM85,000, bayar RM50,000, berapa baki?'",
+            "Gunakan kad cerita masalah wang",
+            "Bina ayat matematik dari situasi sebenar"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah wang",
+            "Pentaksiran semasa persembahan drama"
+          ],
+          "aids": [
+            "Kad cerita wang",
+            "Objek sebenar (model rumah, kereta mainan)",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "4.9.2 Menyelesaikan masalah harian melibatkan pendaraban dan pembahagian wang hingga RM100,000",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti harga 5 unit atau harga seunit menggunakan pendaraban/pembahagian wang hingga RM100,000.",
+          "activities": [
+            "Drama: 'Satu komputer RM2,500, 4 komputer = ?', 'RM10,000 untuk 5 buku, berapa seunit?'",
+            "Gunakan kad cerita masalah pendaraban/pembahagian wang",
+            "Permainan 'Kira Harga' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah pendaraban/pembahagian wang",
+            "Pemerhatian semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita wang",
+            "Objek sebenar (komputer plastik, buku mainan)",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 10: Masa dan Waktu (Penambahan & Penolakan Melibatkan Masa)": {
+      "Operasi Asas Unit Masa": [
+        {
+          "standards": "4.10.1 Melakukan operasi tambah melibatkan unit masa (hari, jam, minit)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tambah melibatkan hari, jam dan minit (contoh: 2 hari 3 jam + 1 hari 5 jam).",
+          "activities": [
+            "Gunakan jam analog dan kalendar untuk tunjuk tambah masa",
+            "Permainan 'Tambah Waktu' – tambah masa dalam kumpulan",
+            "Selesaikan masalah harian: 'Mula kerja Isnin pukul 8.00, tamat Jumaat pukul 4.30'"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah masa",
+            "Pentaksiran semasa aktiviti jam analog"
+          ],
+          "aids": [
+            "Jam analog boleh gerak",
+            "Kalendar sekolah",
+            "Kad soalan masa"
+          ]
+        },
+        {
+          "standards": "4.10.2 Melakukan operasi tolak melibatkan unit masa (hari, jam, minit)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik tolak melibatkan hari, jam dan minit (contoh: 3 hari 2 jam – 1 hari 5 jam).",
+          "activities": [
+            "Gunakan jam analog dan kalendar untuk tunjuk tolak masa",
+            "Permainan 'Tolak Waktu' – tolak masa dalam pasangan",
+            "Selesaikan masalah harian: 'Mula projek Isnin pukul 9.00, tamat Rabu pukul 12.00'"
+          ],
+          "assessment": [
+            "Lembaran operasi tolak masa",
+            "Pemerhatian semasa aktiviti"
+          ],
+          "aids": [
+            "Jam analog boleh gerak",
+            "Kalendar sekolah",
+            "Kad soalan masa"
+          ]
+        }
+      ]
+    },
+    "Unit 11: Ukuran (Panjang, Jisim, Isipadu Cecair - Pendaraban & Pembahagian)": {
+      "Operasi Pendaraban & Pembahagian Dalam Ukuran": [
+        {
+          "standards": "4.11.1 Melakukan operasi pendaraban melibatkan panjang (cm, m)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik pendaraban melibatkan panjang dalam unit cm dan m (contoh: 2.5 m × 4).",
+          "activities": [
+            "Ukur panjang satu objek, darab dengan nombor",
+            "Gunakan garis nombor untuk tunjuk pendaraban panjang",
+            "Selesaikan masalah harian: 'Tali 3.5 m, 6 tali = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban panjang",
+            "Pemerhatian ketepatan pengukuran dan pengiraan"
+          ],
+          "aids": [
+            "Pembaris, pita ukur",
+            "Tali, papan kayu untuk diukur",
+            "Lembaran rekod ukuran"
+          ]
+        },
+        {
+          "standards": "4.11.2 Melakukan operasi pembahagian melibatkan jisim (g, kg) dan isipadu cecair (ml, liter)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik pembahagian melibatkan jisim dan isipadu cecair dalam unit piawai (contoh: 5.6 kg ÷ 4).",
+          "activities": [
+            "Timbang objek, bahagi jisimnya kepada beberapa bahagian",
+            "Tuang cecair, bahagi isipadunya sama rata",
+            "Selesaikan masalah harian: 'Air 2.4 L, bahagi 6 botol, berapa setiap botol?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pembahagian jisim dan isipadu",
+            "Soal jawab lisan: 'Berapa setiap bahagian?'"
+          ],
+          "aids": [
+            "Timbangan digital",
+            "Bikar ukur (ml, liter)",
+            "Air berwarna, objek ringan"
+          ]
+        }
+      ]
+    },
+    "Unit 12: Luas (Segi Empat Tepat & Segi Empat Sama)": {
+      "Mengira Luas Segi Empat": [
+        {
+          "standards": "4.12.1 Mengira luas segi empat sama dan segi empat tepat",
+          "objectives": "Murid dapat mengira luas segi empat sama dan segi empat tepat menggunakan rumus (panjang × lebar) atau kaedah petak.",
+          "activities": [
+            "Gunakan petak kertas untuk kira luas",
+            "Bina segi empat dengan blok asas sepuluh dan kira luas",
+            "Selesaikan masalah harian: 'Lantai 6m x 4m, berapa luasnya?'"
+          ],
+          "assessment": [
+            "Lembaran hitung luas",
+            "Pentaksiran semasa aktiviti petak"
+          ],
+          "aids": [
+            "Kertas petak (grid paper)",
+            "Blok asas sepuluh",
+            "Lembaran bentuk segi empat"
+          ]
+        },
+        {
+          "standards": "4.12.2 Mengira luas segi tiga, parallelogram, dan trapezium",
+          "objectives": "Murid dapat mengira luas segi tiga, parallelogram, dan trapezium menggunakan rumus atau kaedah petak.",
+          "activities": [
+            "Gunakan petak kertas untuk kira luas segi tiga",
+            "Bina bentuk dengan blok asas sepuluh dan kira luas",
+            "Selesaikan masalah harian: 'Luas segi tiga tapak 5m, tinggi 3m'"
+          ],
+          "assessment": [
+            "Lembaran hitung luas pelbagai bentuk",
+            "Pemerhatian ketepatan pengiraan"
+          ],
+          "aids": [
+            "Kertas petak",
+            "Blok asas sepuluh",
+            "Lembaran bentuk geometri"
+          ]
+        }
+      ]
+    },
+    "Unit 13: Isipadu Kuboid": {
+      "Mengira Isipadu Kuboid": [
+        {
+          "standards": "4.13.1 Mengira isipadu kuboid menggunakan rumus (panjang × lebar × tinggi)",
+          "objectives": "Murid dapat mengira isipadu kuboid menggunakan rumus atau kaedah blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk bina kuboid dan kira isipadu",
+            "Ukur dimensi kuboid dan hitung isipadu",
+            "Selesaikan masalah harian: 'Kotak 5cm x 3cm x 2cm, berapa isipadunya?'"
+          ],
+          "assessment": [
+            "Lembaran hitung isipadu kuboid",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Kotak kuboid sebenar",
+            "Pembaris untuk ukur"
+          ]
+        },
+        {
+          "standards": "4.13.2 Menyelesaikan masalah harian melibatkan isipadu kuboid",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti isi air dalam bak mandi atau kotak menggunakan isipadu kuboid.",
+          "activities": [
+            "Drama: 'Bak mandi 2m x 1m x 0.5m, berapa liter air?'",
+            "Gunakan kad cerita masalah isipadu",
+            "Permainan 'Kira Isipadu' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah isipadu",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita isipadu",
+            "Model bak mandi/kotak",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 14: Sudut (Pengukuran Sudut)": {
+      "Mengukur Sudut Menggunakan Protraktor": [
+        {
+          "standards": "4.14.1 Mengukur sudut menggunakan protraktor",
+          "objectives": "Murid dapat mengukur sudut (tegak, tirus, cakah) menggunakan protraktor dengan betul.",
+          "activities": [
+            "Gunakan protraktor untuk ukur sudut pada kertas",
+            "Cari sudut di persekitaran dan ukur dengan protraktor",
+            "Permainan 'Ukur Sudut' – ukur sudut pada kad"
+          ],
+          "assessment": [
+            "Lembaran ukur sudut",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Protraktor plastik",
+            "Kad sudut pelbagai jenis",
+            "Carta jenis sudut"
+          ]
+        },
+        {
+          "standards": "4.14.2 Mengenal dan mengukur sudut tegak, tirus, dan cakah",
+          "objectives": "Murid dapat mengenal pasti dan mengukur sudut tegak (90°), tirus (<90°), dan cakah (>90°) menggunakan protraktor.",
+          "activities": [
+            "Lukis sudut tegak, tirus, cakah dan ukur",
+            "Cari sudut di dalam buku teks dan ukur",
+            "Permainan 'Teka Sudut' – guru tunjuk sudut, murid teka nama dan ukur"
+          ],
+          "assessment": [
+            "Lembaran label dan ukur sudut",
+            "Soal jawab lisan: 'Ini sudut apa dan berapa darjah?'"
+          ],
+          "aids": [
+            "Protraktor plastik",
+            "Kad gambar sudut",
+            "Pensel, pembaris"
+          ]
+        }
+      ]
+    },
+    "Unit 15: Koordinat (Sukuan Pertama)": {
+      "Membaca Koordinat pada Sukuan Pertama": [
+        {
+          "standards": "4.15.1 Membaca koordinat pada sukuan pertama (x, y)",
+          "objectives": "Murid dapat membaca dan menyatakan koordinat titik pada satah Cartesan dalam sukuan pertama (contoh: (3, 5)).",
+          "activities": [
+            "Gunakan grid koordinat untuk tandakan titik",
+            "Permainan 'Cari Titik' – guru sebut koordinat, murid tandakan",
+            "Lukis bentuk menggunakan koordinat"
+          ],
+          "assessment": [
+            "Lembaran tandakan titik koordinat",
+            "Pemerhatian semasa aktiviti grid"
+          ],
+          "aids": [
+            "Grid koordinat besar",
+            "Kad koordinat (x, y)",
+            "Pen marker untuk tandakan titik"
+          ]
+        },
+        {
+          "standards": "4.15.2 Menandakan titik pada satah koordinat",
+          "objectives": "Murid dapat menandakan titik pada satah koordinat berdasarkan pasangan tertib (x, y) dalam sukuan pertama.",
+          "activities": [
+            "Tandakan titik berdasarkan koordinat diberi",
+            "Bina poligon dengan menyambung titik koordinat",
+            "Permainan 'Lukis Bentuk' – lukis bentuk dari koordinat"
+          ],
+          "assessment": [
+            "Lembaran tandakan titik dan lukis bentuk",
+            "Pentaksiran hasil lukisan"
+          ],
+          "aids": [
+            "Grid koordinat",
+            "Kad koordinat",
+            "Pensel warna untuk lukis"
+          ]
+        }
+      ]
+    },
+    "Unit 16: Poligon (Ciri-Ciri Poligon Sekata & Tak Sekata)": {
+      "Mengenal Ciri Poligon": [
+        {
+          "standards": "4.16.1 Mengenal ciri-ciri poligon sekata (semua sisi dan sudut sama)",
+          "objectives": "Murid dapat mengenal pasti dan menyatakan ciri-ciri poligon sekata (contoh: segi tiga sama sisi, segi empat sama).",
+          "activities": [
+            "Cari poligon sekata di persekitaran",
+            "Bina poligon sekata dengan batang ais krim",
+            "Permainan 'Teka Poligon' – guru huraikan ciri, murid teka"
+          ],
+          "assessment": [
+            "Lembaran kenal pasti poligon sekata",
+            "Pentaksiran lisan: 'Apa ciri segi tiga sama sisi?'"
+          ],
+          "aids": [
+            "Model poligon sekata",
+            "Batang ais krim, playdough",
+            "Carta ciri poligon sekata"
+          ]
+        },
+        {
+          "standards": "4.16.2 Mengenal ciri-ciri poligon tak sekata (sisi dan sudut tidak sama)",
+          "objectives": "Murid dapat mengenal pasti dan menyatakan ciri-ciri poligon tak sekata (contoh: segi empat tepat, trapezium).",
+          "activities": [
+            "Cari poligon tak sekata di persekitaran",
+            "Bina poligon tak sekata dengan batang ais krim",
+            "Permainan 'Cari Perbezaan' – banding poligon sekata vs tak sekata"
+          ],
+          "assessment": [
+            "Lembaran kenal pasti poligon tak sekata",
+            "Pemerhatian semasa aktiviti bina"
+          ],
+          "aids": [
+            "Model poligon tak sekata",
+            "Batang ais krim, playdough",
+            "Carta ciri poligon tak sekata"
+          ]
+        }
+      ]
+    },
+    "Unit 17: Bulatan (Ciri-Ciri Bulatan)": {
+      "Mengenal Ciri Bulatan": [
+        {
+          "standards": "4.17.1 Mengenal pusat, jejari, dan diameter bulatan",
+          "objectives": "Murid dapat mengenal pasti dan menyatakan ciri-ciri bulatan: pusat, jejari, dan diameter.",
+          "activities": [
+            "Gunakan bulatan kertas untuk tunjuk pusat, jejari, diameter",
+            "Lukis bulatan dan tandakan ciri-cirinya",
+            "Permainan 'Teka Ciri' – guru tunjuk, murid sebut nama ciri"
+          ],
+          "assessment": [
+            "Lembaran label ciri bulatan",
+            "Soal jawab lisan: 'Mana jejari? Mana diameter?'"
+          ],
+          "aids": [
+            "Bulatan kertas",
+            "Kad gambar bulatan",
+            "Pensel, pembaris"
+          ]
+        },
+        {
+          "standards": "4.17.2 Mengukur jejari dan diameter bulatan",
+          "objectives": "Murid dapat mengukur jejari dan diameter bulatan menggunakan pembaris atau pita ukur.",
+          "activities": [
+            "Ukur jejari dan diameter bulatan sebenar",
+            "Banding jejari dan diameter (diameter = 2 × jejari)",
+            "Selesaikan masalah harian: 'Jejari roda 25cm, diameter = ?'"
+          ],
+          "assessment": [
+            "Lembaran ukur jejari dan diameter",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Bulatan kertas atau model roda",
+            "Pembaris, pita ukur",
+            "Lembaran rekod ukuran"
+          ]
+        }
+      ]
+    },
+    "Unit 18: Pengurusan Data (Carta Palang - Skala, Mod, Min, Median)": {
+      "Mentafsir Carta Palang dan Statistik Asas": [
+        {
+          "standards": "4.18.1 Mentafsir maklumat daripada carta palang dengan skala",
+          "objectives": "Murid dapat membaca dan mentafsir maklumat daripada carta palang dengan skala (contoh: 1 unit = 5 orang, berapa orang suka biru?).",
+          "activities": [
+            "Tafsir carta palang yang dibina sendiri",
+            "Soal jawab: 'Mana paling banyak?', 'Berapa orang suka merah jika 1 unit = 5?'",
+            "Permainan 'Teka Jawapan' berdasarkan carta"
+          ],
+          "assessment": [
+            "Lembaran soalan tafsiran carta",
+            "Pentaksiran lisan semasa perbincangan"
+          ],
+          "aids": [
+            "Contoh carta palang dengan skala",
+            "Kad soalan tafsiran",
+            "Papan putih untuk perbincangan"
+          ]
+        },
+        {
+          "standards": "4.18.2 Mengira mod, min, median, dan julat bagi satu set data",
+          "objectives": "Murid dapat mengira mod (nilai paling kerap), min (purata), median (nilai tengah), dan julat (beza antara nilai terbesar dan terkecil) bagi satu set data.",
+          "activities": [
+            "Kumpul data bilangan buku yang dibaca oleh rakan",
+            "Hitung mod, min, median, julat secara berkumpulan",
+            "Permainan 'Statistik Cepat' – hitung statistik dalam masa 1 minit"
+          ],
+          "assessment": [
+            "Lembaran hitung mod, min, median, julat",
+            "Pemerhatian semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Data murid (bilangan buku, markah ujian)",
+            "Kalkulator mainan",
+            "Carta statistik asas"
+          ]
+        }
+      ]
+    }
+  },
+  "TAHUN 5": {
+    "Unit 1: Nombor Bulat hingga 1,000,000": {
+      "Membaca, Menulis, dan Membandingkan Nombor": [
+        {
+          "standards": "5.1.1 Membaca dan menulis nombor hingga 1,000,000 dalam angka dan perkataan",
+          "objectives": "Murid dapat membaca dan menulis nombor hingga 1,000,000 dalam bentuk angka dan perkataan dengan betul.",
+          "activities": [
+            "Nyanyian lagu nombor hingga 1,000,000",
+            "Tulis nombor dari perkataan ke angka (contoh: 'enam ratus ribu tiga puluh lima' → 600,035)",
+            "Permainan 'Cari Nombor' – cari nombor pada carta besar"
+          ],
+          "assessment": [
+            "Lembaran tulis nombor dari perkataan",
+            "Ujian lisan: 'Baca nombor ini'"
+          ],
+          "aids": [
+            "Carta nombor 1–1,000,000",
+            "Kad perkataan nombor (juta, ribu, ratus, puluh, sa)",
+            "Whiteboard dan pen marker"
+          ]
+        },
+        {
+          "standards": "5.1.2 Membandingkan dan menyusun nombor hingga 1,000,000",
+          "objectives": "Murid dapat membandingkan dua nombor hingga 1,000,000 dan menyusunnya mengikut urutan menaik atau menurun.",
+          "activities": [
+            "Susun kad nombor mengikut urutan",
+            "Permainan 'Nombor Terbesar' – banding nombor dalam kumpulan",
+            "Gunakan blok asas sepuluh untuk tunjuk nilai tempat"
+          ],
+          "assessment": [
+            "Lembaran susun nombor menaik/menurun",
+            "Pemerhatian semasa aktiviti permainan"
+          ],
+          "aids": [
+            "Kad nombor 100,000–1,000,000",
+            "Blok asas sepuluh (juta, ratus ribu, puluh ribu, ribu, ratus, puluh, sa)",
+            "Simbol >, <, = besar"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Operasi Asas (Campuran hingga 1,000,000)": {
+      "Operasi Bergabung Mengikut Tertib (BODMAS)": [
+        {
+          "standards": "5.2.1 Menyelesaikan operasi bergabung tanpa tanda kurung mengikut tertib operasi (BODMAS)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik campuran (tambah, tolak, darab, bahagi) tanpa tanda kurung mengikut tertib operasi (BODMAS).",
+          "activities": [
+            "Gunakan carta BODMAS untuk tunjuk tertib",
+            "Selesaikan soalan langkah demi langkah",
+            "Permainan 'Siapa Cepat?' – selesaikan ayat matematik dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran operasi bergabung tanpa kurung",
+            "Pemerhatian penggunaan tertib operasi"
+          ],
+          "aids": [
+            "Carta BODMAS",
+            "Kad ayat matematik campuran",
+            "Jam randik"
+          ]
+        },
+        {
+          "standards": "5.2.2 Menyelesaikan operasi bergabung dengan tanda kurung mengikut tertib operasi (BODMAS)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik campuran dengan tanda kurung mengikut tertib operasi (BODMAS).",
+          "activities": [
+            "Gunakan kad ayat matematik dengan kurung",
+            "Aktiviti 'Buka Kurung Dahulu' – selesaikan dalam kurung pertama",
+            "Selesaikan masalah harian: '(4 + 3) × 5 = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi bergabung dengan kurung",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Kad ayat matematik dengan kurung",
+            "Carta langkah BODMAS",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Pecahan (Pendaraban & Pembahagian)": {
+      "Operasi Pendaraban & Pembahagian Pecahan": [
+        {
+          "standards": "5.3.1 Mendarab pecahan wajar dengan nombor bulat",
+          "objectives": "Murid dapat menyelesaikan pendaraban pecahan wajar dengan nombor bulat menggunakan model visual atau algoritma.",
+          "activities": [
+            "Gunakan bulatan kertas untuk tunjuk pendaraban pecahan",
+            "Lukis gambar dan warnakan bahagian untuk tunjuk hasil darab",
+            "Selesaikan masalah harian: '½ × 4 = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban pecahan",
+            "Pemerhatian semasa aktiviti visual"
+          ],
+          "aids": [
+            "Kad pecahan visual",
+            "Bulatan kertas untuk warna",
+            "Lembaran kerja pecahan"
+          ]
+        },
+        {
+          "standards": "5.3.2 Membahagi pecahan wajar dengan nombor bulat",
+          "objectives": "Murid dapat menyelesaikan pembahagian pecahan wajar dengan nombor bulat menggunakan model atau algoritma.",
+          "activities": [
+            "Gunakan kad pecahan untuk tunjuk pembahagian",
+            "Bahagi satu bahagian kepada beberapa bahagian sama",
+            "Selesaikan masalah harian: '⅔ ÷ 3 = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pembahagian pecahan",
+            "Pentaksiran semasa aktiviti kongsi"
+          ],
+          "aids": [
+            "Kad pecahan visual",
+            "Bulatan kertas untuk potong",
+            "Lembaran kerja pecahan"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Perpuluhan (Pendaraban & Pembahagian)": {
+      "Operasi Pendaraban & Pembahagian Perpuluhan": [
+        {
+          "standards": "5.4.1 Mendarab perpuluhan hingga tiga tempat perpuluhan dengan nombor bulat",
+          "objectives": "Murid dapat menyelesaikan pendaraban perpuluhan hingga tiga tempat perpuluhan dengan nombor bulat menggunakan algoritma atau grid.",
+          "activities": [
+            "Gunakan grid perpuluhan untuk tunjuk pendaraban",
+            "Tulis ayat matematik pada papan",
+            "Permainan 'Darab Perpuluhan' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban perpuluhan",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Grid perpuluhan",
+            "Kad ayat matematik perpuluhan",
+            "Carta nilai tempat perpuluhan"
+          ]
+        },
+        {
+          "standards": "5.4.2 Membahagi perpuluhan hingga tiga tempat perpuluhan dengan nombor bulat",
+          "objectives": "Murid dapat menyelesaikan pembahagian perpuluhan hingga tiga tempat perpuluhan dengan nombor bulat menggunakan algoritma atau blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses bahagi",
+            "Aktiviti 'Kongsi Sama Rata' – bahagi perpuluhan kepada beberapa bahagian",
+            "Selesaikan masalah harian: '3.6 ÷ 4 = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pembahagian perpuluhan",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah bahagi perpuluhan",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Peratusan (Nilai Peratusan Daripada Kuantiti)": {
+      "Mengira Nilai Peratusan Daripada Kuantiti": [
+        {
+          "standards": "5.5.1 Mengira nilai peratusan daripada suatu kuantiti (contoh: 20% daripada 500)",
+          "objectives": "Murid dapat mengira nilai peratusan daripada suatu kuantiti menggunakan kaedah penukaran peratus kepada pecahan atau perpuluhan.",
+          "activities": [
+            "Gunakan grid 100 petak untuk tunjuk peratusan daripada kuantiti",
+            "Selesaikan masalah harian: 'Diskaun 15% daripada RM80'",
+            "Permainan 'Kira Peratus' – hitung peratusan dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran hitung nilai peratusan",
+            "Pemerhatian ketepatan pengiraan"
+          ],
+          "aids": [
+            "Grid 100 petak",
+            "Kad soalan peratusan",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "5.5.2 Menyelesaikan masalah harian melibatkan nilai peratusan daripada kuantiti",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti diskaun, cukai, atau kenaikan harga menggunakan nilai peratusan daripada kuantiti.",
+          "activities": [
+            "Drama: 'Harga asal RM100, diskaun 25%, berapa harga akhir?'",
+            "Gunakan kad cerita masalah peratusan",
+            "Permainan 'Kedai Diskaun' dalam kumpulan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah peratusan",
+            "Pentaksiran semasa persembahan drama"
+          ],
+          "aids": [
+            "Kad cerita peratusan",
+            "Objek sebenar (barang mainan dengan harga)",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 6: Wang (Pengurusan Wang, Untung & Rugi)": {
+      "Konsep Pengurusan Wang, Untung & Rugi": [
+        {
+          "standards": "5.6.1 Memahami konsep pengurusan wang, untung, dan rugi",
+          "objectives": "Murid dapat memahami maksud pengurusan wang, untung (harga jual > harga kos), dan rugi (harga jual < harga kos).",
+          "activities": [
+            "Permainan kedai: beli barang, jual balik, kira untung/rugi",
+            "Gunakan kad cerita untuk huraikan situasi untung/rugi",
+            "Bina jadual pengurusan wang harian"
+          ],
+          "assessment": [
+            "Lembaran kenal pasti untung/rugi",
+            "Pemerhatian semasa permainan kedai"
+          ],
+          "aids": [
+            "Wang replika",
+            "Barangan mainan dengan harga",
+            "Jadual pengurusan wang"
+          ]
+        },
+        {
+          "standards": "5.6.2 Menyelesaikan masalah harian melibatkan untung dan rugi",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti mengira untung atau rugi dalam perniagaan kecil menggunakan operasi tambah/tolak.",
+          "activities": [
+            "Drama: 'Beli buku RM5, jual RM7, berapa untung?'",
+            "Gunakan kad cerita masalah untung/rugi",
+            "Permainan 'Perniagaan Mini' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah untung/rugi",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita untung/rugi",
+            "Objek sebenar (buku plastik, epal mainan)",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 7: Masa dan Waktu (Pendaraban & Pembahagian Melibatkan Masa)": {
+      "Operasi Pendaraban & Pembahagian Unit Masa": [
+        {
+          "standards": "5.7.1 Melakukan operasi pendaraban melibatkan unit masa (jam, minit, hari)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik pendaraban melibatkan jam, minit, dan hari (contoh: 2 jam 30 minit × 3).",
+          "activities": [
+            "Gunakan jam analog dan kalendar untuk tunjuk pendaraban masa",
+            "Permainan 'Darab Waktu' – darab masa dalam kumpulan",
+            "Selesaikan masalah harian: 'Setiap hari latihan 1 jam 15 minit, 5 hari = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban masa",
+            "Pentaksiran semasa aktiviti jam analog"
+          ],
+          "aids": [
+            "Jam analog boleh gerak",
+            "Kalendar sekolah",
+            "Kad soalan masa"
+          ]
+        },
+        {
+          "standards": "5.7.2 Melakukan operasi pembahagian melibatkan unit masa (jam, minit, hari)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik pembahagian melibatkan jam, minit, dan hari (contoh: 5 jam 30 minit ÷ 3).",
+          "activities": [
+            "Gunakan jam analog dan kalendar untuk tunjuk pembahagian masa",
+            "Permainan 'Bahagi Waktu' – bahagi masa dalam pasangan",
+            "Selesaikan masalah harian: 'Projek 8 jam, 4 orang, berapa setiap orang?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pembahagian masa",
+            "Pemerhatian semasa aktiviti"
+          ],
+          "aids": [
+            "Jam analog boleh gerak",
+            "Kalendar sekolah",
+            "Kad soalan masa"
+          ]
+        }
+      ]
+    },
+    "Unit 8: Ukuran (Panjang, Jisim, Isipadu Cecair - Melibatkan Pecahan & Perpuluhan)": {
+      "Penukaran & Operasi Dalam Ukuran": [
+        {
+          "standards": "5.8.1 Menukar unit ukuran (km ke m, liter ke ml) dan menyelesaikan masalah melibatkan pecahan",
+          "objectives": "Murid dapat menukar unit ukuran (contoh: 2.5 km = 2500 m) dan menyelesaikan masalah melibatkan pecahan dalam ukuran.",
+          "activities": [
+            "Gunakan carta penukaran unit untuk tunjuk hubungan",
+            "Selesaikan masalah harian: 'Panjang jalan 3½ km, berapa meter?'",
+            "Permainan 'Penukaran Pantas' – tukar unit dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran penukaran unit ukuran",
+            "Pemerhatian ketepatan pengiraan"
+          ],
+          "aids": [
+            "Carta penukaran unit (km→m, liter→ml)",
+            "Kad soalan penukaran",
+            "Pembaris, pita ukur"
+          ]
+        },
+        {
+          "standards": "5.8.2 Menyelesaikan masalah melibatkan perpuluhan dalam ukuran (panjang, jisim, isipadu cecair)",
+          "objectives": "Murid dapat menyelesaikan masalah harian melibatkan perpuluhan dalam ukuran (contoh: 2.75 kg + 1.5 kg).",
+          "activities": [
+            "Ukur objek dan rekod dalam perpuluhan",
+            "Timbang dan tuang cecair, hitung jumlah dalam perpuluhan",
+            "Selesaikan masalah harian: 'Air 1.25 L + 0.75 L = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi ukuran dalam perpuluhan",
+            "Soal jawab lisan: 'Berapa jumlahnya?'"
+          ],
+          "aids": [
+            "Pembaris, pita ukur",
+            "Timbangan digital",
+            "Bikar ukur (ml, liter)"
+          ]
+        }
+      ]
+    },
+    "Unit 9: Isipadu Kuboid": {
+      "Mengira Isipadu Kuboid dan Masalah Harian": [
+        {
+          "standards": "5.9.1 Mengira isipadu kuboid menggunakan rumus (panjang × lebar × tinggi)",
+          "objectives": "Murid dapat mengira isipadu kuboid menggunakan rumus atau kaedah blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk bina kuboid dan kira isipadu",
+            "Ukur dimensi kuboid dan hitung isipadu",
+            "Selesaikan masalah harian: 'Kotak 10cm x 5cm x 3cm, berapa isipadunya?'"
+          ],
+          "assessment": [
+            "Lembaran hitung isipadu kuboid",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Kotak kuboid sebenar",
+            "Pembaris untuk ukur"
+          ]
+        },
+        {
+          "standards": "5.9.2 Menyelesaikan masalah harian melibatkan isipadu kuboid",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti isi air dalam bak mandi atau kotak menggunakan isipadu kuboid.",
+          "activities": [
+            "Drama: 'Bak mandi 2m x 1m x 0.5m, berapa liter air?'",
+            "Gunakan kad cerita masalah isipadu",
+            "Permainan 'Kira Isipadu' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah isipadu",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita isipadu",
+            "Model bak mandi/kotak",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 10: Sukatan Serakan (Purata untuk Panjang, Jisim, Isipadu Cecair)": {
+      "Mengira Purata (Min)": [
+        {
+          "standards": "5.10.1 Mengira purata (min) bagi satu set data (panjang, jisim, isipadu cecair)",
+          "objectives": "Murid dapat mengira purata (min) bagi satu set data (contoh: panjang 3 batang pensel) menggunakan formula (jumlah ÷ bilangan).",
+          "activities": [
+            "Ukur panjang 5 pensel, kira purata",
+            "Timbang 4 objek, kira purata jisim",
+            "Tuang 3 bekas cecair, kira purata isipadu"
+          ],
+          "assessment": [
+            "Lembaran hitung purata",
+            "Pemerhatian ketepatan pengukuran dan pengiraan"
+          ],
+          "aids": [
+            "Pembaris, timbangan, bikar ukur",
+            "Lembaran rekod data",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "5.10.2 Menyelesaikan masalah harian melibatkan purata",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti purata markah ujian atau purata berat badan menggunakan konsep purata.",
+          "activities": [
+            "Drama: 'Markah ujian 80, 90, 70, 85, berapa purata?'",
+            "Gunakan kad cerita masalah purata",
+            "Permainan 'Kira Purata' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah purata",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita purata",
+            "Data murid (markah, berat badan)",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 11: Poligon (Sudut Pedalaman Poligon Sekata)": {
+      "Mengira Sudut Pedalaman Poligon Sekata": [
+        {
+          "standards": "5.11.1 Mengira sudut pedalaman poligon sekata (segitiga, segi empat, segi lima, dsb.)",
+          "objectives": "Murid dapat mengira sudut pedalaman poligon sekata menggunakan rumus atau kaedah pembahagian bulatan (360° ÷ bilangan sisi).",
+          "activities": [
+            "Gunakan protraktor untuk ukur sudut pedalaman",
+            "Bina poligon sekata dan hitung sudut pedalaman",
+            "Selesaikan masalah harian: 'Sudut pedalaman segi enam sekata = ?'"
+          ],
+          "assessment": [
+            "Lembaran hitung sudut pedalaman",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Protraktor plastik",
+            "Model poligon sekata",
+            "Carta sudut pedalaman"
+          ]
+        },
+        {
+          "standards": "5.11.2 Menyelesaikan masalah harian melibatkan sudut pedalaman poligon sekata",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti susun ubin atau reka bentuk menggunakan sudut pedalaman poligon sekata.",
+          "activities": [
+            "Drama: 'Ubin segi empat sama, berapa sudut pedalaman?'",
+            "Gunakan kad cerita masalah sudut pedalaman",
+            "Permainan 'Reka Bentuk' – lukis poligon sekata dan label sudut"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah sudut pedalaman",
+            "Pentaksiran hasil lukisan"
+          ],
+          "aids": [
+            "Kad cerita sudut pedalaman",
+            "Model ubin poligon",
+            "Pensel, pembaris"
+          ]
+        }
+      ]
+    },
+    "Unit 12: Garis dan Sudut (Sudut pada Garis Lurus, Sudut Refleks)": {
+      "Memahami Sudut pada Garis Lurus & Sudut Refleks": [
+        {
+          "standards": "5.12.1 Mengenal dan mengukur sudut pada garis lurus (180°)",
+          "objectives": "Murid dapat mengenal pasti dan mengukur sudut pada garis lurus (180°) menggunakan protraktor.",
+          "activities": [
+            "Gunakan protraktor untuk ukur sudut pada garis lurus",
+            "Cari sudut pada garis lurus di persekitaran",
+            "Permainan 'Ukur Sudut Lurus' – ukur sudut pada kad"
+          ],
+          "assessment": [
+            "Lembaran ukur sudut pada garis lurus",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Protraktor plastik",
+            "Kad sudut pada garis lurus",
+            "Carta sudut pada garis lurus"
+          ]
+        },
+        {
+          "standards": "5.12.2 Mengenal dan mengukur sudut refleks (>180°)",
+          "objectives": "Murid dapat mengenal pasti dan mengukur sudut refleks (>180°) menggunakan protraktor.",
+          "activities": [
+            "Lukis sudut refleks dan ukur",
+            "Cari sudut refleks di dalam buku teks dan ukur",
+            "Permainan 'Teka Sudut Refleks' – guru tunjuk sudut, murid teka nama dan ukur"
+          ],
+          "assessment": [
+            "Lembaran label dan ukur sudut refleks",
+            "Soal jawab lisan: 'Ini sudut apa dan berapa darjah?'"
+          ],
+          "aids": [
+            "Protraktor plastik",
+            "Kad gambar sudut refleks",
+            "Pensel, pembaris"
+          ]
+        }
+      ]
+    },
+    "Unit 13: Nisbah dan Kadar (Pengenalan Asas)": {
+      "Memahami Konsep Nisbah dan Kadar": [
+        {
+          "standards": "5.13.1 Memahami konsep nisbah sebagai perbandingan dua kuantiti",
+          "objectives": "Murid dapat memahami nisbah sebagai perbandingan dua kuantiti (contoh: 2:3) menggunakan model visual atau objek konkrit.",
+          "activities": [
+            "Gunakan guli berwarna untuk tunjuk nisbah (2 merah : 3 biru)",
+            "Padankan kad nisbah dengan gambar",
+            "Permainan 'Cari Nisbah' – cari nisbah dalam kumpulan"
+          ],
+          "assessment": [
+            "Lembaran padanan nisbah",
+            "Pentaksiran lisan: 'Apa nisbah ini?'"
+          ],
+          "aids": [
+            "Guli berwarna",
+            "Kad nisbah visual",
+            "Carta nisbah"
+          ]
+        },
+        {
+          "standards": "5.13.2 Memahami konsep kadar sebagai nisbah antara dua kuantiti berbeza unit",
+          "objectives": "Murid dapat memahami kadar sebagai nisbah antara dua kuantiti berbeza unit (contoh: 60 km/jam, 5 biji/RM1).",
+          "activities": [
+            "Gunakan kad cerita untuk tunjuk kadar (kelajuan, harga seunit)",
+            "Selesaikan masalah harian: 'Kereta laju 80 km/jam, 2 jam = ? km'",
+            "Permainan 'Kadar Cepat' – hitung kadar dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran hitung kadar",
+            "Pemerhatian semasa aktiviti"
+          ],
+          "aids": [
+            "Kad cerita kadar",
+            "Kalkulator mainan",
+            "Carta kadar"
+          ]
+        }
+      ]
+    },
+    "Unit 14: Perkadaran": {
+      "Menyelesaikan Masalah Melibatkan Perkadaran": [
+        {
+          "standards": "5.14.1 Menyelesaikan masalah mudah melibatkan perkadaran (contoh: jika 2 biji RM1, 6 biji = ?)",
+          "objectives": "Murid dapat menyelesaikan masalah harian melibatkan perkadaran menggunakan kaedah pendaraban atau pembahagian.",
+          "activities": [
+            "Gunakan kad cerita untuk tunjuk perkadaran",
+            "Selesaikan masalah harian: '3 biji epal RM6, 5 biji = ?'",
+            "Permainan 'Kira Harga' – hitung harga berdasarkan kadar"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah perkadaran",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita perkadaran",
+            "Objek sebenar (epal mainan, gula-gula)",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "5.14.2 Menggunakan kaedah silang darab untuk menyelesaikan masalah perkadaran",
+          "objectives": "Murid dapat menggunakan kaedah silang darab untuk menyelesaikan masalah perkadaran (contoh: 2/3 = x/6, cari x).",
+          "activities": [
+            "Gunakan carta kaedah silang darab",
+            "Selesaikan soalan langkah demi langkah",
+            "Permainan 'Silang Darab Pantas' – selesaikan dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran operasi silang darab",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Carta kaedah silang darab",
+            "Kad soalan perkadaran",
+            "Jam randik"
+          ]
+        }
+      ]
+    },
+    "Unit 15: Perpuluhan Positif dan Negatif (Pengenalan)": {
+      "Memahami Perpuluhan Positif dan Negatif": [
+        {
+          "standards": "5.15.1 Memahami konsep perpuluhan positif dan negatif pada garis nombor",
+          "objectives": "Murid dapat memahami dan menunjukkan perpuluhan positif dan negatif pada garis nombor (contoh: -0.5, +1.5).",
+          "activities": [
+            "Gunakan garis nombor untuk tunjuk perpuluhan positif/negatif",
+            "Lukis garis nombor dan tandakan titik perpuluhan",
+            "Permainan 'Cari Titik' – guru sebut, murid tandakan"
+          ],
+          "assessment": [
+            "Lembaran tandakan titik perpuluhan",
+            "Pemerhatian semasa aktiviti garis nombor"
+          ],
+          "aids": [
+            "Garis nombor besar (dari -5 hingga +5)",
+            "Kad perpuluhan positif/negatif",
+            "Pen marker untuk tandakan titik"
+          ]
+        },
+        {
+          "standards": "5.15.2 Menambah dan menolak perpuluhan positif dan negatif",
+          "objectives": "Murid dapat menambah dan menolak perpuluhan positif dan negatif menggunakan garis nombor atau algoritma.",
+          "activities": [
+            "Gunakan garis nombor untuk tunjuk tambah/tolak perpuluhan",
+            "Selesaikan masalah harian: 'Suhu pagi -2.5°C, naik 4.5°C, berapa sekarang?'",
+            "Permainan 'Tambah Tolak Perpuluhan' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah/tolak perpuluhan positif/negatif",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Garis nombor",
+            "Kad soalan perpuluhan positif/negatif",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 16: Pengurusan Data (Carta Pai, Analisis Data)": {
+      "Membina dan Mentafsir Carta Pai": [
+        {
+          "standards": "5.16.1 Membina carta pai berdasarkan data yang dikumpul",
+          "objectives": "Murid dapat membina carta pai menggunakan data yang dikumpul dan menentukan sudut setiap sektor (contoh: 100% = 360°).",
+          "activities": [
+            "Kumpul data warna kegemaran rakan",
+            "Hitung sudut setiap sektor (contoh: 25% = 90°)",
+            "Bina carta pai menggunakan bulatan kertas dan protraktor"
+          ],
+          "assessment": [
+            "Hasil carta pai murid",
+            "Pemerhatian ketepatan pembinaan sudut"
+          ],
+          "aids": [
+            "Bulatan kertas",
+            "Protraktor plastik",
+            "Pensel warna untuk warna sektor"
+          ]
+        },
+        {
+          "standards": "5.16.2 Mentafsir maklumat daripada carta pai",
+          "objectives": "Murid dapat membaca dan mentafsir maklumat daripada carta pai (contoh: warna paling popular, berapa peratus suka biru).",
+          "activities": [
+            "Tafsir carta pai yang dibina sendiri",
+            "Soal jawab: 'Mana paling banyak?', 'Berapa peratus suka merah?'",
+            "Permainan 'Teka Jawapan' berdasarkan carta"
+          ],
+          "assessment": [
+            "Lembaran soalan tafsiran carta pai",
+            "Pentaksiran lisan semasa perbincangan"
+          ],
+          "aids": [
+            "Contoh carta pai siap",
+            "Kad soalan tafsiran",
+            "Papan putih untuk perbincangan"
+          ]
+        }
+      ]
+    },
+    "Unit 17: Kebarangkalian (Pengenalan Asas)": {
+      "Memahami Konsep Kebarangkalian": [
+        {
+          "standards": "5.17.1 Memahami kebarangkalian sebagai ukuran kemungkinan berlakunya suatu peristiwa",
+          "objectives": "Murid dapat memahami kebarangkalian sebagai ukuran kemungkinan berlakunya suatu peristiwa (contoh: mustahil, tidak mustahil, mungkin, sangat mungkin, pasti).",
+          "activities": [
+            "Gunakan kad peristiwa untuk tunjuk tahap kebarangkalian",
+            "Permainan 'Teka Kemungkinan' – teka kemungkinan peristiwa harian",
+            "Bina carta kebarangkalian (mustahil → pasti)"
+          ],
+          "assessment": [
+            "Lembaran kenal pasti tahap kebarangkalian",
+            "Pentaksiran lisan: 'Apa kemungkinan hujan hari ini?'"
+          ],
+          "aids": [
+            "Kad peristiwa dengan tahap kebarangkalian",
+            "Carta skala kebarangkalian",
+            "Pensel warna untuk label"
+          ]
+        },
+        {
+          "standards": "5.17.2 Menentukan kebarangkalian mudah berdasarkan eksperimen",
+          "objectives": "Murid dapat menentukan kebarangkalian mudah berdasarkan eksperimen (contoh: lempar dadu, berapa kemungkinan keluar 4).",
+          "activities": [
+            "Lemparkan dadu 20 kali, rekod hasil",
+            "Hitung kebarangkalian keluar nombor tertentu",
+            "Permainan 'Dadu Kebarangkalian' – teka kemungkinan keluar nombor"
+          ],
+          "assessment": [
+            "Lembaran rekod eksperimen kebarangkalian",
+            "Pemerhatian ketepatan pengiraan"
+          ],
+          "aids": [
+            "Dadu plastik",
+            "Lembaran rekod eksperimen",
+            "Carta kebarangkalian"
+          ]
+        }
+      ]
+    }
+  },
+  "TAHUN 6": {
+    "Unit 1: Nombor Bulat hingga 10,000,000": {
+      "Membaca, Menulis, dan Membandingkan Nombor": [
+        {
+          "standards": "6.1.1 Membaca dan menulis nombor hingga 10,000,000 dalam angka dan perkataan",
+          "objectives": "Murid dapat membaca dan menulis nombor hingga 10,000,000 dalam bentuk angka dan perkataan dengan betul.",
+          "activities": [
+            "Nyanyian lagu nombor hingga 10,000,000",
+            "Tulis nombor dari perkataan ke angka (contoh: 'tujuh juta tiga ratus ribu' → 7,300,000)",
+            "Permainan 'Cari Nombor' – cari nombor pada carta besar"
+          ],
+          "assessment": [
+            "Lembaran tulis nombor dari perkataan",
+            "Ujian lisan: 'Baca nombor ini'"
+          ],
+          "aids": [
+            "Carta nombor 1–10,000,000",
+            "Kad perkataan nombor (juta, ribu, ratus, puluh, sa)",
+            "Whiteboard dan pen marker"
+          ]
+        },
+        {
+          "standards": "6.1.2 Membandingkan dan menyusun nombor hingga 10,000,000",
+          "objectives": "Murid dapat membandingkan dua nombor hingga 10,000,000 dan menyusunnya mengikut urutan menaik atau menurun.",
+          "activities": [
+            "Susun kad nombor mengikut urutan",
+            "Permainan 'Nombor Terbesar' – banding nombor dalam kumpulan",
+            "Gunakan blok asas sepuluh untuk tunjuk nilai tempat"
+          ],
+          "assessment": [
+            "Lembaran susun nombor menaik/menurun",
+            "Pemerhatian semasa aktiviti permainan"
+          ],
+          "aids": [
+            "Kad nombor 1,000,000–10,000,000",
+            "Blok asas sepuluh (juta, ratus ribu, puluh ribu, ribu, ratus, puluh, sa)",
+            "Simbol >, <, = besar"
+          ]
+        }
+      ]
+    },
+    "Unit 2: Operasi Asas (Campuran hingga 10,000,000)": {
+      "Operasi Bergabung Mengikut Tertib (BODMAS) & Masalah Kompleks": [
+        {
+          "standards": "6.2.1 Menyelesaikan operasi bergabung tanpa tanda kurung mengikut tertib operasi (BODMAS)",
+          "objectives": "Murid dapat menyelesaikan ayat matematik campuran (tambah, tolak, darab, bahagi) tanpa tanda kurung mengikut tertib operasi (BODMAS).",
+          "activities": [
+            "Gunakan carta BODMAS untuk tunjuk tertib",
+            "Selesaikan soalan langkah demi langkah",
+            "Permainan 'Siapa Cepat?' – selesaikan ayat matematik dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran operasi bergabung tanpa kurung",
+            "Pemerhatian penggunaan tertib operasi"
+          ],
+          "aids": [
+            "Carta BODMAS",
+            "Kad ayat matematik campuran",
+            "Jam randik"
+          ]
+        },
+        {
+          "standards": "6.2.2 Menyelesaikan masalah kompleks melibatkan operasi bergabung dengan tanda kurung",
+          "objectives": "Murid dapat menyelesaikan masalah harian kompleks menggunakan operasi bergabung dengan tanda kurung mengikut tertib operasi (BODMAS).",
+          "activities": [
+            "Gunakan kad cerita masalah kompleks",
+            "Aktiviti 'Buka Kurung Dahulu' – selesaikan dalam kurung pertama",
+            "Selesaikan masalah harian: '(4 + 3) × 5 – 10 = ?'"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah kompleks",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Kad cerita masalah kompleks",
+            "Carta langkah BODMAS",
+            "Kad ayat matematik dengan kurung"
+          ]
+        }
+      ]
+    },
+    "Unit 3: Pecahan (Operasi Campuran)": {
+      "Operasi Campuran Pecahan (Tambah, Tolak, Darab, Bahagi)": [
+        {
+          "standards": "6.3.1 Menambah dan menolak pecahan wajar dan nombor bercampur dengan penyebut berbeza",
+          "objectives": "Murid dapat menambah dan menolak pecahan wajar dan nombor bercampur dengan penyebut berbeza menggunakan kaedah penyamaan penyebut.",
+          "activities": [
+            "Gunakan kad pecahan untuk tunjuk penyamaan penyebut",
+            "Lukis bulatan dan warnakan bahagian untuk tambah/tolak",
+            "Selesaikan masalah harian: 'Saya makan ½ pizza, adik makan ⅓, jumlahnya?'"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah/tolak pecahan dengan penyebut berbeza",
+            "Pemerhatian semasa aktiviti visual"
+          ],
+          "aids": [
+            "Kad pecahan visual",
+            "Bulatan kertas untuk warna",
+            "Lembaran kerja pecahan"
+          ]
+        },
+        {
+          "standards": "6.3.2 Mendarab dan membahagi pecahan wajar dan nombor bercampur",
+          "objectives": "Murid dapat menyelesaikan pendaraban dan pembahagian pecahan wajar dan nombor bercampur menggunakan model atau algoritma.",
+          "activities": [
+            "Gunakan kad pecahan untuk tunjuk pendaraban/pembahagian",
+            "Bahagi satu bahagian kepada beberapa bahagian sama",
+            "Selesaikan masalah harian: '⅔ × 3 = ?', '⅘ ÷ 2 = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban/pembahagian pecahan",
+            "Pentaksiran semasa aktiviti kongsi"
+          ],
+          "aids": [
+            "Kad pecahan visual",
+            "Bulatan kertas untuk potong",
+            "Lembaran kerja pecahan"
+          ]
+        }
+      ]
+    },
+    "Unit 4: Perpuluhan (Operasi Campuran)": {
+      "Operasi Campuran Perpuluhan (Tambah, Tolak, Darab, Bahagi)": [
+        {
+          "standards": "6.4.1 Menambah dan menolak perpuluhan hingga tiga tempat perpuluhan",
+          "objectives": "Murid dapat menambah dan menolak perpuluhan hingga tiga tempat perpuluhan (contoh: 3.456 + 2.789, 5.678 – 2.345) menggunakan algoritma atau grid.",
+          "activities": [
+            "Gunakan grid perpuluhan untuk tambah/tolak",
+            "Tulis ayat matematik pada papan",
+            "Permainan 'Tambah Tolak Perpuluhan' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah/tolak perpuluhan",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Grid perpuluhan",
+            "Kad ayat matematik perpuluhan",
+            "Carta nilai tempat perpuluhan"
+          ]
+        },
+        {
+          "standards": "6.4.2 Mendarab dan membahagi perpuluhan hingga tiga tempat perpuluhan",
+          "objectives": "Murid dapat menyelesaikan pendaraban dan pembahagian perpuluhan hingga tiga tempat perpuluhan menggunakan algoritma atau blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses darab/bahagi",
+            "Aktiviti 'Kongsi Sama Rata' – bahagi perpuluhan kepada beberapa bahagian",
+            "Selesaikan masalah harian: '3.6 ÷ 4 = ?', '2.5 × 3 = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban/pembahagian perpuluhan",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah darab/bahagi perpuluhan",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 5: Peratusan (Masalah Harian Termasuk Cukai Perkhidmatan & Rebat)": {
+      "Menukar & Menyelesaikan Masalah Peratusan": [
+        {
+          "standards": "6.5.1 Menukar antara pecahan, peratus, dan perpuluhan",
+          "objectives": "Murid dapat menukar antara pecahan, peratus, dan perpuluhan (contoh: ½ = 50% = 0.5) menggunakan kaedah penukaran.",
+          "activities": [
+            "Gunakan carta penukaran untuk tunjuk hubungan",
+            "Permainan 'Padanan Pantas' – padankan pecahan, peratus, perpuluhan",
+            "Selesaikan masalah harian: 'Diskaun 25% = ? dalam pecahan'"
+          ],
+          "assessment": [
+            "Lembaran penukaran pecahan-peratus-perpuluhan",
+            "Pemerhatian ketepatan penukaran"
+          ],
+          "aids": [
+            "Carta penukaran",
+            "Kad soalan penukaran",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "6.5.2 Menyelesaikan masalah harian termasuk cukai perkhidmatan dan rebat",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti cukai perkhidmatan (6%) dan rebat (10%) menggunakan peratusan.",
+          "activities": [
+            "Drama: 'Harga asal RM100, cukai 6%, berapa harga akhir?'",
+            "Gunakan kad cerita masalah cukai/rebat",
+            "Permainan 'Kedai Cukai' dalam kumpulan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah cukai/rebat",
+            "Pentaksiran semasa persembahan drama"
+          ],
+          "aids": [
+            "Kad cerita cukai/rebat",
+            "Objek sebenar (barang mainan dengan harga)",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 6: Wang (Pengurusan Wang, Simpanan & Pelaburan)": {
+      "Konsep Simpanan, Pelaburan & Faedah Mudah": [
+        {
+          "standards": "6.6.1 Memahami konsep simpanan, pelaburan, dan faedah mudah",
+          "objectives": "Murid dapat memahami maksud simpanan, pelaburan, dan faedah mudah (contoh: RM1000 disimpan, faedah 3% setahun).",
+          "activities": [
+            "Permainan bank mini: simpan wang, kira faedah",
+            "Gunakan kad cerita untuk huraikan situasi simpanan/pelaburan",
+            "Bina jadual simpanan tahunan"
+          ],
+          "assessment": [
+            "Lembaran kenal pasti konsep simpanan/pelaburan",
+            "Pemerhatian semasa permainan bank"
+          ],
+          "aids": [
+            "Wang replika",
+            "Kad cerita simpanan/pelaburan",
+            "Jadual simpanan"
+          ]
+        },
+        {
+          "standards": "6.6.2 Menyelesaikan masalah harian melibatkan simpanan, pelaburan, dan faedah mudah",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti mengira faedah simpanan atau untung pelaburan menggunakan formula faedah mudah.",
+          "activities": [
+            "Drama: 'Simpan RM2000, faedah 4% setahun, berapa faedah selepas 2 tahun?'",
+            "Gunakan kad cerita masalah faedah",
+            "Permainan 'Pelaburan Mini' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah faedah",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita faedah",
+            "Objek sebenar (model bank, buku simpanan mainan)",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 7: Masa dan Waktu (Kadar dan Jarak)": {
+      "Mengira Kadar dan Jarak": [
+        {
+          "standards": "6.7.1 Mengira kadar (kelajuan) menggunakan rumus (jarak ÷ masa)",
+          "objectives": "Murid dapat mengira kadar (kelajuan) menggunakan rumus (jarak ÷ masa) dalam unit km/jam atau m/s.",
+          "activities": [
+            "Gunakan carta rumus untuk tunjuk hubungan",
+            "Selesaikan masalah harian: 'Kereta bergerak 120 km dalam 2 jam, kelajuan = ?'",
+            "Permainan 'Kira Kelajuan' – hitung kelajuan dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran hitung kadar",
+            "Pemerhatian ketepatan pengiraan"
+          ],
+          "aids": [
+            "Carta rumus kadar-jarak-masa",
+            "Kad soalan kadar",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "6.7.2 Mengira jarak atau masa menggunakan rumus (jarak = kadar × masa, masa = jarak ÷ kadar)",
+          "objectives": "Murid dapat mengira jarak atau masa menggunakan rumus berdasarkan kadar yang diberi.",
+          "activities": [
+            "Gunakan carta rumus untuk tunjuk hubungan",
+            "Selesaikan masalah harian: 'Kelajuan 60 km/jam, masa 3 jam, jarak = ?'",
+            "Permainan 'Kira Jarak/Masa' – hitung dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran hitung jarak/masa",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Carta rumus kadar-jarak-masa",
+            "Kad soalan jarak/masa",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 8: Ukuran (Panjang, Jisim, Isipadu Cecair - Masalah Harian)": {
+      "Menyelesaikan Masalah Harian Dalam Ukuran": [
+        {
+          "standards": "6.8.1 Menyelesaikan masalah harian melibatkan panjang, jisim, dan isipadu cecair",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti mengira panjang pagar, berat barang, atau isipadu air menggunakan unit piawai.",
+          "activities": [
+            "Drama: 'Pagar taman 50m, berapa panjang pagar untuk 3 taman?'",
+            "Gunakan kad cerita masalah ukuran",
+            "Permainan 'Kira Ukuran' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah ukuran",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita ukuran",
+            "Objek sebenar (tali, botol air, timbangan)",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "6.8.2 Menukar unit ukuran (km ke m, liter ke ml) dan menyelesaikan masalah harian",
+          "objectives": "Murid dapat menukar unit ukuran (contoh: 2.5 km = 2500 m) dan menyelesaikan masalah harian melibatkan penukaran unit.",
+          "activities": [
+            "Gunakan carta penukaran unit untuk tunjuk hubungan",
+            "Selesaikan masalah harian: 'Panjang jalan 3.5 km, berapa meter?'",
+            "Permainan 'Penukaran Pantas' – tukar unit dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran penukaran unit ukuran",
+            "Pemerhatian ketepatan pengiraan"
+          ],
+          "aids": [
+            "Carta penukaran unit (km→m, liter→ml)",
+            "Kad soalan penukaran",
+            "Pembaris, pita ukur"
+          ]
+        }
+      ]
+    },
+    "Unit 9: Isipadu Kuboid": {
+      "Mengira Isipadu Kuboid & Masalah Harian": [
+        {
+          "standards": "6.9.1 Mengira isipadu kuboid menggunakan rumus (panjang × lebar × tinggi)",
+          "objectives": "Murid dapat mengira isipadu kuboid menggunakan rumus atau kaedah blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk bina kuboid dan kira isipadu",
+            "Ukur dimensi kuboid dan hitung isipadu",
+            "Selesaikan masalah harian: 'Kotak 10cm x 5cm x 3cm, berapa isipadunya?'"
+          ],
+          "assessment": [
+            "Lembaran hitung isipadu kuboid",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Kotak kuboid sebenar",
+            "Pembaris untuk ukur"
+          ]
+        },
+        {
+          "standards": "6.9.2 Menyelesaikan masalah harian melibatkan isipadu kuboid",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti isi air dalam bak mandi atau kotak menggunakan isipadu kuboid.",
+          "activities": [
+            "Drama: 'Bak mandi 2m x 1m x 0.5m, berapa liter air?'",
+            "Gunakan kad cerita masalah isipadu",
+            "Permainan 'Kira Isipadu' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah isipadu",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita isipadu",
+            "Model bak mandi/kotak",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 10: Sukatan Serakan (Min, Julat)": {
+      "Mengira Min & Julat": [
+        {
+          "standards": "6.10.1 Mengira min (purata) bagi satu set data",
+          "objectives": "Murid dapat mengira min (purata) bagi satu set data (contoh: markah ujian) menggunakan formula (jumlah ÷ bilangan).",
+          "activities": [
+            "Kumpul data markah ujian murid, kira purata",
+            "Hitung purata berat badan rakan",
+            "Permainan 'Kira Purata' – hitung purata dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran hitung min",
+            "Pemerhatian ketepatan pengiraan"
+          ],
+          "aids": [
+            "Data murid (markah, berat badan)",
+            "Kalkulator mainan",
+            "Lembaran rekod data"
+          ]
+        },
+        {
+          "standards": "6.10.2 Mengira julat bagi satu set data",
+          "objectives": "Murid dapat mengira julat (beza antara nilai terbesar dan terkecil) bagi satu set data.",
+          "activities": [
+            "Gunakan data markah ujian untuk kira julat",
+            "Cari julat berat badan rakan",
+            "Permainan 'Cari Julat' – cari beza nilai terbesar/terkecil"
+          ],
+          "assessment": [
+            "Lembaran hitung julat",
+            "Pemerhatian semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Data murid (markah, berat badan)",
+            "Kalkulator mainan",
+            "Carta statistik asas"
+          ]
+        }
+      ]
+    },
+    "Unit 11: Nisbah dan Kadar (Kadar yang Melibatkan Masa)": {
+      "Mengira Kadar Melibatkan Masa": [
+        {
+          "standards": "6.11.1 Memahami konsep kadar sebagai nisbah antara dua kuantiti berbeza unit (termasuk masa)",
+          "objectives": "Murid dapat memahami kadar sebagai nisbah antara dua kuantiti berbeza unit (contoh: 60 km/jam, 5 biji/RM1, 100 m/minit).",
+          "activities": [
+            "Gunakan kad cerita untuk tunjuk kadar (kelajuan, harga seunit, laju)",
+            "Selesaikan masalah harian: 'Kereta laju 80 km/jam, 2 jam = ? km'",
+            "Permainan 'Kadar Cepat' – hitung kadar dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran hitung kadar",
+            "Pemerhatian semasa aktiviti"
+          ],
+          "aids": [
+            "Kad cerita kadar",
+            "Kalkulator mainan",
+            "Carta kadar"
+          ]
+        },
+        {
+          "standards": "6.11.2 Menyelesaikan masalah harian melibatkan kadar yang melibatkan masa",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti kelajuan, masa, atau jarak menggunakan kadar yang melibatkan masa.",
+          "activities": [
+            "Drama: 'Bas bergerak 90 km/jam, 3 jam = ? km'",
+            "Gunakan kad cerita masalah kadar-masa",
+            "Permainan 'Kira Jarak' – hitung jarak berdasarkan kadar dan masa"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah kadar-masa",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita kadar-masa",
+            "Objek sebenar (model bas, kereta mainan)",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    },
+    "Unit 12: Perkadaran": {
+      "Menyelesaikan Masalah Melibatkan Perkadaran": [
+        {
+          "standards": "6.12.1 Menyelesaikan masalah mudah melibatkan perkadaran (contoh: jika 2 biji RM1, 6 biji = ?)",
+          "objectives": "Murid dapat menyelesaikan masalah harian melibatkan perkadaran menggunakan kaedah pendaraban atau pembahagian.",
+          "activities": [
+            "Gunakan kad cerita untuk tunjuk perkadaran",
+            "Selesaikan masalah harian: '3 biji epal RM6, 5 biji = ?'",
+            "Permainan 'Kira Harga' – hitung harga berdasarkan kadar"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah perkadaran",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita perkadaran",
+            "Objek sebenar (epal mainan, gula-gula)",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "6.12.2 Menggunakan kaedah silang darab untuk menyelesaikan masalah perkadaran",
+          "objectives": "Murid dapat menggunakan kaedah silang darab untuk menyelesaikan masalah perkadaran (contoh: 2/3 = x/6, cari x).",
+          "activities": [
+            "Gunakan carta kaedah silang darab",
+            "Selesaikan soalan langkah demi langkah",
+            "Permainan 'Silang Darab Pantas' – selesaikan dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran operasi silang darab",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Carta kaedah silang darab",
+            "Kad soalan perkadaran",
+            "Jam randik"
+          ]
+        }
+      ]
+    },
+    "Unit 13: Perpuluhan Positif dan Negatif (Operasi Asas)": {
+      "Operasi Asas Perpuluhan Positif & Negatif": [
+        {
+          "standards": "6.13.1 Menambah dan menolak perpuluhan positif dan negatif",
+          "objectives": "Murid dapat menambah dan menolak perpuluhan positif dan negatif menggunakan garis nombor atau algoritma.",
+          "activities": [
+            "Gunakan garis nombor untuk tunjuk tambah/tolak perpuluhan",
+            "Selesaikan masalah harian: 'Suhu pagi -2.5°C, naik 4.5°C, berapa sekarang?'",
+            "Permainan 'Tambah Tolak Perpuluhan' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran operasi tambah/tolak perpuluhan positif/negatif",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Garis nombor",
+            "Kad soalan perpuluhan positif/negatif",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "6.13.2 Mendarab dan membahagi perpuluhan positif dan negatif",
+          "objectives": "Murid dapat menyelesaikan pendaraban dan pembahagian perpuluhan positif dan negatif menggunakan algoritma atau blok asas sepuluh.",
+          "activities": [
+            "Gunakan blok asas sepuluh untuk tunjuk proses darab/bahagi",
+            "Aktiviti 'Kongsi Sama Rata' – bahagi perpuluhan kepada beberapa bahagian",
+            "Selesaikan masalah harian: '-3.6 ÷ 2 = ?', '2.5 × (-3) = ?'"
+          ],
+          "assessment": [
+            "Lembaran operasi pendaraban/pembahagian perpuluhan positif/negatif",
+            "Penyelesaian masalah dalam lembaran kerja"
+          ],
+          "aids": [
+            "Blok asas sepuluh",
+            "Carta langkah darab/bahagi perpuluhan",
+            "Kad cerita masalah harian"
+          ]
+        }
+      ]
+    },
+    "Unit 14: Garis dan Sudut (Sudut Bertentang Bucu, Sudut Bersebelahan)": {
+      "Memahami Sudut Bertentang Bucu & Bersebelahan": [
+        {
+          "standards": "6.14.1 Mengenal dan mengukur sudut bertentang bucu",
+          "objectives": "Murid dapat mengenal pasti dan mengukur sudut bertentang bucu (sudut yang sama besar apabila dua garis bersilang) menggunakan protraktor.",
+          "activities": [
+            "Gunakan protraktor untuk ukur sudut bertentang bucu",
+            "Cari sudut bertentang bucu di persekitaran",
+            "Permainan 'Ukur Sudut Bertentang' – ukur sudut pada kad"
+          ],
+          "assessment": [
+            "Lembaran ukur sudut bertentang bucu",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Protraktor plastik",
+            "Kad sudut bertentang bucu",
+            "Carta sudut bertentang bucu"
+          ]
+        },
+        {
+          "standards": "6.14.2 Mengenal dan mengukur sudut bersebelahan",
+          "objectives": "Murid dapat mengenal pasti dan mengukur sudut bersebelahan (sudut yang berdekatan dan membentuk garis lurus) menggunakan protraktor.",
+          "activities": [
+            "Lukis sudut bersebelahan dan ukur",
+            "Cari sudut bersebelahan di dalam buku teks dan ukur",
+            "Permainan 'Teka Sudut Bersebelahan' – guru tunjuk sudut, murid teka nama dan ukur"
+          ],
+          "assessment": [
+            "Lembaran label dan ukur sudut bersebelahan",
+            "Soal jawab lisan: 'Ini sudut apa dan berapa darjah?'"
+          ],
+          "aids": [
+            "Protraktor plastik",
+            "Kad gambar sudut bersebelahan",
+            "Pensel, pembaris"
+          ]
+        }
+      ]
+    },
+    "Unit 15: Bulatan (Lilitan dan Luas Bulatan)": {
+      "Mengira Lilitan dan Luas Bulatan": [
+        {
+          "standards": "6.15.1 Mengira lilitan bulatan menggunakan rumus (π × diameter atau 2π × jejari)",
+          "objectives": "Murid dapat mengira lilitan bulatan menggunakan rumus (π × diameter atau 2π × jejari) dengan π ≈ 3.14.",
+          "activities": [
+            "Gunakan bulatan kertas untuk ukur diameter dan hitung lilitan",
+            "Selesaikan masalah harian: 'Jejari roda 25cm, lilitan = ?'",
+            "Permainan 'Kira Lilitan' – hitung lilitan dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran hitung lilitan bulatan",
+            "Pemerhatian ketepatan pengukuran"
+          ],
+          "aids": [
+            "Bulatan kertas atau model roda",
+            "Pembaris, pita ukur",
+            "Lembaran rekod ukuran"
+          ]
+        },
+        {
+          "standards": "6.15.2 Mengira luas bulatan menggunakan rumus (π × jejari²)",
+          "objectives": "Murid dapat mengira luas bulatan menggunakan rumus (π × jejari²) dengan π ≈ 3.14.",
+          "activities": [
+            "Gunakan bulatan kertas untuk ukur jejari dan hitung luas",
+            "Selesaikan masalah harian: 'Jejari tapak meja 30cm, luas = ?'",
+            "Permainan 'Kira Luas' – hitung luas dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran hitung luas bulatan",
+            "Pemerhatian ketepatan pengiraan"
+          ],
+          "aids": [
+            "Bulatan kertas",
+            "Pembaris, pita ukur",
+            "Lembaran rekod ukuran"
+          ]
+        }
+      ]
+    },
+    "Unit 16: Pengurusan Data (Interpretasi Data, Organisasi Data)": {
+      "Menganalisis & Mengorganisasi Data": [
+        {
+          "standards": "6.16.1 Mengorganisasi data dalam jadual dan carta palang dengan skala",
+          "objectives": "Murid dapat mengorganisasi data yang dikumpul dalam jadual dan carta palang dengan skala yang sesuai.",
+          "activities": [
+            "Kumpul data bilangan buku yang dibaca oleh rakan",
+            "Bina jadual dan carta palang dengan skala 1 unit = 5 orang",
+            "Label paksi mendatar dan tegak dengan skala"
+          ],
+          "assessment": [
+            "Hasil jadual dan carta palang murid",
+            "Pemerhatian ketepatan pembinaan dan skala"
+          ],
+          "aids": [
+            "Kad data untuk undi",
+            "Kertas mahjung dan stiker",
+            "Pensel warna untuk label"
+          ]
+        },
+        {
+          "standards": "6.16.2 Mentafsir maklumat daripada carta palang, carta pai, dan jadual",
+          "objectives": "Murid dapat membaca dan mentafsir maklumat daripada carta palang, carta pai, dan jadual untuk membuat kesimpulan.",
+          "activities": [
+            "Tafsir carta palang dan carta pai yang dibina sendiri",
+            "Soal jawab: 'Mana paling banyak?', 'Berapa peratus suka merah?'",
+            "Permainan 'Teka Jawapan' berdasarkan carta"
+          ],
+          "assessment": [
+            "Lembaran soalan tafsiran carta",
+            "Pentaksiran lisan semasa perbincangan"
+          ],
+          "aids": [
+            "Contoh carta palang dan carta pai siap",
+            "Kad soalan tafsiran",
+            "Papan putih untuk perbincangan"
+          ]
+        }
+      ]
+    },
+    "Unit 17: Kebarangkalian (Kebarangkalian Peristiwa)": {
+      "Mengira Kebarangkalian Suatu Peristiwa": [
+        {
+          "standards": "6.17.1 Memahami kebarangkalian sebagai ukuran kemungkinan berlakunya suatu peristiwa",
+          "objectives": "Murid dapat memahami kebarangkalian sebagai ukuran kemungkinan berlakunya suatu peristiwa (contoh: mustahil, tidak mustahil, mungkin, sangat mungkin, pasti).",
+          "activities": [
+            "Gunakan kad peristiwa untuk tunjuk tahap kebarangkalian",
+            "Permainan 'Teka Kemungkinan' – teka kemungkinan peristiwa harian",
+            "Bina carta kebarangkalian (mustahil → pasti)"
+          ],
+          "assessment": [
+            "Lembaran kenal pasti tahap kebarangkalian",
+            "Pentaksiran lisan: 'Apa kemungkinan hujan hari ini?'"
+          ],
+          "aids": [
+            "Kad peristiwa dengan tahap kebarangkalian",
+            "Carta skala kebarangkalian",
+            "Pensel warna untuk label"
+          ]
+        },
+        {
+          "standards": "6.17.2 Mengira kebarangkalian suatu peristiwa dalam bentuk pecahan",
+          "objectives": "Murid dapat mengira kebarangkalian suatu peristiwa dalam bentuk pecahan (contoh: 1/6 untuk dadu keluar 4).",
+          "activities": [
+            "Lemparkan dadu 20 kali, rekod hasil",
+            "Hitung kebarangkalian keluar nombor tertentu",
+            "Permainan 'Dadu Kebarangkalian' – teka kemungkinan keluar nombor"
+          ],
+          "assessment": [
+            "Lembaran rekod eksperimen kebarangkalian",
+            "Pemerhatian ketepatan pengiraan"
+          ],
+          "aids": [
+            "Dadu plastik",
+            "Lembaran rekod eksperimen",
+            "Carta kebarangkalian"
+          ]
+        }
+      ]
+    },
+    "Unit 18: Ungkapan Algebra": {
+      "Membentuk Ungkapan Algebra": [
+        {
+          "standards": "6.18.1 Membentuk ungkapan algebra berdasarkan situasi harian",
+          "objectives": "Murid dapat membentuk ungkapan algebra (contoh: 2x + 3) berdasarkan situasi harian seperti harga barang atau bilangan objek.",
+          "activities": [
+            "Gunakan kad cerita untuk tunjuk situasi algebra",
+            "Selesaikan masalah harian: 'Harga satu buku x, 2 buku = 2x'",
+            "Permainan 'Bentuk Ungkapan' – bina ungkapan dari situasi"
+          ],
+          "assessment": [
+            "Lembaran bentuk ungkapan algebra",
+            "Pemerhatian semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita algebra",
+            "Objek sebenar (buku plastik, epal mainan)",
+            "Kalkulator mainan"
+          ]
+        },
+        {
+          "standards": "6.18.2 Menyederhanakan ungkapan algebra (contoh: 2x + 3x = 5x)",
+          "objectives": "Murid dapat menyederhanakan ungkapan algebra dengan menggabungkan sebutan serupa.",
+          "activities": [
+            "Gunakan blok algebra untuk tunjuk gabungan sebutan",
+            "Selesaikan soalan langkah demi langkah",
+            "Permainan 'Gabung Sebutan' – sederhanakan ungkapan dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran sederhanakan ungkapan algebra",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Blok algebra",
+            "Kad soalan algebra",
+            "Jam randik"
+          ]
+        }
+      ]
+    },
+    "Unit 19: Persamaan Linear": {
+      "Menyelesaikan Persamaan Linear dalam Satu Pemboleh Ubah": [
+        {
+          "standards": "6.19.1 Menyelesaikan persamaan linear ringkas dalam satu pemboleh ubah (contoh: x + 5 = 12)",
+          "objectives": "Murid dapat menyelesaikan persamaan linear ringkas dalam satu pemboleh ubah menggunakan kaedah songsang operasi.",
+          "activities": [
+            "Gunakan kad persamaan untuk tunjuk kaedah songsang",
+            "Selesaikan soalan langkah demi langkah",
+            "Permainan 'Cari Nilai x' – selesaikan dalam masa terhad"
+          ],
+          "assessment": [
+            "Lembaran selesaikan persamaan linear",
+            "Pemerhatian penggunaan strategi"
+          ],
+          "aids": [
+            "Kad persamaan linear",
+            "Carta kaedah songsang",
+            "Jam randik"
+          ]
+        },
+        {
+          "standards": "6.19.2 Menyelesaikan masalah harian melibatkan persamaan linear",
+          "objectives": "Murid dapat menyelesaikan situasi harian seperti harga barang atau bilangan objek menggunakan persamaan linear.",
+          "activities": [
+            "Drama: 'Harga satu buku x, 3 buku + RM5 = RM20, cari x'",
+            "Gunakan kad cerita masalah persamaan linear",
+            "Permainan 'Kira Nilai x' dalam pasangan"
+          ],
+          "assessment": [
+            "Lembaran penyelesaian masalah persamaan linear",
+            "Pentaksiran semasa aktiviti kumpulan"
+          ],
+          "aids": [
+            "Kad cerita persamaan linear",
+            "Objek sebenar (buku plastik, gula-gula)",
+            "Kalkulator mainan"
+          ]
+        }
+      ]
+    }
+  }
+}
