@@ -1,6 +1,6 @@
 // =======================================================
 // GURU RPH LOGIC (js/guru_rph_logic.js)
-// PEMBAIKAN STRUKTUR DATA JSON PELBAGAI SUBJEK
+// Kemas kini: Auto-mengisi SK, SP, Aktiviti, Penilaian, BBM dari data JSON
 // =======================================================
 
 let currentTeacherUID = null;
@@ -118,7 +118,8 @@ async function loadSubjectData(subjectCode) {
     if (!/^[a-z0-9]+$/.test(subject)) return null;
 
     try {
-        const filePath = `data/sp-${subject}.json`;
+        // Asumsi data JSON disimpan dalam folder data/
+        const filePath = `data/sp-${subject}.json`; 
         const response = await fetch(filePath);
         
         if (!response.ok) {
@@ -168,7 +169,7 @@ async function generateRPHData() {
     const slots = timetableEntry.slots;
     const subjectDataMap = {};
     
-    // Tapis Slot (RBT/Sejarah Tahun 1-3 - Subjek yang bermula Tahun 4)
+    // Tapis Slot (RBT/Sejarah Tahun 1-3)
     const filteredSlots = slots.filter(slot => {
         const subject = slot.subject.toUpperCase();
         const year = getYearFromClass(slot.class);
@@ -184,9 +185,9 @@ async function generateRPHData() {
         return showNotification("Tiada slot subjek yang sah ditemui untuk dijana RPH.", 'warning');
     }
 
-    // Muatkan data JSON untuk subjek unik sahaja
     const subjectCodeSet = new Set(filteredSlots.map(s => s.subject.toLowerCase()));
 
+    // Muatkan semua data subjek yang diperlukan secara serentak
     const promises = Array.from(subjectCodeSet).map(code => 
         loadSubjectData(code).then(data => {
             subjectDataMap[code] = data; 
@@ -195,7 +196,7 @@ async function generateRPHData() {
     await Promise.all(promises);
     
     // ----------------------------------------------------
-    // LOGIK FINAL UNTUK MEMAPARKAN SLOT RPH
+    // LOGIK FINAL UNTUK MEMPROSES DAN MEMAPARKAN SLOT RPH
     // ----------------------------------------------------
     
     const finalSlots = [];
@@ -214,28 +215,26 @@ async function generateRPHData() {
         }
         
         const targetYear = getYearFromClass(slot.class);
-        let yearKey = `TAHUN_${targetYear}`; // Cuba TAHUN_N
+        let yearKey = `TAHUN_${targetYear}`; 
         
-        // 1. Dapatkan kunci tahunan yang betul ("TAHUN 4" vs "TAHUN_4")
         if (!rawSubjectData[yearKey]) {
             const spacedKey = `TAHUN ${targetYear}`;
             if (rawSubjectData[spacedKey]) {
-                yearKey = spacedKey; // Guna TAHUN N
+                yearKey = spacedKey; 
             }
         }
         
         let yearData = rawSubjectData[yearKey];
         
-        // 2. Tangani Lapisan Bersarang (cth: {kurikulum_rbt: {TAHUN_6: ...}})
+        // Tangani Lapisan Bersarang (cth: {kurikulum_rbt: {TAHUN_6: ...}})
         if (!yearData) {
              const topKeys = Object.keys(rawSubjectData);
              if (topKeys.length === 1 && typeof rawSubjectData[topKeys[0]] === 'object') {
-                 // Cuba akses kunci tahun di bawah lapisan bersarang ini
                  yearData = rawSubjectData[topKeys[0]][yearKey];
              }
          }
         
-        // 3. Flat-map data lessons ke format Array SK/SP yang dijangka oleh UI
+        // Flat-map data lessons ke format Array SK/SP/dll (lessons)
         let flatData = [];
         let processingSuccess = false;
 
@@ -249,7 +248,9 @@ async function generateRPHData() {
                                 SK: lesson.standards || topic.topic_name,
                                 SP: lesson.objectives,
                                 topic_name: topic.topic_name,
-                                activities: lesson.activities 
+                                activities: lesson.activities || [], 
+                                assessment: lesson.assessment || [], 
+                                aids: lesson.aids || [] 
                             });
                         });
                     }
@@ -259,37 +260,37 @@ async function generateRPHData() {
             } else if (Object.keys(yearData).length > 0) {
                 // --- STRUKTUR BI/BM/MT (TAHUN -> Unit Name -> Skill Name/Sub-topic Name -> lessons array) ---
                 
-                // Iterasi melalui setiap unit/kunci peringkat seterusnya dalam tahun tersebut
                 for (const unitKey in yearData) {
-                    const unit = yearData[unitKey]; // Unit Name (cth: "Unit 1: Keluarga Saya")
+                    const unit = yearData[unitKey]; 
                     
                     if (typeof unit === 'object' && unit !== null) {
                         const unitName = unitKey;
                         
-                        // Iterasi melalui Skill/Aspek/Sub-topic dalam unit
                         for (const skillKey in unit) {
                             const lessonsArray = unit[skillKey];
                             if (Array.isArray(lessonsArray)) {
                                 lessonsArray.forEach(lesson => {
-                                    // SK = standards, SP = objectives, topic_name = Unit Name, skill = Skill Name
                                     flatData.push({
                                         SK: lesson.standards || unitName, 
                                         SP: lesson.objectives,
                                         topic_name: unitName, 
                                         skill: skillKey,
-                                        activities: lesson.activities 
+                                        activities: lesson.activities || [], 
+                                        assessment: lesson.assessment || [], 
+                                        aids: lesson.aids || [] 
                                     });
                                 });
                             }
                         }
                     } else if (Array.isArray(unit)) {
-                         // Fallback jika Unit Name terus ke array of lessons (Struktur yang jarang)
                           unit.forEach(lesson => {
                             flatData.push({
                                 SK: lesson.standards || unitKey,
                                 SP: lesson.objectives,
                                 topic_name: unitKey,
-                                activities: lesson.activities 
+                                activities: lesson.activities || [],
+                                assessment: lesson.assessment || [],
+                                aids: lesson.aids || []
                             });
                         });
                     }
@@ -300,6 +301,7 @@ async function generateRPHData() {
 
         
         if (processingSuccess) {
+            // Simpan semua data lessons yang diflatkan
             finalSubjectDataMap[code] = flatData; 
             finalSlots.push(slot);
         } else {
@@ -317,9 +319,10 @@ async function generateRPHData() {
     }
 
     if (finalSlots.length > 0 && typeof displayRPHSlots !== 'undefined') {
+        // Panggil fungsi UI untuk memaparkan slot dengan pra-isian automatik
         displayRPHSlots(finalSlots, finalSubjectDataMap); 
         editorSection.classList.remove('hidden'); 
-        showNotification(`Borang RPH untuk ${finalSlots.length} slot berjaya dijana.`, 'success');
+        showNotification(`Borang RPH untuk ${finalSlots.length} slot berjaya dijana dan diisi secara automatik.`, 'success');
     } else {
         showNotification("Gagal menjana sebarang slot RPH. Sila semak Jadual Waktu dan fail data.", 'error');
     }
