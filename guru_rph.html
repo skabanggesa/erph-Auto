@@ -11,8 +11,8 @@
         <header class="navbar">
             <h1>Selamat Datang, <span id="user-name">Guru</span>!</h1>
             <nav>
-                <button class="btn btn-tab active" data-target="rph-tab">Jana & Semak RPH</button>
-                <button class="btn btn-tab" data-target="timetable-tab">Urus Jadual Waktu</button>
+                <button class="btn btn-tab active" data-tab="rph-tab">Jana & Semak RPH</button>
+                <button class="btn btn-tab" data-tab="timetable-tab">Urus Jadual Waktu</button>
                 <button id="logout-btn" class="btn btn-danger">Log Keluar</button>
             </nav>
         </header>
@@ -26,16 +26,16 @@
             </div>
 
             <div id="rph-editor-section" class="card mt-2 hidden">
-                <h3>Sediakan RPH (Draf)</h3>
-                <form id="rph-form">
-                    <div id="rph-slots-container">
-                        <p>Sila jana RPH terlebih dahulu.</p>
+                <h3>Sunting Draf RPH</h3>
+                <form id="rph-editor-form">
+                    <div id="rph-editor-container">
+                        <p>Memuatkan slot RPH...</p>
                     </div>
-
-                    <div class="form-actions mt-3">
+                    
+                    <div class="rph-actions">
+                        <button type="button" id="save-rph-btn" class="btn btn-success">Simpan Draf</button>
+                        <button type="button" id="submit-rph-btn" class="btn btn-primary">Hantar ke Pentadbir</button>
                         <input type="hidden" id="rph-document-id">
-                        <button type="submit" class="btn btn-success">Simpan Draf</button>
-                        <button type="button" id="submit-rph-btn" class="btn btn-warning">Serah ke Pentadbir</button>
                     </div>
                 </form>
             </div>
@@ -57,7 +57,7 @@
 
         <div id="timetable-tab" class="tab-content hidden">
             <h2>📅 Urus Data Jadual Waktu</h2>
-            <p>Masukkan Jadual Waktu anda untuk membolehkan penjanaan RPH automatik.</p>
+            <p>Masukkan Jadual Waktu anda (Masa, Subjek, Kelas) untuk membolehkan penjanaan RPH automatik.</p> 
             <div id="timetable-input-form" class="card">
                 <p>Memuatkan borang Jadual Waktu...</p>
             </div>
@@ -69,10 +69,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
-    <script src="js/app.js"></script>
-    <script src="js/auth.js"></script>
-    <script src="js/ui_utils.js"></script>
-    <script src="js/guru_rph_logic.js"></script>
+    <script src="app.js"></script>
+    <script src="auth.js"></script>
+    <script src="ui_utils.js"></script>
+    <script src="guru_rph_logic.js"></script>
 </body>
 </html>
-
