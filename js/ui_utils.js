@@ -31,7 +31,6 @@ function displayRPHList(dataArray, tableId) {
 
     dataArray.forEach(item => {
         const row = tbody.insertRow();
-        // Firebase Timestamp perlu ditukar ke Date untuk paparan
         const dateObject = item.date.toDate(); 
         const dateString = dateObject.toLocaleDateString('ms-MY');
 
@@ -45,11 +44,10 @@ function displayRPHList(dataArray, tableId) {
             const editBtn = document.createElement('button');
             editBtn.className = 'btn btn-secondary btn-sm';
             editBtn.textContent = 'Lihat/Edit';
-            // Pastikan loadRPHtoEdit wujud dalam scope
-            editBtn.onclick = () => loadRPHtoEdit(item.id); 
+            // Pastikan loadRPHtoEdit wujud dalam scope global atau diakses melalui window
+            editBtn.onclick = () => window.loadRPHtoEdit(item.id); 
             actionCell.appendChild(editBtn);
         }
-        // Logik untuk admin-rph-list (jika perlu)
     });
 }
 
@@ -62,7 +60,8 @@ function generateTimetableForm(existingData = []) {
     let html = '';
     
     daysOfWeek.forEach(day => {
-        const dayData = existingData.find(d => d.day === day) || { day: day, slots: [{ time: '', subject: '', class: '', sk: '', sp: '' }] };
+        // Data Slot hanya perlukan Time, Subject, Class
+        const dayData = existingData.find(d => d.day === day) || { day: day, slots: [{ time: '', subject: '', class: '' }] };
         
         html += `<div class="day-section card mt-2" data-day="${day}">
             <h4>${day}</h4>
@@ -83,24 +82,22 @@ function generateTimetableForm(existingData = []) {
 
 /**
  * [FUNGSI BARU] generateSlotInput(day, index, slotData)
- * Menjana satu set input untuk satu slot waktu.
+ * Menjana satu set input untuk satu slot waktu. (HANYA MASA, SUBJEK, KELAS)
  */
-function generateSlotInput(day, index, slotData = { time: '', subject: '', class: '', sk: '', sp: '' }) {
+function generateSlotInput(day, index, slotData = { time: '', subject: '', class: '' }) {
     return `<div class="input-group slot-group mb-2" data-index="${index}">
         <input type="text" placeholder="Masa (cth: 0800-0900)" name="time" value="${slotData.time}" required>
         <input type="text" placeholder="Mata Pelajaran (BM, SN, MT)" name="subject" value="${slotData.subject}" required>
         <input type="text" placeholder="Kelas (4 Anggun)" name="class" value="${slotData.class}" required>
-        <input type="text" placeholder="Standard Kandungan (SK)" name="sk" value="${slotData.sk}" required>
-        <input type="text" placeholder="Standard Pembelajaran (SP)" name="sp" value="${slotData.sp}" required>
         <button type="button" class="btn btn-danger btn-sm" onclick="removeTimeSlot(this)">Hapus</button>
     </div>`;
 }
 
 /**
  * [FUNGSI BARU] addTimeSlot(day)
- * Tambah slot input baru ke UI.
+ * Tambah slot input baru ke UI. (Didedahkan ke Window)
  */
-function addTimeSlot(day) {
+window.addTimeSlot = function(day) {
     const container = document.getElementById(`slots-${day}`);
     const index = container.children.length;
     container.insertAdjacentHTML('beforeend', generateSlotInput(day, index));
@@ -108,9 +105,9 @@ function addTimeSlot(day) {
 
 /**
  * [FUNGSI BARU] removeTimeSlot(buttonElement)
- * Hapus slot input dari UI.
+ * Hapus slot input dari UI. (Didedahkan ke Window)
  */
-function removeTimeSlot(buttonElement) {
+window.removeTimeSlot = function(buttonElement) {
     buttonElement.closest('.slot-group').remove();
 }
 
@@ -135,16 +132,16 @@ function handleFormSubmission(event) {
     
     const action = event.submitter.getAttribute('data-action');
     
-    // Logik untuk mengumpul data RPH perlu dimasukkan di sini
+    // Data slot RPH sebenar perlu dikumpul di sini
     const rphData = {
         date: document.getElementById('rph-date').value,
         id: document.getElementById('rph-document-id').value,
-        slots_data: [{}] // Data dummy sementara
+        slots_data: [{}] // Ini perlu digantikan dengan data yang dikumpul dari borang editor
     };
 
     const status = (action === 'draft') ? 'Draf' : 'Menunggu Semakan';
     
-    // Pastikan saveRPH wujud dalam scope
+    // Pastikan saveRPH wujud
     if (typeof saveRPH !== 'undefined') {
         saveRPH(rphData, status);
     } else {
@@ -174,25 +171,9 @@ function initializeTabSwitching() {
     });
 }
 
-// Panggil fungsi utiliti semasa DOM dimuat
-document.addEventListener('DOMContentLoaded', () => {
-    // Inisialisasi pertukaran tab
-    initializeTabSwitching();
-
-    // Event listener untuk borang RPH (handleFormSubmission)
-    const rphForm = document.getElementById('rph-form');
-    if (rphForm) {
-        rphForm.addEventListener('submit', handleFormSubmission);
-    }
-});
-
-// Fungsi utiliti tambahan (bukan fungsi wajib yang dikira 21, tetapi diperlukan)
-function getDayNameFromDate(dateInput) {
-    const date = (dateInput instanceof Date) ? dateInput : new Date(dateInput);
-    return date.toLocaleDateString('ms-MY', { weekday: 'long' });
-}
-
-// Fungsi utiliti tambahan: Mengumpul data dari borang Jadual Waktu
+/**
+ * Fungsi utiliti tambahan: Mengumpul data dari borang Jadual Waktu
+ */
 function collectTimetableFormData() {
     const timetableData = [];
     const daySections = document.querySelectorAll('#timetable-form-container .day-section');
@@ -203,13 +184,14 @@ function collectTimetableFormData() {
         
         daySection.querySelectorAll('.slot-group').forEach(slotGroup => {
             const slot = {};
+            
             // Ambil nilai dari setiap input di dalam slot
             slotGroup.querySelectorAll('input').forEach(input => {
                 slot[input.name] = input.value.trim();
             });
 
-            // Hanya masukkan slot yang mempunyai masa yang diisi
-            if (slot.time) {
+            // Hanya masukkan slot yang mempunyai data lengkap
+            if (slot.time && slot.subject && slot.class) {
                 slots.push(slot);
             }
         });
@@ -217,5 +199,23 @@ function collectTimetableFormData() {
         timetableData.push({ day, slots });
     });
 
-    return timetableData;
+    return timetableData.filter(d => d.slots.length > 0);
 }
+
+// Fungsi utiliti tambahan: Mendapatkan nama hari
+function getDayNameFromDate(dateInput) {
+    const date = (dateInput instanceof Date) ? dateInput : new Date(dateInput);
+    // Locale 'ms-MY' untuk nama hari Bahasa Melayu
+    return date.toLocaleDateString('ms-MY', { weekday: 'long' }); 
+}
+
+
+// Panggil fungsi utiliti semasa DOM dimuat
+document.addEventListener('DOMContentLoaded', () => {
+    initializeTabSwitching();
+
+    const rphForm = document.getElementById('rph-form');
+    if (rphForm) {
+        rphForm.addEventListener('submit', handleFormSubmission);
+    }
+});
