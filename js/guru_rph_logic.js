@@ -52,35 +52,29 @@ async function loadStandardData() {
  * Memilih data SP Rawak dari struktur JSON berdasarkan Subjek dan Kelas, termasuk UNIT.
  */
 function selectRandomStandard(subject, className) {
-    // Keluarkan hanya nombor tahun
-    const yearMatch = className.match(/\d+/); 
-    const year = yearMatch ? `TAHUN ${yearMatch[0]}` : 'TAHUN 1'; // Default ke TAHUN 1 jika kelas tidak jelas
+    // 1. Ekstrak Tahun dari Nama Kelas (Contoh: '4 Bestari' -> 'TAHUN 4')
+    const yearMatch = className.match(/\d/);
+    if (!yearMatch) return { standard: 'RALAT: Tahun Tidak Dikenal', objectives: 'Gagal mengekstrak tahun dari nama kelas', activities: [], aids: [] };
     
-    let standardDataSet;
-    
-    if (subject.toUpperCase().includes('RBT') || subject.toUpperCase().includes('REKA BENTUK')) {
-        standardDataSet = standardDataRBT;
-    } else if (subject.toUpperCase().includes('BM') || subject.toUpperCase().includes('BAHASA MELAYU')) {
-        standardDataSet = standardDataBM;
-    } else if (subject.toUpperCase().includes('BI') || subject.toUpperCase().includes('BAHASA INGGERIS')) {
-        standardDataSet = standardDataBI;
-    } else if (subject.toUpperCase().includes('MATEMATIK') || subject.toUpperCase().includes('MT')) {
-        standardDataSet = standardDataMT;
-    } else {
-        return { unit: 'Tiada Subjek Ditemui', standard: 'Sila masukkan SP secara manual', objective: 'Sila masukkan Objektif Pembelajaran secara manual', activities: [], assessment: [], aids: [] };
+    // Gunakan TAHUN [NOMBOR] untuk memadankan kunci JSON anda ("TAHUN 4")
+    const yearKey = `TAHUN ${yearMatch[0]}`; 
+
+    // 2. Padankan Subjek dengan Pemboleh Ubah Data Global
+    let data;
+    switch (subject.toUpperCase().trim()) {
+        // Guna singkatan yang konsisten dengan Jadual Waktu anda
+        case 'RBT': data = standardDataRBT; break;
+        case 'BM': data = standardDataBM; break;
+        // ... tambah semua subjek lain (BI, MT, PAI, dll.)
+        default: 
+            return { standard: `RALAT: Subjek ${subject} Tidak Dikenali`, objectives: 'Sila semak singkatan subjek dalam Jadual Waktu', activities: [], aids: [] };
     }
 
-    if (!standardDataSet || !standardDataSet[year]) {
-        return { unit: `Tiada data SP untuk ${year}`, standard: 'Tiada data SP tersedia', objective: 'Tiada data Objektif tersedia', activities: [], assessment: [], aids: [] };
-    }
-    
-    const yearData = standardDataSet[year];
-    let unitName = 'Unit Tidak Diketahui';
-    let lessons = [];
-    const unitKeys = Object.keys(yearData);
-    
-    if (unitKeys.length === 0) {
-        return { unit: `Tiada Unit dalam ${year}`, standard: 'Tiada data SP tersedia', objective: 'Tiada data Objektif tersedia', activities: [], assessment: [], aids: [] };
+    // 3. Semak Data Tahun
+    const yearData = data?.[yearKey];
+    if (!yearData) {
+        // Ini adalah punca ralat "Data RBT Tiada"
+        return { standard: `RALAT: Data Subjek ${subject} untuk ${yearKey} Tiada`, objectives: 'Sila semak fail JSON anda', activities: [], aids: [] };
     }
 
     // Pilih unit secara rawak
@@ -217,30 +211,29 @@ async function generateRPHData() {
         return;
     }
     
-    const generatedSlots = [];
+const generatedSlots = [];
     dayData.slots.forEach(slot => {
-        // PANGGILAN KRITIKAL: Jika ini gagal, semua medan akan kosong
+        // PANGGILAN KRITIKAL: Cuba dapatkan data SP
         const randomSP = selectRandomStandard(slot.subject, slot.class); 
         
-        // --- PEMERIKSAAN KESELAMATAN ---
-        // Jika randomSP gagal (seperti 'Data RBT Tiada' yang anda hadapi),
-        // ia akan mengembalikan objek dengan mesej ralat di dalamnya.
-        if (!randomSP || !randomSP.standard || randomSP.standard.includes('Tiada SP')) {
+        // --- PEMERIKSAAN KESELAMATAN (Handle 'Data RBT Tiada' / Gagal Muat) ---
+        // Jika randomSP gagal (mengandungi mesej ralat), ia akan dimasukkan sebagai notifikasi ralat.
+        if (!randomSP || randomSP.standard.startsWith('RALAT:')) {
              generatedSlots.push({
                 time_start: slot.time_start, 
-                time_end: slot.time_end,     
-                day: dayName,
+                // ... (medan lain)
                 subject: slot.subject,
                 class: slot.class,
                 unit: randomSP?.unit || 'RALAT DATA',
                 standard: randomSP?.standard || 'RALAT DATA',
-                objective: randomSP?.objectives || 'Gagal menjana objektif. Sila semak konsistensi nama subjek dan tahun dalam Jadual Waktu.',
+                // Pastikan objektif menunjukkan ralat
+                objective: randomSP?.objectives || 'Gagal menjana objektif. Sila semak konsistensi nama subjek dan tahun.',
                 aktiviti: 'Tiada Aktiviti Ditemui (RALAT DATA)',
                 penilaian: '',
                 aids: '',
                 refleksi: 'RALAT PENTING: Penjanaan gagal. Sila semak Jadual Waktu (Subjek/Kelas).'
              });
-             return; 
+             return; // Pergi ke slot seterusnya
         }
         // --- END PEMERIKSAAN KESELAMATAN ---
 
@@ -252,9 +245,16 @@ async function generateRPHData() {
             class: slot.class,
             unit: randomSP.unit, 
             standard: randomSP.standard,
-            // KEMAS KINI FOKUS: Memastikan objective tidak kosong
-            objective: randomSP.objectives || 'Objektif tidak ditemui dalam JSON.', 
+            // BARIS FOKUS ANDA: Memastikan objective tidak kosong
+            objective: randomSP.objectives || 'Objektif tidak ditemui dalam data JSON.', 
             
+            // Medan lain
+            aktiviti: (randomSP.activities || []).join('\n- '), 
+            penilaian: (randomSP.assessment || []).join('\n- '),
+            aids: (randomSP.aids || []).join('\n- '),
+            refleksi: '20/30 murid menguasai. Perlu pengukuhan lanjut. [Draf Refleksi]',
+        });
+    });            
             // Perubahan sebelumnya untuk aktiviti/penilaian/aids dikekalkan
             aktiviti: (randomSP.activities || []).join('\n- '), 
             penilaian: (randomSP.assessment || []).join('\n- '),
@@ -448,5 +448,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
 
 
