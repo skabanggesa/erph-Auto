@@ -1,19 +1,79 @@
 // =======================================================
-// GURU RPH LOGIC (guru_rph_logic.js)
+// GURU RPH LOGIC (js/guru_rph_logic.js)
+// Fail ini mengendalikan semua logik Jadual Waktu dan RPH.
 // =======================================================
 
 let currentTeacherUID = null;
 
-// Pastikan UID guru ditetapkan apabila log masuk
-auth.onAuthStateChanged(user => {
-    if (user) {
-        currentTeacherUID = user.uid;
-        // Panggil fungsi untuk memuatkan senarai RPH guru
-        if (window.location.pathname.includes('guru_rph.html')) {
-            getTeacherRPH(currentTeacherUID);
+// --- KOD YANG DIPERBAIKI ---
+// Semua logik yang bergantung pada objek global (auth, db) 
+// kini dibungkus dalam listener DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Pastikan kita berada di laman yang betul
+    if (window.location.pathname.includes('guru_rph.html')) {
+
+        // Pastikan objek 'auth' wujud sebelum memanggil methodnya
+        if (typeof auth !== 'undefined' && auth) {
+            
+            // Listener status pengesahan
+            auth.onAuthStateChanged(user => {
+                if (user) {
+                    currentTeacherUID = user.uid;
+                    // Muatkan data yang diperlukan sebaik sahaja UID guru tersedia
+                    getTeacherRPH(currentTeacherUID);
+                    // Panggil fungsi untuk memuatkan borang Jadual Waktu sedia ada (jika ada)
+                    loadExistingTimetable(currentTeacherUID); 
+                }
+            });
+            
+            // --- EVENT LISTENERS UI KHAS GURU ---
+            
+            // 1. Event untuk butang Jana RPH
+            const generateRphBtn = document.getElementById('generate-rph-btn');
+            if (generateRphBtn) {
+                generateRphBtn.addEventListener('click', generateRPHData);
+            }
+
+            // 2. Event untuk Borang Jadual Waktu (Perlu dijana secara dinamik terlebih dahulu)
+            const saveTimetableBtn = document.getElementById('save-timetable-btn');
+            if (saveTimetableBtn) {
+                saveTimetableBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    // Fungsi ini memerlukan anda mengumpul data borang Jadual Waktu terlebih dahulu
+                    // Contoh: const timetableData = collectTimetableFormData(); 
+                    // saveTimetable(timetableData, currentTeacherUID);
+                    showNotification("Fungsi simpan Jadual Waktu sedia untuk dihubungkan.", 'info');
+                });
+            }
+
+            // 3. Event untuk Borang RPH (handleFormSubmission diuruskan dalam ui_utils.js)
+            
+        } else {
+            console.error("Objek Firebase Auth belum diinisialisasi atau tidak wujud.");
+            // Logik tambahan jika auth undefined
         }
     }
 });
+// --- TAMAT KOD YANG DIPERBAIKI ---
+
+
+/**
+ * Fungsi utiliti untuk mendapatkan nama hari (Sila pastikan ini wujud dalam ui_utils.js atau di sini)
+ */
+function getDayNameFromDate(dateInput) {
+    const date = (dateInput instanceof Date) ? dateInput : new Date(dateInput);
+    return date.toLocaleDateString('ms-MY', { weekday: 'long' });
+}
+
+
+/**
+ * Fungsi untuk memuatkan borang Jadual Waktu sedia ada
+ */
+function loadExistingTimetable(userUID) {
+    // Placeholder: Ini akan memanggil getTimetableByDay(userUID) dan menjana borang.
+    showNotification("Memuatkan Jadual Waktu sedia ada...", 'info');
+    // ... Logik pembinaan borang Jadual Waktu akan diimplementasikan di sini.
+}
 
 /**
  * [FUNGSI WAJIB] saveTimetable(timetableData, userUID)
@@ -25,7 +85,7 @@ function saveTimetable(timetableData, userUID) {
     // Gunakan UID sebagai Document ID untuk setiap Jadual Waktu
     return db.collection('timetables').doc(userUID).set({
         guru_uid: userUID,
-        data: timetableData, // data ini adalah array Jadual Waktu hari-hari
+        data: timetableData, 
         last_saved: firebase.firestore.FieldValue.serverTimestamp()
     })
     .then(() => {
@@ -43,7 +103,7 @@ function saveTimetable(timetableData, userUID) {
 function getTimetableByDay(userUID, date) {
     if (!db || !userUID) return Promise.resolve(null);
     
-    const dayName = getDayNameFromDate(date); // Fungsi utiliti yang perlu anda bina
+    const dayName = getDayNameFromDate(date); 
     
     return db.collection('timetables').doc(userUID).get()
         .then(doc => {
@@ -79,25 +139,32 @@ async function loadSubjectData(subjectCode) {
  * Fungsi Automasi Teras. Menggabungkan Jadual Waktu & JSON untuk mengisi semua medan RPH.
  */
 async function generateRPHData() {
-    // Logik kompleks untuk mengambil Jadual Waktu, memuatkan JSON, dan mengisi #rph-slots-container
-    // ... Implementasi memerlukan butiran lanjut borang...
-    showNotification("Fungsi 'Jana RPH' sedang memuatkan slot waktu dan butiran SP/SK secara automatik...", 'success');
+    const selectedDate = document.getElementById('rph-date').value;
+    if (!selectedDate || !currentTeacherUID) {
+        return showNotification("Sila pilih tarikh RPH dan pastikan anda log masuk.", 'error');
+    }
     
-    // Contoh Panggilan: 
-    // const timetableDay = await getTimetableByDay(currentTeacherUID, document.getElementById('rph-date').value);
-    // const subjectData = await loadSubjectData(timetableDay.slots[0].subject);
-    // ...
-    // displayRPHSlots(timetableDay.slots, subjectData); // (dari ui_utils)
+    const timetableDay = await getTimetableByDay(currentTeacherUID, selectedDate);
+    
+    if (!timetableDay || timetableDay.slots.length === 0) {
+        return showNotification("Tiada Jadual Waktu ditemui untuk hari ini.", 'error');
+    }
+
+    // Logik kompleks untuk mengambil Jadual Waktu, memuatkan JSON, dan mengisi #rph-slots-container
+    showNotification("Menjana RPH. Sila tunggu...", 'success');
+    
+    // ... Logik untuk memuatkan subjectData dan memaparkan borang (akan datang)
+    // displayRPHSlots(timetableDay.slots); 
 }
 
 /**
  * [FUNGSI WAJIB] saveRPH(rphObject, status)
- * Menyimpan/mengemas kini RPH ke /rph_drafts (termasuk Draf dan Penghantaran Semakan).
+ * Menyimpan/mengemas kini RPH ke /rph_drafts.
  */
 function saveRPH(rphObject, status) {
     if (!db || !currentTeacherUID) return;
-
-    const rphID = rphObject.id; // Jika RPH sudah ada (update), ia akan mempunyai ID
+    // ... (Logik penyimpanan RPH sama seperti sebelumnya) ...
+    const rphID = rphObject.id; 
     const dataToSave = {
         guru_uid: currentTeacherUID,
         date: firebase.firestore.Timestamp.fromDate(new Date(rphObject.date)),
@@ -107,13 +174,13 @@ function saveRPH(rphObject, status) {
     };
 
     if (rphID) {
-        // UPDATE (Draf atau Hantar Semula)
         return db.collection('rph_drafts').doc(rphID).update(dataToSave)
+            .then(() => getTeacherRPH(currentTeacherUID))
             .then(() => showNotification(`RPH berjaya dikemas kini sebagai ${status}.`, 'success'))
             .catch((error) => showNotification(`Ralat kemaskini RPH: ${error.message}`, 'error'));
     } else {
-        // CREATE (Draf Pertama)
         return db.collection('rph_drafts').add(dataToSave)
+            .then(() => getTeacherRPH(currentTeacherUID))
             .then(() => showNotification(`RPH baru disimpan sebagai ${status}.`, 'success'))
             .catch((error) => showNotification(`Ralat simpan RPH: ${error.message}`, 'error'));
     }
@@ -132,7 +199,10 @@ function getTeacherRPH(userUID) {
         .get()
         .then(snapshot => {
             const rphList = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-            displayRPHList(rphList, 'teacher-rph-list'); // (dari ui_utils)
+            // Pastikan displayRPHList telah diimport atau didefinisikan 
+            if (typeof displayRPHList !== 'undefined') {
+                displayRPHList(rphList, 'teacher-rph-list'); 
+            }
             return rphList;
         })
         .catch(error => {
@@ -151,10 +221,9 @@ function loadRPHtoEdit(rphID) {
     db.collection('rph_drafts').doc(rphID).get()
         .then(doc => {
             if (doc.exists && doc.data().guru_uid === currentTeacherUID) {
-                // Sediakan borang dan isi data untuk penyuntingan
-                // ... Implementasi logik mengisi medan borang RPH ...
                 document.getElementById('rph-document-id').value = doc.id;
                 document.getElementById('rph-editor-section').classList.remove('hidden');
+                // ... logik mengisi data ke borang akan datang ...
                 showNotification(`RPH Draf (${doc.data().status}) berjaya dimuatkan untuk penyuntingan.`, 'success');
             } else {
                 showNotification("Dokumen RPH tidak wujud atau anda tiada kebenaran.", 'error');
