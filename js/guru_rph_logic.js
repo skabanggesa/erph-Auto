@@ -1,6 +1,6 @@
 // =======================================================
 // GURU RPH LOGIC (js/guru_rph_logic.js)
-// Kemas kini: Laluan JSON diperbetulkan & Logik Jadual Waktu/RPH Disertakan
+// Kemas kini: Penambahan Unit dalam fungsi penjanaan SP
 // =======================================================
 
 let currentTeacherUID = null;
@@ -16,12 +16,11 @@ let standardDataMT = null;
 
 /**
  * Memuatkan data Standard Pembelajaran dari fail JSON.
- * LALUAN DIPERBETULKAN KEPADA '../data/'
+ * LALUAN DIPERBETULKAN KEPADA 'data/'
  */
 async function loadStandardData() {
     try {
         const [rbt, bm, bi, mt] = await Promise.all([
-            // Guna laluan relatif 'data/'
             fetch('data/sp-rbt.json').then(r => r.json()),
             fetch('data/sp-bm.json').then(r => r.json()),
             fetch('data/sp-bi.json').then(r => r.json()),
@@ -34,18 +33,17 @@ async function loadStandardData() {
         console.log("Data Standard Pembelajaran (SP) berjaya dimuatkan.");
         return true;
     } catch (error) {
-        // Peringatan: Pastikan fail JSON wujud dalam folder /data/ dan bukan 404
         console.error("Gagal memuatkan data Standard Pembelajaran:", error);
-        showNotification("Gagal memuatkan data SP yang diperlukan. Sila semak laluan fail JSON dan pastikan ia diletakkan dalam folder 'data/'", 'error');
+        showNotification("Gagal memuatkan data SP yang diperlukan. Sila semak laluan fail JSON.", 'error');
         return false;
     }
 }
 
 /**
- * Memilih data SP Rawak dari struktur JSON berdasarkan Subjek dan Kelas.
+ * Memilih data SP Rawak dari struktur JSON berdasarkan Subjek dan Kelas, termasuk UNIT.
  */
 function selectRandomStandard(subject, className) {
-    const year = className.split(' ')[0].toUpperCase(); // Contoh: 4 Bestari -> TAHUN 4
+    const year = className.split(' ')[0].toUpperCase(); 
     let standardDataSet;
     
     if (subject.toUpperCase().includes('RBT') || subject.toUpperCase().includes('REKA BENTUK')) {
@@ -57,41 +55,51 @@ function selectRandomStandard(subject, className) {
     } else if (subject.toUpperCase().includes('MATEMATIK') || subject.toUpperCase().includes('MT')) {
         standardDataSet = standardDataMT;
     } else {
-        return { standard: 'Sila masukkan SP secara manual', objective: 'Sila masukkan Objektif Pembelajaran secara manual', activities: [], assessment: [], aids: [] };
+        return { unit: 'Tiada Subjek Ditemui', standard: 'Sila masukkan SP secara manual', objective: 'Sila masukkan Objektif Pembelajaran secara manual', activities: [], assessment: [], aids: [] };
     }
 
     if (!standardDataSet || !standardDataSet[year]) {
-        console.warn(`Tiada data SP ditemui untuk Subjek: ${subject} dan Tahun: ${year}.`);
-        return { standard: 'Tiada data SP tersedia', objective: 'Tiada data Objektif tersedia', activities: [], assessment: [], aids: [] };
+        return { unit: 'Tiada Unit tersedia', standard: 'Tiada data SP tersedia', objective: 'Tiada data Objektif tersedia', activities: [], assessment: [], aids: [] };
     }
     
-    // Logik pemilihan rawak (Mengandaikan struktur Unit/Topik/Lesson)
-    const unitKeys = Object.keys(standardDataSet[year]);
-    if (unitKeys.length === 0) return { standard: 'Tiada Unit', objective: 'Tiada Unit', activities: [], assessment: [], aids: [] };
-    
-    const firstUnit = standardDataSet[year][unitKeys[0]]; 
-    
+    const yearData = standardDataSet[year];
+    let unitName = 'Unit Tidak Diketahui';
     let lessons = [];
-    if (firstUnit.topics) { 
-        firstUnit.topics.forEach(topic => {
+
+    // Logik untuk mengendalikan dua jenis struktur JSON yang berbeza
+    if (yearData.unit && yearData.topics) {
+        // Struktur 1: RBT/BM/MT (Menggunakan medan 'unit' dan 'topics')
+        unitName = yearData.unit;
+        yearData.topics.forEach(topic => {
             if (topic.lessons) {
                 lessons = lessons.concat(topic.lessons);
             }
         });
-    } else { 
-        Object.keys(firstUnit).forEach(kemahiran => {
-            lessons = lessons.concat(firstUnit[kemahiran]);
-        });
+    } else {
+        // Struktur 2: BI (Menggunakan Kunci Unit sebagai nama Unit)
+        const firstUnitKey = Object.keys(yearData)[0];
+        if (firstUnitKey) {
+            unitName = firstUnitKey;
+            const unitContent = yearData[firstUnitKey];
+            
+            // Iterate over skills (Listening, Speaking, etc.)
+            Object.keys(unitContent).forEach(skillKey => {
+                if (Array.isArray(unitContent[skillKey])) {
+                    lessons = lessons.concat(unitContent[skillKey]);
+                }
+            });
+        }
     }
 
     if (lessons.length === 0) {
-        return { standard: 'Tiada SP tersedia', objective: 'Tiada Objektif tersedia', activities: [], assessment: [], aids: [] };
+        return { unit: unitName, standard: 'Tiada SP tersedia', objective: 'Tiada Objektif tersedia', activities: [], assessment: [], aids: [] };
     }
 
     const randomIndex = Math.floor(Math.random() * lessons.length);
     const selectedLesson = lessons[randomIndex];
 
     return {
+        unit: unitName, // <-- UNIT BARU DIMASUKKAN
         standard: selectedLesson.standards || 'SP Tiada',
         objective: selectedLesson.objectives || 'Objektif Tiada',
         activities: selectedLesson.activities || [],
@@ -101,11 +109,8 @@ function selectRandomStandard(subject, className) {
 }
 
 
-// --- FUNGSI JADUAL WAKTU ---
+// --- FUNGSI JADUAL WAKTU (Kekal sama) ---
 
-/**
- * [FUNGSI WAJIB] saveTimetable(timetableData, userUID)
- */
 function saveTimetable(timetableData, userUID) {
     db.collection('timetables').doc(userUID).set({ 
         timetable: timetableData 
@@ -120,9 +125,6 @@ function saveTimetable(timetableData, userUID) {
     });
 }
 
-/**
- * [FUNGSI WAJIB] loadExistingTimetable(userUID)
- */
 function loadExistingTimetable(userUID) {
     if (!db || !userUID) return;
     
@@ -200,6 +202,7 @@ async function generateRPHData() {
             day: dayName,
             subject: slot.subject,
             class: slot.class,
+            unit: randomSP.unit, // <-- UNIT BARU DIMASUKKAN KE SLOT RPH
             standard: randomSP.standard,
             objective: randomSP.objective,
             aktiviti: randomSP.activities.join('\n- '),
@@ -219,11 +222,8 @@ async function generateRPHData() {
 }
 
 
-// --- FUNGSI RPH DRAFT DAN PENGURUSAN ---
+// --- FUNGSI RPH DRAFT DAN PENGURUSAN (Kekal sama) ---
 
-/**
- * [FUNGSI WAJIB] saveRPHDraft()
- */
 function saveRPHDraft() {
     const rphData = collectRPHDataFromForm();
     const rphDate = document.getElementById('rph-date').value;
@@ -256,9 +256,6 @@ function saveRPHDraft() {
 }
 
 
-/**
- * [FUNGSI WAJIB] submitRPH()
- */
 function submitRPH() {
     const rphData = collectRPHDataFromForm();
     const rphDate = document.getElementById('rph-date').value;
@@ -284,9 +281,6 @@ function submitRPH() {
 }
 
 
-/**
- * [FUNGSI WAJIB] getTeacherRPH(userUID)
- */
 function getTeacherRPH(userUID) {
     if (!db || !userUID) return;
     
@@ -308,9 +302,6 @@ function getTeacherRPH(userUID) {
 }
 
 
-/**
- * [FUNGSI WAJIB] loadRPHtoEdit(rphID) (Didedahkan ke Window)
- */
 window.loadRPHtoEdit = function(rphID) {
     if (!db) return;
     
@@ -394,4 +385,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
