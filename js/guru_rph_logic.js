@@ -1,6 +1,6 @@
 // =======================================================
 // GURU RPH LOGIC (js/guru_rph_logic.js)
-// Kemas kini: Auto-mengisi SK, SP, Aktiviti, Penilaian, BBM dari data JSON
+// Kemas kini: Memastikan pemuatan Jadual Waktu berfungsi
 // =======================================================
 
 let currentTeacherUID = null;
@@ -9,12 +9,14 @@ let currentTeacherUID = null;
 document.addEventListener('DOMContentLoaded', () => {
     if (window.location.pathname.includes('guru_rph.html')) {
 
+        // Pastikan objek Firebase wujud
         if (typeof auth !== 'undefined' && auth && typeof db !== 'undefined' && db) {
             
             auth.onAuthStateChanged(user => {
                 if (user) {
                     currentTeacherUID = user.uid;
                     getTeacherRPH(currentTeacherUID);
+                    // PANGGILAN PENTING: Memuatkan borang Jadual Waktu semasa mula-mula log masuk
                     loadExistingTimetable(currentTeacherUID); 
                 }
             });
@@ -30,6 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (saveTimetableBtn) {
                 saveTimetableBtn.addEventListener('click', (e) => {
                     e.preventDefault();
+                    // Pastikan collectTimetableFormData wujud di ui_utils.js
+                    if (typeof collectTimetableFormData !== 'function') {
+                        return showNotification("Ralat sistem: Fungsi pengumpulan data Jadual Waktu hilang.", 'error');
+                    }
+                    
                     const timetableData = collectTimetableFormData(); 
                     if (timetableData.length > 0 && currentTeacherUID) {
                         saveTimetable(timetableData, currentTeacherUID);
@@ -49,10 +56,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /**
  * [FUNGSI WAJIB] loadExistingTimetable(userUID)
+ * MEMUAT DATA JADUAL WAKTU DAN MEMAPARKAN BORANG INPUT.
  */
 function loadExistingTimetable(userUID) {
     const container = document.getElementById('timetable-input-form');
-    if (!container) return; 
+    // Pastikan container dan fungsi generateTimetableForm (dari ui_utils.js) wujud
+    if (!container || typeof generateTimetableForm !== 'function') {
+        if(container) container.innerHTML = '<p class="alert alert-danger">Ralat: Fungsi UI Jadual Waktu tidak ditemui.</p>';
+        return; 
+    }
+    
     container.innerHTML = '<p>Memuatkan data Jadual Waktu...</p>';
 
     db.collection('timetables').doc(userUID).get()
@@ -65,7 +78,13 @@ function loadExistingTimetable(userUID) {
                 showNotification("Tiada Jadual Waktu ditemui. Memulakan borang baru.", 'info');
             }
             
-            container.innerHTML = generateTimetableForm(existingData);
+            // JANA BORANG JADUAL WAKTU DI SINI
+            const formHTML = generateTimetableForm(existingData);
+            container.innerHTML = formHTML + `<button id="save-timetable-btn-bottom" class="btn btn-primary mt-3">Simpan Jadual Waktu</button>`;
+            
+            // Re-attach listener to the newly created button (if needed, but already attached to the top button in DOMContentLoaded)
+            // It's cleaner to keep the listener on the fixed button outside the dynamically loaded content. 
+            // The HTML structure in guru_rph.html has the button outside the timetable-input-form.
         })
         .catch(error => {
             showNotification(`Ralat memuatkan Jadual Waktu: ${error.message}`, 'error');
@@ -112,13 +131,13 @@ function getTimetableByDay(userUID, date) {
 
 /**
  * [FUNGSI WAJIB] loadSubjectData(subjectCode)
+ * (Kekal sama, logik memuatkan data SP JSON)
  */
 async function loadSubjectData(subjectCode) {
     const subject = subjectCode.toLowerCase();
     if (!/^[a-z0-9]+$/.test(subject)) return null;
 
     try {
-        // Asumsi data JSON disimpan dalam folder data/
         const filePath = `data/sp-${subject}.json`; 
         const response = await fetch(filePath);
         
@@ -135,7 +154,7 @@ async function loadSubjectData(subjectCode) {
 }
 
 /**
- * [HELPER] Mengeluarkan tahun (nombor) dari rentetan kelas (cth: '4 Anggun' -> 4)
+ * [HELPER] Mengeluarkan tahun (nombor) dari rentetan kelas
  */
 function getYearFromClass(classString) {
     const match = classString.match(/^(\d+)/);
@@ -145,6 +164,7 @@ function getYearFromClass(classString) {
 
 /**
  * [FUNGSI WAJIB] generateRPHData()
+ * (Kekal sama, logik penjanaan RPH automatik)
  */
 async function generateRPHData() {
     const selectedDate = document.getElementById('rph-date')?.value;
@@ -169,7 +189,6 @@ async function generateRPHData() {
     const slots = timetableEntry.slots;
     const subjectDataMap = {};
     
-    // Tapis Slot (RBT/Sejarah Tahun 1-3)
     const filteredSlots = slots.filter(slot => {
         const subject = slot.subject.toUpperCase();
         const year = getYearFromClass(slot.class);
@@ -187,7 +206,6 @@ async function generateRPHData() {
 
     const subjectCodeSet = new Set(filteredSlots.map(s => s.subject.toLowerCase()));
 
-    // Muatkan semua data subjek yang diperlukan secara serentak
     const promises = Array.from(subjectCodeSet).map(code => 
         loadSubjectData(code).then(data => {
             subjectDataMap[code] = data; 
@@ -195,9 +213,6 @@ async function generateRPHData() {
     );
     await Promise.all(promises);
     
-    // ----------------------------------------------------
-    // LOGIK FINAL UNTUK MEMPROSES DAN MEMAPARKAN SLOT RPH
-    // ----------------------------------------------------
     
     const finalSlots = [];
     const finalSubjectDataMap = {};
@@ -226,7 +241,6 @@ async function generateRPHData() {
         
         let yearData = rawSubjectData[yearKey];
         
-        // Tangani Lapisan Bersarang (cth: {kurikulum_rbt: {TAHUN_6: ...}})
         if (!yearData) {
              const topKeys = Object.keys(rawSubjectData);
              if (topKeys.length === 1 && typeof rawSubjectData[topKeys[0]] === 'object') {
@@ -234,13 +248,11 @@ async function generateRPHData() {
              }
          }
         
-        // Flat-map data lessons ke format Array SK/SP/dll (lessons)
         let flatData = [];
         let processingSuccess = false;
 
         if (yearData) {
             if (yearData.topics && Array.isArray(yearData.topics)) {
-                // --- STRUKTUR RBT/GEOGRAFI (TAHUN -> topics -> lessons) ---
                 yearData.topics.forEach(topic => {
                     if (topic.lessons && Array.isArray(topic.lessons)) {
                         topic.lessons.forEach(lesson => {
@@ -258,7 +270,6 @@ async function generateRPHData() {
                 processingSuccess = flatData.length > 0;
 
             } else if (Object.keys(yearData).length > 0) {
-                // --- STRUKTUR BI/BM/MT (TAHUN -> Unit Name -> Skill Name/Sub-topic Name -> lessons array) ---
                 
                 for (const unitKey in yearData) {
                     const unit = yearData[unitKey]; 
@@ -297,11 +308,10 @@ async function generateRPHData() {
                 }
                 processingSuccess = flatData.length > 0;
             }
-        } // End if (yearData)
+        } 
 
         
         if (processingSuccess) {
-            // Simpan semua data lessons yang diflatkan
             finalSubjectDataMap[code] = flatData; 
             finalSlots.push(slot);
         } else {
@@ -319,7 +329,6 @@ async function generateRPHData() {
     }
 
     if (finalSlots.length > 0 && typeof displayRPHSlots !== 'undefined') {
-        // Panggil fungsi UI untuk memaparkan slot dengan pra-isian automatik
         displayRPHSlots(finalSlots, finalSubjectDataMap); 
         editorSection.classList.remove('hidden'); 
         showNotification(`Borang RPH untuk ${finalSlots.length} slot berjaya dijana dan diisi secara automatik.`, 'success');
@@ -388,9 +397,17 @@ window.loadRPHtoEdit = function(rphID) {
         .then(doc => {
             if (doc.exists && doc.data().guru_uid === currentTeacherUID) {
                 document.getElementById('rph-document-id').value = doc.id;
-                document.getElementById('rph-editor-section')?.classList.remove('hidden');
-                // TODO: Logik mengisi data RPH ke dalam borang editor perlu ditambah di sini
-                showNotification(`RPH Draf (${doc.data().status}) berjaya dimuatkan untuk penyuntingan.`, 'success');
+                document.getElementById('rph-date').value = doc.data().date.toDate().toISOString().substring(0, 10);
+                
+                // Panggil fungsi UI untuk mengisi semula borang RPH
+                if (typeof loadRPHFormWithData === 'function') {
+                    loadRPHFormWithData(doc.data().slots_data); 
+                    document.getElementById('rph-editor-section')?.classList.remove('hidden');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    showNotification(`RPH Draf (${doc.data().status}) berjaya dimuatkan untuk penyuntingan.`, 'success');
+                } else {
+                    showNotification("Ralat: Fungsi UI untuk memuatkan RPH ke borang tidak ditemui.", 'error');
+                }
             } else {
                 showNotification("Dokumen RPH tidak wujud atau anda tiada kebenaran.", 'error');
             }
