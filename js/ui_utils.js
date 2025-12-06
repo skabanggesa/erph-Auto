@@ -111,12 +111,15 @@ function renderTimetableForm() {
 /**
  * Fungsi pembantu untuk menambah slot ke borang Jadual Waktu.
  */
+/**
+ * Fungsi pembantu untuk menambah slot ke borang Jadual Waktu.
+ */
 function addTimetableSlot(container, slotData) {
-    const index = container.children.length;
     const slotGroup = document.createElement('div');
     slotGroup.className = 'slot-group mb-1 d-flex';
     slotGroup.innerHTML = `
-        <input type="time" name="time" placeholder="Masa" value="${slotData?.time || ''}" required>
+        <input type="time" name="time_start" placeholder="Masa Mula" value="${slotData?.time_start || ''}" required>
+        <input type="time" name="time_end" placeholder="Masa Tamat" value="${slotData?.time_end || ''}" required>
         <input type="text" name="subject" placeholder="Subjek (Contoh: RBT)" value="${slotData?.subject || ''}" required>
         <input type="text" name="class" placeholder="Kelas (Contoh: 4 Bestari)" value="${slotData?.class || ''}" required>
         <button type="button" class="btn btn-sm btn-danger btn-remove-slot">X</button>
@@ -167,13 +170,13 @@ function collectTimetableFormData() {
         daySection.querySelectorAll('.slot-group').forEach(slotGroup => {
             const slot = {};
             
-            // Mengumpul input time, subject, class
+            // Mengumpul input time_start, time_end, subject, class
             slotGroup.querySelectorAll('input').forEach(input => {
                 slot[input.name] = input.value.trim();
             });
 
             // Hanya simpan slot yang mempunyai semua maklumat
-            if (slot.time && slot.subject && slot.class) {
+            if (slot.time_start && slot.time_end && slot.subject && slot.class) {
                 slots.push(slot);
             }
         });
@@ -198,11 +201,15 @@ function loadRPHFormWithData(slotsData) {
     slotsData.forEach((slot, index) => {
         const slotGroup = document.createElement('div');
         slotGroup.className = 'rph-slot-group card-light mb-2';
+        
+        // Guna time_start dan time_end untuk paparan header
+        const displayTime = `${slot.time_start || 'Masa Mula'} - ${slot.time_end || 'Masa Tamat'}`;
 
         slotGroup.innerHTML = `
-            <h4 class="slot-header">${slot.time} - ${slot.subject} (${slot.class})</h4>
+            <h4 class="slot-header">${displayTime} - ${slot.subject} (${slot.class})</h4>
             <div class="rph-slot-details">
-                <input type="hidden" name="time" value="${slot.time}">
+                <input type="hidden" name="time_start" value="${slot.time_start || ''}">
+                <input type="hidden" name="time_end" value="${slot.time_end || ''}">
                 <input type="hidden" name="day" value="${slot.day}">
                 <input type="hidden" name="subject" value="${slot.subject}">
                 <input type="hidden" name="class" value="${slot.class}">
@@ -232,7 +239,6 @@ function loadRPHFormWithData(slotsData) {
         container.appendChild(slotGroup);
     });
 }
-
 
 /**
  * [FUNGSI WAJIB] collectRPHDataFromForm()
@@ -303,3 +309,4 @@ function initializeTabSwitching() {
 document.addEventListener('DOMContentLoaded', () => {
     initializeTabSwitching();
 });
+
