@@ -66,23 +66,24 @@ function loadExistingTimetable(userUID) {
         return;
     }
 
-    // DEBUGGING STEP 1: Log laluan dokumen yang diakses
+    // DEBUGGING STEP 1: Log laluan dokumen yang diakses. Sila SEMAK nilai userUID di sini!
     console.log(`Mencuba memuatkan Jadual Waktu dari Firestore di: timetables/${userUID}`);
 
     return db.collection('timetables').doc(userUID).get()
         .then(doc => {
             if (doc.exists) {
-                // DEBUGGING STEP 2: Sahkan dokumen ditemui dan lihat strukturnya
-                console.log("Dokumen Jadual Waktu ditemui. Data dokumen:", doc.data());
-                
+                // Dokumen ditemui. Semak nama medan data di dalamnya.
                 const docData = doc.data();
                 
-                // Semak jika medan 'timetable' wujud seperti yang disimpan oleh fungsi saveTimetable
+                // PENTING: Semak jika medan 'timetable' (singular) wujud di dalam dokumen
                 if (docData && docData.timetable) {
                     const timetableData = docData.timetable; 
-                    currentTeacherTimetable = timetableData; // Simpan data di sini
+                    currentTeacherTimetable = timetableData; // Simpan data
                     
-                    // PANGGILAN PENTING: Mengisi borang yang telah dijana
+                    // DEBUGGING STEP 2: Sahkan data Jadual Waktu berjaya diekstrak
+                    console.log("Data Jadual Waktu berjaya diekstrak:", timetableData);
+                    
+                    // PANGGILAN PENTING: Mengisi borang yang telah dijana sebelumnya
                     if (typeof fillTimetableForm === 'function') {
                         fillTimetableForm(timetableData);
                     }
@@ -90,28 +91,25 @@ function loadExistingTimetable(userUID) {
                     showNotification('Jadual Waktu berjaya dimuatkan.', 'success');
                     return timetableData;
                 } else {
-                    showNotification('Ralat Data: Medan "timetable" tidak ditemui dalam dokumen.', 'error');
-                    console.error("Ralat Data: Medan 'timetable' tidak ditemui dalam dokumen Jadual Waktu.");
+                    // Punca #2: Dokumen wujud, tetapi medan data salah
+                    showNotification('Ralat Data: Dokumen ditemui, tetapi medan "timetable" tidak wujud/kosong di dalamnya.', 'error');
+                    console.error("Ralat Data: Sila semak Firestore. Medan data Jadual Waktu MESTI bernama 'timetable' (singular).");
                     currentTeacherTimetable = null;
                     return null;
                 }
             } else {
-                // DEBUGGING STEP 3: Dokumen tidak ditemui
-                console.warn(`Tiada dokumen Jadual Waktu ditemui untuk UID: ${userUID}. Ini normal jika kali pertama log masuk.`);
+                // Punca #1: ID Dokumen Tidak Sepadan
+                console.warn(`Tiada dokumen Jadual Waktu ditemui untuk UID: ${userUID}.`);
                 showNotification('Tiada Jadual Waktu ditemui. Anda perlu mengisi borang.', 'info');
                 currentTeacherTimetable = null;
-                
-                // Pastikan borang kosong dijana jika tiada data
-                if (typeof renderTimetableForm === 'function') {
-                    renderTimetableForm();
-                }
+                // renderTimetableForm() sudah dipanggil di onAuthStateChanged, jadi ia sepatutnya sudah ada.
                 return null;
             }
         })
         .catch(error => {
-            // DEBUGGING STEP 4: Ralat membaca (cth: Firebase Rules, Network)
+            // Punca #3: Ralat lain (cth: Firebase Rules, Ralat Rangkaian)
             showNotification(`Gagal memuatkan Jadual Waktu: ${error.message}`, 'error');
-            console.error("Ralat Firebase Read:", error);
+            console.error("Ralat Firebase Read (Semak Firebase Rules):", error);
             currentTeacherTimetable = null;
             return null;
         });
@@ -343,4 +341,5 @@ window.loadRPHtoEdit = function(rphID) {
             showNotification(`Gagal memuatkan RPH: ${error.message}`, 'error');
         });
 }
+
 
