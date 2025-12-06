@@ -1,6 +1,6 @@
 // =======================================================
 // UI UTILITIES LOGIC (js/ui_utils.js)
-// Fail ini mengandungi semua fungsi UI dan helper
+// Kemas kini: Tukar dropdown kepada textarea auto-isi untuk RPH
 // =======================================================
 
 /**
@@ -14,7 +14,6 @@ function showNotification(message, type) {
     if (!notificationDiv) {
         notificationDiv = document.createElement('div');
         notificationDiv.className = 'notification-alert';
-        // Cuba masukkan selepas header/nav atau di permulaan badan
         if (container) {
              container.insertBefore(notificationDiv, container.firstChild.nextSibling || container.firstChild); 
         } else {
@@ -22,7 +21,6 @@ function showNotification(message, type) {
         }
     }
     
-    // Pastikan kelas type (alert-success, alert-error, dsb.) digunakan
     notificationDiv.className = `notification-alert alert alert-${type}`;
     notificationDiv.textContent = message;
     notificationDiv.style.display = 'block';
@@ -46,7 +44,6 @@ function displayRPHList(dataArray, tableId) {
 
     dataArray.forEach(item => {
         const row = tbody.insertRow();
-        // Item date adalah Firestore Timestamp, perlu ditukar ke Date
         const dateObject = item.date.toDate(); 
         const dateString = dateObject.toLocaleDateString('ms-MY');
 
@@ -60,7 +57,6 @@ function displayRPHList(dataArray, tableId) {
             const editBtn = document.createElement('button');
             editBtn.className = 'btn btn-secondary btn-sm';
             editBtn.textContent = 'Lihat/Edit';
-            // loadRPHtoEdit didedahkan melalui window dalam guru_rph_logic.js
             editBtn.onclick = () => window.loadRPHtoEdit(item.id); 
             actionCell.appendChild(editBtn);
         }
@@ -118,7 +114,6 @@ window.removeTimeSlot = function(buttonElement) {
 
 function collectTimetableFormData() {
     const timetableData = [];
-    // Guna #timetable-form kerana itu adalah ID form yang dijana dalam generateTimetableForm
     const daySections = document.querySelectorAll('#timetable-form .day-section'); 
 
     daySections.forEach(daySection => {
@@ -149,14 +144,23 @@ function collectTimetableFormData() {
 // ------------------------------------------------------------------
 
 /**
- * Menjana satu set medan input untuk satu slot RPH.
+ * Menjana satu set medan input untuk satu slot RPH, dengan pra-isian automatik.
+ * @param {Object} slotData - Data slot waktu (time, subject, class).
  * @param {Array} subjectData - Data SP yang telah diflatkan untuk subjek slot ini.
  */
 function generateRPHSlotInput(slotData, subjectData, slotIndex) {
     const subjectCode = slotData.subject.toLowerCase();
     
-    // PEMBAIKAN: Semak Sama Ada subjectData adalah Array sebelum menggunakan .map()
-    const skOptions = (subjectData && Array.isArray(subjectData)) ? [...new Set(subjectData.map(item => item.SK))] : [];
+    // Auto-pilih pelajaran pertama sebagai cadangan (Default Lesson)
+    // Jika data gagal diproses, defaultLesson akan menjadi null
+    const defaultLesson = subjectData && Array.isArray(subjectData) && subjectData.length > 0 ? subjectData[0] : null;
+
+    // Nilai-nilai Praisi. Guna join('\n') untuk array dipaparkan dalam textarea.
+    const skValue = defaultLesson?.SK || '';
+    const spValue = defaultLesson?.SP || '';
+    const activitiesValue = defaultLesson?.activities?.join('\n') || '';
+    const assessmentValue = defaultLesson?.assessment?.join('\n') || ''; // Penilaian
+    const aidsValue = defaultLesson?.aids?.join('\n') || ''; // Bahan Bantu Mengajar
 
     let html = `<div class="rph-slot-group card-slot mt-3 p-3 border" data-slot-index="${slotIndex}" data-subject-code="${subjectCode}">
         <input type="hidden" name="time" value="${slotData.time}">
@@ -167,23 +171,29 @@ function generateRPHSlotInput(slotData, subjectData, slotIndex) {
         
         <div class="form-group">
             <label for="sk-${slotIndex}">Standard Kandungan (SK):</label>
-            <select id="sk-${slotIndex}" name="sk" class="form-control select-sk" data-target-sp="#sp-${slotIndex}" required>
-                <option value="">-- Pilih SK --</option>
-                ${skOptions.map(sk => `<option value="${sk}">${sk}</option>`).join('')}
-            </select>
+            <textarea id="sk-${slotIndex}" name="sk" class="form-control" rows="1" placeholder="Masukkan SK (cth: RBT.1.1.1)" required>${skValue}</textarea>
         </div>
 
         <div class="form-group">
             <label for="sp-${slotIndex}">Standard Pembelajaran (SP):</label>
-            <select id="sp-${slotIndex}" name="sp" class="form-control" required>
-                <option value="">-- Pilih SP --</option>
-            </select>
+            <textarea id="sp-${slotIndex}" name="sp" class="form-control" rows="2" placeholder="Masukkan SP (cth: Murid dapat mengenal pasti...)" required>${spValue}</textarea>
         </div>
         
         <div class="form-group">
             <label for="aktiviti-${slotIndex}">Aktiviti Pembelajaran:</label>
-            <textarea id="aktiviti-${slotIndex}" name="aktiviti" class="form-control" rows="3" placeholder="Contoh: Perbincangan berkumpulan, Pembentangan"></textarea>
+            <textarea id="aktiviti-${slotIndex}" name="aktiviti" class="form-control" rows="3" placeholder="Contoh: Perbincangan berkumpulan, Pembentangan">${activitiesValue}</textarea>
         </div>
+        
+        <div class="form-group">
+            <label for="penilaian-${slotIndex}">Penilaian:</label>
+            <textarea id="penilaian-${slotIndex}" name="penilaian" class="form-control" rows="2" placeholder="Contoh: Senarai semak, Pemerhatian guru">${assessmentValue}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="bantuan-${slotIndex}">Bahan Bantu Mengajar (BBM):</label>
+            <textarea id="bantuan-${slotIndex}" name="aids" class="form-control" rows="2" placeholder="Contoh: Kad nombor, Carta minda berkumpulan">${aidsValue}</textarea>
+        </div>
+
 
         <div class="form-group">
             <label for="refleksi-${slotIndex}">Refleksi:</label>
@@ -194,6 +204,9 @@ function generateRPHSlotInput(slotData, subjectData, slotIndex) {
     return html;
 }
 
+/**
+ * Menjana borang RPH penuh berdasarkan slot dan data SP.
+ */
 function displayRPHSlots(slotsArray, subjectDataMap) {
     const container = document.getElementById('rph-slots-container'); 
     if (!container) return; 
@@ -208,44 +221,11 @@ function displayRPHSlots(slotsArray, subjectDataMap) {
             container.insertAdjacentHTML('beforeend', generateRPHSlotInput(slot, allSubjectData, index));
         } else if (allSubjectData === null) {
              container.insertAdjacentHTML('beforeend', `<div class="rph-slot-group card-slot mt-3 p-3 border"><p class="alert alert-danger">Ralat: Data SP untuk subjek ${slot.subject} gagal dimuatkan atau diproses. Sila isi manual.</p></div>`);
-        } else {
-             // Slot yang tiada data (jarang berlaku jika logik pemprosesan berjaya)
-        }
+        } 
     });
     
-    initializeRPHSelectListeners(subjectDataMap);
+    // Tiada lagi event listener untuk dropdown kerana kita guna textarea auto-isi
 }
-
-function initializeRPHSelectListeners(subjectDataMap) {
-    window.subjectDataMap = subjectDataMap; 
-
-    document.querySelectorAll('.select-sk').forEach(selectSK => {
-        selectSK.removeEventListener('change', updateSPDropdown);
-        selectSK.addEventListener('change', updateSPDropdown);
-    });
-}
-
-function updateSPDropdown(event) {
-    const selectSK = event.target;
-    const selectedSK = selectSK.value;
-    const selectSP = document.querySelector(selectSK.getAttribute('data-target-sp'));
-    const slotGroup = selectSK.closest('.rph-slot-group');
-    const subjectCode = slotGroup.getAttribute('data-subject-code');
-    const subjectData = window.subjectDataMap[subjectCode];
-    
-    selectSP.innerHTML = '<option value="">-- Pilih SP --</option>'; 
-
-    if (selectedSK && subjectData && Array.isArray(subjectData)) {
-        const spOptions = subjectData
-            .filter(item => item.SK === selectedSK)
-            .map(item => item.SP);
-
-        [...new Set(spOptions)].forEach(sp => {
-            selectSP.innerHTML += `<option value="${sp}">${sp}</option>`;
-        });
-    }
-}
-
 
 // ------------------------------------------------------------------
 // FUNGSI UMUM DAN HELPER
@@ -254,7 +234,6 @@ function updateSPDropdown(event) {
 function handleFormSubmission(event) {
     event.preventDefault();
     
-    // Pastikan submitter wujud sebelum cuba akses atribut data-action
     const action = event.submitter ? event.submitter.getAttribute('data-action') : 'draft'; 
     
     const rphData = {
@@ -276,14 +255,15 @@ function collectRPHSlotsData() {
     const slotsData = [];
     document.querySelectorAll('.rph-slot-group').forEach(slotGroup => {
         const slot = {
-            // Pengambilan data input tersembunyi/asas
             time: slotGroup.querySelector('input[name="time"]').value,
             subject: slotGroup.querySelector('input[name="subject"]').value,
             class: slotGroup.querySelector('input[name="class"]').value,
-            // Pengambilan data RPH yang diisi
-            sk: slotGroup.querySelector('select[name="sk"]').value,
-            sp: slotGroup.querySelector('select[name="sp"]').value,
+            // Semua medan kini dikumpul dari TEXTAREA
+            sk: slotGroup.querySelector('textarea[name="sk"]').value, 
+            sp: slotGroup.querySelector('textarea[name="sp"]').value, 
             aktiviti: slotGroup.querySelector('textarea[name="aktiviti"]').value,
+            penilaian: slotGroup.querySelector('textarea[name="penilaian"]').value, // Medan Baharu
+            aids: slotGroup.querySelector('textarea[name="aids"]').value, // Medan Baharu (BBM)
             refleksi: slotGroup.querySelector('textarea[name="refleksi"]').value
         };
         slotsData.push(slot);
@@ -322,7 +302,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const rphForm = document.getElementById('rph-form'); 
     if (rphForm) {
-        // Guna handleFormSubmission untuk mengendalikan kedua-dua butang 'Draf' dan 'Hantar'
         rphForm.addEventListener('submit', handleFormSubmission);
     }
 });
