@@ -61,24 +61,47 @@ document.addEventListener('DOMContentLoaded', () => {
  * Memuatkan Jadual Waktu sedia ada dari Firestore.
  */
 function loadExistingTimetable(userUID) {
-    if (!db || !userUID) return;
+    if (!db || !userUID) {
+        console.error("Firebase atau userUID tidak tersedia.");
+        return;
+    }
+
+    // DEBUGGING STEP 1: Log laluan dokumen yang diakses
+    console.log(`Mencuba memuatkan Jadual Waktu dari Firestore di: timetables/${userUID}`);
 
     return db.collection('timetables').doc(userUID).get()
         .then(doc => {
             if (doc.exists) {
-                const timetableData = doc.data().timetable;
-                currentTeacherTimetable = timetableData; // Simpan data di sini
+                // DEBUGGING STEP 2: Sahkan dokumen ditemui dan lihat strukturnya
+                console.log("Dokumen Jadual Waktu ditemui. Data dokumen:", doc.data());
                 
-                // PANGGILAN PENTING: Mengisi borang yang telah dijana
-                if (typeof fillTimetableForm === 'function') {
-                    fillTimetableForm(timetableData);
+                const docData = doc.data();
+                
+                // Semak jika medan 'timetable' wujud seperti yang disimpan oleh fungsi saveTimetable
+                if (docData && docData.timetable) {
+                    const timetableData = docData.timetable; 
+                    currentTeacherTimetable = timetableData; // Simpan data di sini
+                    
+                    // PANGGILAN PENTING: Mengisi borang yang telah dijana
+                    if (typeof fillTimetableForm === 'function') {
+                        fillTimetableForm(timetableData);
+                    }
+                    
+                    showNotification('Jadual Waktu berjaya dimuatkan.', 'success');
+                    return timetableData;
+                } else {
+                    showNotification('Ralat Data: Medan "timetable" tidak ditemui dalam dokumen.', 'error');
+                    console.error("Ralat Data: Medan 'timetable' tidak ditemui dalam dokumen Jadual Waktu.");
+                    currentTeacherTimetable = null;
+                    return null;
                 }
-                
-                return timetableData;
             } else {
+                // DEBUGGING STEP 3: Dokumen tidak ditemui
+                console.warn(`Tiada dokumen Jadual Waktu ditemui untuk UID: ${userUID}. Ini normal jika kali pertama log masuk.`);
                 showNotification('Tiada Jadual Waktu ditemui. Anda perlu mengisi borang.', 'info');
                 currentTeacherTimetable = null;
-                // Pastikan borang kosong dijana jika tiada data (Redundancy check)
+                
+                // Pastikan borang kosong dijana jika tiada data
                 if (typeof renderTimetableForm === 'function') {
                     renderTimetableForm();
                 }
@@ -86,7 +109,9 @@ function loadExistingTimetable(userUID) {
             }
         })
         .catch(error => {
+            // DEBUGGING STEP 4: Ralat membaca (cth: Firebase Rules, Network)
             showNotification(`Gagal memuatkan Jadual Waktu: ${error.message}`, 'error');
+            console.error("Ralat Firebase Read:", error);
             currentTeacherTimetable = null;
             return null;
         });
@@ -318,3 +343,4 @@ window.loadRPHtoEdit = function(rphID) {
             showNotification(`Gagal memuatkan RPH: ${error.message}`, 'error');
         });
 }
+
