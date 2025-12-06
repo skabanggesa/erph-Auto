@@ -25,20 +25,49 @@
                 <button id="generate-rph-btn" class="btn btn-primary mt-1">Jana RPH</button>
             </div>
 
-            <div id="rph-editor-section" class="card mt-2 hidden">
-                <h3>Sunting Draf RPH</h3>
-                <form id="rph-editor-form">
-                    <div id="rph-editor-container">
-                        <p>Memuatkan slot RPH...</p>
-                    </div>
+<div id="rph-editor-section" class="card mt-2 hidden">
+    <h3>Draf RPH Mingguan</h3>
+    <form id="rph-editor-form">
+        <div id="rph-slots-container">
+            <div class="rph-slot-group">
+                <h4 class="slot-header">Masa - Subjek (Kelas)</h4>
+                <div class="rph-slot-details">
+                    <input type="hidden" name="time">
+                    <input type="hidden" name="day">
+                    <input type="hidden" name="subject">
+                    <input type="hidden" name="class">
                     
-                    <div class="rph-actions">
-                        <button type="button" id="save-rph-btn" class="btn btn-success">Simpan Draf</button>
-                        <button type="button" id="submit-rph-btn" class="btn btn-primary">Hantar ke Pentadbir</button>
-                        <input type="hidden" id="rph-document-id">
-                    </div>
-                </form>
+                    <label for="unit-0">Unit:</label>
+                    <textarea id="unit-0" name="unit" rows="1" required></textarea>
+                    
+                    <label for="standard-0">Standard Pembelajaran (SP):</label>
+                    <textarea id="standard-0" name="standard" rows="2" required></textarea>
+
+                    <label for="objective-0">Objektif Pembelajaran:</label>
+                    <textarea id="objective-0" name="objective" rows="3" required></textarea>
+
+                    <label for="aktiviti-0">Aktiviti:</label>
+                    <textarea id="aktiviti-0" name="aktiviti" rows="4" required></textarea>
+
+                    <label for="penilaian-0">Penilaian:</label>
+                    <textarea id="penilaian-0" name="penilaian" rows="3" required></textarea>
+
+                    <label for="aids-0">Bahan Bantu Mengajar (BBM):</label>
+                    <textarea id="aids-0" name="aids" rows="3" required></textarea>
+
+                    <label for="refleksi-0">Refleksi:</label>
+                    <textarea id="refleksi-0" name="refleksi" rows="3"></textarea>
+                </div>
             </div>
+            </div>
+
+        <div class="form-actions mt-3">
+            <button type="button" id="save-rph-btn" class="btn btn-secondary">💾 Simpan Draf</button>
+            <button type="button" id="submit-rph-btn" class="btn btn-success">✅ Hantar ke Pentadbir</button>
+            <input type="hidden" id="rph-document-id">
+        </div>
+    </form>
+</div>
 
             <h3 class="mt-3">Senarai RPH Saya</h3>
             <table id="teacher-rph-list" class="data-table">
@@ -75,4 +104,5 @@
     <script src="js/guru_rph_logic.js"></script>
 </body>
 </html>
+
 
