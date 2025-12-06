@@ -1,5 +1,6 @@
 // =======================================================
 // GURU RPH LOGIC (js/guru_rph_logic.js)
+// PEMBAIKAN STRUKTUR DATA JSON PELBAGAI SUBJEK
 // =======================================================
 
 let currentTeacherUID = null;
@@ -111,7 +112,6 @@ function getTimetableByDay(userUID, date) {
 
 /**
  * [FUNGSI WAJIB] loadSubjectData(subjectCode)
- * Mengendalikan ralat 404/pemuatan data dan mengembalikan null jika gagal.
  */
 async function loadSubjectData(subjectCode) {
     const subject = subjectCode.toLowerCase();
@@ -168,7 +168,7 @@ async function generateRPHData() {
     const slots = timetableEntry.slots;
     const subjectDataMap = {};
     
-    // Tapis Slot (RBT/Sejarah Tahun 1-3)
+    // Tapis Slot (RBT/Sejarah Tahun 1-3 - Subjek yang bermula Tahun 4)
     const filteredSlots = slots.filter(slot => {
         const subject = slot.subject.toUpperCase();
         const year = getYearFromClass(slot.class);
@@ -184,6 +184,7 @@ async function generateRPHData() {
         return showNotification("Tiada slot subjek yang sah ditemui untuk dijana RPH.", 'warning');
     }
 
+    // Muatkan data JSON untuk subjek unik sahaja
     const subjectCodeSet = new Set(filteredSlots.map(s => s.subject.toLowerCase()));
 
     const promises = Array.from(subjectCodeSet).map(code => 
@@ -212,43 +213,95 @@ async function generateRPHData() {
             return;
         }
         
-        // ❌ [DIBUANG] Logik untuk menangani lapisan 'kurikulum_rbt' telah dialih keluar.
-        // Data kini dijangka bermula terus dengan kunci tahunan (TAHUN_N).
-
         const targetYear = getYearFromClass(slot.class);
+        let yearKey = `TAHUN_${targetYear}`; // Cuba TAHUN_N
         
-        // Menangani Jarak/Format Kunci Tahun
-        let yearKey = `TAHUN_${targetYear}`;
-        
-        // Semak jika kunci dengan jarak wujud (cth: "TAHUN 4")
+        // 1. Dapatkan kunci tahunan yang betul ("TAHUN 4" vs "TAHUN_4")
         if (!rawSubjectData[yearKey]) {
             const spacedKey = `TAHUN ${targetYear}`;
             if (rawSubjectData[spacedKey]) {
-                yearKey = spacedKey;
+                yearKey = spacedKey; // Guna TAHUN N
             }
         }
         
-        const yearData = rawSubjectData[yearKey];
+        let yearData = rawSubjectData[yearKey];
         
-        if (yearData && yearData.topics && Array.isArray(yearData.topics)) {
-            // Flat-map data topik tahunan ke format Array SK/SP yang dijangka oleh UI
-            const flatData = [];
-            yearData.topics.forEach(topic => {
-                if (topic.lessons && Array.isArray(topic.lessons)) {
-                    topic.lessons.forEach(lesson => {
-                        flatData.push({
-                            SK: lesson.standards || topic.topic_name,
-                            SP: lesson.objectives,
-                            topic_name: topic.topic_name,
-                            activities: lesson.activities 
+        // 2. Tangani Lapisan Bersarang (cth: {kurikulum_rbt: {TAHUN_6: ...}})
+        if (!yearData) {
+             const topKeys = Object.keys(rawSubjectData);
+             if (topKeys.length === 1 && typeof rawSubjectData[topKeys[0]] === 'object') {
+                 // Cuba akses kunci tahun di bawah lapisan bersarang ini
+                 yearData = rawSubjectData[topKeys[0]][yearKey];
+             }
+         }
+        
+        // 3. Flat-map data lessons ke format Array SK/SP yang dijangka oleh UI
+        let flatData = [];
+        let processingSuccess = false;
+
+        if (yearData) {
+            if (yearData.topics && Array.isArray(yearData.topics)) {
+                // --- STRUKTUR RBT/GEOGRAFI (TAHUN -> topics -> lessons) ---
+                yearData.topics.forEach(topic => {
+                    if (topic.lessons && Array.isArray(topic.lessons)) {
+                        topic.lessons.forEach(lesson => {
+                            flatData.push({
+                                SK: lesson.standards || topic.topic_name,
+                                SP: lesson.objectives,
+                                topic_name: topic.topic_name,
+                                activities: lesson.activities 
+                            });
                         });
-                    });
+                    }
+                });
+                processingSuccess = flatData.length > 0;
+
+            } else if (Object.keys(yearData).length > 0) {
+                // --- STRUKTUR BI/BM/MT (TAHUN -> Unit Name -> Skill Name/Sub-topic Name -> lessons array) ---
+                
+                // Iterasi melalui setiap unit/kunci peringkat seterusnya dalam tahun tersebut
+                for (const unitKey in yearData) {
+                    const unit = yearData[unitKey]; // Unit Name (cth: "Unit 1: Keluarga Saya")
+                    
+                    if (typeof unit === 'object' && unit !== null) {
+                        const unitName = unitKey;
+                        
+                        // Iterasi melalui Skill/Aspek/Sub-topic dalam unit
+                        for (const skillKey in unit) {
+                            const lessonsArray = unit[skillKey];
+                            if (Array.isArray(lessonsArray)) {
+                                lessonsArray.forEach(lesson => {
+                                    // SK = standards, SP = objectives, topic_name = Unit Name, skill = Skill Name
+                                    flatData.push({
+                                        SK: lesson.standards || unitName, 
+                                        SP: lesson.objectives,
+                                        topic_name: unitName, 
+                                        skill: skillKey,
+                                        activities: lesson.activities 
+                                    });
+                                });
+                            }
+                        }
+                    } else if (Array.isArray(unit)) {
+                         // Fallback jika Unit Name terus ke array of lessons (Struktur yang jarang)
+                          unit.forEach(lesson => {
+                            flatData.push({
+                                SK: lesson.standards || unitKey,
+                                SP: lesson.objectives,
+                                topic_name: unitKey,
+                                activities: lesson.activities 
+                            });
+                        });
+                    }
                 }
-            });
-            
+                processingSuccess = flatData.length > 0;
+            }
+        } // End if (yearData)
+
+        
+        if (processingSuccess) {
             finalSubjectDataMap[code] = flatData; 
             finalSlots.push(slot);
-            
         } else {
             console.error(`Gagal memproses data JSON untuk ${code} ${yearKey}. Sila semak struktur fail.`, rawSubjectData);
             showNotification(`Ralat memproses data JSON untuk ${code} ${yearKey}. Sila semak fail data.`, 'error');
