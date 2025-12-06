@@ -6,8 +6,10 @@ let currentTeacherUID = null;
 
 // --- KOD UTAMA DIJALANKAN SELEPAS DOM DIMUAT ---
 document.addEventListener('DOMContentLoaded', () => {
+    // Menggunakan window.location.pathname.includes('guru_rph.html') dari kod asal anda
     if (window.location.pathname.includes('guru_rph.html')) {
 
+        // Pastikan auth dan komponen luaran lain wujud
         if (typeof auth !== 'undefined' && auth) {
             
             auth.onAuthStateChanged(user => {
@@ -50,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 function loadExistingTimetable(userUID) {
     const container = document.getElementById('timetable-form-container');
+    if (!container) return; // Exit jika container tiada
     container.innerHTML = '<p>Memuatkan data Jadual Waktu...</p>';
 
     if (!db || typeof generateTimetableForm === 'undefined') {
@@ -67,6 +70,7 @@ function loadExistingTimetable(userUID) {
                 showNotification("Tiada Jadual Waktu ditemui. Memulakan borang baru.", 'info');
             }
             
+            // Anggapkan container adalah div kosong yang akan diisi dengan borang
             container.innerHTML = generateTimetableForm(existingData);
         })
         .catch(error => {
@@ -106,6 +110,7 @@ function getTimetableByDay(userUID, date) {
         .then(doc => {
             if (doc.exists) {
                 const timetableData = doc.data().data;
+                // timetableData adalah array objek {day: 'Isnin', slots: [...] }
                 return timetableData.find(item => item.day === dayName); 
             }
             return null;
@@ -114,34 +119,52 @@ function getTimetableByDay(userUID, date) {
 
 /**
  * [FUNGSI WAJIB] loadSubjectData(subjectCode)
+ * Mengendalikan ralat 404/pemuatan data dan mengembalikan null jika gagal.
  */
 async function loadSubjectData(subjectCode) {
+    const subject = subjectCode.toLowerCase();
+    
     // Pastikan kod subjek hanya huruf dan angka untuk keselamatan
-    if (!/^[a-z0-9]+$/.test(subjectCode)) {
+    if (!/^[a-z0-9]+$/.test(subject)) {
         console.error("Kod subjek tidak sah:", subjectCode);
         return null;
     }
 
     try {
-        const filePath = `data/sp-${subjectCode}.json`;
+        const filePath = `data/sp-${subject}.json`;
         const response = await fetch(filePath);
+        
+        // 💡 PEMBAIKAN: Semak respons HTTP (Menangkap 404 Not Found)
         if (!response.ok) {
-            // Ini akan berlaku jika fail JSON subjek tiada
-            throw new Error(`Gagal memuatkan fail JSON: ${filePath}`);
+            showNotification(`Ralat: Fail data untuk subjek ${subjectCode} gagal dimuatkan. (Kod ${response.status})`, 'error');
+            // Guna console.error untuk butiran lanjut kepada pembangun
+            console.error(`Gagal memuatkan fail JSON: ${filePath}`, response); 
+            return null;
         }
-        return response.json();
+        
+        return await response.json();
     } catch (error) {
+        showNotification(`Ralat memuatkan data SP: ${error.message}`, 'error');
         console.error("Ralat memuatkan data SP:", error);
         return null;
     }
 }
 
 /**
+ * [HELPER] Mengeluarkan tahun (nombor) dari rentetan kelas (cth: '4 Anggun' -> 4)
+ */
+function getYearFromClass(classString) {
+    const match = classString.match(/^(\d+)/);
+    return match ? parseInt(match[1]) : 0;
+}
+
+
+/**
  * [FUNGSI WAJIB] generateRPHData()
  * Fungsi Automasi Teras. 
  */
 async function generateRPHData() {
-    const selectedDate = document.getElementById('rph-date').value;
+    const selectedDate = document.getElementById('rph-date')?.value;
     if (!selectedDate || !currentTeacherUID) {
         return showNotification("Sila pilih tarikh RPH dan pastikan anda log masuk.", 'error');
     }
@@ -155,24 +178,90 @@ async function generateRPHData() {
         return showNotification(`Tiada Jadual Waktu ditemui untuk hari ${dayName}.`, 'error');
     }
 
-    showNotification(`Memproses data subjek untuk ${dayName}...`, 'success');
+    showNotification(`Memproses data subjek untuk ${dayName}...`, 'info');
     
     const slots = timetableEntry.slots;
-    const subjectCodeSet = new Set(slots.map(s => s.subject.toLowerCase()));
+    
+    // 💡 PEMBAIKAN: Tapis dan Semak Slot RBT/Sejarah Tahun 1-3
+    const filteredSlots = slots.filter(slot => {
+        const subject = slot.subject.toUpperCase();
+        const year = getYearFromClass(slot.class);
+        
+        // Cuma semak jika subjek adalah RBT atau SEJARAH
+        if ((subject === 'RBT' || subject === 'SEJARAH') && year > 0 && year < 4) {
+            showNotification(`Slot ${slot.subject} (${slot.class}) dilangkau kerana ia hanya bermula dari Tahun 4.`, 'warning');
+            return false; // Langkau slot ini
+        }
+        return true; // Kekalkan slot ini
+    });
+    
+    if (filteredSlots.length === 0) {
+        return showNotification("Tiada slot subjek yang sah ditemui untuk dijana RPH.", 'warning');
+    }
+
+
+    const subjectCodeSet = new Set(filteredSlots.map(s => s.subject.toLowerCase()));
     const subjectDataMap = {};
+    let loadErrorOccurred = false;
 
     // Kumpul semua data subjek JSON yang diperlukan secara serentak
     const promises = Array.from(subjectCodeSet).map(code => 
+        // Menggunakan logik akses fail JSON anda yang disesuaikan untuk yearKey
         loadSubjectData(code).then(data => {
-            subjectDataMap[code] = data;
+            if (data !== null) {
+                // Dalam data JSON anda, key adalah TAHUN_N. Kita perlu mengubah data ini sedikit
+                // kepada format array SK/SP yang dijangka oleh UI
+                
+                // Cari tahun pertama yang sah dalam data JSON
+                const firstYearKey = Object.keys(data).find(key => key.startsWith('TAHUN_'));
+                
+                // Ambil data untuk tahun dari slot yang dijana
+                const targetSlot = filteredSlots.find(s => s.subject.toLowerCase() === code);
+                const targetYear = getYearFromClass(targetSlot.class);
+                const yearKey = `TAHUN_${targetYear}`;
+                
+                // Data subjek mengikut tahun yang dipilih
+                const yearData = data[yearKey];
+                
+                // Kita perlu flat-map struktur JSON anda ke array SK/SP yang dijangka oleh UI
+                const flatData = [];
+                if (yearData && yearData.topics && Array.isArray(yearData.topics)) {
+                     yearData.topics.forEach(topic => {
+                        if (topic.lessons && Array.isArray(topic.lessons)) {
+                            topic.lessons.forEach(lesson => {
+                                // Asumsi: SK/SP dalam UI bermaksud standards/objectives dalam JSON anda
+                                flatData.push({
+                                    SK: lesson.standards, // Guna standards sebagai SK
+                                    SP: lesson.objectives, // Guna objectives sebagai SP
+                                    topic_name: topic.topic_name,
+                                    activities: lesson.activities 
+                                });
+                            });
+                        }
+                    });
+                    subjectDataMap[code] = flatData;
+                } else {
+                    // Jika struktur data tidak dijangka
+                    console.error(`Gagal memproses data JSON untuk ${code} ${yearKey}.`, data);
+                    loadErrorOccurred = true;
+                }
+            } else {
+                loadErrorOccurred = true; // Tandakan ralat muatan
+            }
         })
     );
     await Promise.all(promises);
     
+    if (loadErrorOccurred) {
+        showNotification("Amaran: Beberapa data subjek gagal dimuatkan. Borang RPH mungkin tidak lengkap.", 'warning');
+    }
+
     // Jana borang RPH menggunakan data yang telah dikumpul
     if (typeof displayRPHSlots !== 'undefined') {
-        displayRPHSlots(slots, subjectDataMap);
-        document.getElementById('rph-editor-section').classList.remove('hidden');
+        // Hantar slot yang telah ditapis dan peta data subjek
+        displayRPHSlots(filteredSlots, subjectDataMap);
+        document.getElementById('rph-editor-section')?.classList.remove('hidden');
+        showNotification(`Borang RPH untuk ${filteredSlots.length} slot berjaya dijana.`, 'success');
     } else {
         showNotification("Ralat: Gagal memuatkan komponen penjanaan RPH.", 'error');
     }
@@ -187,7 +276,8 @@ function saveRPH(rphObject, status) {
     const rphID = rphObject.id; 
     const dataToSave = {
         guru_uid: currentTeacherUID,
-        date: firebase.firestore.Timestamp.fromDate(new Date(rphObject.date)),
+        // Pastikan firebase.firestore.Timestamp wujud (dari firebase-firestore.js)
+        date: firebase.firestore.Timestamp.fromDate(new Date(rphObject.date)), 
         status: status,
         slots_data: rphObject.slots_data,
         last_updated: firebase.firestore.FieldValue.serverTimestamp()
@@ -237,7 +327,7 @@ window.loadRPHtoEdit = function(rphID) {
         .then(doc => {
             if (doc.exists && doc.data().guru_uid === currentTeacherUID) {
                 document.getElementById('rph-document-id').value = doc.id;
-                document.getElementById('rph-editor-section').classList.remove('hidden');
+                document.getElementById('rph-editor-section')?.classList.remove('hidden');
                 // TODO: Logik mengisi data RPH ke dalam borang editor perlu ditambah di sini
                 showNotification(`RPH Draf (${doc.data().status}) berjaya dimuatkan untuk penyuntingan.`, 'success');
             } else {
