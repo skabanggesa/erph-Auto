@@ -1,6 +1,6 @@
 // =======================================================
 // GURU RPH LOGIC (js/guru_rph_logic.js)
-// Kemas kini: Memastikan pemuatan Jadual Waktu berfungsi
+// Kemas kini: Memastikan pemuatan Jadual Waktu berfungsi dengan kuat
 // =======================================================
 
 let currentTeacherUID = null;
@@ -66,7 +66,8 @@ function loadExistingTimetable(userUID) {
         return; 
     }
     
-    container.innerHTML = '<p>Memuatkan data Jadual Waktu...</p>';
+    // PENTING: Padamkan sebarang kandungan sedia ada (seperti prapapar HTML)
+    container.innerHTML = '<p>Memuatkan data Jadual Waktu...</p>'; 
 
     db.collection('timetables').doc(userUID).get()
         .then(doc => {
@@ -80,15 +81,23 @@ function loadExistingTimetable(userUID) {
             
             // JANA BORANG JADUAL WAKTU DI SINI
             const formHTML = generateTimetableForm(existingData);
-            container.innerHTML = formHTML; // <-- HANYA MASUKKAN BORANG SAHAJA
             
-            // Re-attach listener to the newly created button (if needed, but already attached to the top button in DOMContentLoaded)
-            // It's cleaner to keep the listener on the fixed button outside the dynamically loaded content. 
-            // The HTML structure in guru_rph.html has the button outside the timetable-input-form.
+            // Gantikan kandungan container dengan borang
+            if (formHTML) {
+                 container.innerHTML = formHTML; 
+            } else {
+                 container.innerHTML = '<p class="alert alert-danger">Gagal menjana borang. Sila semak konsol untuk ralat.</p>';
+            }
+            
         })
         .catch(error => {
             showNotification(`Ralat memuatkan Jadual Waktu: ${error.message}`, 'error');
-            container.innerHTML = generateTimetableForm([]);
+            // Pastikan borang kosong masih dipaparkan semasa ralat
+            if (typeof generateTimetableForm === 'function') {
+                container.innerHTML = generateTimetableForm([]);
+            } else {
+                container.innerHTML = '<p class="alert alert-danger">Gagal memuatkan data dan menjana borang.</p>';
+            }
         });
 }
 
@@ -131,7 +140,6 @@ function getTimetableByDay(userUID, date) {
 
 /**
  * [FUNGSI WAJIB] loadSubjectData(subjectCode)
- * (Kekal sama, logik memuatkan data SP JSON)
  */
 async function loadSubjectData(subjectCode) {
     const subject = subjectCode.toLowerCase();
@@ -164,7 +172,6 @@ function getYearFromClass(classString) {
 
 /**
  * [FUNGSI WAJIB] generateRPHData()
- * (Kekal sama, logik penjanaan RPH automatik)
  */
 async function generateRPHData() {
     const selectedDate = document.getElementById('rph-date')?.value;
@@ -413,4 +420,3 @@ window.loadRPHtoEdit = function(rphID) {
             }
         });
 }
-
