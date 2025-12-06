@@ -4,8 +4,9 @@
 // =======================================================
 
 let currentTeacherUID = null;
+let currentTeacherTimetable = null; // Menyimpan jadual waktu guru yang dimuatkan
 
-// --- KOD UTAMA DIJALANKAN SELEPAS DOM DIMUAT ---
+// --- KOD UTAMA DIJALANKAN SELEPAS DOM DIMUAT ---\
 document.addEventListener('DOMContentLoaded', () => {
     if (window.location.pathname.includes('guru_rph.html')) {
 
@@ -16,12 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (user) {
                     currentTeacherUID = user.uid;
                     getTeacherRPH(currentTeacherUID);
-                    // PANGGILAN PENTING: Memuatkan borang Jadual Waktu semasa mula-mula log masuk
+                    
+                    // PANGGILAN PENTING: Menjana borang Jadual Waktu semasa mula-mula log masuk
+                    if (typeof renderTimetableForm === 'function') {
+                        renderTimetableForm();
+                    }
+                    
                     loadExistingTimetable(currentTeacherUID); 
                 }
             });
             
-            // --- EVENT LISTENERS UI KHAS GURU ---
+            // --- EVENT LISTENERS UI KHAS GURU ---\
             
             const generateRphBtn = document.getElementById('generate-rph-btn');
             if (generateRphBtn) {
@@ -32,347 +38,236 @@ document.addEventListener('DOMContentLoaded', () => {
             if (saveTimetableBtn) {
                 saveTimetableBtn.addEventListener('click', (e) => {
                     e.preventDefault();
-                    // Pastikan collectTimetableFormData wujud di ui_utils.js
-                    if (typeof collectTimetableFormData !== 'function') {
-                        return showNotification("Ralat sistem: Fungsi pengumpulan data Jadual Waktu hilang.", 'error');
-                    }
-                    
+                    // Fungsi ini dijangka ada dalam ui_utils.js
                     const timetableData = collectTimetableFormData(); 
                     if (timetableData.length > 0 && currentTeacherUID) {
                         saveTimetable(timetableData, currentTeacherUID);
                     } else {
-                        showNotification("Sila isi sekurang-kurangnya satu slot Jadual Waktu yang lengkap.", 'error');
+                        showNotification('Sila isikan sekurang-kurangnya satu slot Jadual Waktu.', 'warning');
                     }
                 });
             }
             
+            // Event listener untuk save draf dan submit RPH kini dikendalikan oleh ui_utils.js
         } else {
-            console.error("Objek Firebase/Database belum diinisialisasi atau tidak wujud.");
-            showNotification("Ralat: Sambungan kepada sistem pangkalan data gagal.", 'error');
+            // Ini akan berlaku jika skrip Firebase tidak dimuatkan dengan betul
+            showNotification('Ralat: Firebase tidak dimuatkan. Sila semak sambungan skrip.', 'error');
         }
     }
 });
 
-
 /**
  * [FUNGSI WAJIB] loadExistingTimetable(userUID)
- * MEMUAT DATA JADUAL WAKTU DAN MEMAPARKAN BORANG INPUT.
+ * Memuatkan Jadual Waktu sedia ada dari Firestore.
  */
 function loadExistingTimetable(userUID) {
-    const container = document.getElementById('timetable-input-form');
-    // Pastikan container dan fungsi generateTimetableForm (dari ui_utils.js) wujud
-    if (!container || typeof generateTimetableForm !== 'function') {
-        if(container) container.innerHTML = '<p class="alert alert-danger">Ralat: Fungsi UI Jadual Waktu tidak ditemui.</p>';
-        return; 
-    }
-    
-    // PENTING: Padamkan sebarang kandungan sedia ada (seperti prapapar HTML)
-    container.innerHTML = '<p>Memuatkan data Jadual Waktu...</p>'; 
-
-    db.collection('timetables').doc(userUID).get()
-        .then(doc => {
-            let existingData = [];
-            if (doc.exists) {
-                existingData = doc.data().data;
-                showNotification("Jadual Waktu sedia ada berjaya dimuatkan.", 'info');
-            } else {
-                showNotification("Tiada Jadual Waktu ditemui. Memulakan borang baru.", 'info');
-            }
-            
-            // JANA BORANG JADUAL WAKTU DI SINI
-            const formHTML = generateTimetableForm(existingData);
-            
-            // Gantikan kandungan container dengan borang
-            if (formHTML) {
-                 container.innerHTML = formHTML; 
-            } else {
-                 container.innerHTML = '<p class="alert alert-danger">Gagal menjana borang. Sila semak konsol untuk ralat.</p>';
-            }
-            
-        })
-        .catch(error => {
-            showNotification(`Ralat memuatkan Jadual Waktu: ${error.message}`, 'error');
-            // Pastikan borang kosong masih dipaparkan semasa ralat
-            if (typeof generateTimetableForm === 'function') {
-                container.innerHTML = generateTimetableForm([]);
-            } else {
-                container.innerHTML = '<p class="alert alert-danger">Gagal memuatkan data dan menjana borang.</p>';
-            }
-        });
-}
-
-
-/**
- * [FUNGSI WAJIB] saveTimetable(timetableData, userUID)
- */
-function saveTimetable(timetableData, userUID) {
     if (!db || !userUID) return;
-    
-    return db.collection('timetables').doc(userUID).set({
-        guru_uid: userUID,
-        data: timetableData, 
-        last_saved: firebase.firestore.FieldValue.serverTimestamp()
-    })
-    .then(() => {
-        showNotification("Jadual Waktu berjaya disimpan!", 'success');
-    })
-    .catch((error) => {
-        showNotification(`Ralat simpan Jadual Waktu: ${error.message}`, 'error');
-    });
-}
 
-/**
- * [FUNGSI WAJIB] getTimetableByDay(userUID, date)
- */
-function getTimetableByDay(userUID, date) {
-    if (!db || !userUID) return Promise.resolve(null);
-    const dayName = getDayNameFromDate(date); 
-    
     return db.collection('timetables').doc(userUID).get()
         .then(doc => {
             if (doc.exists) {
-                const timetableData = doc.data().data;
-                return timetableData.find(item => item.day === dayName); 
+                const timetableData = doc.data().timetable;
+                currentTeacherTimetable = timetableData; // Simpan data di sini
+                
+                // PANGGILAN PENTING: Mengisi borang yang telah dijana
+                if (typeof fillTimetableForm === 'function') {
+                    fillTimetableForm(timetableData);
+                }
+                
+                return timetableData;
+            } else {
+                showNotification('Tiada Jadual Waktu ditemui. Anda perlu mengisi borang.', 'info');
+                currentTeacherTimetable = null;
+                // Pastikan borang kosong dijana jika tiada data (Redundancy check)
+                if (typeof renderTimetableForm === 'function') {
+                    renderTimetableForm();
+                }
+                return null;
             }
+        })
+        .catch(error => {
+            showNotification(`Gagal memuatkan Jadual Waktu: ${error.message}`, 'error');
+            currentTeacherTimetable = null;
             return null;
         });
 }
 
 /**
- * [FUNGSI WAJIB] loadSubjectData(subjectCode)
+ * saveTimetable(timetableData, userUID)
+ * Menyimpan data Jadual Waktu ke Firestore.
  */
-async function loadSubjectData(subjectCode) {
-    const subject = subjectCode.toLowerCase();
-    if (!/^[a-z0-9]+$/.test(subject)) return null;
+function saveTimetable(timetableData, userUID) {
+    if (!db || !userUID) return;
 
-    try {
-        const filePath = `data/sp-${subject}.json`; 
-        const response = await fetch(filePath);
-        
-        if (!response.ok) {
-            showNotification(`Ralat: Fail data untuk subjek ${subjectCode} gagal dimuatkan. (Kod ${response.status})`, 'error');
-            return null;
-        }
-        
-        return await response.json();
-    } catch (error) {
-        showNotification(`Ralat memuatkan data SP: ${error.message}`, 'error');
-        return null;
-    }
+    db.collection('timetables').doc(userUID).set({
+        guru_uid: userUID,
+        timetable: timetableData,
+        last_updated: firebase.firestore.FieldValue.serverTimestamp()
+    }, { merge: true })
+    .then(() => {
+        currentTeacherTimetable = timetableData; // Kemas kini pemboleh ubah
+        showNotification('Jadual Waktu berjaya disimpan!', 'success');
+    })
+    .catch(error => {
+        showNotification(`Gagal menyimpan Jadual Waktu: ${error.message}`, 'error');
+    });
 }
-
-/**
- * [HELPER] Mengeluarkan tahun (nombor) dari rentetan kelas
- */
-function getYearFromClass(classString) {
-    const match = classString.match(/^(\d+)/);
-    return match ? parseInt(match[1]) : 0;
-}
-
 
 /**
  * [FUNGSI WAJIB] generateRPHData()
+ * Menjana slot RPH berdasarkan tarikh dan jadual waktu yang dimuatkan.
  */
-async function generateRPHData() {
-    const selectedDate = document.getElementById('rph-date')?.value;
-    const editorSection = document.getElementById('rph-editor-section');
-    
-    if (!selectedDate || !currentTeacherUID) {
-        return showNotification("Sila pilih tarikh RPH dan pastikan anda log masuk.", 'error');
-    }
-    
-    editorSection?.classList.add('hidden'); 
+function generateRPHData() {
+    const rphDateInput = document.getElementById('rph-date');
+    const rphDate = rphDateInput ? rphDateInput.value : null;
 
-    const dateObject = new Date(selectedDate);
-    const dayName = getDayNameFromDate(dateObject);
-    const timetableEntry = await getTimetableByDay(currentTeacherUID, dateObject);
-    
-    if (!timetableEntry || !timetableEntry.slots || timetableEntry.slots.length === 0) {
-        return showNotification(`Tiada Jadual Waktu ditemui untuk hari ${dayName}.`, 'error');
+    if (!rphDate) {
+        showNotification('Sila pilih tarikh RPH.', 'warning');
+        return;
     }
 
-    showNotification(`Memproses data subjek untuk ${dayName}...`, 'info');
-    
-    const slots = timetableEntry.slots;
-    const subjectDataMap = {};
-    
-    const filteredSlots = slots.filter(slot => {
-        const subject = slot.subject.toUpperCase();
-        const year = getYearFromClass(slot.class);
-        
-        if ((subject === 'RBT' || subject === 'SEJARAH') && year > 0 && year < 4) {
-            showNotification(`Slot ${slot.subject} (${slot.class}) dilangkau kerana ia hanya bermula dari Tahun 4.`, 'warning');
-            return false; 
-        }
-        return true; 
-    });
-    
-    if (filteredSlots.length === 0) {
-        return showNotification("Tiada slot subjek yang sah ditemui untuk dijana RPH.", 'warning');
+    if (!currentTeacherTimetable || currentTeacherTimetable.length === 0) {
+        showNotification('Sila lengkapkan Jadual Waktu anda terlebih dahulu.', 'warning');
+        return;
     }
 
-    const subjectCodeSet = new Set(filteredSlots.map(s => s.subject.toLowerCase()));
-
-    const promises = Array.from(subjectCodeSet).map(code => 
-        loadSubjectData(code).then(data => {
-            subjectDataMap[code] = data; 
-        })
-    );
-    await Promise.all(promises);
+    const date = new Date(rphDate + 'T00:00:00'); // Memastikan zon masa yang betul
+    const dayName = getDayNameFromDate(date); // Fungsi dari ui_utils.js
     
-    
-    const finalSlots = [];
-    const finalSubjectDataMap = {};
-    let loadErrorOccurred = false;
-    
-    filteredSlots.forEach(slot => {
-        const code = slot.subject.toLowerCase();
-        let rawSubjectData = subjectDataMap[code];
-        
-        if (rawSubjectData === null) {
-            finalSlots.push(slot);
-            finalSubjectDataMap[code] = null; 
-            loadErrorOccurred = true;
-            return;
-        }
-        
-        const targetYear = getYearFromClass(slot.class);
-        let yearKey = `TAHUN_${targetYear}`; 
-        
-        if (!rawSubjectData[yearKey]) {
-            const spacedKey = `TAHUN ${targetYear}`;
-            if (rawSubjectData[spacedKey]) {
-                yearKey = spacedKey; 
-            }
-        }
-        
-        let yearData = rawSubjectData[yearKey];
-        
-        if (!yearData) {
-             const topKeys = Object.keys(rawSubjectData);
-             if (topKeys.length === 1 && typeof rawSubjectData[topKeys[0]] === 'object') {
-                 yearData = rawSubjectData[topKeys[0]][yearKey];
-             }
-         }
-        
-        let flatData = [];
-        let processingSuccess = false;
+    // Cari slot untuk hari tersebut
+    const todayTimetable = currentTeacherTimetable.find(d => d.day.toLowerCase() === dayName.toLowerCase());
 
-        if (yearData) {
-            if (yearData.topics && Array.isArray(yearData.topics)) {
-                yearData.topics.forEach(topic => {
-                    if (topic.lessons && Array.isArray(topic.lessons)) {
-                        topic.lessons.forEach(lesson => {
-                            flatData.push({
-                                SK: lesson.standards || topic.topic_name,
-                                SP: lesson.objectives,
-                                topic_name: topic.topic_name,
-                                activities: lesson.activities || [], 
-                                assessment: lesson.assessment || [], 
-                                aids: lesson.aids || [] 
-                            });
-                        });
-                    }
-                });
-                processingSuccess = flatData.length > 0;
-
-            } else if (Object.keys(yearData).length > 0) {
-                
-                for (const unitKey in yearData) {
-                    const unit = yearData[unitKey]; 
-                    
-                    if (typeof unit === 'object' && unit !== null) {
-                        const unitName = unitKey;
-                        
-                        for (const skillKey in unit) {
-                            const lessonsArray = unit[skillKey];
-                            if (Array.isArray(lessonsArray)) {
-                                lessonsArray.forEach(lesson => {
-                                    flatData.push({
-                                        SK: lesson.standards || unitName, 
-                                        SP: lesson.objectives,
-                                        topic_name: unitName, 
-                                        skill: skillKey,
-                                        activities: lesson.activities || [], 
-                                        assessment: lesson.assessment || [], 
-                                        aids: lesson.aids || [] 
-                                    });
-                                });
-                            }
-                        }
-                    } else if (Array.isArray(unit)) {
-                          unit.forEach(lesson => {
-                            flatData.push({
-                                SK: lesson.standards || unitKey,
-                                SP: lesson.objectives,
-                                topic_name: unitKey,
-                                activities: lesson.activities || [],
-                                assessment: lesson.assessment || [],
-                                aids: lesson.aids || []
-                            });
-                        });
-                    }
-                }
-                processingSuccess = flatData.length > 0;
-            }
-        } 
-
-        
-        if (processingSuccess) {
-            finalSubjectDataMap[code] = flatData; 
-            finalSlots.push(slot);
-        } else {
-            console.error(`Gagal memproses data JSON untuk ${code} ${yearKey}. Sila semak struktur fail.`, rawSubjectData);
-            showNotification(`Ralat memproses data JSON untuk ${code} ${yearKey}. Sila semak fail data.`, 'error');
-             
-            finalSlots.push(slot);
-            finalSubjectDataMap[code] = null; 
-            loadErrorOccurred = true;
-        }
-    });
-
-    if (loadErrorOccurred) {
-        showNotification("Amaran: Beberapa data subjek gagal dimuatkan atau diproses. Borang RPH mungkin tidak lengkap.", 'warning');
+    if (!todayTimetable || todayTimetable.slots.length === 0) {
+        showNotification(`Tiada kelas ditemui untuk hari ${dayName}.`, 'info');
+        document.getElementById('rph-editor-section').classList.add('hidden');
+        document.getElementById('rph-slots-container').innerHTML = '<p>Tiada slot kelas untuk hari yang dipilih.</p>';
+        return;
     }
 
-    if (finalSlots.length > 0 && typeof displayRPHSlots !== 'undefined') {
-        displayRPHSlots(finalSlots, finalSubjectDataMap); 
-        editorSection.classList.remove('hidden'); 
-        showNotification(`Borang RPH untuk ${finalSlots.length} slot berjaya dijana dan diisi secara automatik.`, 'success');
+    // Ubah format data Jadual Waktu ke format Slot RPH
+    const rphSlotsData = todayTimetable.slots.map((slot, index) => ({
+        id: index.toString(),
+        masa: slot.time,
+        subjek: slot.subject,
+        kelas: slot.class,
+        // TODO: Carian SP/Objektif/Aktiviti secara automatik di sini
+        // Buat sementara, gunakan placeholder
+        modul_unit: `[Cari: Modul/Unit untuk ${slot.subject} ${slot.standards}]`,
+        standard_kandungan: `[Cari: Standard Kandungan untuk ${slot.standards}]`,
+        standard_pembelajaran: slot.standards, // Guna kod SP sebagai permulaan
+        objektif: `[Cari: Objektif untuk ${slot.standards}]`,
+        aktiviti: `[Cari: Aktiviti untuk ${slot.standards}]`,
+        penilaian: `[Cari: Penilaian untuk ${slot.standards}]`,
+        aids: `[Cari: BBM/Aids untuk ${slot.standards}]`,
+        refleksi: ''
+    }));
+
+    // Panggil fungsi UI untuk mengisi borang RPH
+    if (typeof loadRPHFormWithData === 'function') {
+        loadRPHFormWithData(rphSlotsData);
+        document.getElementById('rph-document-id').value = ''; // RPH baharu, kosongkan ID dokumen
+        document.getElementById('rph-editor-section').classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        showNotification(`Draf RPH untuk ${dayName}, ${rphDate} berjaya dijana.`, 'success');
     } else {
-        showNotification("Gagal menjana sebarang slot RPH. Sila semak Jadual Waktu dan fail data.", 'error');
+        showNotification("Ralat: Fungsi UI untuk memuatkan data RPH tidak ditemui.", 'error');
     }
 }
 
 
 /**
- * [FUNGSI WAJIB] saveRPH(rphObject, status)
+ * [FUNGSI WAJIB] saveRPHDraft() (Didedahkan ke Window)
+ * Menyimpan data RPH sebagai draf ke Firestore.
  */
-function saveRPH(rphObject, status) {
-    if (!db || !currentTeacherUID) return;
+window.saveRPHDraft = function() {
+    const rphID = document.getElementById('rph-document-id').value;
+    const rphDateInput = document.getElementById('rph-date');
+    const rphDate = rphDateInput ? rphDateInput.value : null;
     
-    const rphID = rphObject.id; 
-    const dataToSave = {
+    if (!rphDate || !currentTeacherUID) {
+        showNotification('Ralat: Tarikh atau ID Guru tidak tersedia.', 'error');
+        return;
+    }
+
+    const slots_data = collectRPHFormData(); // Fungsi dari ui_utils.js
+    if (slots_data.length === 0) {
+        showNotification('Tiada slot RPH untuk disimpan.', 'warning');
+        return;
+    }
+
+    const rphData = {
         guru_uid: currentTeacherUID,
-        date: firebase.firestore.Timestamp.fromDate(new Date(rphObject.date)), 
-        status: status,
-        slots_data: rphObject.slots_data,
-        last_updated: firebase.firestore.FieldValue.serverTimestamp()
+        date: new Date(rphDate), // Simpan sebagai timestamp
+        slots_data: slots_data,
+        status: 'Draf',
+        last_modified: firebase.firestore.FieldValue.serverTimestamp()
     };
 
-    if (rphID) {
-        return db.collection('rph_drafts').doc(rphID).update(dataToSave)
-            .then(() => getTeacherRPH(currentTeacherUID))
-            .then(() => showNotification(`RPH berjaya dikemas kini sebagai ${status}.`, 'success'));
-    } else {
-        return db.collection('rph_drafts').add(dataToSave)
-            .then(() => getTeacherRPH(currentTeacherUID))
-            .then(() => showNotification(`RPH baru disimpan sebagai ${status}.`, 'success'));
-    }
+    const docRef = rphID 
+        ? db.collection('rph_drafts').doc(rphID) 
+        : db.collection('rph_drafts').doc();
+
+    docRef.set(rphData, { merge: true })
+        .then(() => {
+            document.getElementById('rph-document-id').value = docRef.id; // Pastikan ID dokumen ditetapkan
+            showNotification('RPH berjaya disimpan sebagai Draf.', 'success');
+            getTeacherRPH(currentTeacherUID); // Muat semula senarai
+        })
+        .catch(error => {
+            showNotification(`Gagal menyimpan RPH: ${error.message}`, 'error');
+        });
 }
+
+/**
+ * [FUNGSI WAJIB] submitRPH() (Didedahkan ke Window)
+ * Menyerahkan RPH kepada pentadbir.
+ */
+window.submitRPH = function() {
+    // Logik yang sama seperti saveRPHDraft, tetapi tukar status kepada 'Diserahkan'
+    const rphID = document.getElementById('rph-document-id').value;
+    const rphDateInput = document.getElementById('rph-date');
+    const rphDate = rphDateInput ? rphDateInput.value : null;
+    
+    if (!rphDate || !currentTeacherUID) {
+        showNotification('Ralat: Tarikh atau ID Guru tidak tersedia.', 'error');
+        return;
+    }
+
+    const slots_data = collectRPHFormData();
+    if (slots_data.length === 0) {
+        showNotification('Tiada slot RPH untuk diserahkan.', 'warning');
+        return;
+    }
+
+    if (!rphID) {
+        showNotification('Sila simpan RPH ini sebagai Draf terlebih dahulu sebelum menyerahkan.', 'warning');
+        return;
+    }
+
+    const rphData = {
+        guru_uid: currentTeacherUID,
+        date: new Date(rphDate),
+        slots_data: slots_data,
+        status: 'Diserahkan', // Tukar status kepada Diserahkan
+        last_modified: firebase.firestore.FieldValue.serverTimestamp(),
+        submitted_at: firebase.firestore.FieldValue.serverTimestamp()
+    };
+
+    db.collection('rph_drafts').doc(rphID).set(rphData, { merge: true })
+        .then(() => {
+            showNotification('RPH berjaya diserahkan kepada Pentadbir!', 'success');
+            getTeacherRPH(currentTeacherUID); // Muat semula senarai
+            document.getElementById('rph-editor-section').classList.add('hidden'); // Sembunyikan borang selepas serah
+        })
+        .catch(error => {
+            showNotification(`Gagal menyerahkan RPH: ${error.message}`, 'error');
+        });
+}
+
 
 /**
  * [FUNGSI WAJIB] getTeacherRPH(userUID)
+ * Memuatkan senarai RPH draf/diserahkan guru.
  */
 function getTeacherRPH(userUID) {
     if (!db || !userUID) return;
@@ -416,7 +311,10 @@ window.loadRPHtoEdit = function(rphID) {
                     showNotification("Ralat: Fungsi UI untuk memuatkan RPH ke borang tidak ditemui.", 'error');
                 }
             } else {
-                showNotification("Dokumen RPH tidak wujud atau anda tiada kebenaran.", 'error');
+                showNotification('RPH tidak ditemui atau anda tiada akses.', 'error');
             }
+        })
+        .catch(error => {
+            showNotification(`Gagal memuatkan RPH: ${error.message}`, 'error');
         });
 }
