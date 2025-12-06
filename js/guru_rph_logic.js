@@ -239,7 +239,7 @@ const generatedSlots = [];
 
 // --- KOD BERSIH YANG BETUL UNTUK generatedSlots.push ---
 
-        generatedSlots.push({
+generatedSlots.push({
             time_start: slot.time_start, 
             time_end: slot.time_end,     
             day: dayName,
@@ -247,15 +247,11 @@ const generatedSlots = [];
             class: slot.class,
             unit: randomSP.unit, 
             standard: randomSP.standard,
-
-            // BARIS FOKUS ANDA: Hanya koma (,) dan komen (//)
-            objective: randomSP.objectives || 'Objektif tidak ditemui dalam data JSON.', // Komen di sini adalah OK
-            
-            // Baris lain
-            aktiviti: (randomSP.activities || []).join('\n- '), 
-            penilaian: (randomSP.assessment || []).join('\n- '), 
+            objective: randomSP.objectives || 'Objektif tidak ditemui dalam data JSON.', // Pastikan ada koma
+            aktiviti: (randomSP.activities || []).join('\n- '), // Pastikan ada koma
+            penilaian: (randomSP.assessment || []).join('\n- '), // Pastikan ada koma
             aids: (randomSP.aids || []).join('\n- '),
-            refleksi: '20/30 murid menguasai. Perlu pengukuhan lanjut. [Draf Refleksi]',
+            refleksi: '20/30 murid menguasai. Perlu pengukuhan lanjut. [Draf Refleksi]', // Baris terakhir: Tiada koma diperlukan
         });
     });            
             // Perubahan sebelumnya untuk aktiviti/penilaian/aids dikekalkan
@@ -451,6 +447,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
 
 
 
