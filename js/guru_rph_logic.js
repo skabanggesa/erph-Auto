@@ -237,7 +237,9 @@ const generatedSlots = [];
         }
         // --- END PEMERIKSAAN KESELAMATAN ---
 
-generatedSlots.push({
+// --- KOD BERSIH YANG BETUL UNTUK generatedSlots.push ---
+
+        generatedSlots.push({
             time_start: slot.time_start, 
             time_end: slot.time_end,     
             day: dayName,
@@ -245,15 +247,15 @@ generatedSlots.push({
             class: slot.class,
             unit: randomSP.unit, 
             standard: randomSP.standard,
-            // TAMBAH KOMA DI SINI! (Selepas objektif atau unit/standard jika ia baris sebelumnya)
-            objective: randomSP.objectives || 'Objektif tidak ditemui dalam data JSON.', **// <--- PASTIKAN ADA KOMA (,) DI SINI**
+
+            // BARIS FOKUS ANDA: Hanya koma (,) dan komen (//)
+            objective: randomSP.objectives || 'Objektif tidak ditemui dalam data JSON.', // Komen di sini adalah OK
             
-            aktiviti: (randomSP.activities || []).join('\n- '), **// <--- PASTIKAN ADA KOMA (,) DI SINI**
-            penilaian: (randomSP.assessment || []).join('\n- '), **// <--- PASTIKAN ADA KOMA (,) DI SINI**
+            // Baris lain
+            aktiviti: (randomSP.activities || []).join('\n- '), 
+            penilaian: (randomSP.assessment || []).join('\n- '), 
             aids: (randomSP.aids || []).join('\n- '),
-            
-            // Baris terakhir tidak memerlukan koma
-            refleksi: '20/30 murid menguasai. Perlu pengukuhan lanjut. [Draf Refleksi]' 
+            refleksi: '20/30 murid menguasai. Perlu pengukuhan lanjut. [Draf Refleksi]',
         });
     });            
             // Perubahan sebelumnya untuk aktiviti/penilaian/aids dikekalkan
@@ -449,6 +451,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
 
 
 
