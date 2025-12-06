@@ -197,12 +197,12 @@ async function generateRPHData() {
         return;
     }
 
+    // Pastikan semua data SP telah dimuatkan
     if (!(standardDataRBT && standardDataBM && standardDataBI && standardDataMT)) {
          safeNotify("Data Standard Pembelajaran (SP) sedang dimuatkan atau gagal dimuatkan. Sila tunggu seketika.", 'warning');
          return;
     }
 
-    // Pastikan getDayNameFromDate wujud (ia ada dalam ui_utils.js)
     if (typeof getDayNameFromDate !== 'function') {
         safeNotify("Ralat: Fungsi utiliti hari tidak ditemui. Pastikan ui_utils.js dimuatkan.", 'error');
         return;
@@ -219,20 +219,46 @@ async function generateRPHData() {
     
     const generatedSlots = [];
     dayData.slots.forEach(slot => {
+        // PANGGILAN KRITIKAL: Jika ini gagal, semua medan akan kosong
         const randomSP = selectRandomStandard(slot.subject, slot.class); 
+        
+        // --- PEMERIKSAAN KESELAMATAN ---
+        // Jika randomSP gagal (seperti 'Data RBT Tiada' yang anda hadapi),
+        // ia akan mengembalikan objek dengan mesej ralat di dalamnya.
+        if (!randomSP || !randomSP.standard || randomSP.standard.includes('Tiada SP')) {
+             generatedSlots.push({
+                time_start: slot.time_start, 
+                time_end: slot.time_end,     
+                day: dayName,
+                subject: slot.subject,
+                class: slot.class,
+                unit: randomSP?.unit || 'RALAT DATA',
+                standard: randomSP?.standard || 'RALAT DATA',
+                objective: randomSP?.objectives || 'Gagal menjana objektif. Sila semak konsistensi nama subjek dan tahun dalam Jadual Waktu.',
+                aktiviti: 'Tiada Aktiviti Ditemui (RALAT DATA)',
+                penilaian: '',
+                aids: '',
+                refleksi: 'RALAT PENTING: Penjanaan gagal. Sila semak Jadual Waktu (Subjek/Kelas).'
+             });
+             return; 
+        }
+        // --- END PEMERIKSAAN KESELAMATAN ---
 
         generatedSlots.push({
-            time_start: slot.time_start, // BARU
-            time_end: slot.time_end,     // BARU
+            time_start: slot.time_start, 
+            time_end: slot.time_end,     
             day: dayName,
             subject: slot.subject,
             class: slot.class,
             unit: randomSP.unit, 
             standard: randomSP.standard,
-            objective: randomSP.objectives,
-            aktiviti: randomSP.activities.join('\n- '),
-            penilaian: randomSP.assessment.join('\n- '),
-            aids: randomSP.aids.join('\n- '),
+            // KEMAS KINI FOKUS: Memastikan objective tidak kosong
+            objective: randomSP.objectives || 'Objektif tidak ditemui dalam JSON.', 
+            
+            // Perubahan sebelumnya untuk aktiviti/penilaian/aids dikekalkan
+            aktiviti: (randomSP.activities || []).join('\n- '), 
+            penilaian: (randomSP.assessment || []).join('\n- '),
+            aids: (randomSP.aids || []).join('\n- '),
             refleksi: '20/30 murid menguasai. Perlu pengukuhan lanjut. [Draf Refleksi]',
         });
     });
@@ -422,4 +448,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
 
