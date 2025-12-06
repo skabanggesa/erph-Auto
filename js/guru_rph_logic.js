@@ -222,13 +222,14 @@ async function generateRPHData() {
         const randomSP = selectRandomStandard(slot.subject, slot.class); 
 
         generatedSlots.push({
-            time: slot.time,
+            time_start: slot.time_start, // BARU
+            time_end: slot.time_end,     // BARU
             day: dayName,
             subject: slot.subject,
             class: slot.class,
             unit: randomSP.unit, 
             standard: randomSP.standard,
-            objective: randomSP.objective,
+            objective: randomSP.objectives,
             aktiviti: randomSP.activities.join('\n- '),
             penilaian: randomSP.assessment.join('\n- '),
             aids: randomSP.aids.join('\n- '),
@@ -244,7 +245,6 @@ async function generateRPHData() {
         safeNotify(`Draf RPH untuk ${dayName}, ${selectedDate} berjaya dijana! Sila semak dan sunting.`, 'success');
     }
 }
-
 
 // --- FUNGSI RPH DRAFT DAN PENGURUSAN ---
 
@@ -422,3 +422,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
