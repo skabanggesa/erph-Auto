@@ -21,10 +21,11 @@ let standardDataMT = null;
 async function loadStandardData() {
     try {
         const [rbt, bm, bi, mt] = await Promise.all([
-            fetch('../data/sp-rbt.json').then(r => r.json()),
-            fetch('../data/sp-bm.json').then(r => r.json()),
-            fetch('../data/sp-bi.json').then(r => r.json()),
-            fetch('../data/sp-mt.json').then(r => r.json()),
+            // Guna laluan relatif 'data/'
+            fetch('data/sp-rbt.json').then(r => r.json()),
+            fetch('data/sp-bm.json').then(r => r.json()),
+            fetch('data/sp-bi.json').then(r => r.json()),
+            fetch('data/sp-mt.json').then(r => r.json()),
         ]);
         standardDataRBT = rbt;
         standardDataBM = bm;
@@ -33,8 +34,9 @@ async function loadStandardData() {
         console.log("Data Standard Pembelajaran (SP) berjaya dimuatkan.");
         return true;
     } catch (error) {
+        // Peringatan: Pastikan fail JSON wujud dalam folder /data/ dan bukan 404
         console.error("Gagal memuatkan data Standard Pembelajaran:", error);
-        showNotification("Gagal memuatkan data SP yang diperlukan. Sila semak laluan fail JSON.", 'error');
+        showNotification("Gagal memuatkan data SP yang diperlukan. Sila semak laluan fail JSON dan pastikan ia diletakkan dalam folder 'data/'", 'error');
         return false;
     }
 }
@@ -392,3 +394,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
