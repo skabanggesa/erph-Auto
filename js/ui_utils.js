@@ -256,22 +256,52 @@ function createRPHSlotHtml(slot = {}) {
 }
 
 /**
- * Mengisi borang RPH Editor dengan data draft.
+ * [FUNGSI WAJIB] loadRPHFormWithData(slotsData)
+ * Mengisi borang RPH dengan data yang dijana (atau yang disimpan).
  */
-function loadRPHFormWithData(slotsData = []) {
-    const editorContainer = document.getElementById('rph-editor-container');
-    if (!editorContainer) return;
-    
-    editorContainer.innerHTML = '';
-    
-    if (slotsData.length === 0) {
-        showNotification('Tiada slot RPH untuk tarikh ini. Sila pilih tarikh lain.', 'info');
-        return;
-    }
-    
-    slotsData.forEach(slot => {
-        editorContainer.insertAdjacentHTML('beforeend', createRPHSlotHtml(slot));
+function loadRPHFormWithData(slotsData) {
+    const container = document.getElementById('rph-slots-container');
+    if (!container) return;
+
+    container.innerHTML = ''; // Kosongkan bekas sedia ada
+
+    slotsData.forEach((slot, index) => {
+        const slotGroup = document.createElement('div');
+        slotGroup.className = 'rph-slot-group card-light mb-2';
+
+        slotGroup.innerHTML = `
+            <h4 class="slot-header">${slot.time} - ${slot.subject} (${slot.class})</h4>
+            <div class="rph-slot-details">
+                <input type="hidden" name="time" value="${slot.time}">
+                <input type="hidden" name="day" value="${slot.day}">
+                <input type="hidden" name="subject" value="${slot.subject}">
+                <input type="hidden" name="class" value="${slot.class}">
+
+                <label for="unit-${index}">Unit:</label>
+                <textarea id="unit-${index}" name="unit" rows="1" required>${slot.unit || ''}</textarea>
+
+                <label for="standard-${index}">Standard Pembelajaran (SP):</label>
+                <textarea id="standard-${index}" name="standard" rows="2" required>${slot.standard || ''}</textarea>
+
+                <label for="objective-${index}">Objektif Pembelajaran:</label>
+                <textarea id="objective-${index}" name="objective" rows="3" required>${slot.objective || ''}</textarea>
+
+                <label for="aktiviti-${index}">Aktiviti:</label>
+                <textarea id="aktiviti-${index}" name="aktiviti" rows="4" required>${slot.aktiviti || ''}</textarea>
+
+                <label for="penilaian-${index}">Penilaian:</label>
+                <textarea id="penilaian-${index}" name="penilaian" rows="3" required>${slot.penilaian || ''}</textarea>
+
+                <label for="aids-${index}">Bahan Bantu Mengajar (BBM):</label>
+                <textarea id="aids-${index}" name="aids" rows="3" required>${slot.aids || ''}</textarea>
+
+                <label for="refleksi-${index}">Refleksi:</label>
+                <textarea id="refleksi-${index}" name="refleksi" rows="3">${slot.refleksi || ''}</textarea>
+            </div>
+        `;
+        container.appendChild(slotGroup);
     });
+}
 
     // Delegasi Event Listener untuk butang buang
     editorContainer.addEventListener('click', (e) => {
@@ -282,23 +312,25 @@ function loadRPHFormWithData(slotsData = []) {
 }
 
 /**
- * Mengumpul data dari borang RPH Editor untuk disimpan.
+ * [FUNGSI WAJIB] collectRPHDataFromForm()
+ * Mengumpul semua data slot RPH dari borang penyuntingan (editor).
  */
 function collectRPHDataFromForm() {
     const slotsData = [];
-    const rphForm = document.getElementById('rph-editor-form');
-    
-    rphForm.querySelectorAll('.rph-slot-group').forEach(slotGroup => {
+    const rphSlots = document.querySelectorAll('#rph-slots-container .rph-slot-group');
+
+    rphSlots.forEach(slotGroup => {
         const slot = {
-            // Data tersembunyi
             time: slotGroup.querySelector('input[name="time"]').value,
             day: slotGroup.querySelector('input[name="day"]').value,
             subject: slotGroup.querySelector('input[name="subject"]').value,
             class: slotGroup.querySelector('input[name="class"]').value,
+            
+            // MEDAN UNIT BARU
+            unit: slotGroup.querySelector('textarea[name="unit"]').value, 
 
-            // Data yang boleh diubah
-            standard: slotGroup.querySelector('input[name="standard"]').value,
-            objective: slotGroup.querySelector('input[name="objective"]').value,
+            standard: slotGroup.querySelector('textarea[name="standard"]').value,
+            objective: slotGroup.querySelector('textarea[name="objective"]').value,
             aktiviti: slotGroup.querySelector('textarea[name="aktiviti"]').value,
             penilaian: slotGroup.querySelector('textarea[name="penilaian"]').value, 
             aids: slotGroup.querySelector('textarea[name="aids"]').value, 
@@ -347,3 +379,4 @@ document.addEventListener('DOMContentLoaded', () => {
         rphForm.addEventListener('submit', (e) => e.preventDefault());
     }
 });
+
