@@ -14,13 +14,15 @@ function showNotification(message, type) {
     if (!notificationDiv) {
         notificationDiv = document.createElement('div');
         notificationDiv.className = 'notification-alert';
+        // Cuba masukkan selepas header/nav atau di permulaan badan
         if (container) {
-             container.insertBefore(notificationDiv, container.firstChild.nextSibling); 
+             container.insertBefore(notificationDiv, container.firstChild.nextSibling || container.firstChild); 
         } else {
             document.body.insertBefore(notificationDiv, document.body.firstChild);
         }
     }
     
+    // Pastikan kelas type (alert-success, alert-error, dsb.) digunakan
     notificationDiv.className = `notification-alert alert alert-${type}`;
     notificationDiv.textContent = message;
     notificationDiv.style.display = 'block';
@@ -44,6 +46,7 @@ function displayRPHList(dataArray, tableId) {
 
     dataArray.forEach(item => {
         const row = tbody.insertRow();
+        // Item date adalah Firestore Timestamp, perlu ditukar ke Date
         const dateObject = item.date.toDate(); 
         const dateString = dateObject.toLocaleDateString('ms-MY');
 
@@ -57,6 +60,7 @@ function displayRPHList(dataArray, tableId) {
             const editBtn = document.createElement('button');
             editBtn.className = 'btn btn-secondary btn-sm';
             editBtn.textContent = 'Lihat/Edit';
+            // loadRPHtoEdit didedahkan melalui window dalam guru_rph_logic.js
             editBtn.onclick = () => window.loadRPHtoEdit(item.id); 
             actionCell.appendChild(editBtn);
         }
@@ -103,6 +107,7 @@ function generateSlotInput(day, index, slotData = { time: '', subject: '', class
 
 window.addTimeSlot = function(day) {
     const container = document.getElementById(`slots-${day}`);
+    if (!container) return;
     const index = container.children.length;
     container.insertAdjacentHTML('beforeend', generateSlotInput(day, index));
 }
@@ -113,6 +118,7 @@ window.removeTimeSlot = function(buttonElement) {
 
 function collectTimetableFormData() {
     const timetableData = [];
+    // Guna #timetable-form kerana itu adalah ID form yang dijana dalam generateTimetableForm
     const daySections = document.querySelectorAll('#timetable-form .day-section'); 
 
     daySections.forEach(daySection => {
@@ -142,6 +148,10 @@ function collectTimetableFormData() {
 // FUNGSI RPH GENERATION 
 // ------------------------------------------------------------------
 
+/**
+ * Menjana satu set medan input untuk satu slot RPH.
+ * @param {Array} subjectData - Data SP yang telah diflatkan untuk subjek slot ini.
+ */
 function generateRPHSlotInput(slotData, subjectData, slotIndex) {
     const subjectCode = slotData.subject.toLowerCase();
     
@@ -197,9 +207,9 @@ function displayRPHSlots(slotsArray, subjectDataMap) {
         if (allSubjectData && Array.isArray(allSubjectData)) {
             container.insertAdjacentHTML('beforeend', generateRPHSlotInput(slot, allSubjectData, index));
         } else if (allSubjectData === null) {
-             container.insertAdjacentHTML('beforeend', `<div class="rph-slot-group card-slot mt-3 p-3 border"><p class="alert alert-danger">Ralat: Data SP untuk subjek ${slot.subject} gagal dimuatkan. Sila isi manual.</p></div>`);
+             container.insertAdjacentHTML('beforeend', `<div class="rph-slot-group card-slot mt-3 p-3 border"><p class="alert alert-danger">Ralat: Data SP untuk subjek ${slot.subject} gagal dimuatkan atau diproses. Sila isi manual.</p></div>`);
         } else {
-             // Slot yang tiada data
+             // Slot yang tiada data (jarang berlaku jika logik pemprosesan berjaya)
         }
     });
     
@@ -244,7 +254,8 @@ function updateSPDropdown(event) {
 function handleFormSubmission(event) {
     event.preventDefault();
     
-    const action = event.submitter.getAttribute('data-action');
+    // Pastikan submitter wujud sebelum cuba akses atribut data-action
+    const action = event.submitter ? event.submitter.getAttribute('data-action') : 'draft'; 
     
     const rphData = {
         date: document.getElementById('rph-date').value,
@@ -265,9 +276,11 @@ function collectRPHSlotsData() {
     const slotsData = [];
     document.querySelectorAll('.rph-slot-group').forEach(slotGroup => {
         const slot = {
+            // Pengambilan data input tersembunyi/asas
             time: slotGroup.querySelector('input[name="time"]').value,
             subject: slotGroup.querySelector('input[name="subject"]').value,
             class: slotGroup.querySelector('input[name="class"]').value,
+            // Pengambilan data RPH yang diisi
             sk: slotGroup.querySelector('select[name="sk"]').value,
             sp: slotGroup.querySelector('select[name="sp"]').value,
             aktiviti: slotGroup.querySelector('textarea[name="aktiviti"]').value,
@@ -309,6 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const rphForm = document.getElementById('rph-form'); 
     if (rphForm) {
+        // Guna handleFormSubmission untuk mengendalikan kedua-dua butang 'Draf' dan 'Hantar'
         rphForm.addEventListener('submit', handleFormSubmission);
     }
 });
