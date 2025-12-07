@@ -57,7 +57,7 @@ function createEmptyTimetableSlot(slot = {}) {
         <div class="timetable-slot">
             <input type="time" name="start_time" value="${slot.start_time || ''}" required>
             <input type="time" name="end_time" value="${slot.end_time || ''}" required>
-            <input type="text" name="subject" placeholder="Contoh: BM 1 Cerdas" value="${slot.subject || ''}" required>
+            <input type="text" name="subject" placeholder="Contoh: BM" value="${slot.subject || ''}" required>
             <input type="text" name="class_name" placeholder="Contoh: 1 Cerdas" value="${slot.class_name || ''}" required>
             <button type="button" class="btn btn-danger remove-slot-btn" onclick="this.parentNode.remove()">Buang</button>
         </div>
@@ -415,3 +415,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.currentTeacherUID = null; 
     initializeTabSwitching();
 });
+
