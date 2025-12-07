@@ -1,6 +1,6 @@
 // =======================================================
 // GURU RPH LOGIC (js/guru_rph_logic.js)
-// KOD LENGKAP: Merangkumi semua fungsi Firebase, Logik Penjanaan RPH, dan Pembetulan Data SP
+// KOD LENGKAP: Logik Penjanaan RPH Baharu (Dengan dropdown SP dinamik)
 // =======================================================
 
 let currentTeacherUID = null;
@@ -13,24 +13,22 @@ let auth = null;
 
 const SP_DATA_CACHE = {};
 const SP_FILE_MAP = {
-    // PENTING: Pastikan kod ini sepadan dengan permulaan input subjek anda (cth: "BM 1 Cerdas")
     'BM': 'sp-bm.json',
     'BI': 'sp-bi.json',
     'MT': 'sp-mt.json',
     'SN': 'sp-sn.json',
-    'P.ISLAM': 'sp-pai.json', // Mesti guna P.ISLAM (tanpa ruang)
+    'P.ISLAM': 'sp-pai.json', 
     'RBT': 'sp-rbt.json',
     'PJ': 'sp-pj.json',
     'PK': 'sp-pk.json',
     'SJ': 'sp-sj.json',
 };
-// Menggunakan 'data/' sebagai laluan standard relatif (anda boleh tukar jika perlu, cth: './data/')
-const DATA_JSON_BASE_PATH = 'data/'; 
+// LALUAN KRUSIAL: Tukar kepada '../data/' jika 'js/' dan 'data/' berada di aras yang sama
+const DATA_JSON_BASE_PATH = '../data/'; 
 
 
 /**
  * Memuatkan data Standard Pembelajaran (SP) untuk subjek tertentu.
- * @param {string} subjectCode - Kod subjek (cth: 'BM', 'RBT').
  */
 async function loadSPData(subjectCode) {
     const normalizedCode = subjectCode.toUpperCase().trim();
@@ -40,16 +38,17 @@ async function loadSPData(subjectCode) {
 
     const fileName = SP_FILE_MAP[normalizedCode];
     if (!fileName) {
-        showNotification(`Kod Subjek '${subjectCode}' tidak dikenali. Sila pastikan ia sepadan dengan SP_FILE_MAP.`, 'warning');
+        showNotification(`Kod Subjek '${subjectCode}' tidak dikenali.`, 'warning');
         return null;
     }
 
+    const fullPath = `${DATA_JSON_BASE_PATH}${fileName}`;
+
     try {
-        const response = await fetch(`${DATA_JSON_BASE_PATH}${fileName}`);
+        const response = await fetch(fullPath);
         
         if (!response.ok) {
-            // Ini akan menunjukkan masalah 404 jika laluan salah
-            throw new Error(`Gagal memuatkan fail SP: ${DATA_JSON_BASE_PATH}${fileName} (HTTP Status: ${response.status}). Sila semak laluan JSON anda.`);
+            throw new Error(`Gagal memuatkan fail SP: ${fullPath} (HTTP Status: ${response.status}). Sila semak laluan JSON anda.`);
         }
         
         const data = await response.json();
@@ -57,9 +56,52 @@ async function loadSPData(subjectCode) {
         return data;
     } catch (error) {
         showNotification(`Ralat memuatkan data SP: ${error.message}.`, 'error');
+        console.error(`[FATAL ERROR] Gagal memuatkan SP Data: ${error.message}`);
         return null;
     }
 }
+
+
+/**
+ * Mengeluarkan semua data pelajaran (lessons) daripada struktur JSON yang kompleks
+ * dan menyimpannya dalam satu array rata.
+ */
+function extractAllLessons(spData) {
+    const allLessons = [];
+    if (!spData) return allLessons;
+
+    // Kunci luar adalah tahun (cth: TAHUN 1)
+    for (const year in spData) {
+        const yearData = spData[year];
+        // Kunci seterusnya adalah unit/topik utama
+        for (const unit in yearData) {
+            const unitOrTopic = yearData[unit];
+            
+            // LOGIK TRAVERSAL YANG KUKUH
+            if (Array.isArray(unitOrTopic)) {
+                // Senario 1: Array of lessons (standard, objective, etc.)
+                unitOrTopic.forEach(lesson => allLessons.push(lesson));
+            } else if (unitOrTopic && unitOrTopic.topics && Array.isArray(unitOrTopic.topics)) {
+                // Senario 2: Struktur RBT (Topics -> Lessons)
+                for (const topic of unitOrTopic.topics) {
+                    if (topic.lessons && Array.isArray(topic.lessons)) {
+                        topic.lessons.forEach(lesson => allLessons.push(lesson));
+                    }
+                }
+            } else if (unitOrTopic && typeof unitOrTopic === 'object') {
+                // Senario 3: Struktur Sub-kunci Kemahiran (Mendengar, Menulis)
+                for (const key in unitOrTopic) {
+                    if (Array.isArray(unitOrTopic[key])) {
+                        unitOrTopic[key].forEach(lesson => allLessons.push(lesson));
+                    }
+                }
+            }
+        }
+    }
+    // Hanya simpan lessons yang mempunyai standard
+    return allLessons.filter(lesson => lesson.standards);
+}
+
 
 // =======================================================
 // FUNGSI PENGURUSAN JADUAL WAKTU (FIREBASE)
@@ -88,7 +130,7 @@ async function saveTimetable(timetableData, uid) {
 window.loadExistingTimetable = async function(uid) {
     if (!db || !uid) return;
     
-    window.currentTeacherUID = uid; // Pastikan ia tersedia secara global
+    window.currentTeacherUID = uid;
 
     try {
         const doc = await db.collection('timetables').doc(uid).get();
@@ -109,6 +151,7 @@ window.loadExistingTimetable = async function(uid) {
     }
 }
 
+
 // =======================================================
 // FUNGSI RPH GENERATION
 // =======================================================
@@ -117,15 +160,13 @@ window.loadExistingTimetable = async function(uid) {
  * Mencari nama hari dari input tarikh.
  */
 function getDayNameFromDate(dateInput) {
-    // Menambah 'T00:00:00' untuk mengelakkan isu zon waktu dalam pelayar
     const date = (dateInput instanceof Date) ? dateInput : new Date(dateInput + 'T00:00:00'); 
     if (isNaN(date)) return "Tarikh Tidak Sah"; 
-    // Diandaikan 'ms-MY' adalah locale untuk hari dalam bahasa Melayu
     return date.toLocaleDateString('ms-MY', { weekday: 'long' }); 
 }
 
 /**
- * Menjana RPH berdasarkan Jadual Waktu dan data SP. (Logik traversal diperbaiki)
+ * Menjana RPH berdasarkan Jadual Waktu dan data SP (memuatkan semua pilihan SP).
  */
 async function generateRPHData() {
     if (!db || !currentTeacherUID) return; 
@@ -151,88 +192,63 @@ async function generateRPHData() {
 
     const dailySlots = timetableData.find(d => d.day.toLowerCase() === dayName.toLowerCase());
     if (!dailySlots || dailySlots.slots.length === 0) {
-        showNotification(`Tiada slot Jadual Waktu ditemui untuk hari ${dayName}. Sila urus Jadual Waktu anda terlebih dahulu.`, 'warning');
+        showNotification(`Tiada slot Jadual Waktu ditemui untuk hari ${dayName}.`, 'warning');
         return;
     }
 
     const generatedSlots = [];
     for (const slot of dailySlots.slots) {
-        // Logik PENGESANAN KOD SUBJEK YANG LEBIH BAIK
+        
+        // --- PENGESANAN KOD SUBJEK ---
         let subjectCode = slot.subject.split(' ')[0].toUpperCase();
-
         const normalizedSlotSubject = slot.subject.toUpperCase().replace(/\s/g, ''); 
         if (normalizedSlotSubject.includes('P.ISLAM')) {
             subjectCode = 'P.ISLAM';
-        } else if (SP_FILE_MAP[subjectCode]) {
-            // Kekalkan kod pendek seperti BM, RBT
-        } else {
+        } else if (!SP_FILE_MAP[subjectCode]) {
              subjectCode = slot.subject.split(' ')[0].toUpperCase();
         }
         
         const spData = await loadSPData(subjectCode);
         
+        // --- KUMPUL SEMUA LESSONS DAN PILIH DEFAULT ---
+        const allLessons = extractAllLessons(spData);
+        // Pilih pelajaran pertama sebagai cadangan lalai
+        const defaultLesson = allLessons.length > 0 ? allLessons[0] : null; 
+
         let objectives = '';
         let activities = '';
         let assessment = '';
         let aids = '';
-        let standardsFound = false; 
+        let standardsDefault = ''; 
 
-        if (spData) {
-            const targetSP = slot.standards.trim().toUpperCase();
-            
-            // Loop Tahap 1: TAHUN (cth: TAHUN 1)
-            outerLoop:
-            for (const year in spData) {
-                const yearData = spData[year];
-                // Loop Tahap 2: UNIT/TOPIK UTAMA (cth: Unit 1: Keluarga Saya)
-                for (const unit in yearData) {
-                    const unitOrTopic = yearData[unit];
-                    let lessonsArray = [];
-                    
-                    // LOGIK TRAVERSAL DATA
-                    if (Array.isArray(unitOrTopic)) {
-                         lessonsArray = unitOrTopic;
-                    } else if (unitOrTopic && unitOrTopic.topics && Array.isArray(unitOrTopic.topics)) {
-                        // Untuk struktur RBT
-                        for (const topic of unitOrTopic.topics) {
-                            if (topic.lessons && Array.isArray(topic.lessons)) {
-                                lessonsArray.push(...topic.lessons);
-                            }
-                        }
-                    } else if (unitOrTopic && typeof unitOrTopic === 'object') {
-                        // Untuk struktur BM/BI/MT/PAI/PJ/PK/SJ (Unit mengandungi sub-kunci Mendengar/Menulis/dll.)
-                        for (const key in unitOrTopic) {
-                            if (Array.isArray(unitOrTopic[key])) {
-                                lessonsArray.push(...unitOrTopic[key]);
-                            }
-                        }
-                    }
-                    
-                    // Cari SP yang sepadan
-                    const lessonMatch = lessonsArray.find(l => l.standards && l.standards.trim().toUpperCase() === targetSP);
-                    
-                    if (lessonMatch) {
-                        objectives = lessonMatch.objectives;
-                        // Formatkan array ke dalam format teks bertitik
-                        activities = Array.isArray(lessonMatch.activities) ? lessonMatch.activities.join('\n- ') : lessonMatch.activities;
-                        assessment = Array.isArray(lessonMatch.assessment) ? lessonMatch.assessment.join('\n- ') : lessonMatch.assessment;
-                        aids = Array.isArray(lessonMatch.aids) ? lessonMatch.aids.join('\n- ') : lessonMatch.aids;
-                        standardsFound = true;
-                        break outerLoop; 
-                    }
-                }
-            }
+        if (defaultLesson) {
+            standardsDefault = defaultLesson.standards;
+            objectives = defaultLesson.objectives;
+            // Pastikan format bertitik
+            activities = Array.isArray(defaultLesson.activities) ? defaultLesson.activities.join('\n- ') : defaultLesson.activities;
+            assessment = Array.isArray(defaultLesson.assessment) ? defaultLesson.assessment.join('\n- ') : defaultLesson.assessment;
+            aids = Array.isArray(defaultLesson.aids) ? defaultLesson.aids.join('\n- ') : defaultLesson.aids;
         }
         
-        // Tetapkan teks lalai jika SP tidak ditemui
+        // Fungsi pembantu untuk memformat teks (pastikan array bertukar jadi teks bertitik)
+        const formatText = (data) => {
+            if (!data) return '';
+            const text = Array.isArray(data) ? data.join('\n- ') : data;
+            return text.startsWith('-') ? text : `- ${text}`;
+        };
+        
+        // --- DATA AKHIR SLOT ---
         generatedSlots.push({
             ...slot,
-            standards: slot.standards,
-            // Berikan mesej yang jelas kepada pengguna jika gagal
-            objectives: standardsFound ? objectives : '❌ Objektif gagal dijana. (SP tidak ditemui atau ralat data)',
-            activities: standardsFound ? (activities.startsWith('-') ? activities : `- ${activities}`) : '❌ Aktiviti gagal dijana.',
-            assessment: standardsFound ? (assessment.startsWith('-') ? assessment : `- ${assessment}`) : '❌ Penilaian gagal dijana.',
-            aids: standardsFound ? (aids.startsWith('-') ? aids : `- ${aids}`) : '❌ BBM gagal dijana.',
+            // PENTING: Simpan semua pilihan data lessons ke dalam slot untuk kegunaan UI (dropdown)
+            sp_data_options: allLessons, 
+            
+            // Nilai lalai yang akan dipaparkan (berdasarkan SP pertama)
+            standards: standardsDefault || '⚠️ Sila pilih SP',
+            objectives: objectives || '❌ Objektif belum dijana. (Pilih SP)',
+            activities: formatText(activities),
+            assessment: formatText(assessment),
+            aids: formatText(aids),
             refleksi: '' 
         });
     }
@@ -242,7 +258,7 @@ async function generateRPHData() {
     if (typeof loadRPHFormWithData === 'function') {
         loadRPHFormWithData(generatedSlots, dayName, dateInput); 
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        showNotification(`RPH Draf untuk ${dayName}, ${dateInput} berjaya dijana! Sila semak medan yang gagal dimuatkan (berlabel ❌).`, 'success');
+        showNotification(`RPH Draf untuk ${dayName}, ${dateInput} berjaya dijana! Sila gunakan dropdown SP untuk memilih SP yang betul.`, 'success');
     }
 }
 
@@ -256,7 +272,6 @@ async function generateRPHData() {
  */
 async function saveRPHData(e) {
     if (e) e.preventDefault();
-    // collectRPHFormData diandaikan ada dalam ui_utils.js
     if (!db || !currentTeacherUID || typeof collectRPHFormData !== 'function') return;
 
     const docId = document.getElementById('rph-document-id').value || db.collection('rph_drafts').doc().id;
@@ -329,7 +344,6 @@ async function getTeacherRPH(uid) {
 
         const rphList = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
 
-        // renderRPHList diandaikan ada dalam ui_utils.js
         if (typeof renderRPHList === 'function') {
              renderRPHList(rphList); 
         }
@@ -394,13 +408,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.getElementById('user-name').textContent = user.email; 
                     
                     getTeacherRPH(currentTeacherUID);
-                    // loadExistingTimetable hanya akan dipanggil jika tab Jadual Waktu diaktifkan 
-                    // atau dipanggil secara eksplisit oleh initializeTabSwitching dalam ui_utils.js.
-                    // Jika anda ingin ia dimuatkan sejurus log masuk (jika anda berada di tab yang betul), buka komen baris di bawah:
-                    // window.loadExistingTimetable(currentTeacherUID); 
                 } else {
                     // Logik jika tiada pengguna (cth: redirect ke login.html)
-                    // window.location.href = 'index.html'; 
                 }
             });
             
