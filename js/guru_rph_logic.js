@@ -1,6 +1,6 @@
 // =======================================================
 // GURU RPH LOGIC (js/guru_rph_logic.js)
-// KOD LENGKAP: Merangkumi semua fungsi Firebase dan Logik Penjanaan RPH
+// KOD LENGKAP: Merangkumi semua fungsi Firebase, Logik Penjanaan RPH, dan Pembetulan Data SP
 // =======================================================
 
 let currentTeacherUID = null;
@@ -18,14 +18,13 @@ const SP_FILE_MAP = {
     'BI': 'sp-bi.json',
     'MT': 'sp-mt.json',
     'SN': 'sp-sn.json',
-    // Gunakan P.ISLAM (tanpa ruang) untuk mengelakkan ralat subjek dua perkataan
-    'P.ISLAM': 'sp-pai.json', 
+    'P.ISLAM': 'sp-pai.json', // Mesti guna P.ISLAM (tanpa ruang)
     'RBT': 'sp-rbt.json',
     'PJ': 'sp-pj.json',
     'PK': 'sp-pk.json',
     'SJ': 'sp-sj.json',
 };
-// Menggunakan 'data/' sebagai laluan standard relatif
+// Menggunakan 'data/' sebagai laluan standard relatif (anda boleh tukar jika perlu, cth: './data/')
 const DATA_JSON_BASE_PATH = 'data/'; 
 
 
@@ -50,14 +49,14 @@ async function loadSPData(subjectCode) {
         
         if (!response.ok) {
             // Ini akan menunjukkan masalah 404 jika laluan salah
-            throw new Error(`Gagal memuatkan fail SP: ${DATA_JSON_BASE_PATH}${fileName} (HTTP Status: ${response.status})`);
+            throw new Error(`Gagal memuatkan fail SP: ${DATA_JSON_BASE_PATH}${fileName} (HTTP Status: ${response.status}). Sila semak laluan JSON anda.`);
         }
         
         const data = await response.json();
         SP_DATA_CACHE[normalizedCode] = data;
         return data;
     } catch (error) {
-        showNotification(`Ralat memuatkan data SP (${fileName}): ${error.message}. Pastikan fail JSON berada di laluan yang betul.`, 'error');
+        showNotification(`Ralat memuatkan data SP: ${error.message}.`, 'error');
         return null;
     }
 }
@@ -89,8 +88,7 @@ async function saveTimetable(timetableData, uid) {
 window.loadExistingTimetable = async function(uid) {
     if (!db || !uid) return;
     
-    // Pastikan UID tersedia untuk ui_utils yang lain
-    window.currentTeacherUID = uid; 
+    window.currentTeacherUID = uid; // Pastikan ia tersedia secara global
 
     try {
         const doc = await db.collection('timetables').doc(uid).get();
@@ -99,11 +97,8 @@ window.loadExistingTimetable = async function(uid) {
             if (typeof loadTimetableFormWithData === 'function') {
                 loadTimetableFormWithData(data); 
                 showNotification('Data Jadual Waktu berjaya dimuatkan.', 'success');
-            } else {
-                showNotification('Data Jadual Waktu berjaya dimuatkan, tetapi fungsi UI untuk memaparkan borang tidak ditemui.', 'warning');
             }
         } else {
-            // Jika dokumen tidak wujud
             if (typeof createEmptyTimetableForm === 'function') {
                 createEmptyTimetableForm();
                 showNotification('Tiada Jadual Waktu ditemui. Borang kosong telah dijana.', 'info');
@@ -119,7 +114,18 @@ window.loadExistingTimetable = async function(uid) {
 // =======================================================
 
 /**
- * Menjana RPH berdasarkan Jadual Waktu dan data SP.
+ * Mencari nama hari dari input tarikh.
+ */
+function getDayNameFromDate(dateInput) {
+    // Menambah 'T00:00:00' untuk mengelakkan isu zon waktu dalam pelayar
+    const date = (dateInput instanceof Date) ? dateInput : new Date(dateInput + 'T00:00:00'); 
+    if (isNaN(date)) return "Tarikh Tidak Sah"; 
+    // Diandaikan 'ms-MY' adalah locale untuk hari dalam bahasa Melayu
+    return date.toLocaleDateString('ms-MY', { weekday: 'long' }); 
+}
+
+/**
+ * Menjana RPH berdasarkan Jadual Waktu dan data SP. (Logik traversal diperbaiki)
  */
 async function generateRPHData() {
     if (!db || !currentTeacherUID) return; 
@@ -130,7 +136,6 @@ async function generateRPHData() {
         return;
     }
     
-    // getDayNameFromDate diandaikan ada dalam ui_utils.js
     const dayName = getDayNameFromDate(dateInput);
 
     let timetableData = [];
@@ -175,35 +180,40 @@ async function generateRPHData() {
         if (spData) {
             const targetSP = slot.standards.trim().toUpperCase();
             
-            // Logik Traversal Data SP (Diperkuatkan untuk pelbagai struktur JSON)
+            // Loop Tahap 1: TAHUN (cth: TAHUN 1)
             outerLoop:
             for (const year in spData) {
                 const yearData = spData[year];
+                // Loop Tahap 2: UNIT/TOPIK UTAMA (cth: Unit 1: Keluarga Saya)
                 for (const unit in yearData) {
                     const unitOrTopic = yearData[unit];
                     let lessonsArray = [];
                     
+                    // LOGIK TRAVERSAL DATA
                     if (Array.isArray(unitOrTopic)) {
                          lessonsArray = unitOrTopic;
                     } else if (unitOrTopic && unitOrTopic.topics && Array.isArray(unitOrTopic.topics)) {
+                        // Untuk struktur RBT
                         for (const topic of unitOrTopic.topics) {
                             if (topic.lessons && Array.isArray(topic.lessons)) {
                                 lessonsArray.push(...topic.lessons);
                             }
                         }
                     } else if (unitOrTopic && typeof unitOrTopic === 'object') {
+                        // Untuk struktur BM/BI/MT/PAI/PJ/PK/SJ (Unit mengandungi sub-kunci Mendengar/Menulis/dll.)
                         for (const key in unitOrTopic) {
                             if (Array.isArray(unitOrTopic[key])) {
                                 lessonsArray.push(...unitOrTopic[key]);
                             }
                         }
                     }
-
+                    
+                    // Cari SP yang sepadan
                     const lessonMatch = lessonsArray.find(l => l.standards && l.standards.trim().toUpperCase() === targetSP);
                     
                     if (lessonMatch) {
                         objectives = lessonMatch.objectives;
-                        // Formatkan aktiviti/penilaian/BBM ke dalam format teks
+                        // Formatkan array ke dalam format teks bertitik
                         activities = Array.isArray(lessonMatch.activities) ? lessonMatch.activities.join('\n- ') : lessonMatch.activities;
                         assessment = Array.isArray(lessonMatch.assessment) ? lessonMatch.assessment.join('\n- ') : lessonMatch.assessment;
                         aids = Array.isArray(lessonMatch.aids) ? lessonMatch.aids.join('\n- ') : lessonMatch.aids;
@@ -218,10 +228,11 @@ async function generateRPHData() {
         generatedSlots.push({
             ...slot,
             standards: slot.standards,
-            objectives: standardsFound ? objectives : 'Objektif tidak dijana. Sila masukkan secara manual (SP tidak ditemui atau ralat data).',
-            activities: standardsFound ? (activities.startsWith('-') ? activities : `- ${activities}`) : 'Aktiviti tidak dijana. Sila masukkan secara manual.',
-            assessment: standardsFound ? (assessment.startsWith('-') ? assessment : `- ${assessment}`) : 'Penilaian tidak dijana.',
-            aids: standardsFound ? (aids.startsWith('-') ? aids : `- ${aids}`) : 'BBM tidak dijana.',
+            // Berikan mesej yang jelas kepada pengguna jika gagal
+            objectives: standardsFound ? objectives : '❌ Objektif gagal dijana. (SP tidak ditemui atau ralat data)',
+            activities: standardsFound ? (activities.startsWith('-') ? activities : `- ${activities}`) : '❌ Aktiviti gagal dijana.',
+            assessment: standardsFound ? (assessment.startsWith('-') ? assessment : `- ${assessment}`) : '❌ Penilaian gagal dijana.',
+            aids: standardsFound ? (aids.startsWith('-') ? aids : `- ${aids}`) : '❌ BBM gagal dijana.',
             refleksi: '' 
         });
     }
@@ -231,7 +242,7 @@ async function generateRPHData() {
     if (typeof loadRPHFormWithData === 'function') {
         loadRPHFormWithData(generatedSlots, dayName, dateInput); 
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        showNotification(`RPH Draf untuk ${dayName}, ${dateInput} berjaya dijana! Sila sunting dan Simpan.`, 'success');
+        showNotification(`RPH Draf untuk ${dayName}, ${dateInput} berjaya dijana! Sila semak medan yang gagal dimuatkan (berlabel ❌).`, 'success');
     }
 }
 
@@ -270,7 +281,7 @@ async function saveRPHData(e) {
 
         document.getElementById('rph-document-id').value = docId; 
         showNotification('Draf RPH berjaya disimpan!', 'success');
-        getTeacherRPH(currentTeacherUID); // Muat semula senarai RPH
+        getTeacherRPH(currentTeacherUID); 
     } catch (error) {
         showNotification(`Gagal menyimpan RPH: ${error.message}`, 'error');
     }
@@ -340,12 +351,13 @@ window.loadRPHtoEdit = function(rphID) {
         .then(doc => {
             if (doc.exists && doc.data().guru_uid === currentTeacherUID) {
                 document.getElementById('rph-document-id').value = doc.id;
-                document.getElementById('rph-date').value = doc.data().date.toDate().toISOString().substring(0, 10);
                 
-                // Panggil fungsi UI untuk mengisi semula borang RPH
+                const rphDate = doc.data().date.toDate().toISOString().substring(0, 10);
+                document.getElementById('rph-date').value = rphDate;
+                
                 if (typeof loadRPHFormWithData === 'function') {
                     // PENTING: Muatkan semula data borang RPH
-                    loadRPHFormWithData(doc.data().slots_data, doc.data().day_name, doc.data().date.toDate().toISOString().substring(0, 10)); 
+                    loadRPHFormWithData(doc.data().slots_data, doc.data().day_name, rphDate); 
                     document.getElementById('rph-editor-section')?.classList.remove('hidden');
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                     showNotification(`RPH Draf (${doc.data().status}) berjaya dimuatkan untuk penyuntingan.`, 'success');
@@ -359,17 +371,6 @@ window.loadRPHtoEdit = function(rphID) {
         .catch(error => {
             showNotification(`Gagal memuatkan RPH: ${error.message}`, 'error');
         });
-}
-
-/**
- * Mencari nama hari dari input tarikh.
- * Fungsi ini dimasukkan di sini, tetapi ia juga boleh berada dalam ui_utils.js.
- */
-function getDayNameFromDate(dateInput) {
-    // Menambah 'T00:00:00' untuk mengelakkan isu zon waktu dalam pelayar
-    const date = (dateInput instanceof Date) ? dateInput : new Date(dateInput + 'T00:00:00'); 
-    if (isNaN(date)) return "Tarikh Tidak Sah"; 
-    return date.toLocaleDateString('ms-MY', { weekday: 'long' }); 
 }
 
 
@@ -393,7 +394,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.getElementById('user-name').textContent = user.email; 
                     
                     getTeacherRPH(currentTeacherUID);
-                    window.loadExistingTimetable(currentTeacherUID); // Panggil fungsi muat Jadual Waktu
+                    // loadExistingTimetable hanya akan dipanggil jika tab Jadual Waktu diaktifkan 
+                    // atau dipanggil secara eksplisit oleh initializeTabSwitching dalam ui_utils.js.
+                    // Jika anda ingin ia dimuatkan sejurus log masuk (jika anda berada di tab yang betul), buka komen baris di bawah:
+                    // window.loadExistingTimetable(currentTeacherUID); 
                 } else {
                     // Logik jika tiada pengguna (cth: redirect ke login.html)
                     // window.location.href = 'index.html'; 
