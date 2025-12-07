@@ -1,9 +1,13 @@
 // =======================================================
 // UI UTILITIES LOGIC (js/ui_utils.js)
-// Kemas kini: Memastikan semua fungsi UI kritikal dan Tab Switching berfungsi dengan betul.
+// KOD LENGKAP: Menguruskan semua interaksi UI dan penjanaan HTML
 // =======================================================
 
 const DAYS_OF_WEEK = ["Isnin", "Selasa", "Rabu", "Khamis", "Jumaat"];
+
+// =======================================================
+// 1. NOTIFIKASI
+// =======================================================
 
 /**
  * [FUNGSI WAJIB] showNotification(message, type)
@@ -39,293 +43,351 @@ function showNotification(message, type) {
     }, 5000);
 }
 
-/**
- * [FUNGSI WAJIB] displayRPHList(dataArray, tableId)
- * Menjana dan memaparkan senarai data RPH secara dinamik dalam HTML.
- */
-function displayRPHList(dataArray, tableId) {
-    const tbody = document.querySelector(`#${tableId} tbody`);
-    if (!tbody) return;
 
-    tbody.innerHTML = ''; 
-
-    dataArray.forEach(item => {
-        const row = tbody.insertRow();
-        const dateObject = item.date.toDate ? item.date.toDate() : new Date(item.date);
-        const dateString = dateObject.toLocaleDateString('ms-MY', { year: 'numeric', month: 'short', day: 'numeric' });
-
-        row.insertCell().textContent = dateString;
-        row.insertCell().textContent = item.hari || getDayNameFromDate(dateObject);
-        row.insertCell().textContent = item.status || 'Draf';
-        
-        const actionCell = row.insertCell();
-        const editButton = document.createElement('button');
-        editButton.className = 'btn btn-sm btn-secondary';
-        editButton.textContent = 'Sunting';
-        // PENTING: Memastikan loadRPHtoEdit tersedia secara global
-        editButton.onclick = () => window.loadRPHtoEdit(item.id); 
-        
-        actionCell.appendChild(editButton);
-    });
-}
+// =======================================================
+// 2. LOGIK JADUAL WAKTU (TANPA MEDAN SP)
+// =======================================================
 
 /**
- * Memuatkan data RPH sedia ada ke dalam borang penyuntingan.
+ * Menjana HTML untuk satu slot Jadual Waktu kosong.
+ * @param {object} slot - Data slot (tanpa standards)
  */
-function loadRPHFormWithData(slotsData, day, dateInput) {
-    const editor = document.getElementById('rph-slots-editor');
-    if (!editor) return;
-
-    editor.innerHTML = ''; 
-
-    slotsData.forEach((slot, index) => {
-        editor.insertAdjacentHTML('beforeend', createRPHSlotHTML(slot, index));
-    });
-    
-    // Pastikan tarikh dikemaskini
-    document.getElementById('rph-date').value = dateInput;
-    
-    attachRPHSlotListeners(editor);
-}
-
-/**
- * Fungsi pembantu untuk menjana HTML slot RPH
- */
-function createRPHSlotHTML(slot = {}, index = 0) {
-    const { time = '', subject = '', class: className = '', standards = '', objectives = '', activities = '', assessment = '', aids = '', refleksi = '' } = slot;
-
-    // Nota: 'Standards' dan Header Subjek/Masa/Kelas adalah Readonly
+function createEmptyTimetableSlot(slot = {}) {
     return `
-        <div class="rph-slot-group card mt-3" data-index="${index}">
-            <button type="button" class="btn btn-danger btn-remove-rph-slot">Buang Slot</button>
-            <h4>Slot RPH ${index + 1}</h4>
-            <div class="rph-slot-header">
-                <input type="time" name="time" placeholder="Masa" value="${time}" readonly>
-                <input type="text" name="subject" placeholder="Subjek" value="${subject}" readonly>
-                <input type="text" name="class" placeholder="Kelas" value="${className}" readonly>
-            </div>
-            
-            <label>Standard Pembelajaran (SP)</label>
-            <textarea name="standards" rows="2" readonly>${standards}</textarea>
-
-            <label>Objektif Pembelajaran</label>
-            <textarea name="objektif" rows="4" required>${objectives}</textarea>
-            
-            <label>Aktiviti Pengajaran & Pembelajaran</label>
-            <textarea name="aktiviti" rows="6" required>${activities}</textarea>
-
-            <label>Penilaian</label>
-            <textarea name="penilaian" rows="3">${assessment}</textarea>
-
-            <label>Bahan Bantu Mengajar (BBM)</label>
-            <textarea name="aids" rows="3">${aids}</textarea>
-            
-            <label>Refleksi</label>
-            <textarea name="refleksi" rows="3">${refleksi}</textarea>
+        <div class="timetable-slot">
+            <input type="time" name="start_time" value="${slot.start_time || ''}" required>
+            <input type="time" name="end_time" value="${slot.end_time || ''}" required>
+            <input type="text" name="subject" placeholder="Contoh: BM 1 Cerdas" value="${slot.subject || ''}" required>
+            <input type="text" name="class_name" placeholder="Contoh: 1 Cerdas" value="${slot.class_name || ''}" required>
+            <button type="button" class="btn btn-danger remove-slot-btn" onclick="this.parentNode.remove()">Buang</button>
         </div>
     `;
 }
 
 /**
- * Mengumpul data RPH dari borang editor.
- */
-function collectRPHFormData() {
-    const slotsData = [];
-    const rphSlotGroups = document.querySelectorAll('#rph-slots-editor .rph-slot-group');
-
-    rphSlotGroups.forEach(slotGroup => {
-        const slot = {
-            time: slotGroup.querySelector('input[name="time"]').value,
-            subject: slotGroup.querySelector('input[name="subject"]').value,
-            class: slotGroup.querySelector('input[name="class"]').value,
-            standards: slotGroup.querySelector('textarea[name="standards"]').value,
-            objectives: slotGroup.querySelector('textarea[name="objektif"]').value,
-            activities: slotGroup.querySelector('textarea[name="aktiviti"]').value,
-            assessment: slotGroup.querySelector('textarea[name="penilaian"]').value, 
-            aids: slotGroup.querySelector('textarea[name="aids"]').value, 
-            refleksi: slotGroup.querySelector('textarea[name="refleksi"]').value
-        };
-        slotsData.push(slot);
-    });
-    return slotsData;
-}
-
-// =======================================================
-// FUNGSI JADUAL WAKTU (TIMETABLE)
-// =======================================================
-
-/**
- * Fungsi pembantu untuk menjana HTML input slot jadual waktu
- */
-function createSlotInputHTML(slot = {}) {
-    const { time = '', subject = '', class: className = '', standards = '' } = slot; 
-    
-    return `
-        <div class="slot-group">
-            <input type="time" name="time" placeholder="Masa" value="${time}" required>
-            <input type="text" name="subject" placeholder="Subjek" value="${subject}" required>
-            <input type="text" name="class" placeholder="Kelas" value="${className}" required>
-            <input type="text" name="standards" placeholder="Kod SP (cth: RBT.1.1.1)" value="${standards}" required>
-            <button type="button" class="btn btn-danger btn-remove-slot">X</button>
-        </div>
-    `;
-}
-
-/**
- * Menjana dan memaparkan borang Jadual Waktu yang kosong (untuk pengguna baru).
+ * Menjana borang Jadual Waktu kosong.
  */
 function createEmptyTimetableForm() {
-    const container = document.getElementById('timetable-input-form');
-    if (!container) return;
-    
-    container.innerHTML = DAYS_OF_WEEK.map(day => `
-        <div class="day-section card mt-2" data-day="${day}">
-            <h4>${day}</h4>
-            <div id="${day.toLowerCase()}-slots-container" class="slots-container">
-                ${createSlotInputHTML()}
-                ${createSlotInputHTML()}
-                <p class="text-muted">Masukkan slot masa anda (Subjek, Kelas, Kod SP)</p>
-            </div>
-            <button type="button" class="btn btn-secondary btn-add-slot mt-1" data-day="${day}">+ Tambah Slot</button>
-        </div>
-    `).join('');
-    
-    attachSlotListeners(container);
-    showNotification('Sila isikan Jadual Waktu anda yang baru.', 'info');
-}
+    const formContainer = document.getElementById('timetable-input-form');
+    if (!formContainer) return;
 
-/**
- * Memuatkan data Jadual Waktu sedia ada ke dalam borang HTML.
- * FUNGSI UTAMA UNTUK PAPARAN.
- * @param {Array<Object>} timetableData - Data jadual waktu dari Firestore
- */
-function loadTimetableFormWithData(timetableData) {
-    const container = document.getElementById('timetable-input-form');
-    if (!container) return;
-
-    let formHTML = '';
-    
+    let html = '';
     DAYS_OF_WEEK.forEach(day => {
-        const dayData = timetableData.find(d => d.day.toLowerCase() === day.toLowerCase());
-        const slots = dayData ? dayData.slots : [];
-        
-        let slotsHTML = '';
-        if (slots.length > 0) {
-            slotsHTML = slots.map(slot => createSlotInputHTML(slot)).join('');
-        } else {
-            // Sediakan 1 slot kosong untuk kemudahan edit/tambah jika tiada data untuk hari itu
-            slotsHTML = createSlotInputHTML() + '<p class="text-muted">Tiada slot untuk hari ini.</p>';
-        }
-
-        formHTML += `
-            <div class="day-section card mt-2" data-day="${day}">
+        const dayId = day.toLowerCase();
+        html += `
+            <div class="timetable-day-section card mt-3">
                 <h4>${day}</h4>
-                <div id="${day.toLowerCase()}-slots-container" class="slots-container">
-                    ${slotsHTML}
+                <div id="slots-${dayId}">
+                    ${createEmptyTimetableSlot()}
                 </div>
-                <button type="button" class="btn btn-secondary btn-add-slot mt-1" data-day="${day}">+ Tambah Slot</button>
+                <button type="button" class="btn btn-secondary add-slot-btn" 
+                        onclick="document.getElementById('slots-${dayId}').insertAdjacentHTML('beforeend', createEmptyTimetableSlot())">
+                    + Tambah Slot
+                </button>
             </div>
         `;
     });
 
-    container.innerHTML = formHTML;
-    attachSlotListeners(container);
-    showNotification('Jadual Waktu sedia ada berjaya dimuatkan.', 'info');
+    formContainer.innerHTML = html;
 }
 
 /**
- * Mengumpul data Jadual Waktu dari borang input (dipanggil oleh guru_rph_logic.js).
+ * Memuatkan data Jadual Waktu sedia ada ke dalam borang.
+ */
+function loadTimetableFormWithData(data) {
+    const formContainer = document.getElementById('timetable-input-form');
+    if (!formContainer) return;
+
+    let html = '';
+    
+    DAYS_OF_WEEK.forEach(day => {
+        const dayId = day.toLowerCase();
+        const dayData = data.find(d => d.day.toLowerCase() === dayId);
+        let slotsHtml = '';
+
+        if (dayData && dayData.slots && dayData.slots.length > 0) {
+            dayData.slots.forEach(slot => {
+                slotsHtml += createEmptyTimetableSlot(slot);
+            });
+        } else {
+            slotsHtml = createEmptyTimetableSlot();
+        }
+
+        html += `
+            <div class="timetable-day-section card mt-3">
+                <h4>${day}</h4>
+                <div id="slots-${dayId}">
+                    ${slotsHtml}
+                </div>
+                <button type="button" class="btn btn-secondary add-slot-btn" 
+                        onclick="document.getElementById('slots-${dayId}').insertAdjacentHTML('beforeend', createEmptyTimetableSlot())">
+                    + Tambah Slot
+                </button>
+            </div>
+        `;
+    });
+
+    formContainer.innerHTML = html;
+}
+
+/**
+ * Mengumpul data Jadual Waktu dari borang (Tanpa standards).
  */
 function collectTimetableFormData() {
     const timetableData = [];
-    document.querySelectorAll('#timetable-input-form .day-section').forEach(daySection => {
-        const day = daySection.getAttribute('data-day');
-        const slots = [];
-        daySection.querySelectorAll('.slot-group').forEach(slotGroup => {
-            // Hanya simpan slot yang mempunyai subjek/masa (mengabaikan slot kosong jika tiada data diisi)
-            const subject = slotGroup.querySelector('input[name="subject"]').value.trim();
-            const time = slotGroup.querySelector('input[name="time"]').value.trim();
-            const className = slotGroup.querySelector('input[name="class"]').value.trim();
-            const standards = slotGroup.querySelector('input[name="standards"]').value.trim();
-            
-            if (subject && time) {
-                slots.push({
-                    time: time,
-                    subject: subject,
-                    class: className,
-                    standards: standards
-                });
-            }
+    
+    DAYS_OF_WEEK.forEach(day => {
+        const daySlotsContainer = document.getElementById(`slots-${day.toLowerCase()}`);
+        if (!daySlotsContainer) return;
+
+        const dayData = {
+            day: day,
+            slots: []
+        };
+        
+        daySlotsContainer.querySelectorAll('.timetable-slot').forEach(slotGroup => {
+            dayData.slots.push({
+                start_time: slotGroup.querySelector('input[name="start_time"]').value,
+                end_time: slotGroup.querySelector('input[name="end_time"]').value,
+                subject: slotGroup.querySelector('input[name="subject"]').value,
+                class_name: slotGroup.querySelector('input[name="class_name"]').value,
+                // standards TIDAK dikumpulkan dari borang Jadual Waktu
+                standards: '' 
+            });
         });
         
-        if (slots.length > 0) {
-            timetableData.push({ day, slots });
+        if (dayData.slots.length > 0) {
+            timetableData.push(dayData);
         }
     });
     return timetableData;
 }
 
 
-/**
- * Melampirkan pendengar acara pada butang tambah/buang slot Jadual Waktu
- */
-function attachSlotListeners(container) {
-    // Listener untuk butang Tambah Slot
-    container.querySelectorAll('.btn-add-slot').forEach(button => {
-        button.addEventListener('click', () => {
-            const day = button.getAttribute('data-day');
-            const slotsContainer = document.querySelector(`#${day.toLowerCase()}-slots-container`);
-            if (slotsContainer) {
-                // Buang placeholder 'Tiada slot...' jika ada
-                const placeholder = slotsContainer.querySelector('.text-muted');
-                if(placeholder) placeholder.remove();
-                
-                slotsContainer.insertAdjacentHTML('beforeend', createSlotInputHTML());
-                // Attach listener to the newly added remove button
-                const newSlot = slotsContainer.lastElementChild;
-                newSlot.querySelector('.btn-remove-slot').addEventListener('click', function() {
-                    this.parentElement.remove();
-                });
-            }
-        });
-    });
+// =======================================================
+// 3. LOGIK RPH (DENGAN DROPDOWN SP)
+// =======================================================
 
-    // Listener untuk butang Buang Slot (pada elemen sedia ada dan baru dimuat)
-    container.querySelectorAll('.btn-remove-slot').forEach(button => {
-        button.addEventListener('click', function() {
-            this.parentElement.remove();
-        });
-    });
+/**
+ * Mengemas kini medan RPH secara automatik berdasarkan pilihan SP dalam dropdown.
+ * FUNGSI KRITIKAL untuk pemuatan data automatik.
+ */
+function updateRPHFields(selectElement) {
+    const selectedSP = selectElement.value;
+    const slotGroup = selectElement.closest('.rph-slot');
+    
+    // Dapatkan semua data SP yang disimpan sebagai JSON string dalam data-attribute
+    const allLessonsJson = slotGroup.getAttribute('data-sp-options');
+    let allLessons;
+    try {
+        allLessons = JSON.parse(allLessonsJson);
+    } catch (e) {
+        showNotification('Ralat memuatkan data SP dari UI.', 'error');
+        return;
+    }
+
+    // Cari pelajaran yang sepadan dengan SP yang dipilih
+    const lessonMatch = allLessons.find(l => l.standards && l.standards.trim() === selectedSP.trim());
+
+    // Fungsi pembantu untuk memformat teks (pastikan array bertukar jadi teks bertitik)
+    const formatText = (data) => {
+        if (!data) return '';
+        const text = Array.isArray(data) ? data.join('\n- ') : data;
+        return text.startsWith('-') ? text : `- ${text}`;
+    };
+
+    if (lessonMatch) {
+        // Isi medan lain
+        slotGroup.querySelector('textarea[name="objektif"]').value = lessonMatch.objectives || '';
+        slotGroup.querySelector('textarea[name="aktiviti"]').value = formatText(lessonMatch.activities);
+        slotGroup.querySelector('textarea[name="penilaian"]').value = formatText(lessonMatch.assessment);
+        slotGroup.querySelector('textarea[name="aids"]').value = formatText(lessonMatch.aids);
+        
+        showNotification(`Data RPH dikemas kini untuk SP: ${selectedSP}`, 'info');
+
+    } else {
+        // Tetapkan semula medan jika tiada padanan ditemui
+        slotGroup.querySelector('textarea[name="objektif"]').value = 'SP tidak sah atau data gagal dimuatkan.';
+        slotGroup.querySelector('textarea[name="aktiviti"]').value = 'Tiada data aktiviti ditemui.';
+        slotGroup.querySelector('textarea[name="penilaian"]').value = 'Tiada data penilaian ditemui.';
+        slotGroup.querySelector('textarea[name="aids"]').value = 'Tiada data BBM ditemui.';
+    }
 }
 
 
 /**
- * Melampirkan pendengar acara pada butang buang slot RPH
+ * Menjana HTML untuk satu slot RPH (menggunakan dropdown).
  */
-function attachRPHSlotListeners(container) {
-     container.querySelectorAll('.btn-remove-rph-slot').forEach(button => {
-        button.addEventListener('click', function() {
-            this.parentElement.remove();
+function createRPHSlotHTML(slot, index) {
+    
+    // PENTING: Simpan data pilihan SP sebagai JSON string dalam attribute DOM
+    // Untuk mengelakkan masalah petikan dalam JSON, kita gunakan JSON.stringify
+    const spOptionsJson = JSON.stringify(slot.sp_data_options || []);
+
+    // Bina pilihan dropdown Standards
+    let standardsOptionsHTML = '';
+    const currentStandards = slot.standards ? slot.standards.trim() : '⚠️ Sila pilih SP';
+
+    if (slot.sp_data_options && slot.sp_data_options.length > 0) {
+        slot.sp_data_options.forEach(lesson => {
+            if (!lesson.standards) return; // Langkau jika tiada SP
+            const spValue = lesson.standards.trim();
+            const isSelected = spValue === currentStandards;
+            // Gunakan SP penuh sebagai label dan nilai.
+            standardsOptionsHTML += `<option value="${spValue}" ${isSelected ? 'selected' : ''}>${spValue}</option>`;
         });
+    } else {
+         standardsOptionsHTML = `<option value="${currentStandards}" selected>${currentStandards}</option>`;
+    }
+    
+    // Tambah pilihan lalai/kosong jika tiada SP yang dipilih atau tiada data
+    if (!standardsOptionsHTML || !slot.standards) {
+        standardsOptionsHTML = `<option value="" selected disabled>-- Sila Pilih Standard Pembelajaran --</option>` + standardsOptionsHTML;
+    }
+
+
+    // Pastikan slot.standards adalah dropdown dengan onchange yang memanggil updateRPHFields
+    return `
+        <div class="rph-slot card mt-3" data-slot-index="${index}" data-sp-options='${spOptionsJson}'>
+            <h4>${slot.subject} (${slot.start_time} - ${slot.end_time}) - Kelas: ${slot.class_name}</h4>
+            
+            <label>Standard Pembelajaran (SP):</label>
+            <select name="standards" class="form-control" onchange="updateRPHFields(this)" required>
+                 ${standardsOptionsHTML}
+            </select>
+            
+            <label>Objektif:</label>
+            <textarea name="objektif" class="form-control">${slot.objectives || ''}</textarea>
+
+            <label>Aktiviti:</label>
+            <textarea name="aktiviti" class="form-control" rows="4">${slot.activities || ''}</textarea>
+
+            <label>Penilaian:</label>
+            <textarea name="penilaian" class="form-control" rows="3">${slot.assessment || ''}</textarea>
+
+            <label>BBM / Catatan:</label>
+            <textarea name="aids" class="form-control" rows="3">${slot.aids || ''}</textarea>
+            
+            <label>Refleksi:</label>
+            <textarea name="refleksi" class="form-control" rows="2">${slot.refleksi || ''}</textarea>
+        </div>
+    `;
+}
+
+/**
+ * Memuatkan data RPH ke dalam borang penyuntingan.
+ */
+function loadRPHFormWithData(slotsData, dayName, dateInput) {
+    const editorSection = document.getElementById('rph-editor-section');
+    const form = document.getElementById('rph-editor-form');
+
+    if (!editorSection || !form) return;
+
+    document.getElementById('rph-date').value = dateInput; 
+    
+    let slotsHtml = `<h3>RPH Draf: ${dayName}, ${dateInput}</h3>`;
+    
+    // Jana HTML untuk setiap slot
+    slotsData.forEach((slot, index) => {
+        slotsHtml += createRPHSlotHTML(slot, index);
+    });
+
+    form.querySelector('#rph-slots-container').innerHTML = slotsHtml;
+    editorSection.classList.remove('hidden');
+}
+
+
+/**
+ * Mengumpul data RPH yang telah disunting dari borang.
+ */
+function collectRPHFormData() {
+    const slotsData = [];
+    const rphSlotsContainer = document.getElementById('rph-slots-container');
+    
+    rphSlotsContainer.querySelectorAll('.rph-slot').forEach(slotGroup => {
+        // Ambil kembali data asal (start_time, end_time, subject, class_name) dari input
+        // Ambil data yang disunting dari textarea/select
+        
+        // Cipta objek slot sementara untuk menyimpan data
+        const tempSlot = {};
+        
+        // Ambil nilai dari borang RPH (standards kini adalah select)
+        tempSlot.standards = slotGroup.querySelector('select[name="standards"]').value || '';
+        tempSlot.objectives = slotGroup.querySelector('textarea[name="objektif"]').value || '';
+        tempSlot.activities = slotGroup.querySelector('textarea[name="aktiviti"]').value || '';
+        tempSlot.assessment = slotGroup.querySelector('textarea[name="penilaian"]').value || '';
+        tempSlot.aids = slotGroup.querySelector('textarea[name="aids"]').value || '';
+        tempSlot.refleksi = slotGroup.querySelector('textarea[name="refleksi"]').value || '';
+        
+        // Ambil data asal dari tajuk (anda mungkin perlu menyusun semula HTML jika anda mahu input kekal)
+        const headerText = slotGroup.querySelector('h4').textContent;
+        const match = headerText.match(/^(.*?) \((.*?) - (.*?)\) - Kelas: (.*?)$/);
+
+        if (match) {
+            tempSlot.subject = match[1].trim();
+            tempSlot.start_time = match[2].trim();
+            tempSlot.end_time = match[3].trim();
+            tempSlot.class_name = match[4].trim();
+        } else {
+             // Fallback jika format tajuk diubah
+             tempSlot.subject = 'Subjek Tidak Diketahui';
+             tempSlot.start_time = '00:00';
+             tempSlot.end_time = '00:00';
+             tempSlot.class_name = 'Kelas Tidak Diketahui';
+        }
+        
+        // PENTING: Kekalkan sp_data_options (untuk penyuntingan masa depan)
+        const spOptionsJson = slotGroup.getAttribute('data-sp-options');
+        if (spOptionsJson) {
+             tempSlot.sp_data_options = JSON.parse(spOptionsJson);
+        }
+
+        slotsData.push(tempSlot);
+    });
+    
+    return slotsData;
+}
+
+
+/**
+ * Memaparkan senarai RPH guru dalam jadual.
+ */
+function renderRPHList(rphList) {
+    const tableBody = document.querySelector('#teacher-rph-list tbody');
+    if (!tableBody) return;
+
+    tableBody.innerHTML = '';
+    
+    rphList.forEach(rph => {
+        const dateString = rph.date ? rph.date.toDate().toLocaleDateString('ms-MY') : 'Tarikh Tidak Sah';
+        const statusClass = rph.status === 'Dikemukakan' ? 'status-submitted' : 'status-draft';
+        
+        const row = tableBody.insertRow();
+        row.innerHTML = `
+            <td>${dateString}</td>
+            <td>${rph.day_name || '-'}</td>
+            <td class="${statusClass}">${rph.status}</td>
+            <td>
+                <button class="btn btn-sm btn-info" onclick="loadRPHtoEdit('${rph.id}')">Sunting</button>
+            </td>
+        `;
     });
 }
 
 
-function getDayNameFromDate(dateInput) {
-    const date = (dateInput instanceof Date) ? dateInput : new Date(dateInput);
-    if (isNaN(date)) return "Tarikh Tidak Sah"; 
-    return date.toLocaleDateString('ms-MY', { weekday: 'long' }); 
-}
+// =======================================================
+// 4. INITALIZATION (TABS)
+// =======================================================
 
-/**
- * Menguruskan pensuisan tab dan memuatkan semula Jadual Waktu apabila tab ditukar.
- */
 function initializeTabSwitching() {
+    // Ubah data-tab kepada data-target dalam HTML (jika belum)
     const tabs = document.querySelectorAll('.btn-tab');
+    
     tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            // **PENTING: Menggunakan data-target untuk sepadan dengan HTML**
-            const targetId = tab.getAttribute('data-target'); 
+        tab.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            const targetId = tab.getAttribute('data-tab'); // Menggunakan data-tab dari HTML guru_rph.html
             
             document.querySelectorAll('.tab-content').forEach(content => {
                 content.classList.add('hidden');
@@ -337,19 +399,23 @@ function initializeTabSwitching() {
             document.getElementById(targetId)?.classList.remove('hidden');
             tab.classList.add('active');
             
-            // PENTING: Jika menukar ke tab Jadual Waktu, muat semula data (jika UID wujud).
-            if (targetId === 'timetable-tab' && typeof loadExistingTimetable === 'function' && window.currentTeacherUID) {
-                loadExistingTimetable(window.currentTeacherUID);
+            // PENTING: Jika menukar ke tab Jadual Waktu, paksa muat semula data dan paparkan.
+            if (targetId === 'timetable-tab' && typeof window.loadExistingTimetable === 'function' && window.currentTeacherUID) {
+                window.loadExistingTimetable(window.currentTeacherUID);
             }
         });
     });
+    
+    // Tetapkan tab pertama sebagai aktif secara lalai
+    const defaultTab = document.querySelector('.btn-tab.active');
+    if (defaultTab) {
+        const defaultContentId = defaultTab.getAttribute('data-tab');
+        document.getElementById(defaultContentId)?.classList.remove('hidden');
+    }
 }
 
 // Pastikan initializeTabSwitching dipanggil
 document.addEventListener('DOMContentLoaded', () => {
-    // Inisialisasi window.currentTeacherUID (akan dikemas kini oleh guru_rph_logic.js)
     window.currentTeacherUID = null; 
-    
-    // Inisialisasi tab switching
     initializeTabSwitching();
 });
