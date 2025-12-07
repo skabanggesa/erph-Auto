@@ -1,6 +1,6 @@
 // =======================================================
 // UI UTILITIES LOGIC (js/ui_utils.js)
-// Kemas kini: Memulihkan Logik Jadual Waktu dan RPH
+// Kemas kini: Memastikan semua fungsi UI kritikal, termasuk paparan Jadual Waktu, berfungsi.
 // =======================================================
 
 const DAYS_OF_WEEK = ["Isnin", "Selasa", "Rabu", "Khamis", "Jumaat"];
@@ -36,7 +36,6 @@ function showNotification(message, type) {
     clearTimeout(window.notificationTimeout);
     window.notificationTimeout = setTimeout(() => {
         notificationDiv.style.display = 'none';
-        // noti...
     }, 5000);
 }
 
@@ -52,7 +51,6 @@ function displayRPHList(dataArray, tableId) {
 
     dataArray.forEach(item => {
         const row = tbody.insertRow();
-        // Pastikan item.date adalah objek Timestamp Firebase atau objek Date
         const dateObject = item.date.toDate ? item.date.toDate() : new Date(item.date);
         const dateString = dateObject.toLocaleDateString('ms-MY');
 
@@ -89,7 +87,6 @@ function loadRPHFormWithData(slotsData, day, dateInput) {
     // Pastikan tarikh dikemaskini
     document.getElementById('rph-date').value = dateInput;
     
-    // Pasang listener untuk butang buang slot RPH jika ada
     attachRPHSlotListeners(editor);
 }
 
@@ -104,13 +101,13 @@ function createRPHSlotHTML(slot = {}, index = 0) {
             <button type="button" class="btn btn-danger btn-remove-rph-slot">Buang Slot</button>
             <h4>Slot RPH ${index + 1}</h4>
             <div class="rph-slot-header">
-                <input type="text" name="time" placeholder="Masa" value="${time}" readonly>
+                <input type="time" name="time" placeholder="Masa" value="${time}" readonly>
                 <input type="text" name="subject" placeholder="Subjek" value="${subject}" readonly>
                 <input type="text" name="class" placeholder="Kelas" value="${className}" readonly>
             </div>
             
             <label>Standard Pembelajaran (SP)</label>
-            <textarea name="standards" rows="2">${standards}</textarea>
+            <textarea name="standards" rows="2" readonly>${standards}</textarea>
 
             <label>Objektif Pembelajaran</label>
             <textarea name="objektif" rows="4" required>${objectives}</textarea>
@@ -155,7 +152,7 @@ function collectRPHFormData() {
 }
 
 // =======================================================
-// FUNGSI JADUAL WAKTU BARU YANG HILANG
+// FUNGSI JADUAL WAKTU (TIMETABLE)
 // =======================================================
 
 /**
@@ -177,7 +174,6 @@ function createSlotInputHTML(slot = {}) {
 
 /**
  * Menjana dan memaparkan borang Jadual Waktu yang kosong (untuk pengguna baru).
- * Fungsi ini dipanggil jika tiada Jadual Waktu ditemui.
  */
 function createEmptyTimetableForm() {
     const container = document.getElementById('timetable-input-form');
@@ -195,13 +191,13 @@ function createEmptyTimetableForm() {
         </div>
     `).join('');
     
-    attachSlotListeners(container); // Lampirkan listener untuk butang tambah/buang slot
-    showNotification('Borang Jadual Waktu kosong telah dijana. Sila masukkan data anda.', 'info');
+    attachSlotListeners(container);
+    // Notifikasi diuruskan oleh loadExistingTimetable, jadi tiada notifikasi di sini
 }
 
 /**
  * Memuatkan data Jadual Waktu sedia ada ke dalam borang HTML.
- * Fungsi ini dipanggil jika data Jadual Waktu ditemui.
+ * FUNGSI UTAMA UNTUK PAPARAN.
  * @param {Array<Object>} timetableData - Data jadual waktu dari Firestore
  */
 function loadTimetableFormWithData(timetableData) {
@@ -218,7 +214,7 @@ function loadTimetableFormWithData(timetableData) {
         if (slots.length > 0) {
             slotsHTML = slots.map(slot => createSlotInputHTML(slot)).join('');
         } else {
-            // Jika tiada slot untuk hari itu, sediakan satu input kosong
+            // Sediakan 1 slot kosong untuk kemudahan edit/tambah
             slotsHTML = createSlotInputHTML() + '<p class="text-muted">Tiada slot untuk hari ini.</p>';
         }
 
@@ -238,7 +234,40 @@ function loadTimetableFormWithData(timetableData) {
 }
 
 /**
- * Melampirkan pendengar acara pada butang tambah/buang slot
+ * Mengumpul data Jadual Waktu dari borang input (dipanggil oleh guru_rph_logic.js).
+ */
+function collectTimetableFormData() {
+    const timetableData = [];
+    document.querySelectorAll('#timetable-input-form .day-section').forEach(daySection => {
+        const day = daySection.getAttribute('data-day');
+        const slots = [];
+        daySection.querySelectorAll('.slot-group').forEach(slotGroup => {
+            // Hanya simpan slot yang mempunyai subjek/masa (mengabaikan slot kosong jika tiada data diisi)
+            const subject = slotGroup.querySelector('input[name="subject"]').value.trim();
+            const time = slotGroup.querySelector('input[name="time"]').value.trim();
+            const className = slotGroup.querySelector('input[name="class"]').value.trim();
+            const standards = slotGroup.querySelector('input[name="standards"]').value.trim();
+            
+            if (subject && time) {
+                slots.push({
+                    time: time,
+                    subject: subject,
+                    class: className,
+                    standards: standards
+                });
+            }
+        });
+        
+        if (slots.length > 0) {
+            timetableData.push({ day, slots });
+        }
+    });
+    return timetableData;
+}
+
+
+/**
+ * Melampirkan pendengar acara pada butang tambah/buang slot Jadual Waktu
  */
 function attachSlotListeners(container) {
     // Listener untuk butang Tambah Slot
@@ -284,10 +313,12 @@ function attachRPHSlotListeners(container) {
 function getDayNameFromDate(dateInput) {
     const date = (dateInput instanceof Date) ? dateInput : new Date(dateInput);
     if (isNaN(date)) return "Tarikh Tidak Sah"; 
-    // Format hari dalam bahasa Melayu (contoh: Isnin)
     return date.toLocaleDateString('ms-MY', { weekday: 'long' }); 
 }
 
+/**
+ * Menguruskan pensuisan tab dan memuatkan semula Jadual Waktu apabila tab ditukar.
+ */
 function initializeTabSwitching() {
     const tabs = document.querySelectorAll('.btn-tab');
     tabs.forEach(tab => {
@@ -304,17 +335,21 @@ function initializeTabSwitching() {
             document.getElementById(targetId)?.classList.remove('hidden');
             tab.classList.add('active');
             
-            // Tambahan: Pastikan Jadual Waktu dimuat semula apabila tab ditukar ke Jadual Waktu
-            if (targetId === 'timetable-tab' && typeof loadExistingTimetable === 'function') {
-                // loadExistingTimetable akan memuatkan data dan memanggil loadTimetableFormWithData
+            // PENTING: Jika menukar ke tab Jadual Waktu, paksa muat semula data dan paparkan.
+            if (targetId === 'timetable-tab' && typeof loadExistingTimetable === 'function' && window.currentTeacherUID) {
+                // Pastikan currentTeacherUID tersedia secara global atau pass sebagai argumen
                 loadExistingTimetable(window.currentTeacherUID);
             }
         });
     });
 }
 
-
+// Pastikan initializeTabSwitching dipanggil
 document.addEventListener('DOMContentLoaded', () => {
+    // Dedahkan currentTeacherUID ke global agar dapat diakses oleh initializeTabSwitching
+    // Anda perlu memastikan guru_rph_logic.js memuatkan currentTeacherUID ke window.currentTeacherUID
+    window.currentTeacherUID = null; 
+    
+    // Semak tab switching
     initializeTabSwitching();
-    // ...
 });
