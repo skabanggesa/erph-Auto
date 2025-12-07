@@ -24,7 +24,7 @@ const SP_FILE_MAP = {
     'SJ': 'sp-sj.json',
 };
 // Laluan Krusial: "../data/" mengandaikan folder 'js' dan 'data' adalah sebaris
-const DATA_JSON_BASE_PATH = '../data/'; 
+const DATA_JSON_BASE_PATH = 'erph-Auto/data/'; 
 
 
 /**
@@ -460,3 +460,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
