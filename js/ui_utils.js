@@ -230,6 +230,7 @@ function loadTimetableFormWithData(timetableData) {
 
     container.innerHTML = formHTML;
     attachSlotListeners(container);
+    showNotification('Jadual Waktu sedia ada berjaya dimuatkan.', 'info');
 }
 
 /**
