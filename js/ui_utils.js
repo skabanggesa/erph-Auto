@@ -45,12 +45,12 @@ function showNotification(message, type) {
 
 
 // =======================================================
-// 2. LOGIK JADUAL WAKTU (TANPA MEDAN SP)
+// 2. LOGIK JADUAL WAKTU
 // =======================================================
 
 /**
  * Menjana HTML untuk satu slot Jadual Waktu kosong.
- * @param {object} slot - Data slot (tanpa standards)
+ * (Fungsi 2/11)
  */
 function createEmptyTimetableSlot(slot = {}) {
     return `
@@ -66,6 +66,7 @@ function createEmptyTimetableSlot(slot = {}) {
 
 /**
  * Menjana borang Jadual Waktu kosong.
+ * (Fungsi 3/11)
  */
 function createEmptyTimetableForm() {
     const formContainer = document.getElementById('timetable-input-form');
@@ -93,6 +94,7 @@ function createEmptyTimetableForm() {
 
 /**
  * Memuatkan data Jadual Waktu sedia ada ke dalam borang.
+ * (Fungsi 4/11)
  */
 function loadTimetableFormWithData(data) {
     const formContainer = document.getElementById('timetable-input-form');
@@ -131,7 +133,8 @@ function loadTimetableFormWithData(data) {
 }
 
 /**
- * Mengumpul data Jadual Waktu dari borang (Tanpa standards).
+ * Mengumpul data Jadual Waktu dari borang.
+ * (Fungsi 5/11 - Dipanggil oleh guru_rph_logic.js)
  */
 function collectTimetableFormData() {
     const timetableData = [];
@@ -151,8 +154,7 @@ function collectTimetableFormData() {
                 end_time: slotGroup.querySelector('input[name="end_time"]').value,
                 subject: slotGroup.querySelector('input[name="subject"]').value,
                 class_name: slotGroup.querySelector('input[name="class_name"]').value,
-                // standards TIDAK dikumpulkan dari borang Jadual Waktu
-                standards: '' 
+                standards: '' // Dibiarkan kosong kerana tidak lagi ada dalam Jadual Waktu
             });
         });
         
@@ -170,13 +172,12 @@ function collectTimetableFormData() {
 
 /**
  * Mengemas kini medan RPH secara automatik berdasarkan pilihan SP dalam dropdown.
- * FUNGSI KRITIKAL untuk pemuatan data automatik.
+ * (Fungsi 6/11 - KRITIKAL)
  */
 function updateRPHFields(selectElement) {
     const selectedSP = selectElement.value;
     const slotGroup = selectElement.closest('.rph-slot');
     
-    // Dapatkan semua data SP yang disimpan sebagai JSON string dalam data-attribute
     const allLessonsJson = slotGroup.getAttribute('data-sp-options');
     let allLessons;
     try {
@@ -186,18 +187,16 @@ function updateRPHFields(selectElement) {
         return;
     }
 
-    // Cari pelajaran yang sepadan dengan SP yang dipilih
     const lessonMatch = allLessons.find(l => l.standards && l.standards.trim() === selectedSP.trim());
 
-    // Fungsi pembantu untuk memformat teks (pastikan array bertukar jadi teks bertitik)
     const formatText = (data) => {
         if (!data) return '';
         const text = Array.isArray(data) ? data.join('\n- ') : data;
-        return text.startsWith('-') ? text : `- ${text}`;
+        // Pastikan ia bermula dengan '- ' jika tidak kosong
+        return text ? (text.startsWith('-') ? text : `- ${text}`) : ''; 
     };
 
     if (lessonMatch) {
-        // Isi medan lain
         slotGroup.querySelector('textarea[name="objektif"]').value = lessonMatch.objectives || '';
         slotGroup.querySelector('textarea[name="aktiviti"]').value = formatText(lessonMatch.activities);
         slotGroup.querySelector('textarea[name="penilaian"]').value = formatText(lessonMatch.assessment);
@@ -206,7 +205,6 @@ function updateRPHFields(selectElement) {
         showNotification(`Data RPH dikemas kini untuk SP: ${selectedSP}`, 'info');
 
     } else {
-        // Tetapkan semula medan jika tiada padanan ditemui
         slotGroup.querySelector('textarea[name="objektif"]').value = 'SP tidak sah atau data gagal dimuatkan.';
         slotGroup.querySelector('textarea[name="aktiviti"]').value = 'Tiada data aktiviti ditemui.';
         slotGroup.querySelector('textarea[name="penilaian"]').value = 'Tiada data penilaian ditemui.';
@@ -217,36 +215,30 @@ function updateRPHFields(selectElement) {
 
 /**
  * Menjana HTML untuk satu slot RPH (menggunakan dropdown).
+ * (Fungsi 7/11)
  */
 function createRPHSlotHTML(slot, index) {
     
-    // PENTING: Simpan data pilihan SP sebagai JSON string dalam attribute DOM
-    // Untuk mengelakkan masalah petikan dalam JSON, kita gunakan JSON.stringify
     const spOptionsJson = JSON.stringify(slot.sp_data_options || []);
 
-    // Bina pilihan dropdown Standards
     let standardsOptionsHTML = '';
     const currentStandards = slot.standards ? slot.standards.trim() : '⚠️ Sila pilih SP';
 
     if (slot.sp_data_options && slot.sp_data_options.length > 0) {
         slot.sp_data_options.forEach(lesson => {
-            if (!lesson.standards) return; // Langkau jika tiada SP
+            if (!lesson.standards) return; 
             const spValue = lesson.standards.trim();
             const isSelected = spValue === currentStandards;
-            // Gunakan SP penuh sebagai label dan nilai.
             standardsOptionsHTML += `<option value="${spValue}" ${isSelected ? 'selected' : ''}>${spValue}</option>`;
         });
-    } else {
-         standardsOptionsHTML = `<option value="${currentStandards}" selected>${currentStandards}</option>`;
-    }
+    } 
     
-    // Tambah pilihan lalai/kosong jika tiada SP yang dipilih atau tiada data
-    if (!standardsOptionsHTML || !slot.standards) {
+    // Tambah pilihan lalai jika tiada SP yang dipilih atau tiada data
+    if (!standardsOptionsHTML || !slot.standards || slot.standards.includes('⚠️')) {
         standardsOptionsHTML = `<option value="" selected disabled>-- Sila Pilih Standard Pembelajaran --</option>` + standardsOptionsHTML;
     }
 
 
-    // Pastikan slot.standards adalah dropdown dengan onchange yang memanggil updateRPHFields
     return `
         <div class="rph-slot card mt-3" data-slot-index="${index}" data-sp-options='${spOptionsJson}'>
             <h4>${slot.subject} (${slot.start_time} - ${slot.end_time}) - Kelas: ${slot.class_name}</h4>
@@ -276,6 +268,7 @@ function createRPHSlotHTML(slot, index) {
 
 /**
  * Memuatkan data RPH ke dalam borang penyuntingan.
+ * (Fungsi 8/11 - Dipanggil oleh guru_rph_logic.js)
  */
 function loadRPHFormWithData(slotsData, dayName, dateInput) {
     const editorSection = document.getElementById('rph-editor-section');
@@ -287,7 +280,6 @@ function loadRPHFormWithData(slotsData, dayName, dateInput) {
     
     let slotsHtml = `<h3>RPH Draf: ${dayName}, ${dateInput}</h3>`;
     
-    // Jana HTML untuk setiap slot
     slotsData.forEach((slot, index) => {
         slotsHtml += createRPHSlotHTML(slot, index);
     });
@@ -299,19 +291,16 @@ function loadRPHFormWithData(slotsData, dayName, dateInput) {
 
 /**
  * Mengumpul data RPH yang telah disunting dari borang.
+ * (Fungsi 9/11 - Dipanggil oleh guru_rph_logic.js)
  */
 function collectRPHFormData() {
     const slotsData = [];
     const rphSlotsContainer = document.getElementById('rph-slots-container');
     
     rphSlotsContainer.querySelectorAll('.rph-slot').forEach(slotGroup => {
-        // Ambil kembali data asal (start_time, end_time, subject, class_name) dari input
-        // Ambil data yang disunting dari textarea/select
         
-        // Cipta objek slot sementara untuk menyimpan data
         const tempSlot = {};
         
-        // Ambil nilai dari borang RPH (standards kini adalah select)
         tempSlot.standards = slotGroup.querySelector('select[name="standards"]').value || '';
         tempSlot.objectives = slotGroup.querySelector('textarea[name="objektif"]').value || '';
         tempSlot.activities = slotGroup.querySelector('textarea[name="aktiviti"]').value || '';
@@ -319,7 +308,7 @@ function collectRPHFormData() {
         tempSlot.aids = slotGroup.querySelector('textarea[name="aids"]').value || '';
         tempSlot.refleksi = slotGroup.querySelector('textarea[name="refleksi"]').value || '';
         
-        // Ambil data asal dari tajuk (anda mungkin perlu menyusun semula HTML jika anda mahu input kekal)
+        // Dapatkan data slot asal dari tajuk
         const headerText = slotGroup.querySelector('h4').textContent;
         const match = headerText.match(/^(.*?) \((.*?) - (.*?)\) - Kelas: (.*?)$/);
 
@@ -329,14 +318,14 @@ function collectRPHFormData() {
             tempSlot.end_time = match[3].trim();
             tempSlot.class_name = match[4].trim();
         } else {
-             // Fallback jika format tajuk diubah
-             tempSlot.subject = 'Subjek Tidak Diketahui';
+             // Fallback
+             tempSlot.subject = 'Unknown';
              tempSlot.start_time = '00:00';
              tempSlot.end_time = '00:00';
-             tempSlot.class_name = 'Kelas Tidak Diketahui';
+             tempSlot.class_name = 'Unknown';
         }
         
-        // PENTING: Kekalkan sp_data_options (untuk penyuntingan masa depan)
+        // PENTING: Ambil semula sp_data_options yang disimpan untuk kegunaan muat semula/penyuntingan
         const spOptionsJson = slotGroup.getAttribute('data-sp-options');
         if (spOptionsJson) {
              tempSlot.sp_data_options = JSON.parse(spOptionsJson);
@@ -351,6 +340,7 @@ function collectRPHFormData() {
 
 /**
  * Memaparkan senarai RPH guru dalam jadual.
+ * (Fungsi 10/11 - Dipanggil oleh guru_rph_logic.js)
  */
 function renderRPHList(rphList) {
     const tableBody = document.querySelector('#teacher-rph-list tbody');
@@ -359,7 +349,8 @@ function renderRPHList(rphList) {
     tableBody.innerHTML = '';
     
     rphList.forEach(rph => {
-        const dateString = rph.date ? rph.date.toDate().toLocaleDateString('ms-MY') : 'Tarikh Tidak Sah';
+        // Semak jika tarikh wujud dan ubah kepada format MS-MY
+        const dateString = rph.date && rph.date.toDate ? rph.date.toDate().toLocaleDateString('ms-MY') : 'Tarikh Tidak Sah';
         const statusClass = rph.status === 'Dikemukakan' ? 'status-submitted' : 'status-draft';
         
         const row = tableBody.insertRow();
@@ -368,7 +359,7 @@ function renderRPHList(rphList) {
             <td>${rph.day_name || '-'}</td>
             <td class="${statusClass}">${rph.status}</td>
             <td>
-                <button class="btn btn-sm btn-info" onclick="loadRPHtoEdit('${rph.id}')">Sunting</button>
+                <button class="btn btn-sm btn-info" onclick="window.loadRPHtoEdit('${rph.id}')">Sunting</button>
             </td>
         `;
     });
@@ -376,18 +367,21 @@ function renderRPHList(rphList) {
 
 
 // =======================================================
-// 4. INITALIZATION (TABS)
+// 4. INITALIZATION
 // =======================================================
 
+/**
+ * Menguruskan penukaran antara tab dan memastikan data dimuatkan apabila menukar ke tab Jadual Waktu.
+ * (Fungsi 11/11 - KRITIKAL)
+ */
 function initializeTabSwitching() {
-    // Ubah data-tab kepada data-target dalam HTML (jika belum)
     const tabs = document.querySelectorAll('.btn-tab');
     
     tabs.forEach(tab => {
         tab.addEventListener('click', (e) => {
             e.preventDefault();
             
-            const targetId = tab.getAttribute('data-tab'); // Menggunakan data-tab dari HTML guru_rph.html
+            const targetId = tab.getAttribute('data-tab'); 
             
             document.querySelectorAll('.tab-content').forEach(content => {
                 content.classList.add('hidden');
@@ -400,6 +394,7 @@ function initializeTabSwitching() {
             tab.classList.add('active');
             
             // PENTING: Jika menukar ke tab Jadual Waktu, paksa muat semula data dan paparkan.
+            // Memerlukan window.loadExistingTimetable didedahkan secara global oleh guru_rph_logic.js
             if (targetId === 'timetable-tab' && typeof window.loadExistingTimetable === 'function' && window.currentTeacherUID) {
                 window.loadExistingTimetable(window.currentTeacherUID);
             }
@@ -416,6 +411,7 @@ function initializeTabSwitching() {
 
 // Pastikan initializeTabSwitching dipanggil
 document.addEventListener('DOMContentLoaded', () => {
+    // Inisialisasi awal UID global
     window.currentTeacherUID = null; 
     initializeTabSwitching();
 });
