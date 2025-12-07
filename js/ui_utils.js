@@ -1,6 +1,6 @@
 // =======================================================
 // UI UTILITIES LOGIC (js/ui_utils.js)
-// Kemas kini: Memastikan semua fungsi UI kritikal, termasuk paparan Jadual Waktu, berfungsi.
+// Kemas kini: Memastikan semua fungsi UI kritikal dan Tab Switching berfungsi dengan betul.
 // =======================================================
 
 const DAYS_OF_WEEK = ["Isnin", "Selasa", "Rabu", "Khamis", "Jumaat"];
@@ -52,7 +52,7 @@ function displayRPHList(dataArray, tableId) {
     dataArray.forEach(item => {
         const row = tbody.insertRow();
         const dateObject = item.date.toDate ? item.date.toDate() : new Date(item.date);
-        const dateString = dateObject.toLocaleDateString('ms-MY');
+        const dateString = dateObject.toLocaleDateString('ms-MY', { year: 'numeric', month: 'short', day: 'numeric' });
 
         row.insertCell().textContent = dateString;
         row.insertCell().textContent = item.hari || getDayNameFromDate(dateObject);
@@ -62,7 +62,8 @@ function displayRPHList(dataArray, tableId) {
         const editButton = document.createElement('button');
         editButton.className = 'btn btn-sm btn-secondary';
         editButton.textContent = 'Sunting';
-        editButton.onclick = () => window.loadRPHtoEdit(item.id);
+        // PENTING: Memastikan loadRPHtoEdit tersedia secara global
+        editButton.onclick = () => window.loadRPHtoEdit(item.id); 
         
         actionCell.appendChild(editButton);
     });
@@ -70,9 +71,6 @@ function displayRPHList(dataArray, tableId) {
 
 /**
  * Memuatkan data RPH sedia ada ke dalam borang penyuntingan.
- * @param {Array<Object>} slotsData - Data slot RPH
- * @param {string} day - Hari RPH
- * @param {string} dateInput - Tarikh RPH (YYYY-MM-DD)
  */
 function loadRPHFormWithData(slotsData, day, dateInput) {
     const editor = document.getElementById('rph-slots-editor');
@@ -96,6 +94,7 @@ function loadRPHFormWithData(slotsData, day, dateInput) {
 function createRPHSlotHTML(slot = {}, index = 0) {
     const { time = '', subject = '', class: className = '', standards = '', objectives = '', activities = '', assessment = '', aids = '', refleksi = '' } = slot;
 
+    // Nota: 'Standards' dan Header Subjek/Masa/Kelas adalah Readonly
     return `
         <div class="rph-slot-group card mt-3" data-index="${index}">
             <button type="button" class="btn btn-danger btn-remove-rph-slot">Buang Slot</button>
@@ -192,7 +191,7 @@ function createEmptyTimetableForm() {
     `).join('');
     
     attachSlotListeners(container);
-    // Notifikasi diuruskan oleh loadExistingTimetable, jadi tiada notifikasi di sini
+    showNotification('Sila isikan Jadual Waktu anda yang baru.', 'info');
 }
 
 /**
@@ -214,7 +213,7 @@ function loadTimetableFormWithData(timetableData) {
         if (slots.length > 0) {
             slotsHTML = slots.map(slot => createSlotInputHTML(slot)).join('');
         } else {
-            // Sediakan 1 slot kosong untuk kemudahan edit/tambah
+            // Sediakan 1 slot kosong untuk kemudahan edit/tambah jika tiada data untuk hari itu
             slotsHTML = createSlotInputHTML() + '<p class="text-muted">Tiada slot untuk hari ini.</p>';
         }
 
@@ -282,7 +281,8 @@ function attachSlotListeners(container) {
                 
                 slotsContainer.insertAdjacentHTML('beforeend', createSlotInputHTML());
                 // Attach listener to the newly added remove button
-                slotsContainer.lastElementChild.querySelector('.btn-remove-slot').addEventListener('click', function() {
+                const newSlot = slotsContainer.lastElementChild;
+                newSlot.querySelector('.btn-remove-slot').addEventListener('click', function() {
                     this.parentElement.remove();
                 });
             }
@@ -323,7 +323,8 @@ function initializeTabSwitching() {
     const tabs = document.querySelectorAll('.btn-tab');
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            const targetId = tab.getAttribute('data-target'); // Menggunakan data-target
+            // **PENTING: Menggunakan data-target untuk sepadan dengan HTML**
+            const targetId = tab.getAttribute('data-target'); 
             
             document.querySelectorAll('.tab-content').forEach(content => {
                 content.classList.add('hidden');
@@ -335,9 +336,8 @@ function initializeTabSwitching() {
             document.getElementById(targetId)?.classList.remove('hidden');
             tab.classList.add('active');
             
-            // PENTING: Jika menukar ke tab Jadual Waktu, paksa muat semula data dan paparkan.
+            // PENTING: Jika menukar ke tab Jadual Waktu, muat semula data (jika UID wujud).
             if (targetId === 'timetable-tab' && typeof loadExistingTimetable === 'function' && window.currentTeacherUID) {
-                // Pastikan currentTeacherUID tersedia secara global atau pass sebagai argumen
                 loadExistingTimetable(window.currentTeacherUID);
             }
         });
@@ -346,10 +346,9 @@ function initializeTabSwitching() {
 
 // Pastikan initializeTabSwitching dipanggil
 document.addEventListener('DOMContentLoaded', () => {
-    // Dedahkan currentTeacherUID ke global agar dapat diakses oleh initializeTabSwitching
-    // Anda perlu memastikan guru_rph_logic.js memuatkan currentTeacherUID ke window.currentTeacherUID
+    // Inisialisasi window.currentTeacherUID (akan dikemas kini oleh guru_rph_logic.js)
     window.currentTeacherUID = null; 
     
-    // Semak tab switching
+    // Inisialisasi tab switching
     initializeTabSwitching();
 });
