@@ -1,8 +1,16 @@
+// Import dari config.js
 import { auth, db } from './config.js';
-import { signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { 
+  signInWithEmailAndPassword, 
+  signOut, 
+  onAuthStateChanged 
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { 
+  doc, 
+  getDoc 
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// DOM
+// DOM Elements
 const loginForm = document.getElementById('loginForm');
 const errorDiv = document.getElementById('error');
 const logoutBtn = document.getElementById('logoutBtn');
@@ -10,50 +18,80 @@ const navbar = document.getElementById('navbar');
 const userNameEl = document.getElementById('userName');
 const welcomeEl = document.getElementById('welcome');
 
-// Helper: Redirect
+// ===========================================
+// FUNGSI: Redirect berdasarkan status auth
+// ===========================================
 function redirectIfLoggedIn() {
   onAuthStateChanged(auth, async (user) => {
+    const isOnLogin = window.location.pathname.includes('index.html');
+    const isOnDashboard = window.location.pathname.includes('dashboard.html');
+
     if (user) {
+      // Dapatkan data pengguna dari Firestore
       const userDoc = await getDoc(doc(db, 'users', user.uid));
+      
       if (userDoc.exists()) {
         const userData = userDoc.data();
         localStorage.setItem('userRole', userData.role);
         localStorage.setItem('userName', userData.name);
-        window.location.href = 'dashboard.html';
+        
+        // Hanya redirect ke dashboard jika masih di halaman login
+        if (isOnLogin) {
+          window.location.href = 'dashboard.html';
+        }
+        // Jika sudah di dashboard, biarkan — jangan redirect lagi
       } else {
-        alert('Akaun tidak sah. Sila hubungi pentadbir.');
-        signOut(auth);
+        // Akaun wujud di Firebase Auth tapi tiada rekod di Firestore → tidak sah
+        console.warn('Akaun tanpa rekod pengguna:', user.uid);
+        await signOut(auth);
+        localStorage.removeItem('userRole');
+        localStorage.removeItem('userName');
+        if (!isOnLogin) {
+          window.location.href = 'index.html';
+        }
       }
-    }
-    // Jika di index.html dan belum login, biarkan
-    if (window.location.pathname.endsWith('dashboard.html') && !user) {
-      window.location.href = 'index.html';
+    } else {
+      // Tiada pengguna log masuk
+      if (isOnDashboard) {
+        window.location.href = 'index.html';
+      }
     }
   });
 }
 
-// Login
+// ===========================================
+// LOG MASUK
+// ===========================================
 if (loginForm) {
   loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    errorDiv.textContent = '';
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
+    if (errorDiv) errorDiv.textContent = '';
+
+    if (!email || !password) {
+      if (errorDiv) errorDiv.textContent = 'Sila isi emel dan kata laluan.';
+      return;
+    }
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      // Redirect akan dikendali oleh onAuthStateChanged
+      // Redirect akan dikendalikan oleh onAuthStateChanged
     } catch (err) {
       let msg = 'Ralat log masuk.';
-      if (err.code === 'auth/invalid-credential') {
+      if (err.code === 'auth/invalid-credential' || err.code === 'auth/user-not-found') {
         msg = 'Emel atau kata laluan salah.';
+      } else if (err.code === 'auth/too-many-requests') {
+        msg = 'Terlalu banyak percubaan. Cuba sebentar lagi.';
       }
-      errorDiv.textContent = msg;
+      if (errorDiv) errorDiv.textContent = msg;
     }
   });
 }
 
-// Logout
+// ===========================================
+// LOG KELUAR
+// ===========================================
 if (logoutBtn) {
   logoutBtn.addEventListener('click', async () => {
     await signOut(auth);
@@ -63,35 +101,39 @@ if (logoutBtn) {
   });
 }
 
-// Setup dashboard UI selepas login
+// ===========================================
+// SETUP UI DASHBOARD
+// ===========================================
 function setupDashboardUI() {
-  if (navbar) {
-    const role = localStorage.getItem('userRole');
-    const name = localStorage.getItem('userName');
-    if (name) userNameEl.textContent = name;
+  const role = localStorage.getItem('userRole');
+  const name = localStorage.getItem('userName');
+
+  if (navbar && name) {
+    userNameEl.textContent = name;
     
-    // Tukar warna mengikut role
+    // Warna mengikut role
     if (role === 'admin') {
       welcomeEl.style.color = '#d32f2f';
     } else {
       welcomeEl.style.color = '#1976d2';
     }
     navbar.style.display = 'flex';
-    navbar.style.justifyContent = 'space-between';
-    navbar.style.padding = '15px';
-    navbar.style.background = '#f5f5f5';
   }
 }
 
-// Panggil bila di dashboard
-if (window.location.pathname.endsWith('dashboard.html')) {
+// ===========================================
+// INISIALISASI
+// ===========================================
+// Hanya jalankan logik auth jika berada di index.html atau dashboard.html
+if (window.location.pathname.includes('index.html') || window.location.pathname.includes('dashboard.html')) {
   redirectIfLoggedIn();
-  setupDashboardUI();
-} else if (window.location.pathname.endsWith('index.html')) {
-  // Hanya redirect jika dah login
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      window.location.href = 'dashboard.html';
+  
+  // Jika di dashboard, setup UI selepas DOM ready
+  if (window.location.pathname.includes('dashboard.html')) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setupDashboardUI);
+    } else {
+      setupDashboardUI();
     }
-  });
+  }
 }
