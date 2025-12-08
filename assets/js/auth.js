@@ -39,7 +39,6 @@ function redirectIfLoggedIn() {
         if (isOnLogin) {
           window.location.href = 'dashboard.html';
         }
-        // Jika sudah di dashboard, biarkan — jangan redirect lagi
       } else {
         // Akaun wujud di Firebase Auth tapi tiada rekod di Firestore → tidak sah
         console.warn('Akaun tanpa rekod pengguna:', user.uid);
