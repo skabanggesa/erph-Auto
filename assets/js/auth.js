@@ -1,16 +1,8 @@
-// Import dari config.js
 import { auth, db } from './config.js';
-import { 
-  signInWithEmailAndPassword, 
-  signOut, 
-  onAuthStateChanged 
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { 
-  doc, 
-  getDoc 
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// DOM Elements
+// DOM
 const loginForm = document.getElementById('loginForm');
 const errorDiv = document.getElementById('error');
 const logoutBtn = document.getElementById('logoutBtn');
@@ -18,79 +10,50 @@ const navbar = document.getElementById('navbar');
 const userNameEl = document.getElementById('userName');
 const welcomeEl = document.getElementById('welcome');
 
-// ===========================================
-// FUNGSI: Redirect berdasarkan status auth
-// ===========================================
+// Helper: Redirect
 function redirectIfLoggedIn() {
   onAuthStateChanged(auth, async (user) => {
-    const isOnLogin = window.location.pathname.includes('index.html');
-    const isOnDashboard = window.location.pathname.includes('dashboard.html');
-
     if (user) {
-      // Dapatkan data pengguna dari Firestore
       const userDoc = await getDoc(doc(db, 'users', user.uid));
-      
       if (userDoc.exists()) {
         const userData = userDoc.data();
         localStorage.setItem('userRole', userData.role);
         localStorage.setItem('userName', userData.name);
-        
-        // Hanya redirect ke dashboard jika masih di halaman login
-        if (isOnLogin) {
-          window.location.href = 'dashboard.html';
-        }
+        window.location.href = 'dashboard.html';
       } else {
-        // Akaun wujud di Firebase Auth tapi tiada rekod di Firestore → tidak sah
-        console.warn('Akaun tanpa rekod pengguna:', user.uid);
-        await signOut(auth);
-        localStorage.removeItem('userRole');
-        localStorage.removeItem('userName');
-        if (!isOnLogin) {
-          window.location.href = 'index.html';
-        }
+        alert('Akaun tidak sah. Sila hubungi pentadbir.');
+        signOut(auth);
       }
-    } else {
-      // Tiada pengguna log masuk
-      if (isOnDashboard) {
-        window.location.href = 'index.html';
-      }
+    }
+    // Jika di index.html dan belum login, biarkan
+    if (window.location.pathname.endsWith('dashboard.html') && !user) {
+      window.location.href = 'index.html';
     }
   });
 }
 
-// ===========================================
-// LOG MASUK
-// ===========================================
+// Login
 if (loginForm) {
   loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const email = document.getElementById('email').value.trim();
-    const password = document.getElementById('password').value.trim();
-    if (errorDiv) errorDiv.textContent = '';
-
-    if (!email || !password) {
-      if (errorDiv) errorDiv.textContent = 'Sila isi emel dan kata laluan.';
-      return;
-    }
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    errorDiv.textContent = '';
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      // Redirect akan dikendalikan oleh onAuthStateChanged
+      // Redirect akan dikendali oleh onAuthStateChanged
     } catch (err) {
       let msg = 'Ralat log masuk.';
-      if (err.code === 'auth/invalid-credential' || err.code === 'auth/user-not-found') {
+      if (err.code === 'auth/invalid-credential') {
         msg = 'Emel atau kata laluan salah.';
-      } else if (err.code === 'auth/too-many-requests') {
-        msg = 'Terlalu banyak percubaan. Cuba sebentar lagi.';
       }
-      if (errorDiv) errorDiv.textContent = msg;
+      errorDiv.textContent = msg;
     }
   });
 }
 
-// ===========================================
-// LOG KELUAR
-// ===========================================
+// Logout
 if (logoutBtn) {
   logoutBtn.addEventListener('click', async () => {
     await signOut(auth);
@@ -100,39 +63,35 @@ if (logoutBtn) {
   });
 }
 
-// ===========================================
-// SETUP UI DASHBOARD
-// ===========================================
+// Setup dashboard UI selepas login
 function setupDashboardUI() {
-  const role = localStorage.getItem('userRole');
-  const name = localStorage.getItem('userName');
-
-  if (navbar && name) {
-    userNameEl.textContent = name;
+  if (navbar) {
+    const role = localStorage.getItem('userRole');
+    const name = localStorage.getItem('userName');
+    if (name) userNameEl.textContent = name;
     
-    // Warna mengikut role
+    // Tukar warna mengikut role
     if (role === 'admin') {
       welcomeEl.style.color = '#d32f2f';
     } else {
       welcomeEl.style.color = '#1976d2';
     }
     navbar.style.display = 'flex';
+    navbar.style.justifyContent = 'space-between';
+    navbar.style.padding = '15px';
+    navbar.style.background = '#f5f5f5';
   }
 }
 
-// ===========================================
-// INISIALISASI
-// ===========================================
-// Hanya jalankan logik auth jika berada di index.html atau dashboard.html
-if (window.location.pathname.includes('index.html') || window.location.pathname.includes('dashboard.html')) {
+// Panggil bila di dashboard atau index (telah diubah suai)
+if (window.location.pathname.endsWith('dashboard.html')) {
   redirectIfLoggedIn();
-  
-  // Jika di dashboard, setup UI selepas DOM ready
-  if (window.location.pathname.includes('dashboard.html')) {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', setupDashboardUI);
-    } else {
-      setupDashboardUI();
+  setupDashboardUI();
+} else if (loginForm) { // <--- PERUBAHAN DI SINI (Semak kewujudan borang)
+  // Hanya redirect jika dah login
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      window.location.href = 'dashboard.html';
     }
-  }
+  });
 }
