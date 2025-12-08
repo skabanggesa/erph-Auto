@@ -1,0 +1,2471 @@
+{
+  "curriculum_title": "English Language Curriculum (DSKP KPM/CEFR) - Year 1 to Year 6 (10 Units per Year)",
+  "data": [
+    // --- YEAR 1: 10 UNITS ---
+    {
+      "year": 1,
+      "topic_name": "Unit 1: I'm the Best! (Self-Introduction & Greetings)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.1.1 Recognise and reproduce target language sounds (phonemes).",
+        "1.2.1 Say main idea of short simple dialogues.",
+        "1.2.2 Ask and answer simple 'Wh-' questions (What's your name?).",
+        "1.2.3 Understand and use simple statements (I am.../This is...).",
+        "1.2.4 Express simple ideas about self and family.",
+        "2.1.1 Give very detailed information about themselves and others."
+      ],
+      "objectives": [
+        "To introduce themselves clearly using three simple sentences.",
+        "To identify and reproduce 5 vowel sounds correctly.",
+        "To respond appropriately to simple greetings.",
+        "To understand simple classroom commands."
+      ],
+      "activities": [
+        "Listen and repeat simple greeting phrases (e.g., Hello, Good morning).",
+        "Choral drilling of the alphabet and simple phonemes.",
+        "Circle game: Students introduce themselves ('My name is...').",
+        "Role-play a short dialogue greeting a friend.",
+        "Singing a simple 'Hello' song.",
+        "Flashcard drill: Matching pictures to spoken words.",
+        "Teacher-led imitation of correct pronunciation.",
+        "Drawing a self-portrait and labelling it 'I am...'"
+      ],
+      "assessments": [
+        "Observation Checklist (focus on clear articulation).",
+        "Oral performance: Self-introduction (Formative).",
+        "Listening task: Pointing to the correct picture based on the command.",
+        "Checklist for correct use of 'My name is...'"
+      ],
+      "aids": [
+        "Flashcards of common objects/actions.",
+        "Audio recordings of songs and dialogues.",
+        "Puppets or hand toys for role-play.",
+        "Big Book or charts with greetings."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 2: Friends (Possessions & Family)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.1.1 Recognise and reproduce target language sounds.",
+        "1.2.1 Understand the main idea of short simple texts (related to possessions).",
+        "1.2.2 Ask simple 'Whose...?' questions.",
+        "1.2.3 Understand and use simple statements (This is my.../I have...).",
+        "1.3.1 Listen to and enjoy simple stories about friends.",
+        "2.1.1 Give detailed information about family members."
+      ],
+      "objectives": [
+        "To describe their favourite toy/possession using 'This is my...'",
+        "To answer 'Whose is this?' questions correctly.",
+        "To identify at least 4 family members' names.",
+        "To participate in a sharing activity about their family."
+      ],
+      "activities": [
+        "Bringing a favourite toy to class for a 'show and tell' activity.",
+        "Vocabulary drill: Family members flashcards.",
+        "Sentence building using 'I have a...' and 'This is my...'",
+        "Role-play: Introducing their toy/family member to a friend.",
+        "Listening to a story about a family outing.",
+        "Matching game: Matching pictures of family members to written words.",
+        "Group drawing: Drawing their own family tree.",
+        "Pair work: Asking and answering about siblings."
+      ],
+      "assessments": [
+        "Oral presentation of the favourite toy.",
+        "Observation of pair work using possessive adjectives.",
+        "Listening comprehension: Ticking the family members mentioned in the story.",
+        "Checklist for correct use of 'my/your'."
+      ],
+      "aids": [
+        "Family members flashcards.",
+        "Picture books/Big Book on family.",
+        "Mini whiteboard for sentence writing.",
+        "Worksheet for drawing family tree."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 3: Pet Show (Animals & Descriptions)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts about animals.",
+        "3.2.2 Understand specific information and details (animal names).",
+        "4.2.1 Able to write notes and drafts (labels).",
+        "4.3.1 Able to plan, draft and edit simple written work (simple captions).",
+        "4.3.2 Able to write words and phrases legibly.",
+        "4.3.3 Able to use punctuation and spelling correctly (full stop)."
+      ],
+      "objectives": [
+        "To read and identify at least 6 common animal names.",
+        "To write simple labels/captions for pictures of animals.",
+        "To use 'It is a...' correctly in writing.",
+        "To describe an animal using one adjective."
+      ],
+      "activities": [
+        "Reading a simple story or poem about pets.",
+        "Tracing and copying new animal vocabulary.",
+        "Labelling activity: Students label pictures of animals.",
+        "Matching game: Matching animal names to short descriptions.",
+        "Guided writing: Teacher helps students write one sentence about their favourite animal.",
+        "Animal sound imitation and guessing game.",
+        "Spelling drill for common animal names (cat, dog, fish).",
+        "Creating a simple 'Pet Show' poster."
+      ],
+      "assessments": [
+        "Spelling test on 5 animal words.",
+        "Reading comprehension: Circling the correct animal picture.",
+        "Handwriting check for legibility.",
+        "Written task: Labelling 4 animal pictures."
+      ],
+      "aids": [
+        "Animal flashcards/posters.",
+        "Simple reading text about pets.",
+        "Writing templates/worksheets.",
+        "Crayons/coloured pencils."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 4: Lunchtime (Food & Numbers 1-10)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.1.1 Recognise and reproduce target language sounds (numbers 1-10).",
+        "1.2.1 Understand the main idea of a short dialogue about food.",
+        "1.2.2 Ask and answer simple 'How many...?' questions.",
+        "1.2.3 Understand and use simple statements (I like.../I don't like...).",
+        "1.3.1 Listen to and enjoy simple songs about food.",
+        "2.1.1 Give detailed information about food preferences."
+      ],
+      "objectives": [
+        "To correctly count objects from 1 to 10 and say the number.",
+        "To express their preference for at least 4 food items.",
+        "To ask and answer 'Do you like...?' questions.",
+        "To identify and name 6 common food items."
+      ],
+      "activities": [
+        "Singing a counting song (1-10).",
+        "Flashcard introduction to food vocabulary (e.g., apple, rice, chicken).",
+        "Role-play: Ordering food in a simple cafeteria setting.",
+        "Counting game: Counting food items on a picture chart.",
+        "Choral repetition of 'I like...' and 'I don't like...'",
+        "Drawing their lunchbox and explaining the contents.",
+        "Pair survey: Asking friends about their favourite food.",
+        "Total Physical Response (TPR): Following commands related to food actions."
+      ],
+      "assessments": [
+        "Observation of counting accuracy.",
+        "Oral performance: Asking and answering about food preferences.",
+        "Checklist for correct usage of 'like/don't like'.",
+        "Listening task: Circling the number of items heard."
+      ],
+      "aids": [
+        "Food flashcards/realia (plastic food toys).",
+        "Number cards (1-10).",
+        "Audio CD with songs and chants.",
+        "Worksheet with food pictures for counting."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 5: Getting Around (Places & Transportation)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts (places/vehicles).",
+        "3.2.2 Understand specific information and details (names of places).",
+        "4.3.2 Able to write words and phrases legibly (transport names).",
+        "4.3.3 Able to use punctuation (commas in a list).",
+        "4.2.1 Able to write notes and drafts (captions for places).",
+        "3.2.3 Guess the meaning of unfamiliar words from clues."
+      ],
+      "objectives": [
+        "To read and name 5 different types of transportation.",
+        "To write the names of 3 places (e.g., house, school, park).",
+        "To construct a simple sentence about getting to school (e.g., 'I go to school by bus').",
+        "To correctly use a full stop at the end of a sentence."
+      ],
+      "activities": [
+        "Reading a simple book about going to school.",
+        "Labelling a picture of a town with places and transport.",
+        "Writing a list of all the ways they can travel.",
+        "Tracing and copying sentences about travel.",
+        "Jigsaw puzzle: Putting together pictures of different vehicles.",
+        "Matching game: Vehicle picture to the sound it makes.",
+        "Guided drawing: Drawing their journey to school.",
+        "Spelling practice for transport words (car, bus, bike)."
+      ],
+      "assessments": [
+        "Written task: Labelling 5 transport pictures.",
+        "Handwriting assessment (legibility of transport names).",
+        "Spelling quiz (5 words).",
+        "Reading comprehension: Matching sentences to the correct picture of movement."
+      ],
+      "aids": [
+        "Transportation flashcards/models.",
+        "Simple map of a town.",
+        "Writing worksheets with dotted lines.",
+        "Reading cards with simple sentences."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 6: The Clothes We Wear (Colours & Clothing)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.1.1 Recognise and reproduce target language sounds (colour words).",
+        "1.2.1 Understand the main idea of a short dialogue about clothes.",
+        "1.2.2 Ask and answer simple 'What colour is it?' questions.",
+        "1.2.3 Understand and use simple statements (I am wearing.../It is red).",
+        "1.2.4 Express simple ideas about their favourite colour/clothes.",
+        "2.1.1 Give very detailed information about clothes they are wearing."
+      ],
+      "objectives": [
+        "To name and identify 8 basic colours correctly.",
+        "To name 5 items of clothing.",
+        "To describe an item of clothing using the colour and item name (e.g., 'a blue shirt').",
+        "To participate in a fashion show activity."
+      ],
+      "activities": [
+        "Singing a colour song (e.g., 'I see colours').",
+        "Vocabulary introduction: Flashcards of clothes.",
+        "TPR activity: Following commands (e.g., 'Touch your red shirt').",
+        "Fashion show: Students show their clothes and describe them.",
+        "Colour mixing demonstration and discussion.",
+        "Pair work: Describing what their partner is wearing.",
+        "Sorting activity: Sorting clothes by colour/type.",
+        "Choral repetition of descriptive phrases."
+      ],
+      "assessments": [
+        "Oral quiz: Naming colours and clothes.",
+        "Observation of the fashion show description.",
+        "Listening task: Colouring a picture based on verbal instructions.",
+        "Checklist for correct adjective-noun order ('red shirt')."
+      ],
+      "aids": [
+        "Colour chart and flashcards.",
+        "Clothing cut-outs or real clothes.",
+        "Audio CD with relevant songs.",
+        "Mirrors for self-description."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 7: My Body (Body Parts & Actions)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of a simple rhyme about the body.",
+        "3.2.2 Understand specific information and details (names of body parts).",
+        "4.3.2 Able to write words and phrases legibly (body part labels).",
+        "4.3.3 Able to use punctuation (exclamation mark for feelings).",
+        "4.2.1 Able to write notes and drafts (labelling a figure).",
+        "3.3.1 Read and enjoy simple texts about the body."
+      ],
+      "objectives": [
+        "To read and identify at least 8 body parts.",
+        "To write simple labels for a drawn human figure.",
+        "To construct a simple sentence about an action (e.g., 'I can jump').",
+        "To use capital letters at the beginning of sentences."
+      ],
+      "activities": [
+        "Reading and performing 'Head, Shoulders, Knees, and Toes'.",
+        "Labelling a large poster of a human body.",
+        "Writing practice: Tracing and copying body part names.",
+        "Action song: Singing and performing actions (e.g., running, clapping).",
+        "Drawing a monster and labelling its unique body parts.",
+        "Guided writing: Writing 3 'I can...' sentences.",
+        "Pair work: Pointing to a body part based on spoken word.",
+        "Spelling practice for body parts (e.g., hand, nose, leg)."
+      ],
+      "assessments": [
+        "Written task: Labelling 6 body parts on a diagram.",
+        "Observation of performance during the action song.",
+        "Spelling test (6 body parts).",
+        "Checklist for use of 'I can' sentences."
+      ],
+      "aids": [
+        "Large body part poster or diagram.",
+        "Rhyme/song lyrics chart.",
+        "Worksheets for drawing and labelling.",
+        "Flashcards of body parts."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 8: The Weekend (Time, Days & Activities)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.1.1 Recognise and reproduce target language sounds (days of the week).",
+        "1.2.1 Understand the main idea of a short dialogue about weekend plans.",
+        "1.2.2 Ask simple 'What do you do...?' questions.",
+        "1.2.3 Understand and use simple statements (I play on Sunday).",
+        "1.2.4 Express simple ideas about weekend activities.",
+        "2.1.1 Give detailed information about routine activities."
+      ],
+      "objectives": [
+        "To name all 7 days of the week correctly.",
+        "To express one activity they do on the weekend.",
+        "To ask a friend about their favourite day.",
+        "To identify and name 5 common weekend activities."
+      ],
+      "activities": [
+        "Singing the 'Days of the Week' song.",
+        "Flashcard drill: Matching days to pictures of activities.",
+        "Role-play: Talking about weekend plans (e.g., 'I go to the park').",
+        "Drawing a picture of their favourite weekend activity.",
+        "Choral repetition of the days of the week and activities.",
+        "Memory game: 'On Saturday I...' (adding activities sequentially).",
+        "Pair survey: Finding out what three friends do on Saturday.",
+        "TPR: Acting out weekend activities."
+      ],
+      "assessments": [
+        "Oral performance: Naming all 7 days.",
+        "Observation of dialogue role-play.",
+        "Checklist for correct usage of prepositions of time ('on Sunday').",
+        "Listening task: Circling the correct day mentioned in the dialogue."
+      ],
+      "aids": [
+        "Days of the Week chart.",
+        "Activity flashcards (e.g., swimming, reading).",
+        "Simple calendar/schedule template.",
+        "Audio recording of the song."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 9: Our School (Classroom Objects & Directions)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of a simple text about the classroom.",
+        "3.2.2 Understand specific information and details (classroom object names).",
+        "4.3.2 Able to write words and phrases legibly (object names).",
+        "4.3.3 Able to use punctuation (question mark).",
+        "4.2.1 Able to write notes and drafts (captions for objects).",
+        "3.2.3 Guess the meaning of unfamiliar words from clues."
+      ],
+      "objectives": [
+        "To read and name 7 common classroom objects.",
+        "To write a simple sentence using 'There is a...' or 'There are...'",
+        "To follow and write simple directions (e.g., 'Draw a box').",
+        "To use a question mark correctly in a simple question."
+      ],
+      "activities": [
+        "Reading a text describing the classroom layout.",
+        "Labelling objects in the classroom with written tags.",
+        "Tracing and copying object names and simple prepositions ('in', 'on').",
+        "Guided writing: Writing a description of their desk's contents.",
+        "Blindfold game: Describing an object for a partner to draw/find.",
+        "Drawing and labelling their dream classroom.",
+        "Spelling practice for classroom object names.",
+        "Listening and writing: Teacher dictates simple sentences about the classroom."
+      ],
+      "assessments": [
+        "Written task: Labelling a classroom picture.",
+        "Handwriting check for legibility.",
+        "Spelling test (7 object names).",
+        "Checklist for correct usage of 'There is/are'."
+      ],
+      "aids": [
+        "Classroom object flashcards/real objects.",
+        "Simple map/diagram of the classroom.",
+        "Worksheets for labelling.",
+        "Preposition word cards ('in', 'on', 'under')."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 10: The Garden (Nature & Simple Descriptions)",
+      "skill_name": "Language Arts",
+      "standards": [
+        "5.1.1 Able to enjoy and appreciate literary texts (simple poems/rhymes).",
+        "5.1.2 Able to understand and respond to literary texts.",
+        "5.2.1 Able to express feelings and give a simple opinion about the text.",
+        "5.2.2 Able to respond imaginatively to literary texts (drawing/acting).",
+        "1.2.4 Express simple ideas about what they see in nature.",
+        "3.3.1 Read and enjoy simple texts about nature."
+      ],
+      "objectives": [
+        "To recite a simple rhyme about nature with correct rhythm.",
+        "To identify at least 3 things found in a garden.",
+        "To express one thing they like about the poem.",
+        "To draw a picture that illustrates the main idea of the rhyme."
+      ],
+      "activities": [
+        "Reading and performing a nature-themed rhyme.",
+        "Discussion: Talking about things they see in the garden/park.",
+        "Choral repetition of the rhyme for fluency.",
+        "Drawing activity: Illustrating the poem's content.",
+        "Creating simple animal masks for role-play based on the rhyme.",
+        "Pair work: Saying what they would like to do in a garden.",
+        "Guided writing: Writing one descriptive word for a garden object.",
+        "Outdoor observation/walk (if possible) to find nature items."
+      ],
+      "assessments": [
+        "Observation of rhyme recitation performance.",
+        "Oral performance: Expressing feelings/opinions about the poem.",
+        "Assessment of the illustrative drawing (relevance to the text).",
+        "Checklist for participation in discussion."
+      ],
+      "aids": [
+        "Poem/rhyme chart or Big Book.",
+        "Picture cards of nature items.",
+        "Crayons/paper for drawing.",
+        "Audio recording of the poem."
+      ]
+    },
+    // --- YEAR 2: 10 UNITS ---
+    {
+      "year": 2,
+      "topic_name": "Unit 1: The New School (Routines & Timetables)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements about school routines.",
+        "1.2.2 Ask and answer simple questions about time (What time is...?).",
+        "1.2.3 Express simple ideas about school subjects.",
+        "2.1.1 Give detailed information about classroom rules and routines.",
+        "1.1.1 Recognise and reproduce with support a wide range of target language phonemes.",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To name 5 school subjects and express a preference for one.",
+        "To ask and answer questions about the time of the lesson.",
+        "To describe 3 school rules using simple modals (e.g., 'We must...').",
+        "To understand the main idea of a short dialogue about the first day of school."
+      ],
+      "activities": [
+        "Dialogue practice: Role-playing a conversation between two new friends.",
+        "Vocabulary drill: School subjects flashcards.",
+        "Timetable activity: Reading and discussing a simple timetable.",
+        "Singing a song about daily routines.",
+        "Rule-making activity: Discussing and listing classroom rules.",
+        "Pair work: Asking and answering about their favourite subjects.",
+        "Total Physical Response (TPR) related to school activities (e.g., 'Read the book').",
+        "Drawing their daily school routine in pictures."
+      ],
+      "assessments": [
+        "Oral quiz: Naming school subjects and times.",
+        "Observation checklist for correct use of 'must/mustn't'.",
+        "Listening task: Completing a simple timetable based on audio.",
+        "Assessment of dialogue role-play."
+      ],
+      "aids": [
+        "School subject flashcards.",
+        "Example timetables.",
+        "Audio recordings of dialogues.",
+        "Charts with modal verbs (must/mustn't)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 2: Wonderful World (Describing Nature & Places)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts about nature.",
+        "3.2.2 Understand specific information and details (adjectives).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly.",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "3.2.3 Guess the meaning of unfamiliar words from context.",
+        "4.2.1 Able to express ideas and thoughts about the world."
+      ],
+      "objectives": [
+        "To read and extract 3 descriptive adjectives from a text about a forest.",
+        "To write a short paragraph (3 sentences) describing a natural scene.",
+        "To correctly use 'is' and 'are' in simple descriptive sentences.",
+        "To correctly spell 8 new vocabulary items related to nature."
+      ],
+      "activities": [
+        "Reading a descriptive passage about a natural environment.",
+        "Vocabulary focus: Brainstorming adjectives (e.g., tall, blue, shiny).",
+        "Guided writing: Describing a picture of a park using sentence starters.",
+        "Labelling activity: Labelling parts of nature (river, hill, sky).",
+        "Error correction drill focusing on subject-verb agreement (is/are).",
+        "Drawing and writing: Drawing a scene and writing captions for it.",
+        "Jumbled sentences activity: Reordering words to form correct sentences.",
+        "Creating a simple 'Nature Facts' poster."
+      ],
+      "assessments": [
+        "Written task: Descriptive paragraph grading (content and grammar).",
+        "Reading comprehension quiz (fill-in-the-blanks with details).",
+        "Spelling test on nature vocabulary.",
+        "Checklist for correct use of 'is/are'."
+      ],
+      "aids": [
+        "Pictures/videos of natural scenes.",
+        "Adjective word bank.",
+        "Writing templates/graphic organisers.",
+        "Simple informational text about animals/plants."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 3: Healthy Habits (Food Groups & Health)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements (I should eat.../I shouldn't...)",
+        "1.2.2 Ask and answer simple 'Why?' questions related to health.",
+        "1.2.3 Express simple ideas about healthy eating.",
+        "2.1.1 Give detailed information about their favourite healthy meal.",
+        "1.3.1 Listen to and enjoy simple texts on healthy living.",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To classify 8 food items into 'healthy' and 'unhealthy' groups.",
+        "To suggest 3 ways to stay healthy using 'should/shouldn't'.",
+        "To ask and answer 'Why is eating fruit good?' questions.",
+        "To recite a short rhyme about healthy food."
+      ],
+      "activities": [
+        "Discussion: What makes a food healthy/unhealthy?",
+        "Sorting game: Food flashcards into categories (e.g., fruit, vegetable).",
+        "Role-play: Talking to a doctor/parent about feeling ill (using simple ailments).",
+        "Singing a song about exercise or healthy food.",
+        "Drawing a 'Healthy Plate' and labelling the components.",
+        "Choral repetition of 'should/shouldn't' phrases.",
+        "Mini-debate: 'Is chocolate good or bad?' (using simple justifications).",
+        "Creating a simple poster promoting one healthy habit."
+      ],
+      "assessments": [
+        "Oral performance: Giving 3 healthy suggestions.",
+        "Observation of food classification activity.",
+        "Listening comprehension: Ticking the 'should do' actions.",
+        "Assessment of participation in discussion."
+      ],
+      "aids": [
+        "Food flashcards/pyramid charts.",
+        "Posters on healthy habits (e.g., washing hands).",
+        "Audio recording of health-related dialogue.",
+        "Word cards for 'should/shouldn't'."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 4: Shopping Time (Money & Quantities)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts (price tags/lists).",
+        "3.2.2 Understand specific information and details (prices and quantity).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (money/items).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (shopping list).",
+        "3.2.3 Guess the meaning of unfamiliar words (e.g., expensive, cheap)."
+      ],
+      "objectives": [
+        "To read and understand 5 price tags correctly.",
+        "To write a simple shopping list of 5 items with correct spelling.",
+        "To use quantifiers 'a lot of', 'some', 'a few' correctly in sentences.",
+        "To read a short dialogue about shopping fluently."
+      ],
+      "activities": [
+        "Reading activity: Matching items to their prices in a catalogue.",
+        "Writing a shopping list for a specific recipe.",
+        "Role-play preparation: Practicing asking and answering about prices.",
+        "Fill-in-the-blanks: Using quantifiers correctly (some/a lot of).",
+        "Guided reading of a short dialogue between a cashier and a customer.",
+        "Mini-Market simulation: Students use play money and price tags.",
+        "Spelling practice for quantifiers and item names.",
+        "Jumbled words: Rearranging words to form questions about price."
+      ],
+      "assessments": [
+        "Written task: Shopping list grading (accuracy and spelling).",
+        "Reading comprehension: Answering questions about item quantity and price.",
+        "Observation of role-play (using money terms).",
+        "Vocabulary test on quantifiers."
+      ],
+      "aids": [
+        "Play money and shopping basket.",
+        "Price tags and item pictures.",
+        "Model shopping lists.",
+        "Dialogue script templates."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 5: Free Time (Hobbies & Simple Past Tense)",
+      "skill_name": "Reading",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts about hobbies.",
+        "3.2.2 Understand specific information and details (activities).",
+        "3.2.3 Guess the meaning of unfamiliar words from context.",
+        "3.2.4 Use appropriate strategies to monitor comprehension.",
+        "3.3.1 Read and enjoy simple fictional/non-fictional texts.",
+        "4.3.3 Able to use basic past tense forms (e.g., played, went)."
+      ],
+      "objectives": [
+        "To identify the main idea and three supporting details in a text about past weekend activities.",
+        "To correctly identify and list 5 regular past tense verbs from the text.",
+        "To use context clues to guess the meaning of at least three new vocabulary items.",
+        "To read a simple story about a holiday fluently."
+      ],
+      "activities": [
+        "Pre-reading: Vocabulary introduction using visuals (past tense verbs).",
+        "Choral reading followed by individual reading of a short passage (Past Tense focus).",
+        "Sequencing activity: Students order events from the text.",
+        "Fill-in-the-blanks exercise using past tense verbs.",
+        "Hot Seat game: Students describe their last weekend (using past tense).",
+        "Graphic organiser completion (e.g., timeline) while reading.",
+        "Reading race: Competing to find specific details (e.g., 'Where did Tom go?').",
+        "Creating a simple poster about a holiday using pictures."
+      ],
+      "assessments": [
+        "Comprehension quiz (multiple-choice based on the text).",
+        "Oral reading fluency check (Past Tense).",
+        "Vocabulary matching exercise (Summative).",
+        "Observation of students' application of context clues."
+      ],
+      "aids": [
+        "Worksheet with text and comprehension questions.",
+        "Picture cards of various free time activities.",
+        "Past tense verb chart (regular/irregular).",
+        "Interactive reading software/e-book."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 6: Getting Ready (Clothes & Weather)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements (It is raining, so I wear a jacket).",
+        "1.2.2 Ask and answer simple 'What are you wearing?' questions.",
+        "1.2.3 Express simple ideas about weather conditions.",
+        "2.1.1 Give detailed information about appropriate clothing for the weather.",
+        "1.1.1 Recognise and reproduce with support colour and clothing names.",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To name 5 weather conditions (e.g., sunny, rainy, cold).",
+        "To describe 3 items of clothing using colours and adjectives.",
+        "To state which clothes they should wear for a given weather condition.",
+        "To listen and draw the correct clothes on a figure based on the description."
+      ],
+      "activities": [
+        "Weather song/chant practice.",
+        "Flashcard drill: Weather conditions and related clothes.",
+        "Role-play: Dialogue about deciding what to wear.",
+        "Weather forecast simulation: Students report the weather and suggest clothes.",
+        "Drawing activity: Drawing clothes for different weather scenarios.",
+        "Choral repetition of sentences linking weather and clothes.",
+        "Sorting activity: Sorting clothes into hot/cold weather piles.",
+        "Guessing game: Describing a piece of clothing for others to guess."
+      ],
+      "assessments": [
+        "Oral quiz: Linking weather to appropriate clothing.",
+        "Observation of role-play.",
+        "Listening task: Drawing and colouring clothes correctly.",
+        "Checklist for correct usage of Present Continuous Tense ('I am wearing...')."
+      ],
+      "aids": [
+        "Weather charts/posters.",
+        "Clothing flashcards.",
+        "Figurines or paper dolls to dress.",
+        "Audio recordings of weather descriptions."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 7: Outdoor Fun (Prepositions & Commands)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements using prepositions of place.",
+        "1.2.2 Ask simple 'Where is the...?' questions.",
+        "1.2.3 Express simple ideas about location.",
+        "2.1.1 Give detailed instructions/directions (using 2-3 steps).",
+        "1.1.1 Recognise and reproduce with support prepositions (in, on, under).",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To correctly use 6 prepositions of place in sentences.",
+        "To follow 3-step directions accurately (e.g., 'Go to the door, stand under the clock').",
+        "To ask and answer 'Where is the ball?' questions.",
+        "To describe the location of 3 objects in the classroom."
+      ],
+      "activities": [
+        "TPR activity: Following commands using prepositions (e.g., 'Stand behind the chair').",
+        "Vocabulary drill: Preposition flashcards and movement.",
+        "Blindfolded game: Giving simple directions to a partner.",
+        "Drawing a simple map of a playground and describing the location of items.",
+        "Choral repetition of sentences using 'There is/are' with prepositions.",
+        "Role-play: Finding a hidden object using location questions.",
+        "Preposition song/chant practice.",
+        "Writing a set of 3 directions for a friend to follow."
+      ],
+      "assessments": [
+        "Observation of TPR activity and direction-following.",
+        "Oral quiz: Describing the location of classroom objects.",
+        "Listening task: Placing objects on a map according to the audio.",
+        "Checklist for correct usage of prepositions."
+      ],
+      "aids": [
+        "Preposition flashcards/posters.",
+        "Simple classroom/playground map.",
+        "Small objects (ball, box) for demonstration.",
+        "Worksheet for drawing and labelling locations."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 8: The Place I Live (Houses & Rooms)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts about houses.",
+        "3.2.2 Understand specific information and details (rooms/furniture).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (room names).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (labels for a floor plan).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read and name 5 rooms in a house.",
+        "To write 4 sentences describing their favourite room and its contents.",
+        "To correctly use 'has' and 'have' in sentences about possession.",
+        "To read a simple description of a house design fluently."
+      ],
+      "activities": [
+        "Reading a story about a family moving house.",
+        "Vocabulary focus: Rooms and furniture flashcards.",
+        "Guided writing: Describing a room using sentence starters.",
+        "Drawing a floor plan of their house and labelling the rooms.",
+        "Jumbled words: Rearranging letters to spell furniture names.",
+        "Error correction drill focusing on 'has/have'.",
+        "Pair work: Describing their house to a partner.",
+        "Creating a simple 'My Dream House' poster with captions."
+      ],
+      "assessments": [
+        "Written task: Description of the favourite room (grammar focus).",
+        "Reading comprehension quiz (matching sentences to rooms).",
+        "Spelling test on furniture/room vocabulary.",
+        "Checklist for correct use of 'has/have'."
+      ],
+      "aids": [
+        "Pictures/diagrams of different types of houses.",
+        "Furniture flashcards.",
+        "Worksheets for floor plan drawing.",
+        "Simple reading text about house types."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 9: People We Know (Jobs & Personalities)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements to describe people (He is a fireman).",
+        "1.2.2 Ask and answer simple 'What does he do?' questions.",
+        "1.2.3 Express simple ideas about personality (e.g., kind, happy).",
+        "2.1.1 Give detailed information about a family member's job.",
+        "1.1.1 Recognise and reproduce with support simple descriptive adjectives.",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To name 6 different occupations.",
+        "To describe a person using at least 3 adjectives (job and personality).",
+        "To ask and answer about what a person does at work.",
+        "To understand the main idea of a story about someone helping the community."
+      ],
+      "activities": [
+        "Discussion: What are important jobs in our community?",
+        "Flashcard drill: Matching job titles to pictures.",
+        "Role-play: Interviewing someone about their job.",
+        "Charades: Acting out an occupation for others to guess.",
+        "Choral repetition of descriptive phrases for people.",
+        "Drawing activity: Drawing a community helper and writing a simple caption.",
+        "Story time: Listening to a story about a helpful person.",
+        "Pair work: Describing their teacher or family member."
+      ],
+      "assessments": [
+        "Oral performance: Describing a person (Summative).",
+        "Observation of role-play interview.",
+        "Listening task: Identifying the occupation described.",
+        "Checklist for correct use of simple adjectives."
+      ],
+      "aids": [
+        "Occupation flashcards.",
+        "Adjective word list (kind, brave, busy).",
+        "Props for role-play.",
+        "Simple picture book on community helpers."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 10: Let's Go Shopping (Counting & Price)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts (ads/catalogues).",
+        "3.2.2 Understand specific information and details (prices/amounts).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (money/items).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (price comparison).",
+        "3.2.3 Guess the meaning of unfamiliar words (e.g., discount, sales)."
+      ],
+      "objectives": [
+        "To read and compare the prices of 4 items using 'cheaper' or 'more expensive'.",
+        "To write a simple receipt of 3 items with the total cost.",
+        "To correctly use numbers 11-20 in writing.",
+        "To read a simple advertisement and extract two key details."
+      ],
+      "activities": [
+        "Reading activity: Comparing prices in two different simulated catalogues.",
+        "Writing a simple receipt after a market simulation.",
+        "Vocabulary drill: Numbers 11-20 and money terms.",
+        "Sentence construction: Using comparative adjectives (cheaper/more expensive).",
+        "Mini-Market role-play: Calculating change (simple numbers).",
+        "Guided reading of a short advertisement.",
+        "Spelling practice for numbers and price terms.",
+        "Creating an advertisement for a toy with price and description."
+      ],
+      "assessments": [
+        "Written task: Receipt writing (accuracy of calculation/spelling).",
+        "Reading comprehension: Answering questions about the cheapest/most expensive item.",
+        "Spelling quiz (numbers 11-20).",
+        "Observation of comparison sentences used in discussion."
+      ],
+      "aids": [
+        "Simulated price tags and catalogues.",
+        "Play money and calculator (simple).",
+        "Number charts 11-20.",
+        "Worksheets for receipt writing."
+      ]
+    },
+    // --- YEAR 3: 10 UNITS ---
+    {
+      "year": 3,
+      "topic_name": "Unit 1: Welcome to My World (Describing People & Places)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements to describe people, places and things.",
+        "1.2.2 Ask and answer questions about physical appearance.",
+        "1.2.3 Express simple ideas about personality and feelings.",
+        "2.1.1 Give detailed information about themselves and their background.",
+        "1.1.1 Recognise and reproduce with support a wide range of target language phonemes.",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To describe a friend or family member using at least 4 adjectives.",
+        "To ask and answer questions about physical characteristics (e.g., 'Does he have big eyes?').",
+        "To correctly use 'has got/have got' in descriptions.",
+        "To understand the main idea of a descriptive dialogue about a new classmate."
+      ],
+      "activities": [
+        "Dialogue practice: Role-playing a meeting with a new person.",
+        "Vocabulary drill: Adjectives for appearance and personality.",
+        "Drawing and describing: Students draw a monster and describe its features.",
+        "Guessing game: Describing a classmate for others to guess.",
+        "Choral repetition of sentences using 'has got/have got'.",
+        "Story time: Listening to a story focusing on acceptance of differences.",
+        "Pair work: Comparing themselves to their partner (e.g., taller than, shorter hair).",
+        "Writing 3 descriptive sentences about their best friend."
+      ],
+      "assessments": [
+        "Oral performance: Describing a person (Summative).",
+        "Observation checklist for use of 'has got/have got'.",
+        "Listening task: Matching descriptions to pictures of people.",
+        "Assessment of dialogue fluency."
+      ],
+      "aids": [
+        "Flashcards of people with different features.",
+        "Adjective word list.",
+        "Audio recordings of descriptive dialogues.",
+        "Templates for drawing and describing."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 2: My Day (Routines & Time)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts about routines.",
+        "3.2.2 Understand specific information and details (time/sequence).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (time/activities).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a daily schedule).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a schedule and sequence 5 events correctly.",
+        "To write 4 sentences describing their morning routine using connecting words (e.g., then, after that).",
+        "To correctly write the time in words (e.g., half past six).",
+        "To identify and correctly use 5 time prepositions (at, in, on)."
+      ],
+      "activities": [
+        "Reading a passage about a child's day.",
+        "Vocabulary focus: Time expressions and common verbs for routines.",
+        "Sequencing activity: Ordering cards of daily routines.",
+        "Guided writing: Writing a paragraph about their school routine.",
+        "Clock demonstration: Telling the time and writing it down.",
+        "Error correction drill focusing on time prepositions (at, in, on).",
+        "Pair work: Drawing their friend's routine and writing captions.",
+        "Creating a simple 'My Daily Routine' booklet."
+      ],
+      "assessments": [
+        "Written task: Paragraph on daily routine (sequence and grammar).",
+        "Reading comprehension: Answering questions about specific times/events.",
+        "Time quiz: Writing time in words and numbers.",
+        "Checklist for correct use of time prepositions."
+      ],
+      "aids": [
+        "Clock model (analog/digital).",
+        "Sequence cards for routines.",
+        "Writing templates with time slots.",
+        "Simple reading text about routines."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 3: Right Now (Present Continuous Tense)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements in the Present Continuous Tense.",
+        "1.2.2 Ask and answer 'What are you doing?' questions.",
+        "1.2.3 Express simple ideas about ongoing actions.",
+        "2.1.1 Give detailed information about what people are currently doing (in a picture).",
+        "1.1.1 Recognise and reproduce with support verbs in '-ing' form.",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To identify 5 actions being performed in a picture and describe them using the Present Continuous Tense.",
+        "To ask and answer 'What is he/she doing?' questions correctly.",
+        "To use the correct form of 'to be' (is/am/are) with '-ing' verbs.",
+        "To listen and draw the action described in the audio."
+      ],
+      "activities": [
+        "TPR activity: Acting out actions while others describe them (e.g., 'He is running').",
+        "Flashcard drill: Matching action pictures to '-ing' verbs.",
+        "Role-play: Calling a friend and asking what they are doing.",
+        "Picture description: Describing a busy scene (e.g., park, market).",
+        "Choral repetition of Present Continuous sentences.",
+        "Guessing game: 'I am pretending to...' for others to guess the action.",
+        "Error correction drill focusing on subject-verb agreement (is/am/are).",
+        "Writing 4 sentences about what their classmates are doing."
+      ],
+      "assessments": [
+        "Oral quiz: Describing actions in pictures (Formative).",
+        "Observation of TPR and role-play.",
+        "Listening task: Drawing the action described.",
+        "Checklist for correct use of Present Continuous Tense."
+      ],
+      "aids": [
+        "Picture cards of people doing various actions.",
+        "Verb + -ing word cards.",
+        "Audio recordings of action descriptions.",
+        "Worksheets for picture description."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 4: Lunchtime (Countable/Uncountable Nouns)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts (recipes/menus).",
+        "3.2.2 Understand specific information and details (food/ingredients).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (food items).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a simple recipe).",
+        "3.2.3 Guess the meaning of unfamiliar words (e.g., recipe, ingredient)."
+      ],
+      "objectives": [
+        "To read a recipe and list 5 countable and 5 uncountable nouns.",
+        "To write a simple recipe for their favourite snack (4 steps).",
+        "To correctly use 'some', 'any', 'a lot of' with food items.",
+        "To identify and correct 3 spelling errors in a food menu."
+      ],
+      "activities": [
+        "Reading a simple recipe and identifying the ingredients.",
+        "Vocabulary focus: Countable and uncountable food nouns.",
+        "Sorting activity: Food flashcards into C/UC groups.",
+        "Guided writing: Writing a simple 'sandwich' recipe.",
+        "Fill-in-the-blanks: Using 'some' and 'any' correctly.",
+        "Error correction drill focusing on plurals (e.g., potatoes vs. potato).",
+        "Pair work: Designing a menu for a class party.",
+        "Mini-Market simulation: Asking and answering 'How much/many?'"
+      ],
+      "assessments": [
+        "Written task: Recipe writing (content and grammar).",
+        "Reading comprehension quiz (ingredients needed).",
+        "Checklist for correct use of C/UC nouns and quantifiers.",
+        "Spelling test on food vocabulary."
+      ],
+      "aids": [
+        "Simple recipe cards/menus.",
+        "Food flashcards.",
+        "Charts for countable/uncountable rules.",
+        "Worksheets for recipe writing."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 5: My New Home (Prepositions & Directions)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements using a range of prepositions of place.",
+        "1.2.2 Ask and answer 'Where is...?' questions.",
+        "1.2.3 Express simple ideas about location in a multi-room setting.",
+        "2.1.1 Give detailed instructions/directions (using a map).",
+        "1.1.1 Recognise and reproduce with support prepositions (near, next to, opposite).",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To correctly use 6 different prepositions of place to describe a room.",
+        "To give 3-step directions from one point on a map to another.",
+        "To ask and answer questions about object locations in a house.",
+        "To draw a simple map of their house based on a listening description."
+      ],
+      "activities": [
+        "TPR activity: Following commands using prepositions.",
+        "Vocabulary drill: New prepositions (near, next to, opposite).",
+        "Map activity: Giving directions using a simple floor plan.",
+        "Drawing a map of a house and having a partner describe it.",
+        "Choral repetition of location sentences.",
+        "Role-play: Guiding a visitor through their house.",
+        "Memory game: 'In the bedroom, there is...' (adding objects sequentially).",
+        "Writing a set of 4 directions to find a hidden treasure in the classroom."
+      ],
+      "assessments": [
+        "Observation of map direction-giving.",
+        "Oral quiz: Describing the location of furniture.",
+        "Listening task: Drawing map layout correctly.",
+        "Checklist for correct use of a range of prepositions."
+      ],
+      "aids": [
+        "Preposition charts/posters.",
+        "Simple house floor plans/maps.",
+        "Furniture cut-outs.",
+        "Worksheets for map drawing."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 6: Getting Dressed (Clothes & Comparison)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements comparing clothes (bigger than, cheaper than).",
+        "1.2.2 Ask and answer simple 'Which is...?' questions.",
+        "1.2.3 Express simple ideas about style and preference.",
+        "2.1.1 Give detailed information about their choice of clothing for an event.",
+        "1.1.1 Recognise and reproduce with support comparative adjectives.",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To describe and compare 4 items of clothing using comparative adjectives (e.g., bigger, smaller, cheaper).",
+        "To ask and answer 'Which shirt is cleaner?' questions.",
+        "To use the structure 'than' correctly in comparison sentences.",
+        "To listen and identify the most expensive item described."
+      ],
+      "activities": [
+        "Discussion: Comparing different types of clothes (price, colour, size).",
+        "Flashcard drill: Comparative adjectives (e.g., faster, slower).",
+        "Role-play: Shopping for clothes and comparing prices.",
+        "Drawing activity: Drawing two items of clothing and writing comparison sentences.",
+        "Choral repetition of comparison sentences.",
+        "Sorting activity: Arranging items in order (e.g., shortest to longest).",
+        "Mini-fashion show: Students compare their clothes.",
+        "Writing 3 sentences comparing two friends' clothes."
+      ],
+      "assessments": [
+        "Oral performance: Comparing two objects (Summative).",
+        "Observation of role-play negotiation.",
+        "Listening task: Identifying the item based on comparison.",
+        "Checklist for correct use of comparative adjectives and 'than'."
+      ],
+      "aids": [
+        "Clothing cut-outs with prices/sizes.",
+        "Comparative adjective chart.",
+        "Audio recordings of comparison dialogues.",
+        "Worksheets for comparison writing."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 7: Outdoor Fun (Past Simple Tense)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple narratives (past events).",
+        "3.2.2 Understand specific information and details (verbs in past tense).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (past tense).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a weekend diary entry).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a narrative and identify 8 past tense verbs (regular and irregular).",
+        "To write a short paragraph (4 sentences) about their last outdoor trip.",
+        "To correctly use 'did' in simple past tense questions.",
+        "To sequence 5 events from a story using past tense verbs."
+      ],
+      "activities": [
+        "Reading a short narrative about a weekend trip to the beach.",
+        "Vocabulary focus: Past Simple irregular verbs (went, saw, ate).",
+        "Sequencing activity: Ordering event cards and writing captions (Past Tense).",
+        "Guided writing: Writing a diary entry about their weekend.",
+        "Error correction drill focusing on 'ed' endings and common irregular verbs.",
+        "Pair work: Asking and answering about their last trip (Did you go...?).",
+        "Jumbled sentences: Reordering sentences in a narrative sequence.",
+        "Creating a photo album of past events with simple captions."
+      ],
+      "assessments": [
+        "Written task: Diary entry grading (past tense accuracy).",
+        "Reading comprehension quiz (details and sequencing).",
+        "Spelling test on past tense verbs.",
+        "Checklist for correct use of 'did' in questions."
+      ],
+      "aids": [
+        "Past Simple verb chart (regular/irregular).",
+        "Simple narrative texts with past tense focus.",
+        "Writing templates for diary entries.",
+        "Picture cards of outdoor activities."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 8: The Jungle (Animals & Habitats)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements to describe animals and their habitats.",
+        "1.2.2 Ask and answer simple 'Can it...?' questions about animal abilities.",
+        "1.2.3 Express simple ideas about animal characteristics.",
+        "2.1.1 Give detailed information about an animal's diet and movement.",
+        "1.1.1 Recognise and reproduce with support animal names and related verbs.",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To describe 4 animals using at least 3 facts each (e.g., habitat, diet, ability).",
+        "To ask and answer 'Can a snake fly?' questions correctly.",
+        "To correctly use 'can' and 'can't' in describing animal abilities.",
+        "To listen and draw the animal described in the audio."
+      ],
+      "activities": [
+        "Discussion: What animals live in the jungle/forest?",
+        "Flashcard drill: Matching animal names to pictures.",
+        "Role-play: An animal interview (asking 'Can you...?', 'What do you eat?').",
+        "Guessing game: Describing an animal for others to guess.",
+        "Choral repetition of sentences using 'can/can't'.",
+        "Drawing activity: Drawing an animal and labelling its habitat and actions.",
+        "Story time: Listening to a story about a jungle adventure.",
+        "Writing 4 sentences comparing two animals (e.g., 'A monkey can climb, but a fish can't')."
+      ],
+      "assessments": [
+        "Oral performance: Describing an animal (Summative).",
+        "Observation of role-play (use of 'can/can't').",
+        "Listening task: Drawing the correct animal.",
+        "Checklist for correct use of action verbs."
+      ],
+      "aids": [
+        "Animal flashcards and habitat posters.",
+        "Verb word cards (fly, swim, run).",
+        "Audio recordings of animal sounds/descriptions.",
+        "Worksheets for animal facts."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 9: On the Farm (Farm Life & Occupations)",
+      "skill_name": "Language Arts",
+      "standards": [
+        "5.1.1 Able to enjoy and appreciate literary texts (poems/short stories about farm life).",
+        "5.1.2 Able to understand and respond to literary texts.",
+        "5.2.1 Able to express feelings and give a simple opinion about literary texts.",
+        "5.2.2 Able to respond imaginatively to literary texts (drama/writing).",
+        "1.2.4 Express simple ideas about farm occupations and routines.",
+        "3.3.1 Read and enjoy simple texts about farm animals."
+      ],
+      "objectives": [
+        "To recite a short poem about farm animals with expression.",
+        "To identify 2 moral values or lessons from a short farm story.",
+        "To express one thing they would change about the story's ending.",
+        "To perform a short role-play as a farmer and an animal."
+      ],
+      "activities": [
+        "Reading and performing a farm-themed poem (e.g., Old MacDonald).",
+        "Discussion: Talking about the life of a farmer and farm animals.",
+        "Choral repetition of the poem for fluency.",
+        "Drawing activity: Illustrating a scene from the story.",
+        "Creating simple animal masks for the role-play.",
+        "Pair work: Asking and answering questions about the story's events.",
+        "Guided writing: Writing 3 sentences about the main character's job.",
+        "Visiting a virtual farm (video) and discussing observations."
+      ],
+      "assessments": [
+        "Observation of poem recitation performance.",
+        "Oral performance: Expressing opinions/changes to the story.",
+        "Assessment of the role-play creativity.",
+        "Written response: Stating the moral lesson."
+      ],
+      "aids": [
+        "Poem/rhyme chart or Big Book.",
+        "Picture cards of farm animals/equipment.",
+        "Props for role-play.",
+        "Video clips of farm life."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 10: Let's Celebrate (Holidays & Traditions)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts about holidays.",
+        "3.2.2 Understand specific information and details (dates/traditions).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (holiday terms).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a simple invitation card).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a text about a holiday and extract 4 key traditions.",
+        "To write a simple invitation card for a celebratory event.",
+        "To correctly use the Future Tense ('will') to describe plans.",
+        "To identify and correct 3 spelling errors related to holiday names."
+      ],
+      "activities": [
+        "Reading a passage about a cultural celebration (e.g., Deepavali, Hari Raya).",
+        "Vocabulary focus: Holiday-related terms.",
+        "Guided writing: Designing and writing an invitation card.",
+        "Sequencing activity: Ordering the steps of a holiday preparation.",
+        "Fill-in-the-blanks: Using 'will' for future plans.",
+        "Error correction drill focusing on capitalization of proper nouns (holiday names).",
+        "Pair work: Talking about their plans for the next holiday.",
+        "Creating a simple poster for a holiday celebration."
+      ],
+      "assessments": [
+        "Written task: Invitation card grading (form and content).",
+        "Reading comprehension quiz (identifying traditions).",
+        "Spelling test on holiday vocabulary.",
+        "Checklist for correct use of Future Tense ('will')."
+      ],
+      "aids": [
+        "Pictures/videos of various celebrations.",
+        "Invitation card templates.",
+        "Word cards for holiday vocabulary.",
+        "Simple reading text about cultural traditions."
+      ]
+    },
+    // --- YEAR 4: 10 UNITS ---
+    {
+      "year": 4,
+      "topic_name": "Unit 1: Where Are You From? (Countries & Nationalities)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements to talk about country of origin.",
+        "1.2.2 Ask and answer questions about origin and nationality.",
+        "1.2.3 Express simple opinions about different countries.",
+        "2.1.1 Give detailed information about where they are from and their culture.",
+        "1.1.1 Recognise and reproduce with support country names and nationalities.",
+        "1.2.5 Understand a wider range of basic supported questions."
+      ],
+      "objectives": [
+        "To name 8 countries and their corresponding nationalities.",
+        "To ask and answer 'Where are you from?' questions with correct grammar.",
+        "To express one simple opinion about a country (e.g., 'It is beautiful').",
+        "To understand the main idea of a dialogue about travelling."
+      ],
+      "activities": [
+        "Dialogue practice: Role-playing an interview with a visitor from another country.",
+        "Vocabulary drill: Countries and nationalities flashcards.",
+        "Map activity: Identifying countries and practicing pronunciation.",
+        "Presentation: Students choose a country and share 3 facts about it.",
+        "Choral repetition of sentences using 'I am from...' and 'I am...'",
+        "Quiz game: Guessing the country based on the flag/picture.",
+        "Pair work: Asking and answering about their partner's origin.",
+        "Writing 3 sentences about the country they wish to visit."
+      ],
+      "assessments": [
+        "Oral performance: Country presentation (Formative).",
+        "Observation checklist for correct use of prepositions ('from').",
+        "Listening task: Matching countries to cultural facts.",
+        "Oral quiz: Naming countries and nationalities."
+      ],
+      "aids": [
+        "World map/globe.",
+        "Flashcards of flags and landmarks.",
+        "Audio recordings of dialogues with different accents.",
+        "Worksheets for countries and nationalities."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 2: Ready for Anything (Abilities & Skills)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts about abilities.",
+        "3.2.2 Understand specific information and details (action verbs).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (abilities).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a personal profile).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a profile and list 6 abilities using 'can/can't'.",
+        "To write a short profile about themselves listing 4 things they can do.",
+        "To correctly use the modal verbs 'can' and 'can't' in sentences.",
+        "To identify and correct 3 spelling errors in a profile text."
+      ],
+      "activities": [
+        "Reading a short profile of a famous athlete/artist.",
+        "Vocabulary focus: Verbs related to skills (e.g., juggle, paint, code).",
+        "Sequencing activity: Ordering the steps needed to learn a new skill.",
+        "Guided writing: Writing their own personal 'Ability Profile'.",
+        "Error correction drill focusing on 'can/can't' placement.",
+        "Pair work: Interviewing each other about their hidden talents.",
+        "Jumbled sentences: Reordering sentences to form coherent paragraphs about a skill.",
+        "Creating a simple 'Talent Show' advertisement poster."
+      ],
+      "assessments": [
+        "Written task: Personal profile grading (content and grammar).",
+        "Reading comprehension: Answering questions about abilities listed.",
+        "Spelling test on action verbs.",
+        "Checklist for correct use of 'can/can't'."
+      ],
+      "aids": [
+        "Model personal profiles/résumés.",
+        "Verb flashcards (skills).",
+        "Writing templates for profiles.",
+        "Simple reading texts on talent."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 3: Healthy and Wise (Health Habits & Lifestyle)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements to give advice (You should.../You shouldn't...)",
+        "1.2.2 Ask and answer questions about health problems and solutions.",
+        "1.2.3 Express simple ideas about a balanced lifestyle.",
+        "2.1.1 Give detailed information about a health problem and suggest a solution.",
+        "1.1.1 Recognise and reproduce with support the vocabulary of ailments.",
+        "1.2.5 Understand a wider range of basic supported questions."
+      ],
+      "objectives": [
+        "To identify 5 common health problems and suggest a solution for each.",
+        "To ask and answer 'What should I do if I have a headache?' questions.",
+        "To correctly use 'should' and 'shouldn't' when giving advice.",
+        "To listen and identify the main health problem discussed in the audio."
+      ],
+      "activities": [
+        "Discussion: What are common health issues among students?",
+        "Flashcard drill: Matching ailments to symptoms.",
+        "Role-play: Student goes to the 'doctor' for advice.",
+        "Poster design: Creating a poster to promote a healthy habit (e.g., eat more vegetables).",
+        "Choral repetition of advice phrases (e.g., 'You should drink water').",
+        "Pair work: Asking for and giving advice on various issues.",
+        "Story time: Listening to a story about a character overcoming an illness.",
+        "Writing 4 sentences giving advice to a friend who is stressed."
+      ],
+      "assessments": [
+        "Oral performance: Giving advice (Summative).",
+        "Observation of role-play (use of 'should/shouldn't').",
+        "Listening task: Identifying advice given.",
+        "Checklist for correct use of health vocabulary."
+      ],
+      "aids": [
+        "Ailment flashcards.",
+        "Charts with modal verbs (should/shouldn't).",
+        "Audio recordings of dialogues (doctor/patient).",
+        "Worksheets for suggestion writing."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 4: Amazing Animals (Comparisons & Superlatives)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple texts about animals (facts).",
+        "3.2.2 Understand specific information and details (size, speed, habitat).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (animal facts).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a fact file).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a fact file and list 4 comparative and 2 superlative facts.",
+        "To write a short paragraph comparing two animals using comparative/superlative adjectives.",
+        "To correctly form and use 6 comparative and superlative adjectives (e.g., taller, fastest).",
+        "To identify the main idea of a text about the world's most dangerous animal."
+      ],
+      "activities": [
+        "Reading a fact file about world-record animals (fastest, biggest).",
+        "Vocabulary focus: Comparative and superlative adjectives.",
+        "Comparison chart activity: Filling in a chart comparing three animals.",
+        "Guided writing: Writing a paragraph using comparative and superlative forms.",
+        "Error correction drill focusing on 'er/est' and 'more/most'.",
+        "Pair work: Designing their own 'super animal' and describing its features.",
+        "Jumbled sentences: Rearranging comparison sentences.",
+        "Creating an 'Amazing Animals' poster with facts."
+      ],
+      "assessments": [
+        "Written task: Comparison paragraph grading (grammar focus).",
+        "Reading comprehension: Answering questions using superlatives.",
+        "Grammar quiz: Forming and using comparative/superlative adjectives.",
+        "Checklist for correct use of 'than'."
+      ],
+      "aids": [
+        "Animal fact sheets and pictures.",
+        "Comparative/Superlative adjective chart.",
+        "Writing templates for fact files.",
+        "Simple informational texts on animal records."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 5: Food, Please! (Asking & Offering)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements to make requests and offers (Would you like...?).",
+        "1.2.2 Ask and answer questions politely (Can I have...?).",
+        "1.2.3 Express simple ideas about food preferences and requests politely.",
+        "2.1.1 Give detailed information about ordering food at a restaurant.",
+        "1.1.1 Recognise and reproduce with support polite phrases.",
+        "1.2.5 Understand a wider range of short basic supported questions."
+      ],
+      "objectives": [
+        "To make 3 polite requests using 'Can I have...' or 'Could I have...'.",
+        "To ask and answer questions about food preferences politely.",
+        "To correctly use 'Would you like' to offer food.",
+        "To understand the main idea of a dialogue about ordering at a café."
+      ],
+      "activities": [
+        "Dialogue practice: Role-playing ordering food at a café.",
+        "Vocabulary drill: Food and beverage names.",
+        "Role-play preparation: Practicing polite request phrases.",
+        "Menu design: Designing a simple menu and practicing ordering.",
+        "Choral repetition of polite phrases (e.g., 'Yes, please', 'No, thank you').",
+        "Pair work: Offering and accepting/refusing food politely.",
+        "Story time: Listening to a story about table manners.",
+        "Writing a polite request note to the teacher."
+      ],
+      "assessments": [
+        "Oral performance: Role-play ordering food (politeness and grammar).",
+        "Observation checklist for use of polite phrases.",
+        "Listening task: Identifying the food ordered.",
+        "Assessment of dialogue fluency."
+      ],
+      "aids": [
+        "Sample menus and play food.",
+        "Polite phrase charts.",
+        "Audio recordings of restaurant dialogues.",
+        "Worksheets for writing requests."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 6: Getting Around (Past Continuous Tense)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple narratives (concurrent actions).",
+        "3.2.2 Understand specific information and details (actions in the past continuous).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (past continuous).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a story opening).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a narrative and identify 5 uses of the Past Continuous Tense.",
+        "To write a short paragraph describing what they were doing at a specific time yesterday.",
+        "To correctly use 'was' and 'were' with the '-ing' form.",
+        "To sequence 4 events using 'while' or 'when' to show concurrent actions."
+      ],
+      "activities": [
+        "Reading a story describing what people were doing during a power outage.",
+        "Vocabulary focus: Action verbs and time expressions.",
+        "Picture sequencing: Ordering pictures of past events and describing them (P. Continuous).",
+        "Guided writing: Writing a paragraph starting with 'At 7pm yesterday...'",
+        "Error correction drill focusing on 'was/were' agreement.",
+        "Pair work: Asking and answering 'What were you doing when...?'",
+        "Jumbled sentences: Reordering sentences using 'while' and 'when'.",
+        "Drawing a scene and writing captions describing the ongoing actions."
+      ],
+      "assessments": [
+        "Written task: Paragraph grading (Past Continuous accuracy).",
+        "Reading comprehension quiz (identifying ongoing actions).",
+        "Grammar quiz: Forming and using the Past Continuous Tense.",
+        "Checklist for correct use of conjunctions ('while/when')."
+      ],
+      "aids": [
+        "Past Continuous Tense chart (was/were + -ing).",
+        "Simple narrative texts with P. Continuous focus.",
+        "Writing templates for story openings.",
+        "Picture cards of actions."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 7: Life in the Past (Past Simple Irregulars)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements to talk about past life.",
+        "1.2.2 Ask and answer questions about history and past events (Did you...?).",
+        "1.2.3 Express simple opinions about life in the past.",
+        "2.1.1 Give detailed information about life without modern technology.",
+        "1.1.1 Recognise and reproduce with support common irregular past tense verbs.",
+        "1.2.5 Understand a wider range of basic supported questions."
+      ],
+      "objectives": [
+        "To correctly use 8 irregular past tense verbs in sentences (e.g., went, saw, ate).",
+        "To ask and answer questions about a past event using 'Did you...?'",
+        "To describe 3 ways life was different 100 years ago.",
+        "To understand the main idea of a dialogue about a historical event."
+      ],
+      "activities": [
+        "Discussion: How did people communicate/travel in the past?",
+        "Flashcard drill: Matching present tense verbs to irregular past tense forms.",
+        "Role-play: Interviewing a 'grandparent' about their childhood.",
+        "Story time: Listening to a historical narrative.",
+        "Choral repetition of irregular past tense forms.",
+        "Pair work: Asking and answering about last weekend using irregular verbs.",
+        "Timeline activity: Sequencing historical events.",
+        "Writing 4 sentences comparing present life to past life."
+      ],
+      "assessments": [
+        "Oral performance: Role-play interview (Past Tense accuracy).",
+        "Observation checklist for use of irregular verbs.",
+        "Listening task: Identifying key details of a historical event.",
+        "Grammar quiz on irregular verbs."
+      ],
+      "aids": [
+        "Irregular verb chart.",
+        "Pictures/videos of historical items/scenes.",
+        "Audio recordings of historical narratives.",
+        "Interview question templates."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 8: The World Around Us (Geography & Environment)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple informational texts (geography).",
+        "3.2.2 Understand specific information and details (facts about nature).",
+        "4.3.2 Able to write words, phrases and simple sentences legibly (geography terms).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a fact sheet).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a text and extract 5 geographical facts (e.g., population, height).",
+        "To write a short fact sheet about a country or landmark.",
+        "To correctly use passive voice in simple sentences (e.g., 'It is located...').",
+        "To identify the main cause/effect discussed in a text about pollution."
+      ],
+      "activities": [
+        "Reading a simple fact sheet about the Amazon River or Mount Everest.",
+        "Vocabulary focus: Geographical terms (e.g., continent, ocean, river).",
+        "Labelling activity: Labelling parts of a world map.",
+        "Guided writing: Writing 4 facts about Malaysia.",
+        "Error correction drill focusing on the passive voice structure.",
+        "Pair work: Researching and sharing 3 surprising facts about a country.",
+        "Jumbled sentences: Reordering sentences about environmental causes/effects.",
+        "Creating a simple poster about climate change."
+      ],
+      "assessments": [
+        "Written task: Fact sheet grading (accuracy of facts and grammar).",
+        "Reading comprehension: Answering questions about geographical details.",
+        "Spelling test on geography vocabulary.",
+        "Checklist for correct use of passive voice."
+      ],
+      "aids": [
+        "World map/charts.",
+        "Simple informational texts on geography.",
+        "Fact sheet templates.",
+        "Pictures/videos of world landmarks."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 9: Art and Culture (Adjectives & Opinions)",
+      "skill_name": "Language Arts",
+      "standards": [
+        "5.1.1 Able to enjoy and appreciate literary texts (poems/stories about culture).",
+        "5.1.2 Able to understand and respond to literary texts.",
+        "5.2.1 Able to express feelings and give a simple opinion about art/culture.",
+        "5.2.2 Able to respond imaginatively to literary texts (review/description).",
+        "1.2.4 Express simple ideas about traditional clothing and food.",
+        "3.3.1 Read and enjoy simple texts about culture."
+      ],
+      "objectives": [
+        "To write a short review (3 sentences) of a traditional story/art piece.",
+        "To identify 2 themes or messages in a cultural text.",
+        "To express one thing they like/dislike about a cultural tradition, giving a reason.",
+        "To perform a short descriptive monologue about a piece of art."
+      ],
+      "activities": [
+        "Reading a folk tale or poem from a different culture.",
+        "Discussion: Talking about different cultural art forms (music, dance, clothing).",
+        "Choral repetition of descriptive adjectives for art (e.g., vibrant, delicate).",
+        "Drawing activity: Designing a new cultural costume and describing it.",
+        "Role-play: Acting as a tour guide describing a cultural site.",
+        "Pair work: Expressing opinions about different types of music.",
+        "Guided writing: Writing a short review of a cultural event they attended/saw.",
+        "Watching a video of traditional music/dance and discussing feelings."
+      ],
+      "assessments": [
+        "Observation of monologue performance (expression and vocabulary).",
+        "Oral performance: Expressing opinions with justification.",
+        "Written response: Short review grading (content and opinion).",
+        "Checklist for use of appropriate adjectives."
+      ],
+      "aids": [
+        "Traditional stories/poems.",
+        "Pictures/videos of cultural sites/art.",
+        "Adjective word bank for art appreciation.",
+        "Review template worksheets."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 10: Let's Celebrate (Future Simple Tense)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements to talk about future plans ('going to').",
+        "1.2.2 Ask and answer questions about future plans (Are you going to...?).",
+        "1.2.3 Express simple ideas about future predictions ('will').",
+        "2.1.1 Give detailed information about a holiday trip they are planning.",
+        "1.1.1 Recognise and reproduce with support future time expressions (next week).",
+        "1.2.5 Understand a wider range of basic supported questions."
+      ],
+      "objectives": [
+        "To describe 4 future plans using 'going to' correctly.",
+        "To ask and answer questions about next weekend's plans.",
+        "To use 'will' correctly to make 2 simple predictions about the future.",
+        "To understand the main idea of a dialogue about holiday planning."
+      ],
+      "activities": [
+        "Dialogue practice: Role-playing a discussion about holiday plans.",
+        "Vocabulary drill: Future time expressions (next month, soon).",
+        "Planning activity: Designing a poster for a future class trip (using 'going to').",
+        "Fortune telling game: Using 'will' to make silly predictions for classmates.",
+        "Choral repetition of 'going to' sentences.",
+        "Pair work: Interviewing each other about future aspirations.",
+        "Error correction drill focusing on 'will' vs. 'going to'.",
+        "Writing 4 sentences about what they will do when they finish school."
+      ],
+      "assessments": [
+        "Oral performance: Discussing future plans (Summative).",
+        "Observation of prediction game (use of 'will').",
+        "Listening task: Identifying the plan made.",
+        "Checklist for correct use of 'going to' and 'will'."
+      ],
+      "aids": [
+        "Future Tense chart ('going to'/'will').",
+        "Pictures of travel destinations.",
+        "Audio recordings of planning dialogues.",
+        "Worksheets for plan writing."
+      ]
+    },
+    // --- YEAR 5: 10 UNITS ---
+    {
+      "year": 5,
+      "topic_name": "Unit 1: The First Day (Social Skills & Complex Sentences)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple and compound statements to express feelings and opinions.",
+        "1.2.2 Ask and answer a wide range of questions about social situations.",
+        "1.2.3 Express and justify opinions using simple reasoning.",
+        "2.1.1 Give detailed information about themselves, justifying their views.",
+        "1.1.1 Recognise and reproduce with support compound sentence structures.",
+        "1.2.5 Understand a wide range of basic supported questions and suggestions."
+      ],
+      "objectives": [
+        "To express an opinion and provide 2 reasons for it using 'because'.",
+        "To ask and answer questions about personal feelings (e.g., 'How do you feel about...?).",
+        "To construct 3 compound sentences using 'and', 'but', or 'so'.",
+        "To understand the main point and details of a complex dialogue about making new friends."
+      ],
+      "activities": [
+        "Dialogue practice: Role-playing a scenario where a conflict needs resolution.",
+        "Vocabulary drill: Adjectives for feelings and reasoning words (because, since).",
+        "Group discussion: Debating 'Is it better to work alone or in a group?'",
+        "Sentence construction: Combining two simple sentences into a compound sentence.",
+        "Choral repetition of opinion phrases (e.g., 'In my opinion...', 'I think that...').",
+        "Pair work: Asking and justifying opinions on school issues.",
+        "Story time: Listening to a story focusing on complex social interaction.",
+        "Writing 3 sentences expressing and justifying a feeling."
+      ],
+      "assessments": [
+        "Oral performance: Justifying an opinion (Summative).",
+        "Observation checklist for use of compound sentences and 'because'.",
+        "Listening task: Identifying the reason behind a feeling/opinion.",
+        "Assessment of dialogue fluency and structure."
+      ],
+      "aids": [
+        "Opinion phrase chart.",
+        "Conjunction word cards (and, but, so).",
+        "Audio recordings of complex dialogues.",
+        "Worksheets for sentence combining."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 2: My Family Tree (Family Roles & Descriptions)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple biographical texts.",
+        "3.2.2 Understand specific information and details (family relationships/traits).",
+        "4.3.2 Able to write paragraphs describing people using adjectives and adverbs.",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a family profile).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a family profile and extract 6 descriptive details about 3 people.",
+        "To write a two-paragraph profile of a family member, including their role and personality.",
+        "To correctly use a range of descriptive adjectives and adverbs.",
+        "To identify and correct 3 grammatical errors (SVA) in a profile text."
+      ],
+      "activities": [
+        "Reading a short biography of a family member (e.g., an inventor relative).",
+        "Vocabulary focus: Advanced descriptive adjectives and adverbs.",
+        "Drawing and describing: Students draw a family tree and write a short caption for each person.",
+        "Guided writing: Writing the first paragraph of a family profile.",
+        "Error correction drill focusing on Subject-Verb Agreement (SVA) with singular/plural nouns.",
+        "Pair work: Reading and peer-editing each other's profiles.",
+        "Jumbled sentences: Reordering sentences to form a coherent descriptive paragraph.",
+        "Creating a simple 'My Family History' timeline."
+      ],
+      "assessments": [
+        "Written task: Family profile grading (content, coherence, and grammar).",
+        "Reading comprehension: Answering inferential questions about family roles.",
+        "Grammar quiz: SVA and adjective/adverb placement.",
+        "Spelling test on descriptive vocabulary."
+      ],
+      "aids": [
+        "Model biographical texts.",
+        "Adjective/Adverb word bank.",
+        "Family tree templates.",
+        "Writing templates for profiles."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 3: A Day in the Life (Present Perfect Tense)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements in the Present Perfect Tense (experiences).",
+        "1.2.2 Ask and answer questions using 'Have you ever...?'",
+        "1.2.3 Express and justify opinions about experiences and achievement.",
+        "2.1.1 Give detailed information about life experiences using 'for' and 'since'.",
+        "1.1.1 Recognise and reproduce with support past participle forms.",
+        "1.2.5 Understand a wide range of basic supported questions about experience."
+      ],
+      "objectives": [
+        "To describe 4 life experiences using the Present Perfect Tense correctly.",
+        "To ask and answer 'Have you ever...?' questions.",
+        "To correctly use 'for' and 'since' to describe duration (3 examples).",
+        "To understand the main idea of a dialogue about a friend's achievements."
+      ],
+      "activities": [
+        "Dialogue practice: Role-playing a conversation about past travel/achievements.",
+        "Vocabulary drill: Past participles of common verbs (seen, been, done).",
+        "Survey activity: Asking classmates 'Have you ever...?'",
+        "Timeline activity: Listing their life experiences (using P. Perfect).",
+        "Choral repetition of sentences using 'I have been...' and 'I have lived... for/since'.",
+        "Pair work: Sharing a significant experience and the duration.",
+        "Story time: Listening to a story focused on achieving a long-term goal.",
+        "Writing 4 sentences about their own 'bucket list' of experiences."
+      ],
+      "assessments": [
+        "Oral performance: Sharing an experience (P. Perfect and 'for/since' accuracy).",
+        "Observation checklist for use of Present Perfect.",
+        "Listening task: Identifying the duration of an event.",
+        "Grammar quiz on Past Participles."
+      ],
+      "aids": [
+        "Present Perfect Tense chart (have/has + PP).",
+        "Past Participle list.",
+        "Audio recordings of interview dialogues.",
+        "Worksheets for 'for/since' practice."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 4: Story Time (Reported Speech)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple narratives (direct speech).",
+        "3.2.2 Understand specific information and details (quoted dialogue).",
+        "4.3.2 Able to rewrite direct speech into reported speech in simple sentences.",
+        "4.3.3 Able to use punctuation and spelling correctly (quotation marks).",
+        "4.2.1 Able to write notes and drafts (a news report).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a story and identify 5 instances of direct speech.",
+        "To write 4 sentences converting direct speech into reported speech (simple changes).",
+        "To correctly use quotation marks for direct speech.",
+        "To identify the main conflict and resolution in a short narrative."
+      ],
+      "activities": [
+        "Reading a short story containing extensive dialogue.",
+        "Vocabulary focus: Reporting verbs (said, asked, told).",
+        "Transformation exercise: Converting direct speech to reported speech (and vice versa).",
+        "Guided writing: Writing a short news report about a class event using reported speech.",
+        "Error correction drill focusing on quotation marks and comma placement.",
+        "Pair work: Retelling a short conversation they had using reported speech.",
+        "Jumbled sentences: Rearranging sentences to form a coherent narrative using reported speech.",
+        "Creating a simple comic strip with both direct and reported speech captions."
+      ],
+      "assessments": [
+        "Written task: Transformation exercise (Direct to Reported Speech).",
+        "Reading comprehension: Answering questions based on quoted dialogue.",
+        "Punctuation quiz (use of quotation marks).",
+        "Checklist for correct use of reporting verbs."
+      ],
+      "aids": [
+        "Simple narratives with dialogue.",
+        "Reported Speech transformation chart (e.g., 'am' to 'was').",
+        "Writing templates for news reports.",
+        "Punctuation rules chart."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 5: Food, Please! (Modal Verbs for Possibility)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements to express possibility (might, could).",
+        "1.2.2 Ask and answer questions about speculation and probability.",
+        "1.2.3 Express simple ideas about uncertain events.",
+        "2.1.1 Give detailed reasons for uncertain plans or choices.",
+        "1.1.1 Recognise and reproduce with support modal verbs (might, could, may).",
+        "1.2.5 Understand a wider range of basic supported questions."
+      ],
+      "objectives": [
+        "To describe 4 uncertain events or plans using 'might' or 'could'.",
+        "To ask and answer questions about the possibility of an event (e.g., 'Will it rain?').",
+        "To correctly use 'might' and 'could' to speculate about a situation.",
+        "To understand the difference in meaning between 'will' and 'might'."
+      ],
+      "activities": [
+        "Discussion: Predicting the weather or school events.",
+        "Flashcard drill: Matching pictures to speculation sentences.",
+        "Role-play: Discussing uncertain weekend plans.",
+        "Picture prediction: Looking at a picture and speculating about what might happen next.",
+        "Choral repetition of sentences using 'might/could'.",
+        "Pair work: Asking and answering about possible future jobs.",
+        "Story time: Listening to a story where the ending is uncertain.",
+        "Writing 4 sentences about what they might have for dinner."
+      ],
+      "assessments": [
+        "Oral performance: Speculating about a picture (use of modals).",
+        "Observation checklist for use of 'might/could'.",
+        "Listening task: Identifying the degree of certainty expressed.",
+        "Grammar quiz on modal verbs of possibility."
+      ],
+      "aids": [
+        "Modal verb chart (might, could, may).",
+        "Pictures for prediction.",
+        "Audio recordings of dialogues with speculation.",
+        "Worksheets for modal verb practice."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 6: Getting Around (Passive Voice - Simple)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple informational texts (focus on object).",
+        "3.2.2 Understand specific information and details (facts about inventions).",
+        "4.3.2 Able to write simple sentences in the passive voice (present and past).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (an invention fact file).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a text about an invention and identify 5 uses of the Passive Voice.",
+        "To write 4 sentences about an invention using the Passive Voice (e.g., 'It was invented by...').",
+        "To correctly form the Passive Voice (to be + PP) in Present and Past Simple.",
+        "To rewrite 3 Active Voice sentences into Passive Voice."
+      ],
+      "activities": [
+        "Reading a text about the invention of the telephone/car.",
+        "Vocabulary focus: Past Participles and invention terms.",
+        "Transformation exercise: Converting Active Voice to Passive Voice.",
+        "Guided writing: Writing a fact sheet about an invention using Passive Voice.",
+        "Error correction drill focusing on 'to be' agreement in Passive Voice.",
+        "Pair work: Researching and sharing facts about an invention using Passive Voice.",
+        "Jumbled sentences: Reordering words to form Passive Voice sentences.",
+        "Creating a simple poster about a local landmark using Passive Voice description."
+      ],
+      "assessments": [
+        "Written task: Transformation exercise (A to P Voice).",
+        "Reading comprehension: Answering questions about the inventor/date.",
+        "Grammar quiz: Forming the Passive Voice.",
+        "Checklist for correct use of 'by'."
+      ],
+      "aids": [
+        "Passive Voice structure chart.",
+        "Simple informational texts on inventions.",
+        "Past Participle list.",
+        "Writing templates for fact sheets."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 7: Life in the Past (Past Perfect Tense)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements in the Past Perfect Tense (sequence of events).",
+        "1.2.2 Ask and answer questions about the sequence of past actions.",
+        "1.2.3 Express simple ideas about historical sequence using 'before' and 'after'.",
+        "2.1.1 Give detailed information about a past experience, clearly sequencing events.",
+        "1.1.1 Recognise and reproduce with support Past Perfect structures.",
+        "1.2.5 Understand a wider range of basic supported questions."
+      ],
+      "objectives": [
+        "To describe 3 sequenced past events using the Past Perfect Tense correctly.",
+        "To ask and answer questions about the order of past actions.",
+        "To correctly use 'had' + Past Participle to form the Past Perfect Tense.",
+        "To understand the main idea of a narrative focusing on event sequence."
+      ],
+      "activities": [
+        "Discussion: Sequencing a series of events (e.g., what happened before they came to school).",
+        "Flashcard drill: Sequencing event cards and describing the order.",
+        "Role-play: Telling a story about a confusing day, focusing on sequence.",
+        "Timeline activity: Drawing a personal timeline and writing sentences using Past Perfect.",
+        "Choral repetition of sentences using 'had' + Past Participle.",
+        "Pair work: Interviewing each other about a past mistake and what had happened before.",
+        "Story time: Listening to a story where the Past Perfect is used for flashbacks.",
+        "Writing 4 sentences about a party they attended and what the guests had done before."
+      ],
+      "assessments": [
+        "Oral performance: Narrating a sequence of events (Past Perfect accuracy).",
+        "Observation checklist for use of 'before/after'.",
+        "Listening task: Identifying the first action in a pair of actions.",
+        "Grammar quiz on Past Perfect structure."
+      ],
+      "aids": [
+        "Past Perfect Tense chart (had + PP).",
+        "Sequence cards for storytelling.",
+        "Audio recordings of narrative sequences.",
+        "Worksheets for timeline writing."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 8: Incredible Journeys (Formal/Informal Writing)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea and specific details of longer informational texts (travel).",
+        "3.2.2 Understand and use synonyms and antonyms in context.",
+        "4.3.2 Able to write formal and informal texts (e.g., emails, reports).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to produce a written plan for a variety of tasks.",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a travel article and summarise it into 50-70 words.",
+        "To write an informal letter describing a trip, adhering to the correct format.",
+        "To correctly use 5 synonyms and 5 antonyms from the text.",
+        "To identify the key structural differences between a formal and informal text."
+      ],
+      "activities": [
+        "Reading a formal travel article and an informal travel blog post (comparison).",
+        "Vocabulary focus: Synonyms and antonyms related to travel (e.g., beautiful/stunning).",
+        "Comparison activity: Listing the features of formal vs. informal writing.",
+        "Guided writing: Writing an informal letter to a penpal about a trip.",
+        "Error correction drill focusing on formal/informal language register.",
+        "Pair work: Planning a dream trip and listing the vocabulary they would use to describe it.",
+        "Jumbled sentences: Reordering sentences to form a coherent summary.",
+        "Creating a travel brochure for a destination, using descriptive language."
+      ],
+      "assessments": [
+        "Written task: Informal letter grading (format, content, and language).",
+        "Reading comprehension: Summary writing assessment.",
+        "Vocabulary test (synonyms/antonyms).",
+        "Checklist for adherence to informal writing conventions."
+      ],
+      "aids": [
+        "Model formal/informal letters/emails.",
+        "Thesaurus (digital or physical).",
+        "Travel articles and blog posts.",
+        "Worksheets for summary writing."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 9: Go Green (Environment & Conditionals)",
+      "skill_name": "Language Arts",
+      "standards": [
+        "5.1.1 Able to enjoy and appreciate literary texts (poems/stories about environment).",
+        "5.1.2 Able to understand and respond to literary texts.",
+        "5.2.1 Able to express feelings and give a simple opinion about environmental issues.",
+        "5.2.2 Able to respond imaginatively to literary texts (campaign/protest).",
+        "4.2.1 Able to write notes and drafts (a simple campaign message).",
+        "1.2.4 Express simple ideas using simple conditional sentences (If... then...)."
+      ],
+      "objectives": [
+        "To write a short poem (4 lines) about environmental protection.",
+        "To identify 2 main environmental problems discussed in a text.",
+        "To express one strong opinion about an environmental issue, justifying it.",
+        "To construct 3 correct First Conditional sentences (If we do X, then Y will happen)."
+      ],
+      "activities": [
+        "Reading an environmental poem or short story about pollution.",
+        "Discussion: Talking about local environmental issues and solutions.",
+        "Choral repetition of First Conditional sentences (cause and effect).",
+        "Drawing activity: Creating a poster for an environmental campaign.",
+        "Role-play: Acting as environmental activists making a speech.",
+        "Pair work: Completing conditional sentences (If we recycle, ...).",
+        "Guided writing: Writing a simple campaign message using conditional sentences.",
+        "Watching a documentary clip on recycling and discussing the content."
+      ],
+      "assessments": [
+        "Observation of role-play/speech (persuasion and fluency).",
+        "Oral performance: Expressing justified opinions on environment.",
+        "Written task: Poem/campaign message grading.",
+        "Grammar quiz on First Conditional structure."
+      ],
+      "aids": [
+        "Environmental poems/stories.",
+        "First Conditional structure chart.",
+        "Pictures/videos of environmental problems.",
+        "Worksheets for conditional sentence completion."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 10: Going Places (Future Perfect Tense)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple statements in the Future Perfect Tense (completed action).",
+        "1.2.2 Ask and answer questions about future completion (Will you have finished...?).",
+        "1.2.3 Express simple ideas about achievements by a certain time.",
+        "2.1.1 Give detailed information about future plans that will be completed.",
+        "1.1.1 Recognise and reproduce with support Future Perfect structures.",
+        "1.2.5 Understand a wider range of basic supported questions."
+      ],
+      "objectives": [
+        "To describe 3 actions that will be completed by a specific time in the future.",
+        "To ask and answer questions about future project completion.",
+        "To correctly use 'will have' + Past Participle to form the Future Perfect Tense.",
+        "To understand the main idea of a dialogue about long-term goals."
+      ],
+      "activities": [
+        "Discussion: Setting goals for the next year (using Future Perfect).",
+        "Flashcard drill: Matching time markers (by next year) to actions.",
+        "Role-play: Discussing project deadlines and completion.",
+        "Timeline activity: Drawing a future timeline and writing sentences using Future Perfect.",
+        "Choral repetition of Future Perfect sentences.",
+        "Pair work: Interviewing each other about what they will have achieved by age 30.",
+        "Story time: Listening to a story about a character who achieved a difficult goal.",
+        "Writing 4 sentences about what the teacher will have done by the end of the day."
+      ],
+      "assessments": [
+        "Oral performance: Discussing future achievements (Future Perfect accuracy).",
+        "Observation checklist for use of 'by' + future time.",
+        "Listening task: Identifying the action that will be completed first.",
+        "Grammar quiz on Future Perfect structure."
+      ],
+      "aids": [
+        "Future Perfect Tense chart (will have + PP).",
+        "Goal setting worksheets.",
+        "Audio recordings of planning dialogues.",
+        "Worksheets for time expressions."
+      ]
+    },
+    // --- YEAR 6: 10 UNITS ---
+    {
+      "year": 6,
+      "topic_name": "Unit 1: Back to School (Revision of Tenses & Grammar)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple, compound, and complex statements correctly (mixed tenses).",
+        "1.2.2 Ask and answer a wide range of questions about past, present, and future events.",
+        "1.2.3 Express and justify opinions using appropriate linking devices.",
+        "2.1.1 Give detailed information about their life/plans, using varied sentence structures.",
+        "1.1.1 Recognise and reproduce with support varied sentence structures and intonation.",
+        "1.2.5 Understand a wide range of complex questions."
+      ],
+      "objectives": [
+        "To describe 3 events in the Past, Present, and Future using the correct tense (9 sentences).",
+        "To ask and answer questions that require the use of different tenses.",
+        "To express an opinion and provide 3 justifications using 'furthermore' or 'however'.",
+        "To understand the main points and supporting details of a formal discussion."
+      ],
+      "activities": [
+        "Dialogue practice: Role-playing a formal interview (covering past experience, present job, future plans).",
+        "Vocabulary drill: Review of connectors and linking devices.",
+        "Group discussion: Debating a current school issue (focus on justification).",
+        "Sentence transformation: Converting sentences between different tenses.",
+        "Choral repetition of complex sentences with varied tenses.",
+        "Pair work: Interviewing each other about their goals and obstacles.",
+        "Listening comprehension drill on mixed tenses.",
+        "Writing a short speech about their favourite school memory (Past Tense focus)."
+      ],
+      "assessments": [
+        "Oral performance: Formal interview (Tense accuracy and justification).",
+        "Observation checklist for use of varied tenses and linking devices.",
+        "Listening task: Identifying the tense used in various statements.",
+        "Assessment of dialogue structure and complexity."
+      ],
+      "aids": [
+        "Tense review charts (Past, Present, Future).",
+        "Linking device word cards (however, furthermore, consequently).",
+        "Audio recordings of formal discussions.",
+        "Interview script templates."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 2: Express Yourself (Advanced Adjectives & Description)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea and specific details of longer descriptive texts.",
+        "3.2.2 Understand and use advanced vocabulary (synonyms/antonyms).",
+        "4.3.2 Able to write detailed descriptive essays and articles.",
+        "4.3.3 Able to use punctuation, spelling, and grammar correctly (complex structures).",
+        "4.2.1 Able to produce a detailed written plan for a descriptive essay.",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a descriptive article and extract 8 high-level adjectives/adverbs.",
+        "To write a detailed descriptive paragraph (6-8 sentences) about a person or place.",
+        "To correctly use synonyms and antonyms to enhance description.",
+        "To identify and correct 5 grammatical errors (Tense, SVA, Word Choice) in a draft."
+      ],
+      "activities": [
+        "Reading a detailed descriptive essay about a famous landmark or person.",
+        "Vocabulary focus: Advanced descriptive adjectives (e.g., magnificent, dilapidated, meticulous).",
+        "Comparison chart activity: Listing synonyms and antonyms for common adjectives.",
+        "Guided writing: Writing a descriptive paragraph using a variety of sensory details.",
+        "Error correction drill focusing on sophisticated word choice and complex sentence structure.",
+        "Pair work: Peer-editing descriptive essays focusing on vocabulary richness.",
+        "Jumbled sentences: Reordering sentences to improve paragraph flow and coherence.",
+        "Creating a 'Word Wall' of advanced descriptive vocabulary."
+      ],
+      "assessments": [
+        "Written task: Descriptive essay grading (vocabulary, style, and coherence).",
+        "Reading comprehension: Answering inferential questions about tone/atmosphere.",
+        "Vocabulary test (synonyms/antonyms).",
+        "Checklist for use of complex sentence structures."
+      ],
+      "aids": [
+        "Model descriptive essays.",
+        "Advanced adjective word bank.",
+        "Thesaurus (digital or physical).",
+        "Writing rubrics for descriptive writing."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 3: Healthy Living (Health & Lifestyle Advice)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use compound statements to give detailed advice (You should... because...)",
+        "1.2.2 Ask and answer questions about complex health problems and solutions.",
+        "1.2.3 Express and justify opinions about controversial health topics (e.g., sugar tax).",
+        "2.1.1 Give a short, persuasive talk on a chosen healthy living topic.",
+        "1.1.1 Recognise and reproduce with support persuasive language and tone.",
+        "1.2.5 Understand a wide range of complex persuasive arguments."
+      ],
+      "objectives": [
+        "To give 5 pieces of detailed advice on a health topic using compound sentences.",
+        "To ask and answer complex 'What if...?' questions about health risks.",
+        "To express and justify an opinion on a health topic with 3 reasons.",
+        "To understand the main arguments and counter-arguments in a health debate."
+      ],
+      "activities": [
+        "Discussion: Debating the use of social media and mental health.",
+        "Flashcard drill: Matching complex ailments to treatments.",
+        "Role-play: An expert giving a public health advisory.",
+        "Persuasive talk preparation: Planning arguments and counter-arguments.",
+        "Choral repetition of persuasive phrases (e.g., 'It is vital that...', 'I strongly believe...').",
+        "Pair work: Critiquing a health advertisement.",
+        "Listening comprehension on a news report about a health issue.",
+        "Writing 4 sentences summarizing the main arguments of a debate."
+      ],
+      "assessments": [
+        "Oral performance: Persuasive talk (content, fluency, and persuasion).",
+        "Observation checklist for use of complex advice structures.",
+        "Listening task: Identifying speaker's stance and key evidence.",
+        "Assessment of debate participation and justification."
+      ],
+      "aids": [
+        "Persuasive language charts.",
+        "Complex health vocabulary lists.",
+        "Audio recordings of debates/public talks.",
+        "Talk planning templates."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 4: Amazing Discoveries (Conditional Type 3)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of short simple informational texts (historical events).",
+        "3.2.2 Understand specific information and details (causes and effects).",
+        "4.3.2 Able to write sentences using the Third Conditional to discuss hypothetical past.",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a 'What if' historical analysis).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a historical text and formulate 3 Third Conditional sentences about it.",
+        "To write a short paragraph (5 sentences) speculating on a hypothetical past event.",
+        "To correctly form the Third Conditional (If + had + PP, would have + PP).",
+        "To identify the key events and turning points in a discovery text."
+      ],
+      "activities": [
+        "Reading a text about a major historical 'accident' or turning point (e.g., the discovery of penicillin).",
+        "Vocabulary focus: Verbs and time markers.",
+        "Transformation exercise: Converting simple past facts into Third Conditional speculations.",
+        "Guided writing: Writing a 'What if' paragraph (e.g., 'What if the wheel hadn't been invented?').",
+        "Error correction drill focusing on the correct form of the Third Conditional.",
+        "Pair work: Discussing and writing 3 things they would have done differently last year.",
+        "Jumbled sentences: Reordering Third Conditional clauses.",
+        "Creating a timeline of a discovery with a speculative caption."
+      ],
+      "assessments": [
+        "Written task: 'What if' paragraph grading (Third Conditional accuracy).",
+        "Reading comprehension: Answering questions about cause/effect.",
+        "Grammar quiz: Forming the Third Conditional.",
+        "Checklist for correct use of Past Perfect and Modal Perfect."
+      ],
+      "aids": [
+        "Third Conditional structure chart.",
+        "Simple historical texts.",
+        "Writing templates for speculation.",
+        "Past Participle list."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 5: Food and Culture (Formal Discussion & Etiquette)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use simple and compound statements to discuss cultural practices.",
+        "1.2.2 Ask and answer questions about formal etiquette and rules.",
+        "1.2.3 Express and justify opinions about cultural food practices politely.",
+        "2.1.1 Give detailed information about a cultural celebration, adhering to formal tone.",
+        "1.1.1 Recognise and reproduce with support formal discourse markers.",
+        "1.2.5 Understand a wide range of complex questions on cultural norms."
+      ],
+      "objectives": [
+        "To discuss 3 cultural food norms using formal language.",
+        "To ask and answer questions about table manners politely (e.g., 'Is it customary to...').",
+        "To express one justified opinion about cultural practices without being offensive.",
+        "To understand the main differences between formal and informal cultural descriptions."
+      ],
+      "activities": [
+        "Dialogue practice: Role-playing a formal dinner conversation.",
+        "Vocabulary drill: Formal etiquette terms (customary, appropriate, improper).",
+        "Group discussion: Comparing table manners from different cultures.",
+        "Presentation: Students research and present on a food-related cultural festival.",
+        "Choral repetition of formal phrases (e.g., 'May I suggest...', 'With all due respect...').",
+        "Pair work: Interviewing each other about family traditions.",
+        "Listening comprehension on a talk about diplomacy and culture.",
+        "Writing 4 sentences summarizing the etiquette for a formal event."
+      ],
+      "assessments": [
+        "Oral performance: Cultural presentation (formality, content, and tone).",
+        "Observation checklist for use of formal language.",
+        "Listening task: Identifying correct etiquette in a scenario.",
+        "Assessment of polite justification of opinions."
+      ],
+      "aids": [
+        "Charts of formal/polite phrases.",
+        "Pictures/videos of cultural ceremonies.",
+        "Audio recordings of formal discussions.",
+        "Role-play scenarios on etiquette."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 6: Getting Around (Reported Speech - Advanced)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of longer narratives containing extensive dialogue.",
+        "3.2.2 Understand specific information and details (complex dialogue/instructions).",
+        "4.3.2 Able to rewrite direct speech into reported speech (statements, questions, commands).",
+        "4.3.3 Able to use punctuation and spelling correctly.",
+        "4.2.1 Able to write notes and drafts (a complex news report).",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a script and transform 5 complex direct speech sentences into reported speech.",
+        "To write a short news report using reported commands and questions (e.g., 'He asked me where I was going').",
+        "To correctly change tenses, pronouns, and time expressions in reported speech.",
+        "To identify the key information conveyed in a quoted statement."
+      ],
+      "activities": [
+        "Reading a detailed interview script (direct speech).",
+        "Vocabulary focus: Complex reporting verbs (admitted, demanded, advised).",
+        "Transformation exercise: Converting direct to reported speech (statements, questions, commands).",
+        "Guided writing: Writing a police report or school incident report using reported speech.",
+        "Error correction drill focusing on tense shifts (backshifting) and pronoun changes.",
+        "Pair work: Retelling a complex story/debate they witnessed using reported speech.",
+        "Jumbled sentences: Reordering clauses in a reported speech sentence.",
+        "Creating a dialogue where one character reports what another has said."
+      ],
+      "assessments": [
+        "Written task: Complex Reported Speech transformation (Summative).",
+        "Reading comprehension: Answering questions based on reported dialogue.",
+        "Grammar quiz: Tense backshifting and pronoun changes.",
+        "Checklist for correct use of reporting verbs."
+      ],
+      "aids": [
+        "Advanced Reported Speech charts (tense changes).",
+        "Complex interview scripts.",
+        "Reporting verb list.",
+        "Worksheets for transformation."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 7: Time Travel (Hypothetical Situations - Mixed Conditionals)",
+      "skill_name": "Listening & Speaking",
+      "standards": [
+        "1.2.1 Understand and use statements using Mixed Conditionals (e.g., 2nd and 3rd).",
+        "1.2.2 Ask and answer questions about complex hypothetical situations.",
+        "1.2.3 Express and justify opinions about historical events and alternative outcomes.",
+        "2.1.1 Give a detailed explanation of a complex hypothetical scenario.",
+        "1.1.1 Recognise and reproduce with support Mixed Conditional structures.",
+        "1.2.5 Understand a wide range of complex hypothetical arguments."
+      ],
+      "objectives": [
+        "To describe 3 hypothetical scenarios using Mixed Conditional sentences.",
+        "To ask and answer questions about historical counter-factuals.",
+        "To express one justified opinion on which invention was most important and why.",
+        "To understand the difference in meaning between Conditional Type 2 and Type 3."
+      ],
+      "activities": [
+        "Discussion: Debating the outcomes of historical changes ('If X had happened, Y would be...').",
+        "Flashcard drill: Matching condition clauses to result clauses (Mixed Conditionals).",
+        "Role-play: Time travellers debating whether to change a past event.",
+        "Speculation chart: Filling in a chart for different hypothetical situations.",
+        "Choral repetition of Mixed Conditional sentences.",
+        "Pair work: Creating a short story based on a Mixed Conditional premise.",
+        "Listening comprehension on philosophical arguments about time travel.",
+        "Writing 4 sentences about what they would do if they were rich now (Type 2) and what they would have done if they had won the lottery (Type 3)."
+      ],
+      "assessments": [
+        "Oral performance: Explaining a complex hypothetical scenario (Summative).",
+        "Observation checklist for use of Mixed Conditionals.",
+        "Listening task: Identifying the consequence of a hypothetical past action.",
+        "Grammar quiz on Conditional Type 2 and Type 3."
+      ],
+      "aids": [
+        "Mixed Conditional structure charts.",
+        "Cards with historical facts for speculation.",
+        "Audio recordings of complex debates.",
+        "Worksheets for sentence completion."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 8: The World of Work (Careers & Application Forms)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea of job advertisements and application forms.",
+        "3.2.2 Understand specific information and details (qualifications/requirements).",
+        "4.3.2 Able to write formal letters (e.g., job application) and résumés/CVs.",
+        "4.3.3 Able to use punctuation, spelling, and grammar correctly in formal texts.",
+        "4.2.1 Able to produce a detailed written plan for a job application letter.",
+        "3.2.3 Guess the meaning of unfamiliar words from context (jargon)."
+      ],
+      "objectives": [
+        "To read a job ad and list 5 qualifications required.",
+        "To write a formal application letter for a job opening, adhering to format.",
+        "To correctly use formal vocabulary and tone in writing.",
+        "To identify and correct 5 errors (grammar/typo) in a sample formal letter."
+      ],
+      "activities": [
+        "Reading and analysing formal job advertisements and application forms.",
+        "Vocabulary focus: Formal terms and career jargon.",
+        "Comparison activity: Listing the features of a formal letter.",
+        "Guided writing: Writing the opening and closing paragraphs of a formal letter.",
+        "Error correction drill focusing on formality and punctuation in letters.",
+        "Pair work: Researching and summarizing the requirements for a dream job.",
+        "Jumbled sentences: Reordering sentences in a formal application letter.",
+        "Creating a simple CV/résumé draft."
+      ],
+      "assessments": [
+        "Written task: Formal application letter grading (format, tone, and grammar).",
+        "Reading comprehension: Answering questions about job requirements.",
+        "Vocabulary test (formal/career terms).",
+        "Checklist for adherence to formal writing conventions."
+      ],
+      "aids": [
+        "Model formal letters and résumés.",
+        "Job advertisement samples.",
+        "Formal vocabulary lists.",
+        "Writing templates for formal letters."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 9: Go Green (Environmental Persuasion & Solutions)",
+      "skill_name": "Language Arts",
+      "standards": [
+        "5.1.1 Able to enjoy and appreciate literary texts (speeches/essays on environment).",
+        "5.1.2 Able to understand and respond to literary texts.",
+        "5.2.1 Able to express feelings and give a well-justified opinion on global issues.",
+        "5.2.2 Able to respond imaginatively to literary texts (formal speech/campaign).",
+        "4.2.1 Able to write notes and drafts (a persuasive essay plan).",
+        "1.2.4 Express complex ideas using rhetorical devices (e.g., repetition, parallelism)."
+      ],
+      "objectives": [
+        "To write a persuasive essay paragraph (6-8 sentences) on an environmental solution.",
+        "To identify 2 rhetorical devices used in a persuasive text (e.g., speech).",
+        "To express a strong, justified opinion on a global issue, proposing a solution.",
+        "To perform a short persuasive speech to the class."
+      ],
+      "activities": [
+        "Reading a famous persuasive speech (e.g., environmental activist).",
+        "Discussion: Analysing persuasive techniques (rhetoric, evidence).",
+        "Choral repetition of powerful persuasive phrases.",
+        "Drawing activity: Designing a logo and slogan for a new environmental organisation.",
+        "Role-play: Acting as a representative at a climate change conference.",
+        "Pair work: Developing arguments and counter-arguments for a debate.",
+        "Guided writing: Writing an opening paragraph for a persuasive essay.",
+        "Watching a video of a persuasive campaign and discussing its effectiveness."
+      ],
+      "assessments": [
+        "Observation of persuasive speech performance (rhetoric and content).",
+        "Oral performance: Justifying a solution to a global issue (Summative).",
+        "Written task: Persuasive essay paragraph grading.",
+        "Checklist for use of evidence and linking devices."
+      ],
+      "aids": [
+        "Model persuasive speeches/essays.",
+        "Rhetorical device charts.",
+        "Videos of persuasive campaigns.",
+        "Essay planning templates."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 10: Graduation (Reflection & Future Plans)",
+      "skill_name": "Reading & Writing",
+      "standards": [
+        "3.2.1 Understand the main idea and specific details of reflective and forward-looking texts.",
+        "3.2.2 Understand and use complex vocabulary related to future aspirations.",
+        "4.3.2 Able to write reflective essays and formal letters of gratitude/farewell.",
+        "4.3.3 Able to use punctuation, spelling, and grammar correctly (complex structures).",
+        "4.2.1 Able to produce a detailed written plan for a reflective essay.",
+        "3.2.3 Guess the meaning of unfamiliar words from context."
+      ],
+      "objectives": [
+        "To read a reflective essay and list 5 key lessons learned.",
+        "To write a reflective paragraph about their primary school journey (Past Perfect focus).",
+        "To write a formal farewell/thank you letter to a teacher/classmate.",
+        "To correctly use Future Continuous Tense to describe life in a few years."
+      ],
+      "activities": [
+        "Reading a reflective essay from a graduating student.",
+        "Vocabulary focus: Reflective and aspirational terms (e.g., challenging, pivotal, aspiration).",
+        "Timeline activity: Listing key memories and future goals.",
+        "Guided writing: Writing a reflective paragraph using Past Perfect ('I had learned...').",
+        "Writing practice: Drafting a formal thank you letter.",
+        "Pair work: Discussing what they will be doing 5 years from now (Future Continuous).",
+        "Jumbled sentences: Reordering sentences in a reflective essay.",
+        "Creating a simple 'Time Capsule' of their primary school memories with captions."
+      ],
+      "assessments": [
+        "Written task: Formal farewell letter grading (tone, format, and content).",
+        "Reading comprehension: Answering questions about lessons learned/future plans.",
+        "Grammar quiz: Future Continuous and Past Perfect Tense.",
+        "Checklist for adherence to reflective tone."
+      ],
+      "aids": [
+        "Model reflective essays and formal letters.",
+        "Vocabulary list for reflection/aspiration.",
+        "Future Continuous Tense chart.",
+        "Time Capsule activity templates."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1802 @@
+{
+  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Sains - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
+  "subject": "Sains",
+  "data": [
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 1: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 1,
+      "topic_name": "Unit 1: Kemahiran Saintifik - Memerhati dan Mengelas",
+      "skill_name": "Kemahiran Proses Sains",
+      "standards": [
+        "1.1.1 Memerhati dengan menggunakan semua deria yang terlibat untuk mengenal pasti objek dan fenomena.",
+        "1.1.2 Mengelas dengan membandingkan atau mengenal pasti persamaan dan perbezaan."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan lima deria manusia dan fungsinya.",
+        "Murid dapat memerhati dan menerangkan 3 ciri objek (bentuk, warna, tekstur).",
+        "Murid dapat mengelaskan sekumpulan objek kepada dua kumpulan berdasarkan satu ciri sepunya yang jelas."
+      ],
+      "activities": [
+        "Aktiviti 'Kenali Deria Saya': Murid menutup mata dan mengenal pasti objek menggunakan deria sentuhan dan bau.",
+        "Latih Amal: Mengelaskan blok mainan atau daun mengikut warna, saiz, dan tekstur.",
+        "Perbincangan: Mengapa kita perlu memerhati dengan teliti dalam Sains."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid mengelaskan 10 objek dengan betul.",
+        "Latihan Bertulis: Melengkapkan jadual untuk mengelaskan objek hidup dan bukan hidup.",
+        "Ujian Lisan: Soalan tentang penggunaan deria dalam situasi harian."
+      ],
+      "aids": [
+        "Set objek pelbagai ciri (buah, bunga, batu).",
+        "Carta/Gambar lima deria manusia.",
+        "Lembaran kerja pengelasan."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 2: Benda Hidup dan Benda Bukan Hidup",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "2.1.1 Mengenal pasti benda hidup dan benda bukan hidup.",
+        "2.1.2 Membezakan keperluan asas benda hidup (makanan, air, udara)."
+      ],
+      "objectives": [
+        "Murid dapat memberi 3 contoh benda hidup dan 3 contoh benda bukan hidup.",
+        "Murid dapat menyatakan 2 keperluan asas manusia, haiwan, dan tumbuhan.",
+        "Murid dapat membandingkan ciri benda hidup (bergerak, bernafas, membesar) dan benda bukan hidup."
+      ],
+      "activities": [
+        "Lawatan ringkas di sekitar sekolah: Murid mencari dan menyenaraikan benda hidup dan bukan hidup.",
+        "Perbincangan: Apakah yang akan berlaku jika benda hidup tidak mendapat air?",
+        "Aktiviti Kumpulan: Mencipta poster 'Ciri-ciri Benda Hidup'."
+      ],
+      "assessments": [
+        "Penilaian Lisan: Soalan tentang perbezaan ciri benda hidup dan bukan hidup.",
+        "Latihan Bertulis: Padankan benda hidup dengan keperluan asasnya.",
+        "Penilaian Produk: Poster Kumpulan."
+      ],
+      "aids": [
+        "Kad imbas benda hidup dan bukan hidup.",
+        "Contoh tumbuhan dan batu.",
+        "Carta keperluan asas."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 3: Manusia (Anggota Badan dan Fungsi)",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "3.1.1 Mengenal pasti anggota badan dan fungsinya (kepala, badan, tangan, kaki).",
+        "3.1.2 Menyatakan kepentingan menjaga kebersihan anggota badan."
+      ],
+      "objectives": [
+        "Murid dapat melabelkan 5 anggota badan utama pada gambar rajah.",
+        "Murid dapat menyatakan fungsi 3 anggota badan (contoh: tangan untuk memegang, kaki untuk berjalan).",
+        "Murid dapat menerangkan 2 cara menjaga kebersihan diri."
+      ],
+      "activities": [
+        "Nyanyian lagu: 'Kepala Bahu Lutut Kaki' sambil menyentuh anggota badan.",
+        "Lakonkan Aksi: Murid melakonkan fungsi anggota badan (contoh: melompat, makan).",
+        "Perbincangan: Apakah akibat jika kita tidak mandi?"
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan fungsi anggota badan.",
+        "Latihan Bertulis: Melabelkan anggota badan dan menyatakan fungsinya.",
+        "Kuiz Lisan: Soalan tentang kepentingan kebersihan."
+      ],
+      "aids": [
+        "Carta/Model tubuh manusia.",
+        "Cermin.",
+        "Gambar aktiviti kebersihan diri."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 4: Haiwan (Bahagian Utama Haiwan)",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "4.1.1 Mengenal pasti bahagian utama haiwan (kepala, badan, kaki, sayap, sirip, ekor).",
+        "4.1.2 Mengelaskan haiwan berdasarkan bahagian utama badan (contoh: berkaki, bersayap)."
+      ],
+      "objectives": [
+        "Murid dapat melabelkan 3 bahagian utama pada haiwan (contoh: kucing, burung).",
+        "Murid dapat mengelaskan haiwan kepada 2 kumpulan (contoh: berkaki 2 dan berkaki 4).",
+        "Murid dapat menyatakan fungsi 1 bahagian khas haiwan (contoh: sayap untuk terbang)."
+      ],
+      "activities": [
+        "Permainan Padanan: Padankan gambar haiwan dengan bahagian badan yang betul.",
+        "Aktiviti Kumpulan: Mengelaskan kad haiwan mengikut bilangan kaki.",
+        "Melukis dan melabel: Murid melukis haiwan kegemaran dan melabelkan bahagiannya."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid mengelaskan kad haiwan dengan betul.",
+        "Latihan Bertulis: Melabelkan bahagian utama haiwan.",
+        "Ujian Lisan: Soalan tentang fungsi bahagian utama haiwan."
+      ],
+      "aids": [
+        "Kad gambar pelbagai jenis haiwan.",
+        "Carta/Poster bahagian utama haiwan.",
+        "Set aktiviti mengelas."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 5: Tumbuhan (Bahagian Utama Tumbuhan)",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "5.1.1 Mengenal pasti bahagian utama tumbuhan (akar, batang, daun, bunga).",
+        "5.1.2 Menyatakan fungsi bahagian tumbuhan (akar menyerap air, batang mengangkut air)."
+      ],
+      "objectives": [
+        "Murid dapat melabelkan 4 bahagian utama tumbuhan yang lengkap.",
+        "Murid dapat menyatakan fungsi setiap bahagian utama tumbuhan secara ringkas.",
+        "Murid dapat membezakan 2 jenis tumbuhan (berbunga dan tidak berbunga)."
+      ],
+      "activities": [
+        "Aktiviti Luar: Murid memerhati dan menyentuh tumbuhan sebenar di persekitaran sekolah.",
+        "Melukis dan mewarna: Melukis tumbuhan dan melabelkan bahagiannya.",
+        "Demonstrasi: Menunjukkan peranan batang dalam mengangkut air menggunakan bunga putih dan air berwarna."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid melabelkan bahagian tumbuhan hidup.",
+        "Latihan Bertulis: Padankan bahagian tumbuhan dengan fungsinya.",
+        "Ujian Lisan: Soalan tentang fungsi akar dan batang."
+      ],
+      "aids": [
+        "Spesimen tumbuhan sebenar (akar, batang, daun, bunga).",
+        "Carta/Poster tumbuhan berlabel.",
+        "Air berwarna dan bunga putih."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 6: Sifat Bahan (Timbul dan Tenggelam)",
+      "skill_name": "Sains Bahan",
+      "standards": [
+        "6.1.1 Membezakan objek yang timbul dan objek yang tenggelam dalam air.",
+        "6.1.2 Meramalkan sama ada objek akan timbul atau tenggelam dan menguji ramalan."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti sekurang-kurangnya 5 objek yang timbul dan 5 objek yang tenggelam.",
+        "Murid dapat meramal dengan tepat keputusan 80% ujian timbul/tenggelam yang dijalankan.",
+        "Murid dapat merekodkan hasil ujian dalam bentuk jadual yang ringkas."
+      ],
+      "activities": [
+        "Eksperimen Amali: Murid menguji pelbagai objek (batu, kayu, span, kunci) dalam bekas air.",
+        "Latihan Meramal: Murid melukis/menulis ramalan sebelum menjatuhkan objek ke dalam air.",
+        "Perbincangan: Mengapa kayu timbul tetapi batu tenggelam?"
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid merekod keputusan eksperimen dengan betul.",
+        "Latihan Bertulis: Melengkapkan jadual ramalan dan hasil ujian.",
+        "Ujian Lisan: Soalan tentang sifat objek yang menyebabkan ia timbul atau tenggelam."
+      ],
+      "aids": [
+        "Bekas air besar.",
+        "Pelbagai objek (kunci, gabus, syiling, plastik, kayu).",
+        "Lembaran kerja eksperimen."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 7: Sifat Bahan (Penyerapan Air)",
+      "skill_name": "Sains Bahan",
+      "standards": [
+        "6.1.3 Mengelaskan objek berdasarkan keupayaan menyerap air.",
+        "6.1.4 Menerangkan kepentingan objek yang menyerap air dan yang tidak menyerap air dalam kehidupan harian."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 3 contoh bahan yang menyerap air dan 3 contoh bahan yang tidak menyerap air.",
+        "Murid dapat mengelaskan objek kepada dua kategori (menyerap/tidak menyerap) dengan tepat.",
+        "Murid dapat menyatakan fungsi 2 objek yang menyerap air (contoh: tuala untuk mengeringkan)."
+      ],
+      "activities": [
+        "Eksperimen: Menguji keupayaan menyerap air pelbagai bahan (kain, plastik, kertas, span, logam).",
+        "Aktiviti Kumpulan: Mencipta carta alir pengelasan bahan.",
+        "Perbincangan: Mengapa payung dibuat daripada bahan yang tidak menyerap air?"
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menjalankan ujian penyerapan dan merekod hasil.",
+        "Latihan Bertulis: Mengelaskan objek berdasarkan sifat penyerapan air.",
+        "Ujian Lisan: Soalan tentang aplikasi bahan dalam kehidupan harian."
+      ],
+      "aids": [
+        "Set bahan (kain, kertas, plastik, span).",
+        "Air dalam bikar.",
+        "Gambar kegunaan objek menyerap/tidak menyerap air."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 8: Daya (Magnet)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "7.1.1 Mengenal pasti jenis-jenis magnet.",
+        "7.1.2 Mengenal pasti bahan magnet dan bahan bukan magnet.",
+        "7.1.3 Menjelaskan tindakan magnet ke atas pelbagai objek."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 bentuk magnet (contoh: bar, U, cincin).",
+        "Murid dapat mengelaskan 5 objek kepada bahan magnet dan bukan magnet.",
+        "Murid dapat menunjukkan 2 kesan magnet (tarikan dan tolakan) terhadap bahan magnet."
+      ],
+      "activities": [
+        "Aktiviti Penerokaan: Menggunakan magnet untuk menguji pelbagai objek di dalam kelas.",
+        "Demonstrasi: Menunjukkan kutub utara dan selatan magnet (tarikan dan tolakan).",
+        "Permainan: 'Memancing' objek magnet menggunakan magnet."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid membezakan bahan magnet dan bukan magnet.",
+        "Latihan Bertulis: Melukis dan melabelkan jenis-jenis magnet.",
+        "Kuiz Konsep: Soalan tentang tarikan dan tolakan magnet."
+      ],
+      "aids": [
+        "Pelbagai bentuk magnet.",
+        "Objek magnet dan bukan magnet (klip kertas, pemadam, syiling).",
+        "Carta/Poster tindakan magnet."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 9: Cahaya dan Gelap",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "8.1.1 Membezakan keadaan terang (cahaya) dan gelap.",
+        "8.1.2 Mengenal pasti sumber cahaya utama (Matahari, api, lampu)."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 sumber cahaya di sekeliling mereka.",
+        "Murid dapat membandingkan aktiviti yang boleh dan tidak boleh dilakukan dalam keadaan gelap.",
+        "Murid dapat menerangkan bagaimana bayang-bayang terbentuk (asas)."
+      ],
+      "activities": [
+        "Eksperimen 'Bilik Gelap': Mengubahsuai bilik darjah menjadi gelap dan membandingkan aktiviti.",
+        "Permainan Bayang-bayang Tangan: Murid mencipta bentuk bayang-bayang menggunakan tangan dan lampu suluh.",
+        "Perbincangan: Apakah sumber cahaya utama di Bumi?"
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid bermain bayang-bayang.",
+        "Latihan Bertulis: Melukis dan melabelkan sumber-sumber cahaya.",
+        "Ujian Lisan: Soalan tentang kepentingan cahaya dan bahaya kegelapan."
+      ],
+      "aids": [
+        "Lampu suluh.",
+        "Kad gambar aktiviti terang/gelap.",
+        "Lampu meja."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 10: Bumi dan Angkasa (Siang dan Malam)",
+      "skill_name": "Sains Bumi dan Angkasa",
+      "standards": [
+        "9.1.1 Memerihalkan perbezaan keadaan pada waktu siang dan malam.",
+        "9.1.2 Menyatakan bahawa siang dan malam berlaku secara berulang-ulang."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 perkara yang dilihat pada waktu siang (cth: Matahari, awan, bayang-bayang) dan malam (cth: Bulan, bintang).",
+        "Murid dapat melukis kitaran siang dan malam yang mudah.",
+        "Murid dapat menerangkan aktiviti yang lazim dilakukan pada waktu siang dan malam."
+      ],
+      "activities": [
+        "Aktiviti 'Diari Siang dan Malam': Murid mencatat/melukis apa yang mereka lakukan pada waktu siang dan malam.",
+        "Model Simulasi: Menggunakan glob (atau bola) dan lampu suluh untuk menunjukkan kejadian siang dan malam.",
+        "Perbincangan Kumpulan: Bagaimana kehidupan kita berbeza antara siang dan malam."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan aktiviti siang/malam.",
+        "Latihan Bertulis: Melengkapkan jadual perbezaan siang dan malam.",
+        "Penilaian Produk: Ketepatan model simulasi siang dan malam."
+      ],
+      "aids": [
+        "Glob dunia dan lampu suluh.",
+        "Kad gambar aktiviti siang dan malam.",
+        "Carta kitaran siang dan malam."
+      ]
+    },
+
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 2: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 2,
+      "topic_name": "Unit 1: Kemahiran Saintifik - Mengukur dan Berkomunikasi",
+      "skill_name": "Kemahiran Proses Sains",
+      "standards": [
+        "1.1.3 Mengukur dan menggunakan nombor dengan alat berunit piawai (seperti pembaris, pita pengukur).",
+        "1.1.8 Berkomunikasi melalui pelbagai cara seperti jadual, carta, graf, dan model."
+      ],
+      "objectives": [
+        "Murid dapat mengukur panjang objek menggunakan unit piawai (cm) dengan betul.",
+        "Murid dapat merekod data dalam bentuk jadual yang ringkas.",
+        "Murid dapat mempersembahkan maklumat dalam bentuk carta bar yang mudah."
+      ],
+      "activities": [
+        "Eksperimen: Mengukur panjang dan lebar pelbagai objek di dalam kelas.",
+        "Aktiviti Kumpulan: Mengutip data (contoh: bilangan kasut setiap murid) dan merekodkannya dalam jadual, kemudian melukis carta bar.",
+        "Latih Amal: Menukarkan unit cm kepada m (asas)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Ketepatan murid mengukur objek menggunakan pembaris.",
+        "Penilaian Bertulis: Keupayaan murid melengkapkan jadual dan carta bar daripada data yang diberi.",
+        "Ujian Lisan: Penerangan cara berkomunikasi menggunakan jadual."
+      ],
+      "aids": [
+        "Pembaris dan pita pengukur.",
+        "Set aktiviti mengukur.",
+        "Contoh carta bar mudah."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 2: Keperluan Asas Manusia dan Haiwan",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "2.2.1 Menyatakan kepentingan makanan, air, dan tempat perlindungan kepada manusia dan haiwan.",
+        "2.2.2 Menyatakan bagaimana manusia dan haiwan mendapatkan keperluan asas."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 kepentingan makanan kepada manusia.",
+        "Murid dapat membezakan sumber makanan haiwan (herbivor, karnivor, omnivor).",
+        "Murid dapat menjelaskan bagaimana tempat perlindungan melindungi haiwan daripada musuh dan cuaca."
+      ],
+      "activities": [
+        "Perbincangan: Bagaimana kita mendapatkan makanan dan air.",
+        "Permainan 'Rantaian Keperluan': Menghubungkan haiwan dengan sumber makanan dan tempat perlindungan mereka.",
+        "Projek mini: Melukis habitat dan tempat perlindungan haiwan."
+      ],
+      "assessments": [
+        "Penilaian Lisan: Soalan tentang kepentingan air dan makanan.",
+        "Latihan Bertulis: Mengelaskan haiwan mengikut jenis makanan.",
+        "Penilaian Produk: Ketepatan lukisan habitat haiwan."
+      ],
+      "aids": [
+        "Kad gambar pelbagai jenis haiwan dan makanan mereka.",
+        "Carta/Poster keperluan asas.",
+        "Bahan lukisan dan mewarna."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 3: Kitaran Hidup Haiwan",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "3.2.1 Mengenal pasti kitar hidup haiwan (bertelur dan melahirkan anak).",
+        "3.2.2 Mengitlak bahawa terdapat haiwan yang mempunyai lebih daripada satu peringkat dalam kitar hidupnya (metamorfosis)."
+      ],
+      "objectives": [
+        "Murid dapat menyusun peringkat kitar hidup 3 jenis haiwan (cth: rama-rama, katak, ayam) dengan betul.",
+        "Murid dapat melabelkan 4 peringkat kitar hidup rama-rama (telur, larva, pupa, dewasa).",
+        "Murid dapat membandingkan kitar hidup haiwan yang mengalami metamorfosis lengkap dan tidak lengkap."
+      ],
+      "activities": [
+        "Tayangan video: Kitaran hidup katak dan rama-rama.",
+        "Projek 'Diari Kitaran': Murid melukis dan melabelkan kitar hidup haiwan pilihan.",
+        "Permainan padanan: Padankan gambar haiwan dengan cara pembiakan (bertelur/melahirkan anak)."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Melukis dan melabelkan kitar hidup lengkap serangga.",
+        "Persembahan Kumpulan: Perbandingan dua kitar hidup haiwan yang berbeza.",
+        "Ujian 'Isi Tempat Kos' tentang istilah-istilah dalam kitar hidup."
+      ],
+      "aids": [
+        "Carta Kitaran Hidup Haiwan (Katak, Rama-rama, Nyamuk).",
+        "Model 3D peringkat hidup haiwan.",
+        "Video pendidikan tentang metamorfosis."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 4: Tumbesaran Manusia dan Haiwan",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "3.1.3 Mengitlak bahawa manusia dan haiwan membesar (bertambah saiz, berat).",
+        "3.1.4 Menyatakan faktor-faktor yang mempengaruhi tumbesaran yang sihat."
+      ],
+      "objectives": [
+        "Murid dapat merekodkan perubahan diri mereka dari bayi hingga sekarang (saiz, berat).",
+        "Murid dapat menyatakan 3 faktor yang diperlukan untuk tumbesaran sihat (pemakanan seimbang, rehat, senaman).",
+        "Murid dapat mengitlak bahawa tumbesaran setiap individu adalah berbeza."
+      ],
+      "activities": [
+        "Aktiviti 'Saya Dah Besar': Murid membawa gambar bayi dan membandingkan perbezaan.",
+        "Perbincangan: Kepentingan tidur dan rehat kepada tumbesaran.",
+        "Latihan: Menyediakan jadual makanan seimbang asas."
+      ],
+      "assessments": [
+        "Penilaian Lisan: Soalan tentang faktor-faktor tumbesaran sihat.",
+        "Latihan Bertulis: Melengkapkan jadual perbandingan tumbesaran.",
+        "Penilaian Projek: Poster/Carta Tumbesaran Sihat."
+      ],
+      "aids": [
+        "Carta pertumbuhan manusia.",
+        "Gambar tumbesaran haiwan (anak kepada dewasa).",
+        "Pirmaid Makanan Malaysia asas."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 5: Keperluan Asas Tumbuhan",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "4.2.1 Menyatakan keperluan asas untuk pertumbuhan tumbuhan (air, udara, cahaya matahari).",
+        "4.2.2 Mengitlak bahawa tumbuhan memerlukan air, udara, dan cahaya matahari untuk hidup."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 keperluan asas tumbuhan.",
+        "Murid dapat meramal apa yang akan berlaku jika tumbuhan tidak mendapat cahaya matahari.",
+        "Murid dapat menjalankan eksperimen mudah untuk membuktikan tumbuhan memerlukan air."
+      ],
+      "activities": [
+        "Eksperimen 'Tumbuhan Saya': Menjalankan 3 set ujian (satu diberi air, satu diletakkan dalam gelap, satu diberi semua keperluan) dan mencatat pemerhatian.",
+        "Perbincangan: Mengapa tumbuhan diletakkan di tingkap?",
+        "Melukis rajah tumbuhan dan melabelkan keperluannya."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid merekod perubahan tumbuhan dalam eksperimen.",
+        "Latihan Bertulis: Soalan tentang keperluan asas tumbuhan.",
+        "Ujian Lisan: Penerangan mengapa tumbuhan memerlukan cahaya matahari."
+      ],
+      "aids": [
+        "Tumbuhan pasu kecil (3 set).",
+        "Alat pengukur (pembaris untuk mengukur ketinggian tumbuhan).",
+        "Jadual pemerhatian eksperimen."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 6: Tanah (Jenis-jenis Tanah)",
+      "skill_name": "Sains Bahan & Bumi",
+      "standards": [
+        "5.1.1 Mengenal pasti jenis-jenis tanah (tanah kebun, tanah liat, pasir).",
+        "5.1.2 Membandingkan kandungan air dan udara dalam jenis-jenis tanah."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 jenis tanah utama.",
+        "Murid dapat menjalankan ujian ringkas untuk membandingkan kadar penyerapan air 3 jenis tanah.",
+        "Murid dapat menyatakan kegunaan utama 2 jenis tanah (cth: tanah kebun untuk menanam)."
+      ],
+      "activities": [
+        "Eksperimen Amali: Menguji kadar penyerapan air bagi tanah kebun, tanah liat, dan pasir.",
+        "Aktiviti Sentuhan: Murid menyentuh dan memerhati tekstur 3 jenis tanah.",
+        "Perbincangan Kumpulan: Mencipta carta perbandingan ciri-ciri tanah."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid merekod kadar penyerapan air.",
+        "Latihan Bertulis: Melengkapkan jadual perbandingan ciri dan kandungan tanah.",
+        "Ujian Lisan: Soalan tentang kegunaan jenis tanah."
+      ],
+      "aids": [
+        "Sampel tanah kebun, tanah liat, dan pasir.",
+        "Corong turas, kertas turas, dan air.",
+        "Carta alir perbandingan tanah."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 7: Daya dan Gerakan",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "6.1.1 Menyatakan daya ialah tolakan dan tarikan.",
+        "6.1.2 Memerihalkan kesan daya ke atas objek (ubah bentuk, ubah arah, ubah kelajuan).",
+        "6.1.3 Mengaitkan daya dengan gerakan objek."
+      ],
+      "objectives": [
+        "Murid dapat memberi 3 contoh tolakan dan 3 contoh tarikan dalam kehidupan harian.",
+        "Murid dapat menjalankan aktiviti yang menunjukkan daya boleh mengubah bentuk objek (cth: doh).",
+        "Murid dapat membezakan objek yang bergerak cepat dan objek yang bergerak lambat."
+      ],
+      "activities": [
+        "Aktiviti 'Tolakan/Tarikan': Murid melakonkan pelbagai aksi yang melibatkan tolakan dan tarikan.",
+        "Eksperimen: Menunjukkan kesan daya ke atas bola (menendang, membaling, menghentikan).",
+        "Permainan: Menguji kelajuan pelbagai mainan (kereta, bola) di atas permukaan yang berbeza."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan aksi daya.",
+        "Latihan Bertulis: Mengelaskan aktiviti kepada tolakan atau tarikan.",
+        "Ujian Lisan: Soalan tentang bagaimana daya mempengaruhi gerakan."
+      ],
+      "aids": [
+        "Doh, bola, spring.",
+        "Papan landai dan kereta mainan.",
+        "Carta kesan daya."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 8: Sifat Air",
+      "skill_name": "Sains Bahan",
+      "standards": [
+        "7.1.1 Menyatakan bahawa air mengalir ke tempat yang lebih rendah.",
+        "7.1.2 Menyatakan bahawa air mengalir mengikut arah aliran permukaan (sungai, parit).",
+        "7.1.3 Menerangkan kepentingan air kepada hidupan."
+      ],
+      "objectives": [
+        "Murid dapat menjalankan aktiviti yang menunjukkan air mengalir dari tempat tinggi ke rendah.",
+        "Murid dapat menyatakan 3 kegunaan air kepada manusia.",
+        "Murid dapat menerangkan mengapa air laut tidak boleh digunakan untuk minum (asas)."
+      ],
+      "activities": [
+        "Eksperimen: Menggunakan botol air yang berlubang pada ketinggian berbeza untuk menunjukkan aliran air.",
+        "Aktiviti Luar: Memerhati aliran air dalam longkang/parit (dengan pengawasan guru).",
+        "Perbincangan Kumpulan: Mencipta peta minda kegunaan air."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menunjukkan aliran air.",
+        "Latihan Bertulis: Melengkapkan jadual kegunaan air.",
+        "Ujian Lisan: Soalan tentang sumber air di Bumi."
+      ],
+      "aids": [
+        "Botol air berlubang, besen.",
+        "Carta/Poster kitaran air asas.",
+        "Gambar kegunaan air."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 9: Udara di Sekeliling Kita",
+      "skill_name": "Sains Bumi",
+      "standards": [
+        "8.1.1 Menyatakan bahawa udara wujud di sekeliling kita.",
+        "8.1.2 Menunjukkan bahawa udara memenuhi ruang.",
+        "8.1.3 Menerangkan kepentingan udara kepada hidupan."
+      ],
+      "objectives": [
+        "Murid dapat menjalankan eksperimen untuk membuktikan udara memenuhi ruang (cth: membalikkan bikar dalam air).",
+        "Murid dapat menyatakan 2 kepentingan udara (untuk bernafas, untuk pembakaran).",
+        "Murid dapat menerangkan bahawa manusia dan haiwan memerlukan oksigen daripada udara."
+      ],
+      "activities": [
+        "Eksperimen: Memasukkan kertas ke dalam bikar dan menenggelamkannya secara terbalik dalam air (kertas tidak basah).",
+        "Aktiviti Luar: Menguji arah angin menggunakan belon/layang-layang.",
+        "Perbincangan: Apakah yang akan berlaku jika tiada udara?"
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menjalankan eksperimen udara memenuhi ruang.",
+        "Latihan Bertulis: Melukis dan melabelkan aktiviti yang menggunakan udara (cth: belon, layang-layang).",
+        "Ujian Lisan: Soalan tentang kepentingan oksigen."
+      ],
+      "aids": [
+        "Bikar, kertas, besen air.",
+        "Belon atau beg plastik.",
+        "Carta komposisi udara asas."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 10: Penggunaan dan Keselamatan Alat Sains",
+      "skill_name": "Kemahiran Saintifik",
+      "standards": [
+        "1.1.9 Menggunakan peralatan dan bahan Sains dengan cara yang betul.",
+        "1.1.10 Mengamalkan langkah keselamatan di dalam bilik Sains."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 3 alat sains asas (pembaris, kanta tangan, silinder penyukat) dengan betul.",
+        "Murid dapat menyenaraikan 5 peraturan keselamatan bilik Sains (cth: jangan makan, kemaskan selepas guna).",
+        "Murid dapat membezakan antara penggunaan alat yang betul dan salah melalui pemerhatian gambar."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Menunjukkan cara yang betul untuk menggunakan silinder penyukat dan termometer.",
+        "Role-play: Murid melakonkan situasi yang melibatkan salah laku dan amalan selamat di bilik Sains.",
+        "Aktiviti 'Kenali Alat Saya': Murid melabelkan pelbagai alat sains."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menggunakan kanta tangan untuk memerhati spesimen.",
+        "Latihan Bertulis: Melengkapkan peraturan keselamatan bilik Sains.",
+        "Ujian Lisan: Soalan tentang tindakan yang perlu diambil dalam situasi kecemasan (cth: tumpahan air)."
+      ],
+      "aids": [
+        "Peralatan Sains asas (kanta tangan, bikar, pembaris).",
+        "Poster Peraturan Bilik Sains.",
+        "Gambar situasi betul/salah penggunaan alat."
+      ]
+    },
+
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 3: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 3,
+      "topic_name": "Unit 1: Kemahiran Saintifik - Membuat Inferens dan Meramal",
+      "skill_name": "Kemahiran Proses Sains",
+      "standards": [
+        "1.1.4 Membuat inferens dengan menyatakan penerangan awal atau kesimpulan yang munasabah.",
+        "1.1.5 Meramal dengan menyatakan jangkaan tentang sesuatu peristiwa berdasarkan pemerhatian atau data."
+      ],
+      "objectives": [
+        "Murid dapat membezakan antara pemerhatian dan inferens.",
+        "Murid dapat membuat sekurang-kurangnya 2 inferens yang munasabah daripada satu pemerhatian (contoh: tumbuhan layu).",
+        "Murid dapat meramal hasil eksperimen ringkas berdasarkan trend data yang diberikan."
+      ],
+      "activities": [
+        "Aktiviti 'Apa yang Berlaku?': Murid diberi situasi dan diminta membuat inferens (contoh: tingkap berwap, kasut basah).",
+        "Eksperimen: Murid meramal objek yang akan tenggelam atau timbul sebelum menguji.",
+        "Latihan: Membandingkan ramalan dengan hasil sebenar dan membincangkan inferens."
+      ],
+      "assessments": [
+        "Penilaian Lisan: Soalan yang memerlukan murid membuat inferens (Mengapa botol itu basah di luar?).",
+        "Latihan Bertulis: Memilih inferens terbaik daripada pilihan yang diberikan berdasarkan pemerhatian.",
+        "Kuiz: Perbezaan istilah pemerhatian, inferens, dan ramalan."
+      ],
+      "aids": [
+        "Kad situasi (pemerhatian) untuk membuat inferens.",
+        "Contoh data (graf/jadual) untuk meramal.",
+        "Carta aliran proses membuat inferens dan ramalan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 2: Gigi (Jenis dan Fungsi)",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "2.1.1 Mengenal pasti jenis gigi dan fungsinya (kacip, taring, geraham).",
+        "2.1.2 Menyatakan penjagaan gigi yang betul."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 jenis gigi dan menerangkan fungsinya.",
+        "Murid dapat melabelkan struktur gigi pada gambar rajah.",
+        "Murid dapat menerangkan 3 langkah penjagaan gigi yang betul."
+      ],
+      "activities": [
+        "Aktiviti 'Pemeriksaan Gigi': Murid menggunakan cermin tangan untuk mengira dan mengenal pasti jenis gigi mereka.",
+        "Tayangan Video: Cara memberus gigi yang betul dan kesan kerosakan gigi.",
+        "Perbincangan: Kepentingan mendapatkan rawatan gigi."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan cara memberus gigi yang betul.",
+        "Latihan Bertulis: Melabelkan jenis dan fungsi gigi.",
+        "Ujian Lisan: Soalan tentang penjagaan gigi yang sihat."
+      ],
+      "aids": [
+        "Model gigi 3D.",
+        "Berus gigi dan ubat gigi.",
+        "Carta struktur gigi manusia."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 3: Pembiakan Tumbuhan",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "3.1.1 Menyatakan cara tumbuhan membiak (biji benih, anak pokok, daun, keratan batang, spora).",
+        "3.1.2 Mengelaskan tumbuhan mengikut cara pembiakannya."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 5 cara pembiakan tumbuhan yang berbeza.",
+        "Murid dapat memberi 2 contoh tumbuhan bagi setiap cara pembiakan.",
+        "Murid dapat menjalankan eksperimen ringkas untuk menumbuhkan biji benih."
+      ],
+      "activities": [
+        "Eksperimen Tumbuh-tumbuhan: Menanam biji benih kacang dan mencatat pertumbuhannya.",
+        "Koleksi Spesimen: Mengumpul daun dan keratan batang tumbuhan di persekitaran sekolah.",
+        "Aktiviti Kumpulan: Mencipta carta pembiakan tumbuhan dengan gambar."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menanam biji benih dan merekod data.",
+        "Latihan Bertulis: Mengelaskan tumbuhan mengikut cara pembiakan.",
+        "Ujian Lisan: Soalan tentang kepentingan pembiakan tumbuhan."
+      ],
+      "aids": [
+        "Biji benih, tanah, pasu kecil.",
+        "Kad gambar pelbagai tumbuhan dan cara pembiakannya.",
+        "Kanta tangan untuk memerhati spora."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 4: Jirim (Tiga Keadaan Jirim)",
+      "skill_name": "Sains Bahan",
+      "standards": [
+        "4.1.1 Memerihalkan sifat pepejal, cecair, dan gas.",
+        "4.1.2 Mengelaskan objek atau bahan berdasarkan sifat jirim."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan sekurang-kurangnya 3 sifat bagi setiap keadaan jirim (pepejal: jisim tetap, bentuk tetap; cecair: isipadu tetap, bentuk ikut bekas; gas: tiada isipadu dan bentuk tetap).",
+        "Murid dapat memberi 2 contoh bahan bagi setiap keadaan jirim.",
+        "Murid dapat menjalankan eksperimen mudah untuk membuktikan gas memenuhi ruang."
+      ],
+      "activities": [
+        "Eksperimen 'Perbezaan Jisim': Mengukur jisim pelbagai objek pepejal, cecair, dan gas (menggunakan belon).",
+        "Aktiviti Kumpulan: Mengelaskan objek di dalam bilik darjah mengikut keadaan jirim.",
+        "Demonstrasi: Menunjukkan bahawa cecair mengambil bentuk bekas."
+      ],
+      "assessments": [
+        "Penilaian Amali: Menjalankan eksperimen membuktikan sifat gas dan merekod pemerhatian.",
+        "Latihan Bertulis: Melengkapkan jadual perbandingan sifat pepejal, cecair, dan gas.",
+        "Ujian Lisan: Mengenal pasti keadaan jirim bagi bahan yang ditunjukkan oleh guru."
+      ],
+      "aids": [
+        "Bahan-bahan pelbagai keadaan jirim (ais, air, udara dalam belon).",
+        "Peralatan makmal asas (bikar, silinder penyukat, penimbang).",
+        "Carta Tiga Keadaan Jirim."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 5: Perubahan Keadaan Jirim",
+      "skill_name": "Sains Bahan",
+      "standards": [
+        "4.1.3 Menerangkan proses perubahan keadaan jirim (pembekuan, peleburan, pendidihan, kondensasi, penyejatan).",
+        "4.1.4 Mengaitkan perubahan keadaan jirim dengan haba (penyerapan atau pembebasan)."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 proses perubahan keadaan jirim.",
+        "Murid dapat membezakan proses yang melibatkan penyerapan haba dan pembebasan haba.",
+        "Murid dapat melukis dan melabelkan kitaran perubahan keadaan air."
+      ],
+      "activities": [
+        "Eksperimen: Memanaskan air sehingga mendidih dan menyejukkannya kembali (memerhati kondensasi dan penyejatan).",
+        "Demonstrasi: Meleburkan ais dan memerhati pembekuan semula.",
+        "Perbincangan Kumpulan: Contoh perubahan keadaan jirim dalam kehidupan harian (cth: embun, awan)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid melukis kitaran perubahan keadaan air.",
+        "Latihan Bertulis: Melengkapkan jadual proses perubahan jirim dan kaitan dengan haba.",
+        "Ujian Lisan: Soalan tentang proses kondensasi dan penyejatan."
+      ],
+      "aids": [
+        "Periuk, pemanas, termometer (dengan pengawasan guru).",
+        "Ais, air.",
+        "Carta proses perubahan keadaan jirim."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 6: Haba dan Suhu",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "5.1.1 Menyatakan haba adalah sejenis tenaga.",
+        "5.1.2 Mengukur suhu dengan alat yang betul (termometer).",
+        "5.1.3 Mengitlak bahawa bahan yang panas akan melepaskan haba manakala bahan yang sejuk akan menyerap haba."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 3 sumber haba utama (cth: Matahari, api, elektrik).",
+        "Murid dapat menggunakan termometer dengan cara yang betul untuk mengukur suhu air panas dan sejuk.",
+        "Murid dapat membezakan bahan panas dan bahan sejuk melalui sentuhan dan pengukuran suhu."
+      ],
+      "activities": [
+        "Eksperimen: Mengukur suhu pelbagai cecair (air paip, air suam, air sejuk).",
+        "Aktiviti Kumpulan: Mengelaskan objek mengikut tahap kepanasan/kesejukan (secara kualitatif dan kuantitatif).",
+        "Perbincangan: Mengapa kita memerlukan termometer (bukan hanya sentuhan)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid membaca termometer dengan tepat.",
+        "Latihan Bertulis: Melengkapkan jadual perbandingan suhu objek.",
+        "Ujian Lisan: Soalan tentang perpindahan haba."
+      ],
+      "aids": [
+        "Termometer, bikar, air panas dan sejuk.",
+        "Carta skala suhu.",
+        "Gambar sumber-sumber haba."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 7: Cahaya (Sumber Cahaya dan Bayang-bayang)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "6.1.1 Menyatakan bahawa cahaya bergerak lurus.",
+        "6.1.2 Menerangkan pembentukan bayang-bayang.",
+        "6.1.3 Mengitlak bahawa bentuk dan saiz bayang-bayang berubah mengikut kedudukan sumber cahaya."
+      ],
+      "objectives": [
+        "Murid dapat menjalankan aktiviti yang membuktikan cahaya bergerak lurus (cth: kadbod berlubang).",
+        "Murid dapat melukis rajah pembentukan bayang-bayang.",
+        "Murid dapat membandingkan bentuk bayang-bayang apabila sumber cahaya diletakkan pada kedudukan yang berbeza."
+      ],
+      "activities": [
+        "Eksperimen Cahaya: Menggunakan lampu suluh dan kadbod berlubang untuk menunjukkan gerakan cahaya.",
+        "Aktiviti Bayang-bayang: Murid mencipta bayang-bayang menggunakan objek dan memerhati perubahan bentuk dan saiz.",
+        "Perbincangan: Mengapa bayang-bayang kita bergerak sepanjang hari?"
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid melukis bayang-bayang objek.",
+        "Latihan Bertulis: Melengkapkan jadual perbandingan bentuk bayang-bayang.",
+        "Ujian Lisan: Soalan tentang hubungan antara sumber cahaya dan bayang-bayang."
+      ],
+      "aids": [
+        "Lampu suluh, kadbod berlubang, skrin.",
+        "Pelbagai objek untuk bayang-bayang.",
+        "Carta/Rajah gerakan cahaya lurus."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 8: Pengukuran dan Unit",
+      "skill_name": "Kemahiran Saintifik",
+      "standards": [
+        "1.1.3 Mengukur dan menggunakan nombor dengan alat dan unit piawai.",
+        "1.1.9 Merekod data dalam bentuk yang sesuai (jadual, carta).",
+        "1.1.10 Mentafsir data dan membuat kesimpulan."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan unit piawai untuk mengukur jisim (gram/kilogram) dan isipadu (mililiter/liter).",
+        "Murid dapat merekod data pengukuran dalam jadual dengan unit yang betul.",
+        "Murid dapat membuat kesimpulan ringkas daripada data pengukuran."
+      ],
+      "activities": [
+        "Eksperimen Amali: Mengukur jisim pelbagai objek menggunakan penimbang imbang/elektronik.",
+        "Latih Amal: Mengukur isipadu cecair menggunakan silinder penyukat dan bikar.",
+        "Aktiviti Kumpulan: Merancang dan menjalankan penyiasatan ringkas yang melibatkan pengukuran (cth: mengukur pertumbuhan pokok)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Ketepatan murid membaca skala penimbang dan silinder penyukat.",
+        "Latihan Bertulis: Melengkapkan jadual data dan membuat kesimpulan.",
+        "Ujian Lisan: Soalan tentang kepentingan unit piawai."
+      ],
+      "aids": [
+        "Penimbang imbang/elektronik.",
+        "Silinder penyukat, bikar, air.",
+        "Objek pelbagai jisim/isipadu."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 9: Bumi dan Angkasa (Sistem Suria Asas)",
+      "skill_name": "Sains Bumi dan Angkasa",
+      "standards": [
+        "7.1.1 Menyatakan Matahari sebagai pusat Sistem Suria.",
+        "7.1.2 Mengenal pasti ahli Sistem Suria (Matahari, planet, satelit semulajadi, asteroid, komet).",
+        "7.1.3 Menyenaraikan planet dalam urutan yang betul dari Matahari."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 8 planet dalam Sistem Suria.",
+        "Murid dapat menyatakan Matahari ialah bintang dan pusat sistem.",
+        "Murid dapat membezakan planet dan satelit semula jadi (asas)."
+      ],
+      "activities": [
+        "Tayangan Video: Lawatan ke Sistem Suria.",
+        "Permainan Memori: Padankan nama planet dengan ciri-ciri asasnya.",
+        "Projek mini: Melukis dan mewarna Sistem Suria dengan urutan yang betul."
+      ],
+      "assessments": [
+        "Penilaian Lisan: Menyebut planet dalam urutan yang betul.",
+        "Latihan Bertulis: Melabelkan rajah Sistem Suria.",
+        "Penilaian Produk: Ketepatan model/lukisan Sistem Suria."
+      ],
+      "aids": [
+        "Carta/Poster Sistem Suria.",
+        "Video pendidikan Sistem Suria.",
+        "Bahan lukisan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 10: Buruj",
+      "skill_name": "Sains Bumi dan Angkasa",
+      "standards": [
+        "7.1.4 Mengenal pasti buruj dan memerihalkannya.",
+        "7.1.5 Menyatakan kegunaan buruj dalam kehidupan (cth: panduan arah, musim)."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 2 buruj utama (cth: Biduk, Pari).",
+        "Murid dapat melukis dan mengenal pasti bentuk buruj Biduk.",
+        "Murid dapat menyatakan 1 kegunaan utama buruj (cth: panduan arah kepada pelayar)."
+      ],
+      "activities": [
+        "Aktiviti 'Melihat Bintang': Menggunakan kadbod berlubang untuk menghasilkan unjuran buruj pada dinding gelap.",
+        "Cerita Rakyat: Mendengar cerita tentang buruj dan kaitannya dengan musim/pelayaran.",
+        "Perbincangan: Bagaimana buruj membantu orang zaman dahulu."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid mengenal pasti buruj melalui unjuran.",
+        "Latihan Bertulis: Melukis dan melabelkan buruj Biduk.",
+        "Ujian Lisan: Soalan tentang kegunaan buruj."
+      ],
+      "aids": [
+        "Kadbod berlubang (buruj).",
+        "Lampu suluh.",
+        "Carta/Gambar buruj utama."
+      ]
+    },
+
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 4: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 4,
+      "topic_name": "Unit 1: Kemahiran Saintifik - Eksperimen dan Hipotesis",
+      "skill_name": "Kemahiran Proses Sains",
+      "standards": [
+        "1.1.6 Mengawal pemboleh ubah dengan menentukan pemboleh ubah bergerak balas dan dimalarkan.",
+        "1.1.7 Membuat hipotesis dengan membuat pernyataan umum yang boleh diuji tentang hubungan antara pemboleh ubah.",
+        "1.1.10 Mengeksperimen dengan menjalankan penyiasatan untuk menguji hipotesis."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti dan menamakan 3 jenis pemboleh ubah (dimanipulasi, bergerak balas, dimalarkan) dalam satu eksperimen.",
+        "Murid dapat menulis hipotesis dalam bentuk 'Jika... maka...' yang betul.",
+        "Murid dapat mereka bentuk dan menjalankan penyiasatan ringkas untuk menguji hipotesis yang mudah."
+      ],
+      "activities": [
+        "Analisis Eksperimen: Murid meneliti teks eksperimen dan mengenal pasti pemboleh ubah.",
+        "Latih Amal: Menulis hipotesis untuk pelbagai soalan penyiasatan (contoh: kesan jenis tanah terhadap pertumbuhan pokok).",
+        "Aktiviti Amali: Menjalankan eksperimen mudah di makmal/kelas (contoh: menguji bahan konduktor/penebat haba)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid mengawal pemboleh ubah semasa eksperimen.",
+        "Latihan Bertulis: Mengenal pasti pemboleh ubah dan menulis hipotesis yang betul.",
+        "Ujian Lisan: Menerangkan langkah-langkah dalam proses eksperimen."
+      ],
+      "aids": [
+        "Kad situasi (masalah/tujuan penyiasatan) untuk mengenal pasti pemboleh ubah dan hipotesis.",
+        "Set alatan eksperimen asas.",
+        "Carta Kaedah Saintifik."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 2: Proses Hidup Manusia (Pernafasan dan Perkumuhan)",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "3.1.1 Menerangkan proses pernafasan (laluan udara, pertukaran gas).",
+        "3.1.2 Mengenal pasti organ perkumuhan dan hasil perkumuhan (peparu, kulit, ginjal).",
+        "3.1.3 Menyatakan kepentingan perkumuhan dan penyahtinjaan."
+      ],
+      "objectives": [
+        "Murid dapat melukis dan melabelkan laluan udara semasa menarik dan menghembus nafas.",
+        "Murid dapat menyenaraikan 3 organ perkumuhan dan hasil perkumuhan mereka.",
+        "Murid dapat menjelaskan 2 kepentingan perkumuhan dan penyahtinjaan."
+      ],
+      "activities": [
+        "Demonstrasi: Menggunakan model paru-paru ringkas untuk menunjukkan proses pernafasan.",
+        "Eksperimen: Menghembus nafas ke dalam air kapur untuk menunjukkan karbon dioksida.",
+        "Perbincangan Kumpulan: Bagaimana badan menyingkirkan sisa."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid merekod pemerhatian ujian air kapur.",
+        "Latihan Bertulis: Melabelkan organ perkumuhan dan laluan pernafasan.",
+        "Ujian Lisan: Soalan tentang kepentingan peluh."
+      ],
+      "aids": [
+        "Model paru-paru ringkas.",
+        "Air kapur, straw.",
+        "Carta sistem perkumuhan manusia."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 3: Proses Hidup Tumbuhan (Fotosintesis)",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "3.2.1 Menyatakan keperluan proses fotosintesis (air, karbon dioksida, klorofil, cahaya matahari).",
+        "3.2.2 Menyatakan hasil fotosintesis (glukosa/kanji, oksigen)."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 keperluan asas fotosintesis.",
+        "Murid dapat menyatakan 2 hasil utama fotosintesis.",
+        "Murid dapat menjelaskan mengapa tumbuhan penting kepada manusia dan haiwan (pengeluaran oksigen)."
+      ],
+      "activities": [
+        "Eksperimen: Menguji kehadiran kanji dalam daun yang terdedah dan tidak terdedah kepada cahaya matahari (ujian iodin).",
+        "Tayangan Video: Proses fotosintesis.",
+        "Aktiviti Kumpulan: Melukis dan melabelkan persamaan perkataan fotosintesis."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menjalankan ujian kanji.",
+        "Latihan Bertulis: Melengkapkan rajah fotosintesis.",
+        "Ujian Lisan: Soalan tentang peranan klorofil."
+      ],
+      "aids": [
+        "Tumbuhan pasu, iodin, alkohol.",
+        "Gambar/Rajah proses fotosintesis.",
+        "Bahan untuk melukis persamaan perkataan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 4: Interaksi antara Hidupan (Rantai dan Siratan Makanan)",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "4.1.1 Mengenal pasti pengeluar, pengguna primer, pengguna sekunder, dan pengguna tertier dalam rantai makanan.",
+        "4.1.2 Membina rantai makanan dan siratan makanan di pelbagai habitat.",
+        "4.1.3 Meramal kesan perubahan populasi ke atas siratan makanan."
+      ],
+      "objectives": [
+        "Murid dapat membina 3 rantai makanan yang lengkap dengan anak panah yang betul.",
+        "Murid dapat membina siratan makanan yang terdiri daripada 3 rantai makanan.",
+        "Murid dapat meramal apa yang berlaku jika bilangan pengeluar berkurangan dalam siratan makanan."
+      ],
+      "activities": [
+        "Permainan Kad: Murid menyusun kad haiwan/tumbuhan untuk membentuk rantai makanan.",
+        "Aktiviti Kumpulan: Melukis siratan makanan untuk habitat hutan/kolam.",
+        "Perbincangan: Kepentingan pengeluar dalam ekosistem."
+      ],
+      "assessments": [
+        "Penilaian Produk: Ketepatan rantai dan siratan makanan yang dilukis.",
+        "Latihan Bertulis: Menjawab soalan ramalan kesan perubahan populasi.",
+        "Ujian Lisan: Soalan tentang peranan pengguna dalam rantai makanan."
+      ],
+      "aids": [
+        "Kad gambar haiwan dan tumbuhan.",
+        "Carta/Poster contoh rantai dan siratan makanan.",
+        "Lembaran kerja pembinaan siratan makanan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 5: Sifat Cahaya (Pantulan dan Biasan)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "5.1.1 Menyatakan bahawa cahaya boleh dipantulkan.",
+        "5.1.2 Menyatakan bahawa cahaya boleh dibiaskan.",
+        "5.1.3 Mengaplikasi sifat cahaya dalam kehidupan harian (periskop, cermin)."
+      ],
+      "objectives": [
+        "Murid dapat menjalankan aktiviti yang menunjukkan pantulan cahaya (cth: cermin satah).",
+        "Murid dapat menjalankan aktiviti yang menunjukkan biasan cahaya (cth: pensel dalam air).",
+        "Murid dapat menerangkan 2 kegunaan pantulan cahaya (cth: cermin pandang sisi, periskop)."
+      ],
+      "activities": [
+        "Eksperimen Pantulan: Menggunakan cermin satah dan lampu suluh untuk memantulkan cahaya.",
+        "Eksperimen Biasan: Memerhati pensel patah dalam air dan syiling terangkat.",
+        "Projek Mini: Mencipta periskop ringkas."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menunjukkan fenomena biasan.",
+        "Latihan Bertulis: Melukis rajah sinar pantulan dan biasan cahaya.",
+        "Penilaian Projek: Penilaian periskop yang berfungsi."
+      ],
+      "aids": [
+        "Cermin satah, lampu suluh.",
+        "Bikar, air, pensel, syiling.",
+        "Bahan untuk membuat periskop."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 6: Haba (Pengembangan dan Pengecutan)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "6.1.1 Menyatakan bahawa bahan mengembang apabila dipanaskan dan mengecut apabila disejukkan.",
+        "6.1.2 Memberi contoh aplikasi pengembangan dan pengecutan bahan dalam kehidupan harian."
+      ],
+      "objectives": [
+        "Murid dapat menjalankan eksperimen untuk menunjukkan pengembangan dan pengecutan pepejal (cth: bebola logam dan cincin).",
+        "Murid dapat menerangkan 2 contoh pengembangan cecair dan gas.",
+        "Murid dapat menjelaskan bagaimana pengembangan/pengecutan diaplikasikan (cth: termometer, landasan kereta api)."
+      ],
+      "activities": [
+        "Eksperimen Amali: Menggunakan alat bebola dan cincin untuk menunjukkan pengembangan pepejal.",
+        "Demonstrasi: Mengembangkan belon pada mulut botol yang dipanaskan.",
+        "Perbincangan Kumpulan: Mencari contoh aplikasi pengembangan dan pengecutan (cth: wayar elektrik kendur)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menjalankan eksperimen bebola dan cincin.",
+        "Latihan Bertulis: Melengkapkan jadual contoh pengembangan dan pengecutan.",
+        "Ujian Lisan: Soalan tentang aplikasi pengembangan dalam termometer."
+      ],
+      "aids": [
+        "Alat bebola dan cincin, penunu Bunsen.",
+        "Botol kaca, belon, air panas.",
+        "Gambar aplikasi pengembangan/pengecutan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 7: Daya (Kesan Daya)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "7.1.1 Mengenal pasti jenis-jenis daya (daya geseran, daya graviti, daya elastik).",
+        "7.1.2 Menerangkan kesan daya ke atas objek (gerakan, bentuk).",
+        "7.1.3 Menyatakan kepentingan daya dalam kehidupan harian."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 jenis daya dan memberi 1 contoh bagi setiap jenis.",
+        "Murid dapat menunjukkan kesan daya geseran ke atas gerakan objek (memperlahankan).",
+        "Murid dapat menjelaskan bagaimana daya graviti bertindak."
+      ],
+      "activities": [
+        "Eksperimen Geseran: Menarik bongkah kayu di atas pelbagai permukaan (licin, kasar) dan mengukur jarak.",
+        "Demonstrasi: Menjatuhkan objek untuk menunjukkan daya graviti.",
+        "Perbincangan Kumpulan: Kegunaan daya geseran (cth: brek kereta, pegangan tangan)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menjalankan eksperimen geseran.",
+        "Latihan Bertulis: Melabelkan jenis-jenis daya dan kesannya.",
+        "Ujian Lisan: Soalan tentang aplikasi daya dalam sukan."
+      ],
+      "aids": [
+        "Bongkah kayu, permukaan berbeza (kain, kertas pasir), neraca spring.",
+        "Carta/Poster jenis-jenis daya.",
+        "Objek untuk menunjukkan daya elastik (getah)."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 8: Pengukuran Lanjutan (Isipadu dan Jisim)",
+      "skill_name": "Kemahiran Saintifik",
+      "standards": [
+        "1.1.3 Mengukur jisim dan isipadu menggunakan unit piawai dan alatan yang lebih tepat (silinder penyukat, buret).",
+        "1.1.9 Merekod dan mentafsir data pengukuran secara kuantitatif."
+      ],
+      "objectives": [
+        "Murid dapat mengukur isipadu pepejal tidak sekata menggunakan kaedah sesaran air.",
+        "Murid dapat mengukur jisim cecair dengan mengambil kira jisim bekas.",
+        "Murid dapat merekodkan data pengukuran dengan unit yang betul dan tepat (2 tempat perpuluhan)."
+      ],
+      "activities": [
+        "Eksperimen Amali: Mengukur isipadu batu menggunakan silinder penyukat dan air.",
+        "Latih Amal: Mengukur jisim air dalam bikar (timbang kosong, timbang berisi, tolak).",
+        "Aktiviti Kumpulan: Penyiasatan perbandingan isipadu pelbagai biji benih."
+      ],
+      "assessments": [
+        "Penilaian Amali: Ketepatan murid mengukur isipadu pepejal tidak sekata.",
+        "Latihan Bertulis: Soalan pengiraan untuk menentukan jisim cecair.",
+        "Ujian Lisan: Penerangan kaedah sesaran air."
+      ],
+      "aids": [
+        "Silinder penyukat, air, batu/benda tidak sekata.",
+        "Penimbang elektronik, bikar.",
+        "Carta prosedur pengukuran isipadu pepejal tidak sekata."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 9: Sifat Bahan (Asid dan Alkali Asas)",
+      "skill_name": "Sains Bahan",
+      "standards": [
+        "8.1.1 Mengenal pasti bahan berasid, beralkali dan neutral.",
+        "8.1.2 Menguji bahan menggunakan kertas litmus dan menyatakan perubahannya.",
+        "8.1.3 Menyatakan contoh bahan berasid, beralkali dan neutral dalam kehidupan harian."
+      ],
+      "objectives": [
+        "Murid dapat menjalankan ujian menggunakan kertas litmus biru dan merah dengan betul.",
+        "Murid dapat mengelaskan 5 bahan rumah tangga (cth: cuka, sabun, air) kepada berasid, beralkali, dan neutral.",
+        "Murid dapat menyatakan rasa asas (masam, pahit) bagi asid dan alkali."
+      ],
+      "activities": [
+        "Eksperimen Amali: Menguji pelbagai bahan (jus oren, air sabun, air suling) menggunakan kertas litmus.",
+        "Perbincangan: Kepentingan pH dalam kehidupan (cth: tanah, air kolam).",
+        "Aktiviti Kumpulan: Mencipta carta perubahan warna kertas litmus."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menjalankan ujian litmus dan merekod hasil.",
+        "Latihan Bertulis: Melengkapkan jadual keputusan ujian litmus.",
+        "Ujian Lisan: Soalan tentang contoh bahan neutral."
+      ],
+      "aids": [
+        "Kertas litmus merah dan biru.",
+        "Sampel bahan (cuka, sabun, air, jus, soda).",
+        "Piring uji."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 10: Sumber Bumi (Kitaran Air)",
+      "skill_name": "Sains Bumi",
+      "standards": [
+        "9.1.1 Menerangkan kepentingan sumber air.",
+        "9.1.2 Menerangkan kitaran air (penyejatan, kondensasi, hujan/kerpasan).",
+        "9.1.3 Menyatakan langkah-langkah penjimatan air."
+      ],
+      "objectives": [
+        "Murid dapat melabelkan 3 peringkat utama kitaran air.",
+        "Murid dapat menjelaskan bagaimana awan terbentuk (kondensasi).",
+        "Murid dapat menyenaraikan 3 cara penjimatan air dalam kehidupan harian."
+      ],
+      "activities": [
+        "Model Simulasi: Membina model kitaran air mini (terrarium atau beg plastik).",
+        "Tayangan Video: Kitaran air dan pembentukan hujan.",
+        "Perbincangan Kumpulan: Menyediakan kempen kesedaran penjimatan air."
+      ],
+      "assessments": [
+        "Penilaian Produk: Ketepatan model/lukisan kitaran air.",
+        "Latihan Bertulis: Menjawab soalan tentang proses penyejatan dan kondensasi.",
+        "Penilaian Projek: Kualiti poster kempen penjimatan air."
+      ],
+      "aids": [
+        "Bahan untuk model kitaran air mini.",
+        "Carta/Poster kitaran air lengkap.",
+        "Gambar langkah penjimatan air."
+      ]
+    },
+
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 5: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 5,
+      "topic_name": "Unit 1: Kemahiran Saintifik - Laporan Eksperimen",
+      "skill_name": "Kemahiran Saintifik Komprehensif",
+      "standards": [
+        "1.1.8 Berkomunikasi melalui pelbagai cara seperti menulis laporan eksperimen yang lengkap.",
+        "1.1.9 Mentafsir data daripada pelbagai sumber (graf, jadual, teks)."
+      ],
+      "objectives": [
+        "Murid dapat menulis laporan eksperimen lengkap yang mengandungi 7 bahagian (Tujuan, Pernyataan Masalah, Hipotesis, Pemboleh Ubah, Bahan/Radas, Prosedur, Keputusan).",
+        "Murid dapat menterjemah maklumat dari graf garis kepada pernyataan lisan/bertulis.",
+        "Murid dapat membuat kesimpulan berdasarkan data yang diperoleh daripada eksperimen."
+      ],
+      "activities": [
+        "Latih Amal: Menganalisis contoh laporan eksperimen yang baik dan mengenal pasti setiap komponen.",
+        "Aktiviti Amali: Menjalankan eksperimen mudah (contoh: kerosakan makanan) dan menulis laporan penuh mengikut format yang betul.",
+        "Perbincangan Kumpulan: Mentafsir data kompleks dan merumuskan penemuan."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Markah laporan eksperimen yang lengkap dan kemas (sumatif).",
+        "Ujian Lisan: Mentafsir graf dan carta yang diberikan oleh guru.",
+        "Kuiz Konsep: Soalan tentang peranan setiap pemboleh ubah dalam laporan."
+      ],
+      "aids": [
+        "Templat laporan eksperimen.",
+        "Contoh graf dan jadual untuk ditafsir.",
+        "Bahan rujukan KSSR untuk penulisan laporan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 2: Mikroorganisma",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "2.1.1 Mengenal pasti jenis-jenis mikroorganisma (kulat, alga, protozoa, bakteria, virus).",
+        "2.1.2 Menyatakan proses hidup mikroorganisma (bernafas, membiak, membesar).",
+        "2.1.3 Menyatakan kesan baik dan kesan buruk mikroorganisma."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 jenis mikroorganisma dan memberi 1 contoh bagi setiap jenis.",
+        "Murid dapat menyatakan 2 proses hidup mikroorganisma (membiak, bernafas).",
+        "Murid dapat membezakan 2 kesan baik (cth: pembuatan makanan) dan 2 kesan buruk (cth: penyakit) mikroorganisma."
+      ],
+      "activities": [
+        "Eksperimen: Pemerhatian yis (kulat) di bawah mikroskop/kanta tangan (dengan pengawasan guru).",
+        "Tayangan Video: Mikroorganisma di sekeliling kita.",
+        "Perbincangan Kumpulan: Mencipta jadual perbandingan kesan baik dan buruk mikroorganisma."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid melukis mikroorganisma dari pemerhatian.",
+        "Latihan Bertulis: Melengkapkan jadual kesan mikroorganisma.",
+        "Ujian Lisan: Soalan tentang peranan yis dalam pembuatan roti."
+      ],
+      "aids": [
+        "Mikroskop/kanta tangan, yis, air suam.",
+        "Carta/Poster jenis mikroorganisma.",
+        "Gambar aplikasi mikroorganisma dalam makanan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 3: Sistem Tubuh Manusia (Peredaran Darah)",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "3.1.1 Menerangkan fungsi sistem peredaran darah (mengangkut oksigen, makanan, sisa).",
+        "3.1.2 Mengenal pasti komponen darah (sel darah merah, sel darah putih, platlet, plasma).",
+        "3.1.3 Menyatakan kepentingan menjaga kesihatan jantung."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 fungsi utama sistem peredaran darah.",
+        "Murid dapat melabelkan 4 komponen utama darah.",
+        "Murid dapat menyenaraikan 3 cara menjaga kesihatan jantung dan pembuluh darah."
+      ],
+      "activities": [
+        "Tayangan Video: Laluan peredaran darah (jantung, peparu, anggota badan).",
+        "Demonstrasi: Menggunakan model untuk mewakili komponen darah (cth: bebola merah, putih dalam air).",
+        "Perbincangan Kumpulan: Mengapa senaman penting untuk jantung."
+      ],
+      "assessments": [
+        "Penilaian Lisan: Soalan tentang fungsi sistem peredaran darah.",
+        "Latihan Bertulis: Melabelkan komponen darah dan fungsi jantung.",
+        "Penilaian Produk: Poster Kesihatan Jantung."
+      ],
+      "aids": [
+        "Carta sistem peredaran darah.",
+        "Model 3D jantung (jika ada).",
+        "Bahan untuk demonstrasi komponen darah."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 4: Pewarisan",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "4.1.1 Menerangkan ciri-ciri yang diwarisi daripada ibu bapa kepada anak (rupa, warna mata, jenis rambut).",
+        "4.1.2 Memerihalkan ciri-ciri yang diwarisi melalui keturunan (datuk, nenek).",
+        "4.1.3 Menyatakan kepentingan pewarisan dalam kehidupan."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 5 ciri fizikal yang diwarisi (cth: jenis rambut, warna mata, bentuk muka).",
+        "Murid dapat membandingkan ciri-ciri yang diwarisi antara mereka dan ahli keluarga terdekat.",
+        "Murid dapat mengitlak bahawa ciri-ciri diturunkan dari generasi ke generasi."
+      ],
+      "activities": [
+        "Aktiviti 'Salasilah Keluarga': Murid membina carta salasilah ringkas dan mengenal pasti ciri-ciri yang diwarisi.",
+        "Pemerhatian Kelas: Murid membandingkan ciri-ciri (cth: jenis cuping telinga, warna mata) antara rakan sekelas.",
+        "Perbincangan: Apakah perbezaan antara ciri diwarisi dan ciri yang diperoleh (cth: parut)."
+      ],
+      "assessments": [
+        "Penilaian Produk: Ketepatan dan kelengkapan carta salasilah keluarga.",
+        "Latihan Bertulis: Melengkapkan jadual perbandingan ciri diwarisi.",
+        "Ujian Lisan: Soalan tentang kepentingan pewarisan."
+      ],
+      "aids": [
+        "Carta salasilah keluarga ringkas.",
+        "Gambar/ilustrasi ciri-ciri yang diwarisi (cth: jenis rambut).",
+        "Cermin tangan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 5: Pengawetan Makanan",
+      "skill_name": "Sains Bahan",
+      "standards": [
+        "5.1.1 Menyatakan tujuan pengawetan makanan (menghalang pertumbuhan mikroorganisma, tahan lama).",
+        "5.1.2 Mengenal pasti kaedah pengawetan makanan (cth: penjerukan, pengeringan, pempasteuran, pembungkusan vakum).",
+        "5.1.3 Mengaplikasi kaedah pengawetan dalam kehidupan harian."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 sebab makanan rosak.",
+        "Murid dapat menamakan 5 kaedah pengawetan makanan yang berbeza dan memberi 1 contoh bagi setiap kaedah.",
+        "Murid dapat menjalankan eksperimen untuk membandingkan kadar kerosakan makanan yang diawet dan tidak diawet."
+      ],
+      "activities": [
+        "Eksperimen: Memerhati kerosakan roti yang disimpan di tempat berbeza (sejuk, panas, kering, lembap).",
+        "Aktiviti Kumpulan: Mencipta jadual perbandingan kaedah pengawetan dan contoh makanan.",
+        "Lawatan Virtual: Meneroka kilang pempasteuran/pembungkusan vakum."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid merekod kerosakan makanan.",
+        "Latihan Bertulis: Melengkapkan jadual kaedah pengawetan dan tujuannya.",
+        "Ujian Lisan: Soalan tentang peranan pempasteuran."
+      ],
+      "aids": [
+        "Roti, beg plastik, penutup vakum (jika ada), peti sejuk.",
+        "Carta/Poster kaedah pengawetan makanan.",
+        "Bahan membuat jeruk ringkas."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 6: Elektrik (Litar Bersiri dan Selari)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "6.1.1 Mengenal pasti komponen dalam litar elektrik lengkap (mentol, suis, sel kering, wayar).",
+        "6.1.2 Membanding dan membezakan litar bersiri dan litar selari.",
+        "6.1.3 Merumuskan faktor yang mempengaruhi kecerahan mentol dalam litar elektrik."
+      ],
+      "objectives": [
+        "Murid dapat membina litar bersiri dan litar selari dengan betul.",
+        "Murid dapat menyatakan 3 perbezaan antara litar bersiri dan litar selari (cth: laluan arus, kecerahan mentol, jika satu mentol rosak).",
+        "Murid dapat mengitlak bahawa penambahan bilangan sel kering akan meningkatkan kecerahan mentol."
+      ],
+      "activities": [
+        "Eksperimen Amali: Membina dan menguji litar bersiri dan selari menggunakan set litar elektrik.",
+        "Perbincangan Kumpulan: Membandingkan kecerahan mentol apabila bilangan mentol/sel kering diubah.",
+        "Aktiviti 'Penyelesaian Masalah': Murid mengenal pasti dan membetulkan kerosakan dalam litar elektrik."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid membina litar selari berfungsi dalam masa yang ditetapkan.",
+        "Latihan Bertulis: Melukis dan melabelkan simbol komponen litar dan membandingkan jenis litar.",
+        "Kuiz Konsep: Soalan berfokus pada kelebihan dan kekurangan litar bersiri/selari."
+      ],
+      "aids": [
+        "Set litar elektrik (mentol, pemegang mentol, sel kering, suis, wayar penyambung).",
+        "Carta litar bersiri dan selari.",
+        "Simbol komponen litar elektrik."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 7: Haba (Keseimbangan Terma)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "7.1.1 Menerangkan konsep keseimbangan terma (perpindahan haba).",
+        "7.1.2 Menyatakan arah aliran haba (dari kawasan panas ke kawasan sejuk).",
+        "7.1.3 Mengenal pasti bahan konduktor dan penebat haba."
+      ],
+      "objectives": [
+        "Murid dapat menerangkan bagaimana haba dipindahkan melalui 3 cara (konduksi, perolakan, sinaran) secara asas.",
+        "Murid dapat mengelaskan 5 bahan kepada konduktor atau penebat haba.",
+        "Murid dapat menjelaskan bagaimana keseimbangan terma berlaku (sehingga suhu kedua-dua objek sama)."
+      ],
+      "activities": [
+        "Eksperimen: Menguji konduktor/penebat haba dengan menyentuh objek (logam, kayu, plastik) pada suhu bilik.",
+        "Demonstrasi: Menunjukkan perpindahan haba (konduksi) menggunakan batang logam dan lilin.",
+        "Perbincangan Kumpulan: Mengapa kita menggunakan periuk logam dan pemegang plastik."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menjalankan eksperimen konduksi.",
+        "Latihan Bertulis: Melengkapkan jadual konduktor dan penebat haba.",
+        "Ujian Lisan: Soalan tentang arah aliran haba."
+      ],
+      "aids": [
+        "Batang logam, kayu, plastik, lilin.",
+        "Termometer, bikar air panas.",
+        "Carta perpindahan haba."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 8: Daya Geseran",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "8.1.1 Menyatakan bahawa daya geseran menentang gerakan.",
+        "8.1.2 Menerangkan faktor-faktor yang mempengaruhi daya geseran (jenis permukaan, berat objek).",
+        "8.1.3 Menyatakan kesan baik dan buruk daya geseran."
+      ],
+      "objectives": [
+        "Murid dapat menjalankan eksperimen untuk menunjukkan hubungan antara jenis permukaan dan daya geseran.",
+        "Murid dapat menyenaraikan 2 kesan baik (cth: memegang objek, membrek) dan 2 kesan buruk (cth: kehausan tayar, pergerakan perlahan) daya geseran.",
+        "Murid dapat mencadangkan 2 cara untuk menambah dan mengurangkan daya geseran."
+      ],
+      "activities": [
+        "Eksperimen Amali: Menarik bongkah pada permukaan licin dan kasar menggunakan neraca spring.",
+        "Perbincangan Kumpulan: Mencari contoh menambah dan mengurangkan geseran (cth: minyak pelincir, tapak kasut sukan).",
+        "Demonstrasi: Menguji kesan geseran ke atas haba (gosok tangan)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid merekod bacaan neraca spring.",
+        "Latihan Bertulis: Melengkapkan jadual kesan baik dan buruk geseran.",
+        "Ujian Lisan: Soalan tentang faktor-faktor yang mempengaruhi geseran."
+      ],
+      "aids": [
+        "Neraca spring, bongkah, permukaan berbeza (kain, kertas pasir).",
+        "Minyak pelincir, serbuk talkum.",
+        "Carta faktor daya geseran."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 9: Sifat Bahan (Pengaratan)",
+      "skill_name": "Sains Bahan",
+      "standards": [
+        "9.1.1 Mengenal pasti objek yang berkarat dan objek yang tidak berkarat.",
+        "9.1.2 Menerangkan faktor-faktor yang menyebabkan pengaratan (air dan udara/oksigen).",
+        "9.1.3 Menyatakan cara-cara mencegah pengaratan."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 objek yang lazimnya berkarat.",
+        "Murid dapat menjalankan eksperimen untuk membuktikan air dan udara diperlukan untuk pengaratan.",
+        "Murid dapat menyenaraikan 3 cara mencegah pengaratan (cth: mengecat, menyadur, menyapu gris)."
+      ],
+      "activities": [
+        "Eksperimen Amali: Menyediakan 4 set paku (air + udara, udara sahaja, air sahaja, air didih + minyak) untuk memerhati pengaratan.",
+        "Perbincangan Kumpulan: Mengapa pagar dan kereta perlu dicat.",
+        "Tayangan Video: Proses dan kesan pengaratan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid merekod keadaan paku dalam eksperimen.",
+        "Latihan Bertulis: Melukis dan melabelkan susunan eksperimen pengaratan.",
+        "Ujian Lisan: Soalan tentang cara mencegah pengaratan."
+      ],
+      "aids": [
+        "Paku besi, air, minyak, tiub uji, kapas.",
+        "Carta/Poster faktor dan pencegahan pengaratan.",
+        "Gambar objek berkarat dan tidak berkarat."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 10: Bumi dan Angkasa (Sistem Suria)",
+      "skill_name": "Sains Bumi dan Angkasa",
+      "standards": [
+        "10.1.1 Menyenaraikan ahli Sistem Suria mengikut urutan yang betul.",
+        "10.1.2 Memerihalkan ciri fizikal setiap planet dalam Sistem Suria (suhu, saiz, gelang).",
+        "10.1.3 Mengitlak hubungan jarak planet dari Matahari dengan masa yang diambil untuk mengelilingi Matahari."
+      ],
+      "objectives": [
+        "Murid dapat menyebut 8 planet mengikut urutan dari Matahari.",
+        "Murid dapat menyatakan 2 ciri unik setiap planet (cth: Musytari planet terbesar, Zuhal mempunyai gelang).",
+        "Murid dapat menerangkan mengapa suhu planet semakin berkurang apabila jarak dari Matahari meningkat."
+      ],
+      "activities": [
+        "Projek 'Model Sistem Suria': Murid membina model skala relatif planet (saiz atau jarak).",
+        "Pembentangan Kumpulan: Setiap kumpulan menyelidik dan membentangkan ciri-ciri dua planet.",
+        "Aktiviti Peta Minda: Mencipta peta minda untuk mengaitkan ciri planet dengan urutan dari Matahari."
+      ],
+      "assessments": [
+        "Penilaian Projek: Ketepatan urutan dan ciri planet dalam model/persembahan.",
+        "Latihan Bertulis: Soalan objektif tentang ciri fizikal dan kedudukan planet.",
+        "Ujian Lisan: Menerangkan hubungan antara jarak, suhu, dan masa orbit."
+      ],
+      "aids": [
+        "Carta/Infografik Sistem Suria.",
+        "Bahan untuk membina model (polisterin, dawai, cat).",
+        "Video pendidikan atau simulasi komputer tentang orbit planet."
+      ]
+    },
+
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 6: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 6,
+      "topic_name": "Unit 1: Kemahiran Saintifik - Aplikasi dan Penyelesaian Masalah",
+      "skill_name": "Aplikasi Kaedah Saintifik",
+      "standards": [
+        "1.1.10 Mengaplikasi kaedah saintifik dalam penyelesaian masalah harian.",
+        "1.1.11 Mengamalkan sikap saintifik dan nilai murni dalam menjalankan penyiasatan."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti masalah dalam situasi harian dan mencadangkan penyelesaian menggunakan kaedah saintifik (cth: masalah sampah).",
+        "Murid dapat mereka bentuk model atau prototaip mudah untuk menyelesaikan masalah teknologi.",
+        "Murid dapat menunjukkan 5 nilai murni saintifik (cth: bekerjasama, jujur, teliti) semasa menjalankan aktiviti kumpulan."
+      ],
+      "activities": [
+        "Projek Inovasi Mini: Murid mengenal pasti masalah (cth: menjimatkan air) dan merancang penyelesaian, termasuk membina prototaip.",
+        "Perbincangan Etika Sains: Mengapa penting untuk jujur dalam merekod data.",
+        "Pembentangan Kumpulan: Membentangkan langkah-langkah penyelesaian masalah mengikut kaedah saintifik."
+      ],
+      "assessments": [
+        "Penilaian Projek: Prototaip dan Laporan Projek (dinilai keaslian idea dan aplikasi kaedah saintifik).",
+        "Penilaian Amali: Pemerhatian tingkah laku murid (nilai murni) semasa kerja kumpulan.",
+        "Ujian Konsep: Soalan tentang aplikasi Kaedah Saintifik dalam bidang teknologi."
+      ],
+      "aids": [
+        "Bahan-bahan kitar semula untuk pembinaan model.",
+        "Kad senario penyelesaian masalah.",
+        "Carta Nilai Murni Saintifik."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 2: Interaksi antara Hidupan (Persaingan dan Simbiosis)",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "2.1.1 Menerangkan jenis interaksi antara hidupan (simbiosis: mutualisme, komensalisme, parasitisme).",
+        "2.1.2 Menerangkan faktor-faktor persaingan antara haiwan dan tumbuhan (makanan, air, cahaya, ruang).",
+        "2.1.3 Menyatakan kepentingan interaksi kepada keseimbangan alam."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 3 jenis interaksi simbiosis dan memberi 1 contoh bagi setiap jenis.",
+        "Murid dapat menyenaraikan 3 faktor persaingan antara tumbuhan.",
+        "Murid dapat mengitlak bahawa interaksi memastikan kemandirian spesies."
+      ],
+      "activities": [
+        "Aktiviti Padanan: Padankan jenis interaksi dengan contoh (cth: Ikan badut-Anemon = Mutualisme).",
+        "Perbincangan Kumpulan: Kesan persaingan ke atas pertumbuhan pokok di kawasan yang sesak.",
+        "Tayangan Video: Dokumentari pendek tentang interaksi haiwan."
+      ],
+      "assessments": [
+        "Penilaian Lisan: Soalan tentang perbezaan mutualisme dan parasitisme.",
+        "Latihan Bertulis: Melengkapkan jadual faktor persaingan.",
+        "Kuiz Konsep: Soalan tentang kepentingan interaksi."
+      ],
+      "aids": [
+        "Kad gambar interaksi hidupan (simbiosis dan persaingan).",
+        "Carta jenis interaksi.",
+        "Gambar/Rajah persaingan tumbuhan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 3: Pemeliharaan dan Pemuliharaan",
+      "skill_name": "Sains Hayat",
+      "standards": [
+        "3.1.1 Menerangkan maksud pemeliharaan dan pemuliharaan alam sekitar.",
+        "3.1.2 Menyatakan faktor-faktor kepupusan haiwan dan tumbuhan (aktiviti manusia, bencana alam).",
+        "3.1.3 Menyatakan langkah-langkah pemeliharaan dan pemuliharaan yang berkesan."
+      ],
+      "objectives": [
+        "Murid dapat membezakan pemeliharaan (menjaga) dan pemuliharaan (memulihkan).",
+        "Murid dapat menyenaraikan 3 faktor kepupusan haiwan (cth: pemburuan, kemusnahan habitat).",
+        "Murid dapat menyenaraikan 3 langkah yang boleh diambil untuk memelihara dan memulihara (cth: kitar semula, hutan simpan)."
+      ],
+      "activities": [
+        "Perbincangan Kumpulan: Kajian kes tentang haiwan yang diancam kepupusan di Malaysia.",
+        "Projek '3R' (Reduce, Reuse, Recycle): Merancang kempen kitar semula di sekolah.",
+        "Melukis Poster: Kepentingan pemeliharaan dan pemuliharaan."
+      ],
+      "assessments": [
+        "Penilaian Projek: Keberkesanan kempen 3R yang dicadangkan.",
+        "Latihan Bertulis: Melengkapkan jadual faktor kepupusan dan langkah pencegahan.",
+        "Ujian Lisan: Soalan tentang perbezaan pemeliharaan dan pemuliharaan."
+      ],
+      "aids": [
+        "Gambar haiwan dan tumbuhan yang diancam kepupusan.",
+        "Bahan kitar semula.",
+        "Carta alir konsep 3R."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 4: Daya dan Kestabilan",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "4.1.1 Mengenal pasti objek yang stabil dan kurang stabil.",
+        "4.1.2 Menerangkan faktor-faktor yang mempengaruhi kestabilan (luas tapak, ketinggian pusat graviti).",
+        "4.1.3 Mengaitkan kestabilan dengan keselamatan (cth: pembinaan kereta lumba, bangunan)."
+      ],
+      "objectives": [
+        "Murid dapat menjalankan aktiviti untuk menunjukkan hubungan antara luas tapak dan kestabilan.",
+        "Murid dapat menjelaskan mengapa objek dengan tapak lebar lebih stabil.",
+        "Murid dapat mencadangkan 2 cara untuk meningkatkan kestabilan objek (cth: merendahkan pusat graviti)."
+      ],
+      "activities": [
+        "Eksperimen Amali: Menguji kestabilan objek (cth: bongkah) dengan mengubah ketinggian dan tapaknya.",
+        "Aktiviti Kumpulan: Mencipta model menara yang stabil dan kurang stabil.",
+        "Perbincangan: Mengapa kenderaan berat (bas) perlu direka dengan tapak yang lebar."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menjalankan eksperimen kestabilan.",
+        "Latihan Bertulis: Melukis dan melabelkan faktor-faktor kestabilan.",
+        "Penilaian Produk: Kestabilan model menara yang dibina."
+      ],
+      "aids": [
+        "Bongkah kayu, alat pengukur.",
+        "Bahan binaan model (kadbod, gam).",
+        "Carta faktor kestabilan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 5: Mesin (Mesin Ringkas dan Kompleks)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "5.1.1 Mengenal pasti jenis-jenis mesin ringkas (tuas, satah condong, takal, roda dan gandar).",
+        "5.1.2 Menerangkan kegunaan setiap mesin ringkas.",
+        "5.1.3 Menganalisis mesin kompleks yang terdiri daripada gabungan mesin ringkas."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 jenis mesin ringkas dan memberi 2 contoh setiap satu.",
+        "Murid dapat menerangkan bagaimana mesin ringkas (cth: tuas) membantu meringankan kerja.",
+        "Murid dapat melabelkan 3 mesin ringkas yang terdapat dalam satu mesin kompleks (cth: basikal)."
+      ],
+      "activities": [
+        "Demonstrasi: Menggunakan model untuk menunjukkan prinsip tuas, takal, dan satah condong.",
+        "Aktiviti Kumpulan: Menganalisis mesin kompleks (cth: basikal, jengkaut) dan mengenal pasti mesin ringkas di dalamnya.",
+        "Projek Mini: Mencipta mesin ringkas berfungsi (cth: takal mudah)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid mengenal pasti mesin ringkas dalam mesin kompleks.",
+        "Latihan Bertulis: Melengkapkan jadual mesin ringkas dan kegunaannya.",
+        "Penilaian Projek: Kualiti dan kefungsian mesin ringkas yang dibina."
+      ],
+      "aids": [
+        "Model mesin ringkas (tuas, takal, satah condong).",
+        "Gambar/Rajah mesin kompleks (basikal, pembuka tin).",
+        "Bahan binaan model."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 6: Tenaga (Bentuk dan Sumber)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "6.1.1 Menyatakan bahawa tenaga wujud dalam pelbagai bentuk (kimia, kinetik, potensi, elektrik, cahaya, bunyi).",
+        "6.1.2 Mengenal pasti sumber tenaga yang boleh diperbaharui dan tidak boleh diperbaharui.",
+        "6.1.3 Menerangkan perubahan bentuk tenaga dalam alat/situasi harian."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 5 bentuk tenaga dan memberi 1 contoh bagi setiap bentuk.",
+        "Murid dapat mengelaskan sumber tenaga kepada boleh diperbaharui dan tidak boleh diperbaharui.",
+        "Murid dapat menyatakan perubahan bentuk tenaga bagi 3 alat elektrik (cth: kipas, lampu, radio)."
+      ],
+      "activities": [
+        "Demonstrasi: Menunjukkan pelbagai bentuk tenaga (cth: bateri-elektrik, lampu-cahaya/haba).",
+        "Aktiviti Kumpulan: Mencipta peta minda perubahan bentuk tenaga bagi pelbagai alatan.",
+        "Perbincangan: Kepentingan sumber tenaga yang boleh diperbaharui."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid menunjukkan perubahan tenaga.",
+        "Latihan Bertulis: Melengkapkan jadual sumber tenaga boleh dan tidak boleh diperbaharui.",
+        "Ujian Lisan: Soalan tentang perubahan bentuk tenaga dalam kereta."
+      ],
+      "aids": [
+        "Pelbagai alatan elektrik (kipas kecil, lampu suluh, radio).",
+        "Carta/Poster bentuk dan sumber tenaga.",
+        "Bateri dan motor kecil."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 7: Kelajuan (Masa dan Jarak)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "7.1.1 Menyatakan kelajuan ialah jarak yang dilalui dalam masa yang diambil.",
+        "7.1.2 Menjalankan eksperimen untuk menentukan kelajuan objek.",
+        "7.1.3 Mengira kelajuan menggunakan formula: Kelajuan = Jarak / Masa."
+      ],
+      "objectives": [
+        "Murid dapat menjalankan eksperimen untuk membandingkan kelajuan 2 objek (cth: kereta mainan).",
+        "Murid dapat merekodkan masa dan jarak dengan unit yang betul.",
+        "Murid dapat mengira kelajuan objek menggunakan formula dengan tepat."
+      ],
+      "activities": [
+        "Eksperimen Amali: Mengukur masa yang diambil oleh kereta mainan untuk bergerak sejauh 1 meter di atas permukaan yang berbeza.",
+        "Latih Amal: Menyelesaikan masalah pengiraan kelajuan.",
+        "Perbincangan: Mengapa kelajuan penting dalam kehidupan (cth: perjalanan, lumba lari)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid merekod masa dan jarak dengan tepat.",
+        "Latihan Bertulis: Penyelesaian masalah pengiraan kelajuan (sumatif).",
+        "Ujian Lisan: Soalan tentang hubungan antara kelajuan, jarak, dan masa."
+      ],
+      "aids": [
+        "Kereta mainan, pembaris meter/pita pengukur.",
+        "Jam randik.",
+        "Formula kelajuan (poster)."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 8: Elektrik (Penggunaan dan Keselamatan)",
+      "skill_name": "Sains Fizikal",
+      "standards": [
+        "8.1.1 Menyatakan langkah-langkah keselamatan dalam pengendalian peralatan elektrik (palam, wayar, suis).",
+        "8.1.2 Menerangkan bagaimana elektrik dihasilkan dan dihantar ke rumah (asas).",
+        "8.1.3 Menyatakan kepentingan penjimatan elektrik."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 5 langkah keselamatan elektrik di rumah dan sekolah.",
+        "Murid dapat menerangkan bahaya litar pintas dan kejutan elektrik.",
+        "Murid dapat mencadangkan 3 cara untuk menjimatkan penggunaan elektrik."
+      ],
+      "activities": [
+        "Perbincangan: 'Apa yang salah dengan gambar ini?' (Gambar situasi berbahaya elektrik).",
+        "Projek Poster: Kempen Keselamatan dan Penjimatan Elektrik.",
+        "Tayangan Video: Proses penjanaan dan penghantaran elektrik (asas)."
+      ],
+      "assessments": [
+        "Penilaian Lisan: Soalan tentang tindakan yang perlu diambil dalam kecemasan elektrik.",
+        "Latihan Bertulis: Melengkapkan jadual bahaya elektrik dan cara pencegahan.",
+        "Penilaian Produk: Poster Keselamatan dan Penjimatan Elektrik."
+      ],
+      "aids": [
+        "Gambar/Rajah situasi berbahaya elektrik.",
+        "Carta langkah keselamatan elektrik.",
+        "Rujukan kadar penggunaan elektrik peranti rumah."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 9: Bumi dan Angkasa (Gerhana dan Fasa Bulan)",
+      "skill_name": "Sains Bumi dan Angkasa",
+      "standards": [
+        "9.1.1 Menerangkan fasa-fasa Bulan (asas).",
+        "9.1.2 Menerangkan fenomena gerhana Matahari dan gerhana Bulan (kedudukan Matahari, Bulan, Bumi).",
+        "9.1.3 Mengaplikasi pengetahuan tentang fasa Bulan dalam kehidupan (cth: takwim)."
+      ],
+      "objectives": [
+        "Murid dapat melabelkan 4 fasa Bulan utama.",
+        "Murid dapat melukis dan melabelkan kedudukan Matahari, Bulan, dan Bumi semasa gerhana Matahari dan gerhana Bulan.",
+        "Murid dapat menjelaskan mengapa gerhana tidak berlaku setiap bulan."
+      ],
+      "activities": [
+        "Model Simulasi: Menggunakan lampu suluh, bola tenis (Bulan), dan bola besar (Bumi) untuk menunjukkan fasa Bulan dan gerhana.",
+        "Perbincangan Kumpulan: Hubungan fasa Bulan dengan kalendar Islam (asas).",
+        "Tayangan Video: Fenomena gerhana."
+      ],
+      "assessments": [
+        "Penilaian Produk: Ketepatan model gerhana dan fasa Bulan.",
+        "Latihan Bertulis: Melukis dan melabelkan rajah gerhana.",
+        "Ujian Lisan: Soalan tentang fasa Bulan."
+      ],
+      "aids": [
+        "Bahan untuk model simulasi (bola, lampu suluh).",
+        "Carta/Poster fasa Bulan dan gerhana.",
+        "Takwim yang menunjukkan fasa Bulan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 10: Teknologi dan Kelestarian",
+      "skill_name": "Sains Bumi dan Angkasa",
+      "standards": [
+        "10.1.1 Mengenal pasti inovasi teknologi yang membantu manusia (satelit, teleskop).",
+        "10.1.2 Menyatakan kesan kemajuan sains dan teknologi terhadap alam sekitar.",
+        "10.1.3 Mencadangkan penyelesaian masalah teknologi dengan mempertimbangkan kelestarian alam."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 inovasi teknologi angkasa lepas (cth: satelit komunikasi).",
+        "Murid dapat menjelaskan 2 kesan negatif teknologi ke atas alam sekitar (cth: pencemaran).",
+        "Murid dapat mencadangkan 1 inovasi 'hijau' untuk menyelesaikan masalah pencemaran (cth: penapis air, kereta elektrik)."
+      ],
+      "activities": [
+        "Perbincangan Etika: Bagaimana teknologi boleh merosakkan alam sekitar (cth: sisa elektronik).",
+        "Projek 'Inovasi Lestari': Murid merekabentuk idea teknologi baharu yang mesra alam.",
+        "Tayangan Video: Teknologi angkasa lepas dan kegunaannya."
+      ],
+      "assessments": [
+        "Penilaian Projek: Idea Inovasi Lestari (dinilai kreativiti dan kelestarian).",
+        "Latihan Bertulis: Melengkapkan jadual kesan positif dan negatif teknologi.",
+        "Ujian Lisan: Soalan tentang kepentingan satelit."
+      ],
+      "aids": [
+        "Gambar/Video teknologi terkini (satelit, teleskop).",
+        "Bahan kitar semula untuk projek inovasi.",
+        "Carta teknologi hijau."
+      ]
+    }
+  ]
+}

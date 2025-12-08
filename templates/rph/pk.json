@@ -1,0 +1,1771 @@
+{
+  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Pendidikan Kesihatan - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
+  "subject": "Pendidikan Kesihatan",
+  "data": [
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 1: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 1,
+      "topic_name": "Unit 1: Kesihatan Diri dan Kebersihan Asas",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.1.1 Menyatakan kepentingan menjaga kebersihan diri (mandi, gigi, tangan).",
+        "1.1.2 Melakukan amalan kebersihan diri yang betul (cth: mencuci tangan 6 langkah).",
+        "4.1.1 Menghargai kebersihan diri untuk kesihatan optimum."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 kepentingan menjaga kebersihan diri.",
+        "Murid dapat menunjukkan 6 langkah mencuci tangan yang betul.",
+        "Murid dapat menyatakan alatan kebersihan diri yang digunakan setiap hari (cth: sabun, sikat)."
+      ],
+      "activities": [
+        "Latih Tubi: Menyanyikan lagu/lagu ringkas tentang mencuci tangan.",
+        "Demonstrasi: Guru menunjukkan cara menggosok gigi yang betul.",
+        "Simulasi: 'Pemeriksaan' kuku dan rambut (bersih atau tidak)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid melakukan 6 langkah cuci tangan.",
+        "Ujian Lisan: Soalan kepentingan kebersihan diri.",
+        "Senarai Semak: Kepatuhan amalan kebersihan diri."
+      ],
+      "aids": [
+        "Carta langkah cuci tangan.",
+        "Model gigi dan berus gigi.",
+        "Sabun dan air."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 2: Makanan Sihat dan Tidak Sihat",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.2.1 Mengenal pasti jenis makanan yang sihat dan tidak sihat.",
+        "1.2.2 Menyatakan 3 faedah makan makanan sihat.",
+        "4.2.1 Mengamalkan pengambilan makanan sihat dalam kehidupan harian."
+      ],
+      "objectives": [
+        "Murid dapat mengelaskan 5 jenis makanan kepada kumpulan sihat dan tidak sihat.",
+        "Murid dapat memilih 1 sarapan sihat dan 1 snek sihat (simulasi).",
+        "Murid dapat menyatakan 2 kesan buruk makan terlalu banyak gula-gula/snek tidak sihat."
+      ],
+      "activities": [
+        "Aktiviti Kumpulan: Menggunting dan menampal gambar makanan ke dalam kategori sihat/tidak sihat.",
+        "Perbincangan: Kepentingan sarapan pagi.",
+        "Permainan: 'Pasar Makanan Sihat' (simulasi jual beli)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan mengelaskan makanan.",
+        "Ujian Lisan: Soalan faedah makanan sihat.",
+        "Lembaran Kerja: Pengelasan makanan."
+      ],
+      "aids": [
+        "Carta Piramid Makanan (ringkas).",
+        "Gambar-gambar makanan.",
+        "Papan tulis interaktif."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 3: Anggota Badan Saya dan Fungsinya",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.3.1 Mengenal pasti nama anggota badan utama (tangan, kaki, mata, dll.).",
+        "1.3.2 Menyatakan 1 fungsi asas setiap anggota badan (cth: kaki untuk berjalan).",
+        "4.3.1 Menghargai dan menjaga setiap anggota badan."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 anggota badan utama dengan betul.",
+        "Murid dapat menyatakan fungsi tangan dan kaki.",
+        "Murid dapat menyatakan 2 cara menjaga anggota badan (cth: pakai topi di bawah matahari)."
+      ],
+      "activities": [
+        "Permainan: 'Simon Says' (menggunakan nama anggota badan).",
+        "Latih Tubi: Menunjuk dan menamakan anggota badan.",
+        "Lukisan: Melukis diri sendiri dan melabel anggota badan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan menamakan anggota badan.",
+        "Ujian Lisan: Soalan fungsi asas anggota badan.",
+        "Lembaran Kerja: Melabel anggota badan."
+      ],
+      "aids": [
+        "Carta gambar anggota badan.",
+        "Boneka/Model badan."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 4: Emosi Asas Saya (Gembira, Sedih, Marah)",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.1.1 Mengenal pasti emosi asas (gembira, sedih, marah) dalam diri dan orang lain.",
+        "2.1.2 Menyatakan punca asas emosi yang dirasai.",
+        "4.4.1 Menerima dan menguruskan emosi asas (asas)."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti dan meniru ekspresi wajah 3 emosi asas.",
+        "Murid dapat menyatakan 1 perkara yang membuat mereka gembira atau sedih.",
+        "Murid dapat menyatakan 1 cara yang boleh dilakukan jika berasa sedih (cth: bercerita dengan guru/ibu bapa)."
+      ],
+      "activities": [
+        "Aktiviti Kumpulan: 'Permainan Cermin Emosi' (meniru ekspresi).",
+        "Perbincangan: Bila saya rasa gembira/sedih/marah.",
+        "Lukisan: Melukis wajah yang gembira dan sedih."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan meniru ekspresi emosi.",
+        "Ujian Lisan: Soalan punca emosi.",
+        "Senarai Semak: Cara mengurus emosi."
+      ],
+      "aids": [
+        "Kad imbasan ekspresi wajah.",
+        "Cermin.",
+        "Cerita ringkas tentang emosi."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 5: Sentuhan Selamat dan Tidak Selamat (Good Touch, Bad Touch)",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.1.1 Mengenal pasti bahagian sulit pada badan (asas).",
+        "3.1.2 Mengenal pasti jenis sentuhan (selamat, tidak selamat).",
+        "4.5.1 Menyatakan 'TIDAK' kepada sentuhan tidak selamat dan memberitahu orang dewasa yang dipercayai."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 bahagian sulit badan (tertutup).",
+        "Murid dapat membezakan 2 sentuhan selamat dan 2 sentuhan tidak selamat.",
+        "Murid dapat menyatakan 3 orang dewasa yang mereka boleh percayai untuk meminta bantuan."
+      ],
+      "activities": [
+        "Perbincangan: Konsep 'Rahsia Selamat' vs. 'Rahsia Tidak Selamat'.",
+        "Simulasi: Teknik berkata 'TIDAK' dengan tegas.",
+        "Lukisan: Melukis bulatan orang yang dipercayai."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan konsep sentuhan selamat/tidak selamat.",
+        "Senarai Semak: Keupayaan berkata 'TIDAK'.",
+        "Lembaran Kerja: Mengenal pasti bahagian sulit."
+      ],
+      "aids": [
+        "Carta 'Sentuhan Selamat/Tidak Selamat'.",
+        "Gambar orang dewasa yang dipercayai (guru, ibu bapa, polis)."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 6: Keselamatan di Sekolah",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.4.1 Mengenal pasti 3 situasi bahaya di sekolah (cth: berlari di tangga, bermain di jalan raya).",
+        "1.4.2 Menyatakan 3 langkah keselamatan asas di sekolah.",
+        "4.6.1 Mengamalkan langkah keselamatan diri di sekolah."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 3 kawasan berbahaya di sekolah.",
+        "Murid dapat menyatakan 2 peraturan bilik darjah yang berkaitan dengan keselamatan.",
+        "Murid dapat menunjukkan cara yang betul untuk berjalan di tangga."
+      ],
+      "activities": [
+        "Lawatan ringkas: Mengenal pasti kawasan bahaya di sekolah (tangga, padang, tandas).",
+        "Perbincangan: Peraturan di padang permainan.",
+        "Simulasi: Cara berjalan di tangga dan koridor."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan mematuhi peraturan di kawasan bahaya.",
+        "Ujian Lisan: Soalan situasi bahaya di sekolah.",
+        "Lembaran Kerja: Melukis simbol keselamatan."
+      ],
+      "aids": [
+        "Papan tanda/simbol keselamatan.",
+        "Gambar situasi bahaya di sekolah."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 7: Bahaya Bahan Toksik",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.5.1 Mengenal pasti 3 bahan toksik biasa di rumah (cth: peluntur, racun serangga, ubat-ubatan).",
+        "1.5.2 Menyatakan 2 bahaya bahan toksik jika disentuh/dimakan.",
+        "4.7.1 Mengamalkan sikap tidak menyentuh bahan yang tidak dikenali."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 bahan berbahaya yang tidak boleh dimakan.",
+        "Murid dapat mengenal pasti 2 simbol amaran (cth: tengkorak).",
+        "Murid dapat menyatakan 1 tindakan yang perlu dilakukan jika terjumpa bahan toksik (cth: beritahu orang dewasa)."
+      ],
+      "activities": [
+        "Aktiviti Kumpulan: Mengumpul gambar/simbol bahan toksik (majalah/risalah).",
+        "Perbincangan: Tempat selamat menyimpan ubat-ubatan.",
+        "Simulasi: Situasi terjumpa pil di lantai."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan mengenal pasti simbol amaran.",
+        "Ujian Lisan: Soalan bahaya bahan toksik.",
+        "Lembaran Kerja: Menamakan bahan toksik."
+      ],
+      "aids": [
+        "Carta simbol amaran bahan kimia.",
+        "Kotak ubat mainan/kosong."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 8: Tidur dan Rehat yang Cukup",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.6.1 Menyatakan kepentingan tidur dan rehat yang cukup.",
+        "1.6.2 Mengenal pasti jumlah jam tidur yang sesuai untuk kanak-kanak.",
+        "4.8.1 Mengamalkan tabiat tidur yang sihat."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 faedah tidur (cth: badan sihat, minda cergas).",
+        "Murid dapat menyatakan waktu tidur dan bangun yang ideal (cth: 8 malam – 6 pagi).",
+        "Murid dapat menyenaraikan 2 aktiviti yang tidak patut dilakukan sebelum tidur (cth: main gajet, makan banyak)."
+      ],
+      "activities": [
+        "Perbincangan: Rutin tidur sebelum tidur (cth: gosok gigi, baca buku).",
+        "Aktiviti Kumpulan: Melukis aktiviti yang dilakukan semasa rehat.",
+        "Cerita: Membaca cerita tentang kepentingan tidur."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan kepentingan tidur dan rehat.",
+        "Senarai Semak: Rutin tidur yang sihat.",
+        "Lembaran Kerja: Waktu tidur yang dicadangkan."
+      ],
+      "aids": [
+        "Jam model (untuk menunjukkan waktu tidur).",
+        "Carta faedah tidur."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 9: Keluarga Saya yang Tercinta",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.2.1 Mengenal pasti ahli keluarga asas (ibu, bapa, adik-beradik).",
+        "3.2.2 Menyatakan 1 peranan asas setiap ahli keluarga (cth: bapa mencari nafkah).",
+        "4.9.1 Menghargai dan menyayangi ahli keluarga."
+      ],
+      "objectives": [
+        "Murid dapat menamakan semua ahli keluarga asas mereka.",
+        "Murid dapat menyatakan 1 perkara yang mereka suka lakukan bersama keluarga.",
+        "Murid dapat menyatakan 2 cara menunjukkan kasih sayang kepada keluarga."
+      ],
+      "activities": [
+        "Aktiviti Kumpulan: Melukis carta keluarga (Family Tree).",
+        "Perbincangan: Peranan dan tanggungjawab setiap ahli keluarga (ringkas).",
+        "Bercerita: Berkongsi pengalaman gembira bersama keluarga."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan nama ahli keluarga dan peranan.",
+        "Penilaian Amali: Pemerhatian kasih sayang dan hormat terhadap keluarga (dalam perbualan).",
+        "Projek: Carta keluarga."
+      ],
+      "aids": [
+        "Gambar ahli keluarga (jika ada).",
+        "Carta peranan keluarga."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 10: Adab dan Tingkah Laku yang Baik",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.2.1 Mengenal pasti tingkah laku yang baik dan tidak baik (cth: berkongsi, bergaduh).",
+        "2.2.2 Menyatakan kepentingan meminta maaf dan berterima kasih.",
+        "4.10.1 Mengamalkan adab yang baik dalam pergaulan."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 tingkah laku yang baik (cth: tolong-menolong, berkongsi).",
+        "Murid dapat menunjukkan cara yang betul untuk meminta maaf dan berterima kasih.",
+        "Murid dapat menyatakan 1 sebab mengapa tingkah laku yang baik penting."
+      ],
+      "activities": [
+        "Lakonan: Simulasi meminta maaf dan berterima kasih.",
+        "Perbincangan: Akibat bergaduh dan berebut barang.",
+        "Aktiviti Kumpulan: Melukis poster 'Kawan yang Baik'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan adab yang baik (lakonan).",
+        "Ujian Lisan: Soalan kepentingan adab.",
+        "Senarai Semak: Pengamalan tingkah laku yang baik."
+      ],
+      "aids": [
+        "Kad situasi (tingkah laku baik/buruk).",
+        "Poster adab dan sopan."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 2: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 2,
+      "topic_name": "Unit 1: Pemakanan Berpandu (Pinggan Sihat Malaysia)",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.1.1 Mengenal pasti jenis makanan mengikut 'Pinggan Sihat Malaysia' (Suku-Suku-Separuh).",
+        "1.1.2 Menyatakan kepentingan air dan serat dalam diet.",
+        "4.1.1 Mengamalkan panduan 'Pinggan Sihat Malaysia' semasa makan."
+      ],
+      "objectives": [
+        "Murid dapat melabelkan 3 komponen utama dalam Pinggan Sihat Malaysia.",
+        "Murid dapat menyenaraikan 3 contoh makanan yang tinggi serat.",
+        "Murid dapat menyatakan 2 kepentingan minum air yang cukup."
+      ],
+      "activities": [
+        "Aktiviti Kumpulan: Mencipta 'Pinggan Sihat' daripada gambar makanan.",
+        "Perbincangan: Kebaikan serat (sayur/buah) dan air.",
+        "Simulasi: Memilih makanan di kafeteria mengikut panduan Suku-Suku-Separuh."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan merancang Pinggan Sihat.",
+        "Ujian Lisan: Soalan kepentingan air dan serat.",
+        "Lembaran Kerja: Melabel Pinggan Sihat Malaysia."
+      ],
+      "aids": [
+        "Carta Pinggan Sihat Malaysia.",
+        "Gambar-gambar makanan.",
+        "Botol air."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 2: Kesihatan Gigi dan Mulut Lanjutan",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.2.1 Menerangkan kepentingan dan cara menjaga kesihatan gigi dan mulut.",
+        "1.2.2 Mengenal pasti punca kerosakan gigi (gula, tidak memberus).",
+        "4.2.1 Mengamalkan pemeriksaan gigi sekurang-kurangnya setahun sekali."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 2 kepentingan menjaga gigi dan mulut.",
+        "Murid dapat menyatakan 3 punca utama kerosakan gigi.",
+        "Murid dapat melakukan demonstrasi memberus gigi dengan teknik yang betul (2 minit)."
+      ],
+      "activities": [
+        "Demonstrasi: Teknik memberus gigi yang betul (menggunakan model).",
+        "Perbincangan: Makanan yang merosakkan gigi (gula, asid).",
+        "Bercerita: Pengalaman melawat doktor gigi."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik memberus gigi.",
+        "Ujian Lisan: Soalan punca kerosakan gigi.",
+        "Senarai Semak: Kekerapan memberus gigi (rekod harian ringkas)."
+      ],
+      "aids": [
+        "Model gigi dan berus gigi.",
+        "Ubat gigi dan cermin.",
+        "Video teknik memberus gigi."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 3: Kesihatan Keluarga dan Saling Membantu",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.1.1 Menerangkan tanggungjawab asas sebagai ahli keluarga (cth: membantu di rumah, menjaga adik).",
+        "3.1.2 Menyatakan 2 kepentingan berinteraksi secara positif dengan keluarga.",
+        "4.3.1 Menunjukkan sikap saling membantu dan menghormati dalam keluarga."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 tugas di rumah yang boleh dilakukan oleh mereka.",
+        "Murid dapat menyatakan 2 cara berinteraksi secara positif dengan ibu bapa (cth: bercakap sopan).",
+        "Murid dapat melakonkan situasi membantu rakan yang sedang sedih."
+      ],
+      "activities": [
+        "Perbincangan: Pembahagian tugas di rumah (Lelaki dan Perempuan).",
+        "Lakonan: Interaksi positif dalam keluarga (minta izin, minta maaf).",
+        "Projek: 'Jadual Tugas Saya' di rumah."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian tingkah laku (lakonan interaksi).",
+        "Ujian Lisan: Soalan tanggungjawab ahli keluarga.",
+        "Jadual Rekod: Pengamalan tanggungjawab di rumah."
+      ],
+      "aids": [
+        "Carta peranan dan tanggungjawab keluarga.",
+        "Kad situasi interaksi."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 4: Keselamatan Jalan Raya dan Tempat Awam",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.3.1 Mengenal pasti peraturan asas keselamatan jalan raya (cth: melintas di lintasan pejalan kaki).",
+        "1.3.2 Menyatakan 3 langkah keselamatan di tempat awam (cth: tidak bercakap dengan orang tidak dikenali).",
+        "4.4.1 Mengamalkan peraturan keselamatan diri di jalan raya dan tempat awam."
+      ],
+      "objectives": [
+        "Murid dapat melakonkan cara yang betul melintas jalan (berhenti, lihat, dengar).",
+        "Murid dapat menyatakan 2 tindakan jika tersesat di tempat awam.",
+        "Murid dapat mengenal pasti 3 isyarat jalan raya yang penting."
+      ],
+      "activities": [
+        "Latih Amal: Melintas jalan raya (simulasi di kawasan sekolah).",
+        "Perbincangan: Bahaya orang tidak dikenali (Stranger Danger).",
+        "Aktiviti Kumpulan: Melukis peta perjalanan yang selamat ke sekolah."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik melintas jalan (simulasi).",
+        "Ujian Lisan: Soalan tindakan jika tersesat.",
+        "Lembaran Kerja: Padanan isyarat jalan raya."
+      ],
+      "aids": [
+        "Model lampu isyarat dan isyarat jalan raya.",
+        "Pita penanda lintasan pejalan kaki (simulasi)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 5: Perasaan dan Reaksi Terhadap Perasaan",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.1.1 Mengenal pasti pelbagai jenis perasaan (malu, teruja, takut, kecewa).",
+        "2.1.2 Menyatakan cara yang betul untuk meluahkan perasaan.",
+        "4.5.1 Menerima dan mengawal perasaan dengan cara yang sihat."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 5 perasaan yang berbeza.",
+        "Murid dapat menyatakan 2 cara meluahkan perasaan marah secara sihat (cth: tarik nafas, bercakap).",
+        "Murid dapat membezakan antara perasaan dan tindakan (cth: marah bukan alasan untuk memukul)."
+      ],
+      "activities": [
+        "Aktiviti Kumpulan: 'Drama Pendek Perasaan' (melakonkan perasaan tertentu).",
+        "Perbincangan: Cara mengawal perasaan marah/kecewa.",
+        "Penulisan: Mencatat 'Jurnal Perasaan Saya' (ringkas)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakonkan pelbagai perasaan.",
+        "Ujian Lisan: Soalan cara luahan perasaan sihat.",
+        "Senarai Semak: Pengawalan emosi (pemerhatian guru)."
+      ],
+      "aids": [
+        "Kad emosi bergambar.",
+        "Boneka/Puppets.",
+        "Carta 'Bertenang' (Cool Down Techniques)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 6: Hormat dan Menghargai Rakan",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.2.1 Menerangkan kepentingan menghormati perbezaan rakan (rupa, bangsa, kebolehan).",
+        "2.2.2 Mengenal pasti tingkah laku yang menunjukkan rasa hormat (cth: mendengar, berkongsi).",
+        "4.6.1 Mengamalkan sikap saling menghormati dan tidak mengejek."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 ciri perbezaan antara rakan sekelas (cth: warna kulit, tinggi, minat).",
+        "Murid dapat memberikan 2 contoh cara menghormati rakan.",
+        "Murid dapat melakonkan situasi 'menolak' ajakan mengejek rakan."
+      ],
+      "activities": [
+        "Perbincangan: 'Kami Berbeza, Kami Sama' (menghargai kepelbagaian).",
+        "Lakonan: Menunjukkan rasa hormat dalam perbualan (mendengar dengan aktif).",
+        "Aktiviti Kumpulan: Mencipta 'Slogan Hormat Menghormati'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian tingkah laku (tidak mengejek) dalam pergaulan.",
+        "Ujian Lisan: Soalan kepentingan menghormati perbezaan.",
+        "Senarai Semak: Tingkah laku hormat yang ditunjukkan."
+      ],
+      "aids": [
+        "Poster 'Kepelbagaian Bangsa'.",
+        "Kad situasi (perbezaan rakan)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 7: Bahaya Pengambilan Ubat-ubatan Tanpa Pengawasan",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.4.1 Menyatakan 3 peraturan pengambilan ubat-ubatan (mesti ada kebenaran orang dewasa, ikut dos).",
+        "1.4.2 Mengenal pasti ubat-ubatan yang berbahaya (ubat yang tidak berlabel/ubat orang lain).",
+        "4.7.1 Mengamalkan sikap berhati-hati dalam pengambilan ubat."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 kepentingan mengambil ubat mengikut arahan doktor/ahli farmasi.",
+        "Murid dapat melakonkan situasi meminta izin sebelum mengambil ubat.",
+        "Murid dapat membezakan ubat 'dewasa' dan ubat 'kanak-kanak' (asas)."
+      ],
+      "activities": [
+        "Perbincangan: Kesan buruk terlebih dos atau mengambil ubat orang lain.",
+        "Simulasi: Meminta izin daripada guru/ibu bapa untuk mengambil ubat.",
+        "Aktiviti Kumpulan: Melukis simbol 'Tanya Dulu Sebelum Ambil'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakonkan situasi meminta izin.",
+        "Ujian Lisan: Soalan peraturan pengambilan ubat.",
+        "Lembaran Kerja: Padanan ubat dan arahan pengambilan."
+      ],
+      "aids": [
+        "Kotak ubat mainan/kosong berlabel.",
+        "Carta peraturan pengambilan ubat."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 8: Keselamatan di Kolam Renang dan Air",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.5.1 Menyatakan 3 peraturan asas keselamatan di kolam renang (cth: tidak berlari, tidak menolak rakan).",
+        "1.5.2 Mengenal pasti bahaya bermain di kawasan air dalam tanpa pengawasan.",
+        "4.8.1 Mengamalkan peraturan keselamatan air."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 peraturan keselamatan kolam renang.",
+        "Murid dapat menyatakan 1 tindakan jika ternampak rakan dalam bahaya di air (cth: jerit minta tolong).",
+        "Murid dapat menyatakan kepentingan memakai pelampung."
+      ],
+      "activities": [
+        "Perbincangan: Kaitan aktiviti air dan risiko lemas.",
+        "Aktiviti Kumpulan: Mencipta poster 'Keselamatan Air'.",
+        "Simulasi: Teknik menjerit 'TOLONG!' dengan kuat (jika ternampak bahaya)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan peraturan keselamatan kolam renang.",
+        "Penilaian Amali: Pemerhatian keupayaan simulasi meminta tolong.",
+        "Projek: Poster Keselamatan Air."
+      ],
+      "aids": [
+        "Gambar/video kolam renang dan risiko.",
+        "Pelampung."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 9: Penyelesaian Konflik Asas",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.3.1 Mengenal pasti punca asas konflik dalam kalangan rakan (cth: berebut barang, salah faham).",
+        "2.3.2 Menyatakan 3 langkah mudah menyelesaikan konflik (cth: bertenang, dengar, kongsi).",
+        "4.9.1 Mengamalkan penyelesaian konflik tanpa kekerasan."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 punca konflik dengan rakan.",
+        "Murid dapat melakonkan situasi penyelesaian konflik dengan 3 langkah yang betul.",
+        "Murid dapat menyatakan 1 akibat buruk bergaduh."
+      ],
+      "activities": [
+        "Lakonan: Simulasi situasi konflik (berebut mainan).",
+        "Perbincangan: Kepentingan berkongsi dan bergilir.",
+        "Aktiviti Kumpulan: Melukis langkah-langkah penyelesaian konflik."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakonkan penyelesaian konflik secara positif.",
+        "Ujian Lisan: Soalan langkah penyelesaian konflik.",
+        "Senarai Semak: Pengamalan penyelesaian konflik tanpa kekerasan."
+      ],
+      "aids": [
+        "Boneka tangan.",
+        "Kad situasi konflik.",
+        "Carta langkah penyelesaian konflik."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 10: Pengurusan Kesusahan Asas",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.2.1 Mengenal pasti jenis kesusahan asas (cth: kemalangan ringan, ditimpa sakit).",
+        "3.2.2 Menyatakan 2 cara meminta bantuan daripada orang dewasa yang dipercayai.",
+        "4.10.1 Bertindak cepat dan tenang dalam situasi kesusahan (asas)."
+      ],
+      "objectives": [
+        "Murid dapat membezakan antara masalah kecil dan masalah besar.",
+        "Murid dapat menyatakan 2 ayat yang betul untuk meminta bantuan (cth: Tolong saya, saya sakit).",
+        "Murid dapat menyatakan 3 orang yang patut dihubungi jika berlaku kecemasan (ibu bapa, polis, ambulans - asas)."
+      ],
+      "activities": [
+        "Perbincangan: Siapa yang boleh membantu saya? (Rangkaian sokongan).",
+        "Simulasi: Cara menghubungi ibu bapa/guru dalam kecemasan.",
+        "Aktiviti Kumpulan: Menulis nombor telefon kecemasan asas."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan berkomunikasi dalam simulasi kecemasan.",
+        "Ujian Lisan: Soalan rangkaian sokongan dan nombor kecemasan.",
+        "Lembaran Kerja: Nombor telefon penting."
+      ],
+      "aids": [
+        "Telefon mainan.",
+        "Carta nombor telefon kecemasan."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 3: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 3,
+      "topic_name": "Unit 1: Pertumbuhan Fizikal dan Kesihatan",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.1.1 Mengenal pasti perubahan fizikal yang dialami (berat, tinggi).",
+        "1.1.2 Menyatakan kadar pertumbuhan fizikal adalah berbeza antara individu.",
+        "4.1.1 Menghargai dan menerima perubahan fizikal diri."
+      ],
+      "objectives": [
+        "Murid dapat mengukur dan merekodkan berat dan ketinggian diri sendiri.",
+        "Murid dapat membandingkan (secara umum) perbezaan berat dan tinggi antara rakan sebaya.",
+        "Murid dapat menyatakan 2 aktiviti yang membantu pertumbuhan yang sihat."
+      ],
+      "activities": [
+        "Latih Amal: Mengukur berat dan ketinggian (berpasangan).",
+        "Perbincangan: Kebaikan bersenam dan tidur yang cukup untuk pertumbuhan.",
+        "Aktiviti Kumpulan: Membuat carta pertumbuhan diri (rekod 3 bulan)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian ketepatan pengukuran berat/tinggi.",
+        "Ujian Lisan: Soalan faktor pertumbuhan sihat.",
+        "Jurnal: Rekod pertumbuhan diri."
+      ],
+      "aids": [
+        "Penimbang berat dan pita ukur/stadiometer.",
+        "Carta pertumbuhan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 2: Kesihatan Mata, Telinga, dan Hidung",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.2.1 Menerangkan kepentingan dan cara menjaga kesihatan mata, telinga, dan hidung.",
+        "1.2.2 Mengenal pasti punca asas masalah deria (cth: rabun, telinga sakit, selsema).",
+        "4.2.1 Mengamalkan penjagaan deria yang betul."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 cara menjaga setiap deria (cth: tidak membaca dalam gelap, tidak memasukkan objek dalam telinga).",
+        "Murid dapat menyatakan 1 punca utama rabun mata.",
+        "Murid dapat melakonkan situasi menjaga deria (cth: mengelap mata yang kotor)."
+      ],
+      "activities": [
+        "Perbincangan: Bahaya bunyi bising dan cahaya malap.",
+        "Simulasi: Cara mengelap mata dan membersihkan telinga (luaran).",
+        "Aktiviti Kumpulan: Mencipta 'Kod Etika Kesihatan Deria'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian simulasi penjagaan deria.",
+        "Ujian Lisan: Soalan punca asas masalah deria.",
+        "Senarai Semak: Amalan penjagaan deria."
+      ],
+      "aids": [
+        "Carta penjagaan deria.",
+        "Model mata/telinga (jika ada)."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 3: Penyakit Berjangkit Asas (Selsema, Batuk, Demam)",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.3.1 Mengenal pasti 3 penyakit berjangkit asas dan simptomnya.",
+        "1.3.2 Menyatakan 3 cara asas mencegah penyakit berjangkit (cth: tutup mulut bila batuk, cuci tangan).",
+        "4.3.1 Mengambil langkah pencegahan untuk mengelakkan penyebaran penyakit."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 penyakit berjangkit asas.",
+        "Murid dapat menunjukkan cara batuk dan bersin yang betul (menggunakan siku).",
+        "Murid dapat menyatakan 1 tindakan jika berasa demam/sakit (cth: beritahu ibu bapa)."
+      ],
+      "activities": [
+        "Perbincangan: Cara kuman merebak (titisan, sentuhan).",
+        "Simulasi: Etika batuk dan bersin.",
+        "Aktiviti Kumpulan: Membuat poster 'Hentikan Kuman'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian simulasi etika batuk/bersin.",
+        "Ujian Lisan: Soalan cara pencegahan penyakit berjangkit.",
+        "Projek: Poster kesedaran penyakit."
+      ],
+      "aids": [
+        "Carta penyebaran kuman.",
+        "Topeng muka (mask)."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 4: Kesihatan Seksualiti - Perbezaan Jantina dan Privasi",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.1.1 Mengenal pasti dan menghormati perbezaan fizikal antara lelaki dan perempuan (asas).",
+        "3.1.2 Menerangkan kepentingan menjaga kehormatan dan aurat diri (berpakaian sopan).",
+        "4.4.1 Menghargai dan menjaga kehormatan diri serta privasi orang lain."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 perbezaan asas antara lelaki dan perempuan (fizikal dan pakaian).",
+        "Murid dapat menyatakan 2 sebab mengapa kita perlu berpakaian sopan (menjaga kehormatan/aurat).",
+        "Murid dapat menyatakan 1 tindakan jika ternampak rakan tidak berpakaian sopan (cth: beritahu guru/ibu bapa)."
+      ],
+      "activities": [
+        "Perbincangan: Konsep aurat dan kehormatan diri.",
+        "Aktiviti Kumpulan: Melukis pakaian yang sesuai untuk pelbagai aktiviti (sukan, sekolah).",
+        "Sesi Soal Jawab: Kepentingan menghormati privasi orang lain (cth: bilik persalinan)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan kepentingan menjaga kehormatan diri.",
+        "Lembaran Kerja: Pengelasan pakaian sopan.",
+        "Senarai Semak: Tingkah laku hormat terhadap jantina lain."
+      ],
+      "aids": [
+        "Carta perbezaan jantina (visual).",
+        "Gambar pakaian sopan dan tidak sopan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 5: Perasaan Cemburu dan Kerjasama",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.1.1 Mengenal pasti perasaan cemburu dan kecewa.",
+        "2.1.2 Menyatakan cara yang betul menguruskan perasaan cemburu dan memupuk kerjasama.",
+        "4.5.1 Mengamalkan sikap kerjasama dan mengelakkan perasaan negatif."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti situasi yang menimbulkan perasaan cemburu.",
+        "Murid dapat menyatakan 2 cara mengatasi perasaan cemburu (cth: bersikap positif, berusaha lebih gigih).",
+        "Murid dapat bermain permainan berkumpulan dengan semangat kerjasama."
+      ],
+      "activities": [
+        "Perbincangan: Kenapa kita cemburu? (Perasaan vs. Tindakan).",
+        "Permainan: Aktiviti berkumpulan yang memerlukan kerjasama tinggi (puzzle besar).",
+        "Lakonan: Simulasi situasi cemburu dan penyelesaiannya."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian kerjasama dan pengurusan cemburu semasa aktiviti berkumpulan.",
+        "Ujian Lisan: Soalan cara mengatasi cemburu.",
+        "Senarai Semak: Penglibatan dalam kerjasama."
+      ],
+      "aids": [
+        "Kad situasi cemburu/kerjasama.",
+        "Alat permainan berkumpulan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 6: Pengaruh Iklan dan Media Sosial (Asas)",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.2.1 Mengenal pasti pengaruh media sosial dan iklan terhadap tingkah laku (makan, membeli).",
+        "2.2.2 Menyatakan 2 cara bersikap kritis terhadap maklumat dalam iklan (asas).",
+        "4.6.1 Mengamalkan sikap berhati-hati terhadap maklumat media."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 contoh iklan yang menarik perhatian mereka.",
+        "Murid dapat menyatakan 1 keburukan iklan (cth: buat kita nak beli barang yang tak perlu).",
+        "Murid dapat membezakan antara 'fakta' dan 'pendapat' dalam iklan ringkas."
+      ],
+      "activities": [
+        "Analisis: Menonton 2-3 iklan ringkas dan membincangkan mesejnya.",
+        "Perbincangan: Adakah iklan selalu benar?",
+        "Aktiviti Kumpulan: Mencipta 'Iklan Jujur' untuk produk sekolah."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan bersikap kritis terhadap iklan.",
+        "Ujian Lisan: Soalan pengaruh media dan iklan.",
+        "Projek: Iklan Jujur."
+      ],
+      "aids": [
+        "Video iklan pendek.",
+        "Lembaran analisis iklan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 7: Bahaya Pemanasan Melampau (Heatstroke)",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.4.1 Menyatakan bahaya dan simptom pemanasan melampau (heatstroke).",
+        "1.4.2 Menyatakan 3 langkah pencegahan pemanasan melampau (cth: minum air, rehat di tempat teduh).",
+        "4.7.1 Mengamalkan langkah pencegahan dalam cuaca panas."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 simptom pemanasan melampau (cth: pening, kulit panas, muntah).",
+        "Murid dapat menyatakan 3 tindakan pencegahan utama dalam cuaca panas.",
+        "Murid dapat melakonkan situasi membantu rakan yang kepanasan (cth: bawa ke tempat teduh)."
+      ],
+      "activities": [
+        "Perbincangan: Kaitan aktiviti fizikal luar dan cuaca panas.",
+        "Simulasi: Langkah kecemasan pemanasan melampau (asas).",
+        "Aktiviti Kumpulan: Membuat poster 'Jaga Diri di Cuaca Panas'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan langkah kecemasan asas.",
+        "Ujian Lisan: Soalan simptom dan pencegahan heatstroke.",
+        "Projek: Poster pencegahan."
+      ],
+      "aids": [
+        "Carta simptom heatstroke.",
+        "Botol air."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 8: Pertolongan Cemas Asas (Luka, Lebam, Gigitan Serangga)",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.5.1 Menyatakan jenis-jenis kecederaan ringan yang biasa dialami (luka, lebam, gigitan).",
+        "1.5.2 Melakukan 3 prosedur rawatan pertolongan cemas asas (cth: membersihkan luka, meletakkan ais).",
+        "4.8.1 Bertanggungjawab menjaga diri dan rakan semasa kecederaan ringan."
+      ],
+      "objectives": [
+        "Murid dapat membezakan antara luka kecil dan luka besar.",
+        "Murid dapat melakukan simulasi membersihkan luka kecil dan meletakkan plaster.",
+        "Murid dapat menyatakan 2 cara merawat lebam (cth: tuam ais, rehat)."
+      ],
+      "activities": [
+        "Demonstrasi: Teknik membersihkan luka dan membalut luka (guru).",
+        "Latih Amal: Murid melakukan simulasi rawatan luka/lebam berpasangan.",
+        "Perbincangan: Bahaya menggunakan ubat-ubatan 'tradisional' tanpa nasihat."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan simulasi rawatan luka.",
+        "Ujian Lisan: Soalan rawatan lebam/gigitan serangga.",
+        "Senarai Semak: Prosedur rawatan yang betul."
+      ],
+      "aids": [
+        "Peti kecemasan (simulasi) - plaster, kapas, antiseptik.",
+        "Ais (simulasi)."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 9: Bahaya Keganasan dan Buli",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.3.1 Mengenal pasti jenis-jenis keganasan dan buli (fizikal, lisan, siber - asas).",
+        "2.3.2 Menyatakan 3 kesan buruk buli kepada mangsa dan pembuli.",
+        "4.9.1 Mengambil pendirian untuk tidak membuli dan membantu mangsa buli."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 jenis buli yang berlaku di sekolah.",
+        "Murid dapat menyatakan 2 tindakan jika menjadi mangsa buli (cth: lapor kepada guru, beritahu ibu bapa).",
+        "Murid dapat melakonkan situasi membantu rakan yang dibuli (cth: panggil guru)."
+      ],
+      "activities": [
+        "Perbincangan: Mengapa pembuli membuli? (Punca dan kesan).",
+        "Simulasi: Cara melaporkan buli kepada orang dewasa yang dipercayai.",
+        "Aktiviti Kumpulan: Mencipta kontrak 'Sekolah Bebas Buli'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakonkan situasi membantu mangsa buli.",
+        "Ujian Lisan: Soalan jenis dan kesan buli.",
+        "Projek: Kontrak anti-buli."
+      ],
+      "aids": [
+        "Carta jenis-jenis buli.",
+        "Peti aduan (simulasi)."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 10: Pengurusan Masa dan Tanggungjawab",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.2.1 Menerangkan kepentingan menguruskan masa dengan berkesan (belajar, bermain, rehat).",
+        "3.2.2 Menyatakan 3 cara meningkatkan tanggungjawab diri (cth: siapkan kerja sekolah, menjaga barang).",
+        "4.10.1 Mengamalkan pengurusan masa yang seimbang."
+      ],
+      "objectives": [
+        "Murid dapat merancang jadual waktu harian (belajar, rehat, tidur) dengan seimbang.",
+        "Murid dapat menyatakan 2 kesan tidak bertanggungjawab (cth: dimarahi, kerja tidak siap).",
+        "Murid dapat menunjukkan 2 ciri bertanggungjawab terhadap harta benda peribadi (cth: menyusun buku)."
+      ],
+      "activities": [
+        "Perbincangan: Kebaikan mempunyai jadual waktu.",
+        "Aktiviti Individu: Merancang 'Jadual Harian Saya'.",
+        "Simulasi: Situasi bertanggungjawab menjaga alatan sekolah."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan merancang jadual waktu.",
+        "Ujian Lisan: Soalan kepentingan tanggungjawab.",
+        "Projek: Jadual Harian Saya."
+      ],
+      "aids": [
+        "Borang jadual waktu.",
+        "Jam model."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 4: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 4,
+      "topic_name": "Unit 1: Perubahan Fizikal dan Emosi Akil Baligh (Puberti) - Umum",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.1.1 Mengenal pasti perubahan fizikal, emosi, dan sosial semasa akil baligh (bagi kedua-dua jantina secara umum).",
+        "3.1.2 Menyatakan 2 cara menguruskan perubahan emosi semasa akil baligh.",
+        "4.1.1 Menerima perubahan akil baligh dengan rasa yakin dan selesa."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 perubahan fizikal utama bagi lelaki dan perempuan semasa akil baligh (cth: suara garau, ketinggian, jerawat).",
+        "Murid dapat menyatakan 2 punca perubahan emosi (cth: hormon).",
+        "Murid dapat menyatakan 2 cara menjaga kebersihan diri semasa akil baligh (cth: deodoran, mandi kerap)."
+      ],
+      "activities": [
+        "Perbincangan: Mitos vs. Fakta tentang akil baligh.",
+        "Aktiviti Kumpulan: Melukis garis masa (timeline) perubahan fizikal.",
+        "Sesi Soal Jawab: Pengurusan emosi yang tidak menentu."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan perubahan fizikal akil baligh.",
+        "Lembaran Kerja: Pengelasan perubahan fizikal mengikut jantina.",
+        "Senarai Semak: Kepatuhan menjaga kebersihan diri (rekod kendiri)."
+      ],
+      "aids": [
+        "Carta perubahan akil baligh (grafik neutral).",
+        "Buku panduan ringkas akil baligh."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 2: Pemakanan Seimbang dan Risiko Penyakit",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.1.1 Menganalisis kesan pengambilan makanan yang tidak seimbang.",
+        "1.1.2 Mengenal pasti risiko penyakit tidak berjangkit (cth: obesiti, diabetes - asas).",
+        "4.2.1 Mengamalkan pengambilan makanan seimbang untuk mencegah penyakit."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 3 kesan buruk diet yang tidak sihat (cth: obesiti, kurang tenaga).",
+        "Murid dapat mengenal pasti 2 makanan yang perlu dikurangkan (cth: makanan segera, minuman manis).",
+        "Murid dapat menyatakan 2 faktor risiko obesiti."
+      ],
+      "activities": [
+        "Analisis: Menilai menu harian kendiri (berapa banyak gula/lemak).",
+        "Perbincangan: Kaitan antara diet dan penyakit kronik (asas).",
+        "Aktiviti Kumpulan: Mencipta menu sihat untuk seminggu."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan risiko penyakit tidak berjangkit.",
+        "Lembaran Kerja: Analisis makanan segera.",
+        "Projek: Menu Seminggu Sihat."
+      ],
+      "aids": [
+        "Carta perbandingan kalori makanan.",
+        "Model makanan (untuk analisis diet)."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 3: Kecekapan Mengurus Tekanan (Stress)",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.1.1 Mengenal pasti punca dan simptom asas tekanan (stress) dalam kalangan kanak-kanak.",
+        "2.1.2 Menyatakan 3 kaedah asas menguruskan tekanan (cth: bersenam, bercakap, rehat).",
+        "4.3.1 Mengamalkan teknik pengurusan tekanan yang sihat."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 punca tekanan (cth: kerja sekolah banyak, pertengkaran keluarga).",
+        "Murid dapat mengenal pasti 2 simptom tekanan (cth: sakit perut, sukar tidur).",
+        "Murid dapat melakukan 2 teknik relaksasi ringkas (cth: tarik nafas dalam, regangan)."
+      ],
+      "activities": [
+        "Perbincangan: Adakah tekanan itu normal? (Good stress vs. Bad stress).",
+        "Latih Amal: Teknik relaksasi dan meditasi ringkas.",
+        "Aktiviti Kumpulan: Mencipta 'Kotak Bantuan Tekanan' (Stress Relief Box)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan teknik relaksasi.",
+        "Ujian Lisan: Soalan punca dan kaedah mengurus tekanan.",
+        "Senarai Semak: Pengurusan tekanan kendiri."
+      ],
+      "aids": [
+        "Carta teknik relaksasi.",
+        "Muzik latar yang menenangkan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 4: Kebersihan Reproduktif (Lelaki dan Perempuan)",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.2.1 Menerangkan kepentingan menjaga kebersihan organ reproduktif (termasuk sebelum/selepas ke tandas).",
+        "3.2.2 Menyatakan 2 cara mencegah jangkitan kuman pada organ reproduktif.",
+        "4.4.1 Mengamalkan kebersihan reproduktif yang betul."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 kepentingan kebersihan organ reproduktif.",
+        "Murid dapat menunjukkan cara yang betul membersihkan organ reproduktif selepas ke tandas (menggunakan simulasi).",
+        "Murid dapat menyatakan 2 jenis pakaian yang tidak sesuai (cth: terlalu ketat, lembap)."
+      ],
+      "activities": [
+        "Perbincangan: Bahaya jangkitan kuman dan cara pencegahan.",
+        "Simulasi: Cara membersihkan organ reproduktif (tanpa sentuhan).",
+        "Sesi Soal Jawab: Kepentingan menukar pakaian dalam setiap hari."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan kepentingan kebersihan reproduktif.",
+        "Lembaran Kerja: Amalan kebersihan yang betul.",
+        "Senarai Semak: Pengamalan kebersihan (rekod kendiri)."
+      ],
+      "aids": [
+        "Carta amalan kebersihan reproduktif.",
+        "Sabun/air (simulasi)."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 5: Penyalahgunaan Bahan (Rokok dan Arak - Asas)",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.2.1 Mengenal pasti 2 jenis bahan berbahaya (rokok, arak) dan kesannya (asas).",
+        "1.2.2 Menyatakan 2 alasan untuk berkata 'TIDAK' kepada ajakan mengambil bahan berbahaya.",
+        "4.5.1 Mengambil pendirian untuk menolak ajakan penyalahgunaan bahan."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 kesan buruk rokok dan 2 kesan buruk arak kepada badan.",
+        "Murid dapat menyatakan 2 alasan untuk menolak tawaran rokok/arak (cth: haram, merosakkan badan).",
+        "Murid dapat melakonkan situasi menolak ajakan dengan tegas."
+      ],
+      "activities": [
+        "Perbincangan: Kebaikan hidup tanpa rokok/arak (dari sudut agama/kesihatan).",
+        "Simulasi: Teknik berkata 'TIDAK' dan meninggalkan situasi berisiko.",
+        "Aktiviti Kumpulan: Mencipta slogan anti-rokok/arak."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakonkan penolakan tegas.",
+        "Ujian Lisan: Soalan kesan buruk rokok/arak.",
+        "Projek: Slogan/Poster anti-rokok/arak."
+      ],
+      "aids": [
+        "Carta kesan buruk rokok/arak.",
+        "Kad situasi ajakan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 6: Keselamatan Persekitaran (Bencana Alam Asas)",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.3.1 Mengenal pasti 3 jenis bencana alam yang biasa berlaku di Malaysia (cth: banjir, tanah runtuh).",
+        "1.3.2 Menyatakan 3 langkah persediaan asas menghadapi bencana alam.",
+        "4.6.1 Mengambil tindakan yang betul semasa berlaku bencana alam."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 langkah persediaan sebelum berlaku banjir (cth: simpan dokumen penting, sediakan beg kecemasan).",
+        "Murid dapat menyatakan 1 tindakan yang perlu dilakukan semasa gegaran gempa bumi (simulasi di ruang kering).",
+        "Murid dapat menyatakan 2 nombor telefon kecemasan yang berkaitan (bomba, polis)."
+      ],
+      "activities": [
+        "Perbincangan: Video/gambar bencana alam dan kesannya.",
+        "Simulasi: Latihan 'Duck, Cover, and Hold' (gempa bumi).",
+        "Aktiviti Kumpulan: Merancang isi kandungan 'Beg Kecemasan'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan simulasi tindakan bencana.",
+        "Ujian Lisan: Soalan langkah persediaan bencana.",
+        "Lembaran Kerja: Isi kandungan Beg Kecemasan."
+      ],
+      "aids": [
+        "Video bencana alam.",
+        "Borang maklumat kecemasan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 7: Kemahiran Asas Kecekapan Sosial (Bertanya dan Menjawab)",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.2.1 Mengaplikasikan kemahiran komunikasi berkesan dalam pergaulan (bertanya, mendengar, memberi pendapat).",
+        "2.2.2 Menyatakan 2 ciri komunikasi yang positif dan negatif.",
+        "4.7.1 Mengamalkan komunikasi positif dalam pergaulan dengan rakan dan guru."
+      ],
+      "objectives": [
+        "Murid dapat merangka 3 soalan yang sopan untuk bertanya maklumat daripada rakan/guru.",
+        "Murid dapat menunjukkan 2 ciri pendengar yang baik (cth: pandang mata, tidak menyampuk).",
+        "Murid dapat menyatakan 1 kelebihan berkomunikasi secara positif."
+      ],
+      "activities": [
+        "Latih Amal: Peranan (Role Play) bertanya dan menjawab soalan (sopankah saya?).",
+        "Perbincangan: Bahasa badan dalam komunikasi.",
+        "Aktiviti Kumpulan: Memberi pendapat tentang topik tertentu (latihan komunikasi)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan komunikasi (sopankah saya?).",
+        "Ujian Lisan: Soalan ciri komunikasi positif.",
+        "Senarai Semak: Kemahiran mendengar aktif."
+      ],
+      "aids": [
+        "Kad situasi perbualan.",
+        "Carta komunikasi berkesan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 8: Pengaruh Rakan Sebaya dan Tekanan (Peer Pressure)",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.3.1 Mengenal pasti pengaruh positif dan negatif rakan sebaya.",
+        "2.3.2 Menyatakan 3 cara menangani tekanan rakan sebaya (peer pressure) secara sihat.",
+        "4.8.1 Membuat keputusan yang bijak dan berani berkata 'TIDAK' kepada tekanan negatif."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 contoh pengaruh positif dan 2 contoh pengaruh negatif rakan sebaya.",
+        "Murid dapat melakonkan situasi menolak ajakan rakan sebaya dengan alasan yang kukuh.",
+        "Murid dapat menyatakan 1 kepentingan memilih rakan yang baik."
+      ],
+      "activities": [
+        "Perbincangan: Bagaimana tekanan rakan sebaya mempengaruhi keputusan kita?",
+        "Simulasi: Teknik penolakan (broken record technique, give reason).",
+        "Aktiviti Kumpulan: Mencipta drama pendek tentang tekanan rakan sebaya."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakonkan penolakan tekanan.",
+        "Ujian Lisan: Soalan pengaruh positif/negatif rakan sebaya.",
+        "Senarai Semak: Keberanian berkata 'TIDAK'."
+      ],
+      "aids": [
+        "Kad situasi tekanan rakan sebaya.",
+        "Carta teknik penolakan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 9: Penyalahgunaan Bahan (Inhalan dan Dadah - Asas)",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.4.1 Mengenal pasti jenis bahan inhalan dan dadah (asas) dan kesannya kepada kesihatan.",
+        "1.4.2 Menyatakan 3 kesan buruk penyalahgunaan inhalan dan dadah.",
+        "4.9.1 Mengamalkan hidup sihat tanpa penyalahgunaan inhalan dan dadah."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 2 contoh bahan inhalan (cth: gam, thinner) dan 2 contoh dadah (asas).",
+        "Murid dapat menyatakan 2 kesan fizikal yang teruk akibat inhalan dan dadah.",
+        "Murid dapat menyatakan 1 tindakan jika ternampak rakan menghidu/mengambil bahan terlarang (cth: laporkan kepada guru/kaunselor)."
+      ],
+      "activities": [
+        "Perbincangan: Bahaya kematian mengejut akibat inhalan.",
+        "Aktiviti Kumpulan: Membuat poster 'Bahaya Dadah dan Inhalan'.",
+        "Sesi Soal Jawab: Tempat selamat mendapatkan bantuan (polis, hospital)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan kesan buruk inhalan dan dadah.",
+        "Projek: Poster kesedaran.",
+        "Senarai Semak: Kepatuhan melaporkan aktiviti terlarang."
+      ],
+      "aids": [
+        "Carta kesan inhalan/dadah (grafik).",
+        "Risalah maklumat dadah."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 10: Pengurusan Sumber Kewangan Keluarga (Asas)",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.3.1 Menerangkan kepentingan menguruskan sumber kewangan keluarga secara berhemat.",
+        "3.3.2 Menyatakan 2 cara membantu keluarga berjimat cermat (cth: padam lampu, simpan duit).",
+        "4.10.1 Mengamalkan sikap berhemat dalam perbelanjaan harian."
+      ],
+      "objectives": [
+        "Murid dapat membezakan antara 'keperluan' dan 'kehendak'.",
+        "Murid dapat menyatakan 3 cara berjimat cermat dalam perbelanjaan harian.",
+        "Murid dapat menyatakan 1 kepentingan menyimpan wang (cth: untuk kecemasan/masa depan)."
+      ],
+      "activities": [
+        "Perbincangan: Bajet ringkas keluarga (sewa rumah, makanan, utiliti).",
+        "Aktiviti Kumpulan: Melabelkan barang kepada 'keperluan' atau 'kehendak'.",
+        "Latih Amal: Menulis rekod perbelanjaan poket harian."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan beza keperluan dan kehendak.",
+        "Lembaran Kerja: Pengelasan perbelanjaan.",
+        "Jurnal: Rekod perbelanjaan kendiri."
+      ],
+      "aids": [
+        "Papan tulis: Keperluan vs. Kehendak.",
+        "Tabung duit."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 5: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 5,
+      "topic_name": "Unit 1: Perubahan Kesihatan Reproduktif (Lelaki dan Perempuan) - Mendalam",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.1.1 Menerangkan perubahan fizikal dan emosi yang khusus dialami oleh lelaki (cth: mimpi basah) dan perempuan (cth: haid).",
+        "3.1.2 Menyatakan 3 cara penjagaan diri semasa haid dan mimpi basah.",
+        "4.1.1 Menguruskan perubahan kesihatan reproduktif dengan yakin dan tenang."
+      ],
+      "objectives": [
+        "Murid perempuan dapat menjelaskan 2 aspek penjagaan diri semasa haid (kebersihan tuala wanita).",
+        "Murid lelaki dapat menjelaskan 2 aspek penjagaan diri selepas mimpi basah (kebersihan, tidak perlu panik).",
+        "Murid dapat menyatakan 2 sumber yang dipercayai untuk mendapatkan maklumat kesihatan reproduktif (cth: guru, doktor, ibu bapa)."
+      ],
+      "activities": [
+        "Sesi Berasingan: Perbincangan tentang haid (P) dan mimpi basah (L) (jika perlu).",
+        "Perbincangan: Mitos vs. Fakta tentang haid dan mimpi basah.",
+        "Aktiviti Kumpulan: Mencipta 'Kit Penjagaan Diri' untuk akil baligh."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan penjagaan kebersihan reproduktif.",
+        "Lembaran Kerja: Maklumat asas haid/mimpi basah.",
+        "Senarai Semak: Keyakinan diri (pemerhatian guru)."
+      ],
+      "aids": [
+        "Alat demonstrasi tuala wanita/pad.",
+        "Buku panduan penjagaan diri akil baligh."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 2: Pemakanan Seimbang dan Kalori",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.1.1 Menganalisis kandungan kalori dan nutrisi dalam makanan harian.",
+        "1.1.2 Menyatakan 3 fungsi utama nutrisi (karbohidrat, protein, lemak, vitamin).",
+        "4.2.1 Mengamalkan pemilihan makanan yang sesuai dengan keperluan kalori dan aktiviti fizikal."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 fungsi nutrisi utama (cth: protein untuk bina otot).",
+        "Murid dapat membandingkan kandungan kalori 2 jenis makanan (cth: burger vs. nasi dan lauk).",
+        "Murid dapat merancang diet yang seimbang untuk aktiviti fizikal (cth: hari bersukan)."
+      ],
+      "activities": [
+        "Analisis: Membandingkan label nutrisi pada produk makanan.",
+        "Perbincangan: Kaitan pengambilan kalori dan pembakaran kalori (aktiviti fizikal).",
+        "Aktiviti Kumpulan: Mencipta 'Pyramid Makanan Saya' (mengikut keperluan individu)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan fungsi nutrisi.",
+        "Lembaran Kerja: Analisis label nutrisi.",
+        "Projek: Perancangan diet harian."
+      ],
+      "aids": [
+        "Contoh label nutrisi makanan.",
+        "Carta fungsi nutrisi."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 3: Kemahiran Mengendalikan Kemarahan dan Konflik",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.1.1 Menganalisis punca dan kesan kemarahan yang tidak dikawal (kepada diri dan orang lain).",
+        "2.1.2 Mengaplikasikan 3 strategi berkesan mengendalikan kemarahan dan konflik (cth: time-out, mendengar aktif).",
+        "4.3.1 Mengamalkan pengurusan kemarahan dan penyelesaian konflik tanpa kekerasan."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 2 kesan kemarahan yang tidak terkawal (cth: sakit hati, merosakkan hubungan).",
+        "Murid dapat melakonkan situasi mengendalikan kemarahan menggunakan teknik 'time-out'.",
+        "Murid dapat menyatakan 3 ciri komunikasi yang asertif (tegas tetapi hormat)."
+      ],
+      "activities": [
+        "Perbincangan: Kaitan antara kemarahan dan komunikasi.",
+        "Latih Amal: Teknik relaksasi dalam situasi tegang.",
+        "Lakonan: Simulasi penyelesaian konflik menggunakan komunikasi asertif."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakonkan strategi mengendalikan kemarahan.",
+        "Ujian Lisan: Soalan strategi mengendalikan kemarahan.",
+        "Senarai Semak: Komunikasi asertif."
+      ],
+      "aids": [
+        "Carta strategi mengendalikan kemarahan.",
+        "Kad situasi konflik yang kompleks."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 4: Keselamatan dan Bantuan Dalam Kemalangan",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.2.1 Mengenal pasti jenis-jenis kecederaan serius (cth: patah, terkehel, pendarahan teruk).",
+        "1.2.2 Menyatakan dan melakukan 3 prosedur pertolongan cemas R.I.C.E (Rest, Ice, Compression, Elevation) bagi kecederaan tisu lembut.",
+        "4.4.1 Bertindak tenang dan rasional semasa berlaku kecemasan dan kecederaan."
+      ],
+      "objectives": [
+        "Murid dapat membezakan antara patah dan terseliuh.",
+        "Murid dapat melakukan simulasi rawatan R.I.C.E. untuk kecederaan terseliuh kaki.",
+        "Murid dapat menyatakan 2 langkah keselamatan sebelum memberikan bantuan (cth: pastikan tempat selamat)."
+      ],
+      "activities": [
+        "Demonstrasi: Teknik R.I.C.E. dan pembidaian (asas) oleh guru.",
+        "Latih Amal: Simulasi rawatan R.I.C.E. berpasangan.",
+        "Perbincangan: Kepentingan menghubungi pihak berkuasa (ambulans) dengan cepat."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan simulasi R.I.C.E.",
+        "Ujian Lisan: Soalan jenis kecederaan serius dan prosedur R.I.C.E.",
+        "Senarai Semak: Ketenangan dalam simulasi kecemasan."
+      ],
+      "aids": [
+        "Carta prosedur R.I.C.E.",
+        "Pembalut elastik, ais (simulasi)."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 5: Kesihatan Seksualiti - Penyalahgunaan Seksual dan Gangguan",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.2.1 Mengenal pasti jenis-jenis penyalahgunaan seksual dan gangguan seksual (verbal, fizikal).",
+        "3.2.2 Menyatakan 3 cara mempertahankan diri dan melaporkan penyalahgunaan seksual.",
+        "4.5.1 Berani dan yakin mempertahankan diri daripada sebarang bentuk gangguan."
+      ],
+      "objectives": [
+        "Murid dapat membezakan antara usikan biasa dan gangguan seksual.",
+        "Murid dapat melakonkan teknik berkata 'TIDAK' dengan tegas dan berjalan pergi dari tempat kejadian.",
+        "Murid dapat menyatakan 2 tempat/individu yang boleh dilaporkan jika berlaku gangguan (cth: kaunselor, polis, talian bantuan)."
+      ],
+      "activities": [
+        "Perbincangan: Kaitan antara sentuhan tidak selamat dan penyalahgunaan seksual.",
+        "Simulasi: Teknik melaporkan kejadian dan mendapatkan bantuan.",
+        "Aktiviti Kumpulan: Mencipta 'Rantai Saling Membantu' (siapa yang boleh dipercayai)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakonkan penolakan dan pelaporan.",
+        "Ujian Lisan: Soalan jenis penyalahgunaan seksual.",
+        "Senarai Semak: Keterbukaan untuk melaporkan masalah."
+      ],
+      "aids": [
+        "Carta Talian Bantuan Kecemasan.",
+        "Kad situasi gangguan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 6: Imej Diri dan Media Sosial",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.2.1 Menganalisis pengaruh media sosial terhadap imej diri dan kesihatan mental.",
+        "2.2.2 Menyatakan 2 cara membina imej diri yang positif (cth: menghargai kebolehan diri, menerima kelemahan).",
+        "4.6.1 Mengamalkan penerimaan diri dan menghargai keunikan diri."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 2 kesan negatif membandingkan diri dengan imej 'sempurna' di media sosial.",
+        "Murid dapat menyenaraikan 3 kelebihan/kekuatan diri sendiri.",
+        "Murid dapat menyatakan 1 cara menggunakan media sosial secara sihat (cth: tidak percaya semua yang dilihat)."
+      ],
+      "activities": [
+        "Perbincangan: 'Kehidupan Sebenar' vs. 'Kehidupan Media Sosial'.",
+        "Aktiviti Individu: Menulis surat 'Saya Suka Diri Saya Kerana...' (Self-affirmation).",
+        "Aktiviti Kumpulan: Mencipta 'Slogan Penerimaan Diri'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan menyuarakan imej diri positif.",
+        "Ujian Lisan: Soalan pengaruh media terhadap imej diri.",
+        "Projek: Slogan Penerimaan Diri."
+      ],
+      "aids": [
+        "Gambar/video 'Realiti vs. Media Sosial'.",
+        "Carta ciri-ciri imej diri positif."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 7: Penyalahgunaan Bahan (Dadah dan Akta Perlindungan)",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.3.1 Menerangkan kategori dadah (stimulan, depresen) dan kesan jangka panjang penyalahgunaan.",
+        "1.3.2 Menyatakan 2 akta/peraturan yang melindungi kanak-kanak daripada penyalahgunaan bahan.",
+        "4.7.1 Mengambil pendirian teguh untuk menolak penyalahgunaan bahan terlarang."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 kesan jangka panjang dadah (cth: ketagihan, kerosakan otak, HIV/AIDS).",
+        "Murid dapat menyatakan 2 peranan undang-undang dalam mencegah penyalahgunaan dadah.",
+        "Murid dapat menyatakan 1 tindakan jika ternampak sindiket dadah (cth: laporkan kepada polis)."
+      ],
+      "activities": [
+        "Perbincangan: Kaitan dadah, jenayah, dan HIV/AIDS.",
+        "Ceramah Ringkas: Akta Perlindungan Kanak-kanak (Ringkas).",
+        "Aktiviti Kumpulan: Mencipta 'Ikrar Anti-Dadah'."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan kesan jangka panjang dadah.",
+        "Lembaran Kerja: Kategorisasi dadah (asas).",
+        "Projek: Ikrar Anti-Dadah."
+      ],
+      "aids": [
+        "Carta kesan dadah jangka panjang.",
+        "Risalah maklumat Akta Perlindungan Kanak-kanak."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 8: Kesihatan Seksualiti - Konsep Cinta dan Tanggungjawab",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.3.1 Menerangkan konsep cinta dan kasih sayang yang sihat dalam konteks kekeluargaan.",
+        "3.3.2 Menyatakan kepentingan menjauhi perhubungan seksual di usia muda (keutamaan kepada pendidikan dan keluarga).",
+        "4.8.1 Mengamalkan sikap tanggungjawab terhadap diri dan keluarga."
+      ],
+      "objectives": [
+        "Murid dapat membezakan antara 'cinta' dalam keluarga/persahabatan dan 'cinta' dalam perhubungan romantik (asas).",
+        "Murid dapat menyatakan 3 sebab mengapa perhubungan seksual di usia muda adalah tidak sesuai (risiko emosi, penyakit, pelajaran terganggu).",
+        "Murid dapat menyatakan 2 cara menunjukkan kasih sayang yang sihat dalam keluarga."
+      ],
+      "activities": [
+        "Perbincangan: Peranan cinta dan kasih sayang dalam membina keluarga bahagia.",
+        "Sesi Soal Jawab: Risiko perhubungan seksual di usia muda (fokus kepada kesan negatif).",
+        "Aktiviti Individu: Menulis 'Wasiat' kepada diri sendiri untuk menjaga kesihatan reproduktif."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan kepentingan tanggungjawab dan konsep cinta yang sihat.",
+        "Lembaran Kerja: Risiko perhubungan seksual di usia muda.",
+        "Senarai Semak: Pemikiran bertanggungjawab."
+      ],
+      "aids": [
+        "Carta konsep cinta sihat (segitiga kasih sayang).",
+        "Buku rujukan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 9: Kemalangan di Rumah dan Sekolah (Pencegahan)",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.4.1 Menganalisis punca kemalangan yang sering berlaku di rumah dan sekolah (cth: elektrik, jatuh, kebakaran).",
+        "1.4.2 Menyatakan 3 langkah pencegahan kemalangan yang spesifik.",
+        "4.9.1 Mengambil langkah berjaga-jaga yang tinggi untuk mencegah kemalangan."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 punca utama kemalangan di rumah (cth: lantai licin, pendawaian rosak).",
+        "Murid dapat menyatakan 2 langkah pencegahan kebakaran (cth: tidak main mancis, tahu punca api).",
+        "Murid dapat melakonkan situasi 'Apa yang saya buat jika ternampak wayar elektrik terdedah'."
+      ],
+      "activities": [
+        "Lawatan Simulasi: Mengenal pasti risiko keselamatan di sekitar bilik darjah.",
+        "Perbincangan: Bahaya elektrik dan api.",
+        "Aktiviti Kumpulan: Mencipta 'Checklist Keselamatan Rumah'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan mengenal pasti risiko di persekitaran.",
+        "Ujian Lisan: Soalan punca dan pencegahan kemalangan.",
+        "Projek: Checklist Keselamatan Rumah."
+      ],
+      "aids": [
+        "Kad gambar situasi bahaya.",
+        "Alat pemadam api (model)."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 10: Kemahiran Menyatakan Jati Diri",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.3.1 Menjelaskan konsep jati diri dan kepentingan memilikinya.",
+        "2.3.2 Menyatakan 3 cara mempertahankan jati diri daripada pengaruh negatif (cth: bangga dengan budaya, berpegang kepada prinsip).",
+        "4.10.1 Mengamalkan sikap berbangga dengan budaya dan jati diri sendiri."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan maksud 'jati diri' secara ringkas.",
+        "Murid dapat menyenaraikan 3 ciri positif jati diri sendiri (cth: rajin, jujur, berani).",
+        "Murid dapat menyatakan 2 kepentingan berpegang kepada prinsip hidup yang baik."
+      ],
+      "activities": [
+        "Perbincangan: Apa itu identiti? (Budaya, agama, bangsa).",
+        "Aktiviti Individu: Menulis 'Manifesto Jati Diri Saya'.",
+        "Aktiviti Kumpulan: Berkongsi ciri-ciri yang mereka banggakan tentang budaya mereka."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan menyuarakan jati diri positif.",
+        "Ujian Lisan: Soalan konsep jati diri.",
+        "Projek: Manifesto Jati Diri Saya."
+      ],
+      "aids": [
+        "Poster nilai-nilai murni.",
+        "Buku rujukan tentang jati diri."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 6: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 6,
+      "topic_name": "Unit 1: Penyakit Tidak Berjangkit (NCD) dan Gaya Hidup",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.1.1 Menganalisis punca dan simptom utama 3 penyakit tidak berjangkit (cth: Diabetes, Hipertensi, Sakit Jantung).",
+        "1.1.2 Merumuskan 3 faktor risiko utama penyakit NCD (diet, kurang senaman, merokok).",
+        "4.1.1 Mengamalkan gaya hidup sihat untuk mencegah penyakit tidak berjangkit."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan kaitan antara gaya hidup (diet dan senaman) dengan penyakit NCD.",
+        "Murid dapat menyenaraikan 3 langkah pencegahan penyakit NCD (cth: kurangkan garam/gula, bersenam 3 kali seminggu).",
+        "Murid dapat menyatakan 1 simptom asas Diabetes dan Hipertensi."
+      ],
+      "activities": [
+        "Perbincangan: Kaitan aktiviti fizikal (Pendidikan Jasmani) dengan pencegahan NCD.",
+        "Analisis: Menilai risiko NCD dalam kalangan ahli keluarga (asas).",
+        "Aktiviti Kumpulan: Merancang kempen kesedaran 'Gaya Hidup Sihat'."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan punca dan pencegahan penyakit NCD.",
+        "Lembaran Kerja: Analisis faktor risiko NCD.",
+        "Projek: Poster kempen kesedaran."
+      ],
+      "aids": [
+        "Carta info grafik NCD.",
+        "Video gaya hidup sihat."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 2: Keselamatan Siber dan Buli Siber",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.1.1 Menerangkan risiko dan bahaya penggunaan internet dan media sosial (cth: pedofilia, buli siber, penipuan).",
+        "2.1.2 Menyatakan 3 cara melindungi diri daripada buli siber dan penipuan.",
+        "4.2.1 Mengamalkan etika penggunaan internet yang selamat dan bertanggungjawab."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 bahaya utama buli siber.",
+        "Murid dapat menyatakan 2 peraturan keselamatan internet (cth: tidak berkongsi maklumat peribadi, tidak berjumpa 'stranger').",
+        "Murid dapat melakonkan situasi melaporkan buli siber kepada ibu bapa/guru."
+      ],
+      "activities": [
+        "Perbincangan: Apa yang boleh dikongsi dan tidak boleh dikongsi di internet.",
+        "Simulasi: Melapor akaun/mesej yang tidak menyenangkan.",
+        "Aktiviti Kumpulan: Mencipta 'Kontrak Penggunaan Internet Selamat'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakonkan pelaporan buli siber.",
+        "Ujian Lisan: Soalan risiko dan etika internet.",
+        "Projek: Kontrak Penggunaan Internet Selamat."
+      ],
+      "aids": [
+        "Video kesedaran buli siber.",
+        "Carta etika internet."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 3: Kesihatan Seksualiti - Pemikiran Rasional dan Risiko",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.1.1 Menilai risiko dan akibat perhubungan seksual di usia muda (kehamilan, jangkitan, masalah sosial).",
+        "3.1.2 Membuat keputusan yang rasional dan bertanggungjawab mengenai kesihatan seksualiti.",
+        "4.3.1 Mengamalkan nilai-nilai murni dan pegangan agama dalam membuat keputusan."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 3 akibat buruk (fizikal dan sosial) perhubungan seksual di usia muda.",
+        "Murid dapat menyatakan 2 peranan agama/nilai murni dalam membimbing keputusan mengenai seksualiti.",
+        "Murid dapat merangka 3 alasan rasional untuk menolak perhubungan yang berisiko."
+      ],
+      "activities": [
+        "Perbincangan: Kepentingan pendidikan dan kerjaya berbanding perhubungan di usia muda.",
+        "Sesi Soal Jawab: Akibat jangka panjang kepada diri dan keluarga.",
+        "Aktiviti Individu: Menulis 'Janji Saya Kepada Diri Sendiri' (komitmen kepada pendidikan dan kesihatan)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan risiko dan akibat perhubungan berisiko.",
+        "Lembaran Kerja: Analisis keputusan rasional.",
+        "Jurnal: Refleksi kendiri (Janji Diri)."
+      ],
+      "aids": [
+        "Carta info risiko kesihatan seksual.",
+        "Buku rujukan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 4: Kemahiran Membuat Keputusan (Decision Making)",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.2.1 Mengaplikasikan kemahiran membuat keputusan dalam situasi yang mencabar (mengikut langkah-langkah).",
+        "2.2.2 Menganalisis kesan jangka pendek dan jangka panjang setiap keputusan.",
+        "4.4.1 Mengambil keputusan yang bertanggungjawab dan rasional berdasarkan maklumat."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 langkah proses membuat keputusan yang baik.",
+        "Murid dapat menganalisis 1 situasi mencabar (cth: ditawarkan rokok) dan menentukan kesan jangka pendek/panjang setiap pilihan.",
+        "Murid dapat menyatakan 1 kepentingan membuat keputusan secara rasional."
+      ],
+      "activities": [
+        "Latih Amal: Melaksanakan 4 langkah membuat keputusan dalam senario sekolah.",
+        "Perbincangan: Kaitan antara nilai diri dan keputusan yang dibuat.",
+        "Aktiviti Kumpulan: Menganalisis kesilapan keputusan terkenal (sejarah/media)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan menganalisis keputusan dalam senario.",
+        "Ujian Lisan: Soalan langkah membuat keputusan.",
+        "Lembaran Kerja: Analisis kesan keputusan."
+      ],
+      "aids": [
+        "Carta langkah membuat keputusan.",
+        "Kad situasi dilema moral."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 5: Peranan dan Tanggungjawab dalam Hubungan Sosial",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.2.1 Menerangkan peranan dan tanggungjawab dalam hubungan rakan, keluarga, dan komuniti.",
+        "3.2.2 Menyatakan 3 ciri hubungan yang sihat dan tidak sihat (manipulasi, hormat, kejujuran).",
+        "4.5.1 Mewujudkan dan mengekalkan hubungan sosial yang positif dan sihat."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 ciri hubungan yang sihat (cth: jujur, saling menghormati, menyokong).",
+        "Murid dapat menyatakan 2 contoh tingkah laku dalam hubungan yang tidak sihat (cth: manipulasi, pemerasan).",
+        "Murid dapat melakonkan situasi memberikan sokongan kepada rakan yang berhadapan dengan masalah."
+      ],
+      "activities": [
+        "Perbincangan: Batasan dalam persahabatan dan hubungan keluarga.",
+        "Lakonan: Simulasi hubungan sihat dan tidak sihat.",
+        "Aktiviti Kumpulan: Mencipta 'Kontrak Hubungan Sihat'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakonkan hubungan sihat.",
+        "Ujian Lisan: Soalan ciri hubungan sihat/tidak sihat.",
+        "Projek: Kontrak Hubungan Sihat."
+      ],
+      "aids": [
+        "Carta ciri-ciri hubungan sihat.",
+        "Kad situasi hubungan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 6: Rawatan Pertolongan Cemas - Tercekik dan Pendarahan",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.2.1 Mengenal pasti tanda dan simptom tercekik dan pendarahan luaran yang teruk.",
+        "1.2.2 Melakukan 3 prosedur pertolongan cemas bagi mangsa tercekik (Heimlich Maneuver - asas) dan pendarahan.",
+        "4.6.1 Bertindak cepat, tepat, dan selamat semasa memberikan bantuan kepada mangsa."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 tanda mangsa tercekik (cth: tidak boleh bercakap, pegang leher).",
+        "Murid dapat melakukan simulasi prosedur Heimlich Maneuver (asas/hanya penerangan) dan menghentikan pendarahan (tekanan langsung).",
+        "Murid dapat menyatakan 1 kepentingan menghubungi ambulans segera dalam kes tercekik/pendarahan teruk."
+      ],
+      "activities": [
+        "Demonstrasi: Teknik Heimlich Maneuver (pada boneka/rakan - hanya penerangan teknik).",
+        "Latih Amal: Simulasi menghentikan pendarahan (menggunakan kain/pembalut).",
+        "Perbincangan: Bilakah perlu menghubungi ambulans?"
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan simulasi prosedur tercekik/pendarahan.",
+        "Ujian Lisan: Soalan tindakan kecemasan tercekik.",
+        "Senarai Semak: Prosedur rawatan yang betul."
+      ],
+      "aids": [
+        "Carta prosedur Heimlich Maneuver.",
+        "Pembalut luka/kain kasa."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 7: Peranan Komuniti dalam Kesihatan",
+      "skill_name": "Kesihatan Diri dan Kekeluargaan",
+      "standards": [
+        "3.3.1 Menerangkan peranan agensi kerajaan (KPM, KKM, PDRM) dan NGO dalam menjaga kesihatan komuniti.",
+        "3.3.2 Menyatakan 3 cara menyumbang kepada kesihatan komuniti (cth: gotong-royong, kitar semula, menyertai kempen).",
+        "4.7.1 Mengambil bahagian secara aktif dalam aktiviti kesihatan komuniti."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 agensi utama yang menjaga kesihatan/keselamatan di Malaysia.",
+        "Murid dapat menyatakan 3 cara sekolah dan murid dapat menyumbang kepada komuniti (cth: kempen anti-denggi).",
+        "Murid dapat menyatakan 1 kepentingan menjaga kebersihan alam sekitar."
+      ],
+      "activities": [
+        "Perbincangan: Isu kesihatan komuniti (cth: denggi, kebersihan).",
+        "Projek Kumpulan: Merancang Kempen Kesihatan Komuniti Ringkas.",
+        "Lawatan Simulasi: Peranan polis/bomba (jika ada)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan peranan agensi kesihatan.",
+        "Projek: Rancangan Kempen Kesihatan.",
+        "Senarai Semak: Penglibatan aktif."
+      ],
+      "aids": [
+        "Carta agensi kerajaan (PDRM, KKM, dll).",
+        "Risalah kesihatan komuniti."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 8: Pencegahan Penyalahgunaan Dadah dan HIV/AIDS",
+      "skill_name": "Kesihatan Fizikal",
+      "standards": [
+        "1.3.1 Menerangkan kaitan antara penyalahgunaan dadah dan risiko jangkitan HIV/AIDS.",
+        "1.3.2 Menyatakan 3 cara utama jangkitan HIV/AIDS dan cara pencegahannya.",
+        "4.8.1 Mengambil tindakan yang bertanggungjawab untuk mengelakkan jangkitan HIV/AIDS."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 1 kaitan utama antara dadah (cth: jarum suntikan dikongsi) dan HIV/AIDS.",
+        "Murid dapat menyatakan 3 cara HIV tidak berjangkit (cth: sentuhan, berkongsi makanan).",
+        "Murid dapat menyatakan 2 cara melindungi diri daripada jangkitan HIV/AIDS."
+      ],
+      "activities": [
+        "Perbincangan: Mengapa orang yang menyalahgunakan dadah berisiko tinggi HIV/AIDS.",
+        "Aktiviti Kumpulan: Mencipta 'Mesej Perpaduan' untuk menolak stigma HIV/AIDS.",
+        "Sesi Soal Jawab: Maklumat tepat tentang HIV/AIDS (bukan mitos)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan cara jangkitan dan pencegahan HIV/AIDS.",
+        "Lembaran Kerja: Mitos vs. Fakta HIV/AIDS.",
+        "Projek: Mesej Perpaduan."
+      ],
+      "aids": [
+        "Carta fakta HIV/AIDS.",
+        "Risalah pencegahan dadah."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 9: Persediaan ke Sekolah Menengah dan Harapan Masa Depan",
+      "skill_name": "Kesihatan Mental, Emosi dan Sosial",
+      "standards": [
+        "2.3.1 Menganalisis cabaran dan peluang alam persekolahan menengah.",
+        "2.3.2 Menyatakan 3 persediaan mental dan sosial untuk beralih ke sekolah menengah.",
+        "4.9.1 Membina keyakinan diri dan penetapan matlamat yang positif untuk masa depan."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 perbezaan antara sekolah rendah dan sekolah menengah (cth: subjek, rakan baharu, guru baharu).",
+        "Murid dapat menyatakan 2 kebimbangan utama mereka tentang sekolah menengah dan 2 cara mengatasinya.",
+        "Murid dapat menetapkan 1 matlamat akademik dan 1 matlamat peribadi untuk tahun pertama sekolah menengah."
+      ],
+      "activities": [
+        "Perbincangan: Jangkaan dan realiti sekolah menengah.",
+        "Aktiviti Individu: Menulis 'Wawasan Saya 5 Tahun Akan Datang' (Vision Board ringkas).",
+        "Simulasi: Teknik membuat kawan baharu di sekolah menengah."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan menyuarakan harapan dan kebimbangan.",
+        "Ujian Lisan: Soalan persediaan ke sekolah menengah.",
+        "Projek: Wawasan Saya (matlamat masa depan)."
+      ],
+      "aids": [
+        "Video/gambar kehidupan sekolah menengah.",
+        "Borang penetapan matlamat."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 10: Sintesis Gaya Hidup Sihat dan Tanggungjawab Diri",
+      "skill_name": "Sintesis PK",
+      "standards": [
+        "4.10.1 Merumuskan kepentingan mengintegrasikan semua aspek Kesihatan Fizikal, Mental, dan Kekeluargaan dalam gaya hidup sihat.",
+        "4.10.2 Merancang dan melaksanakan satu projek advokasi kesihatan ringkas di sekolah.",
+        "4.10.3 Bertanggungjawab sepenuhnya terhadap kesihatan diri dan keluarga."
+      ],
+      "objectives": [
+        "Murid dapat merumuskan 3 prinsip utama gaya hidup sihat (pemakanan, senaman, mental sihat).",
+        "Murid dapat merancang dan melaksanakan 1 projek advokasi kesihatan ringkas (cth: Kempen 'Minum Air' di sekolah).",
+        "Murid dapat menyatakan 2 azam untuk mengekalkan kesihatan sepanjang kehidupan (sebagai penutup)."
+      ],
+      "activities": [
+        "Perbincangan: Kebaikan mengamalkan gaya hidup sihat (fizikal dan mental).",
+        "Aktiviti Kumpulan: Perancangan dan pelaksanaan projek advokasi kesihatan.",
+        "Sesi Refleksi: Menilai pembelajaran Pendidikan Kesihatan Tahun 1-6."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melaksanakan projek advokasi.",
+        "Ujian Lisan: Soalan rumusan prinsip gaya hidup sihat.",
+        "Laporan Projek: Dokumen perancangan dan pelaksanaan projek."
+      ],
+      "aids": [
+        "Borang Perancangan Projek.",
+        "Bahan-bahan untuk kempen (poster, risalah)."
+      ]
+    }
+  ]
+}

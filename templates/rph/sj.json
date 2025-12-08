@@ -1,0 +1,915 @@
+{
+  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Sejarah - Tahun 4 hingga Tahun 6 (10 Unit setiap Tahun)",
+  "subject": "Sejarah",
+  "data": [
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 4: 10 UNIT (Tema: Sejarah Kita - Asal Usul dan Institusi) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 4,
+      "topic_name": "Unit 1: Mengenali Sejarah",
+      "focus": "Pengenalan Ilmu Sejarah",
+      "standards": [
+        "1.1.1 Menyatakan pengertian sejarah dan sumber sejarah.",
+        "1.1.2 Mengenal pasti konsep masa (kronologi, era, dekad) dalam sejarah.",
+        "1.1.3 Menerangkan kepentingan mempelajari sejarah.",
+        "KPS: Memahami kronologi dan meneroka bukti."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan maksud sejarah dan 3 jenis sumber sejarah (primer/sekunder).",
+        "Murid dapat mengaplikasikan konsep masa dalam susunan peristiwa peribadi.",
+        "Murid dapat menghuraikan 3 kepentingan sejarah kepada diri dan negara."
+      ],
+      "activities": [
+        "Perbincangan: Definisi Sejarah dan perbezaan sumber primer/sekunder.",
+        "Aktiviti 'Garis Masa Hidup Saya': Menyusun peristiwa hidup mengikut kronologi.",
+        "Pembentangan Kumpulan: Kepentingan sejarah kepada pembentukan identiti negara."
+      ],
+      "assessments": [
+        "Ujian Lisan: Menerangkan pengertian dan konsep masa.",
+        "Penilaian Bertulis: Membezakan sumber primer dan sekunder.",
+        "Projek Mini: Garis masa peribadi."
+      ],
+      "aids": [
+        "Carta konsep masa (tahun, dekad, abad).",
+        "Contoh sumber sejarah (gambar lama, buku teks)."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 2: Saya dan Keluarga",
+      "focus": "Sejarah Diri dan Keluarga",
+      "standards": [
+        "2.1.1 Menceritakan biodata diri dan latar belakang keluarga.",
+        "2.1.2 Menghuraikan salasilah keluarga (datuk, nenek, bapa, ibu).",
+        "2.1.3 Menyatakan perkembangan diri mengikut garis masa.",
+        "KPS: Membuat interpretasi."
+      ],
+      "objectives": [
+        "Murid dapat melengkapkan salasilah keluarga mereka (sekurang-kurangnya 3 generasi).",
+        "Murid dapat menghuraikan 3 peristiwa penting dalam perkembangan diri mereka.",
+        "Murid dapat membandingkan peranan ahli keluarga pada masa lampau dan kini."
+      ],
+      "activities": [
+        "Temu bual: Menemu bual ibu bapa/datuk nenek tentang sejarah keluarga.",
+        "Projek 'Pohon Keluarga': Melukis salasilah keluarga.",
+        "Penulisan Esei Ringkas: Cerita tentang satu peristiwa penting dalam keluarga."
+      ],
+      "assessments": [
+        "Penilaian Karya: Salasilah keluarga (dinilai ketepatan maklumat).",
+        "Ujian Lisan: Menceritakan perkembangan diri.",
+        "Tugasan: Laporan ringkas temu bual keluarga."
+      ],
+      "aids": [
+        "Templat Pohon Keluarga.",
+        "Contoh gambar perkembangan diri (bayi hingga kini)."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 3: Sekolah Kebanggaan Saya",
+      "focus": "Sejarah Institusi Sekolah",
+      "standards": [
+        "3.1.1 Menyatakan maklumat asas tentang sekolah (nama, lokasi, logo, visi/misi).",
+        "3.1.2 Menerangkan sejarah penubuhan sekolah (tarikh, pengasas, bangunan awal).",
+        "3.1.3 Menjelaskan jawatan dan peranan pentadbiran sekolah.",
+        "KPS: Meneroka bukti."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 maklumat asas sekolah (logo/visi/misi).",
+        "Murid dapat menghuraikan 2 sebab penubuhan sekolah dan perubahan fizikalnya.",
+        "Murid dapat menjelaskan 3 peranan penting Guru Besar/Pengetua."
+      ],
+      "activities": [
+        "Lawatan (atau tayangan video): Persekitaran dan bangunan bersejarah sekolah.",
+        "Perbincangan: Peranan dan tanggungjawab warga sekolah.",
+        "Lakaran/Lukisan: Membandingkan bangunan sekolah dahulu dan sekarang."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan objektif/struktur tentang maklumat asas sekolah.",
+        "Pembentangan Kumpulan: Sejarah ringkas penubuhan sekolah.",
+        "Laporan: Mengenal pasti peranan pentadbir."
+      ],
+      "aids": [
+        "Gambar/dokumen sejarah sekolah.",
+        "Carta organisasi sekolah."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 4: Tempat Tinggal Saya",
+      "focus": "Sejarah Tempat Tinggal",
+      "standards": [
+        "4.1.1 Mengenal pasti maklumat tentang tempat tinggal (nama, lokasi, mercu tanda).",
+        "4.1.2 Menerangkan sejarah nama dan tokoh setempat.",
+        "4.1.3 Menghuraikan keistimewaan tempat tinggal dan perubahannya.",
+        "KPS: Membuat imaginasi dan rasionalisasi."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 mercu tanda tempat tinggal mereka.",
+        "Murid dapat menceritakan sekurang-kurangnya satu cerita rakyat/sejarah nama tempat mereka.",
+        "Murid dapat membandingkan 3 perubahan fizikal tempat tinggal (dulu vs. kini)."
+      ],
+      "activities": [
+        "Kajian Lapangan Ringkas: Melukis/mengambil gambar mercu tanda setempat.",
+        "Ceramah ringkas: Jemputan tokoh setempat (jika ada) untuk berkongsi sejarah.",
+        "Pembentangan Peta Minda: Keistimewaan tempat tinggal saya."
+      ],
+      "assessments": [
+        "Ujian Lisan: Menceritakan sejarah nama tempat tinggal.",
+        "Penilaian Projek: Peta ringkas dan label mercu tanda.",
+        "Esei Pendek: Perubahan tempat tinggal."
+      ],
+      "aids": [
+        "Peta kawasan tempat tinggal (lama dan baru).",
+        "Gambar tokoh setempat."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 5: Zaman Prasejarah di Malaysia",
+      "focus": "Kehidupan Zaman Prasejarah",
+      "standards": [
+        "5.1.1 Menyatakan pengertian dan lokasi zaman prasejarah di Malaysia.",
+        "5.1.2 Menghuraikan ciri-ciri kehidupan (aktiviti, peralatan, tempat tinggal) masyarakat prasejarah.",
+        "5.1.3 Menerangkan kesinambungan sumbangan zaman prasejarah kepada kehidupan kini.",
+        "KPS: Membuat perbandingan."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 lokasi Zaman Prasejarah di Malaysia (cth: Gua Niah).",
+        "Murid dapat membezakan 3 ciri kehidupan Paleolitik, Mesolitik, dan Neolitik.",
+        "Murid dapat menjelaskan 2 sumbangan/legasi zaman prasejarah (cth: peralatan)."
+      ],
+      "activities": [
+        "Tayangan Video: Kehidupan masyarakat prasejarah (pemburuan, pertanian).",
+        "Aktiviti Seni: Melukis/membuat model replika peralatan/lukisan gua.",
+        "Perbincangan: Bagaimana kehidupan prasejarah mempengaruhi kehidupan moden."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan aneka pilihan (membezakan zaman prasejarah).",
+        "Penilaian Karya: Replika peralatan/lukisan gua.",
+        "Ujian Lisan: Menghuraikan ciri-ciri zaman prasejarah."
+      ],
+      "aids": [
+        "Gambar/model peralatan zaman prasejarah.",
+        "Peta lokasi gua/tapak prasejarah di Malaysia."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 6: Kerajaan Melayu Awal",
+      "focus": "Sejarah Awal Alam Melayu",
+      "standards": [
+        "6.1.1 Mengenal pasti lokasi dan nama kerajaan Melayu Awal (cth: Kedah Tua, Gangga Negara).",
+        "6.1.2 Menerangkan kegiatan ekonomi dan keistimewaan kerajaan-kerajaan tersebut.",
+        "6.1.3 Merumuskan kepentingan pelabuhan kepada kerajaan Melayu Awal.",
+        "KPS: Menganalisis dan memahami kronologi."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 Kerajaan Melayu Awal dan lokasinya.",
+        "Murid dapat menghuraikan 2 kegiatan ekonomi utama (cth: perdagangan, pertanian) bagi setiap kerajaan.",
+        "Murid dapat menjelaskan 3 faktor yang menyebabkan pelabuhan menjadi penting."
+      ],
+      "activities": [
+        "Aktiviti Peta: Menanda lokasi Kerajaan Melayu Awal di peta Asia Tenggara.",
+        "Kajian Kumpulan: Mengumpul maklumat tentang satu Kerajaan Melayu Awal (cth: Kedah Tua).",
+        "Perbincangan: Mengapa rempah ratus penting dalam perdagangan antarabangsa."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan struktur tentang kegiatan ekonomi.",
+        "Pembentangan Kumpulan: Peta dan maklumat Kerajaan Melayu Awal.",
+        "Kuiz: Soalan mengenal pasti lokasi."
+      ],
+      "aids": [
+        "Peta Asia Tenggara (lokasi pelabuhan awal).",
+        "Gambar/lakaran artifak Kerajaan Melayu Awal."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 7: Warisan Kerajaan Kesultanan Melayu Melaka (KMM)",
+      "focus": "Asal Usul Melaka",
+      "standards": [
+        "7.1.1 Menyatakan pengasas KMM dan peristiwa pembukaan Melaka.",
+        "7.1.2 Menerangkan lokasi strategik Melaka dan faktor kegemilangan.",
+        "7.1.3 Menghuraikan kisah Parameswara dan pembentukan Melaka.",
+        "KPS: Meneroka bukti dan membuat interpretasi."
+      ],
+      "objectives": [
+        "Murid dapat menamakan pengasas KMM dan kronologi pembukaan Melaka.",
+        "Murid dapat menghuraikan 3 faktor lokasi strategik (cth: bentuk muka bumi, angin monsun).",
+        "Murid dapat menceritakan semula kisah Parameswara dan penamaan Melaka."
+      ],
+      "activities": [
+        "Tayangan Video: Kisah Parameswara dan pembukaan Melaka.",
+        "Perbincangan: Kelebihan lokasi geografi Melaka.",
+        "Lakon Layar Ringkas: Peristiwa penamaan Melaka oleh Parameswara."
+      ],
+      "assessments": [
+        "Ujian Lisan: Menceritakan kisah Parameswara.",
+        "Penilaian Bertulis: Faktor lokasi strategik Melaka.",
+        "Penilaian Amali: Lakonan peristiwa pembukaan Melaka."
+      ],
+      "aids": [
+        "Peta laluan perdagangan KMM.",
+        "Gambar pokok Melaka dan ilustrasi Parameswara."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 8: Keunggulan KMM (Pemerintahan dan Pentadbiran)",
+      "focus": "Struktur Pemerintahan KMM",
+      "standards": [
+        "7.1.4 Menerangkan Sistem Pembesar Empat Lipatan.",
+        "7.1.5 Menyatakan peranan Sultan, Bendahara, Laksamana, dan Temenggung.",
+        "7.1.6 Menghuraikan kepentingan undang-undang (Hukum Kanun Melaka, Undang-Undang Laut Melaka).",
+        "KPS: Menganalisis."
+      ],
+      "objectives": [
+        "Murid dapat melabelkan 4 Pembesar Utama dan peranan mereka.",
+        "Murid dapat menjelaskan perbezaan peranan Bendahara dan Laksamana.",
+        "Murid dapat menghuraikan 2 kepentingan setiap undang-undang KMM (HKM/UULM)."
+      ],
+      "activities": [
+        "Aktiviti Carta: Melukis dan melabel Carta Organisasi Pembesar Empat Lipatan.",
+        "Simulasi: Peranan Pembesar dalam satu situasi (cth: Bendahara menyelesaikan masalah).",
+        "Perbincangan: Mengapa undang-undang penting untuk keamanan pelabuhan."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan padanan (Pembesar dan Peranan).",
+        "Penilaian Karya: Carta Pembesar Empat Lipatan.",
+        "Ujian Lisan: Kepentingan undang-undang KMM."
+      ],
+      "aids": [
+        "Carta Sistem Pembesar Empat Lipatan.",
+        "Teks ringkas Hukum Kanun Melaka/Undang-Undang Laut Melaka."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 9: Keunggulan KMM (Hubungan Luar dan Kegemilangan)",
+      "focus": "Ekonomi dan Diplomasi KMM",
+      "standards": [
+        "7.1.7 Menerangkan aktiviti perdagangan dan mata wang KMM.",
+        "7.1.8 Menghuraikan hubungan KMM dengan kuasa luar (cth: China, Siam).",
+        "7.1.9 Merumus kegemilangan KMM sebagai pusat perdagangan antarabangsa.",
+        "KPS: Membuat interpretasi dan meneroka bukti."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 jenis barangan dagangan utama KMM.",
+        "Murid dapat menjelaskan 2 kesan positif hubungan KMM dengan China (cth: perlindungan, hadiah).",
+        "Murid dapat menghuraikan 3 faktor kegemilangan KMM sebagai pusat perdagangan."
+      ],
+      "activities": [
+        "Permainan: 'Pasar Melaka': Role-play urus niaga (menggunakan mata wang/barangan KMM).",
+        "Perbincangan Kumpulan: Kepentingan utusan diplomatik ke China.",
+        "Pembentangan: Keunikan Melaka sebagai pelabuhan entrepot."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan struktur tentang aktiviti perdagangan.",
+        "Ujian Lisan: Menghuraikan hubungan dengan kuasa luar.",
+        "Penilaian Amali: Role-play 'Pasar Melaka'."
+      ],
+      "aids": [
+        "Gambar mata wang lama Melaka.",
+        "Carta barangan dagangan utama."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 10: Warisan KMM (Sosiobudaya dan Kesinambungan)",
+      "focus": "Legasi KMM",
+      "standards": [
+        "7.1.10 Menyatakan warisan sosiobudaya KMM (cth: bahasa Melayu, agama Islam).",
+        "7.1.11 Menghuraikan kegunaan bahasa Melayu sebagai lingua franca.",
+        "7.1.12 Merumuskan kepentingan warisan KMM kepada negara Malaysia kini.",
+        "KPS: Membuat imaginasi dan merumus."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 warisan sosiobudaya KMM (cth: Adat, Bahasa, Agama).",
+        "Murid dapat menjelaskan 2 faktor bahasa Melayu menjadi bahasa perhubungan (lingua franca).",
+        "Murid dapat menghuraikan 3 kesinambungan warisan KMM dalam kehidupan moden (cth: institusi Raja)."
+      ],
+      "activities": [
+        "Perbincangan: Mengapa institusi Raja-Raja Melayu kekal hingga kini.",
+        "Latihan Menulis: Esei pendek (kepentingan Bahasa Melayu sebagai bahasa kebangsaan).",
+        "Aktiviti Seni: Melukis ilustrasi warisan Melaka (cth: Pakaian, Seni Bina)."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Merumus kepentingan warisan KMM.",
+        "Ujian Lisan: Menghuraikan fungsi bahasa Melayu sebagai lingua franca.",
+        "Penilaian Karya: Ilustrasi warisan Melaka."
+      ],
+      "aids": [
+        "Gambar istana Melaka/Pakaian tradisional.",
+        "Carta konsep warisan sosiobudaya."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 5: 10 UNIT (Tema: Warisan Negara - Kedaulatan dan Penjajahan) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 5,
+      "topic_name": "Unit 1: Kedaulatan Negeri-Negeri Melayu",
+      "focus": "Pemerintahan dan Perundangan",
+      "standards": [
+        "8.1.1 Menyatakan konsep kedaulatan negeri-negeri Melayu.",
+        "8.1.2 Menerangkan sistem pemerintahan beraja dan hierarki pentadbiran.",
+        "8.1.3 Menjelaskan undang-undang dan peranan pembesar di negeri-negeri Melayu.",
+        "KPS: Membuat perbandingan."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan konsep kedaulatan dan ciri-cirinya.",
+        "Murid dapat membandingkan 2 ciri persamaan/perbezaan sistem beraja di dua negeri Melayu.",
+        "Murid dapat menghuraikan 3 peranan pembesar peringkat jajahan/daerah."
+      ],
+      "activities": [
+        "Perbincangan: Maksud kedaulatan dan mengapa ia penting.",
+        "Kajian Kumpulan: Sistem beraja di Negeri Sembilan vs. Perak.",
+        "Tayangan Video: Istiadat pertabalan Raja/Sultan."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan struktur tentang sistem pemerintahan.",
+        "Ujian Lisan: Menjelaskan konsep kedaulatan.",
+        "Pembentangan Kumpulan: Perbandingan sistem beraja."
+      ],
+      "aids": [
+        "Carta hierarki pentadbiran negeri Melayu.",
+        "Gambar/dokumen undang-undang lama (cth: Adat Temenggung/Perpatih)."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 2: Institusi Raja Payung Negara",
+      "focus": "Institusi Raja dan Adat Istiadat",
+      "standards": [
+        "9.1.1 Menyatakan kedudukan dan peranan Raja dalam Perlembagaan Persekutuan.",
+        "9.1.2 Menerangkan adat istiadat dan gelaran Raja-Raja Melayu.",
+        "9.1.3 Menghuraikan kepentingan institusi Raja kepada kestabilan negara.",
+        "KPS: Merumus."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 peranan Raja dalam Perlembagaan (cth: Ketua Agama Islam).",
+        "Murid dapat mengenal pasti 3 adat istiadat Raja (cth: pakaian, alat kebesaran).",
+        "Murid dapat menghuraikan 3 sebab Raja Melayu perlu dihormati dan dipelihara."
+      ],
+      "activities": [
+        "Perbincangan: Raja sebagai payung kedaulatan negara.",
+        "Tayangan Video: Alat kebesaran dan istiadat Raja-Raja Melayu.",
+        "Penulisan Esei: Kepentingan institusi Raja kepada rakyat."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Peranan Raja dalam Perlembagaan.",
+        "Ujian Lisan: Menghuraikan kepentingan institusi Raja.",
+        "Kuiz: Gelaran dan adat istiadat Raja."
+      ],
+      "aids": [
+        "Gambar alat kebesaran diraja.",
+        "Carta peranan Raja."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 3: Negeri-Negeri Selat (NNS)",
+      "focus": "Penjajahan British di NNS",
+      "standards": [
+        "10.1.1 Mengenal pasti negeri-negeri yang membentuk NNS (Pulau Pinang, Melaka, Singapura).",
+        "10.1.2 Menerangkan faktor-faktor British menduduki NNS (cth: kedudukan strategik, pelabuhan).",
+        "10.1.3 Merumus kepentingan NNS kepada British.",
+        "KPS: Meneroka bukti dan membuat interpretasi."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 negeri dalam NNS dan lokasi mereka.",
+        "Murid dapat menjelaskan 2 faktor British tertarik dengan Pulau Pinang (cth: pangkalan tentera).",
+        "Murid dapat menghuraikan 3 kepentingan NNS kepada British (ekonomi/politik)."
+      ],
+      "activities": [
+        "Aktiviti Peta: Menanda lokasi NNS di peta Malaysia.",
+        "Perbincangan: Peranan Francis Light dan Stamford Raffles dalam pembentukan NNS.",
+        "Pembentangan Kumpulan: Faktor British menduduki setiap negeri NNS."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Faktor British menduduki NNS.",
+        "Ujian Lisan: Menamakan negeri-negeri NNS.",
+        "Penilaian Karya: Peta NNS yang dilabelkan."
+      ],
+      "aids": [
+        "Peta NNS dan laluan perdagangan.",
+        "Gambar tokoh yang terlibat dalam pendudukan NNS."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 4: Campur Tangan dan Penjajahan British",
+      "focus": "Penjajahan di Negeri-Negeri Melayu",
+      "standards": [
+        "10.1.4 Menerangkan campur tangan British di Negeri-Negeri Melayu Bersekutu (NNMB).",
+        "10.1.5 Menjelaskan faktor-faktor British campur tangan (cth: kekayaan hasil bumi, masalah dalaman).",
+        "10.1.6 Menghuraikan pembentukan Negeri-Negeri Melayu Tidak Bersekutu (NNMTB).",
+        "KPS: Menganalisis dan memahami kronologi."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 negeri NNMB dan 5 NNMTB.",
+        "Murid dapat menjelaskan 3 sebab British campur tangan (cth: bijih timah, perbalahan pembesar).",
+        "Murid dapat membezakan ciri NNMB dan NNMTB (cth: Residen vs. Penasihat)."
+      ],
+      "activities": [
+        "Aktiviti Peta: Mewarna/melabel NNMB dan NNMTB.",
+        "Kajian Kes: Peristiwa Perjanjian Pangkor dan implikasinya.",
+        "Perbincangan: Peranan Residen British dan kesannya terhadap Raja."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Membezakan ciri NNMB dan NNMTB.",
+        "Ujian Lisan: Menjelaskan faktor campur tangan British.",
+        "Penilaian Karya: Peta NNMB/NNMTB."
+      ],
+      "aids": [
+        "Peta pembahagian negeri di Tanah Melayu (NNMB/NNMTB).",
+        "Carta perbezaan pentadbiran NNMB dan NNMTB."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 5: Perjuangan Tokoh Tempatan",
+      "focus": "Penentangan Terhadap British",
+      "standards": [
+        "11.1.1 Mengenal pasti tokoh-tokoh tempatan yang menentang British (cth: Dol Said, Tok Janggut, Rentap).",
+        "11.1.2 Menerangkan faktor penentangan dan cabaran yang dihadapi oleh mereka.",
+        "11.1.3 Merumus semangat perjuangan tokoh-tokoh tempatan.",
+        "KPS: Membuat rasionalisasi dan membuat interpretasi."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 tokoh tempatan dan negeri perjuangan mereka.",
+        "Murid dapat menjelaskan 2 faktor penentangan setiap tokoh (cth: cukai, kehilangan kuasa).",
+        "Murid dapat menghuraikan 3 nilai patriotisme daripada perjuangan tokoh-tokoh tersebut."
+      ],
+      "activities": [
+        "Kajian Kumpulan: Menyediakan biodata ringkas seorang tokoh penentangan.",
+        "Tayangan Video: Kisah perjuangan tokoh tempatan (cth: Rentap/Mat Salleh).",
+        "Perbincangan: Nilai berani dan sanggup berkorban dalam perjuangan."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan struktur tentang faktor penentangan.",
+        "Ujian Lisan: Menceritakan kisah perjuangan tokoh.",
+        "Pembentangan Kumpulan: Profil tokoh penentangan."
+      ],
+      "aids": [
+        "Gambar/ilustrasi tokoh-tokoh penentangan.",
+        "Peta lokasi penentangan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 6: Perubahan Pentadbiran dan Ekonomi Era Penjajahan",
+      "focus": "Kesan Penjajahan British",
+      "standards": [
+        "12.1.1 Menerangkan perubahan pentadbiran British (cth: Jabatan, birokrasi moden).",
+        "12.1.2 Menjelaskan kesan kegiatan ekonomi British (cth: sistem dwi-ekonomi, kemasukan imigran).",
+        "12.1.3 Merumuskan kesan penjajahan terhadap masyarakat tempatan.",
+        "KPS: Menganalisis dan membuat interpretasi."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 2 perubahan pentadbiran yang dibawa oleh British.",
+        "Murid dapat menghuraikan 2 kesan positif dan 2 kesan negatif ekonomi penjajahan (cth: infrastruktur vs. penguasaan ekonomi).",
+        "Murid dapat menjelaskan 3 kesan kemasukan imigran terhadap masyarakat tempatan."
+      ],
+      "activities": [
+        "Perbincangan: Perbandingan sistem pentadbiran tradisional vs. moden British.",
+        "Aktiviti Peta Minda: Kesan sistem dwi-ekonomi (tradisional vs. komersial).",
+        "Pembentangan Kumpulan: Kesan sosial kemasukan imigran."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan perbandingan kesan ekonomi.",
+        "Ujian Lisan: Merumuskan kesan penjajahan.",
+        "Tugasan: Laporan ringkas perubahan pentadbiran."
+      ],
+      "aids": [
+        "Carta sistem dwi-ekonomi.",
+        "Gambar pekerja di ladang getah/lombong bijih timah."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 7: Pendudukan Jepun dan Kesannya",
+      "focus": "Pendudukan Jepun dan Gerakan Nasionalisme",
+      "standards": [
+        "13.1.1 Menyatakan kronologi pendudukan Jepun di Tanah Melayu.",
+        "13.1.2 Menerangkan dasar pentadbiran Jepun dan kesannya kepada ekonomi/sosial.",
+        "13.1.3 Menghuraikan permulaan gerakan nasionalisme tempatan.",
+        "KPS: Memahami kronologi dan membuat interpretasi."
+      ],
+      "objectives": [
+        "Murid dapat menyusun 4 peristiwa penting dalam kronologi pendudukan Jepun.",
+        "Murid dapat menghuraikan 3 dasar pentadbiran Jepun dan 2 kesan negatifnya (cth: kesengsaraan hidup, mata wang).",
+        "Murid dapat menjelaskan peranan 2 akhbar/organisasi awal dalam gerakan nasionalisme."
+      ],
+      "activities": [
+        "Garis Masa: Kronologi pendudukan Jepun.",
+        "Perbincangan: Kehidupan masyarakat di bawah pemerintahan Jepun (kesusahan hidup).",
+        "Kajian Kumpulan: Peranan tokoh/organisasi awal nasionalisme (cth: Kesatuan Melayu Muda)."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan struktur tentang dasar Jepun.",
+        "Penilaian Karya: Garis masa pendudukan Jepun.",
+        "Ujian Lisan: Kesan pendudukan Jepun kepada masyarakat."
+      ],
+      "aids": [
+        "Gambar mata wang Jepun (pisang).",
+        "Peta kemaraan tentera Jepun."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 8: Malayan Union dan Persekutuan Tanah Melayu 1948",
+      "focus": "Reaksi Rakyat Terhadap Perubahan Politik",
+      "standards": [
+        "14.1.1 Menerangkan tujuan dan ciri-ciri Malayan Union (MU).",
+        "14.1.2 Menjelaskan sebab-sebab penentangan Raja-Raja Melayu dan rakyat terhadap MU.",
+        "14.1.3 Merumuskan pembentukan Persekutuan Tanah Melayu 1948 (PTM 1948).",
+        "KPS: Membuat interpretasi dan membuat perbandingan."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 ciri utama MU (cth: Raja sebagai ahli Majlis Penasihat).",
+        "Murid dapat menghuraikan 3 sebab Raja dan rakyat menentang MU (cth: kedaulatan Raja terjejas, kerakyatan longgar).",
+        "Murid dapat membandingkan 2 perbezaan utama MU dan PTM 1948 (cth: kedaulatan Raja/syarat kerakyatan)."
+      ],
+      "activities": [
+        "Tayangan Video: Demonstrasi menentang MU.",
+        "Lakon Layar: Peranan tokoh (cth: Dato' Onn Jaafar) dalam penentangan MU.",
+        "Perbincangan: Mengapa Baju Putih (Raja) dan Baju Hitam (Rakyat) penting dalam penentangan."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan perbandingan MU dan PTM 1948.",
+        "Ujian Lisan: Sebab penentangan rakyat terhadap MU.",
+        "Penilaian Amali: Lakonan penentangan MU."
+      ],
+      "aids": [
+        "Carta perbezaan ciri MU dan PTM 1948.",
+        "Gambar perarakan/demontrasi penentangan MU."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 9: Ancaman Komunis dan Darurat",
+      "focus": "Cabaran ke Arah Kemerdekaan",
+      "standards": [
+        "14.1.4 Menerangkan ancaman Komunis dan pengisytiharan Darurat (1948-1960).",
+        "14.1.5 Menjelaskan usaha-usaha mengatasi ancaman Komunis (cth: Briggs Plan, Kampung Baru).",
+        "14.1.6 Merumus kesan Darurat kepada negara dan masyarakat.",
+        "KPS: Meneroka bukti dan membuat interpretasi."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan tarikh pengisytiharan Darurat dan sebab-sebabnya.",
+        "Murid dapat menghuraikan 2 usaha penting (cth: Kampung Baru, kad pengenalan) yang diambil untuk mengatasi Komunis.",
+        "Murid dapat menjelaskan 2 kesan Darurat (cth: peningkatan kos sara hidup, sekatan pergerakan)."
+      ],
+      "activities": [
+        "Perbincangan: Kehidupan masyarakat semasa Darurat (pengalaman lama).",
+        "Tayangan Video: Kempen 'Bintang Tiga' dan perjuangan menentang Komunis.",
+        "Kajian Kumpulan: Menganalisis keberkesanan Briggs Plan."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Usaha mengatasi ancaman Komunis.",
+        "Ujian Lisan: Kesan Darurat kepada masyarakat.",
+        "Garis Masa: Kronologi Darurat."
+      ],
+      "aids": [
+        "Gambar di Kampung Baru/sekatan jalan raya semasa Darurat.",
+        "Carta usaha-usaha mengatasi Komunis."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 10: Muraja'ah Warisan Negara dan Kedaulatan",
+      "focus": "Sintesis Penjajahan dan Kedaulatan",
+      "standards": [
+        "4.5.1 Menganalisis kesinambungan institusi Raja-Raja Melayu dari dahulu hingga kini.",
+        "4.5.2 Merumus kesan penjajahan terhadap sosioekonomi dan politik negara.",
+        "4.5.3 Menghubungkaitkan perjuangan tokoh-tokoh tempatan dengan semangat patriotisme masa kini.",
+        "KPS: Merumus dan membuat rasionalisasi."
+      ],
+      "objectives": [
+        "Murid dapat menghubungkaitkan penentangan MU dengan pembentukan PTM 1948.",
+        "Murid dapat merumuskan 3 nilai patriotisme daripada keseluruhan perjuangan tokoh-tokoh tempatan.",
+        "Murid dapat menjelaskan 3 sumbangan institusi Raja dalam konteks moden Malaysia."
+      ],
+      "activities": [
+        "Perbahasan Ringkas: 'Adakah penjajahan membawa lebih banyak kebaikan atau keburukan kepada negara?'",
+        "Kuiz Komprehensif: Soalan tatabahasa dan kronologi Tahun 5.",
+        "Penulisan Reflektif: Esei pendek tentang nilai sejarah yang diperolehi."
+      ],
+      "assessments": [
+        "Ujian Akhir Bertulis: Soalan struktur dan esei (Sumatif Akhir).",
+        "Penilaian Lisan: Perbahasan ringkas.",
+        "Refleksi: Esei tentang nilai sejarah."
+      ],
+      "aids": [
+        "Lembaran Ulang Kaji Komprehensif.",
+        "Bahan perdebatan."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 6: 10 UNIT (Tema: Negara Kita - Kemerdekaan dan Pembentukan Malaysia) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 6,
+      "topic_name": "Unit 1: Langkah ke Arah Kemerdekaan",
+      "focus": "Perkembangan Politik ke Arah Kemerdekaan",
+      "standards": [
+        "15.1.1 Menyatakan usaha-usaha ke arah kemerdekaan (cth: rundingan, pilihan raya).",
+        "15.1.2 Menerangkan peranan Tokoh-tokoh Kemerdekaan (cth: Tunku Abdul Rahman, Tun Abdul Razak).",
+        "15.1.3 Menjelaskan kepentingan pilihan raya umum 1955.",
+        "KPS: Menganalisis dan memahami kronologi."
+      ],
+      "objectives": [
+        "Murid dapat menyusun 4 peristiwa penting dalam kronologi usaha kemerdekaan.",
+        "Murid dapat menghuraikan 3 peranan utama Tunku Abdul Rahman dalam usaha mencapai kemerdekaan.",
+        "Murid dapat menjelaskan 2 kepentingan Pilihan Raya Umum 1955 (cth: kerjasama kaum, pembentukan kabinet)."
+      ],
+      "activities": [
+        "Garis Masa: Kronologi Rundingan Kemerdekaan.",
+        "Kajian Kumpulan: Mengumpul maklumat tentang 3 Tokoh Kemerdekaan dan sumbangan mereka.",
+        "Tayangan Video: Detik-detik pilihan raya umum 1955."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan struktur tentang peranan tokoh.",
+        "Penilaian Karya: Garis masa usaha kemerdekaan.",
+        "Ujian Lisan: Kepentingan pilihan raya 1955."
+      ],
+      "aids": [
+        "Gambar Tokoh-tokoh Kemerdekaan.",
+        "Carta kronologi rundingan kemerdekaan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 2: Peristiwa Pengisytiharan Kemerdekaan",
+      "focus": "Detik-detik Kemerdekaan",
+      "standards": [
+        "15.1.4 Menceritakan peristiwa pengisytiharan kemerdekaan 31 Ogos 1957.",
+        "15.1.5 Menghuraikan detik-detik penting pengisytiharan.",
+        "15.1.6 Merumuskan perasaan dan harapan rakyat Malaysia terhadap kemerdekaan.",
+        "KPS: Membuat interpretasi dan membuat imaginasi."
+      ],
+      "objectives": [
+        "Murid dapat menceritakan semula kronologi 3 peristiwa penting pada 31 Ogos 1957.",
+        "Murid dapat menjelaskan maksud 7 laungan 'Merdeka' oleh Tunku Abdul Rahman.",
+        "Murid dapat menghuraikan 3 harapan rakyat selepas mencapai kemerdekaan (politik, ekonomi, sosial)."
+      ],
+      "activities": [
+        "Tayangan Video: Rakaman detik pengisytiharan kemerdekaan.",
+        "Lakon Layar: Peristiwa laungan 'Merdeka' di Stadium Merdeka.",
+        "Penulisan Reflektif: Perasaan jika berada di Stadium Merdeka pada tahun 1957."
+      ],
+      "assessments": [
+        "Ujian Lisan: Menceritakan semula detik-detik kemerdekaan.",
+        "Penilaian Bertulis: Merumus harapan rakyat selepas merdeka.",
+        "Penilaian Amali: Lakonan laungan 'Merdeka'."
+      ],
+      "aids": [
+        "Rakaman suara/video Tunku Abdul Rahman melafazkan 'Merdeka'.",
+        "Gambar Stadium Merdeka 1957."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 3: Maksud dan Kepentingan Kemerdekaan",
+      "focus": "Konsep Kemerdekaan dan Kedaulatan",
+      "standards": [
+        "15.1.7 Menyatakan maksud kemerdekaan (bebas, berdaulat, merdeka).",
+        "15.1.8 Menjelaskan kepentingan mempertahankan kedaulatan negara.",
+        "15.1.9 Menghuraikan cabaran negara selepas mencapai kemerdekaan.",
+        "KPS: Merumus dan membuat rasionalisasi."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan maksud kemerdekaan (bebas dari penjajahan) dan kedaulatan (kuasa tertinggi).",
+        "Murid dapat menghuraikan 3 kepentingan mempertahankan kedaulatan (cth: hak asasi, ekonomi, politik).",
+        "Murid dapat menyatakan 2 cabaran utama negara selepas merdeka (cth: perpaduan kaum, pembangunan ekonomi)."
+      ],
+      "activities": [
+        "Perbincangan: Kepentingan menjaga perpaduan kaum selepas merdeka.",
+        "Debat Ringkas: 'Kedaulatan negara adalah tanggungjawab semua rakyat'.",
+        "Latihan Menulis: Esei pendek tentang cabaran negara moden."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan esei (kepentingan mempertahankan kedaulatan).",
+        "Ujian Lisan: Menjelaskan maksud kemerdekaan/kedaulatan.",
+        "Penilaian Amali: Debat ringkas."
+      ],
+      "aids": [
+        "Carta konsep kemerdekaan/kedaulatan.",
+        "Teks Ucapan Kemerdekaan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 4: Pembentukan Malaysia",
+      "focus": "Gagasan Malaysia",
+      "standards": [
+        "16.1.1 Menyatakan konsep dan tujuan pembentukan Malaysia.",
+        "16.1.2 Menerangkan idea dan usaha ke arah pembentukan Malaysia (cth: Jawatankuasa Perundingan Perpaduan Kaum).",
+        "16.1.3 Menghuraikan faktor-faktor pembentukan Malaysia (cth: keselamatan, ekonomi, dekolonisasi).",
+        "KPS: Menganalisis dan meneroka bukti."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan konsep 'Gagasan Malaysia' (penggabungan Persekutuan Tanah Melayu, Sabah, Sarawak, Singapura).",
+        "Murid dapat menyusun 4 kronologi usaha pembentukan Malaysia (cth: JPPK, Suruhanjaya Cobbold).",
+        "Murid dapat menghuraikan 3 faktor utama pembentukan Malaysia (cth: ancaman Komunis, pasaran bersama)."
+      ],
+      "activities": [
+        "Garis Masa: Kronologi Pembentukan Malaysia (1961-1963).",
+        "Perbincangan Kumpulan: Menganalisis faktor ancaman Komunis mempengaruhi pembentukan Malaysia.",
+        "Aktiviti Peta: Menanda negara-negara yang terlibat dalam pembentukan Malaysia."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan struktur tentang faktor pembentukan Malaysia.",
+        "Penilaian Karya: Garis masa pembentukan Malaysia.",
+        "Ujian Lisan: Menjelaskan konsep Gagasan Malaysia."
+      ],
+      "aids": [
+        "Peta Malaysia 1963.",
+        "Gambar Tokoh-tokoh yang terlibat (cth: Tunku Abdul Rahman, Tun Datu Mustapha)."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 5: Reaksi Terhadap Pembentukan Malaysia",
+      "focus": "Penentangan dan Sokongan",
+      "standards": [
+        "16.1.4 Menerangkan reaksi penduduk tempatan terhadap gagasan Malaysia.",
+        "16.1.5 Menjelaskan reaksi negara jiran (cth: Indonesia dan Filipina) terhadap pembentukan Malaysia.",
+        "16.1.6 Menghuraikan langkah-langkah mengatasi tentangan (cth: MAPHILINDO, Konfrontasi).",
+        "KPS: Membuat perbandingan dan membuat interpretasi."
+      ],
+      "objectives": [
+        "Murid dapat membandingkan reaksi (sokongan/tentangan) penduduk Sabah/Sarawak terhadap Malaysia.",
+        "Murid dapat menjelaskan sebab utama Indonesia (Konfrontasi) dan Filipina menentang Malaysia.",
+        "Murid dapat menghuraikan 2 langkah penting mengatasi tentangan negara jiran."
+      ],
+      "activities": [
+        "Perbahasan Ringkas: 'Wajar atau tidak negara jiran menentang pembentukan Malaysia?'",
+        "Kajian Kumpulan: Reaksi Sabah dan Sarawak (Isu 20 Perkara/18 Perkara).",
+        "Tayangan Video: Konfrontasi Indonesia-Malaysia."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan perbandingan reaksi negara jiran.",
+        "Ujian Lisan: Menjelaskan isu-isu tentangan.",
+        "Penilaian Amali: Perbahasan ringkas."
+      ],
+      "aids": [
+        "Carta perbandingan reaksi negara jiran.",
+        "Peta Borneo (reaksi tempatan dan negara jiran)."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 6: Pengisytiharan Malaysia dan Perdana Menteri",
+      "focus": "Detik-detik Pembentukan dan Pemimpin Negara",
+      "standards": [
+        "16.1.7 Menceritakan peristiwa pengisytiharan Malaysia pada 16 September 1963.",
+        "16.1.8 Menerangkan peranan dan sumbangan Perdana Menteri Malaysia (daripada Pertama hingga kini).",
+        "16.1.9 Menghuraikan tugas dan tanggungjawab sebagai warganegara.",
+        "KPS: Merumus dan merumus."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan tarikh dan tempat pengisytiharan Malaysia.",
+        "Murid dapat menamakan 4 Perdana Menteri Malaysia dan 1 sumbangan utama setiap seorang.",
+        "Murid dapat menghuraikan 3 tugas dan tanggungjawab sebagai warganegara yang patriotik."
+      ],
+      "activities": [
+        "Tayangan Video: Rakaman detik pengisytiharan Malaysia.",
+        "Aktiviti Papan Pameran: Profil Perdana Menteri Malaysia dan sumbangan mereka.",
+        "Perbincangan: Bagaimana menjadi warganegara yang bertanggungjawab."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Peranan dan sumbangan Perdana Menteri.",
+        "Ujian Lisan: Menceritakan peristiwa 16 September 1963.",
+        "Penilaian Karya: Profil Perdana Menteri."
+      ],
+      "aids": [
+        "Gambar Perdana Menteri Malaysia.",
+        "Teks ringkas pengisytiharan Malaysia."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 7: Lambang dan Simbol Negara",
+      "focus": "Identiti dan Kedaulatan Negara",
+      "standards": [
+        "17.1.1 Mengenal pasti lambang dan simbol negara (cth: Jata Negara, Bendera Malaysia).",
+        "17.1.2 Menerangkan maksud dan kepentingan setiap lambang/simbol.",
+        "17.1.3 Menghuraikan lagu Kebangsaan (Negaraku) dan Rukun Negara.",
+        "KPS: Membuat interpretasi dan meneroka bukti."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 lambang negara (cth: bendera, jata, bunga kebangsaan).",
+        "Murid dapat menghuraikan 3 maksud warna/simbol pada Jata Negara/Bendera Malaysia.",
+        "Murid dapat menyanyikan lagu Negaraku dengan betul dan menyatakan 5 prinsip Rukun Negara."
+      ],
+      "activities": [
+        "Aktiviti Seni: Melukis/mewarna Bendera Malaysia dan Jata Negara.",
+        "Perbincangan: Kepentingan Rukun Negara dalam kehidupan seharian.",
+        "Amali: Menyanyikan lagu Negaraku dengan penuh semangat."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan padanan (Lambang dan Maksud).",
+        "Ujian Lisan: Menyatakan 5 prinsip Rukun Negara.",
+        "Penilaian Amali: Nyanyian lagu Negaraku."
+      ],
+      "aids": [
+        "Carta Jata Negara dan Bendera Malaysia.",
+        "Teks Rukun Negara dan lagu Negaraku."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 8: Perayaan dan Kebudayaan di Malaysia",
+      "focus": "Masyarakat Berbilang Kaum",
+      "standards": [
+        "17.1.4 Menerangkan kepelbagaian kaum dan etnik di Malaysia.",
+        "17.1.5 Menjelaskan perayaan dan kebudayaan pelbagai kaum (cth: Hari Raya, Tahun Baru Cina, Deepavali).",
+        "17.1.6 Merumuskan kepentingan perpaduan kaum dan warisan budaya.",
+        "KPS: Membuat perbandingan dan membuat imaginasi."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 kaum utama dan 3 etnik di Malaysia (cth: Iban, Kadazan).",
+        "Murid dapat menghuraikan 2 ciri perayaan utama setiap kaum.",
+        "Murid dapat menjelaskan 3 langkah untuk memupuk perpaduan kaum."
+      ],
+      "activities": [
+        "Tayangan Video: Perayaan utama di Malaysia.",
+        "Kajian Kumpulan: Makanan/pakaian tradisional pelbagai kaum.",
+        "Perbincangan: Peranan Sekolah Kebangsaan dalam memupuk perpaduan."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan struktur tentang perayaan/budaya.",
+        "Ujian Lisan: Menghuraikan kepentingan perpaduan.",
+        "Pembentangan Kumpulan: Kebudayaan pelbagai kaum."
+      ],
+      "aids": [
+        "Gambar pakaian dan makanan tradisional.",
+        "Carta perayaan di Malaysia."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 9: Pencapaian dan Kemajuan Negara",
+      "focus": "Kegemilangan Malaysia Moden",
+      "standards": [
+        "18.1.1 Menyatakan pencapaian negara dalam pelbagai bidang (cth: ekonomi, sukan, pendidikan).",
+        "18.1.2 Menjelaskan sumbangan tokoh-tokoh dalam memajukan negara.",
+        "18.1.3 Merumuskan kejayaan negara sebagai inspirasi untuk masa depan.",
+        "KPS: Menganalisis dan merumus."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 pencapaian utama negara (cth: Menara KLCC, Sukan Olimpik).",
+        "Murid dapat menghuraikan 2 sumbangan tokoh (cth: saintis, atlet, ahli perniagaan) dalam bidang masing-masing.",
+        "Murid dapat menjelaskan 3 cabaran yang perlu dihadapi oleh generasi muda untuk memastikan negara terus maju."
+      ],
+      "activities": [
+        "Tayangan Video: Pencapaian Malaysia di mata dunia.",
+        "Perbincangan: Bagaimana teknologi mempengaruhi kemajuan negara.",
+        "Projek Mini: Membina Garis Masa Pencapaian Malaysia selepas merdeka."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Soalan struktur tentang pencapaian negara.",
+        "Ujian Lisan: Menghuraikan sumbangan tokoh.",
+        "Penilaian Karya: Garis masa pencapaian negara."
+      ],
+      "aids": [
+        "Gambar mercu tanda moden Malaysia.",
+        "Profil tokoh-tokoh negara moden."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 10: Muraja'ah Negara Kita dan Wawasan",
+      "focus": "Sintesis Kemerdekaan dan Wawasan Masa Depan",
+      "standards": [
+        "4.6.1 Mengintegrasikan semua tema dan kronologi sejarah dari Tahun 4 hingga Tahun 6.",
+        "4.6.2 Menghuraikan konsep Jati Diri Malaysia dan Wawasan Negara.",
+        "4.6.3 Menunjukkan semangat patriotisme dan menghargai warisan negara.",
+        "KPS: Membuat rasionalisasi dan membuat interpretasi."
+      ],
+      "objectives": [
+        "Murid dapat menghubungkaitkan peristiwa pembentukan Malaysia dengan cabaran masa kini.",
+        "Murid dapat menghuraikan 3 aspek Jati Diri Malaysia (cth: bahasa, kepelbagaian, Rukun Negara).",
+        "Murid dapat menyatakan 3 tindakan untuk menghargai warisan negara."
+      ],
+      "activities": [
+        "Penulisan Esei Komprehensif: 'Sejarah Malaysia: Dari KMM ke Negara Moden'.",
+        "Persembahan Akhir: 'Wawasan Malaysia: Peranan Saya'.",
+        "Kuiz Sejarah Komprehensif (Tahun 4-6)."
+      ],
+      "assessments": [
+        "Ujian Akhir Bertulis: Soalan esei komprehensif (Sumatif Akhir).",
+        "Ujian Lisan: Persembahan Wawasan Malaysia.",
+        "Refleksi: Esei refleksi tentang semangat patriotisme."
+      ],
+      "aids": [
+        "Garis masa bersepadu Sejarah Malaysia (Tahun 4-6).",
+        "Bahan persembahan Wawasan Negara."
+      ]
+    }
+  ]
+}

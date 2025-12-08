@@ -1,0 +1,1764 @@
+{
+  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Bahasa Arab - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
+  "subject": "Bahasa Arab",
+  "data": [
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 1: 10 UNIT (Fokus: Asas Sebutan & Perbendaharaan Kata Ringkas) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 1,
+      "topic_name": "Unit 1: Ta'aruf (Perkenalan Diri)",
+      "skill_name": "Mendengar & Bertutur (الاستماع والكلام)",
+      "standards": [
+        "1.1.1 Mengenal dan menyebut huruf Arab (al-huruf al-hijaiyah) secara tunggal dan berbaris (fathah, kasrah, dhommah).",
+        "1.2.1 Bertutur untuk memperkenalkan diri dengan sebutan yang betul: (أنا - Ana).",
+        "1.2.2 Memberi respons kepada ucapan selamat: (صباح الخير - Selamat pagi)."
+      ],
+      "objectives": [
+        "Murid dapat menyebut 28 huruf hijaiyah dengan sebutan makhraj yang betul.",
+        "Murid dapat memperkenalkan nama sendiri menggunakan frasa أنا (Ana).",
+        "Murid dapat memberi respons kepada 3 jenis ucapan selamat."
+      ],
+      "activities": [
+        "Latih tubi sebutan huruf hijaiyah dengan lagu/irama (Choral drilling).",
+        "Permainan 'Kenal Kawan': Murid memperkenalkan diri kepada rakan.",
+        "Lakon layar: Ucapan selamat pagi dan menjawab salam."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan huruf hijaiyah berbaris.",
+        "Penilaian Amali: Keupayaan memperkenalkan diri.",
+        "Senarai Semak: Respons yang sesuai kepada salam."
+      ],
+      "aids": [
+        "Kad Imbasan Huruf Hijaiyah.",
+        "Carta Ucapan Selamat (صباح الخير, مساء الخير, السلام عليكم)."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 2: Al-Adawat al-Madrasiyyah (Peralatan Sekolah)",
+      "skill_name": "Perbendaharaan Kata (مفردات) & Qira'ah",
+      "standards": [
+        "2.1.1 Mengenal dan membaca perkataan yang mengandungi huruf tunggal dan bersambung.",
+        "3.1.1 Menulis perkataan ringkas yang mengandungi 3-4 huruf.",
+        "1.2.3 Bertanya dan menjawab tentang nama objek: (ما هذا؟ - Apakah ini?)."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 peralatan sekolah dalam Bahasa Arab (cth: pensel, buku, pembaris).",
+        "Murid dapat membaca 5 perkataan tersebut (bersambung) dengan betul.",
+        "Murid dapat menulis 3 perkataan tersebut dengan kemas."
+      ],
+      "activities": [
+        "Permainan 'Teka dan Sebut': Menunjukkan kad imbasan peralatan sekolah.",
+        "Latihan menulis perkataan di papan putih (copy writing).",
+        "Lakon layar: Bertanya dan menjawab 'ما هذا؟' (Maa haadzaa?) di dalam kelas."
+      ],
+      "assessments": [
+        "Ujian Lisan: Nama 5 peralatan sekolah.",
+        "Penilaian Bertulis: Menulis 3 perkataan dengan betul.",
+        "Senarai Semak: Bacaan perkataan bersambung."
+      ],
+      "aids": [
+        "Kad Imbasan Peralatan Sekolah (صور الأدوات المدرسية).",
+        "Buku Latihan Menulis Huruf dan Perkataan."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 3: A'da' al-Usrah (Ahli Keluarga)",
+      "skill_name": "Qira'ah & Kitabah",
+      "standards": [
+        "2.1.2 Membaca dan mengenal pasti perkataan bertema keluarga: (أب - bapa, أم - ibu).",
+        "3.1.2 Menulis ayat mudah (juzuk dua perkataan): (أبي كبير - Ayahku besar).",
+        "1.2.4 Bercerita ringkas tentang ahli keluarga dengan bantuan gambar."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 ahli keluarga asas (ibu, bapa, abang, kakak).",
+        "Murid dapat membaca 4 perkataan keluarga dengan lancar.",
+        "Murid dapat menulis 2 ayat mudah tentang keluarga."
+      ],
+      "activities": [
+        "Nyanyian lagu keluarga (cth: Tali'un al-Badru).",
+        "Latihan padanan gambar ahli keluarga dan perkataan Arab.",
+        "Projek Mini: Melukis atau menampal gambar keluarga dan menulis label Arab."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Padanan perkataan dan gambar.",
+        "Ujian Lisan: Bercerita ringkas dengan bantuan gambar.",
+        "Penilaian Karya: Label gambar keluarga."
+      ],
+      "aids": [
+        "Carta Keluarga dan perkataan Arab.",
+        "Gambar-gambar ahli keluarga asas."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 4: Al-Hayawanat (Nama Haiwan)",
+      "skill_name": "Istima' & Kalam",
+      "standards": [
+        "1.1.2 Mendengar dan meniru sebutan vokal panjang (harakatul thowilah - cth: /aa/, /ii/, /uu/).",
+        "1.2.5 Menggunakan isyarat dan mimik muka untuk menyatakan maksud perkataan.",
+        "3.1.3 Menulis perkataan dengan betul (membezakan huruf yang sama rupa cth: ب/ت/ث)."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 haiwan (cth: kucing, anjing, ikan).",
+        "Murid dapat meniru bunyi dan pergerakan haiwan tersebut.",
+        "Murid dapat menyebut vokal panjang (مد - Madd) dalam perkataan."
+      ],
+      "activities": [
+        "Permainan 'Mimik Haiwan': Murid meniru bunyi dan pergerakan haiwan yang disebut guru.",
+        "Latih tubi sebutan Madd: Membandingkan sebutan vokal pendek dan panjang.",
+        "Latihan menulis perkataan: Fokus pada huruf yang hampir sama rupa."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan perkataan dengan Madd yang betul.",
+        "Penilaian Amali: Keupayaan meniru bunyi/mimik haiwan.",
+        "Penilaian Bertulis: Menulis 5 nama haiwan."
+      ],
+      "aids": [
+        "Kad Imbasan dan bunyi haiwan.",
+        "Carta Madd (Vokal Panjang)."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 5: Al-A'dad (Nombor 1 hingga 10)",
+      "skill_name": "Qira'ah & Kitabah",
+      "standards": [
+        "2.1.3 Membaca dan mengenal nombor 1 hingga 10 dalam Bahasa Arab.",
+        "3.1.4 Menulis nombor Arab (1-10) dengan betul (dari kanan ke kiri).",
+        "1.2.6 Bertutur untuk mengira objek di dalam kelas."
+      ],
+      "objectives": [
+        "Murid dapat menyebut dan membaca nombor 1 hingga 10 dengan lancar.",
+        "Murid dapat menulis nombor Arab (1-10) dengan format yang betul.",
+        "Murid dapat mengira 5 objek di dalam kelas menggunakan Bahasa Arab."
+      ],
+      "activities": [
+        "Nyanyian lagu nombor 1-10 (الأعداد).",
+        "Latihan menulis nombor (الرقم) pada lembaran kerja.",
+        "Permainan 'Berapa Bilangan': Mengira objek di dalam kelas secara berkumpulan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan nombor 1-10.",
+        "Penilaian Bertulis: Menulis nombor Arab 1-10.",
+        "Penilaian Amali: Keupayaan mengira objek."
+      ],
+      "aids": [
+        "Carta Nombor Arab (1-10).",
+        "Objek-objek kecil untuk mengira."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 6: Al-Alwan (Warna Asas)",
+      "skill_name": "Istima' & Kalam (Sifat Kata)",
+      "standards": [
+        "1.1.3 Mendengar dan membezakan sebutan huruf yang hampir sama (cth: س/ص, ت/ط).",
+        "1.2.7 Menggunakan kata sifat asas (al-sifat): (أحمر - merah, أزرق - biru).",
+        "2.1.4 Membaca perkataan sifat dan kata nama (cth: قلم أحمر)."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 warna asas (merah, biru, kuning, hijau).",
+        "Murid dapat membezakan sebutan 3 pasang huruf yang hampir sama.",
+        "Murid dapat menyebut kata nama dengan sifat warna (cth: Kucing hitam - قط أسود)."
+      ],
+      "activities": [
+        "Permainan 'Sentuh Warna': Murid menyentuh objek yang mempunyai warna yang disebut guru.",
+        "Latih tubi sebutan huruf-huruf yang hampir sama (Focus on makhraj).",
+        "Latihan padanan kata nama dan sifat warna."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan huruf yang betul.",
+        "Penilaian Amali: Keupayaan menamakan objek dan warnanya.",
+        "Penilaian Bertulis: Membaca dan mewarna mengikut arahan."
+      ],
+      "aids": [
+        "Kad Imbasan Warna dan objek.",
+        "Carta Makhraj Huruf."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 7: Fi al-Bait (Di Dalam Rumah)",
+      "skill_name": "Perbendaharaan Kata & Qawa'id (هذا / هذه)",
+      "standards": [
+        "1.2.8 Menggunakan kata tunjuk (Ism al-Isharah) هذا (Haadzaa - ini L) dan هذه (Haadzihi - ini P) dengan betul.",
+        "2.1.5 Membaca ayat ringkas (jumlah ismiyyah) menggunakan kata tunjuk: (هذا بيت - Ini rumah).",
+        "3.1.5 Menulis ayat mudah menggunakan kata tunjuk."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 objek di dalam rumah (cth: pintu, meja, katil).",
+        "Murid dapat menggunakan هذا dan هذه dengan tepat (perbezaan jantina kata nama).",
+        "Murid dapat menulis 3 ayat mudah tentang objek di dalam rumah."
+      ],
+      "activities": [
+        "Lawatan dalam kelas (atau video): Menamakan objek dengan kata tunjuk.",
+        "Latihan padanan kata nama (muannath/mudzakkar) dengan kata tunjuk.",
+        "Lakon layar: Bertanya dan menjawab tentang objek di rumah."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan هذا/هذه yang betul.",
+        "Penilaian Bertulis: Menulis ayat هذا/هذه dengan betul.",
+        "Senarai Semak: Nama 5 objek di rumah."
+      ],
+      "aids": [
+        "Kad Imbasan Objek di Rumah (muannath dan mudzakkar).",
+        "Carta Ism al-Isharah (Kata Tunjuk)."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 8: Al-Akl wa al-Shurb (Makanan dan Minuman)",
+      "skill_name": "Istima' & Kalam (Permintaan Asas)",
+      "standards": [
+        "1.2.9 Meminta dan memberi izin ringkas: (تفضل - silakan).",
+        "2.1.6 Membaca perkataan makanan dan minuman asas.",
+        "3.1.6 Menulis perkataan makanan/minuman dan mewarna."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 jenis makanan dan 2 jenis minuman.",
+        "Murid dapat menggunakan frasa permintaan ringkas (cth: سأطلب - Saya ingin...)",
+        "Murid dapat membaca 6 perkataan tersebut dengan lancar."
+      ],
+      "activities": [
+        "Permainan 'Kafe Mini': Role-play meminta makanan dan minuman.",
+        "Latihan padanan makanan/minuman dan perkataan Arab.",
+        "Aktiviti Menulis: Menulis perkataan dan melukis gambar makanan kesukaan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Role-play permintaan makanan/minuman.",
+        "Ujian Lisan: Sebutan 6 perkataan makanan/minuman.",
+        "Penilaian Bertulis: Menulis 4 perkataan."
+      ],
+      "aids": [
+        "Kad Imbasan Makanan dan Minuman.",
+        "Menu ringkas (tulisan Arab)."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 9: Al-Harakat (Kata Perbuatan Asas)",
+      "skill_name": "Qawa'id & Kitabah (Kata Kerja Mudhari' ringkas)",
+      "standards": [
+        "1.1.4 Mendengar dan meniru sebutan 3 kata perbuatan (fi'il mudhari') asas: (يأكل - dia makan, ينام - dia tidur, يلعب - dia main).",
+        "2.1.7 Membaca frasa ringkas (subjek + kata kerja).",
+        "3.1.7 Menulis 3 kata perbuatan asas."
+      ],
+      "objectives": [
+        "Murid dapat menamakan dan meniru 3 kata perbuatan asas.",
+        "Murid dapat membezakan kata perbuatan dan kata nama.",
+        "Murid dapat menulis 3 kata perbuatan dengan betul."
+      ],
+      "activities": [
+        "Permainan 'Simon Says': Guru menyebut kata kerja, murid melakukan perbuatan.",
+        "Latih tubi sebutan kata perbuatan (mudhari').",
+        "Latihan Menulis: Menulis ayat ringkas menggunakan kata perbuatan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan dan perbuatan kata kerja.",
+        "Penilaian Bertulis: Menulis kata kerja dengan kemas.",
+        "Senarai Semak: Pengenalan kata perbuatan."
+      ],
+      "aids": [
+        "Kad Imbasan Kata Perbuatan (gambar aksi).",
+        "Carta Fi'il Mudhari' (Kata Kerja Sekarang/Akan Datang)."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 10: Muraja'ah (Ulang Kaji Asas)",
+      "skill_name": "Sintesis dan Apresiasi",
+      "standards": [
+        "4.1.1 Mengaplikasikan perbendaharaan kata asas dalam situasi seharian.",
+        "4.1.2 Menunjukkan keyakinan dalam bertutur Bahasa Arab ringkas.",
+        "4.1.3 Menguasai semua huruf hijaiyah, nombor 1-10, dan 5 kata tunjuk/sifat."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 10 perbendaharaan kata baru dalam satu perenggan lisan/bertulis ringkas.",
+        "Murid dapat memperkenalkan diri, menamakan 3 objek, dan mengira 3 objek secara lancar.",
+        "Murid dapat menunjukkan kemajuan dalam penguasaan kemahiran asas Bahasa Arab."
+      ],
+      "activities": [
+        "Permainan 'Pasar Mini': Menggunakan perbendaharaan kata untuk jual beli ringkas.",
+        "Ulang kaji: Menyambung dan membaca huruf.",
+        "Kuiz Interaktif: Soalan nombor, warna, dan keluarga."
+      ],
+      "assessments": [
+        "Ujian Akhir Lisan: Bertutur ringkas tentang diri dan persekitaran.",
+        "Ujian Bertulis: Gabungan soalan membaca, menulis, dan tatabahasa asas.",
+        "Penilaian Kendiri: Refleksi penguasaan kemahiran."
+      ],
+      "aids": [
+        "Lembaran Ulang Kaji Komprehensif.",
+        "Bahan permainan interaktif."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 2: 10 UNIT (Fokus: Ayat Mudah & Kata Nama Jamak) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 2,
+      "topic_name": "Unit 1: Al-Jism (Anggota Badan)",
+      "skill_name": "Istima' & Kalam",
+      "standards": [
+        "1.2.1 Bertutur tentang anggota badan dan fungsinya: (لديّ عينان - Saya ada dua mata).",
+        "2.1.1 Membaca ayat mudah (jumlah ismiyyah) tentang anggota badan.",
+        "1.1.1 Mendengar dan meniru sebutan huruf-huruf ghairu musyaddadah (tidak bertanda syaddah)."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 6 anggota badan asas (tangan, kaki, mata, telinga, mulut, hidung).",
+        "Murid dapat menggunakan perkataan مثنى (Muthanna/Dual) untuk anggota berpasangan (cth: يدان).",
+        "Murid dapat membina 2 ayat mudah tentang anggota badan."
+      ],
+      "activities": [
+        "Nyanyian lagu anggota badan (cth: Kepala, Bahu, Lutut, Kaki - versi Arab).",
+        "Latihan menunjuk anggota badan yang disebut guru.",
+        "Latihan membaca ayat mudah di papan putih."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan 6 anggota badan dan Muthanna.",
+        "Penilaian Amali: Keupayaan membina ayat lisan.",
+        "Senarai Semak: Ketepatan sebutan."
+      ],
+      "aids": [
+        "Carta Anggota Badan (صور أعضاء الجسم).",
+        "Kad Imbasan perkataan."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 2: Fil Fasl (Di Dalam Kelas)",
+      "skill_name": "Qawa'id (Jantina) & Kitabah",
+      "standards": [
+        "2.1.2 Membaca ayat yang mengandungi kata tunjuk jauh: (ذلك - itu L, تلك - itu P).",
+        "3.1.2 Menulis ayat mudah (jumlah ismiyyah) menggunakan kata tunjuk jauh.",
+        "1.2.2 Bertanya dan menjawab soalan ringkas tentang lokasi objek: (أين - di mana)."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 objek di dalam kelas.",
+        "Murid dapat menggunakan ذلك dan تلك dengan betul mengikut jantina kata nama.",
+        "Murid dapat menulis 3 ayat mudah tentang lokasi objek (cth: Itu meja - تلك طاولة)."
+      ],
+      "activities": [
+        "Latihan padanan kata tunjuk jauh dan objek di dalam kelas.",
+        "Latihan menulis ayat dengan fokus pada kata tunjuk jauh.",
+        "Permainan 'Di Mana Ia?': Murid bertanya/menjawab menggunakan 'أين؟'."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan ذلك/تلك dalam ayat.",
+        "Penilaian Bertulis: Menulis ayat dengan betul.",
+        "Lembaran Kerja: Menjawab soalan 'أين؟'."
+      ],
+      "aids": [
+        "Carta Ism al-Isharah (Kata Tunjuk Jauh).",
+        "Kad Imbasan Objek di Kelas."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 3: Al-A'dad (Nombor 11 hingga 20)",
+      "skill_name": "Qira'ah & Kitabah",
+      "standards": [
+        "2.1.3 Membaca dan mengenal nombor 11 hingga 20 dalam Bahasa Arab.",
+        "3.1.3 Menulis nombor Arab (11-20) dengan betul.",
+        "1.2.3 Mengira objek dalam kumpulan sehingga 20."
+      ],
+      "objectives": [
+        "Murid dapat menyebut dan membaca nombor 11 hingga 20 dengan lancar.",
+        "Murid dapat menulis nombor Arab (11-20) dengan tepat.",
+        "Murid dapat mengira 15 objek di dalam kelas menggunakan Bahasa Arab."
+      ],
+      "activities": [
+        "Latih tubi sebutan nombor 11-20.",
+        "Latihan menulis nombor pada lembaran kerja (fokus pada nombor 11-19).",
+        "Permainan 'Bingo Nombor': Menggunakan nombor 1-20."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan nombor 11-20.",
+        "Penilaian Bertulis: Menulis nombor Arab 11-20.",
+        "Lembaran Kerja: Mengira dan menulis bilangan objek."
+      ],
+      "aids": [
+        "Carta Nombor Arab (1-20).",
+        "Kad Imbasan nombor."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 4: Al-Fawakih (Buah-buahan)",
+      "skill_name": "Istima' & Kalam (Sifat Kata)",
+      "standards": [
+        "1.2.4 Menggunakan kata sifat asas (al-sifat): (حلو - manis, حامض - masam, كبير - besar, صغير - kecil).",
+        "2.1.4 Membaca frasa kata nama dan kata sifat (cth: تفاحة كبيرة - epal besar).",
+        "3.1.4 Menulis perkataan sifat dan frasa ringkas."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 jenis buah-buahan.",
+        "Murid dapat menggunakan 4 kata sifat asas untuk menggambarkan buah-buahan.",
+        "Murid dapat membina 2 frasa lisan menggunakan kata nama buah dan kata sifat."
+      ],
+      "activities": [
+        "Permainan 'Kedai Buah': Role-play membeli buah dan menerangkan sifatnya.",
+        "Latihan padanan kata sifat (muannath/mudzakkar) dan kata nama buah.",
+        "Latihan menulis frasa dengan kata sifat."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan 4 kata sifat dan penggunaannya.",
+        "Penilaian Amali: Role-play (dinilai frasa lisan).",
+        "Penilaian Bertulis: Menulis frasa kata sifat."
+      ],
+      "aids": [
+        "Kad Imbasan Buah-buahan.",
+        "Carta Kata Sifat Asas."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 5: Al-Ayyām wa al-Shuhur (Hari dan Bulan)",
+      "skill_name": "Perbendaharaan Kata & Qira'ah",
+      "standards": [
+        "2.1.5 Membaca dan mengenal nama 7 hari dalam seminggu dan 4 bulan asas.",
+        "1.2.5 Bertanya dan menjawab tentang hari: (أي يوم اليوم؟ - Hari apa hari ini?).",
+        "3.1.5 Menulis nama hari dan bulan dengan ejaan yang betul."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 7 hari dalam Bahasa Arab dengan lancar.",
+        "Murid dapat membaca dan menulis nama 4 bulan asas (cth: Januari, Februari).",
+        "Murid dapat menjawab soalan 'Hari apa hari ini?'."
+      ],
+      "activities": [
+        "Nyanyian lagu hari dalam seminggu.",
+        "Latihan mengisi tempat kosong (nama hari/bulan).",
+        "Latihan menulis nama hari/bulan dengan khat yang betul."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan 7 hari.",
+        "Penilaian Bertulis: Menulis nama hari dan bulan.",
+        "Lembaran Kerja: Padanan hari/bulan dan nombor."
+      ],
+      "aids": [
+        "Carta Kalendar Arab (أيام الأسبوع - شهور السنة).",
+        "Lagu Hari-Hari."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 6: Fil Hadiqah (Di Taman/Kebun)",
+      "skill_name": "Qawa'id (Preposisi) & Kitabah",
+      "standards": [
+        "1.2.6 Menggunakan preposisi (حروف الجر) asas: (في - di, على - di atas, تحت - di bawah).",
+        "2.1.6 Membaca ayat menggunakan preposisi: (الكرة تحت الطاولة - Bola di bawah meja).",
+        "3.1.6 Menulis 3 ayat menggunakan preposisi."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 objek di taman/kebun (cth: pokok, bunga, bola).",
+        "Murid dapat menggunakan 3 preposisi asas dengan tepat.",
+        "Murid dapat menulis 3 ayat yang menunjukkan lokasi objek."
+      ],
+      "activities": [
+        "Permainan 'Letakkan di...': Guru memberi arahan, murid meletakkan objek mengikut preposisi.",
+        "Latihan menulis ayat dengan fokus pada kedudukan objek.",
+        "Melukis dan melabel gambar taman dengan preposisi."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan 3 preposisi asas.",
+        "Penilaian Bertulis: Menulis ayat dengan preposisi.",
+        "Penilaian Karya: Label lukisan taman."
+      ],
+      "aids": [
+        "Kad Imbasan Preposisi (gambar kedudukan).",
+        "Objek-objek untuk aktiviti 'Letakkan di...'."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 7: Jam' al-Taksir (Kata Nama Jamak Tidak Sekata)",
+      "skill_name": "Qawa'id (Jamak) & Qira'ah",
+      "standards": [
+        "1.2.7 Mendengar dan meniru sebutan 5 kata nama jamak taksir asas: (كتب - buku-buku, أبواب - pintu-pintu).",
+        "2.1.7 Membaca dan mengenal pasti kata nama tunggal dan jamak.",
+        "3.1.7 Menulis perkataan tunggal dan jamak taksir."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 5 contoh kata nama jamak taksir.",
+        "Murid dapat membezakan kata nama tunggal (mufrad) dan jamak (jam'ul taksir).",
+        "Murid dapat membaca ayat mudah yang mengandungi kata nama jamak taksir."
+      ],
+      "activities": [
+        "Latih tubi sebutan: Membandingkan mufrad dan jamak.",
+        "Latihan padanan gambar: Objek tunggal vs. objek banyak.",
+        "Latihan menulis: Menukar kata nama tunggal kepada jamak taksir."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan mufrad dan jamak taksir.",
+        "Penilaian Bertulis: Menukar kata nama tunggal kepada jamak.",
+        "Lembaran Kerja: Mengenal pasti mufrad/jamak."
+      ],
+      "aids": [
+        "Carta Jamak Taksir asas.",
+        "Kad Imbasan (satu objek vs. banyak objek)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 8: Al-Mihan (Pekerjaan Asas)",
+      "skill_name": "Istima' & Kalam (Perempuan/Lelaki)",
+      "standards": [
+        "1.2.8 Bertutur tentang pekerjaan (al-mihan) dengan membezakan jantina: (هو - dia L, هي - dia P).",
+        "2.1.8 Membaca ayat mudah menggunakan هو/هي (cth: هو معلم - Dia guru L).",
+        "3.1.8 Menulis 4 nama pekerjaan dengan perbezaan jantina."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 jenis pekerjaan (cth: doktor, guru, juruterbang).",
+        "Murid dapat menggunakan ضمير (Dhamir/Kata Ganti Nama) هو dan هي dengan tepat.",
+        "Murid dapat menulis nama pekerjaan dengan imbuhan ta' marbutah (ة) untuk perempuan."
+      ],
+      "activities": [
+        "Permainan 'Teka Pekerjaan': Murid melakonkan pekerjaan, rakan meneka menggunakan هو/هي.",
+        "Latihan padanan gambar pekerjaan dan perkataan Arab (P/L).",
+        "Latihan menulis ayat هو/هي."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan هو/هي dan nama pekerjaan.",
+        "Penilaian Bertulis: Menulis nama pekerjaan (P/L).",
+        "Penilaian Amali: Role-play teka pekerjaan."
+      ],
+      "aids": [
+        "Kad Imbasan Pekerjaan (Lelaki dan Perempuan).",
+        "Carta Dhamir (هو/هي)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 9: Al-Malabis (Pakaian)",
+      "skill_name": "Qira'ah & Kitabah (Penerangan)",
+      "standards": [
+        "2.1.9 Membaca perenggan ringkas (2-3 ayat) tentang pakaian.",
+        "3.1.9 Menulis ayat mudah tentang pakaian: (هذا قميص جديد - Ini baju baru).",
+        "1.2.9 Menggunakan kata sifat dalam ayat yang lebih panjang."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 jenis pakaian (cth: baju, seluar, kasut).",
+        "Murid dapat membaca perenggan ringkas tentang pakaian dengan lancar.",
+        "Murid dapat membina 3 ayat tentang pakaian menggunakan kata sifat dan kata tunjuk."
+      ],
+      "activities": [
+        "Permainan 'Pakaian Saya': Murid menerangkan pakaian yang dipakai menggunakan Bahasa Arab.",
+        "Latihan membaca perenggan ringkas dari buku teks.",
+        "Latihan menulis ayat: Menggabungkan 3 elemen (kata tunjuk + kata nama + sifat)."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Menulis 3 ayat yang lengkap.",
+        "Ujian Lisan: Penerangan ringkas tentang pakaian.",
+        "Lembaran Kerja: Soalan kefahaman perenggan."
+      ],
+      "aids": [
+        "Kad Imbasan Pakaian dan Aksesori.",
+        "Contoh perenggan ringkas."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 10: Muraja'ah (Ulang Kaji Ayat Mudah)",
+      "skill_name": "Sintesis dan Apresiasi",
+      "standards": [
+        "4.2.1 Mengaplikasikan kata tunjuk (dekat/jauh) dan jantina kata nama dengan tepat.",
+        "4.2.2 Menghasilkan ayat mudah yang lengkap (kata nama + sifat + kata tunjuk) secara lisan dan bertulis.",
+        "4.2.3 Menguasai nombor 1-20 dan perbendaharaan kata asas."
+      ],
+      "objectives": [
+        "Murid dapat membina 5 ayat mudah yang betul jantina kata nama dan kata tunjuknya.",
+        "Murid dapat membaca perenggan ringkas dengan intonasi yang sesuai.",
+        "Murid dapat menggunakan kata nama jamak taksir dalam pertuturan."
+      ],
+      "activities": [
+        "Pembinaan Model: Membuat model bilik darjah mini dan menerangkannya menggunakan semua elemen tatabahasa yang dipelajari.",
+        "Ulang kaji: Kuiz tatabahasa (jantina, kata tunjuk).",
+        "Lakon layar: Bertanya dan menjawab soalan ringkas."
+      ],
+      "assessments": [
+        "Ujian Akhir Bertulis: Gabungan soalan tatabahasa dan penulisan ayat.",
+        "Ujian Lisan: Penerangan tentang model yang dibina (dinilai ketepatan tatabahasa).",
+        "Penilaian Kendiri: Refleksi penguasaan ayat mudah."
+      ],
+      "aids": [
+        "Lembaran Ulang Kaji Komprehensif.",
+        "Bahan binaan model mini."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 3: 10 UNIT (Fokus: Kata Kerja Lampau & Perbualan Ringkas) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 3,
+      "topic_name": "Unit 1: Al-Madrasah (Persekitaran Sekolah)",
+      "skill_name": "Istima' & Kalam (Perbualan)",
+      "standards": [
+        "1.2.1 Menguasai perbualan ringkas tentang persekitaran sekolah.",
+        "2.1.1 Membaca ayat yang mengandungi kata penghubung (حروف العطف): (و - dan, ثم - kemudian).",
+        "1.1.1 Mendengar dan meniru sebutan huruf-huruf ghairu musyaddadah (tidak bertanda syaddah)."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 tempat di sekolah (cth: kantin, perpustakaan, padang).",
+        "Murid dapat menggunakan kata penghubung و dan ثم dalam ayat lisan.",
+        "Murid dapat melakonkan perbualan ringkas tentang aktiviti di sekolah."
+      ],
+      "activities": [
+        "Lawatan (atau video): Menamakan tempat di sekolah.",
+        "Lakon layar: Berbual tentang jadual harian di sekolah (menggunakan huruf al-'atf).",
+        "Latihan membaca ayat dengan huruf al-'atf."
+      ],
+      "assessments": [
+        "Ujian Lisan: Kualiti perbualan dan penggunaan kata penghubung.",
+        "Penilaian Amali: Sebutan nama tempat.",
+        "Senarai Semak: Kelancaran membaca ayat."
+      ],
+      "aids": [
+        "Kad Imbasan Tempat di Sekolah (صور المدرسة).",
+        "Carta Huruf al-'Atf."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 2: Al-Māḍī (Kata Kerja Lampau - Fi'il Māḍī)",
+      "skill_name": "Qawa'id (Māḍī - هو/هي)",
+      "standards": [
+        "1.2.2 Mendengar dan meniru sebutan kata kerja lampau (Fi'il Māḍī) هو dan هي: (أكل - dia makan L, أكلت - dia makan P).",
+        "3.1.2 Menulis ayat mudah (jumlah fi'liyyah) menggunakan Fi'il Māḍī.",
+        "2.1.2 Membaca perenggan ringkas yang menceritakan peristiwa lampau."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 5 kata kerja lampau هو/هي dengan betul.",
+        "Murid dapat membina 3 ayat tentang aktiviti yang telah dilakukan (Māḍī).",
+        "Murid dapat menulis ayat yang betul imbuhannya mengikut jantina subjek."
+      ],
+      "activities": [
+        "Latih tubi: Perbezaan imbuhan kata kerja lampau هو dan هي (ta' al-ta'nith al-sakinh).",
+        "Latihan menulis ayat: Menceritakan aktiviti semalam.",
+        "Permainan 'Papan Cerita Lampau': Menyusun gambar dan menulis ayat Māḍī."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan Fi'il Māḍī هو/هي.",
+        "Penilaian Bertulis: Menulis ayat Māḍī dengan tepat.",
+        "Lembaran Kerja: Menukar kata kerja Mudhari' kepada Māḍī."
+      ],
+      "aids": [
+        "Carta Fi'il Māḍī (Kata Kerja Lampau).",
+        "Kad Imbasan Kata Kerja."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 3: Al-A'dad (Nombor 21 hingga 100)",
+      "skill_name": "Qira'ah & Kitabah",
+      "standards": [
+        "2.1.3 Membaca dan mengenal nombor 21 hingga 100 (secara puluhan) dalam Bahasa Arab.",
+        "3.1.3 Menulis nombor Arab (21-100) dengan betul.",
+        "1.2.3 Mengira objek dalam kumpulan sehingga 50."
+      ],
+      "objectives": [
+        "Murid dapat menyebut dan membaca nombor 21 hingga 100 (puluhan) dengan lancar.",
+        "Murid dapat menulis nombor Arab (21-100) dengan tepat.",
+        "Murid dapat mengira 30 objek menggunakan Bahasa Arab."
+      ],
+      "activities": [
+        "Latih tubi sebutan nombor 21-100 (fokus pada nombor puluhan).",
+        "Latihan menulis nombor: Mengisi tempat kosong dalam siri nombor.",
+        "Permainan 'Pasar': Menggunakan nombor untuk tawar-menawar harga (ringkas)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan nombor puluhan (20, 30, 40...).",
+        "Penilaian Bertulis: Menulis nombor Arab (21-100).",
+        "Penilaian Amali: Keupayaan mengira bilangan objek."
+      ],
+      "aids": [
+        "Carta Nombor Arab (1-100).",
+        "Permainan 'Roda Nombor'."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 4: Al-Zaman (Waktu dan Masa)",
+      "skill_name": "Istima' & Kalam (Soalan Masa)",
+      "standards": [
+        "1.2.4 Bertanya dan menjawab soalan tentang waktu: (كم الساعة؟ - Pukul berapa?).",
+        "2.1.4 Membaca dan mengenal pasti frasa waktu (cth: الساعة الواحدة - pukul satu).",
+        "3.1.4 Menulis masa dalam ayat ringkas."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan waktu tepat (jam penuh) dalam Bahasa Arab.",
+        "Murid dapat bertanya dan menjawab tentang waktu (cth: Sekarang pukul 3).",
+        "Murid dapat menulis 3 ayat tentang waktu yang berbeza."
+      ],
+      "activities": [
+        "Latih tubi sebutan waktu tepat.",
+        "Lakon layar: Bertanya dan menjawab waktu di sekolah.",
+        "Latihan menulis: Melukis jam dan menulis waktu dalam Bahasa Arab."
+      ],
+      "assessments": [
+        "Ujian Lisan: Keupayaan bertanya/menjawab waktu.",
+        "Penilaian Bertulis: Menulis waktu yang diberi dalam nombor/perkataan.",
+        "Senarai Semak: Ketepatan sebutan waktu."
+      ],
+      "aids": [
+        "Jam model/Carta Waktu.",
+        "Kad Imbasan Waktu."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 5: Al-Harakaat (Kata Kerja Mudhari' Lanjutan)",
+      "skill_name": "Qawa'id (Mudhari' - أنت/أنتِ)",
+      "standards": [
+        "1.2.5 Mendengar dan meniru sebutan kata kerja sekarang/akan datang (Mudhari') أنت (kamu L) dan أنتِ (kamu P).",
+        "3.1.5 Menulis ayat mudah menggunakan Fi'il Mudhari' أنت/أنتِ.",
+        "2.1.5 Membaca perenggan ringkas tentang aktiviti harian."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 5 kata kerja Mudhari' أنت/أنتِ dengan imbuhan yang betul.",
+        "Murid dapat membina 3 ayat tentang aktiviti yang dilakukan sekarang (Mudhari').",
+        "Murid dapat membezakan imbuhan kata kerja Mudhari' untuk lelaki dan perempuan (ي/ت)."
+      ],
+      "activities": [
+        "Latih tubi: Perbezaan imbuhan kata kerja Mudhari' أنت dan أنتِ.",
+        "Permainan 'Teka Aktiviti': Murid meneka aktiviti yang dilakonkan rakan (menggunakan أنت/أنتِ).",
+        "Latihan menulis: Menceritakan aktiviti yang akan dilakukan esok."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan Fi'il Mudhari' أنت/أنتِ.",
+        "Penilaian Bertulis: Menulis ayat Mudhari' dengan tepat.",
+        "Lembaran Kerja: Menukar kata kerja mengikut subjek."
+      ],
+      "aids": [
+        "Carta Fi'il Mudhari' (Kata Kerja Sekarang/Akan Datang).",
+        "Kad Imbasan Kata Kerja."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 6: Al-Musya'ir (Perasaan dan Emosi)",
+      "skill_name": "Istima' & Kalam (Ekspresi)",
+      "standards": [
+        "1.2.6 Bertutur untuk menyatakan perasaan (al-musya'ir) asas: (سعيد - gembira, حزين - sedih).",
+        "2.1.6 Membaca ayat yang mengandungi kata tanya: (كيف - bagaimana).",
+        "3.1.6 Menulis ayat mudah tentang perasaan."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 perasaan asas dalam Bahasa Arab.",
+        "Murid dapat bertanya dan menjawab soalan 'كيف حالك؟' (Kain fa haluk - Bagaimana keadaan anda?).",
+        "Murid dapat menggunakan kata sifat (perasaan) mengikut jantina."
+      ],
+      "activities": [
+        "Lakon layar: Bertanya khabar dan menjawab dengan emosi yang berbeza.",
+        "Latihan padanan gambar emosi dan perkataan Arab.",
+        "Latihan menulis: Melukis emoji dan menulis perasaan dalam Bahasa Arab."
+      ],
+      "assessments": [
+        "Ujian Lisan: Ekspresi perasaan dan bertanya khabar.",
+        "Penilaian Bertulis: Menulis 4 perkataan perasaan.",
+        "Senarai Semak: Penggunaan jantina kata sifat."
+      ],
+      "aids": [
+        "Kad Imbasan Emosi/Perasaan.",
+        "Carta Kata Tanya (كيف - Bagaimana)."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 7: Al-Wasilat (Alat Pengangkutan)",
+      "skill_name": "Perbendaharaan Kata & Qira'ah (Pengelasan)",
+      "standards": [
+        "2.1.7 Membaca dan mengenal pasti 6 jenis alat pengangkutan (wasilah).",
+        "3.1.7 Menulis ayat mudah tentang pengangkutan: (أذهب إلى المدرسة بالسيارة - Saya pergi ke sekolah dengan kereta).",
+        "1.2.7 Bertutur tentang cara pergi ke suatu tempat."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 6 jenis alat pengangkutan (darat, air, udara).",
+        "Murid dapat membaca ayat tentang cara pengangkutan dengan lancar.",
+        "Murid dapat membina 3 ayat lisan/bertulis tentang perjalanan mereka."
+      ],
+      "activities": [
+        "Permainan 'Teka Kenderaan': Meniru bunyi/isyarat kenderaan.",
+        "Latihan menulis ayat: Menggunakan preposisi 'ب' (dengan/menaiki).",
+        "Pengelasan: Mengelaskan alat pengangkutan mengikut jenis."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan 6 nama pengangkutan.",
+        "Penilaian Bertulis: Menulis ayat cara pengangkutan.",
+        "Lembaran Kerja: Pengelasan alat pengangkutan."
+      ],
+      "aids": [
+        "Kad Imbasan Alat Pengangkutan.",
+        "Carta Preposisi 'ب'."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 8: Jam' al-Salim (Jamak Muzakkar dan Muannath Salim)",
+      "skill_name": "Qawa'id (Jamak Lanjutan)",
+      "standards": [
+        "1.2.8 Mendengar dan meniru sebutan Jamak Muzakkar Salim: (معلمون - guru-guru L) dan Jamak Muannath Salim: (معلمات - guru-guru P).",
+        "2.1.8 Membaca ayat yang mengandungi Jamak Salim.",
+        "3.1.8 Menulis perkataan tunggal dan Jamak Salim."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 3 contoh Jamak Muzakkar Salim dan 3 Jamak Muannath Salim.",
+        "Murid dapat membezakan Jamak Salim dan Jamak Taksir.",
+        "Murid dapat menulis Jamak Salim dengan imbuhan yang betul (-ون / -ات)."
+      ],
+      "activities": [
+        "Latih tubi sebutan: Fokus pada imbuhan -ون dan -ات.",
+        "Latihan menulis: Menukar kata nama tunggal kepada Jamak Salim.",
+        "Latihan padanan: Tunggal vs. Jamak Salim (fokus pekerjaan/sifat)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan Jamak Salim.",
+        "Penilaian Bertulis: Menulis Jamak Salim yang betul.",
+        "Lembaran Kerja: Pengelasan Jamak Taksir vs. Jamak Salim."
+      ],
+      "aids": [
+        "Carta Jamak Muzakkar/Muannath Salim.",
+        "Jadual Perubahan Kata Nama."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 9: Al-Hifdz (Hafalan - Ayat Pilihan)",
+      "skill_name": "Qira'ah & Hifdz (Hafalan)",
+      "standards": [
+        "1.2.9 Mendengar dan menghafal 3 ayat pendek/frasa yang berguna (cth: permintaan maaf, terima kasih).",
+        "2.1.9 Membaca ayat hafalan dengan intonasi yang betul.",
+        "3.1.9 Menulis ayat hafalan dengan kemas."
+      ],
+      "objectives": [
+        "Murid dapat menghafal 3 ayat pendek (cth: permintaan tolong/maaf).",
+        "Murid dapat menggunakan ayat hafalan dalam perbualan ringkas.",
+        "Murid dapat menulis ayat hafalan tanpa melihat rujukan."
+      ],
+      "activities": [
+        "Latih tubi hafalan (berpasangan dan individu).",
+        "Lakon layar: Menggunakan ayat hafalan dalam situasi tertentu (cth: meminta maaf).",
+        "Latihan menulis hafalan (imlak)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan ayat/frasa.",
+        "Penilaian Amali: Penggunaan ayat hafalan dalam perbualan.",
+        "Penilaian Bertulis: Imlak ayat hafalan."
+      ],
+      "aids": [
+        "Carta Ayat Hafalan (Frasa Sopan).",
+        "Rakaman audio ayat hafalan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 10: Muraja'ah (Ulang Kaji Kata Kerja)",
+      "skill_name": "Sintesis dan Apresiasi",
+      "standards": [
+        "4.3.1 Mengaplikasikan kata kerja lampau (Māḍī) dan kini/akan datang (Mudhari') dengan betul (هو/هي/أنت/أنتِ).",
+        "4.3.2 Membina cerita pendek (4-5 ayat) yang mengandungi kedua-dua jenis kata kerja.",
+        "4.3.3 Menguasai tatabahasa Jamak Salim dan Taksir."
+      ],
+      "objectives": [
+        "Murid dapat membina cerita pendek (lisan/bertulis) tentang aktiviti hari cuti.",
+        "Murid dapat menggunakan nombor sehingga 100 dan waktu dengan tepat.",
+        "Murid dapat menggunakan sekurang-kurangnya 2 jenis jamak dalam pertuturan."
+      ],
+      "activities": [
+        "Projek Mini: Menceritakan Hari Cuti Saya (bertulis/persembahan).",
+        "Ulang kaji: Kuiz tatabahasa kata kerja.",
+        "Permainan 'Papan Permintaan': Menggunakan ayat permintaan/izin."
+      ],
+      "assessments": [
+        "Ujian Akhir Bertulis: Penulisan cerita pendek (dinilai tatabahasa kata kerja/jamak).",
+        "Ujian Lisan: Persembahan cerita pendek.",
+        "Penilaian Kendiri: Refleksi penguasaan kata kerja."
+      ],
+      "aids": [
+        "Lembaran Ulang Kaji Kata Kerja.",
+        "Jadual Perbandingan Māḍī dan Mudhari'."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 4: 10 UNIT (Fokus: Kata Ganti Nama & Struktur Ayat Lanjutan) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 4,
+      "topic_name": "Unit 1: Ana wa Asdiqā'ī (Saya dan Kawan-kawan)",
+      "skill_name": "Qawa'id (Dhamir al-Munfasil)",
+      "standards": [
+        "1.2.1 Menggunakan kata ganti nama diri terpisah (Dhamir al-Munfasil) secara menyeluruh: (نحن - kami, أنتم - kamu L jamak, أنتن - kamu P jamak).",
+        "2.1.1 Membaca dialog yang mengandungi Dhamir al-Munfasil.",
+        "3.1.1 Menulis ayat menggunakan Dhamir al-Munfasil secara tepat."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 6 Dhamir al-Munfasil (saya, kamu L/P, dia L/P, kami/kita) dengan betul.",
+        "Murid dapat membina 3 ayat tentang kawan-kawan menggunakan Dhamir jamak.",
+        "Murid dapat membezakan penggunaan Dhamir mufrad dan jamak."
+      ],
+      "activities": [
+        "Latih tubi sebutan Dhamir al-Munfasil (semua jenis).",
+        "Permainan 'Jom Berkenalan': Menggunakan Dhamir jamak (نحن) dalam perbualan.",
+        "Latihan menulis ayat: Menceritakan aktiviti berkumpulan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan Dhamir al-Munfasil (semua jenis).",
+        "Penilaian Bertulis: Menulis ayat menggunakan Dhamir jamak.",
+        "Lembaran Kerja: Padanan Dhamir dan subjek."
+      ],
+      "aids": [
+        "Carta Dhamir al-Munfasil (Kata Ganti Nama Terpisah).",
+        "Kad Imbasan gambar kumpulan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 2: Al-Fann (Seni dan Kesenian)",
+      "skill_name": "Istima' & Kalam (Pendapat)",
+      "standards": [
+        "1.2.2 Bertutur untuk menyatakan pendapat dan pandangan ringkas: (أعتقد أن - Saya berpendapat bahawa).",
+        "2.1.2 Membaca perenggan yang menerangkan aktiviti kesenian (cth: melukis, menyanyi).",
+        "3.1.2 Menulis karangan pendek (3 perenggan) tentang hobi kesenian."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 jenis kesenian/hobi (melukis, menyanyi, membaca, menari).",
+        "Murid dapat menyatakan pendapat tentang seni/hobi kegemaran mereka.",
+        "Murid dapat menulis 1 perenggan tentang hobi dengan ayat yang betul."
+      ],
+      "activities": [
+        "Perbincangan: Menyatakan pendapat tentang seni (muzik, lukisan) dalam Bahasa Arab.",
+        "Latihan membaca dan menterjemah perenggan tentang hobi.",
+        "Projek Mini: Melukis/menulis poster tentang hobi."
+      ],
+      "assessments": [
+        "Ujian Lisan: Menyatakan pendapat dengan frasa yang betul.",
+        "Penilaian Bertulis: Karangan pendek tentang hobi.",
+        "Senarai Semak: Kelancaran membaca perenggan."
+      ],
+      "aids": [
+        "Kad Imbasan Hobi dan Kesenian.",
+        "Carta Frasa Menyatakan Pendapat."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 3: Al-A'dad (Nombor 101 hingga 1000)",
+      "skill_name": "Qira'ah & Kitabah",
+      "standards": [
+        "2.1.3 Membaca dan mengenal nombor 101 hingga 1000 (secara ratusan) dalam Bahasa Arab.",
+        "3.1.3 Menulis nombor Arab (101-1000) dengan betul (fokus nombor ratusan).",
+        "1.2.3 Mengira kuantiti objek dalam bilangan yang besar."
+      ],
+      "objectives": [
+        "Murid dapat menyebut dan membaca nombor ratusan (100, 200, 300...) dengan lancar.",
+        "Murid dapat menulis nombor Arab (101-1000) dengan tepat.",
+        "Murid dapat menggunakan nombor dalam ayat yang lebih panjang (cth: bilangan murid di sekolah)."
+      ],
+      "activities": [
+        "Latih tubi sebutan nombor ratusan.",
+        "Latihan menulis nombor: Mengisi borang/inventori dengan bilangan yang besar.",
+        "Permainan 'Kuiz Nombor': Bertanya dan menjawab nombor (cth: berapa bilangan?)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan nombor ratusan.",
+        "Penilaian Bertulis: Menulis nombor Arab (101-1000).",
+        "Lembaran Kerja: Mengira dan menulis bilangan objek."
+      ],
+      "aids": [
+        "Carta Nombor Arab (100-1000).",
+        "Bahan bacaan yang mengandungi nombor besar."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 4: Al-Mustaqbal (Kata Kerja Mudhari' Lanjutan - Jamak)",
+      "skill_name": "Qawa'id (Mudhari' Jamak)",
+      "standards": [
+        "1.2.4 Mendengar dan meniru sebutan kata kerja Mudhari' (jamak): (نحن - kami, أنتم - kamu L jamak, أنتن - kamu P jamak).",
+        "3.1.4 Menulis ayat kompleks menggunakan Fi'il Mudhari' jamak.",
+        "2.1.4 Membaca perenggan tentang rancangan masa depan."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 3 kata kerja Mudhari' jamak dengan imbuhan yang betul.",
+        "Murid dapat membina 3 ayat tentang aktiviti yang akan dilakukan oleh kumpulan mereka (Mudhari' jamak).",
+        "Murid dapat membezakan imbuhan kata kerja Mudhari' untuk subjek jamak L dan P."
+      ],
+      "activities": [
+        "Latih tubi: Perbezaan imbuhan kata kerja Mudhari' jamak.",
+        "Lakon layar: Merancang percutian bersama (menggunakan Mudhari' jamak).",
+        "Latihan menulis: Menceritakan rancangan aktiviti pada hujung minggu."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan Fi'il Mudhari' jamak.",
+        "Penilaian Bertulis: Menulis ayat Mudhari' jamak dengan tepat.",
+        "Lembaran Kerja: Menukar kata kerja mufrad kepada jamak."
+      ],
+      "aids": [
+        "Carta Fi'il Mudhari' (Semua Dhamir).",
+        "Jadual Perubahan Kata Kerja."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 5: Al-Istifhām (Kata Tanya Lanjutan)",
+      "skill_name": "Istima' & Kalam (Soalan Lanjutan)",
+      "standards": [
+        "1.2.5 Menggunakan kata tanya (Istifham) lanjutan: (متى - bila, كم - berapa, لماذا - mengapa).",
+        "2.1.5 Membaca dan mengenal pasti ayat tanya dan ayat penyata.",
+        "3.1.5 Menulis 3 ayat tanya yang lengkap menggunakan tanda soal."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 3 kata tanya lanjutan (متى, كم, لماذا) dengan betul.",
+        "Murid dapat bertanya dan menjawab 3 soalan yang menggunakan kata tanya tersebut.",
+        "Murid dapat menulis ayat tanya dengan tatabahasa dan tanda baca yang betul."
+      ],
+      "activities": [
+        "Permainan 'Wartawan': Murid bertanya soalan menggunakan kata tanya lanjutan.",
+        "Latihan membaca dialog dengan intonasi bertanya.",
+        "Latihan menulis: Menulis soalan untuk situasi yang diberikan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Keupayaan bertanya/menjawab menggunakan kata tanya lanjutan.",
+        "Penilaian Bertulis: Menulis ayat tanya yang betul.",
+        "Lembaran Kerja: Padanan kata tanya dan jawapan."
+      ],
+      "aids": [
+        "Carta Kata Tanya Lanjutan (أدوات الاستفهام).",
+        "Contoh dialog."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 6: Al-Fi'l al-Amr (Kata Perintah)",
+      "skill_name": "Qawa'id (Fi'il al-Amr)",
+      "standards": [
+        "1.2.6 Mendengar dan meniru sebutan 5 kata perintah (Fi'il al-Amr) asas: (اذهب - pergi, اكتب - tulis, اجلس - duduk).",
+        "2.1.6 Membaca dan melaksanakan arahan yang diberikan.",
+        "3.1.6 Menulis ayat arahan (Fi'il al-Amr) yang ringkas."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 5 kata perintah asas (mufrad L) dalam perbualan.",
+        "Murid dapat bertindak balas terhadap 3 arahan yang diberikan guru.",
+        "Murid dapat menulis 3 arahan yang mudah (cth: 'Baca buku!')."
+      ],
+      "activities": [
+        "Permainan 'Ikut Arahan': Murid melaksanakan arahan guru (Fi'il al-Amr).",
+        "Latih tubi sebutan: Membezakan Mudhari' dan Amr (imbuhan awal dan akhir).",
+        "Latihan menulis: Menulis peraturan kelas menggunakan kata perintah."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan dan penggunaan Fi'il al-Amr.",
+        "Penilaian Amali: Keupayaan melaksanakan arahan.",
+        "Penilaian Bertulis: Menulis ayat perintah."
+      ],
+      "aids": [
+        "Kad Imbasan Kata Perintah (gambar aksi).",
+        "Carta Fi'il al-Amr."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 7: Al-Ma'rifah wa al-Nakirah (Kata Nama Khusus dan Umum)",
+      "skill_name": "Qawa'id (al-Ta'rif)",
+      "standards": [
+        "2.1.7 Membaca ayat dan mengenal pasti kata nama khusus (Ma'rifah - dengan ال) dan umum (Nakirah - tanpa ال).",
+        "3.1.7 Menulis kata nama dengan ال (alif lam) dan tanpa ال dengan betul.",
+        "1.2.7 Bertutur dengan membezakan kata nama khusus dan umum."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan perbezaan antara Ma'rifah dan Nakirah.",
+        "Murid dapat membaca ayat dan mengenal pasti 4 kata nama Ma'rifah dan 4 Nakirah.",
+        "Murid dapat menukar kata nama Nakirah kepada Ma'rifah dan sebaliknya."
+      ],
+      "activities": [
+        "Latih tubi: Membaca senarai perkataan (dengan dan tanpa ال).",
+        "Latihan menulis: Menukar kata nama dari umum ke khusus dan sebaliknya.",
+        "Permainan 'Teka Siapa?': Menggunakan ال untuk menjadikan kata nama lebih spesifik."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Menukar kata nama Ma'rifah dan Nakirah.",
+        "Ujian Lisan: Penggunaan ال dalam pertuturan.",
+        "Lembaran Kerja: Mengenal pasti Ma'rifah/Nakirah dalam perenggan."
+      ],
+      "aids": [
+        "Carta Alif Lam (ال) dan fungsinya.",
+        "Senarai kata nama yang kerap digunakan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 8: Al-Mantiqah (Geografi dan Tempat)",
+      "skill_name": "Qira'ah & Kitabah (Penerangan Tempat)",
+      "standards": [
+        "2.1.8 Membaca perenggan tentang tempat-tempat geografi: (جبل - gunung, نهر - sungai, بحر - laut).",
+        "3.1.8 Menulis karangan pendek (5 ayat) tentang persekitaran tempat tinggal.",
+        "1.2.8 Bertutur untuk memberi arahan arah ringkas."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 tempat geografi.",
+        "Murid dapat membaca dan memahami maklumat dalam perenggan tentang tempat.",
+        "Murid dapat menulis karangan pendek yang menggambarkan tempat tinggal mereka."
+      ],
+      "activities": [
+        "Latihan membaca dan menterjemah maklumat geografi.",
+        "Projek Mini: Melukis peta persekitaran dan melabelkannya dalam Bahasa Arab.",
+        "Lakon layar: Memberi arahan ringkas untuk pergi ke suatu tempat."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Karangan pendek deskriptif.",
+        "Ujian Lisan: Penerangan tentang peta/tempat tinggal.",
+        "Senarai Semak: Penggunaan perbendaharaan kata geografi."
+      ],
+      "aids": [
+        "Kad Imbasan Geografi/Peta.",
+        "Contoh karangan deskriptif."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 9: Al-Mubtadā' wa al-Khabar (Subjek dan Predikat)",
+      "skill_name": "Qawa'id (Jumlah Ismiyyah Lanjutan)",
+      "standards": [
+        "1.2.9 Mendengar dan meniru sebutan ayat dengan susunan Mubtada' dan Khabar yang betul: (الطالب مجتهد - Pelajar itu rajin).",
+        "2.1.9 Membaca dan menganalisis struktur ayat Ismiyyah (Mubtada' dan Khabar).",
+        "3.1.9 Menulis 5 ayat Ismiyyah dengan susunan yang betul."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan maksud Mubtada' (subjek) dan Khabar (predikat).",
+        "Murid dapat membaca ayat dan mengenal pasti Mubtada' dan Khabar.",
+        "Murid dapat membina 5 ayat Ismiyyah yang lengkap dengan perbezaan jantina."
+      ],
+      "activities": [
+        "Latih tubi: Latihan menyusun Mubtada' dan Khabar dalam ayat.",
+        "Latihan menulis: Membina ayat dengan kata sifat sebagai Khabar.",
+        "Aktiviti Kumpulan: Mencipta ayat Ismiyyah dan meminta rakan mengenal pasti strukturnya."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Menulis ayat Ismiyyah yang betul.",
+        "Ujian Lisan: Mengenal pasti Mubtada' dan Khabar.",
+        "Lembaran Kerja: Membetulkan susunan ayat."
+      ],
+      "aids": [
+        "Carta Jumlah Ismiyyah (Mubtada' dan Khabar).",
+        "Papan aktiviti menyusun perkataan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 10: Muraja'ah (Ulang Kaji Struktur Ayat)",
+      "skill_name": "Sintesis dan Apresiasi",
+      "standards": [
+        "4.4.1 Mengaplikasikan kata kerja Mudhari' (semua Dhamir) dan Dhamir al-Munfasil dengan tepat.",
+        "4.4.2 Menghasilkan dialog ringkas (5-6 baris) yang mengandungi kata tanya lanjutan, Dhamir, dan kata kerja.",
+        "4.4.3 Menguasai struktur ayat Ismiyyah dan perbendaharaan kata yang dipelajari."
+      ],
+      "objectives": [
+        "Murid dapat membina dialog pendek tentang rancangan cuti sekolah.",
+        "Murid dapat menggunakan kata nama khusus (Ma'rifah) dan umum (Nakirah) dengan betul.",
+        "Murid dapat menunjukkan kemajuan dalam kelancaran bertutur dan menulis."
+      ],
+      "activities": [
+        "Lakon layar: Dialog berpasangan (cuti sekolah).",
+        "Ulang kaji: Kuiz tatabahasa Dhamir dan Fi'il.",
+        "Penulisan: Menyelesaikan cerita yang tergantung (menggunakan struktur ayat Ismiyyah dan Fi'liyyah)."
+      ],
+      "assessments": [
+        "Ujian Akhir Lisan: Dialog berpasangan (dinilai ketepatan tatabahasa).",
+        "Ujian Bertulis: Penulisan karangan pendek (dinilai struktur ayat).",
+        "Refleksi: Esei ringkas tentang pengalaman pembelajaran."
+      ],
+      "aids": [
+        "Lembaran Ulang Kaji Komprehensif.",
+        "Bahan bacaan dialog."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 5: 10 UNIT (Fokus: Kata Hubung & Penulisan Ekspresif) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 5,
+      "topic_name": "Unit 1: Al-Riyāḍah (Sukan dan Aktiviti Fizikal)",
+      "skill_name": "Istima' & Kalam (Perbincangan)",
+      "standards": [
+        "1.2.1 Bertutur untuk membandingkan dan memilih (cth: bola sepak lebih baik daripada bola keranjang).",
+        "2.1.1 Membaca perenggan tentang faedah sukan dan gaya hidup sihat.",
+        "3.1.1 Menulis surat/mesej ringkas kepada rakan tentang aktiviti sukan."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 jenis sukan dan aktiviti fizikal.",
+        "Murid dapat menyatakan perbandingan (المقارنة) ringkas dalam pertuturan.",
+        "Murid dapat menulis surat ringkas (3-4 ayat) dengan format yang betul."
+      ],
+      "activities": [
+        "Perbincangan: Sukan kegemaran dan faedahnya.",
+        "Latihan membaca dan menterjemah surat/mesej ringkas.",
+        "Latih tubi: Frasa perbandingan (أحسن من - lebih baik daripada)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Perbincangan perbandingan sukan.",
+        "Penilaian Bertulis: Menulis surat/mesej ringkas.",
+        "Senarai Semak: Penggunaan frasa perbandingan."
+      ],
+      "aids": [
+        "Kad Imbasan Jenis Sukan.",
+        "Carta Frasa Perbandingan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 2: Dhamir al-Muttasil (Kata Ganti Nama Bersambung)",
+      "skill_name": "Qawa'id (Dhamir al-Muttasil)",
+      "standards": [
+        "1.2.2 Mendengar dan meniru sebutan 5 kata ganti nama bersambung (Dhamir al-Muttasil): (ك - kamu L, ه - dia L, نا - kami/kita).",
+        "2.1.2 Membaca ayat yang mengandungi Dhamir al-Muttasil (bersambung dengan kata nama/kerja).",
+        "3.1.2 Menulis ayat menggunakan Dhamir al-Muttasil secara tepat: (كتابه - bukunya)."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 5 Dhamir al-Muttasil yang bersambung dengan kata nama (milik).",
+        "Murid dapat membaca ayat yang mengandungi Dhamir al-Muttasil dengan lancar.",
+        "Murid dapat menulis 5 ayat yang mengandungi kata nama dan Dhamir al-Muttasil."
+      ],
+      "activities": [
+        "Latih tubi: Perbezaan Dhamir al-Munfasil dan al-Muttasil.",
+        "Latihan menulis ayat: Menggabungkan kata nama (cth: pensel) dan Dhamir (cth: nya).",
+        "Permainan 'Siapa Punya?': Menggunakan Dhamir al-Muttasil untuk menunjukkan pemilikan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan Dhamir al-Muttasil.",
+        "Penilaian Bertulis: Menulis ayat dengan Dhamir al-Muttasil yang betul.",
+        "Lembaran Kerja: Menukar Dhamir al-Munfasil kepada al-Muttasil."
+      ],
+      "aids": [
+        "Carta Dhamir al-Muttasil (Kata Ganti Nama Bersambung).",
+        "Jadual Perubahan Imbuhan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 3: Al-Muḍāf wa al-Muḍāf Ilaih (Frasa Genitif/Idhafah)",
+      "skill_name": "Qawa'id (Idhafah)",
+      "standards": [
+        "1.2.3 Mendengar dan meniru sebutan frasa genitif (Idhafah): (معلم المدرسة - guru sekolah itu).",
+        "2.1.3 Membaca dan menganalisis struktur frasa Idhafah.",
+        "3.1.3 Menulis frasa Idhafah yang betul (Muḍāf dan Muḍāf Ilaih)."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan struktur frasa Idhafah (pemilikan).",
+        "Murid dapat membaca frasa Idhafah dengan betul (tanpa alif lam pada Muḍāf).",
+        "Murid dapat membina 5 frasa Idhafah yang ringkas."
+      ],
+      "activities": [
+        "Latih tubi: Latihan menyusun frasa Idhafah (pemilik dan yang dimiliki).",
+        "Latihan menulis: Menukar ayat biasa kepada frasa Idhafah.",
+        "Aktiviti Kumpulan: Mencipta frasa Idhafah untuk objek di dalam kelas."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Menulis frasa Idhafah yang betul.",
+        "Ujian Lisan: Sebutan frasa Idhafah.",
+        "Lembaran Kerja: Menganalisis frasa Idhafah."
+      ],
+      "aids": [
+        "Carta Struktur Idhafah (Muḍāf wa Muḍāf Ilaih).",
+        "Kad Imbasan Kata Nama."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 4: Al-Ḥiwārāt al-Murakkabah (Dialog Kompleks)",
+      "skill_name": "Istima' & Kalam (Sintesis)",
+      "standards": [
+        "1.2.4 Menguasai dialog yang lebih panjang (8-10 baris) dengan intonasi yang sesuai.",
+        "2.1.4 Membaca dan menterjemah dialog kompleks tentang pelbagai topik.",
+        "3.1.4 Menulis draf dialog pendek tentang pembelian/percutian."
+      ],
+      "objectives": [
+        "Murid dapat melakonkan dialog kompleks (8-10 baris) dengan lancar dan intonasi yang betul.",
+        "Murid dapat menggunakan sekurang-kurangnya 3 kata kerja (Māḍī/Mudhari') dalam dialog.",
+        "Murid dapat menulis draf dialog (4 baris) tentang aktiviti seharian."
+      ],
+      "activities": [
+        "Lakon layar: Dialog di pasar raya/restoran (menggunakan frasa permintaan).",
+        "Latihan membaca: Menganalisis intonasi dalam dialog.",
+        "Latihan menulis: Menulis dialog dan melatihnya dengan rakan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Kualiti persembahan dialog (kelancaran, intonasi, tatabahasa).",
+        "Penilaian Bertulis: Draf dialog yang dihasilkan.",
+        "Senarai Semak: Penggunaan kata kerja yang betul."
+      ],
+      "aids": [
+        "Contoh skrip dialog kompleks.",
+        "Rakaman audio dialog."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 5: Al-Qira'ah al-Fahmiyyah (Kefahaman Membaca)",
+      "skill_name": "Qira'ah (Kefahaman)",
+      "standards": [
+        "2.1.5 Membaca dan memahami maksud ayat/perenggan yang mengandungi tatabahasa lanjutan.",
+        "1.2.5 Bertutur untuk merumuskan idea utama perenggan yang dibaca.",
+        "3.1.5 Menulis jawapan kepada soalan kefahaman (5W1H)."
+      ],
+      "objectives": [
+        "Murid dapat membaca 2 perenggan (6-8 ayat) dengan kefahaman yang baik.",
+        "Murid dapat menjawab 5 soalan kefahaman (5W1H) berdasarkan teks.",
+        "Murid dapat merumuskan idea utama perenggan dalam 2 ayat lisan."
+      ],
+      "activities": [
+        "Latihan membaca senyap dan mencari idea utama.",
+        "Latihan menulis: Menjawab soalan kefahaman (menggunakan ayat lengkap).",
+        "Aktiviti Kumpulan: Merumus dan membentangkan isi utama perenggan."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Jawapan soalan kefahaman.",
+        "Ujian Lisan: Merumus idea utama.",
+        "Lembaran Kerja: Mengenal pasti perbendaharaan kata baru."
+      ],
+      "aids": [
+        "Teks bacaan kefahaman (bertema sains/budaya).",
+        "Soalan 5W1H."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 6: Al-Kitābah al-Ta'biriyyah (Penulisan Ekspresif)",
+      "skill_name": "Kitabah (Ekspresi)",
+      "standards": [
+        "3.1.6 Menulis karangan pendek (5-7 ayat) tentang topik tertentu (cth: pengalaman percutian).",
+        "2.1.6 Membaca dan menganalisis karangan contoh (struktur dan perbendaharaan kata).",
+        "4.2.1 Mengaplikasikan perbendaharaan kata yang meluas (sinonim/antonim)."
+      ],
+      "objectives": [
+        "Murid dapat menulis karangan pendek (5-7 ayat) dengan susunan idea yang logik.",
+        "Murid dapat menggunakan sekurang-kurangnya 2 Dhamir al-Muttasil dalam karangan.",
+        "Murid dapat menggunakan kata kerja Māḍī untuk menceritakan pengalaman."
+      ],
+      "activities": [
+        "Perbincangan: Idea dan perbendaharaan kata untuk tema percutian.",
+        "Latihan menulis: Draf karangan dan semakan rakan.",
+        "Aktiviti Individu: Menulis karangan ekspresif tentang hari yang tidak dapat dilupakan."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Karangan pendek (dinilai susunan idea, perbendaharaan kata, dan tatabahasa).",
+        "Senarai Semak: Penggunaan Dhamir dan kata kerja yang betul.",
+        "Ujian Lisan: Menceritakan pengalaman secara lisan."
+      ],
+      "aids": [
+        "Contoh karangan ekspresif.",
+        "Senarai kata kerja Māḍī dan Mudhari'."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 7: Al-Juml al-Fi'liyyah (Ayat Kata Kerja)",
+      "skill_name": "Qawa'id (Jumlah Fi'liyyah)",
+      "standards": [
+        "1.2.7 Mendengar dan meniru sebutan ayat dengan susunan Kata Kerja (Fi'il) + Pelaku (Fā'il) + Objek (Maf'ūl bih).",
+        "2.1.7 Membaca dan menganalisis struktur ayat Fi'liyyah.",
+        "3.1.7 Menulis 5 ayat Fi'liyyah dengan susunan yang betul."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan struktur ayat Fi'liyyah (Fi'il, Fā'il, Maf'ūl bih).",
+        "Murid dapat membaca ayat dan mengenal pasti 3 elemen asas ayat Fi'liyyah.",
+        "Murid dapat membina 5 ayat Fi'liyyah yang lengkap dengan perbezaan jantina/bilangan."
+      ],
+      "activities": [
+        "Latih tubi: Latihan menyusun ayat (Kata Kerja + Pelaku + Objek).",
+        "Latihan menulis: Menukar ayat Ismiyyah kepada Fi'liyyah dan sebaliknya.",
+        "Aktiviti Kumpulan: Mencipta ayat Fi'liyyah dan meminta rakan mengenal pasti strukturnya."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Menulis ayat Fi'liyyah yang betul.",
+        "Ujian Lisan: Mengenal pasti elemen ayat Fi'liyyah.",
+        "Lembaran Kerja: Latihan penukaran ayat (Ismiyyah vs. Fi'liyyah)."
+      ],
+      "aids": [
+        "Carta Jumlah Fi'liyyah (Fi'il, Fā'il, Maf'ūl bih).",
+        "Papan aktiviti menyusun perkataan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 8: Asmā' al-Ishārah (Kata Tunjuk Lanjutan - Jamak)",
+      "skill_name": "Qawa'id (Kata Tunjuk Jamak)",
+      "standards": [
+        "1.2.8 Menggunakan kata tunjuk jamak (Asmā' al-Ishārah): (هؤلاء - ini jamak, أولئك - itu jamak).",
+        "2.1.8 Membaca ayat yang mengandungi kata tunjuk jamak (untuk manusia dan bukan manusia).",
+        "3.1.8 Menulis ayat menggunakan kata tunjuk jamak secara tepat."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan هؤلاء dan أولئك dengan betul untuk subjek jamak manusia.",
+        "Murid dapat membaca ayat dengan kata tunjuk jamak dengan lancar.",
+        "Murid dapat membina 3 ayat tentang kumpulan orang menggunakan kata tunjuk jamak."
+      ],
+      "activities": [
+        "Latih tubi: Perbezaan kata tunjuk mufrad, muthanna, dan jamak.",
+        "Latihan menulis ayat: Menggambarkan kumpulan orang (cth: pelajar, guru) menggunakan هؤلاء.",
+        "Permainan 'Kenal Kumpulan': Menggunakan kata tunjuk jamak dalam perbualan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan هؤلاء/أولئك.",
+        "Penilaian Bertulis: Menulis ayat dengan kata tunjuk jamak.",
+        "Lembaran Kerja: Menukar ayat mufrad kepada jamak."
+      ],
+      "aids": [
+        "Carta Asmā' al-Ishārah (Kata Tunjuk semua jenis).",
+        "Gambar kumpulan orang."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 9: Ḥurūf al-Jarr al-Murakkabah (Preposisi Lanjutan)",
+      "skill_name": "Qawa'id (Preposisi Lanjutan)",
+      "standards": [
+        "1.2.9 Mendengar dan meniru sebutan preposisi lanjutan: (من - dari, إلى - ke, عن - tentang, ب - dengan).",
+        "2.1.9 Membaca dan menganalisis peranan preposisi dalam ayat (huruf al-jarr).",
+        "3.1.9 Menulis ayat menggunakan preposisi lanjutan."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 4 preposisi lanjutan (من, إلى, عن, ب) dengan betul.",
+        "Murid dapat membaca ayat dan mengenal pasti kesan preposisi (kata nama selepasnya berbaris kasrah).",
+        "Murid dapat membina 3 ayat tentang perjalanan menggunakan preposisi (cth: Saya pergi dari sekolah ke rumah)."
+      ],
+      "activities": [
+        "Latih tubi: Latihan menyusun ayat dengan preposisi.",
+        "Latihan menulis: Menulis ayat tentang perjalanan/komunikasi.",
+        "Perbincangan: Peranan preposisi dalam mengubah makna ayat."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Menulis ayat dengan preposisi yang betul.",
+        "Ujian Lisan: Penggunaan preposisi lanjutan.",
+        "Lembaran Kerja: Mengenal pasti kesan preposisi pada baris akhir kata nama."
+      ],
+      "aids": [
+        "Carta Ḥurūf al-Jarr (Preposisi).",
+        "Latihan mengisi tempat kosong."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 10: Muraja'ah (Ulang Kaji Dhamir dan Idhafah)",
+      "skill_name": "Sintesis dan Apresiasi",
+      "standards": [
+        "4.5.1 Mengaplikasikan Dhamir al-Muttasil (bersambung) dan al-Munfasil (terpisah) secara konsisten.",
+        "4.5.2 Menghasilkan perenggan yang mengandungi struktur Idhafah (Muḍāf/Muḍāf Ilaih) dengan tepat.",
+        "4.5.3 Menguasai tatabahasa Kata Tunjuk Jamak dan Preposisi Lanjutan."
+      ],
+      "objectives": [
+        "Murid dapat membina 10 ayat yang lengkap (Ismiyyah dan Fi'liyyah) menggunakan semua elemen tatabahasa yang dipelajari.",
+        "Murid dapat membaca dan memahami teks yang mengandungi struktur ayat yang kompleks.",
+        "Murid dapat menunjukkan kemajuan yang ketara dalam ketepatan tatabahasa."
+      ],
+      "activities": [
+        "Penulisan: Menyelesaikan cerita yang mengandungi unsur pemilikan (Idhafah) dan kata ganti nama.",
+        "Ulang kaji: Kuiz tatabahasa Dhamir dan Idhafah.",
+        "Lakon layar: Berbual tentang rancangan percutian (menggunakan preposisi dan Dhamir)."
+      ],
+      "assessments": [
+        "Ujian Akhir Bertulis: Penulisan karangan (dinilai ketepatan Dhamir/Idhafah).",
+        "Ujian Lisan: Perbualan (dinilai penguasaan tatabahasa).",
+        "Refleksi: Analisis kesilapan tatabahasa yang kerap dilakukan."
+      ],
+      "aids": [
+        "Lembaran Ulang Kaji Komprehensif.",
+        "Jadual Perbandingan Struktur Ayat."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 6: 10 UNIT (Fokus: Kefasihan & Penulisan Formal) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 6,
+      "topic_name": "Unit 1: Al-Tārīkh wa al-Thaqāfah (Sejarah dan Budaya)",
+      "skill_name": "Istima' & Kalam (Perbincangan Mendalam)",
+      "standards": [
+        "1.2.1 Bertutur untuk menghuraikan topik sejarah/budaya secara ringkas dan terperinci.",
+        "2.1.1 Membaca teks yang mengandungi maklumat sejarah dan budaya.",
+        "3.1.1 Menulis karangan (8-10 ayat) tentang kepentingan memelihara budaya."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 unsur budaya (cth: pakaian, makanan, seni) yang berkaitan dengan Arab/Islam.",
+        "Murid dapat menghuraikan kepentingan memelihara budaya dalam 3 ayat lisan.",
+        "Murid dapat menulis karangan yang mempunyai pendahuluan, isi, dan penutup ringkas."
+      ],
+      "activities": [
+        "Perbincangan: Membandingkan budaya Arab dan Malaysia (persamaan dan perbezaan).",
+        "Latihan membaca dan menterjemah teks sejarah/budaya.",
+        "Projek Mini: Membuat poster/brosur ringkas tentang budaya yang diminati."
+      ],
+      "assessments": [
+        "Ujian Lisan: Perbincangan huraian budaya.",
+        "Penilaian Bertulis: Karangan ringkas tentang budaya.",
+        "Senarai Semak: Kelancaran dan penggunaan perbendaharaan kata."
+      ],
+      "aids": [
+        "Teks dan gambar tentang budaya Arab/Islam.",
+        "Peta Dunia (Negara-negara Arab)."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 2: Al-Sifāt (Kata Sifat Tingkat Lanjutan - Ism al-Tafḍīl)",
+      "skill_name": "Qawa'id (Ism al-Tafḍīl)",
+      "standards": [
+        "1.2.2 Mendengar dan meniru sebutan Kata Sifat Tingkat (Ism al-Tafḍīl): (أكبر - lebih besar, أصغر - lebih kecil, أحسن - lebih baik).",
+        "2.1.2 Membaca ayat perbandingan yang mengandungi Ism al-Tafḍīl.",
+        "3.1.2 Menulis ayat perbandingan dengan tatabahasa yang betul."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 5 Ism al-Tafḍīl untuk membuat perbandingan.",
+        "Murid dapat membaca ayat perbandingan dengan lancar.",
+        "Murid dapat membina 3 ayat perbandingan (cth: Rumahku lebih besar daripada rumahmu)."
+      ],
+      "activities": [
+        "Latih tubi: Perbezaan kata sifat biasa dan Ism al-Tafḍīl.",
+        "Latihan menulis: Membuat perbandingan antara 2 objek/orang.",
+        "Aktiviti Kumpulan: Perdebatan ringkas menggunakan Ism al-Tafḍīl."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan Ism al-Tafḍīl dalam perbandingan.",
+        "Penilaian Bertulis: Menulis ayat perbandingan.",
+        "Lembaran Kerja: Menukar kata sifat biasa kepada Ism al-Tafḍīl."
+      ],
+      "aids": [
+        "Carta Ism al-Tafḍīl (Kata Sifat Tingkat).",
+        "Contoh ayat perbandingan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 3: Al-A'dad al-Tartībiyyah (Nombor Ordinal)",
+      "skill_name": "Qira'ah & Kitabah (Nombor Ordinal)",
+      "standards": [
+        "1.2.3 Mendengar dan meniru sebutan nombor ordinal (al-A'dad al-Tartībiyyah): (الأول - pertama, الثاني - kedua).",
+        "2.1.3 Membaca teks yang mengandungi nombor ordinal (cth: ranking, tarikh).",
+        "3.1.3 Menulis ayat menggunakan nombor ordinal dengan betul (mengikut jantina)."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan nombor ordinal 1 hingga 10 dalam ayat.",
+        "Murid dapat menggunakan nombor ordinal mengikut jantina kata nama (cth: اليوم الأول / السنة الأولى).",
+        "Murid dapat menulis ayat yang menyatakan kedudukan/ranking."
+      ],
+      "activities": [
+        "Latih tubi: Perbezaan nombor kardinal dan ordinal.",
+        "Latihan menulis: Menyatakan tarikh lahir/ranking kelas menggunakan nombor ordinal.",
+        "Permainan 'Larian Pecut': Menyatakan kedudukan dalam Bahasa Arab."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan nombor ordinal (dengan jantina).",
+        "Penilaian Bertulis: Menulis ayat dengan nombor ordinal yang betul.",
+        "Lembaran Kerja: Padanan nombor ordinal dan kedudukan."
+      ],
+      "aids": [
+        "Carta Al-A'dad al-Tartībiyyah (Nombor Ordinal).",
+        "Senarai kata nama (muannath/mudzakkar)."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 4: Al-Ḥurūf al-Naṣb wa al-Jazm (Kata Hubung/Partikel Kata Kerja)",
+      "skill_name": "Qawa'id (Partikel Fi'il)",
+      "standards": [
+        "2.1.4 Membaca dan menganalisis peranan Ḥurūf al-Naṣb (لن - tidak akan, أن - bahawa) dan Ḥurūf al-Jazm (لم - belum, لا - jangan).",
+        "3.1.4 Menulis ayat yang mengandungi Ḥurūf al-Naṣb (membariskan fathah pada akhir Fi'il Mudhari').",
+        "1.2.4 Bertutur untuk menyatakan penafian masa depan dan arahan larangan."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan kesan Ḥurūf al-Naṣb dan Ḥurūf al-Jazm pada kata kerja Mudhari'.",
+        "Murid dapat membina 3 ayat menggunakan لن (tidak akan) dan لم (belum).",
+        "Murid dapat menulis ayat larangan (نهي - Nahy) dengan betul."
+      ],
+      "activities": [
+        "Latih tubi: Perubahan baris akhir kata kerja Mudhari' selepas Ḥurūf al-Naṣb/Jazm.",
+        "Latihan menulis: Menulis larangan kelas (cth: jangan berlari).",
+        "Perbincangan: Perbezaan makna antara لن dan لم."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Menulis ayat dengan Ḥurūf al-Naṣb/Jazm (dinilai baris akhir Fi'il).",
+        "Ujian Lisan: Penggunaan لن dan لم.",
+        "Lembaran Kerja: Menganalisis kesan partikel."
+      ],
+      "aids": [
+        "Carta Ḥurūf al-Naṣb dan Ḥurūf al-Jazm.",
+        "Jadual Perubahan Baris Fi'il Mudhari'."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 5: Al-Istifhām al-Murakkab (Soalan Lanjutan dan Jawapan)",
+      "skill_name": "Istima' & Kalam (Kefasihan Soalan)",
+      "standards": [
+        "1.2.5 Menguasai penggunaan semua kata tanya dan menjawabnya dengan maklumat terperinci.",
+        "2.1.5 Membaca dan memahami teks soal jawab yang kompleks.",
+        "3.1.5 Menulis teks soal jawab (6-8 baris) tentang topik tertentu."
+      ],
+      "objectives": [
+        "Murid dapat bertanya soalan (pelbagai jenis kata tanya) dan memberi jawapan lengkap (2-3 ayat).",
+        "Murid dapat melakonkan soal jawab (temu bual) dengan fasih dan yakin.",
+        "Murid dapat menulis draf temu bual (4 soalan/jawapan) dengan tatabahasa yang betul."
+      ],
+      "activities": [
+        "Lakon layar: Temu bual ringkas (wartawan dan orang yang ditemu bual).",
+        "Latihan menulis: Menulis set soalan untuk topik yang diberi (cth: alam sekitar).",
+        "Latihan membaca: Menganalisis struktur soalan/jawapan dalam teks."
+      ],
+      "assessments": [
+        "Ujian Lisan: Kualiti temu bual (fasih, tatabahasa, dan maklumat).",
+        "Penilaian Bertulis: Menulis set soalan/jawapan.",
+        "Senarai Semak: Penggunaan semua jenis kata tanya."
+      ],
+      "aids": [
+        "Contoh skrip temu bual.",
+        "Senarai Kata Tanya."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 6: Al-Fa'il wa al-Maf'ūl bih (Pelaku dan Objek)",
+      "skill_name": "Qawa'id (Analisis Ayat Fi'liyyah)",
+      "standards": [
+        "2.1.6 Membaca dan menganalisis baris akhir (i'rab) Fā'il (Pelaku) dan Maf'ūl bih (Objek).",
+        "3.1.6 Menulis ayat Fi'liyyah dengan baris akhir yang betul (Fā'il - ḍammah, Maf'ūl bih - fatḥah).",
+        "1.2.6 Bertutur dengan membariskan kata nama selepas kata kerja dengan betul."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti Fā'il dan Maf'ūl bih dalam ayat Fi'liyyah.",
+        "Murid dapat menjelaskan baris akhir (i'rab) Fā'il dan Maf'ūl bih.",
+        "Murid dapat membina 5 ayat Fi'liyyah dengan baris akhir kata nama yang betul."
+      ],
+      "activities": [
+        "Latih tubi: Latihan meletakkan baris akhir (i'rab) Fā'il dan Maf'ūl bih.",
+        "Latihan menulis: Menulis ayat dan meminta rakan membariskan kata nama.",
+        "Aktiviti Kumpulan: Menghuraikan peranan Fā'il dan Maf'ūl bih dalam ayat."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Menulis ayat dengan baris akhir yang betul.",
+        "Ujian Lisan: Menganalisis baris akhir kata nama dalam ayat.",
+        "Lembaran Kerja: Mengenal pasti Fā'il/Maf'ūl bih."
+      ],
+      "aids": [
+        "Carta I'rab (Baris Akhir) Fā'il dan Maf'ūl bih.",
+        "Papan aktiviti menyusun ayat."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 7: Al-Qawā'id al-Mujamma'ah (Tatabahasa Terintegrasi)",
+      "skill_name": "Qira'ah & Kitabah (Integrasi)",
+      "standards": [
+        "2.1.7 Membaca teks yang mengintegrasikan pelbagai tatabahasa (Dhamir, Idhafah, Fi'il, Maf'ūl bih).",
+        "3.1.7 Menulis karangan deskriptif (8-10 ayat) yang mengaplikasikan sekurang-kurangnya 5 elemen tatabahasa yang dipelajari.",
+        "4.3.1 Menganalisis dan membetulkan kesalahan tatabahasa dalam teks."
+      ],
+      "objectives": [
+        "Murid dapat membaca teks kompleks dan memahami semua struktur tatabahasa yang terkandung.",
+        "Murid dapat menulis karangan dengan ketepatan tatabahasa yang tinggi (Dhamir, Idhafah, Fi'il).",
+        "Murid dapat membetulkan 5 kesalahan tatabahasa dalam teks yang diberikan."
+      ],
+      "activities": [
+        "Latihan membaca dan menganalisis teks (highlight elemen tatabahasa).",
+        "Latihan menulis: Karangan deskriptif (cth: perayaan/sambutan hari guru).",
+        "Aktiviti Kumpulan: Menukar dan membetulkan kesalahan tatabahasa dalam karangan rakan."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Karangan deskriptif (dinilai ketepatan integrasi tatabahasa).",
+        "Ujian Lisan: Membaca teks dengan intonasi yang betul.",
+        "Lembaran Kerja: Pembetulan kesalahan tatabahasa."
+      ],
+      "aids": [
+        "Teks bacaan kompleks (dengan nota tatabahasa).",
+        "Panduan semakan tatabahasa."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 8: Al-Risālah al-Rasmiyyah (Penulisan Surat Formal)",
+      "skill_name": "Kitabah (Formal)",
+      "standards": [
+        "3.1.8 Menulis surat/emel rasmi (formal) ringkas dengan format dan bahasa yang sesuai.",
+        "2.1.8 Membaca dan menganalisis struktur surat rasmi (pendahuluan, tujuan, penutup).",
+        "4.4.1 Menunjukkan kepekaan terhadap laras bahasa formal dan tidak formal."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 4 ciri utama penulisan surat rasmi (cth: gelaran, alamat).",
+        "Murid dapat menggunakan laras bahasa formal (cth: Saya ingin memaklumkan) dalam penulisan.",
+        "Murid dapat menulis surat ringkas (cth: jemputan, permohonan cuti) dengan format yang betul."
+      ],
+      "activities": [
+        "Perbincangan: Perbezaan laras bahasa formal dan tidak formal.",
+        "Latihan menulis: Menulis surat rasmi (cth: kepada Guru Besar).",
+        "Analisis: Mengenal pasti laras bahasa formal dalam teks."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Surat rasmi ringkas (dinilai format, laras bahasa, dan tatabahasa).",
+        "Ujian Lisan: Membaca sebahagian surat dengan intonasi formal.",
+        "Senarai Semak: Ciri-ciri surat rasmi."
+      ],
+      "aids": [
+        "Contoh surat rasmi dan formatnya.",
+        "Senarai frasa formal."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 9: Al-Masyākil (Isu dan Masalah Semasa)",
+      "skill_name": "Istima' & Kalam (Penyelesaian Masalah)",
+      "standards": [
+        "1.2.7 Bertutur untuk mengemukakan masalah dan mencadangkan penyelesaian secara ringkas.",
+        "2.1.9 Membaca perenggan tentang isu semasa (cth: alam sekitar, kesihatan).",
+        "3.1.9 Menulis 3 ayat untuk mencadangkan penyelesaian masalah."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 2 isu semasa yang relevan (cth: pencemaran, sisa makanan).",
+        "Murid dapat menggunakan frasa cadangan (نقترح أن - Kami mencadangkan bahawa) dalam pertuturan.",
+        "Murid dapat menulis cadangan penyelesaian masalah dengan ayat yang lengkap."
+      ],
+      "activities": [
+        "Perbincangan: Isu semasa di sekolah/masyarakat.",
+        "Lakon layar: Perbincangan meja bulat (mengemukakan masalah dan cadangan).",
+        "Latihan menulis: Menulis cadangan untuk kempen kesedaran."
+      ],
+      "assessments": [
+        "Ujian Lisan: Penggunaan frasa cadangan dan penyelesaian masalah.",
+        "Penilaian Bertulis: Menulis 3 cadangan penyelesaian.",
+        "Senarai Semak: Penggunaan perbendaharaan kata isu semasa."
+      ],
+      "aids": [
+        "Teks/gambar isu semasa.",
+        "Carta Frasa Cadangan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 10: Muraja'ah wa Taḥsīn al-Lughah (Ulang Kaji dan Kefasihan Akhir)",
+      "skill_name": "Sintesis dan Apresiasi",
+      "standards": [
+        "4.6.1 Mengintegrasikan semua kemahiran tatabahasa dan perbendaharaan kata yang dipelajari dari Tahun 1 hingga Tahun 6.",
+        "4.6.2 Menunjukkan kefasihan (fluency) dan ketepatan (accuracy) yang tinggi dalam persembahan lisan dan penulisan.",
+        "4.6.3 Membuat refleksi tentang pencapaian dalam pembelajaran Bahasa Arab."
+      ],
+      "objectives": [
+        "Murid dapat membina cerita/perenggan yang kompleks (10-12 ayat) dengan ketepatan tatabahasa yang cemerlang.",
+        "Murid dapat melakonkan perbualan tentang topik umum (cth: masa depan) dengan fasih.",
+        "Murid dapat menunjukkan kemajuan yang memuaskan dalam semua aspek kemahiran Bahasa Arab."
+      ],
+      "activities": [
+        "Projek Akhir: Penulisan Karangan Komprehensif (dinilai semua aspek tatabahasa).",
+        "Persembahan Akhir: Debat/Forum ringkas tentang isu semasa.",
+        "Ulang kaji: Kuiz tatabahasa komprehensif (Fi'il, Dhamir, I'rab)."
+      ],
+      "assessments": [
+        "Ujian Akhir Bertulis: Penulisan karangan formal (Sumatif Akhir).",
+        "Ujian Lisan: Persembahan Lisan (dinilai Kefasihan dan Ketepatan).",
+        "Refleksi: Esei refleksi tentang kemahiran Bahasa Arab yang dikuasai."
+      ],
+      "aids": [
+        "Lembaran Ulang Kaji Komprehensif (Tahun 1-6).",
+        "Rubrik Penilaian Kefasihan Lisan."
+      ]
+    }
+  ]
+}

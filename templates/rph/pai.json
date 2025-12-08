@@ -1,0 +1,1827 @@
+{
+  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Pendidikan Agama Islam (PAI) - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
+  "subject": "Pendidikan Agama Islam",
+  "data": [
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 1: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 1,
+      "topic_name": "Unit 1: Asas Akidah - Rukun Iman",
+      "skill_name": "Akidah",
+      "standards": [
+        "1.1.1 Menyatakan Rukun Iman dan menghafalnya.",
+        "1.1.2 Menerangkan maksud Rukun Iman secara ringkas.",
+        "1.1.3 Mengamalkan nilai murni berdasarkan Rukun Iman."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 6 Rukun Iman dengan betul.",
+        "Murid dapat menyatakan maksud percaya kepada Allah dan Rasul.",
+        "Murid dapat menyanyikan lagu Rukun Iman."
+      ],
+      "activities": [
+        "Nyanyian: Lagu Rukun Iman.",
+        "Latih Amal: Melafazkan 6 Rukun Iman secara berkumpulan.",
+        "Perbincangan: Kepentingan mempercayai Allah SWT (contoh: Allah Maha Melihat)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan Rukun Iman.",
+        "Latihan Bertulis: Padankan Rukun Iman dengan maksudnya.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melafazkan Rukun Iman dengan yakin."
+      ],
+      "aids": [
+        "Carta Rukun Iman bergambar.",
+        "Audio/video lagu Rukun Iman.",
+        "Kad imbas Rukun Iman."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 2: Asas Ibadah - Bersuci (Taharah)",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.1.1 Menyatakan pengertian Taharah dan jenisnya.",
+        "2.1.2 Mengenal pasti alat-alat untuk bersuci.",
+        "2.1.3 Mengaplikasikan amalan bersuci dalam kehidupan harian."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan maksud Taharah dengan betul.",
+        "Murid dapat menamakan 3 alat untuk bersuci (cth: air, tisu).",
+        "Murid dapat menunjukkan cara beristinjak yang betul."
+      ],
+      "activities": [
+        "Demonstrasi: Cara beristinjak yang betul (menggunakan simulasi).",
+        "Latih Amal: Melafazkan niat ringkas untuk Taharah (niat mandi).",
+        "Aktiviti Kumpulan: Mencari alat-alat bersuci di dalam kelas."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian amalan beristinjak (simulasi).",
+        "Latihan Bertulis: Melabelkan alat-alat bersuci.",
+        "Ujian Lisan: Soalan konsep Taharah."
+      ],
+      "aids": [
+        "Carta bergambar cara Taharah.",
+        "Model tandas/alat simulasi.",
+        "Sabun dan air."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 3: Wuduk Yang Sempurna",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.2.1 Menyatakan rukun dan sunat Wuduk.",
+        "2.2.2 Melafazkan niat Wuduk dan doa selepas Wuduk.",
+        "2.2.3 Melakukan amalan Wuduk yang betul mengikut tertib."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 rukun Wuduk.",
+        "Murid dapat melafazkan niat Wuduk dengan betul.",
+        "Murid dapat melakukan Wuduk mengikut tertib dan tunjuk ajar."
+      ],
+      "activities": [
+        "Demonstrasi: Guru menunjukkan cara Wuduk yang betul.",
+        "Latih Amal: Murid berpasangan melakukan simulasi Wuduk.",
+        "Hafazan: Menghafaz niat dan doa selepas Wuduk."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian amalan Wuduk (simulasi di tempat Wuduk).",
+        "Ujian Lisan: Hafalan niat Wuduk.",
+        "Latihan Bertulis: Menyusun langkah Wuduk mengikut tertib."
+      ],
+      "aids": [
+        "Model tempat Wuduk.",
+        "Carta langkah Wuduk bergambar 
+
+[Image of steps for wudu for children]
+.",
+        "Rakaman audio niat Wuduk."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 4: Solat Fardu Asas",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.3.1 Menyatakan pengertian Solat Fardu dan kepentingannya.",
+        "2.3.2 Mengenal pasti waktu Solat Fardu (Zuhur, Asar, Maghrib, Isyak, Subuh).",
+        "2.3.3 Melafazkan niat ringkas Solat Fardu (satu Solat)."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan maksud Solat dengan ringkas.",
+        "Murid dapat menamakan 5 waktu Solat Fardu.",
+        "Murid dapat melafazkan niat Solat Subuh dengan betul."
+      ],
+      "activities": [
+        "Nyanyian: Lagu 5 waktu Solat.",
+        "Latih Amal: Melafazkan niat Solat Subuh secara beramai-ramai.",
+        "Perbincangan: Bilakah waktu Solat Fardu dilakukan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan niat Solat Subuh.",
+        "Latihan Bertulis: Padankan waktu Solat dengan namanya.",
+        "Penilaian Amali: Pemerhatian keupayaan murid menunjukkan takbiratul ihram."
+      ],
+      "aids": [
+        "Carta waktu Solat.",
+        "Sejadah.",
+        "Pakaian Solat (Telekung/Kopiah)."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 5: Al-Quran - Surah Al-Fatihah",
+      "skill_name": "Tilawah dan Hafazan",
+      "standards": [
+        "3.1.1 Membaca Surah Al-Fatihah dengan betul dan bertajwid (asas).",
+        "3.1.2 Menghafaz Surah Al-Fatihah dengan lancar.",
+        "3.1.3 Menyatakan maksud ringkas Surah Al-Fatihah."
+      ],
+      "objectives": [
+        "Murid dapat membaca Surah Al-Fatihah dengan makhraj yang betul.",
+        "Murid dapat menghafaz Surah Al-Fatihah dengan lancar dan tanpa kesalahan.",
+        "Murid dapat menyatakan Surah Al-Fatihah sebagai Ummu Al-Kitab."
+      ],
+      "activities": [
+        "Latih tubi: Membaca dan mengulang ayat-ayat Surah Al-Fatihah (talqin).",
+        "Hafazan: Murid menghafaz secara berpasangan.",
+        "Perbincangan: Inti sari Surah Al-Fatihah (cth: Hanya kepada Allah kita memohon pertolongan)."
+      ],
+      "assessments": [
+        "Ujian Lisan (Tasmi'): Bacaan dan hafalan Surah Al-Fatihah (dinilai makhraj dan tajwid asas).",
+        "Latihan Bertulis: Menyusun ayat Surah Al-Fatihah mengikut tertib.",
+        "Kuiz Maksud: Soalan tentang maksud ringkas Al-Fatihah."
+      ],
+      "aids": [
+        "Mushaflah (Al-Quran/Iqra').",
+        "Rakaman audio bacaan Surah Al-Fatihah yang betul.",
+        "Carta Surah Al-Fatihah."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 6: Adab dengan Ibu Bapa",
+      "skill_name": "Adab dan Akhlak",
+      "standards": [
+        "4.1.1 Menyatakan adab-adab terhadap ibu bapa.",
+        "4.1.2 Menghormati dan mentaati ibu bapa.",
+        "4.1.3 Mengaplikasikan adab terhadap ibu bapa dalam kehidupan."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 adab terhadap ibu bapa (cth: bercakap sopan, dengar nasihat).",
+        "Murid dapat melafazkan doa untuk ibu bapa.",
+        "Murid dapat berlakon adab yang baik terhadap ibu bapa."
+      ],
+      "activities": [
+        "Lakonan: Simulasi adab yang baik dan buruk terhadap ibu bapa.",
+        "Hafazan: Doa untuk ibu bapa.",
+        "Perbincangan: Ganjaran berbuat baik kepada ibu bapa."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian tingkah laku (simulasi lakonan adab).",
+        "Ujian Lisan: Hafalan doa ibu bapa.",
+        "Latihan Bertulis: Melengkapkan ayat tentang adab."
+      ],
+      "aids": [
+        "Carta Doa Ibu Bapa.",
+        "Kad senario adab.",
+        "Gambar/ilustrasi keluarga bahagia."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 7: Jawi - Huruf Tunggal",
+      "skill_name": "Jawi dan Khat",
+      "standards": [
+        "5.1.1 Mengenal pasti dan menyebut huruf-huruf Jawi tunggal.",
+        "5.1.2 Menulis huruf Jawi tunggal dengan betul.",
+        "5.1.3 Menulis Jawi daripada kiri ke kanan."
+      ],
+      "objectives": [
+        "Murid dapat menyebut 20 huruf Jawi tunggal dengan betul.",
+        "Murid dapat menulis 10 huruf Jawi tunggal (cth: Alif, Ba, Ta) mengikut kaedah yang betul.",
+        "Murid dapat membezakan arah penulisan Jawi dan Rumi."
+      ],
+      "activities": [
+        "Latih tubi: Sebutan huruf Jawi (bunyi).",
+        "Latihan Bertulis: Menyalin huruf Jawi tunggal di atas garisan.",
+        "Permainan: Padankan huruf Jawi dengan huruf Rumi."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Keupayaan murid menulis 10 huruf Jawi dengan betul.",
+        "Ujian Lisan: Sebutan huruf Jawi.",
+        "Latihan Bertulis: Melengkapkan ruangan huruf yang hilang."
+      ],
+      "aids": [
+        "Carta huruf Jawi tunggal.",
+        "Papan tulis dan kapur/marker.",
+        "Buku latihan bergaris."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 8: Jawi - Sambungan Huruf Asas",
+      "skill_name": "Jawi dan Khat",
+      "standards": [
+        "5.2.1 Mengenal pasti dan menulis huruf Jawi yang boleh bersambung.",
+        "5.2.2 Menyambung 2 hingga 3 huruf Jawi asas.",
+        "5.2.3 Membaca perkataan Jawi 2 hingga 3 huruf asas (cth: بوكو, باجو)."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 5 huruf Jawi yang tidak boleh bersambung selepasnya.",
+        "Murid dapat menyambung 2 hingga 3 huruf Jawi untuk membentuk 3 perkataan mudah.",
+        "Murid dapat membaca 5 perkataan Jawi mudah."
+      ],
+      "activities": [
+        "Latih Amal: Menyambung huruf menggunakan kad huruf.",
+        "Latihan Bertulis: Menyalin dan menyambung perkataan asas.",
+        "Aktiviti Kumpulan: Membaca perkataan Jawi di papan tulis."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Keupayaan murid menyambung huruf Jawi menjadi perkataan.",
+        "Ujian Lisan: Bacaan perkataan Jawi asas.",
+        "Latihan Bertulis: Menyenaraikan huruf yang tidak boleh bersambung selepasnya."
+      ],
+      "aids": [
+        "Kad huruf Jawi (boleh dicantumkan).",
+        "Carta panduan sambungan huruf Jawi.",
+        "Senarai perkataan Jawi asas bergambar."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 9: Sirah - Kelahiran Nabi Muhammad SAW",
+      "skill_name": "Sirah Nabawiyyah",
+      "standards": [
+        "6.1.1 Menyatakan nama penuh dan nama bapa/ibu Nabi Muhammad SAW.",
+        "6.1.2 Menceritakan secara ringkas peristiwa kelahiran Nabi Muhammad SAW.",
+        "6.1.3 Menghayati sifat-sifat mulia Nabi Muhammad SAW (Amanah, Siddiq)."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 3 maklumat peribadi Nabi (nama, ibu, bapa).",
+        "Murid dapat menceritakan semula peristiwa tahun gajah secara ringkas.",
+        "Murid dapat menyatakan 2 sifat mulia Nabi Muhammad SAW."
+      ],
+      "activities": [
+        "Bercerita: Guru menceritakan kisah kelahiran Nabi (Tahun Gajah).",
+        "Latih Amal: Melafazkan selawat ke atas Nabi.",
+        "Perbincangan: Mencontohi sifat Amanah dalam kehidupan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan tentang maklumat peribadi Nabi.",
+        "Latihan Bertulis: Melengkapkan cerita kelahiran Nabi.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melafazkan selawat."
+      ],
+      "aids": [
+        "Buku cerita/video ringkas Sirah Kelahiran Nabi.",
+        "Carta maklumat peribadi Nabi Muhammad SAW.",
+        "Rakaman audio selawat."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 10: Doa Harian Asas",
+      "skill_name": "Adab dan Hafazan",
+      "standards": [
+        "4.2.1 Melafazkan doa sebelum dan selepas makan.",
+        "4.2.2 Melafazkan doa sebelum dan selepas tidur.",
+        "4.2.3 Mengamalkan adab-adab sebelum dan selepas melakukan aktiviti harian."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan 4 doa harian asas dengan betul dan lancar.",
+        "Murid dapat menunjukkan adab makan dan tidur yang betul.",
+        "Murid dapat membezakan adab yang baik dan buruk (asas)."
+      ],
+      "activities": [
+        "Hafazan: Doa harian (sebelum makan, selepas makan, sebelum tidur, selepas tidur).",
+        "Simulasi: Adab makan dan tidur yang betul.",
+        "Nyanyian: Lagu Doa Harian."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan 4 doa harian.",
+        "Penilaian Amali: Pemerhatian adab makan dan tidur (simulasi).",
+        "Latihan Bertulis: Menyusun adab mengikut urutan."
+      ],
+      "aids": [
+        "Carta Doa Harian.",
+        "Audio/video doa harian.",
+        "Kad gambar adab."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 2: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 2,
+      "topic_name": "Unit 1: Akidah - Nama-Nama Allah (Asmaul Husna)",
+      "skill_name": "Akidah",
+      "standards": [
+        "1.1.1 Menyatakan 10 Asmaul Husna (Ar-Rahman, Ar-Rahim, Al-Malik, dll).",
+        "1.1.2 Menerangkan maksud 5 Asmaul Husna terpilih.",
+        "1.1.3 Menghayati dan mengamalkan tuntutan Asmaul Husna."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 10 Asmaul Husna terpilih.",
+        "Murid dapat menyatakan maksud Al-Malik (Maha Menguasai) dan Al-Ahad (Maha Esa).",
+        "Murid dapat menunjukkan 2 amalan berdasarkan Asmaul Husna."
+      ],
+      "activities": [
+        "Nyanyian: Lagu Asmaul Husna.",
+        "Latih Amal: Menulis 10 Asmaul Husna.",
+        "Perbincangan: Bagaimana kita mencontohi sifat Ar-Rahman (bersikap belas kasihan)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan Asmaul Husna.",
+        "Latihan Bertulis: Padankan Asmaul Husna dengan maksudnya.",
+        "Penilaian Amali: Pemerhatian amalan berdasarkan Asmaul Husna."
+      ],
+      "aids": [
+        "Poster Asmaul Husna bergambar.",
+        "Video/audio nyanyian Asmaul Husna.",
+        "Buku cerita ringkas Asmaul Husna."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 2: Ibadah - Azan dan Iqamah",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.1.1 Menyatakan pengertian dan hukum Azan/Iqamah.",
+        "2.1.2 Melafazkan Azan dan Iqamah dengan betul.",
+        "2.1.3 Menjawab lafaz Azan dan Iqamah."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan hukum Azan (Sunat Muakkad).",
+        "Murid dapat melafazkan Azan dan Iqamah mengikut tertib.",
+        "Murid dapat menjawab lafaz Azan dengan betul."
+      ],
+      "activities": [
+        "Demonstrasi: Guru menunjukkan cara lafaz Azan dan Iqamah yang betul.",
+        "Latih Amal: Murid berpasangan melafazkan Azan dan Iqamah (simulasi).",
+        "Hafazan: Doa selepas Azan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian lafaz Azan dan Iqamah (dinilai sebutan dan tertib).",
+        "Ujian Lisan: Hafalan doa selepas Azan.",
+        "Latihan Bertulis: Menyusun kalimah Azan mengikut tertib."
+      ],
+      "aids": [
+        "Carta lafaz Azan dan Iqamah.",
+        "Rakaman audio Azan yang betul.",
+        "Pembesar suara mini (untuk simulasi)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 3: Praktikal Solat Fardu 2 Rakaat",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.2.1 Menyatakan rukun dan syarat sah Solat.",
+        "2.2.2 Melakukan perbuatan dan bacaan Solat Fardu 2 rakaat (Subuh).",
+        "2.2.3 Mengenal pasti perkara-perkara yang membatalkan Solat."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 5 rukun Solat asas.",
+        "Murid dapat melakukan perbuatan dan bacaan Solat Subuh dengan betul.",
+        "Murid dapat menyatakan 3 perkara yang membatalkan Solat (cth: berhadas, bercakap)."
+      ],
+      "activities": [
+        "Demonstrasi: Guru menunjukkan perbuatan Solat yang betul (Subuh).",
+        "Latih Amal: Solat Subuh secara beramai-ramai (bacaan dilafazkan kuat).",
+        "Perbincangan: Kepentingan khusyuk dalam Solat."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian perbuatan Solat Subuh (dinilai rukun dan tertib).",
+        "Ujian Lisan: Bacaan dalam Solat (cth: Surah Al-Fatihah, Tahiyat Awal/Akhir asas).",
+        "Latihan Bertulis: Senaraikan rukun dan perkara batal Solat."
+      ],
+      "aids": [
+        "Papan tulis/skrin untuk tayangan bacaan Solat.",
+        "Sejadah.",
+        "Video demonstrasi Solat ."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 4: Al-Quran - Surah An-Nas dan Al-Falaq",
+      "skill_name": "Tilawah dan Hafazan",
+      "standards": [
+        "3.1.1 Membaca Surah An-Nas dan Al-Falaq dengan betul.",
+        "3.1.2 Menghafaz Surah An-Nas dan Al-Falaq dengan lancar.",
+        "3.1.3 Menyatakan maksud ringkas kedua-dua surah (memohon perlindungan)."
+      ],
+      "objectives": [
+        "Murid dapat membaca Surah An-Nas dan Al-Falaq dengan makhraj yang betul.",
+        "Murid dapat menghafaz kedua-dua surah tanpa kesalahan.",
+        "Murid dapat menyatakan bahawa kedua-dua surah ini adalah 'Al-Mu'awwizatain' (dua surah perlindungan)."
+      ],
+      "activities": [
+        "Latih tubi: Membaca dan mengulang ayat-ayat (talqin).",
+        "Hafazan: Menghafaz secara individu dan berpasangan.",
+        "Perbincangan: Bilakah waktu yang sesuai untuk membaca kedua-dua surah ini (cth: sebelum tidur)."
+      ],
+      "assessments": [
+        "Ujian Lisan (Tasmi'): Bacaan dan hafalan Surah An-Nas dan Al-Falaq.",
+        "Latihan Bertulis: Menyusun potongan ayat (jumbled sentences).",
+        "Kuiz Maksud: Soalan tentang perlindungan daripada kejahatan."
+      ],
+      "aids": [
+        "Mushaflah.",
+        "Rakaman audio bacaan Surah An-Nas dan Al-Falaq.",
+        "Carta maksud surah."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 5: Adab di Masjid dan Surau",
+      "skill_name": "Adab dan Akhlak",
+      "standards": [
+        "4.1.1 Menyatakan adab-adab ke Masjid/Surau.",
+        "4.1.2 Mengaplikasikan adab di Masjid/Surau.",
+        "4.1.3 Menghayati kelebihan pergi ke Masjid/Surau."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 adab ke Masjid (cth: memakai pakaian bersih, Solat Tahiyatul Masjid).",
+        "Murid dapat melafazkan niat i'tikaf (ringkas).",
+        "Murid dapat menunjukkan cara masuk dan keluar Masjid yang betul."
+      ],
+      "activities": [
+        "Simulasi: Adab masuk, keluar, dan duduk di Masjid.",
+        "Hafazan: Doa masuk dan keluar Masjid.",
+        "Perbincangan: Ganjaran berjalan ke Masjid."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian amalan adab di Masjid (simulasi).",
+        "Ujian Lisan: Hafalan doa masuk dan keluar Masjid.",
+        "Latihan Bertulis: Melengkapkan ayat tentang adab di Masjid."
+      ],
+      "aids": [
+        "Carta Doa Masjid.",
+        "Video simulasi adab di Masjid.",
+        "Model Masjid ringkas."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 6: Sirah - Sifat Wajib bagi Rasul",
+      "skill_name": "Sirah Nabawiyyah",
+      "standards": [
+        "6.1.1 Menyatakan 4 sifat wajib bagi Rasul (Siddiq, Amanah, Tabligh, Fatanah).",
+        "6.1.2 Menerangkan maksud 4 sifat wajib Rasul.",
+        "6.1.3 Mencontohi sifat-sifat Rasul dalam kehidupan."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 sifat wajib bagi Rasul dengan betul.",
+        "Murid dapat menerangkan maksud Siddiq (benar) dan Amanah (dipercayai).",
+        "Murid dapat memberikan 1 contoh amalan bagi setiap sifat wajib."
+      ],
+      "activities": [
+        "Bercerita: Kisah-kisah ringkas yang menunjukkan sifat Rasul.",
+        "Latih Amal: Melafazkan 4 sifat wajib Rasul.",
+        "Perbincangan: Mengapa Rasulullah SAW digelar Al-Amin (contoh sifat Amanah)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan dan maksud 4 sifat wajib Rasul.",
+        "Latihan Bertulis: Padankan sifat dengan maksudnya.",
+        "Penilaian Amali: Pemerhatian keupayaan murid memberikan contoh amalan."
+      ],
+      "aids": [
+        "Poster 4 Sifat Wajib Rasul.",
+        "Kad imbas sifat Rasul.",
+        "Buku cerita ringkas Sirah."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 7: Akidah - Rukun Islam",
+      "skill_name": "Akidah",
+      "standards": [
+        "1.2.1 Menyatakan 5 Rukun Islam dan menghafalnya.",
+        "1.2.2 Menerangkan maksud Rukun Islam secara ringkas.",
+        "1.2.3 Mengamalkan Rukun Islam dalam kehidupan."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 5 Rukun Islam dengan betul.",
+        "Murid dapat menyatakan maksud Syahadah dan Solat.",
+        "Murid dapat menyanyikan lagu Rukun Islam."
+      ],
+      "activities": [
+        "Nyanyian: Lagu Rukun Islam.",
+        "Latih Amal: Melafazkan 5 Rukun Islam secara berkumpulan.",
+        "Perbincangan: Rukun Islam sebagai asas agama."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan Rukun Islam.",
+        "Latihan Bertulis: Menyusun Rukun Islam mengikut tertib.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melafazkan Syahadah."
+      ],
+      "aids": [
+        "Carta Rukun Islam bergambar.",
+        "Audio/video lagu Rukun Islam.",
+        "Kad imbas Rukun Islam."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 8: Jawi - Vokal dan Perkataan KV",
+      "skill_name": "Jawi dan Khat",
+      "standards": [
+        "5.1.1 Mengenal pasti huruf vokal dalam Jawi (Alif, Wau, Ya).",
+        "5.1.2 Membaca dan menulis perkataan Jawi berstruktur KV (konsonan-vokal).",
+        "5.1.3 Membina 3 perkataan Jawi berstruktur KV."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 3 huruf vokal Jawi (Alif-a, Wau-u/o, Ya-i/e).",
+        "Murid dapat membaca 5 perkataan Jawi KV (cth: با, بي, بو).",
+        "Murid dapat menulis 3 perkataan Jawi KV dengan betul."
+      ],
+      "activities": [
+        "Latih tubi: Sebutan dan penulisan vokal Jawi.",
+        "Latihan Bertulis: Menyalin dan menulis perkataan KV.",
+        "Permainan: Padankan bunyi Rumi dengan tulisan Jawi KV."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Keupayaan murid menulis perkataan Jawi KV.",
+        "Ujian Lisan: Bacaan perkataan Jawi KV.",
+        "Latihan Bertulis: Melengkapkan jadual padanan vokal."
+      ],
+      "aids": [
+        "Carta huruf vokal Jawi dan bunyinya.",
+        "Kad perkataan Jawi KV.",
+        "Buku latihan bergaris."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 9: Adab terhadap Guru",
+      "skill_name": "Adab dan Akhlak",
+      "standards": [
+        "4.2.1 Menyatakan adab-adab terhadap guru.",
+        "4.2.2 Menghormati dan mentaati guru.",
+        "4.2.3 Mengaplikasikan adab terhadap guru dalam pembelajaran."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 adab terhadap guru (cth: memberi salam, mendengar nasihat, bercakap sopan).",
+        "Murid dapat melafazkan ucapan terima kasih kepada guru.",
+        "Murid dapat berlakon adab yang baik terhadap guru."
+      ],
+      "activities": [
+        "Lakonan: Simulasi adab yang baik terhadap guru (di dalam dan di luar kelas).",
+        "Latih Amal: Memberi salam yang betul kepada guru.",
+        "Perbincangan: Ganjaran menghormati guru."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian tingkah laku (simulasi lakonan adab).",
+        "Ujian Lisan: Soalan tentang adab di sekolah.",
+        "Latihan Bertulis: Melengkapkan ayat tentang adab terhadap guru."
+      ],
+      "aids": [
+        "Carta Adab Murid dengan Guru.",
+        "Kad senario adab di sekolah.",
+        "Buku cerita ringkas tentang adab."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 10: Ulangan dan Pengukuhan Asas",
+      "skill_name": "Sintesis PAI",
+      "standards": [
+        "7.1.1 Menyatakan hubungan Rukun Islam dan Rukun Iman.",
+        "7.1.2 Menyelesaikan masalah ibadah asas (cth: perkara batal Solat/Wuduk).",
+        "7.1.3 Menghubungkan adab dengan tuntutan agama."
+      ],
+      "objectives": [
+        "Murid dapat membezakan antara Rukun Islam dan Rukun Iman.",
+        "Murid dapat mengenal pasti 2 kesalahan Solat/Wuduk yang biasa dilakukan (simulasi).",
+        "Murid dapat merumuskan 3 konsep asas PAI Tahun 1 dan 2."
+      ],
+      "activities": [
+        "Permainan Papan: Melibatkan soalan Akidah, Fiqh, dan Adab.",
+        "Kuiz Interaktif: Ulang kaji konsep asas PAI.",
+        "Perbincangan: Aplikasi PAI dalam harian (cth: sebelum makan mesti berwuduk?)."
+      ],
+      "assessments": [
+        "Ujian Akhir: Soalan campuran yang merangkumi semua topik.",
+        "Penilaian Amali: Pemerhatian keupayaan murid mengenal pasti kesalahan ibadah.",
+        "Ujian Lisan: Soalan sintesis tentang Rukun Islam/Iman."
+      ],
+      "aids": [
+        "Kad imbas istilah PAI.",
+        "Buku Kerja Ulang Kaji.",
+        "Permainan PAI yang direka khas."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 3: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 3,
+      "topic_name": "Unit 1: Akidah - Malaikat dan Tugasnya",
+      "skill_name": "Akidah",
+      "standards": [
+        "1.1.1 Menyatakan nama 10 Malaikat dan tugas utama mereka.",
+        "1.1.2 Menerangkan kepentingan beriman kepada Malaikat.",
+        "1.1.3 Mengamalkan sifat-sifat Malaikat (patuh, taat) dalam kehidupan."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 10 nama Malaikat yang wajib diketahui.",
+        "Murid dapat menyatakan tugas Malaikat Jibril, Mikail, dan Izrail.",
+        "Murid dapat mengamalkan sifat Malaikat (taat) dalam melaksanakan arahan guru."
+      ],
+      "activities": [
+        "Hafazan: 10 nama Malaikat dan tugas mereka.",
+        "Aktiviti Kumpulan: Mencari maklumat tentang Malaikat yang mencatat amalan.",
+        "Perbincangan: Jika Malaikat sentiasa mencatat, bagaimana kita perlu bersikap?"
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan nama dan tugas Malaikat.",
+        "Latihan Bertulis: Padankan Malaikat dengan tugasnya.",
+        "Penilaian Amali: Pemerhatian tingkah laku (taat dan patuh)."
+      ],
+      "aids": [
+        "Carta 10 Malaikat dan Tugasnya.",
+        "Video kisah Malaikat.",
+        "Kad imbas nama Malaikat."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 2: Ibadah - Mandi Wajib",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.1.1 Menyatakan pengertian dan sebab-sebab Mandi Wajib.",
+        "2.1.2 Melafazkan niat Mandi Wajib dan melakukan rukunnya.",
+        "2.1.3 Melakukan Mandi Wajib mengikut tertib yang betul."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan maksud dan 2 sebab Mandi Wajib (cth: Haid, nifas - hanya sebut 'sebab-sebab tertentu' bagi lelaki).",
+        "Murid dapat melafazkan niat Mandi Wajib dengan betul.",
+        "Murid dapat menyenaraikan 3 rukun Mandi Wajib."
+      ],
+      "activities": [
+        "Demonstrasi: Guru menunjukkan cara Mandi Wajib (simulasi tanpa air).",
+        "Hafazan: Niat Mandi Wajib.",
+        "Perbincangan: Perbezaan antara Mandi Wajib dan mandi biasa."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian amalan Mandi Wajib (simulasi).",
+        "Ujian Lisan: Hafalan niat Mandi Wajib.",
+        "Latihan Bertulis: Menyusun rukun Mandi Wajib mengikut tertib."
+      ],
+      "aids": [
+        "Carta langkah Mandi Wajib bergambar.",
+        "Rakaman audio niat Mandi Wajib.",
+        "Ruang simulasi Mandi Wajib."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 3: Praktikal Solat Fardu 3 Rakaat (Maghrib)",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.2.1 Menyatakan rukun Solat yang lengkap (13 rukun).",
+        "2.2.2 Melakukan Solat Fardu Maghrib dengan perbuatan dan bacaan yang sempurna.",
+        "2.2.3 Mengaplikasikan perbuatan Solat yang betul (cth: tuma'ninah)."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 13 rukun Solat.",
+        "Murid dapat melakukan Solat Maghrib dengan perbuatan dan bacaan yang betul.",
+        "Murid dapat mengaplikasikan tuma'ninah (berhenti seketika) dalam setiap rukun perbuatan."
+      ],
+      "activities": [
+        "Demonstrasi: Solat Maghrib secara individu dan beramai-ramai.",
+        "Latih Amal: Latih tubi tuma'ninah dalam Solat.",
+        "Perbincangan: Bacaan Solat yang wajib dan sunat."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian perbuatan Solat Maghrib (dinilai rukun, tertib, dan tuma'ninah).",
+        "Ujian Lisan: Bacaan Tahiyat Akhir.",
+        "Latihan Bertulis: Labelkan rukun Solat pada rajah."
+      ],
+      "aids": [
+        "Carta 13 Rukun Solat.",
+        "Sejadah.",
+        "Video Solat Maghrib."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 4: Solat Jemaah dan Solat Sunat Rawatib",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.3.1 Menyatakan pengertian dan hukum Solat Jemaah.",
+        "2.3.2 Mengenal pasti kedudukan Imam dan Makmum.",
+        "2.3.3 Mengenal pasti Solat Sunat Rawatib (asas)."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan hukum Solat Jemaah (Fardu Kifayah/Sunat Muakkad).",
+        "Murid dapat menunjukkan kedudukan Imam dan Makmum yang betul.",
+        "Murid dapat menyatakan 2 jenis Solat Sunat Rawatib (Qabliyyah, Ba'diyyah)."
+      ],
+      "activities": [
+        "Simulasi: Kedudukan Imam dan Makmum (di dalam kelas).",
+        "Latih Amal: Latihan Solat Jemaah (ringkas).",
+        "Perbincangan: Kelebihan Solat Jemaah."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian kedudukan Imam dan Makmum (simulasi).",
+        "Ujian Lisan: Soalan konsep Solat Jemaah.",
+        "Latihan Bertulis: Melabelkan kedudukan Imam/Makmum pada rajah."
+      ],
+      "aids": [
+        "Rajah kedudukan Imam dan Makmum .",
+        "Sejadah.",
+        "Buku panduan Solat Jemaah."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 5: Al-Quran - Surah Al-Ikhlas, Al-Kafirun",
+      "skill_name": "Tilawah dan Hafazan",
+      "standards": [
+        "3.1.1 Membaca Surah Al-Ikhlas dan Al-Kafirun dengan betul.",
+        "3.1.2 Menghafaz kedua-dua surah dengan lancar.",
+        "3.1.3 Menyatakan maksud ringkas kedua-dua surah (Tauhid dan perbezaan agama)."
+      ],
+      "objectives": [
+        "Murid dapat membaca Surah Al-Ikhlas dan Al-Kafirun dengan tajwid asas.",
+        "Murid dapat menghafaz kedua-dua surah tanpa kesalahan.",
+        "Murid dapat menyatakan Surah Al-Ikhlas sebagai Surah Tauhid."
+      ],
+      "activities": [
+        "Latih tubi: Membaca dan mengulang ayat-ayat (talqin).",
+        "Hafazan: Menghafaz secara individu dan berpasangan.",
+        "Perbincangan: Inti sari Surah Al-Ikhlas (Allah itu Esa, tiada sekutu)."
+      ],
+      "assessments": [
+        "Ujian Lisan (Tasmi'): Bacaan dan hafalan Surah Al-Ikhlas dan Al-Kafirun.",
+        "Latihan Bertulis: Melengkapkan ayat-ayat surah.",
+        "Kuiz Maksud: Soalan tentang konsep Tauhid."
+      ],
+      "aids": [
+        "Mushaflah.",
+        "Rakaman audio bacaan surah.",
+        "Carta maksud surah."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 6: Adab Bergaul Sesama Rakan",
+      "skill_name": "Adab dan Akhlak",
+      "standards": [
+        "4.1.1 Menyatakan adab-adab bergaul dengan rakan sebaya.",
+        "4.1.2 Mengamalkan sikap tolong-menolong dan bekerjasama.",
+        "4.1.3 Menjauhi sifat iri hati dan bergaduh sesama rakan."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 adab bergaul dengan rakan (cth: bercakap benar, tidak mencaci).",
+        "Murid dapat menunjukkan 2 amalan tolong-menolong di dalam kelas.",
+        "Murid dapat membezakan antara kawan yang baik dan kawan yang buruk."
+      ],
+      "activities": [
+        "Lakonan: Simulasi membantu rakan yang dalam kesusahan.",
+        "Perbincangan: Kepentingan menjaga hubungan silaturahim.",
+        "Aktiviti Kumpulan: Melakukan tugasan bersama (aplikasi kerjasama)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian tingkah laku (semasa aktiviti berkumpulan).",
+        "Ujian Lisan: Soalan tentang adab berkawan.",
+        "Latihan Bertulis: Melengkapkan ayat tentang adab bergaul."
+      ],
+      "aids": [
+        "Carta Adab Bergaul.",
+        "Kad senario konflik rakan.",
+        "Video motivasi persahabatan Islam."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 7: Jawi - Perkataan KVK dan KVKK",
+      "skill_name": "Jawi dan Khat",
+      "standards": [
+        "5.1.1 Membaca dan menulis perkataan Jawi berstruktur KVK dan KVKK.",
+        "5.1.2 Menukar perkataan Rumi kepada Jawi bagi struktur KVK dan KVKK.",
+        "5.1.3 Menulis perkataan Jawi daripada kiri ke kanan dengan lancar."
+      ],
+      "objectives": [
+        "Murid dapat membaca 5 perkataan Jawi KVK (cth: كلي, كچيل).",
+        "Murid dapat menulis 5 perkataan Rumi kepada Jawi (KVK/KVKK).",
+        "Murid dapat membezakan penulisan huruf 'Ga' dan 'Nga'."
+      ],
+      "activities": [
+        "Latih Amal: Menukar Rumi ke Jawi (KVK/KVKK) menggunakan jadual panduan.",
+        "Latihan Bertulis: Menyalin dan membaca perkataan Jawi yang lebih panjang.",
+        "Permainan: 'Siapa Cepat Menulis Jawi'."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Keupayaan murid menukar Rumi ke Jawi (KVK/KVKK).",
+        "Ujian Lisan: Bacaan perkataan Jawi KVK/KVKK.",
+        "Latihan Bertulis: Melengkapkan jadual penukaran Jawi."
+      ],
+      "aids": [
+        "Jadual panduan penulisan Jawi (KVK/KVKK).",
+        "Kad perkataan Jawi yang lebih kompleks.",
+        "Papan tulis Jawi."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 8: Sirah - Kerasulan Nabi Muhammad SAW",
+      "skill_name": "Sirah Nabawiyyah",
+      "standards": [
+        "6.1.1 Menceritakan peristiwa penerimaan wahyu pertama (Jibril/Gua Hira').",
+        "6.1.2 Menyatakan cara penyebaran dakwah (sulit dan terang-terangan).",
+        "6.1.3 Menghayati kesabaran dan ketabahan Nabi dalam berdakwah."
+      ],
+      "objectives": [
+        "Murid dapat menceritakan semula peristiwa penerimaan wahyu pertama secara ringkas.",
+        "Murid dapat menyatakan Surah Al-Alaq (ayat 1-5) sebagai wahyu pertama.",
+        "Murid dapat membezakan dakwah secara sulit dan terang-terangan."
+      ],
+      "activities": [
+        "Bercerita: Kisah penerimaan wahyu dan permulaan dakwah.",
+        "Latih Amal: Melafazkan kalimah 'Iqra' (baca).",
+        "Perbincangan: Bagaimana kita boleh berdakwah secara kecil-kecilan (cth: ajak Solat)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan tentang wahyu pertama dan Gua Hira'.",
+        "Latihan Bertulis: Menyusun peristiwa penerimaan wahyu.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan ketabahan Nabi."
+      ],
+      "aids": [
+        "Buku cerita/video ringkas Sirah Wahyu Pertama.",
+        "Ilustrasi Gua Hira'.",
+        "Carta konsep dakwah."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 9: Adab Makan dan Minum",
+      "skill_name": "Adab dan Akhlak",
+      "standards": [
+        "4.2.1 Menyatakan adab-adab sebelum, semasa, dan selepas makan/minum.",
+        "4.2.2 Melafazkan doa sebelum dan selepas makan/minum.",
+        "4.2.3 Mengamalkan adab makan dan minum yang sunnah."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 adab makan/minum (cth: guna tangan kanan, tidak mencela makanan).",
+        "Murid dapat melafazkan doa makan/minum dengan lancar.",
+        "Murid dapat menunjukkan cara makan dan minum mengikut sunnah."
+      ],
+      "activities": [
+        "Simulasi: Adab makan dan minum yang betul (guna makanan/minuman sebenar).",
+        "Hafazan: Doa sebelum dan selepas makan/minum.",
+        "Perbincangan: Mengapa kita perlu menghabiskan makanan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian adab makan dan minum (simulasi).",
+        "Ujian Lisan: Hafalan doa makan dan minum.",
+        "Latihan Bertulis: Menyusun adab makan mengikut urutan."
+      ],
+      "aids": [
+        "Carta Adab Makan dan Minum.",
+        "Alatan makanan dan minuman (contoh: pinggan, cawan).",
+        "Audio doa makan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 10: Hadis - Kebersihan",
+      "skill_name": "Hadis",
+      "standards": [
+        "3.2.1 Mengenal pasti Hadis tentang kebersihan (ringkas).",
+        "3.2.2 Menyatakan maksud 'Kebersihan sebahagian daripada Iman'.",
+        "3.2.3 Mengamalkan kebersihan diri, pakaian, dan tempat tinggal."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan ringkasan Hadis tentang kebersihan.",
+        "Murid dapat menerangkan maksud Hadis tentang kebersihan.",
+        "Murid dapat menunjukkan 2 amalan menjaga kebersihan (diri dan kelas)."
+      ],
+      "activities": [
+        "Hafazan: Ringkasan Hadis kebersihan.",
+        "Aktiviti Kumpulan: Projek Kebersihan Kelas/Sekolah.",
+        "Perbincangan: Kaitan antara kebersihan dan kesihatan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan ringkasan Hadis.",
+        "Latihan Bertulis: Soalan konsep kebersihan dalam Islam.",
+        "Penilaian Amali: Pemerhatian kebersihan diri dan persekitaran murid."
+      ],
+      "aids": [
+        "Carta Hadis Kebersihan .",
+        "Alat kebersihan (simulasi).",
+        "Poster kebersihan diri."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 4: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 4,
+      "topic_name": "Unit 1: Akidah - Kitab Allah (Al-Quran)",
+      "skill_name": "Akidah",
+      "standards": [
+        "1.1.1 Menyatakan nama 4 Kitab Allah yang wajib diketahui.",
+        "1.1.2 Menerangkan maksud beriman kepada Kitab Allah.",
+        "1.1.3 Mengamalkan adab terhadap Al-Quran."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 Kitab Allah dan Rasul penerimanya.",
+        "Murid dapat menyatakan 3 adab terhadap Al-Quran (cth: berwuduk sebelum sentuh, tidak letak di tempat rendah).",
+        "Murid dapat membezakan antara Al-Quran dengan Kitab-kitab lain."
+      ],
+      "activities": [
+        "Hafazan: Nama 4 Kitab Allah dan Rasul penerima.",
+        "Perbincangan: Kelebihan membaca Al-Quran.",
+        "Aktiviti Kumpulan: Menyatakan adab terhadap Al-Quran dan Kitab-kitab lain."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan nama Kitab dan Rasul.",
+        "Latihan Bertulis: Soalan adab terhadap Al-Quran.",
+        "Penilaian Amali: Pemerhatian amalan adab terhadap Al-Quran."
+      ],
+      "aids": [
+        "Carta 4 Kitab Allah.",
+        "Al-Quran/Mushaflah.",
+        "Buku cerita ringkas tentang Kitab Allah."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 2: Ibadah - Puasa (Rukun dan Syarat)",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.1.1 Menyatakan pengertian, hukum, rukun, dan syarat sah Puasa.",
+        "2.1.2 Melafazkan niat Puasa Fardu.",
+        "2.1.3 Mengamalkan Puasa Ramadhan."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan hukum Puasa Ramadhan (Fardu Ain).",
+        "Murid dapat menyenaraikan 2 rukun dan 3 syarat wajib Puasa.",
+        "Murid dapat melafazkan niat Puasa Ramadhan dan niat berbuka Puasa."
+      ],
+      "activities": [
+        "Hafazan: Niat Puasa Ramadhan dan niat berbuka Puasa.",
+        "Perbincangan: Hikmah Puasa.",
+        "Simulasi: Waktu bersahur dan berbuka Puasa."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan niat Puasa.",
+        "Latihan Bertulis: Menyatakan rukun dan syarat Puasa.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan adab Puasa."
+      ],
+      "aids": [
+        "Carta Panduan Puasa.",
+        "Rakaman audio niat Puasa.",
+        "Ilustrasi suasana Ramadhan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 3: Praktikal Solat Fardu 4 Rakaat (Zuhur/Asar/Isyak)",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.2.1 Melakukan Solat Fardu 4 rakaat dengan perbuatan dan bacaan yang sempurna.",
+        "2.2.2 Menyatakan maksud bacaan Solat (Surah Al-Fatihah, Tahiyat Akhir).",
+        "2.2.3 Mengaplikasikan perbuatan Solat yang betul (cth: I'tidal)."
+      ],
+      "objectives": [
+        "Murid dapat melakukan Solat 4 rakaat dengan perbuatan dan bacaan yang betul.",
+        "Murid dapat menyatakan maksud ringkas Al-Fatihah dan Tahiyat Akhir.",
+        "Murid dapat mengaplikasikan I'tidal (bangun dari rukuk) dengan tuma'ninah."
+      ],
+      "activities": [
+        "Demonstrasi: Solat 4 rakaat secara beramai-ramai (perlakuan dan bacaan Sirr dan Jahr).",
+        "Latih Amal: Latih tubi perbuatan I'tidal dan Sujud.",
+        "Perbincangan: Kenapa Solat Zuhur/Asar/Isyak ada perbezaan dalam bacaan (Sirr dan Jahr)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian perbuatan Solat 4 rakaat (dinilai rukun dan tertib).",
+        "Ujian Lisan: Bacaan Tahiyat Akhir dan maksud ringkasnya.",
+        "Latihan Bertulis: Labelkan perbuatan Solat pada rajah."
+      ],
+      "aids": [
+        "Carta perbuatan Solat 4 rakaat .",
+        "Sejadah.",
+        "Video Solat 4 rakaat."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 4: Perkara yang Membatalkan Puasa",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.3.1 Menyatakan 5 perkara yang membatalkan Puasa.",
+        "2.3.2 Membezakan antara perkara makruh dan batal Puasa.",
+        "2.3.3 Menghindari perkara yang membatalkan dan merosakkan pahala Puasa."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 5 perkara yang membatalkan Puasa (cth: makan/minum dengan sengaja, muntah dengan sengaja).",
+        "Murid dapat membezakan antara Makruh Puasa dan Batal Puasa.",
+        "Murid dapat menjelaskan kenapa perkara-perkara tersebut membatalkan Puasa."
+      ],
+      "activities": [
+        "Permainan: 'Betul atau Batal' (senario Puasa).",
+        "Perbincangan: Nasihat untuk mengelakkan perkara batal Puasa.",
+        "Latih Amal: Menulis senarai perkara batal dan makruh Puasa."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan konsep perkara batal Puasa.",
+        "Latihan Bertulis: Menyatakan 5 perkara batal Puasa.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan senario makruh Puasa."
+      ],
+      "aids": [
+        "Carta Perkara Batal dan Makruh Puasa.",
+        "Kad senario Puasa.",
+        "Buku panduan Puasa."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 5: Al-Quran - Surah Al-Ma'un, Al-Kauthar",
+      "skill_name": "Tilawah dan Hafazan",
+      "standards": [
+        "3.1.1 Membaca Surah Al-Ma'un dan Al-Kauthar dengan betul dan bertajwid (asas).",
+        "3.1.2 Menghafaz kedua-dua surah dengan lancar.",
+        "3.1.3 Menyatakan maksud ringkas kedua-dua surah (menjaga anak yatim, kurniaan Allah)."
+      ],
+      "objectives": [
+        "Murid dapat membaca Surah Al-Ma'un dan Al-Kauthar dengan tajwid asas (cth: Ikhfa').",
+        "Murid dapat menghafaz kedua-dua surah tanpa kesalahan.",
+        "Murid dapat menyatakan 2 inti sari Surah Al-Ma'un (cth: larangan mengherdik anak yatim)."
+      ],
+      "activities": [
+        "Latih tubi: Membaca dan mengulang ayat-ayat (talqin).",
+        "Hafazan: Menghafaz secara individu (Tasmi').",
+        "Perbincangan: Kepentingan menjaga kebajikan anak yatim."
+      ],
+      "assessments": [
+        "Ujian Lisan (Tasmi'): Bacaan dan hafalan Surah Al-Ma'un dan Al-Kauthar.",
+        "Latihan Bertulis: Menyusun potongan ayat dan soalan maksud.",
+        "Kuiz Maksud: Soalan tentang inti sari surah."
+      ],
+      "aids": [
+        "Mushaflah.",
+        "Rakaman audio bacaan surah.",
+        "Carta maksud surah."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 6: Adab Terhadap Harta Awam",
+      "skill_name": "Adab dan Akhlak",
+      "standards": [
+        "4.1.1 Menyatakan adab-adab terhadap harta awam dan sekolah.",
+        "4.1.2 Menjaga dan menghargai harta awam.",
+        "4.1.3 Menghindari vandalisme."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 adab terhadap harta awam (cth: tidak merosakkan, mengguna dengan berhemat).",
+        "Murid dapat membezakan antara harta awam dan harta persendirian.",
+        "Murid dapat menunjukkan 2 amalan menjaga harta sekolah."
+      ],
+      "activities": [
+        "Perbincangan: Kerosakan harta awam dan kesannya.",
+        "Latih Amal: Projek membersihkan dan menjaga harta sekolah (cth: papan putih, meja).",
+        "Simulasi: Melakonkan akibat vandalisme."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian tingkah laku (semasa aktiviti menjaga harta awam).",
+        "Ujian Lisan: Soalan konsep harta awam.",
+        "Latihan Bertulis: Melengkapkan ayat tentang adab menjaga harta awam."
+      ],
+      "aids": [
+        "Poster Harta Awam Tanggungjawab Bersama.",
+        "Gambar kerosakan harta awam (vandalisme).",
+        "Carta adab menjaga harta."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 7: Jawi - Kata Pinjaman Bahasa Inggeris (Asas)",
+      "skill_name": "Jawi dan Khat",
+      "standards": [
+        "5.1.1 Membaca dan menulis perkataan Jawi yang dipinjam daripada Bahasa Inggeris (asas).",
+        "5.1.2 Mengenal pasti peraturan penulisan Jawi bagi kata pinjaman.",
+        "5.1.3 Menukar perkataan Rumi pinjaman Bahasa Inggeris kepada Jawi."
+      ],
+      "objectives": [
+        "Murid dapat membaca 5 perkataan Jawi pinjaman Bahasa Inggeris (cth: باس, ميديا).",
+        "Murid dapat menulis 5 perkataan Rumi pinjaman Bahasa Inggeris kepada Jawi.",
+        "Murid dapat menyatakan 1 peraturan asas penulisan Jawi pinjaman."
+      ],
+      "activities": [
+        "Latih Amal: Menukar Rumi ke Jawi bagi kata pinjaman.",
+        "Latihan Bertulis: Menyalin perkataan Jawi pinjaman.",
+        "Permainan: Kuiz 'Jawi-kan Perkataan Ini'."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Keupayaan murid menukar Rumi ke Jawi (kata pinjaman BI).",
+        "Ujian Lisan: Bacaan perkataan Jawi pinjaman BI.",
+        "Latihan Bertulis: Melengkapkan jadual penukaran Jawi."
+      ],
+      "aids": [
+        "Jadual panduan penulisan Jawi (kata pinjaman BI).",
+        "Kad perkataan Jawi pinjaman BI.",
+        "Papan tulis Jawi."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 8: Sirah - Peringkat Dakwah (Terang-Terangan)",
+      "skill_name": "Sirah Nabawiyyah",
+      "standards": [
+        "6.1.1 Menceritakan peristiwa Dakwah secara terang-terangan.",
+        "6.1.2 Mengenal pasti bentuk penentangan masyarakat Quraisy.",
+        "6.1.3 Menghayati ketabahan Nabi dan para Sahabat dalam menempuh dugaan."
+      ],
+      "objectives": [
+        "Murid dapat menceritakan semula peristiwa dakwah terang-terangan (cth: di Bukit Safa).",
+        "Murid dapat menyatakan 3 bentuk penentangan Quraisy.",
+        "Murid dapat memberikan 2 contoh ketabahan Nabi Muhammad SAW."
+      ],
+      "activities": [
+        "Bercerita: Kisah Nabi berdakwah secara terbuka dan dugaan yang dihadapi.",
+        "Perbincangan: Mengapa masyarakat Quraisy menentang dakwah Nabi.",
+        "Lakonan: Simulasi ketabahan Nabi dan Sahabat."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan tentang Dakwah Terang-Terangan.",
+        "Latihan Bertulis: Menyusun peristiwa penentangan Quraisy.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan ketabahan."
+      ],
+      "aids": [
+        "Buku cerita/video ringkas Sirah Dakwah Terang-Terangan.",
+        "Ilustrasi Bukit Safa.",
+        "Carta konsep ketabahan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 9: Adab di Tandas dan Bilik Air",
+      "skill_name": "Adab dan Akhlak",
+      "standards": [
+        "4.2.1 Menyatakan adab-adab ke Tandas/Bilik Air.",
+        "4.2.2 Melafazkan doa masuk dan keluar Tandas.",
+        "4.2.3 Mengamalkan Taharah dengan sempurna selepas menggunakan Tandas."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 adab ke Tandas (cth: masuk kaki kiri, tidak bercakap, keluar kaki kanan).",
+        "Murid dapat melafazkan doa masuk dan keluar Tandas dengan betul.",
+        "Murid dapat menunjukkan cara beristinjak yang sempurna."
+      ],
+      "activities": [
+        "Simulasi: Adab masuk, keluar, dan bersuci di Tandas.",
+        "Hafazan: Doa masuk dan keluar Tandas.",
+        "Perbincangan: Kepentingan menjaga kebersihan Tandas awam."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian adab di Tandas (simulasi).",
+        "Ujian Lisan: Hafalan doa Tandas.",
+        "Latihan Bertulis: Menyusun adab di Tandas mengikut urutan."
+      ],
+      "aids": [
+        "Carta Doa Tandas.",
+        "Model Tandas/Bilik Air mini (simulasi).",
+        "Poster kebersihan Tandas."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 10: Hadis - Berbuat Baik kepada Jiran",
+      "skill_name": "Hadis",
+      "standards": [
+        "3.2.1 Mengenal pasti Hadis tentang berbuat baik kepada Jiran (asas).",
+        "3.2.2 Menyatakan maksud 'Berbuat baik kepada Jiran'.",
+        "3.2.3 Mengamalkan adab terhadap Jiran."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan ringkasan Hadis tentang Jiran.",
+        "Murid dapat menyatakan 3 adab terhadap Jiran (cth: memberi hadiah, membantu).",
+        "Murid dapat menjelaskan kenapa penting untuk berbuat baik kepada Jiran."
+      ],
+      "activities": [
+        "Hafazan: Ringkasan Hadis Jiran.",
+        "Lakonan: Simulasi membantu Jiran yang dalam kesusahan.",
+        "Perbincangan: Hak-hak Jiran dalam Islam."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan ringkasan Hadis.",
+        "Latihan Bertulis: Soalan konsep adab Jiran.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan adab Jiran."
+      ],
+      "aids": [
+        "Carta Hadis Jiran.",
+        "Kad senario Jiran.",
+        "Buku cerita ringkas tentang Jiran."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 5: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 5,
+      "topic_name": "Unit 1: Akidah - Hari Kiamat",
+      "skill_name": "Akidah",
+      "standards": [
+        "1.1.1 Menyatakan pengertian dan dalil beriman kepada Hari Kiamat.",
+        "1.1.2 Menerangkan Tanda-Tanda Kecil Hari Kiamat (asas).",
+        "1.1.3 Mengambil iktibar dan bersedia menghadapi Hari Kiamat."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan maksud Hari Kiamat dan Hari Akhirat.",
+        "Murid dapat menyenaraikan 3 Tanda Kecil Kiamat (cth: ramai minum arak, zina berleluasa).",
+        "Murid dapat menyatakan 2 amalan persediaan menghadapi Hari Kiamat."
+      ],
+      "activities": [
+        "Perbincangan: Peristiwa Hari Kiamat (simulasi ringkas).",
+        "Aktiviti Kumpulan: Menyenaraikan Tanda-Tanda Kecil Kiamat.",
+        "Latih Amal: Membaca doa memohon perlindungan dari azab kubur/neraka."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan konsep Hari Kiamat.",
+        "Latihan Bertulis: Senaraikan Tanda Kecil Kiamat.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melafazkan doa."
+      ],
+      "aids": [
+        "Carta Tanda-Tanda Hari Kiamat (Kecil).",
+        "Video/ilustrasi Hari Kiamat.",
+        "Buku rujukan Akidah."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 2: Ibadah - Zakat Fitrah",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.1.1 Menyatakan pengertian, hukum, dan syarat wajib Zakat Fitrah.",
+        "2.1.2 Mengenal pasti kadar Zakat Fitrah dan waktu menunaikannya.",
+        "2.1.3 Menyelesaikan masalah pengiraan Zakat Fitrah (asas)."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan hukum Zakat Fitrah (Fardu Ain).",
+        "Murid dapat menyatakan kadar Zakat Fitrah (1 gantang/2.6 kg makanan asasi).",
+        "Murid dapat melafazkan niat Zakat Fitrah (untuk diri sendiri dan keluarga)."
+      ],
+      "activities": [
+        "Hafazan: Niat Zakat Fitrah.",
+        "Perbincangan: Golongan penerima Zakat (8 asnaf).",
+        "Simulasi: Lafaz niat dan penyerahan Zakat Fitrah."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan niat Zakat Fitrah.",
+        "Latihan Bertulis: Soalan pengiraan Zakat Fitrah (asas).",
+        "Penilaian Amali: Pemerhatian lafaz niat dan simulasi penyerahan Zakat."
+      ],
+      "aids": [
+        "Carta Panduan Zakat Fitrah.",
+        "Contoh beras (kadar Zakat).",
+        "Borangan niat Zakat."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 3: Praktikal Solat Sunat Hari Raya",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.2.1 Menyatakan pengertian dan hukum Solat Sunat Hari Raya (Aidilfitri/Aidiladha).",
+        "2.2.2 Melakukan Solat Sunat Hari Raya dengan perbuatan dan bacaan yang betul.",
+        "2.2.3 Menyatakan Lafaz Takbir Raya dan melakukannya."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan hukum Solat Sunat Hari Raya (Sunat Muakkad).",
+        "Murid dapat melakukan Solat Sunat Hari Raya dengan 7 takbir (rakaat 1) dan 5 takbir (rakaat 2).",
+        "Murid dapat melafazkan Takbir Raya dengan betul."
+      ],
+      "activities": [
+        "Demonstrasi: Solat Sunat Hari Raya secara beramai-ramai.",
+        "Latih Amal: Latih tubi Takbir Raya.",
+        "Perbincangan: Adab-adab Hari Raya."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian perbuatan Solat Hari Raya (dinilai Takbir Zawa'id).",
+        "Ujian Lisan: Lafaz Takbir Raya.",
+        "Latihan Bertulis: Menyusun perbuatan Solat Hari Raya."
+      ],
+      "aids": [
+        "Carta Takbir Raya.",
+        "Video Solat Hari Raya.",
+        "Sejadah."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 4: Solat Sunat Istikharah dan Dhuha",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.3.1 Menyatakan pengertian, hukum, dan tujuan Solat Sunat Istikharah.",
+        "2.3.2 Menyatakan pengertian, hukum, dan waktu Solat Sunat Dhuha.",
+        "2.3.3 Menghayati kepentingan Solat Sunat dalam kehidupan."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan tujuan Solat Istikharah (memohon petunjuk).",
+        "Murid dapat menyatakan waktu terbaik untuk Solat Dhuha.",
+        "Murid dapat melafazkan niat Solat Istikharah dan Dhuha."
+      ],
+      "activities": [
+        "Perbincangan: Situasi sesuai untuk Solat Istikharah (cth: memilih sekolah).",
+        "Simulasi: Solat Sunat Dhuha di dalam kelas.",
+        "Hafazan: Doa Solat Dhuha."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan konsep Solat Istikharah dan Dhuha.",
+        "Latihan Bertulis: Menyatakan hukum dan waktu Solat Sunat.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melafazkan niat Solat Dhuha."
+      ],
+      "aids": [
+        "Carta Solat Sunat.",
+        "Rakaman audio Doa Dhuha.",
+        "Panduan Solat Sunat."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 5: Al-Quran - Surah Al-Qadr, Al-'Alaq",
+      "skill_name": "Tilawah dan Hafazan",
+      "standards": [
+        "3.1.1 Membaca Surah Al-Qadr dan Al-'Alaq dengan betul.",
+        "3.1.2 Menghafaz kedua-dua surah dengan lancar.",
+        "3.1.3 Menerangkan maksud ringkas Surah Al-Qadr (Lailatul Qadr) dan Al-'Alaq (Iqra')."
+      ],
+      "objectives": [
+        "Murid dapat membaca Surah Al-Qadr dan Al-'Alaq dengan tajwid asas (cth: Ikhfa', Izhar).",
+        "Murid dapat menghafaz kedua-dua surah tanpa kesalahan.",
+        "Murid dapat menyatakan kepentingan Lailatul Qadr."
+      ],
+      "activities": [
+        "Latih tubi: Membaca dan mengulang ayat-ayat (talqin).",
+        "Hafazan: Menghafaz secara individu (Tasmi').",
+        "Perbincangan: Maksud ayat 'Iqra' dan kepentingan ilmu."
+      ],
+      "assessments": [
+        "Ujian Lisan (Tasmi'): Bacaan dan hafalan Surah Al-Qadr dan Al-'Alaq.",
+        "Latihan Bertulis: Soalan maksud ringkas surah.",
+        "Kuiz Maksud: Soalan tentang Lailatul Qadr dan Iqra'."
+      ],
+      "aids": [
+        "Mushaflah.",
+        "Rakaman audio bacaan surah.",
+        "Carta maksud surah."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 6: Adab Menziarahi Orang Sakit dan Jenazah",
+      "skill_name": "Adab dan Akhlak",
+      "standards": [
+        "4.1.1 Menyatakan adab-adab menziarahi orang sakit.",
+        "4.1.2 Menyatakan adab-adab menziarahi Jenazah (takziah).",
+        "4.1.3 Mengamalkan adab yang sopan dalam situasi sakit dan kematian."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 adab menziarahi orang sakit (cth: mendoakan, tidak lama-lama).",
+        "Murid dapat menyatakan adab takziah (cth: memakai pakaian sopan, mendoakan).",
+        "Murid dapat melafazkan doa untuk orang sakit."
+      ],
+      "activities": [
+        "Hafazan: Doa untuk orang sakit.",
+        "Simulasi: Adab menziarahi orang sakit (lakonan).",
+        "Perbincangan: Mengapa kita perlu menziarahi orang sakit/Jenazah."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian tingkah laku (simulasi ziarah).",
+        "Ujian Lisan: Hafalan doa orang sakit.",
+        "Latihan Bertulis: Melengkapkan ayat tentang adab ziarah."
+      ],
+      "aids": [
+        "Carta Adab Ziarah.",
+        "Kad senario ziarah.",
+        "Video ringkas adab ziarah."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 7: Jawi - Perkataan Berimbuhan dan Kata Ganda",
+      "skill_name": "Jawi dan Khat",
+      "standards": [
+        "5.1.1 Membaca dan menulis perkataan Jawi berimbuhan dan kata ganda.",
+        "5.1.2 Mengenal pasti peraturan penulisan Jawi bagi imbuhan (asas) dan kata ganda.",
+        "5.1.3 Menukar perkataan Rumi berimbuhan/kata ganda kepada Jawi."
+      ],
+      "objectives": [
+        "Murid dapat membaca 5 perkataan Jawi berimbuhan dan 3 kata ganda.",
+        "Murid dapat menulis 5 perkataan Rumi berimbuhan kepada Jawi (cth: berlari, makanan).",
+        "Murid dapat menulis kata ganda Jawi dengan tanda sempang (cth: باءيق۲)."
+      ],
+      "activities": [
+        "Latih Amal: Menukar Rumi ke Jawi (imbuhan dan kata ganda) menggunakan jadual panduan.",
+        "Latihan Bertulis: Menyalin perkataan Jawi berimbuhan.",
+        "Permainan: Kuiz 'Jawi-kan Perkataan Kompleks'."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Keupayaan murid menukar Rumi ke Jawi (imbuhan/kata ganda).",
+        "Ujian Lisan: Bacaan perkataan Jawi berimbuhan.",
+        "Latihan Bertulis: Melengkapkan jadual penukaran Jawi."
+      ],
+      "aids": [
+        "Jadual panduan penulisan Jawi (imbuhan dan kata ganda).",
+        "Kad perkataan Jawi yang lebih kompleks.",
+        "Papan tulis Jawi."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 8: Sirah - Hijrah ke Madinah",
+      "skill_name": "Sirah Nabawiyyah",
+      "standards": [
+        "6.1.1 Menceritakan peristiwa Hijrah ke Madinah.",
+        "6.1.2 Mengenal pasti sebab dan tujuan Hijrah.",
+        "6.1.3 Menghayati pengorbanan Nabi dan Sahabat dalam Hijrah."
+      ],
+      "objectives": [
+        "Murid dapat menceritakan semula peristiwa Hijrah dan halangan yang dihadapi.",
+        "Murid dapat menyatakan 2 sebab utama Hijrah.",
+        "Murid dapat menyatakan 2 pengorbanan Sahabat dalam Hijrah (cth: Saidina Ali, Saidina Abu Bakar)."
+      ],
+      "activities": [
+        "Bercerita: Kisah Nabi dan Abu Bakar bersembunyi di Gua Thur.",
+        "Perbincangan: Kepentingan persaudaraan Islam (Muhajirin dan Ansar).",
+        "Lakonan: Simulasi peristiwa Hijrah (ringkas)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan tentang peristiwa Hijrah.",
+        "Latihan Bertulis: Menyusun peristiwa penting Hijrah.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan pengorbanan Sahabat."
+      ],
+      "aids": [
+        "Peta laluan Hijrah Nabi Muhammad SAW .",
+        "Buku cerita/video ringkas Sirah Hijrah.",
+        "Carta konsep pengorbanan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 9: Adab Menjaga Maruah Diri dan Keluarga",
+      "skill_name": "Adab dan Akhlak",
+      "standards": [
+        "4.2.1 Menyatakan kepentingan menjaga maruah diri dan keluarga.",
+        "4.2.2 Menghindari perbuatan yang mencemarkan maruah (cth: mencuri, menipu).",
+        "4.2.3 Mengamalkan sifat pemalu (Haya') dalam kehidupan."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan maksud Maruah diri dan keluarga.",
+        "Murid dapat menyenaraikan 3 perbuatan yang mencemarkan Maruah.",
+        "Murid dapat menunjukkan 2 amalan sifat pemalu (Haya') yang terpuji."
+      ],
+      "activities": [
+        "Perbincangan: Kesan buruk mencemarkan Maruah diri dan keluarga.",
+        "Latih Amal: Melafazkan kalimah 'Istighfar' (memohon ampun).",
+        "Simulasi: Bagaimana bertindak jika dicabar untuk melakukan perbuatan buruk."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian tingkah laku (semasa simulasi).",
+        "Ujian Lisan: Soalan konsep Maruah diri.",
+        "Latihan Bertulis: Melengkapkan ayat tentang menjaga Maruah."
+      ],
+      "aids": [
+        "Carta Kepentingan Menjaga Maruah.",
+        "Kad senario mencemarkan Maruah.",
+        "Poster sifat Haya'."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 10: Hadis - Larangan Mencaci",
+      "skill_name": "Hadis",
+      "standards": [
+        "3.2.1 Mengenal pasti Hadis tentang larangan mencaci.",
+        "3.2.2 Menyatakan maksud 'Mencaci' dan kesan buruknya.",
+        "3.2.3 Menjauhi perbuatan mencaci dan mengumpat."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan ringkasan Hadis larangan mencaci.",
+        "Murid dapat menjelaskan 3 kesan buruk mencaci orang lain.",
+        "Murid dapat menunjukkan 2 amalan bercakap baik dan tidak mengumpat."
+      ],
+      "activities": [
+        "Hafazan: Ringkasan Hadis larangan mencaci.",
+        "Lakonan: Simulasi situasi mencaci dan akibatnya.",
+        "Perbincangan: Kaitan larangan mencaci dengan menjaga silaturahim."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan ringkasan Hadis.",
+        "Latihan Bertulis: Soalan konsep larangan mencaci.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan larangan mencaci."
+      ],
+      "aids": [
+        "Carta Hadis Larangan Mencaci.",
+        "Kad senario perkataan buruk.",
+        "Buku cerita ringkas tentang lisan."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 6: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 6,
+      "topic_name": "Unit 1: Akidah - Qada' dan Qadar",
+      "skill_name": "Akidah",
+      "standards": [
+        "1.1.1 Menyatakan pengertian Qada' dan Qadar.",
+        "1.1.2 Membezakan antara Qada' Mubram dan Qada' Mu'allaq.",
+        "1.1.3 Mengamalkan tawakkal dan berusaha dalam kehidupan."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan maksud Qada' (ketentuan azali) dan Qadar (pelaksanaan).",
+        "Murid dapat memberikan 1 contoh bagi Qada' Mubram (tidak boleh diubah) dan Qada' Mu'allaq (boleh diubah dengan usaha/doa).",
+        "Murid dapat menunjukkan 2 amalan Tawakkal (berserah diri kepada Allah)."
+      ],
+      "activities": [
+        "Perbincangan: Konsep Tawakkal selepas berusaha.",
+        "Aktiviti Kumpulan: Membezakan Qada' Mubram dan Mu'allaq (senario).",
+        "Latih Amal: Membaca doa memohon kemudahan urusan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan konsep Qada' dan Qadar.",
+        "Latihan Bertulis: Membezakan Qada' Mubram dan Mu'allaq.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan usaha dan Tawakkal."
+      ],
+      "aids": [
+        "Carta Qada' dan Qadar.",
+        "Kad senario Qada' (Mubram/Mu'allaq).",
+        "Buku rujukan Akidah."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 2: Ibadah - Korban dan Aqiqah",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.1.1 Menyatakan pengertian, hukum, dan tujuan Korban dan Aqiqah.",
+        "2.1.2 Mengenal pasti waktu dan syarat sah Korban dan Aqiqah.",
+        "2.1.3 Menghayati kepentingan ibadah Korban dan Aqiqah."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan hukum Korban (Sunat Muakkad) dan Aqiqah (Sunat Muakkad).",
+        "Murid dapat menyatakan 2 perbezaan antara Korban dan Aqiqah.",
+        "Murid dapat melafazkan niat Korban dan Aqiqah (asas)."
+      ],
+      "activities": [
+        "Hafazan: Niat Korban dan Aqiqah.",
+        "Perbincangan: Hikmah Korban dan Aqiqah (memberi makan fakir miskin).",
+        "Simulasi: Lafaz niat Korban/Aqiqah."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan konsep Korban dan Aqiqah.",
+        "Latihan Bertulis: Membezakan Korban dan Aqiqah (jadual).",
+        "Penilaian Amali: Pemerhatian lafaz niat dan simulasi."
+      ],
+      "aids": [
+        "Carta Panduan Korban dan Aqiqah.",
+        "Ilustrasi binatang Korban/Aqiqah.",
+        "Borang niat."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 3: Praktikal Solat Sunat Tasbih dan Hajat",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.2.1 Menyatakan pengertian, hukum, dan tujuan Solat Sunat Tasbih.",
+        "2.2.2 Menyatakan pengertian, hukum, dan tujuan Solat Sunat Hajat.",
+        "2.2.3 Mengamalkan Solat Sunat Tasbih dan Hajat."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan tujuan Solat Sunat Tasbih (memohon keampunan).",
+        "Murid dapat menyatakan tujuan Solat Sunat Hajat (memohon sesuatu hajat).",
+        "Murid dapat melafazkan niat Solat Tasbih dan Hajat."
+      ],
+      "activities": [
+        "Perbincangan: Bilakah waktu yang sesuai untuk Solat Tasbih/Hajat.",
+        "Simulasi: Perlakuan Solat Sunat Hajat (2 rakaat).",
+        "Hafazan: Doa selepas Solat Hajat."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan konsep Solat Tasbih dan Hajat.",
+        "Latihan Bertulis: Menyatakan hukum dan tujuan Solat Sunat.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melafazkan niat Solat Hajat."
+      ],
+      "aids": [
+        "Carta Solat Sunat Tasbih dan Hajat.",
+        "Rakaman audio Doa Hajat.",
+        "Panduan Solat Sunat."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 4: Ibadah - Pengurusan Jenazah (Kafan dan Solat)",
+      "skill_name": "Fiqh",
+      "standards": [
+        "2.3.1 Menyatakan proses pengurusan Jenazah (asas).",
+        "2.3.2 Melakukan Solat Jenazah (praktikal dan bacaan).",
+        "2.3.3 Menghayati kematian sebagai nasihat."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 perkara asas pengurusan Jenazah (Mandi, Kafan, Solat, Kebumi).",
+        "Murid dapat melafazkan niat dan Takbir (asas) Solat Jenazah.",
+        "Murid dapat membezakan antara Solat Fardu biasa dan Solat Jenazah."
+      ],
+      "activities": [
+        "Demonstrasi: Solat Jenazah secara beramai-ramai.",
+        "Latih Amal: Lafaz niat dan Takbir Solat Jenazah.",
+        "Perbincangan: Kematian sebagai nasihat dan amalan selepas mati (sedekah jariah)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian perbuatan Solat Jenazah (dinilai Takbir dan Tertib).",
+        "Ujian Lisan: Lafaz niat Solat Jenazah.",
+        "Latihan Bertulis: Menyusun proses pengurusan Jenazah."
+      ],
+      "aids": [
+        "Model Jenazah (simulasi).",
+        "Carta bacaan Solat Jenazah.",
+        "Video pengurusan Jenazah (bersih)."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 5: Al-Quran - Surah Al-Tin, Surah Adh-Dhuha",
+      "skill_name": "Tilawah dan Hafazan",
+      "standards": [
+        "3.1.1 Membaca Surah Al-Tin dan Adh-Dhuha dengan betul dan bertajwid (asas).",
+        "3.1.2 Menghafaz kedua-dua surah dengan lancar.",
+        "3.1.3 Menerangkan maksud ringkas kedua-dua surah (penciptaan manusia, penenang hati Nabi)."
+      ],
+      "objectives": [
+        "Murid dapat membaca Surah Al-Tin dan Adh-Dhuha dengan tajwid yang betul.",
+        "Murid dapat menghafaz kedua-dua surah tanpa kesalahan.",
+        "Murid dapat menyatakan kepentingan bersyukur dengan nikmat Allah (inti sari Adh-Dhuha)."
+      ],
+      "activities": [
+        "Latih tubi: Membaca dan mengulang ayat-ayat (talqin).",
+        "Hafazan: Menghafaz secara individu (Tasmi').",
+        "Perbincangan: Manusia sebagai sebaik-baik ciptaan (inti sari Al-Tin)."
+      ],
+      "assessments": [
+        "Ujian Lisan (Tasmi'): Bacaan dan hafalan Surah Al-Tin dan Adh-Dhuha.",
+        "Latihan Bertulis: Soalan maksud ringkas surah.",
+        "Kuiz Maksud: Soalan tentang penciptaan dan nikmat Allah."
+      ],
+      "aids": [
+        "Mushaflah.",
+        "Rakaman audio bacaan surah.",
+        "Carta maksud surah."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 6: Tajwid Asas (Hukum Nun Sakinah dan Tanwin)",
+      "skill_name": "Tilawah dan Hadis",
+      "standards": [
+        "3.2.1 Mengenal pasti hukum Nun Sakinah dan Tanwin (Izhar Halqi, Idgham, Iqlab, Ikhfa').",
+        "3.2.2 Menyebut dan membaca ayat Al-Quran mengikut hukum Tajwid yang betul.",
+        "3.2.3 Mengaplikasikan hukum Tajwid dalam bacaan harian."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 hukum Nun Sakinah dan Tanwin.",
+        "Murid dapat memberikan 1 contoh bagi setiap hukum Tajwid (Izhar, Idgham, Iqlab, Ikhfa').",
+        "Murid dapat membaca 5 ayat Al-Quran dengan mengaplikasikan Tajwid yang betul."
+      ],
+      "activities": [
+        "Latih tubi: Membaca ayat yang mengandungi hukum Nun Sakinah dan Tanwin.",
+        "Perbincangan: Kepentingan mempelajari ilmu Tajwid.",
+        "Aktiviti Kumpulan: Mencari contoh hukum Tajwid dalam Surah Juz Amma."
+      ],
+      "assessments": [
+        "Ujian Lisan (Tasmi'): Bacaan Al-Quran dan aplikasi hukum Tajwid.",
+        "Latihan Bertulis: Menyenaraikan dan memberikan contoh hukum Tajwid.",
+        "Penilaian Amali: Pemerhatian keupayaan murid menyebut hukum dengan betul."
+      ],
+      "aids": [
+        "Carta Hukum Nun Sakinah dan Tanwin.",
+        "Mushaflah/Iqra'.",
+        "Video penerangan Tajwid ."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 7: Adab Bermasyarakat dan Bernegara",
+      "skill_name": "Adab dan Akhlak",
+      "standards": [
+        "4.1.1 Menyatakan adab-adab bermasyarakat (persaudaraan, perpaduan).",
+        "4.1.2 Menyatakan tanggungjawab sebagai rakyat yang baik.",
+        "4.1.3 Menghayati semangat perpaduan dan cinta negara."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 adab bermasyarakat (cth: hormat orang tua, bekerjasama).",
+        "Murid dapat menyatakan 2 tanggungjawab sebagai rakyat (cth: menjaga kebersihan, patuh undang-undang).",
+        "Murid dapat menunjukkan 2 amalan menyantuni masyarakat (cth: senyum, memberi salam)."
+      ],
+      "activities": [
+        "Perbincangan: Islam dan Konsep Perpaduan (berbilang kaum).",
+        "Latih Amal: Melafazkan ucapan terima kasih kepada petugas awam (simulasi).",
+        "Projek: Kempen Jaga Kebersihan Kawasan Sekolah."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian tingkah laku (semasa aktiviti bermasyarakat).",
+        "Ujian Lisan: Soalan konsep adab bermasyarakat.",
+        "Latihan Bertulis: Melengkapkan ayat tentang tanggungjawab rakyat."
+      ],
+      "aids": [
+        "Carta Adab Bermasyarakat.",
+        "Poster Perpaduan Ummah.",
+        "Video ringkas peranan rakyat."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 8: Sirah - Pembinaan Negara Madinah",
+      "skill_name": "Sirah Nabawiyyah",
+      "standards": [
+        "6.1.1 Menceritakan peristiwa pembinaan Negara Islam Madinah.",
+        "6.1.2 Mengenal pasti isi kandungan Sahifah Madinah (Perlembagaan Madinah).",
+        "6.1.3 Menghayati peranan Nabi Muhammad SAW sebagai pemimpin yang adil."
+      ],
+      "objectives": [
+        "Murid dapat menceritakan semula 3 langkah awal Nabi membina Madinah (cth: bina Masjid Nabawi, persaudaraan Muhajirin-Ansar).",
+        "Murid dapat menyatakan 2 prinsip Sahifah Madinah (cth: perpaduan, hak minoriti).",
+        "Murid dapat menyenaraikan 2 ciri kepimpinan Nabi yang adil."
+      ],
+      "activities": [
+        "Bercerita: Kisah pembinaan Masjid Nabawi dan persaudaraan Muhajirin-Ansar.",
+        "Perbincangan: Sahifah Madinah sebagai Perlembagaan Islam pertama.",
+        "Lakonan: Simulasi Nabi Muhammad SAW menyelesaikan konflik."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan tentang peristiwa pembinaan Madinah.",
+        "Latihan Bertulis: Menyatakan prinsip Sahifah Madinah.",
+        "Penilaian Amali: Pemerhatian keupayaan murid melakonkan kepimpinan Nabi."
+      ],
+      "aids": [
+        "Ilustrasi Masjid Nabawi.",
+        "Peta Madinah.",
+        "Carta isi kandungan Sahifah Madinah."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 9: Jawi - Khat Nasakh Asas",
+      "skill_name": "Jawi dan Khat",
+      "standards": [
+        "5.1.1 Mengenal pasti jenis tulisan Khat (Nasakh).",
+        "5.1.2 Menulis huruf Jawi tunggal dan perkataan ringkas dalam Khat Nasakh.",
+        "5.1.3 Menghargai seni Khat dalam penulisan Islam."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti ciri-ciri Khat Nasakh (kemudahan membaca).",
+        "Murid dapat menulis 5 huruf Jawi tunggal mengikut kaedah Khat Nasakh.",
+        "Murid dapat menulis 2 perkataan Jawi ringkas dalam bentuk Khat Nasakh."
+      ],
+      "activities": [
+        "Demonstrasi: Guru menunjukkan cara menulis Khat Nasakh.",
+        "Latih Amal: Menulis Khat Nasakh menggunakan pensel/pen kaligrafi.",
+        "Perbincangan: Seni Khat dalam senibina Islam (Masjid)."
+      ],
+      "assessments": [
+        "Penilaian Bertulis: Keupayaan murid menulis Khat Nasakh (dinilai bentuk huruf dan estetika).",
+        "Ujian Lisan: Soalan tentang ciri-ciri Khat Nasakh.",
+        "Pameran Hasil Kerja: Penulisan Khat Nasakh terbaik."
+      ],
+      "aids": [
+        "Contoh tulisan Khat Nasakh.",
+        "Alat tulis kaligrafi/Pensel lembut.",
+        "Buku panduan Khat Nasakh."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 10: Hadis - Larangan Membazir",
+      "skill_name": "Hadis dan Sintesis PAI",
+      "standards": [
+        "3.2.1 Mengenal pasti Hadis tentang larangan membazir (asas).",
+        "3.2.2 Menyatakan maksud 'Membazir' dan implikasinya.",
+        "3.2.3 Mengamalkan kehidupan berjimat cermat dan sederhana."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan ringkasan Hadis larangan membazir.",
+        "Murid dapat menjelaskan 3 bentuk pembaziran (cth: makanan, air, elektrik).",
+        "Murid dapat menunjukkan 2 amalan berjimat cermat (sekolah dan rumah)."
+      ],
+      "activities": [
+        "Hafazan: Ringkasan Hadis larangan membazir.",
+        "Aktiviti Kumpulan: Kempen Berjimat Cermat di sekolah.",
+        "Perbincangan: Kaitan larangan membazir dengan sifat boros dan syaitan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Hafalan ringkasan Hadis.",
+        "Latihan Bertulis: Soalan konsep larangan membazir.",
+        "Penilaian Amali: Pemerhatian keupayaan murid mengaplikasikan jimat cermat (cth: penggunaan air/elektrik)."
+      ],
+      "aids": [
+        "Carta Hadis Larangan Membazir.",
+        "Poster amalan jimat cermat.",
+        "Video ringkas kesan pembaziran."
+      ]
+    }
+  ]
+}

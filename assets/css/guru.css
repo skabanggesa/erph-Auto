@@ -1,0 +1,109 @@
+/* Gaya khusus guru */
+.guru-section {
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.guru-section h2 {
+  color: #1976d2;
+  margin-top: 0;
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 8px 16px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.btn:hover {
+  background: #1565c0;
+}
+
+.btn-save {
+  background: #388e3c;
+}
+
+.btn-save:hover {
+  background: #2e7d32;
+}
+
+.btn-cancel {
+  background: #888;
+}
+
+.btn-cancel:hover {
+  background: #666;
+}
+
+/* Jadual mingguan */
+.weekday {
+  margin-top: 15px;
+}
+
+.day-header {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #1976d2;
+}
+
+.session-item {
+  background: #f5f9ff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Senarai RPH */
+.rph-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.rph-card h4 {
+  margin: 0 0 10px;
+  color: #1976d2;
+}
+
+.rph-meta {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.rph-actions {
+  margin-top: 10px;
+}

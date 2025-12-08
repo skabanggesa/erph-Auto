@@ -1,0 +1,944 @@
+{
+  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Reka Bentuk dan Teknologi (RBT) - Tahun 4 hingga Tahun 6 (10 Unit setiap Tahun)",
+  "subject": "Reka Bentuk dan Teknologi (RBT)",
+  "data": [
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 4: 10 UNIT (Fokus: Asas Reka Bentuk, Peralatan, dan Projek Mudah) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 4,
+      "topic_name": "Unit 1: Pengenalan kepada Reka Bentuk dan Teknologi",
+      "focus": "Konsep RBT, Kepentingan, dan Etika",
+      "standards": [
+        "1.1.1 Menyatakan maksud Reka Bentuk dan Teknologi.",
+        "1.1.2 Mengenal pasti kepentingan RBT dalam kehidupan seharian.",
+        "1.1.3 Menerangkan elemen dan prinsip reka bentuk (cth: garisan, warna, keseimbangan).",
+        "1.1.4 Mengamalkan etika kerja dan keselamatan yang betul."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan maksud RBT dalam 3 ayat mudah.",
+        "Murid dapat menghuraikan 3 kepentingan RBT (cth: menyelesaikan masalah, mencipta inovasi).",
+        "Murid dapat melabelkan 3 elemen reka bentuk dalam produk sedia ada.",
+        "Murid dapat mematuhi 5 peraturan keselamatan bengkel."
+      ],
+      "activities": [
+        "Perbincangan: Kepentingan RBT dan contoh produk inovasi.",
+        "Aktiviti 'Analisis Produk': Mengenal pasti elemen dan prinsip reka bentuk pada produk di sekeliling.",
+        "Sesi Orientasi Bengkel/Sudut RBT: Menerangkan peraturan dan keselamatan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Menjelaskan maksud RBT dan etika kerja.",
+        "Penilaian Bertulis: Soalan objektif/struktur tentang elemen dan prinsip reka bentuk.",
+        "Pemerhatian: Pematuhan peraturan keselamatan."
+      ],
+      "aids": [
+        "Carta elemen dan prinsip reka bentuk.",
+        "Poster keselamatan bengkel."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 2: Mengenal dan Menggunakan Alatan Tangan",
+      "focus": "Jenis, Fungsi, dan Penjagaan Alatan",
+      "standards": [
+        "2.1.1 Mengenal pasti jenis alatan tangan (memotong, mengukur, menanda, mencantum).",
+        "2.1.2 Menerangkan fungsi setiap alatan tangan (cth: gergaji, pembaris L, tukul).",
+        "2.1.3 Menggunakan alatan tangan dengan teknik yang betul dan selamat.",
+        "2.1.4 Menerangkan cara penjagaan alatan."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 alatan tangan utama dan fungsinya.",
+        "Murid dapat mendemonstrasi 3 cara menggunakan alatan dengan betul (cth: mengukur, memotong).",
+        "Murid dapat menjelaskan 2 langkah penjagaan alatan tangan (cth: membersih, menyimpan)."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Cara penggunaan alatan tangan yang betul dan selamat.",
+        "Aktiviti Amali: Mengukur dan memotong bahan lembut (cth: kadbod/foam) menggunakan alatan yang sesuai.",
+        "Latihan 'Padankan': Memadankan alatan tangan dengan fungsinya."
+      ],
+      "assessments": [
+        "Penilaian Amali: Penggunaan alatan tangan (dinilai ketepatan dan keselamatan).",
+        "Ujian Lisan: Fungsi alatan tangan.",
+        "Penilaian Bertulis: Soalan penjagaan alatan."
+      ],
+      "aids": [
+        "Set alatan tangan sebenar/replika.",
+        "Lembaran kerja 'Fungsi Alatan'."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 3: Proses Reka Bentuk Projek",
+      "focus": "Menganalisis dan Mencipta",
+      "standards": [
+        "3.1.1 Menerangkan langkah-langkah dalam proses reka bentuk (cth: mengenal pasti masalah, lakaran idea).",
+        "3.1.2 Melakar reka bentuk produk secara asas (2D atau 3D).",
+        "3.1.3 Menilai dan memilih lakaran terbaik.",
+        "3.1.4 Membuat senarai bahan dan alatan yang diperlukan."
+      ],
+      "objectives": [
+        "Murid dapat menyusun 4 langkah asas proses reka bentuk mengikut urutan.",
+        "Murid dapat menghasilkan 2 lakaran idea projek (cth: pemegang pensel) secara bebas.",
+        "Murid dapat memilih lakaran terbaik berdasarkan 2 kriteria (cth: fungsi, estetika).",
+        "Murid dapat menyenaraikan 5 bahan dan alatan untuk projek pilihan."
+      ],
+      "activities": [
+        "Perbincangan: Mengenal pasti masalah ringkas (cth: bilik bersepah).",
+        "Latihan Melakar: Melakar idea projek menggunakan teknik asas (cth: bentuk geometri).",
+        "Aktiviti Kumpulan: Menilai lakaran rakan menggunakan kriteria yang ditetapkan."
+      ],
+      "assessments": [
+        "Penilaian Karya: Lakaran idea projek (dinilai kreativiti dan kejelasan).",
+        "Penilaian Bertulis: Langkah-langkah proses reka bentuk.",
+        "Ujian Lisan: Justifikasi pemilihan lakaran."
+      ],
+      "aids": [
+        "Contoh lakaran 2D dan 3D.",
+        "Papan kriteria pemilihan lakaran."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 4: Jahitan Asas dan Projek Fabrik",
+      "focus": "Aplikasi Teknologi Jahitan",
+      "standards": [
+        "4.1.1 Mengenal pasti jenis-jenis jahitan asas (cth: jelujur, sembat).",
+        "4.1.2 Menerangkan fungsi dan alatan jahitan.",
+        "4.1.3 Menggunakan jahitan asas untuk menghasilkan projek mudah.",
+        "4.1.4 Menghias projek jahitan menggunakan bahan tambah."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 jenis jahitan asas dan fungsinya.",
+        "Murid dapat mendemonstrasi 1 jahitan asas (cth: jelujur) dengan kemas.",
+        "Murid dapat menghasilkan projek jahitan mudah (cth: sarung kusyen mini/keychain).",
+        "Murid dapat menggunakan 2 bahan tambah untuk menghias projek."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Teknik jahitan asas menggunakan contoh fabrik.",
+        "Latihan Amali: Mencuba jahitan jelujur dan sembat pada perca kain.",
+        "Projek Individu: Menghasilkan projek jahitan mengikut lakaran yang dipilih."
+      ],
+      "assessments": [
+        "Penilaian Karya: Projek jahitan (dinilai kekemasan dan ketepatan jahitan).",
+        "Penilaian Amali: Demonstrasi teknik jahitan.",
+        "Ujian Lisan: Fungsi jahitan asas."
+      ],
+      "aids": [
+        "Kit jahitan asas (jarum, benang, fabrik).",
+        "Contoh-contoh projek jahitan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 5: Elektrik Asas dan Litar Elektrik",
+      "focus": "Komponen Elektrik dan Litar Bersiri",
+      "standards": [
+        "5.1.1 Mengenal pasti komponen asas elektrik (cth: sel kering, mentol, suis, wayar).",
+        "5.1.2 Menerangkan fungsi setiap komponen.",
+        "5.1.3 Melakar dan memasang litar bersiri ringkas.",
+        "5.1.4 Menerangkan langkah keselamatan penggunaan elektrik."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 komponen asas elektrik dan fungsinya.",
+        "Murid dapat melakar litar bersiri menggunakan simbol piawai yang betul.",
+        "Murid dapat memasang litar bersiri ringkas (mentol menyala) dengan bantuan guru.",
+        "Murid dapat menjelaskan 2 langkah keselamatan elektrik."
+      ],
+      "activities": [
+        "Perbincangan: Sumber elektrik dan risiko bahaya.",
+        "Demonstrasi Guru: Fungsi komponen elektrik dan pemasangan litar bersiri.",
+        "Aktiviti Amali Kumpulan: Memasang litar bersiri menggunakan kit elektrik ringkas."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemasangan litar bersiri (dinilai kefungsian).",
+        "Penilaian Bertulis: Simbol dan fungsi komponen elektrik.",
+        "Pemerhatian: Pematuhan keselamatan elektrik."
+      ],
+      "aids": [
+        "Kit litar elektrik asas (mentol, suis, pemegang sel kering).",
+        "Carta simbol komponen elektrik."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 6: Penggabungan Bahan dan Pemasangan",
+      "focus": "Teknik Cantuman dan Pengukuhan",
+      "standards": [
+        "6.1.1 Mengenal pasti jenis-jenis bahan dan pengikat (cth: kayu, plastik, gam, skru).",
+        "6.1.2 Menerangkan teknik mencantum dan memasang (cth: skru, paku, ikatan).",
+        "6.1.3 Mengaplikasikan teknik cantuman untuk menghasilkan model/projek.",
+        "6.1.4 Membuat kemasan pada projek (cth: mengecat, melekatkan)."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 jenis bahan cantuman dan 3 jenis pengikat.",
+        "Murid dapat mendemonstrasi 1 teknik mencantum (cth: skru) dengan betul.",
+        "Murid dapat mencantum sekurang-kurangnya 2 bahan untuk membina projek.",
+        "Murid dapat membuat kemasan pada projek menggunakan 1 teknik (cth: mengecat)."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Teknik mengikat/mencantum bahan menggunakan gam panas, skru, dan paku.",
+        "Latihan Amali: Mencantum kepingan kayu/plastik menggunakan skru dan gam.",
+        "Aktiviti Kumpulan: Mencantum bahagian projek yang telah dilakar."
+      ],
+      "assessments": [
+        "Penilaian Amali: Cantuman bahan pada projek (dinilai kekuatan dan ketepatan).",
+        "Penilaian Karya: Hasil kemasan projek.",
+        "Ujian Lisan: Jenis-jenis bahan cantuman."
+      ],
+      "aids": [
+        "Pelbagai jenis gam dan pengikat.",
+        "Bahan kemasan (cat, kertas pasir)."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 7: Asas Pertanian",
+      "focus": "Alatan, Penyemaian dan Penjagaan Tanaman",
+      "standards": [
+        "7.1.1 Mengenal pasti alatan dan bahan untuk asas pertanian.",
+        "7.1.2 Menerangkan kaedah menyemai biji benih (cth: terus, dalam bekas).",
+        "7.1.3 Menjelaskan cara penjagaan asas tanaman (cth: menyiram, membaja).",
+        "7.1.4 Menghuraikan kepentingan asas pertanian kepada manusia."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 alatan pertanian asas dan fungsinya.",
+        "Murid dapat mendemonstrasi 1 kaedah menyemai biji benih dengan betul.",
+        "Murid dapat menjelaskan 2 langkah penjagaan tanaman (cth: kawalan serangga).",
+        "Murid dapat menyatakan 2 kepentingan pertanian."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Cara menyemai biji benih dan membuat batas/mengisi pasu.",
+        "Aktiviti Amali Kumpulan: Menyemai biji benih (cth: sawi/kangkung) di dalam bekas kitar semula.",
+        "Pemerhatian Harian: Merekod pertumbuhan anak benih."
+      ],
+      "assessments": [
+        "Penilaian Amali: Ketepatan kaedah penyemaian.",
+        "Pemerhatian: Rekod pertumbuhan anak benih.",
+        "Ujian Lisan: Fungsi alatan pertanian."
+      ],
+      "aids": [
+        "Alatan pertanian ringkas (sekop, penyiram).",
+        "Biji benih, tanah, dan bekas kitar semula."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 8: Asas Teknologi Makanan",
+      "focus": "Penghasilan dan Pembungkusan Makanan",
+      "standards": [
+        "8.1.1 Mengenal pasti jenis bahan dan alatan penyediaan makanan.",
+        "8.1.2 Menerangkan langkah keselamatan dan kebersihan dalam penyediaan makanan.",
+        "8.1.3 Menyediakan dan menghias hidangan ringkas.",
+        "8.1.4 Menerangkan konsep pembungkusan makanan yang ringkas."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 alatan penyediaan makanan dan fungsinya.",
+        "Murid dapat mematuhi 3 langkah kebersihan diri dan alatan semasa memasak.",
+        "Murid dapat menyediakan 1 hidangan ringkas (cth: sandwic) dengan bimbingan.",
+        "Murid dapat menghuraikan 2 tujuan pembungkusan makanan."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Teknik penyediaan dan menghias hidangan ringkas.",
+        "Aktiviti Amali Kumpulan: Menyediakan sandwic atau salad buah-buahan (dengan pengawasan ketat).",
+        "Perbincangan: Jenis pembungkusan dan label pada makanan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Penyediaan dan persembahan hidangan (dinilai kebersihan dan hasil).",
+        "Pemerhatian: Pematuhan keselamatan dan kebersihan.",
+        "Ujian Lisan: Tujuan pembungkusan."
+      ],
+      "aids": [
+        "Bahan dan alatan penyediaan makanan (pisau plastik, papan pemotong).",
+        "Contoh-contoh pembungkusan makanan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 9: Lukisan Teknikal Asas",
+      "focus": "Garisan, Simbol dan Lakaran Projek",
+      "standards": [
+        "9.1.1 Mengenal pasti jenis-jenis garisan dalam lukisan teknikal (cth: objek, sembunyi).",
+        "9.1.2 Menerangkan fungsi garisan dan simbol piawai.",
+        "9.1.3 Melakar projek menggunakan garisan dan simbol yang betul.",
+        "9.1.4 Menyatakan dimensi (ukuran) pada lakaran."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 jenis garisan teknikal dan fungsinya.",
+        "Murid dapat melakar pandangan asas (cth: pandangan atas/hadapan) sebuah objek.",
+        "Murid dapat melabelkan sekurang-kurangnya 3 dimensi pada lakaran yang dihasilkan.",
+        "Murid dapat menggunakan 1 simbol piawai pada lakaran litar elektrik (Unit 5)."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Teknik melukis garisan teknikal menggunakan pembaris L dan sesiku T.",
+        "Latihan Melukis: Melukis pelbagai jenis garisan dan objek 3D ringkas.",
+        "Aktiviti Individu: Menghasilkan lukisan unjuran ortografik bagi projek pilihan."
+      ],
+      "assessments": [
+        "Penilaian Karya: Lukisan teknikal (dinilai ketepatan garisan dan label dimensi).",
+        "Penilaian Bertulis: Fungsi jenis-jenis garisan.",
+        "Ujian Lisan: Simbol piawai."
+      ],
+      "aids": [
+        "Alatan lukisan teknikal (pensel, pembaris, sesiku).",
+        "Contoh lukisan teknikal ringkas."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 10: Projek Akhir Tahun 4: Penghasilan Produk",
+      "focus": "Integrasi Kemahiran dan Keusahawanan Asas",
+      "standards": [
+        "10.1.1 Mereka bentuk, menghasilkan, dan mendokumentasikan projek.",
+        "10.1.2 Menguji kefungsian dan membuat penambahbaikan projek.",
+        "10.1.3 Menghuraikan potensi projek untuk dipasarkan.",
+        "10.1.4 Membentangkan hasil projek."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan projek akhir (cth: Pemegang Pensel Berlampu) menggunakan sekurang-kurangnya 3 kemahiran yang dipelajari (cantuman, elektrik, jahitan).",
+        "Murid dapat menguji kefungsian projek (cth: mentol menyala, pemegang kukuh).",
+        "Murid dapat mencadangkan 1 penambahbaikan pada projek.",
+        "Murid dapat membentangkan projek (fungsi, bahan, kos) secara ringkas."
+      ],
+      "activities": [
+        "Penyediaan Projek: Proses membina dan mencantum projek akhir.",
+        "Ujian Kefungsian: Menguji produk dan mencatat masalah.",
+        "Pembentangan Mini: Membentangkan projek dan menjawab soalan keusahawanan asas (harga jualan, sasaran pelanggan)."
+      ],
+      "assessments": [
+        "Penilaian Karya: Projek akhir (dinilai reka bentuk, kefungsian, kemasan).",
+        "Ujian Lisan: Pembentangan projek.",
+        "Dokumentasi: Laporan ringkas proses kerja."
+      ],
+      "aids": [
+        "Bahan dan alatan projek akhir.",
+        "Senarai semak pengujian projek."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 5: 10 UNIT (Fokus: Aplikasi Elektromekanikal, Pengaturcaraan Asas, dan Inovasi) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 5,
+      "topic_name": "Unit 1: Reka Bentuk Secara Terperinci",
+      "focus": "Kajian Masalah, Lakaran Ceraian, dan Bahan",
+      "standards": [
+        "1.1.1 Mengenal pasti masalah, keperluan, dan batasan projek.",
+        "1.1.2 Menjana idea reka bentuk melalui lakaran 3D yang jelas.",
+        "1.1.3 Melakar reka bentuk yang mengandungi lakaran ceraian.",
+        "1.1.4 Menganalisis kesesuaian bahan dan kos."
+      ],
+      "objectives": [
+        "Murid dapat menganalisis 2 masalah/keperluan yang memerlukan produk RBT.",
+        "Murid dapat menghasilkan lakaran 3D yang lebih terperinci dengan 2 dimensi utama.",
+        "Murid dapat melakar lakaran ceraian (exploded view) untuk menunjukkan 3 komponen utama.",
+        "Murid dapat mengira kos bahan mentah untuk projek (anggaran)."
+      ],
+      "activities": [
+        "Kajian Kes: Mengenal pasti masalah dalam persekitaran sekolah (cth: pengurusan sampah).",
+        "Latihan Melakar: Melakar projek dengan lakaran ceraian dan label.",
+        "Perbincangan Kumpulan: Memilih bahan berdasarkan kos dan kekuatan."
+      ],
+      "assessments": [
+        "Penilaian Karya: Lakaran reka bentuk terperinci dan lakaran ceraian.",
+        "Penilaian Bertulis: Analisis masalah dan kesesuaian bahan.",
+        "Ujian Lisan: Justifikasi pemilihan bahan."
+      ],
+      "aids": [
+        "Contoh lakaran ceraian produk sebenar.",
+        "Senarai harga bahan asas (anggaran)."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 2: Asas Elektromekanikal",
+      "focus": "Motor, Gear, dan Tali Sawat",
+      "standards": [
+        "2.1.1 Mengenal pasti komponen asas elektromekanikal (cth: motor, gear, takal, tali sawat).",
+        "2.1.2 Menerangkan fungsi dan jenis gear (cth: taji, serong).",
+        "2.1.3 Menganalisis mekanisme pergerakan dalam produk (cth: putaran, linear).",
+        "2.1.4 Memasang dan menguji sistem gear ringkas."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 komponen elektromekanikal dan fungsinya.",
+        "Murid dapat menjelaskan peranan gear (mengubah arah/kelajuan) dalam 2 contoh produk.",
+        "Murid dapat memasang sistem gear/takal ringkas dengan betul.",
+        "Murid dapat menentukan arah putaran selepas melalui sistem gear."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Fungsi motor, gear, dan takal menggunakan model.",
+        "Aktiviti Amali Kumpulan: Memasang sistem gear ringkas (cth: mengubah kelajuan/daya).",
+        "Analisis Video: Mekanisme pergerakan dalam robot/mainan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemasangan sistem gear (dinilai kefungsian dan ketepatan).",
+        "Penilaian Bertulis: Jenis dan fungsi gear.",
+        "Ujian Lisan: Analisis mekanisme pergerakan."
+      ],
+      "aids": [
+        "Kit elektromekanikal ringkas (motor, gear, takal).",
+        "Carta jenis-jenis gear."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 3: Aplikasi Pengaturcaraan Asas",
+      "focus": "Konsep Pengaturcaraan Blok dan Input/Output",
+      "standards": [
+        "3.1.1 Menyatakan maksud pengaturcaraan (coding) dan kepentingannya.",
+        "3.1.2 Mengenal pasti konsep pengaturcaraan menggunakan blok (cth: Scratch, mBlock).",
+        "3.1.3 Menerangkan konsep input dan output dalam sistem kawalan.",
+        "3.1.4 Membuat atur cara mudah berdasarkan situasi (cth: menyalakan lampu)."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan maksud pengaturcaraan dan kepentingannya dalam teknologi.",
+        "Murid dapat mengenal pasti 3 arahan asas dalam pengaturcaraan blok (cth: ulangan, jika/maka).",
+        "Murid dapat membezakan 2 contoh input (cth: butang) dan output (cth: lampu).",
+        "Murid dapat membina atur cara blok mudah (cth: mengawal pergerakan sprite/objek)."
+      ],
+      "activities": [
+        "Tayangan Video: Contoh aplikasi pengaturcaraan dalam kehidupan.",
+        "Sesi Amali Komputer: Mencuba perisian pengaturcaraan blok (cth: Scratch) untuk tugasan ringkas.",
+        "Perbincangan: Konsep 'jika-maka' dalam sistem kawalan automatik."
+      ],
+      "assessments": [
+        "Penilaian Karya: Atur cara blok mudah (dinilai logik dan kefungsian).",
+        "Penilaian Bertulis: Konsep input/output dan pengaturcaraan.",
+        "Ujian Lisan: Kepentingan pengaturcaraan."
+      ],
+      "aids": [
+        "Komputer/Tablet dengan perisian pengaturcaraan blok.",
+        "Carta konsep input/output."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 4: Reka Bentuk Makanan dan Persembahan",
+      "focus": "Aspek Kesihatan, Estetika, dan Kreativiti",
+      "standards": [
+        "4.1.1 Menerangkan kepentingan aspek keselamatan, kebersihan, dan kesihatan dalam penyediaan makanan.",
+        "4.1.2 Mengenal pasti teknik dan alatan menghias dan menyusun atur makanan.",
+        "4.1.3 Mereka bentuk dan menyediakan hidangan ringkas yang seimbang.",
+        "4.1.4 Menilai persembahan hidangan yang dihasilkan."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 3 aspek keselamatan makanan (cth: suhu, kebersihan tangan).",
+        "Murid dapat menggunakan 2 teknik hiasan (cth: potongan kreatif, garnish) pada hidangan.",
+        "Murid dapat menyediakan 1 hidangan lengkap (cth: nasi/mee goreng) dengan kriteria seimbang.",
+        "Murid dapat menilai 3 kriteria estetika persembahan hidangan."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Teknik menghias hidangan (plating) secara kreatif.",
+        "Aktiviti Amali Kumpulan: Menyediakan 'Hidangan Seimbang' dan menghiasnya (dengan pengawasan).",
+        "Perbincangan: Konsep piramid makanan dan keseimbangan diet."
+      ],
+      "assessments": [
+        "Penilaian Amali: Penyediaan dan persembahan hidangan (dinilai kebersihan, keseimbangan, estetika).",
+        "Ujian Lisan: Aspek keselamatan dan kesihatan makanan.",
+        "Penilaian Karya: Laporan ringkas proses memasak."
+      ],
+      "aids": [
+        "Alatan memasak yang sesuai.",
+        "Contoh-contoh persembahan hidangan kreatif."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 5: Sistem Tanaman Hidroponik Ringkas",
+      "focus": "Kaedah Pertanian Moden",
+      "standards": [
+        "5.1.1 Menerangkan maksud dan kaedah asas sistem hidroponik.",
+        "5.1.2 Mengenal pasti komponen sistem hidroponik (cth: bekas, larutan nutrien).",
+        "5.1.3 Mereka bentuk dan membina model sistem hidroponik ringkas.",
+        "5.1.4 Menghuraikan penjagaan tanaman dalam sistem hidroponik."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 2 perbezaan utama pertanian hidroponik vs. konvensional.",
+        "Murid dapat menamakan 3 komponen sistem hidroponik ringkas.",
+        "Murid dapat membina 1 model sistem hidroponik sumbu (wick system) dari bahan kitar semula.",
+        "Murid dapat menjelaskan 2 langkah penjagaan larutan nutrien."
+      ],
+      "activities": [
+        "Tayangan Video: Contoh sistem hidroponik komersial.",
+        "Demonstrasi Guru: Cara penyediaan larutan nutrien dan media tanaman.",
+        "Projek Kumpulan: Membina dan mengendalikan model hidroponik ringkas."
+      ],
+      "assessments": [
+        "Penilaian Karya: Model sistem hidroponik (dinilai kefungsian dan kreativiti).",
+        "Penilaian Bertulis: Konsep dan komponen hidroponik.",
+        "Pemerhatian: Rekod penjagaan tanaman."
+      ],
+      "aids": [
+        "Bahan binaan (botol plastik, span, sumbu, larutan nutrien).",
+        "Carta kaedah-kaedah hidroponik."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 6: Jahitan Kreatif dan Aplikasi",
+      "focus": "Jahitan Sulaman dan Hiasan",
+      "standards": [
+        "6.1.1 Mengenal pasti jenis-jenis jahitan sulaman (cth: silang pangkah, insang pari).",
+        "6.1.2 Menerangkan fungsi dan alatan sulaman.",
+        "6.1.3 Mengaplikasikan jahitan sulaman untuk menghias projek (cth: beg pensel).",
+        "6.1.4 Menggunakan pelbagai bahan hiasan tambahan pada projek."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 2 jenis jahitan sulaman dan fungsinya.",
+        "Murid dapat mendemonstrasi 1 jahitan sulaman (cth: silang pangkah) dengan kemas.",
+        "Murid dapat menghasilkan projek kreatif (cth: beg kecil/alas meja) dengan aplikasi sulaman.",
+        "Murid dapat menggabungkan sulaman dengan sekurang-kurangnya 1 bahan hiasan lain."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Teknik jahitan sulaman kreatif.",
+        "Latihan Amali: Mencuba jahitan sulaman pada kepingan fabrik.",
+        "Projek Individu: Menghasilkan projek jahitan kreatif dan sulaman."
+      ],
+      "assessments": [
+        "Penilaian Karya: Projek jahitan sulaman (dinilai kekemasan dan kreativiti).",
+        "Penilaian Amali: Demonstrasi teknik sulaman.",
+        "Ujian Lisan: Fungsi jahitan sulaman."
+      ],
+      "aids": [
+        "Kit sulaman (benang pelbagai warna, jarum sulam, pembidang).",
+        "Contoh-contoh projek sulaman."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 7: Litar Elektronik Mudah",
+      "focus": "Komponen Elektronik, Diod, dan Aplikasi Litar Selari",
+      "standards": [
+        "7.1.1 Mengenal pasti komponen elektronik asas (cth: perintang, diod, LED, transistor).",
+        "7.1.2 Menerangkan fungsi komponen elektronik.",
+        "7.1.3 Melakar dan memasang litar selari ringkas.",
+        "7.1.4 Membandingkan litar bersiri dan litar selari."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 komponen elektronik dan fungsinya (cth: LED mengeluarkan cahaya).",
+        "Murid dapat melakar litar selari menggunakan simbol piawai yang betul.",
+        "Murid dapat memasang litar selari ringkas (2 mentol menyala serentak).",
+        "Murid dapat menjelaskan 2 perbezaan utama antara litar bersiri dan selari (cth: kecerahan, kerosakan)."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Fungsi diod (LED) dan perintang.",
+        "Aktiviti Amali Kumpulan: Memasang litar selari menggunakan kit elektronik ringkas.",
+        "Perbincangan: Kelebihan dan kekurangan litar selari berbanding litar bersiri."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemasangan litar selari (dinilai kefungsian).",
+        "Penilaian Bertulis: Fungsi dan simbol komponen elektronik.",
+        "Ujian Lisan: Perbandingan litar bersiri dan selari."
+      ],
+      "aids": [
+        "Kit litar elektronik (perintang, LED, sel kering).",
+        "Carta perbandingan litar bersiri/selari."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 8: Pembungkusan Produk",
+      "focus": "Fungsi Pembungkusan, Bahan, dan Label",
+      "standards": [
+        "8.1.1 Menerangkan fungsi pembungkusan produk (cth: perlindungan, maklumat, promosi).",
+        "8.1.2 Mengenal pasti jenis bahan pembungkusan (cth: kertas, plastik, kaca).",
+        "8.1.3 Mereka bentuk dan menghasilkan pembungkusan yang sesuai untuk projek.",
+        "8.1.4 Menyediakan label yang mengandungi maklumat asas produk."
+      ],
+      "objectives": [
+        "Murid dapat menghuraikan 3 fungsi utama pembungkusan.",
+        "Murid dapat memilih bahan pembungkusan yang sesuai (cth: keras/lembut) untuk produk pilihan.",
+        "Murid dapat mereka bentuk 1 pembungkusan yang kreatif dan berfungsi.",
+        "Murid dapat menyenaraikan 4 maklumat penting pada label produk."
+      ],
+      "activities": [
+        "Kajian Kes: Analisis pembungkusan produk di pasaran (cth: makanan ringan, mainan).",
+        "Latihan Melakar: Melakar reka bentuk pembungkusan (mengambil kira saiz dan bentuk produk).",
+        "Projek Individu: Membina pembungkusan untuk projek akhir Tahun 4 (Ulang Kaji)."
+      ],
+      "assessments": [
+        "Penilaian Karya: Pembungkusan produk (dinilai kreativiti, fungsi, dan maklumat label).",
+        "Penilaian Bertulis: Fungsi dan jenis bahan pembungkusan.",
+        "Ujian Lisan: Maklumat yang perlu ada pada label."
+      ],
+      "aids": [
+        "Pelbagai contoh pembungkusan.",
+        "Bahan binaan pembungkusan (kotak, kertas warna, gam)."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 9: Menguji dan Menilai Projek",
+      "focus": "Kriteria Penilaian dan Penambahbaikan",
+      "standards": [
+        "9.1.1 Menyediakan senarai kriteria pengujian dan penilaian (cth: kekuatan, kefungsian, estetika).",
+        "9.1.2 Melaksanakan pengujian ke atas projek mengikut kriteria.",
+        "9.1.3 Menganalisis keputusan pengujian dan mencadangkan penambahbaikan.",
+        "9.1.4 Mendokumentasikan proses pengujian."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 kriteria untuk menguji projek elektromekanikal.",
+        "Murid dapat melaksanakan pengujian ke atas projek (cth: menguji kelajuan kereta gear).",
+        "Murid dapat mencadangkan 2 penambahbaikan yang spesifik (cth: tukar saiz gear) berdasarkan keputusan ujian.",
+        "Murid dapat merekodkan hasil ujian dalam bentuk jadual ringkas."
+      ],
+      "activities": [
+        "Perbincangan: Kriteria projek yang baik (kuat, cantik, berfungsi).",
+        "Aktiviti Amali: Menguji projek Tahun 5 (cth: Kereta Bergear Asas) dan mencatat hasilnya.",
+        "Latihan Bertulis: Menjana idea penambahbaikan berdasarkan kelemahan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pengujian projek (dinilai prosedur pengujian).",
+        "Penilaian Bertulis: Cadangan penambahbaikan yang logik.",
+        "Dokumentasi: Laporan pengujian ringkas."
+      ],
+      "aids": [
+        "Borang penilaian projek.",
+        "Alat pengukur (pembaris, jam randik)."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 10: Projek Akhir Tahun 5: Aplikasi Elektromekanikal",
+      "focus": "Integrasi Gear, Litar, dan Inovasi",
+      "standards": [
+        "10.1.1 Mereka bentuk dan menghasilkan projek elektromekanikal berfungsian.",
+        "10.1.2 Mengaplikasikan konsep gear/takal dan litar selari/bersiri.",
+        "10.1.3 Membentangkan projek, kos, dan potensi pasaran.",
+        "10.1.4 Menyediakan laporan dokumentasi lengkap."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan projek akhir (cth: Kereta Bergear Berlampu) yang menggabungkan litar dan gear.",
+        "Murid dapat menguji kefungsian projek (mekanisme pergerakan dan litar berfungsi).",
+        "Murid dapat membentangkan projek (fungsi, bahan, kos jualan) secara meyakinkan.",
+        "Murid dapat melengkapkan dokumentasi (lakaran, bahan, kos, ujian) projek."
+      ],
+      "activities": [
+        "Penyediaan Projek: Proses membina dan mencantum projek akhir elektromekanikal.",
+        "Sesi Pengujian Projek Akhir.",
+        "Pembentangan dan Pameran Mini: Membentangkan projek dan menjawab soalan keusahawanan."
+      ],
+      "assessments": [
+        "Penilaian Karya: Projek akhir (dinilai reka bentuk, kefungsian, integrasi teknologi).",
+        "Ujian Lisan: Pembentangan projek dan justifikasi reka bentuk.",
+        "Dokumentasi: Laporan lengkap projek."
+      ],
+      "aids": [
+        "Bahan dan alatan projek akhir (motor, bateri, gear, bahan binaan).",
+        "Rubrik penilaian projek elektromekanikal."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 6: 10 UNIT (Fokus: Automasi, Keusahawanan, dan Dokumentasi Profesional) ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 6,
+      "topic_name": "Unit 1: Pembangunan dan Dokumentasi Projek",
+      "focus": "Pengurusan Projek dan Laporan Lengkap",
+      "standards": [
+        "1.1.1 Menerangkan peranan dan kepentingan dokumentasi projek (cth: cadangan, reka bentuk, penilaian).",
+        "1.1.2 Menghasilkan carta gantt (perancangan masa) untuk projek.",
+        "1.1.3 Menyediakan laporan projek yang lengkap dan sistematik.",
+        "1.1.4 Menerangkan kaedah rujukan sumber (bibliografi/lampiran)."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 3 kepentingan dokumentasi kepada projek.",
+        "Murid dapat membina carta gantt ringkas untuk projek (sekurang-kurangnya 4 fasa).",
+        "Murid dapat menyediakan 1 draf laporan projek yang mengandungi 5 bahagian utama (cth: pendahuluan, lakaran, kos).",
+        "Murid dapat menyenaraikan 2 sumber rujukan yang digunakan."
+      ],
+      "activities": [
+        "Perbincangan: Kepentingan perancangan masa dan rekod kerja (logbook).",
+        "Latihan Bertulis: Menyediakan draf laporan projek mengikut format yang ditetapkan.",
+        "Aktiviti Kumpulan: Melukis Carta Gantt untuk satu tugasan sekolah."
+      ],
+      "assessments": [
+        "Penilaian Karya: Laporan projek (dinilai sistematik dan lengkap).",
+        "Penilaian Bertulis: Soalan struktur tentang dokumentasi dan Carta Gantt.",
+        "Ujian Lisan: Menerangkan kepentingan dokumentasi."
+      ],
+      "aids": [
+        "Contoh format laporan projek RBT yang baik.",
+        "Templat Carta Gantt."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 2: Aplikasi Teknologi Automasi",
+      "focus": "Sistem Kawalan Automatik dan Penderia",
+      "standards": [
+        "2.1.1 Menyatakan maksud automasi dan sistem kawalan.",
+        "2.1.2 Mengenal pasti jenis-jenis penderia (sensor) dan fungsinya (cth: cahaya, pergerakan).",
+        "2.1.3 Mereka bentuk dan melakar projek automasi ringkas (cth: sistem lampu automatik).",
+        "2.1.4 Menghuraikan komponen sistem kawalan (input-proses-output)."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan maksud automasi dalam 2 contoh produk (cth: lampu jalan automatik).",
+        "Murid dapat menamakan 2 jenis penderia dan fungsinya (cth: penderia cahaya menyalakan LED).",
+        "Murid dapat melakar sistem kawalan (input-proses-output) untuk projek pilihan.",
+        "Murid dapat melakar litar dengan penderia ringkas."
+      ],
+      "activities": [
+        "Tayangan Video: Aplikasi automasi di rumah pintar/industri.",
+        "Demonstrasi Guru: Fungsi penderia cahaya/pergerakan (jika ada kit yang sesuai).",
+        "Latihan Melakar: Melakar sistem automasi ringkas."
+      ],
+      "assessments": [
+        "Penilaian Karya: Lakaran projek automasi dan sistem kawalan.",
+        "Penilaian Bertulis: Fungsi penderia dan konsep automasi.",
+        "Ujian Lisan: Menjelaskan komponen sistem kawalan."
+      ],
+      "aids": [
+        "Kit/video penderia asas.",
+        "Carta konsep input-proses-output."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 3: Reka Bentuk Binaan (Struktur)",
+      "focus": "Struktur, Kestabilan, dan Bahan",
+      "standards": [
+        "3.1.1 Menerangkan konsep struktur dan kestabilan dalam reka bentuk.",
+        "3.1.2 Mengenal pasti jenis-jenis sambungan dan cantuman struktur yang kukuh.",
+        "3.1.3 Mereka bentuk dan membina model struktur yang stabil (cth: jambatan/bangunan).",
+        "3.1.4 Menilai kekuatan dan kestabilan model binaan."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan maksud kestabilan dan faktor yang mempengaruhinya (cth: tapak lebar, pusat graviti rendah).",
+        "Murid dapat menggunakan 2 jenis sambungan yang kukuh (cth: tanggam/stapler) dalam binaan.",
+        "Murid dapat membina 1 model struktur yang mampu menahan bebanan ringan.",
+        "Murid dapat menguji kekuatan model binaan mereka."
+      ],
+      "activities": [
+        "Perbincangan: Analisis struktur binaan di sekeliling (jambatan, menara).",
+        "Latihan Amali: Mencuba pelbagai sambungan menggunakan bahan kitar semula (cth: batang aiskrim).",
+        "Projek Kumpulan: Membina model struktur (cth: menara tinggi/jambatan) dan menguji daya tahan beban."
+      ],
+      "assessments": [
+        "Penilaian Karya: Model binaan (dinilai kestabilan dan kekuatan).",
+        "Penilaian Amali: Ujian daya tahan bebanan.",
+        "Ujian Lisan: Konsep kestabilan struktur."
+      ],
+      "aids": [
+        "Bahan binaan ringan (batang aiskrim, gam, straw).",
+        "Alat uji beban (buku, pemberat kecil)."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 4: Pengaturcaraan Lanjutan dan Kawalan",
+      "focus": "Aplikasi Penderia dalam Pengaturcaraan",
+      "standards": [
+        "4.1.1 Menerangkan konsep atur cara bersyarat (conditional statements) dan gelung (loops).",
+        "4.1.2 Menggunakan penderia sebagai input dalam atur cara blok.",
+        "4.1.3 Membina atur cara untuk mengawal output (cth: motor, LED) berdasarkan input penderia.",
+        "4.1.4 Menguji dan membetulkan ralat (debugging) dalam atur cara."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan konsep 'jika-maka-lain' (if-then-else) dalam atur cara.",
+        "Murid dapat membina atur cara yang menggunakan 1 penderia (cth: penderia sentuh/cahaya) sebagai input.",
+        "Murid dapat mengawal 1 output (cth: buzzer berbunyi) menggunakan atur cara yang dibina.",
+        "Murid dapat mengenal pasti dan membetulkan 2 ralat dalam atur cara blok."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Atur cara bersyarat dan gelung menggunakan perisian blok.",
+        "Aktiviti Amali Kumpulan: Membina atur cara mudah dengan penderia (jika menggunakan kit seperti micro:bit/Arduino ringkas).",
+        "Latihan Bertulis: Menganalisis dan membetulkan ralat dalam contoh atur cara."
+      ],
+      "assessments": [
+        "Penilaian Karya: Atur cara kawalan penderia (dinilai logik dan kefungsian).",
+        "Penilaian Amali: Pengujian atur cara dan pembetulan ralat.",
+        "Ujian Lisan: Konsep atur cara bersyarat."
+      ],
+      "aids": [
+        "Kit pengaturcaraan fizikal (jika ada) atau simulasi perisian.",
+        "Lembaran kerja pembetulan ralat."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 5: Penghasilan Pakaian dan Aksesori",
+      "focus": "Pola, Fabrik, dan Gubahan",
+      "standards": [
+        "5.1.1 Mengenal pasti jenis fabrik dan kegunaannya.",
+        "5.1.2 Menerangkan fungsi dan kaedah penggunaan pola asas (cth: pola apron/beg).",
+        "5.1.3 Menggunting fabrik dan menjahit projek pakaian/aksesori ringkas.",
+        "5.1.4 Menghuraikan aspek gubahan (cth: warna, tekstur) dalam reka bentuk pakaian."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 3 jenis fabrik dan kegunaannya (cth: kapas, denim).",
+        "Murid dapat menggunakan pola asas untuk menggunting fabrik dengan betul.",
+        "Murid dapat menjahit dan menghasilkan 1 projek pakaian/aksesori ringkas (cth: apron, sarung telefon).",
+        "Murid dapat menjelaskan 2 aspek gubahan yang diaplikasikan pada projek mereka."
+      ],
+      "activities": [
+        "Demonstrasi Guru: Cara meletak pola dan menggunting fabrik.",
+        "Latihan Amali: Menggunting fabrik mengikut pola.",
+        "Projek Individu: Penghasilan projek pakaian/aksesori menggunakan mesin jahit mini atau jahitan tangan."
+      ],
+      "assessments": [
+        "Penilaian Karya: Projek pakaian/aksesori (dinilai kekemasan, ketepatan pola, dan gubahan).",
+        "Penilaian Amali: Teknik menggunting dan menjahit.",
+        "Ujian Lisan: Fungsi fabrik dan aspek gubahan."
+      ],
+      "aids": [
+        "Pola asas, fabrik, dan alatan menjahit.",
+        "Contoh-contoh reka bentuk pakaian/aksesori."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 6: Pengujian dan Penambahbaikan Produk Lanjutan",
+      "focus": "Pengujian Sistem dan Penilaian Holistik",
+      "standards": [
+        "6.1.1 Menganalisis data pengujian dan merumus penemuan.",
+        "6.1.2 Menjelaskan proses penambahbaikan berdasarkan dapatan ujian.",
+        "6.1.3 Melaksanakan penambahbaikan dan menguji semula projek.",
+        "6.1.4 Menilai projek secara holistik (kefungsian, kos, estetika, mesra pengguna)."
+      ],
+      "objectives": [
+        "Murid dapat menganalisis 2 dapatan pengujian dan membuat rumusan (cth: motor terlalu perlahan).",
+        "Murid dapat mencadangkan 3 penambahbaikan yang berbeza (cth: gear, bateri, reka bentuk).",
+        "Murid dapat melaksanakan 1 penambahbaikan dan menguji semula projek.",
+        "Murid dapat menilai 4 aspek holistik projek akhir (cth: kos efektif, mesra pengguna)."
+      ],
+      "activities": [
+        "Sesi Pengujian: Projek automasi atau binaan (Unit 2 & 3).",
+        "Perbincangan Kumpulan: Mencari penyelesaian terbaik untuk masalah teknikal.",
+        "Latihan Bertulis: Menulis laporan penambahbaikan dan pengujian semula."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pelaksanaan penambahbaikan dan pengujian semula.",
+        "Penilaian Bertulis: Analisis dapatan ujian dan cadangan penambahbaikan.",
+        "Penilaian Kumpulan: Penilaian holistik projek rakan sebaya."
+      ],
+      "aids": [
+        "Alat pengukur dan pengujian yang lebih kompleks (cth: voltmeter ringkas).",
+        "Borang penilaian holistik."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 7: Asas Keusahawanan dan Pemasaran",
+      "focus": "Kos, Harga Jualan, dan Promosi",
+      "standards": [
+        "7.1.1 Menerangkan konsep keusahawanan dan perniagaan.",
+        "7.1.2 Mengira kos modal dan menentukan harga jualan (cth: kos bahan + kos upah).",
+        "7.1.3 Mengenal pasti kaedah promosi dan pemasaran (cth: media sosial, pameran).",
+        "7.1.4 Menghasilkan bahan promosi ringkas (cth: risalah, poster)."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 3 ciri usahawan yang berjaya.",
+        "Murid dapat mengira kos modal dan menentukan harga jualan yang berpatutan untuk projek akhir.",
+        "Murid dapat mencadangkan 2 kaedah promosi yang sesuai untuk produk mereka.",
+        "Murid dapat menghasilkan 1 bahan promosi yang menarik."
+      ],
+      "activities": [
+        "Perbincangan: Konsep Untung dan Rugi.",
+        "Latihan Mengira: Mengira kos modal dan menentukan harga jualan (margin keuntungan asas).",
+        "Aktiviti Kumpulan: Mencipta slogan dan reka bentuk poster/risalah promosi."
+      ],
+      "assessments": [
+        "Penilaian Karya: Bahan promosi (dinilai kreativiti dan maklumat).",
+        "Penilaian Bertulis: Pengiraan kos dan penentuan harga jualan.",
+        "Ujian Lisan: Konsep keusahawanan dan kaedah promosi."
+      ],
+      "aids": [
+        "Contoh risalah/poster perniagaan.",
+        "Templat pengiraan kos."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 8: Inovasi dalam Reka Bentuk Produk",
+      "focus": "Penjanaan Idea Kreatif dan Penambahbaikan Fungsi",
+      "standards": [
+        "8.1.1 Menerangkan konsep inovasi dan kreativiti dalam RBT.",
+        "8.1.2 Menjana idea untuk menambah baik fungsi dan estetika produk sedia ada.",
+        "8.1.3 Mereka bentuk dan melakar produk inovasi yang menyelesaikan masalah sebenar.",
+        "8.1.4 Menghuraikan hak cipta (patent/trademark) secara asas."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan perbezaan antara ciptaan baharu (inventif) dan penambahbaikan (inovatif).",
+        "Murid dapat mencadangkan 3 idea inovatif untuk menambah baik produk harian (cth: pemegang botol air pintar).",
+        "Murid dapat melakar 1 produk inovasi yang memenuhi keperluan pasaran.",
+        "Murid dapat menjelaskan maksud hak cipta (patent) secara ringkas."
+      ],
+      "activities": [
+        "Sesi Brainstorming: Menjana idea inovasi (cth: mengubah suai peralatan sekolah).",
+        "Latihan Melakar: Melakar produk inovasi yang mempunyai fungsi baharu.",
+        "Perbincangan: Contoh-contoh inovasi di Malaysia dan isu hak cipta."
+      ],
+      "assessments": [
+        "Penilaian Karya: Lakaran produk inovasi (dinilai kreativiti dan keaslian idea).",
+        "Ujian Lisan: Konsep inovasi dan hak cipta.",
+        "Penilaian Bertulis: Analisis keupayaan produk inovasi."
+      ],
+      "aids": [
+        "Contoh produk inovasi ringkas.",
+        "Papan visual teknik penjanaan idea."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 9: Pengintegrasian RBT dalam Kehidupan Harian",
+      "focus": "Teknologi dan Kelestarian Alam",
+      "standards": [
+        "9.1.1 Menjelaskan peranan RBT dalam kelestarian alam sekitar (cth: kitar semula, tenaga hijau).",
+        "9.1.2 Menerangkan konsep reka bentuk mesra alam (eco-design).",
+        "9.1.3 Mengaplikasikan bahan kitar semula dalam reka bentuk produk.",
+        "9.1.4 Menghuraikan kesan teknologi terhadap alam sekitar dan masyarakat."
+      ],
+      "objectives": [
+        "Murid dapat menghuraikan 2 peranan RBT dalam menjaga kelestarian alam.",
+        "Murid dapat menjelaskan maksud 'eco-design' dan 2 ciri-cirinya.",
+        "Murid dapat membina 1 produk menggunakan bahan kitar semula yang berfungsi.",
+        "Murid dapat menyatakan 2 kesan positif dan 2 kesan negatif teknologi."
+      ],
+      "activities": [
+        "Perbincangan: Isu alam sekitar dan teknologi hijau.",
+        "Projek Kumpulan: Membina produk fungsian (cth: bekas tanaman, alat pengumpul) dari bahan kitar semula.",
+        "Tayangan Video: Produk RBT yang menggunakan tenaga boleh baharu."
+      ],
+      "assessments": [
+        "Penilaian Karya: Produk kitar semula (dinilai kefungsian dan penggunaan bahan).",
+        "Ujian Lisan: Konsep kelestarian alam dan eco-design.",
+        "Penilaian Bertulis: Kesan teknologi terhadap masyarakat."
+      ],
+      "aids": [
+        "Bahan kitar semula (botol, kotak, tayar terpakai).",
+        "Carta konsep eco-design."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 10: Projek Akhir Tahun 6: Pemasaran dan Pameran",
+      "focus": "Penghasilan Produk Akhir, Dokumentasi, dan Pembentangan Pemasaran",
+      "standards": [
+        "10.1.1 Menghasilkan projek RBT Tahun 6 (gabungan automasi/binaan/elektronik) yang berfungsi.",
+        "10.1.2 Melengkapkan dokumentasi projek yang sistematik dan profesional.",
+        "10.1.3 Membentangkan projek secara lisan/visual (pemasaran/pitching) kepada audiens.",
+        "10.1.4 Merumus kemahiran RBT yang diperoleh dari Tahun 4 hingga Tahun 6."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan projek akhir (cth: Model Automasi Berpenderia) yang berfungsi sepenuhnya.",
+        "Murid dapat menyediakan laporan projek yang lengkap dan kemas (dokumentasi profesional).",
+        "Murid dapat membentangkan cadangan pemasaran projek secara meyakinkan (pitching).",
+        "Murid dapat merumuskan 3 kemahiran RBT utama yang dipelajari sepanjang sekolah rendah."
+      ],
+      "activities": [
+        "Penyediaan Akhir: Mengemaskan projek dan menyemak dokumentasi.",
+        "Sesi Latihan Pembentangan (Pitching Projek): Fokus kepada daya tarikan dan kebolehan pasaran.",
+        "Pameran dan Penilaian Projek Akhir (Sumatif)."
+      ],
+      "assessments": [
+        "Penilaian Karya: Projek akhir (dinilai kefungsian, inovasi, dan kemasan).",
+        "Penilaian Lisan: Pembentangan Pemasaran Projek (dinilai keyakinan, logik pemasaran, dan komunikasi).",
+        "Dokumentasi: Laporan akhir (dinilai kelengkapan dan profesionalisme)."
+      ],
+      "aids": [
+        "Bahan pameran dan presentasi (projektor, papan pameran).",
+        "Rubrik penilaian projek dan pembentangan."
+      ]
+    }
+  ]
+}

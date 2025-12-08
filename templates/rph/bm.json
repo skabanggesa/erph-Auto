@@ -1,0 +1,2319 @@
+{
+  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Bahasa Melayu - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
+  "subject": "Bahasa Melayu",
+  "data": [
+    // --- TAHUN 1: 10 UNIT ---
+    {
+      "year": 1,
+      "topic_name": "Unit 1: Mari Berkenalan (Kemahiran Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.1 Mendengar dan memberikan respons terhadap bunyi bahasa, ujaran, lagu dan dialog dengan betul.",
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap soalan bertumpu.",
+        "1.2.1 Bertutur untuk memperkenalkan diri dengan sebutan yang betul dan intonasi yang sesuai.",
+        "1.2.2 Bertutur untuk menyampaikan maklumat ringkas.",
+        "1.3.1 Bercerita tentang diri sendiri dan keluarga dengan bantuan gambar.",
+        "2.1.1 Membaca dan mengenal pasti perkataan dengan betul."
+      ],
+      "objectives": [
+        "Murid dapat menyebut sekurang-kurangnya 5 bunyi vokal dan konsonan dengan betul.",
+        "Murid dapat memperkenalkan diri menggunakan 3 ayat mudah.",
+        "Murid dapat memberi respons yang sesuai kepada ucapan selamat.",
+        "Murid dapat menuturkan dialog pendek dengan intonasi yang sesuai."
+      ],
+      "activities": [
+        "Latih tubi sebutan vokal dan konsonan (sistem bunyi bahasa).",
+        "Aktiviti 'Mari Berkenalan': Murid bergilir-gilir memperkenalkan diri.",
+        "Menyanyi lagu 'Selamat Pagi' dan melafazkan ucapan selamat.",
+        "Lakonan: Dialog ringkas tentang bertemu rakan baharu.",
+        "Permainan 'Ikut Saya': Meniru dan memberikan respons kepada arahan mudah guru.",
+        "Menggunakan kad imbasan gambar untuk menamakan objek di sekeliling."
+      ],
+      "assessments": [
+        "Senarai semak: Kejelasan sebutan vokal dan konsonan.",
+        "Pemerhatian: Kemahiran memperkenalkan diri (formatif).",
+        "Penilaian lisan: Respons terhadap soalan mudah.",
+        "Rubrik: Intonasi dalam dialog."
+      ],
+      "aids": [
+        "Kad imbasan huruf dan suku kata.",
+        "Carta lagu dan dialog.",
+        "Buku cerita bergambar ringkas.",
+        "Alat perakam suara."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 2: Saya dan Keluarga Saya (Kemahiran Membaca)",
+      "skill_name": "Membaca",
+      "standards": [
+        "2.1.1 Membaca dan mengenal pasti perkataan (KVK, KVKK).",
+        "2.1.2 Membaca dengan sebutan yang betul dan intonasi yang sesuai: (i) ayat tunggal, (ii) ayat majmuk.",
+        "2.2.1 Membaca dan memahami perkataan, frasa dan ayat dalam perenggan.",
+        "2.2.2 Membaca dan memahami maklumat tersurat dalam teks.",
+        "3.2.1 Menulis secara mekanis: (i) perkataan, (ii) frasa, (iii) ayat.",
+        "4.1.1 Menyebut dan memahami lirik lagu mudah."
+      ],
+      "objectives": [
+        "Murid dapat membaca 10 perkataan mudah (KVKV, KV+KV) dengan lancar.",
+        "Murid dapat membaca 3 ayat tunggal tentang keluarga dengan betul.",
+        "Murid dapat mengenal pasti 5 nama anggota keluarga dalam petikan.",
+        "Murid dapat menulis 5 perkataan tentang keluarga secara mekanis."
+      ],
+      "activities": [
+        "Latih tubi membaca perkataan dan frasa (kad suku kata).",
+        "Membaca ayat tunggal mudah tentang gambar keluarga.",
+        "Aktiviti Padanan: Memadankan perkataan dengan gambar anggota keluarga.",
+        "Membaca petikan pendek 'Keluarga Saya' secara berpasangan.",
+        "Latihan menulis perkataan dan frasa berkaitan keluarga secara berpandu.",
+        "Menyanyikan lagu 'Sayang Keluarga' dan membaca liriknya."
+      ],
+      "assessments": [
+        "Ujian Lisan: Kebolehan membaca 10 perkataan (sumatif).",
+        "Pemerhatian: Kelancaran membaca ayat.",
+        "Latihan bertulis: Menulis perkataan secara mekanis.",
+        "Kuiz: Memadankan frasa dengan gambar."
+      ],
+      "aids": [
+        "Kad suku kata dan perkataan.",
+        "Carta/Gambar keluarga.",
+        "Lembaran kerja penulisan mekanis.",
+        "Buku teks Bahasa Melayu."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 3: Haiwan Kesayangan (Kemahiran Menulis)",
+      "skill_name": "Menulis",
+      "standards": [
+        "3.1.1 Menulis secara mekanis: (i) perkataan, (ii) frasa, (iii) ayat.",
+        "3.2.1 Membina dan menulis perkataan dan frasa.",
+        "3.2.2 Membina dan menulis ayat tunggal.",
+        "3.2.3 Mengedit dan memurnikan hasil penulisan: (i) ejaan, (ii) tanda baca.",
+        "4.3.1 Melafazkan dan memahami puisi dengan sebutan yang jelas.",
+        "2.2.1 Membaca dan memahami perkataan, frasa dan ayat dalam perenggan."
+      ],
+      "objectives": [
+        "Murid dapat menulis 8 perkataan tentang haiwan secara mekanis.",
+        "Murid dapat membina dan menulis 3 ayat tunggal mudah tentang haiwan.",
+        "Murid dapat menggunakan huruf besar pada permulaan ayat dan tanda noktah dengan betul.",
+        "Murid dapat menyusun perkataan menjadi ayat tunggal yang betul."
+      ],
+      "activities": [
+        "Menulis perkataan tentang haiwan berdasarkan gambar (secara berpandu).",
+        "Aktiviti 'Susun dan Tulis': Menyusun kad perkataan menjadi ayat yang lengkap.",
+        "Latihan menulis ayat tunggal ringkas tentang haiwan kesayangan.",
+        "Membetulkan kesalahan ejaan dan tanda baca dalam ayat yang diberi.",
+        "Melukis haiwan kesayangan dan menulis nama haiwan serta 1 ayat mengenainya.",
+        "Membaca petikan pendek tentang ciri-ciri haiwan."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Kebolehan menulis ayat tunggal.",
+        "Senarai semak: Penggunaan huruf besar dan tanda noktah.",
+        "Ujian Lisan: Membaca ayat yang dibina.",
+        "Rubrik: Ketelitian penulisan mekanis."
+      ],
+      "aids": [
+        "Kad gambar haiwan.",
+        "Lembaran kerja penulisan.",
+        "Kad perkataan untuk menyusun ayat.",
+        "Pensel warna/krayon."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 4: Makanan Berkhasiat (Tatabahasa - Kata Nama)",
+      "skill_name": "Tatabahasa (Kata Nama)",
+      "standards": [
+        "5.1.1 Memahami dan menggunakan golongan kata: (i) kata nama am, (ii) kata nama khas.",
+        "5.1.2 Memahami dan menggunakan kata adjektif: (i) sifat.",
+        "1.2.1 Bertutur untuk menyampaikan maklumat ringkas tentang makanan.",
+        "2.2.1 Membaca dan memahami perkataan, frasa dan ayat dalam perenggan.",
+        "3.2.2 Membina dan menulis ayat tunggal.",
+        "4.1.1 Menyebut dan memahami lirik lagu mudah."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti dan menyenaraikan 5 kata nama am tentang makanan.",
+        "Murid dapat menggunakan sekurang-kurangnya 3 kata nama khas dalam ayat.",
+        "Murid dapat membina 3 ayat tunggal yang mengandungi kata nama am dan kata nama khas.",
+        "Murid dapat menerangkan 1 faedah makanan berkhasiat secara lisan."
+      ],
+      "activities": [
+        "Perbincangan: Jenis-jenis makanan berkhasiat dan tidak berkhasiat.",
+        "Aktiviti Kategori: Mengelaskan kad imbasan makanan kepada kata nama am atau khas.",
+        "Latihan menulis ayat menggunakan kata nama am dan khas secara berpandu.",
+        "Permainan: 'Siapa Saya?' – Meneka makanan berdasarkan kata nama yang diberi.",
+        "Menyanyi lagu tentang piramid makanan.",
+        "Membaca petikan ringkas tentang khasiat buah-buahan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Mengenal pasti kata nama am dan khas.",
+        "Penilaian bertulis: Penggunaan kata nama dalam ayat.",
+        "Latihan Kategori: Pengelasan kata nama.",
+        "Pemerhatian: Keupayaan memberi maklumat ringkas."
+      ],
+      "aids": [
+        "Kad imbasan makanan.",
+        "Carta Kata Nama Am dan Khas.",
+        "Gambar piramid makanan.",
+        "Lembaran kerja membina ayat."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 5: Permainan Saya (Tatabahasa - Kata Kerja)",
+      "skill_name": "Tatabahasa (Kata Kerja)",
+      "standards": [
+        "5.1.3 Memahami dan menggunakan kata kerja: (i) tak transitif, (ii) transitif.",
+        "5.1.4 Memahami dan menggunakan kata hubung: (i) dan.",
+        "1.2.1 Bertutur untuk menyampaikan maklumat ringkas tentang aktiviti.",
+        "2.1.2 Membaca ayat tunggal dan ayat majmuk dengan betul.",
+        "3.2.2 Membina dan menulis ayat tunggal dan ayat majmuk.",
+        "4.2.1 Melafazkan dan memahami sajak mudah."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 6 kata kerja (transitif dan tak transitif) dalam ayat.",
+        "Murid dapat membina 3 ayat tunggal menggunakan kata kerja yang betul.",
+        "Murid dapat menggunakan kata hubung 'dan' untuk membentuk ayat majmuk mudah.",
+        "Murid dapat melakonkan aksi berdasarkan kata kerja yang diberi."
+      ],
+      "activities": [
+        "Aktiviti 'Bertindak': Melakukan pergerakan berdasarkan kata kerja (contoh: berlari, melukis).",
+        "Perbincangan: Maksud kata kerja tak transitif dan transitif (secara mudah).",
+        "Latihan mengisi tempat kosong dengan kata kerja yang sesuai.",
+        "Menyusun ayat tunggal menjadi ayat majmuk menggunakan 'dan'.",
+        "Membaca ayat majmuk mudah tentang permainan.",
+        "Melafazkan sajak mudah tentang aktiviti riadah."
+      ],
+      "assessments": [
+        "Ujian Lisan: Melakonkan kata kerja yang disebut.",
+        "Penilaian bertulis: Mengisi tempat kosong kata kerja.",
+        "Latihan bertulis: Membina ayat majmuk 'dan'.",
+        "Pemerhatian: Pemahaman konsep kata kerja."
+      ],
+      "aids": [
+        "Kad perkataan kata kerja.",
+        "Gambar aktiviti permainan.",
+        "Carta Kata Hubung 'dan'.",
+        "Lembaran kerja."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 6: Pakaian Tradisional (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap soalan bercapah.",
+        "1.2.2 Bertutur untuk menjelaskan sesuatu dengan sebutan yang betul.",
+        "1.3.2 Bercerita dan menyanyi tentang pakaian tradisional.",
+        "2.2.1 Membaca dan memahami perkataan, frasa dan ayat.",
+        "3.2.2 Membina dan menulis ayat tunggal.",
+        "5.1.2 Memahami dan menggunakan kata adjektif: (i) warna, (ii) saiz."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 5 jenis pakaian tradisional dengan betul.",
+        "Murid dapat menggunakan 3 kata adjektif (warna dan saiz) dalam penerangan.",
+        "Murid dapat memberi respons kepada soalan bercapah mudah ('Mengapa kamu suka baju ini?').",
+        "Murid dapat mempersembahkan pakaian tradisional dalam satu ayat mudah."
+      ],
+      "activities": [
+        "Pameran pakaian tradisional (gambar/model).",
+        "Sesi soal jawab ringkas tentang warna dan saiz pakaian.",
+        "Aktiviti 'Peragawan Cilik': Murid memperagakan/menunjukkan gambar pakaian dan menerangkannya.",
+        "Menyanyi lagu bertema pakaian.",
+        "Membaca penerangan ringkas tentang pakaian tradisional Melayu.",
+        "Latihan membina ayat tentang warna dan saiz pakaian."
+      ],
+      "assessments": [
+        "Ujian Lisan: Menyebut nama pakaian dan ciri-ciri.",
+        "Senarai semak: Penggunaan kata adjektif.",
+        "Pemerhatian: Respons soalan bercapah.",
+        "Rubrik: Kejelasan dan intonasi."
+      ],
+      "aids": [
+        "Gambar/Model pakaian tradisional.",
+        "Kad imbasan warna dan saiz.",
+        "Audio/video tentang pakaian tradisional.",
+        "Buku cerita tentang kebudayaan."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 7: Bahagian Anggota Badan (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.1.1 Membaca dan mengenal pasti perkataan, frasa dan ayat.",
+        "2.2.2 Membaca dan memahami maklumat tersurat dalam petikan.",
+        "3.2.1 Menulis secara mekanis: perkataan dan frasa.",
+        "5.1.1 Memahami dan menggunakan golongan kata: (iii) penjodoh bilangan.",
+        "1.2.1 Bertutur untuk menyampaikan maklumat ringkas.",
+        "4.1.1 Menyebut dan memahami lirik lagu mudah."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan menamakan 8 bahagian anggota badan.",
+        "Murid dapat mengenal pasti maklumat tersurat tentang fungsi anggota badan.",
+        "Murid dapat menggunakan 3 penjodoh bilangan ringkas (contoh: sebatang, sekeping).",
+        "Murid dapat menulis 5 perkataan anggota badan dengan ejaan yang betul."
+      ],
+      "activities": [
+        "Membaca perkataan anggota badan dari carta.",
+        "Menyanyi lagu 'Kepala Lutut Kaki' dan menyebut liriknya.",
+        "Aktiviti Label: Murid melabelkan bahagian anggota badan pada gambar/rajah.",
+        "Perbincangan: Fungsi ringkas anggota badan (mata untuk melihat).",
+        "Latihan menggunakan penjodoh bilangan dalam ayat mudah.",
+        "Menulis secara mekanis nama-nama anggota badan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Menamakan anggota badan.",
+        "Penilaian bertulis: Melabelkan rajah anggota badan.",
+        "Latihan bertulis: Penggunaan penjodoh bilangan.",
+        "Pemerhatian: Pemahaman fungsi anggota badan."
+      ],
+      "aids": [
+        "Carta/Rajah anggota badan.",
+        "Lirik lagu anggota badan.",
+        "Kad perkataan anggota badan.",
+        "Lembaran kerja."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 8: Sekolah Saya (Penulisan Kreatif)",
+      "skill_name": "Penulisan",
+      "standards": [
+        "3.2.2 Membina dan menulis ayat tunggal dan ayat majmuk.",
+        "3.3.1 Menghasilkan penulisan: (i) penceritaan, (ii) bukan penceritaan.",
+        "3.2.3 Mengedit dan memurnikan hasil penulisan.",
+        "5.1.5 Memahami dan menggunakan kata sendi nama: (i) di, (ii) ke.",
+        "1.2.2 Bertutur untuk menjelaskan sesuatu tentang sekolah.",
+        "2.2.1 Membaca dan memahami perkataan, frasa dan ayat."
+      ],
+      "objectives": [
+        "Murid dapat menulis 5 ayat tunggal tentang kemudahan di sekolah.",
+        "Murid dapat menggunakan kata sendi nama 'di' dan 'ke' dengan betul dalam ayat.",
+        "Murid dapat menghasilkan penulisan ringkas bukan penceritaan tentang sekolah (3 ayat).",
+        "Murid dapat membetulkan 2 kesalahan tanda baca dalam penulisan."
+      ],
+      "activities": [
+        "Perbincangan: Kemudahan yang ada di sekolah.",
+        "Lawatan ringkas ke kawasan sekolah (perpustakaan, kantin) dan menamakan tempat.",
+        "Latihan membina ayat menggunakan 'di' dan 'ke'.",
+        "Menulis karangan pendek berpandu 'Sekolah Saya'.",
+        "Aktiviti 'Detektif Ejaan': Mencari dan membetulkan kesalahan dalam ayat.",
+        "Membaca dan memahami papan tanda atau notis di sekolah."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Karangan pendek 'Sekolah Saya'.",
+        "Senarai semak: Penggunaan kata sendi nama 'di' dan 'ke'.",
+        "Latihan bertulis: Membina ayat majmuk mudah.",
+        "Pemerhatian: Keupayaan memberi penjelasan lisan."
+      ],
+      "aids": [
+        "Gambar/Foto kawasan sekolah.",
+        "Carta Kata Sendi Nama.",
+        "Lembaran kerja penulisan berpandu.",
+        "Contoh papan tanda sekolah."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 9: Alat Kebesaran Negara (Seni Bahasa)",
+      "skill_name": "Seni Bahasa",
+      "standards": [
+        "4.3.1 Melafazkan dan memahami puisi dengan sebutan yang jelas dan intonasi yang betul.",
+        "4.4.1 Menyanyikan lagu dan memahami maksud lirik.",
+        "1.3.2 Bercerita tentang bendera dan jata negara.",
+        "2.2.2 Membaca dan memahami maklumat tersurat dan tersirat (mudah).",
+        "5.1.1 Memahami dan menggunakan kata nama am dan khas.",
+        "3.2.2 Membina dan menulis ayat tunggal."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan pantun 2 rangkap tentang negara dengan intonasi yang betul.",
+        "Murid dapat menyatakan 2 maksud tersirat (nilai patriotik) daripada puisi.",
+        "Murid dapat menyanyikan lagu patriotik dengan irama yang betul.",
+        "Murid dapat menamakan 3 alat kebesaran negara (contoh: bendera, jata)."
+      ],
+      "activities": [
+        "Mendengar dan melafazkan pantun/puisi ringkas bertema negara.",
+        "Perbincangan: Maksud lirik lagu 'Negaraku' (secara ringkas).",
+        "Menyanyi lagu 'Jalur Gemilang'.",
+        "Aktiviti 'Pencerita Cilik': Bercerita tentang Jalur Gemilang.",
+        "Latihan mengenal pasti kata nama khas dalam teks.",
+        "Membaca maklumat ringkas tentang Bendera Malaysia."
+      ],
+      "assessments": [
+        "Ujian Lisan: Melafazkan puisi (dinilai intonasi).",
+        "Pemerhatian: Keupayaan menyanyi dan bercerita.",
+        "Penilaian lisan: Memberi maksud tersirat yang ringkas.",
+        "Latihan bertulis: Menulis nama alat kebesaran negara."
+      ],
+      "aids": [
+        "Carta/Gambar alat kebesaran negara.",
+        "Lirik lagu patriotik.",
+        "Teks puisi/pantun.",
+        "Video lagu patriotik."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 10: Adab di Rumah (Tatabahasa - Kata Perintah & Adjektif)",
+      "skill_name": "Tatabahasa (Kata Perintah & Adjektif)",
+      "standards": [
+        "5.1.2 Memahami dan menggunakan kata adjektif: (ii) cara, (iii) perasaan.",
+        "5.1.6 Memahami dan menggunakan kata perintah: (i) sila, (ii) jemput, (iii) tolong.",
+        "1.2.2 Bertutur untuk menjelaskan sesuatu dengan sopan.",
+        "2.2.2 Membaca dan memahami maklumat tersurat dalam teks (nasihat).",
+        "3.2.2 Membina dan menulis ayat tunggal dan ayat majmuk.",
+        "4.2.1 Melafazkan dan memahami sajak mudah tentang adab."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti dan menggunakan 4 kata perintah dengan betul dalam ayat.",
+        "Murid dapat membina 3 ayat menggunakan kata adjektif perasaan dan cara.",
+        "Murid dapat menuturkan 3 ayat perintah secara sopan.",
+        "Murid dapat mengenal pasti 2 nasihat dalam petikan."
+      ],
+      "activities": [
+        "Perbincangan: Adab ketika berada di rumah (meminta izin, membantu).",
+        "Lakonan: Menggunakan kata perintah dalam situasi di rumah.",
+        "Latihan membina ayat menggunakan kata perintah dan kata adjektif.",
+        "Membaca petikan pendek tentang nasihat ibu bapa.",
+        "Melafazkan sajak tentang adab dan nilai murni.",
+        "Aktiviti 'Mari Berpesan': Murid menulis pesanan ringkas kepada keluarga menggunakan kata perintah."
+      ],
+      "assessments": [
+        "Ujian Lisan: Menggunakan kata perintah secara sopan.",
+        "Penilaian bertulis: Penggunaan kata adjektif dan kata perintah dalam ayat.",
+        "Pemerhatian: Kesantunan berbahasa.",
+        "Latihan bertulis: Mengenal pasti nasihat."
+      ],
+      "aids": [
+        "Carta Kata Adjektif dan Kata Perintah.",
+        "Kad situasi untuk lakonan.",
+        "Teks sajak.",
+        "Lembaran kerja membina ayat."
+      ]
+    },
+    // --- TAHUN 2: 10 UNIT ---
+    {
+      "year": 2,
+      "topic_name": "Unit 1: Hidup Bersama (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap soalan bercapah.",
+        "1.2.1 Bertutur untuk menjelaskan sesuatu perkara dengan tepat.",
+        "1.2.2 Memberikan penerangan tentang sesuatu perkara dengan sebutan yang betul.",
+        "1.3.1 Bercerita dengan menggunakan sebutan yang jelas dan intonasi yang betul.",
+        "2.2.1 Membaca dan memahami perkataan, frasa dan ayat majmuk.",
+        "5.1.1 Memahami dan menggunakan kata ganti nama diri."
+      ],
+      "objectives": [
+        "Murid dapat memberi penerangan tentang 3 ciri rakan baik dengan jelas.",
+        "Murid dapat menggunakan kata ganti nama diri yang betul dalam pertuturan.",
+        "Murid dapat memberi respons yang bernas kepada soalan bercapah ('Bagaimana kita boleh jadi kawan yang baik?').",
+        "Murid dapat bercerita tentang pengalaman bekerjasama dengan rakan."
+      ],
+      "activities": [
+        "Perbincangan: Kepentingan hidup bekerjasama di sekolah.",
+        "Aktiviti 'Sembang Petang': Bercerita tentang aktiviti yang dilakukan bersama rakan.",
+        "Latih tubi: Menggunakan kata ganti nama diri yang sesuai (saya, kamu, dia, mereka).",
+        "Lakonan: Situasi menyelesaikan masalah bersama-sama.",
+        "Mendengar dan merumus maklumat daripada dialog.",
+        "Membaca ayat majmuk tentang aktiviti bersama."
+      ],
+      "assessments": [
+        "Ujian Lisan: Memberi penerangan tentang ciri-ciri rakan.",
+        "Senarai semak: Penggunaan kata ganti nama diri.",
+        "Pemerhatian: Keterlibatan dalam perbincangan.",
+        "Rubrik: Kejelasan dan kelancaran bercerita."
+      ],
+      "aids": [
+        "Carta Kata Ganti Nama Diri.",
+        "Audio/Video dialog tentang persahabatan.",
+        "Gambar aktiviti bekerjasama.",
+        "Kad situasi lakonan."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 2: Kesihatan Diri (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.2.1 Membaca dan memahami frasa dan ayat majmuk.",
+        "2.2.2 Membaca dan memahami maklumat tersirat dan tersurat dalam pelbagai teks.",
+        "2.3.1 Membaca dan mengenal pasti idea utama dan idea sampingan.",
+        "3.2.3 Mengedit dan memurnikan hasil penulisan: ejaan dan tanda baca.",
+        "5.1.2 Memahami dan menggunakan kata adjektif: (iv) pancaindera, (v) waktu.",
+        "1.2.1 Bertutur untuk menjelaskan amalan kesihatan."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan mengenal pasti idea utama dan 3 idea sampingan dalam petikan.",
+        "Murid dapat menyatakan 2 maklumat tersirat tentang kepentingan menjaga kesihatan.",
+        "Murid dapat menggunakan 4 kata adjektif (pancaindera dan waktu) dalam ayat.",
+        "Murid dapat membetulkan 3 kesalahan ejaan dan tanda baca dalam petikan."
+      ],
+      "activities": [
+        "Membaca petikan tentang amalan menjaga kebersihan diri dan persekitaran.",
+        "Aktiviti 'Peta Minda': Mencatat idea utama dan idea sampingan.",
+        "Latihan mengesan maklumat tersirat ('Mengapa perlu mencuci tangan sebelum makan?').",
+        "Latihan membina ayat menggunakan kata adjektif pancaindera (bau, rasa) dan waktu (lewat, cepat).",
+        "Aktiviti 'Detektif Kesalahan': Membetulkan kesalahan dalam teks.",
+        "Perbincangan: Faedah bersenam."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Pengenalpastian idea utama dan sampingan.",
+        "Latihan bertulis: Penggunaan kata adjektif.",
+        "Ujian Lisan: Penerangan maklumat tersirat.",
+        "Senarai semak: Kebolehan memurnikan teks."
+      ],
+      "aids": [
+        "Teks petikan tentang kesihatan.",
+        "Peta Minda kosong.",
+        "Carta Kata Adjektif.",
+        "Lembaran kerja pengeditan teks."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 3: Cerita Rakyat (Kemahiran Menulis)",
+      "skill_name": "Menulis",
+      "standards": [
+        "3.2.1 Membina dan menulis perkataan, frasa dan ayat majmuk.",
+        "3.2.2 Membina dan menulis perenggan (4-5 ayat).",
+        "3.3.1 Menghasilkan penulisan naratif dan bukan naratif secara berpandu.",
+        "4.3.1 Melafazkan dan memahami puisi dengan sebutan yang jelas.",
+        "5.1.3 Memahami dan menggunakan kata kerja tak transitif berpelengkap.",
+        "2.3.1 Membaca dan mengenal pasti idea utama dan idea sampingan."
+      ],
+      "objectives": [
+        "Murid dapat menulis perenggan naratif ringkas (4 ayat) tentang watak cerita rakyat.",
+        "Murid dapat menggunakan 3 kata kerja tak transitif berpelengkap dengan betul.",
+        "Murid dapat membina dan menulis ayat majmuk dengan kata hubung 'kerana' atau 'apabila'.",
+        "Murid dapat melafazkan puisi ringkas dengan intonasi yang betul."
+      ],
+      "activities": [
+        "Membaca ringkasan cerita rakyat Melayu (contoh: Sang Kancil).",
+        "Perbincangan: Mengenal pasti nilai murni dalam cerita.",
+        "Latihan membina ayat menggunakan kata kerja tak transitif berpelengkap (contoh: menjadi, tinggal, ada).",
+        "Menulis perenggan berpandu tentang watak kegemaran.",
+        "Latihan membina ayat majmuk menggunakan pelbagai kata hubung.",
+        "Melafazkan puisi/pantun ringkas berkaitan nilai murni."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan perenggan naratif.",
+        "Senarai semak: Penggunaan kata kerja tak transitif.",
+        "Rubrik: Melafazkan puisi.",
+        "Latihan bertulis: Membina ayat majmuk."
+      ],
+      "aids": [
+        "Teks cerita rakyat ringkas.",
+        "Carta Kata Kerja Tak Transitif Berpelengkap.",
+        "Lembaran kerja penulisan perenggan.",
+        "Teks puisi."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 4: Mesra Alam (Tatabahasa - Kata Arah & Kata Penguat)",
+      "skill_name": "Tatabahasa (Kata Arah & Kata Penguat)",
+      "standards": [
+        "5.1.4 Memahami dan menggunakan kata hubung: (ii) apabila, (iii) kerana.",
+        "5.1.7 Memahami dan menggunakan kata arah.",
+        "5.1.8 Memahami dan menggunakan kata penguat.",
+        "1.2.2 Memberikan penerangan tentang penjagaan alam.",
+        "2.2.2 Membaca dan memahami maklumat tersirat dan tersurat.",
+        "3.3.1 Menghasilkan penulisan bukan naratif (laporan ringkas)."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 5 kata arah (contoh: di atas, di bawah, di tepi) dengan betul.",
+        "Murid dapat menggunakan 3 kata penguat (contoh: sangat, sungguh, sekali) dalam ayat.",
+        "Murid dapat membina 3 ayat majmuk menggunakan kata hubung 'apabila' atau 'kerana'.",
+        "Murid dapat memberi penerangan tentang 2 cara menjaga alam sekitar."
+      ],
+      "activities": [
+        "Perbincangan: Cara menjaga alam sekitar (mengitar semula, menanam pokok).",
+        "Aktiviti 'Peta Kawasan': Menggunakan kata arah untuk menerangkan lokasi objek.",
+        "Latihan membina ayat menggunakan kata penguat dan kata arah.",
+        "Membaca petikan tentang keindahan alam.",
+        "Menulis perenggan laporan ringkas tentang aktiviti membersihkan kawasan.",
+        "Latihan membina ayat majmuk menggunakan kata hubung 'apabila' dan 'kerana'."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penggunaan kata arah dan kata penguat.",
+        "Latihan bertulis: Membina ayat majmuk 'apabila/kerana'.",
+        "Ujian Lisan: Memberi penerangan tentang penjagaan alam.",
+        "Pemerhatian: Pemahaman konsep tatabahasa."
+      ],
+      "aids": [
+        "Carta Kata Arah dan Kata Penguat.",
+        "Gambar/Rajah lokasi.",
+        "Lembaran kerja.",
+        "Teks laporan ringkas."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 5: Sukan dan Rekreasi (Tatabahasa - Kata Nafi & Kata Seru)",
+      "skill_name": "Tatabahasa (Kata Nafi & Kata Seru)",
+      "standards": [
+        "5.1.9 Memahami dan menggunakan kata nafi: (i) bukan, (ii) tidak.",
+        "5.1.10 Memahami dan menggunakan kata seru.",
+        "1.2.2 Memberikan penerangan tentang peraturan permainan.",
+        "2.3.1 Membaca dan mengenal pasti idea utama dan idea sampingan.",
+        "3.3.1 Menghasilkan penulisan bukan naratif (peraturan)."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan kata nafi 'bukan' dan 'tidak' dengan betul dalam 3 ayat.",
+        "Murid dapat menggunakan 3 kata seru yang sesuai mengikut konteks (contoh: Amboi, Wah, Eh).",
+        "Murid dapat memberi penerangan tentang 3 peraturan permainan.",
+        "Murid dapat menulis 4 ayat tentang perasaan menggunakan kata seru."
+      ],
+      "activities": [
+        "Perbincangan: Peraturan permainan dan sukan kegemaran.",
+        "Latihan membina ayat menggunakan kata nafi 'bukan' (untuk frasa nama) dan 'tidak' (untuk frasa kerja/adjektif).",
+        "Aktiviti 'Ekspresi': Melakonkan perasaan menggunakan kata seru yang betul.",
+        "Menulis peraturan ringkas untuk satu permainan.",
+        "Membaca petikan tentang faedah bersukan.",
+        "Latihan mengisi tempat kosong dengan kata nafi yang sesuai."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penggunaan kata nafi dan kata seru.",
+        "Ujian Lisan: Melakonkan kata seru.",
+        "Pemerhatian: Keupayaan memberi penerangan peraturan.",
+        "Latihan bertulis: Menulis peraturan permainan."
+      ],
+      "aids": [
+        "Carta Kata Nafi dan Kata Seru.",
+        "Kad situasi untuk lakonan.",
+        "Teks tentang sukan.",
+        "Lembaran kerja."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 6: Sambutan Hari Istimewa (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap soalan bercapah.",
+        "1.2.1 Bertutur untuk menjelaskan sesuatu perkara dengan tepat.",
+        "1.3.1 Bercerita tentang sambutan hari istimewa.",
+        "2.2.1 Membaca dan memahami frasa dan ayat majmuk.",
+        "5.1.1 Memahami dan menggunakan kata nama am dan khas."
+      ],
+      "objectives": [
+        "Murid dapat bercerita tentang 3 peristiwa penting semasa sambutan hari istimewa.",
+        "Murid dapat memberi respons yang sesuai kepada soalan tentang perasaan semasa sambutan.",
+        "Murid dapat menggunakan kata nama khas yang betul untuk nama hari dan bulan.",
+        "Murid dapat menuturkan dialog tentang merancang sambutan."
+      ],
+      "activities": [
+        "Perbincangan: Hari istimewa yang disambut (Hari Lahir, Hari Guru, Hari Raya).",
+        "Aktiviti 'Bercerita': Murid berkongsi pengalaman sambutan hari istimewa.",
+        "Latih tubi: Penggunaan kata nama khas (nama bulan, tarikh, nama tempat).",
+        "Lakonan: Dialog merancang sambutan hari guru.",
+        "Mendengar dan merumus maklumat daripada dialog tentang persediaan sambutan.",
+        "Membaca ayat majmuk tentang pelbagai sambutan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Bercerita tentang sambutan hari istimewa.",
+        "Senarai semak: Penggunaan kata nama khas (huruf besar).",
+        "Pemerhatian: Keupayaan memberi respons soalan bercapah.",
+        "Rubrik: Kelancaran pertuturan."
+      ],
+      "aids": [
+        "Kalendar/Carta hari istimewa.",
+        "Gambar sambutan.",
+        "Kad situasi lakonan dialog.",
+        "Carta Kata Nama Khas."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 7: Kenali Pekerjaan (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.2.2 Membaca dan memahami maklumat tersirat dan tersurat dalam pelbagai teks.",
+        "2.3.1 Membaca dan mengenal pasti idea utama dan idea sampingan.",
+        "3.2.1 Membina dan menulis perkataan, frasa dan ayat majmuk.",
+        "5.1.3 Memahami dan menggunakan kata kerja transitif dan tak transitif.",
+        "1.2.2 Memberikan penerangan tentang tugas pekerjaan."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan mengenal pasti idea utama dan 3 idea sampingan tentang satu pekerjaan.",
+        "Murid dapat menyatakan 2 maklumat tersirat tentang kepentingan pekerjaan tersebut.",
+        "Murid dapat menggunakan 4 kata kerja transitif dan tak transitif dalam penerangan.",
+        "Murid dapat membina 3 ayat majmuk tentang pekerjaan."
+      ],
+      "activities": [
+        "Membaca petikan tentang pelbagai jenis pekerjaan (Doktor, Guru, Polis).",
+        "Aktiviti 'Peta Teks': Mencatat idea utama dan idea sampingan tentang pekerjaan.",
+        "Latihan mencari maklumat tersirat ('Mengapa pekerjaan ini penting?').",
+        "Latihan membina ayat menggunakan pelbagai jenis kata kerja.",
+        "Perbincangan: Ciri-ciri pekerjaan yang diminati.",
+        "Menulis ayat majmuk tentang tugas pekerjaan."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Pengenalpastian idea utama dan sampingan.",
+        "Latihan bertulis: Penggunaan kata kerja dalam ayat.",
+        "Ujian Lisan: Memberi penerangan tentang pekerjaan.",
+        "Senarai semak: Pemahaman maklumat tersirat."
+      ],
+      "aids": [
+        "Teks petikan tentang pekerjaan.",
+        "Kad gambar pekerjaan.",
+        "Peta Teks (Grafik Organiser).",
+        "Carta Kata Kerja."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 8: Alam Sekitar (Penulisan Kreatif)",
+      "skill_name": "Penulisan",
+      "standards": [
+        "3.2.2 Membina dan menulis perenggan (4-5 ayat).",
+        "3.3.1 Menghasilkan penulisan naratif dan bukan naratif secara berpandu.",
+        "3.2.3 Mengedit dan memurnikan hasil penulisan: kosa kata dan struktur ayat.",
+        "4.2.1 Melafazkan dan memahami sajak mudah.",
+        "5.1.6 Memahami dan menggunakan kata sendi nama: (iii) pada, (iv) dari, (v) daripada.",
+        "1.2.1 Bertutur untuk menjelaskan sesuatu perkara."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan penulisan bukan naratif (poster/slogan) tentang alam sekitar.",
+        "Murid dapat menggunakan 5 kata sendi nama dengan betul dalam ayat.",
+        "Murid dapat mengedit dan memurnikan 3 kesalahan kosa kata dalam ayat.",
+        "Murid dapat menulis perenggan (5 ayat) tentang faedah menjaga kebersihan sungai."
+      ],
+      "activities": [
+        "Perbincangan: Isu alam sekitar tempatan (pencemaran).",
+        "Latihan membina ayat menggunakan pelbagai kata sendi nama.",
+        "Menulis karangan pendek berpandu tentang kepentingan sungai.",
+        "Aktiviti 'Slogan Alam': Menulis slogan dan melukis poster alam sekitar.",
+        "Aktiviti memurnikan teks: Menggantikan kosa kata yang kurang tepat.",
+        "Melafazkan sajak tentang alam."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan perenggan/slogan.",
+        "Senarai semak: Penggunaan kata sendi nama.",
+        "Rubrik: Melafazkan sajak.",
+        "Latihan bertulis: Pengeditan kosa kata."
+      ],
+      "aids": [
+        "Carta Kata Sendi Nama.",
+        "Gambar/Video isu alam sekitar.",
+        "Lembaran kerja penulisan berpandu.",
+        "Contoh slogan dan poster."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 9: Ceria Ria (Seni Bahasa)",
+      "skill_name": "Seni Bahasa",
+      "standards": [
+        "4.3.1 Melafazkan dan memahami puisi dengan sebutan yang jelas dan intonasi yang betul.",
+        "4.4.1 Menyanyikan lagu dan memahami maksud lirik.",
+        "4.4.2 Menghasilkan lirik lagu mudah (1 rangkap) secara berpandu.",
+        "1.3.1 Bercerita tentang aktiviti riadah.",
+        "2.2.1 Membaca dan memahami frasa dan ayat majmuk.",
+        "5.1.10 Memahami dan menggunakan kata seru."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan puisi/pantun 3 rangkap dengan intonasi yang betul.",
+        "Murid dapat menyatakan 2 mesej daripada puisi/lagu.",
+        "Murid dapat menghasilkan 1 rangkap lirik lagu mudah tentang riadah.",
+        "Murid dapat bercerita tentang aktiviti riadah yang menggembirakan."
+      ],
+      "activities": [
+        "Mendengar dan melafazkan puisi/pantun bertema riadah.",
+        "Menyanyikan lagu bertema riadah.",
+        "Perbincangan: Maksud lirik lagu/puisi.",
+        "Aktiviti 'Pencipta Lirik': Murid menulis lirik lagu mudah secara berpandu.",
+        "Bercerita tentang pengalaman riadah.",
+        "Latihan menggunakan kata seru dalam cerita/dialog."
+      ],
+      "assessments": [
+        "Ujian Lisan: Melafazkan puisi (dinilai ekspresi dan intonasi).",
+        "Penilaian bertulis: Menghasilkan lirik lagu.",
+        "Pemerhatian: Keupayaan memahami mesej.",
+        "Rubrik: Kelancaran bercerita."
+      ],
+      "aids": [
+        "Teks puisi/pantun.",
+        "Lirik lagu.",
+        "Alat muzik ringkas (muzik latar).",
+        "Lembaran kerja penulisan lirik."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 10: Adab di Tempat Awam (Tatabahasa - Kata Tanya & Kata Ganda)",
+      "skill_name": "Tatabahasa (Kata Tanya & Kata Ganda)",
+      "standards": [
+        "5.1.11 Memahami dan menggunakan kata tanya.",
+        "5.1.12 Memahami dan menggunakan kata ganda: (i) separa, (ii) penuh.",
+        "1.2.2 Memberikan penerangan tentang adab.",
+        "2.2.2 Membaca dan memahami maklumat tersirat dan tersurat.",
+        "3.3.1 Menghasilkan penulisan bukan naratif (peraturan)."
+      ],
+      "objectives": [
+        "Murid dapat membina 5 ayat tanya menggunakan pelbagai kata tanya (apa, siapa, mengapa, di mana).",
+        "Murid dapat mengenal pasti dan menggunakan 5 kata ganda penuh dan separa dengan betul.",
+        "Murid dapat memberi penerangan tentang 3 adab di tempat awam.",
+        "Murid dapat menulis 4 peraturan di perpustakaan menggunakan kata ganda."
+      ],
+      "activities": [
+        "Perbincangan: Adab ketika berada di perpustakaan, taman, atau pasar raya.",
+        "Latihan membina ayat tanya berpandu.",
+        "Aktiviti 'Detektif Kata': Mencari kata ganda dalam petikan tentang tempat awam.",
+        "Latihan membina ayat menggunakan kata ganda penuh (contoh: buku-buku) dan separa (contoh: bebola).",
+        "Lakonan: Bertanya arah atau maklumat di tempat awam.",
+        "Menulis peraturan ringkas menggunakan kata ganda."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Membina ayat tanya.",
+        "Latihan bertulis: Penggunaan kata ganda.",
+        "Ujian Lisan: Lakonan bertanya dan memberi penerangan.",
+        "Senarai semak: Penggunaan tanda tanya."
+      ],
+      "aids": [
+        "Carta Kata Tanya dan Kata Ganda.",
+        "Kad situasi di tempat awam.",
+        "Teks peraturan ringkas.",
+        "Lembaran kerja tatabahasa."
+      ]
+    },
+    // --- TAHUN 3: 10 UNIT ---
+    {
+      "year": 3,
+      "topic_name": "Unit 1: Jati Diri (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap soalan bercapah dan soalan inferens.",
+        "1.2.1 Bertutur untuk menjelaskan sesuatu isu dengan tepat.",
+        "1.2.2 Memberikan penerangan tentang sesuatu perkara dengan alasan yang jelas.",
+        "1.3.1 Bercerita tentang pencapaian diri dengan sebutan yang jelas.",
+        "2.3.1 Membaca dan mengenal pasti idea utama dan idea sampingan.",
+        "5.1.1 Memahami dan menggunakan kata nama am dan khas."
+      ],
+      "objectives": [
+        "Murid dapat memberikan respons yang berasas kepada soalan inferens ('Mengapa kita perlu berbangga dengan diri?').",
+        "Murid dapat menjelaskan 2 faedah mempunyai jati diri yang kukuh.",
+        "Murid dapat menggunakan sekurang-kurangnya 5 kata nama khas yang berkaitan dengan diri sendiri (nama tempat, anugerah).",
+        "Murid dapat bercerita tentang 2 pencapaian peribadi."
+      ],
+      "activities": [
+        "Perbincangan: Konsep jati diri dan kebanggaan diri.",
+        "Aktiviti 'Tinjauan': Bertanya dan mencatat pandangan rakan tentang jati diri.",
+        "Latih tubi: Penggunaan kata nama khas dalam ayat.",
+        "Bercerita tentang pencapaian yang membanggakan.",
+        "Mendengar dan merumus maklumat daripada ucapan ringkas tentang inspirasi diri.",
+        "Membaca petikan tentang tokoh cilik yang berjaya."
+      ],
+      "assessments": [
+        "Ujian Lisan: Memberi penerangan dan alasan yang jelas.",
+        "Senarai semak: Penggunaan kata nama khas.",
+        "Pemerhatian: Respons soalan inferens.",
+        "Rubrik: Kelancaran bercerita."
+      ],
+      "aids": [
+        "Carta Kata Nama Khas (tempat, orang, organisasi).",
+        "Audio/video ucapan motivasi.",
+        "Lembaran kerja tinjauan.",
+        "Gambar tokoh inspirasi."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 2: Kemanusiaan (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat untuk membuat ramalan.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber.",
+        "3.2.2 Membina dan menulis perenggan (5-6 ayat) dengan idea utama dan sampingan yang sesuai.",
+        "5.1.2 Memahami dan menggunakan kata adjektif: (vi) ukuran, (vii) bentuk.",
+        "1.2.2 Memberikan penerangan tentang isu kemanusiaan.",
+        "4.3.1 Melafazkan dan memahami puisi."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan mengenal pasti 3 maklumat tersirat untuk membuat 1 ramalan yang logik.",
+        "Murid dapat merumus maklumat tentang isu kemanusiaan (bantuan kepada golongan susah).",
+        "Murid dapat membina 3 ayat menggunakan kata adjektif ukuran dan bentuk.",
+        "Murid dapat menulis perenggan (6 ayat) tentang usaha membantu masyarakat."
+      ],
+      "activities": [
+        "Membaca petikan tentang aktiviti sukarelawan atau memberi bantuan.",
+        "Aktiviti 'Ramalan Teks': Membuat ramalan berdasarkan maklumat yang dibaca.",
+        "Latihan merumus maklumat daripada dua sumber berbeza.",
+        "Latihan membina ayat menggunakan kata adjektif ukuran (tebal, nipis) dan bentuk (bulat, bujur).",
+        "Menulis perenggan berpandu tentang usaha murni.",
+        "Melafazkan puisi bertema kasih sayang sesama manusia."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Merumus maklumat.",
+        "Latihan bertulis: Pembinaan ayat adjektif.",
+        "Ujian Lisan: Membuat ramalan dan memberi justifikasi.",
+        "Rubrik: Penulisan perenggan (koheren)."
+      ],
+      "aids": [
+        "Teks tentang kemanusiaan/sukarelawan.",
+        "Carta Kata Adjektif (ukuran/bentuk).",
+        "Lembaran kerja merumus.",
+        "Teks puisi."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 3: Cerpen Cilik (Kemahiran Menulis)",
+      "skill_name": "Menulis",
+      "standards": [
+        "3.2.1 Membina dan menulis pelbagai jenis ayat majmuk: (i) relatif, (ii) komplemen.",
+        "3.3.1 Menghasilkan penulisan naratif dan bukan naratif secara berpandu dan separa berpandu.",
+        "3.3.2 Mengembangkan idea utama menjadi perenggan (7-8 ayat).",
+        "4.4.1 Menyanyikan lagu dan memahami maksud lirik.",
+        "5.1.3 Memahami dan menggunakan kata kerja tak transitif berpelengkap dan kata kerja pasif.",
+        "2.3.1 Membaca dan mengenal pasti idea utama dan idea sampingan."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan penulisan naratif pendek (cerpen cilik) berdasarkan gambar bersiri.",
+        "Murid dapat menggunakan 2 jenis ayat majmuk (relatif dan komplemen) dengan betul.",
+        "Murid dapat menggunakan 3 kata kerja pasif mudah dalam penulisan.",
+        "Murid dapat mengembangkan 1 idea utama menjadi perenggan yang koheren."
+      ],
+      "activities": [
+        "Membaca cerpen cilik dan mengenal pasti struktur (permulaan, konflik, penyelesaian).",
+        "Latihan membina ayat majmuk relatif (yang) dan komplemen (bahawa, untuk).",
+        "Latihan membina ayat menggunakan kata kerja pasif (ditulis, dibaca, dimakan).",
+        "Menulis cerpen cilik berpandu gambar bersiri.",
+        "Aktiviti 'Kembangkan Idea': Menulis perenggan yang lengkap dari ayat topik.",
+        "Menyanyi lagu dan membaca liriknya."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan cerpen cilik (sumatif).",
+        "Senarai semak: Penggunaan ayat majmuk relatif/komplemen.",
+        "Latihan bertulis: Penggunaan kata kerja pasif.",
+        "Rubrik: Koherensi dan perkembangan idea."
+      ],
+      "aids": [
+        "Gambar bersiri untuk cerpen.",
+        "Carta jenis-jenis ayat majmuk.",
+        "Lembaran kerja penulisan cerpen.",
+        "Carta Kata Kerja Pasif."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 4: Sains dan Teknologi (Tatabahasa - Kata Hubung Pancangan)",
+      "skill_name": "Tatabahasa (Kata Hubung Pancangan)",
+      "standards": [
+        "5.1.4 Memahami dan menggunakan kata hubung pancangan: (i) relatif, (ii) komplemen, (iii) keterangan.",
+        "5.1.5 Memahami dan menggunakan kata sendi nama: (vi) sejak, (vii) hingga, (viii) terhadap.",
+        "1.2.2 Memberikan penerangan tentang faedah teknologi.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber.",
+        "3.2.1 Membina dan menulis pelbagai jenis ayat majmuk."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 6 kata hubung pancangan (relatif, komplemen, keterangan) dengan tepat.",
+        "Murid dapat menggunakan 3 kata sendi nama yang baharu (sejak, hingga, terhadap).",
+        "Murid dapat merumus 2 faedah teknologi daripada petikan.",
+        "Murid dapat membina 5 ayat majmuk pancangan yang betul."
+      ],
+      "activities": [
+        "Perbincangan: Faedah sains dan teknologi dalam kehidupan.",
+        "Latihan membina ayat menggunakan kata hubung pancangan keterangan (contoh: walaupun, agar, sekiranya).",
+        "Latihan membina ayat menggunakan kata sendi nama yang dipelajari.",
+        "Membaca dan merumus maklumat daripada artikel sains ringkas.",
+        "Menulis penerangan ringkas tentang fungsi alat teknologi kegemaran.",
+        "Aktiviti 'Hubungkan Ayat': Menggabungkan ayat tunggal menjadi ayat majmuk pancangan."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penggunaan kata hubung pancangan dan kata sendi nama.",
+        "Latihan bertulis: Membina ayat majmuk pancangan.",
+        "Ujian Lisan: Memberi penerangan tentang teknologi.",
+        "Senarai semak: Keupayaan merumus maklumat."
+      ],
+      "aids": [
+        "Carta Kata Hubung Pancangan.",
+        "Carta Kata Sendi Nama.",
+        "Artikel ringkas tentang sains.",
+        "Lembaran kerja tatabahasa."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 5: Budi Bahasa (Tatabahasa - Kata Nafi & Kata Majmuk)",
+      "skill_name": "Tatabahasa (Kata Nafi & Kata Majmuk)",
+      "standards": [
+        "5.1.9 Memahami dan menggunakan kata nafi: (i) bukan, (ii) tidak.",
+        "5.1.13 Memahami dan menggunakan kata majmuk: (i) mantap, (ii) bebas.",
+        "1.2.2 Memberikan penerangan tentang adab dan nilai murni.",
+        "2.3.2 Membaca dan mengenal pasti maklumat tersirat dan tersurat.",
+        "3.2.2 Membina dan menulis perenggan."
+      ],
+      "objectives": [
+        "Murid dapat menggunakan 3 kata nafi 'bukan' dan 3 'tidak' dengan tepat (6 ayat).",
+        "Murid dapat mengenal pasti dan menggunakan 5 kata majmuk mantap dan bebas.",
+        "Murid dapat memberi penerangan tentang 3 ciri budi bahasa.",
+        "Murid dapat menulis perenggan tentang kepentingan budi bahasa."
+      ],
+      "activities": [
+        "Perbincangan: Kepentingan budi bahasa dan nilai murni.",
+        "Latihan membina ayat menggunakan kata nafi (membezakan penggunaannya).",
+        "Aktiviti 'Detektif Kata Majmuk': Mencari kata majmuk mantap (contoh: kakitangan, bumiputera) dan bebas dalam teks.",
+        "Latihan membina ayat menggunakan kata majmuk.",
+        "Membaca petikan tentang kebaikan bersopan santun.",
+        "Lakonan: Situasi menggunakan bahasa yang sopan."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penggunaan kata nafi dan kata majmuk.",
+        "Ujian Lisan: Lakonan menggunakan bahasa sopan.",
+        "Latihan bertulis: Penulisan perenggan.",
+        "Senarai semak: Pemahaman konsep kata nafi."
+      ],
+      "aids": [
+        "Carta Kata Nafi dan Kata Majmuk.",
+        "Teks tentang budi bahasa.",
+        "Kad situasi lakonan.",
+        "Lembaran kerja tatabahasa."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 6: Pengangkutan Awam (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap soalan bercapah dan soalan inferens.",
+        "1.2.2 Memberikan penerangan tentang faedah pengangkutan awam dengan alasan.",
+        "1.3.1 Bercerita tentang pengalaman menggunakan pengangkutan awam.",
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat.",
+        "5.1.11 Memahami dan menggunakan kata tanya dan kata bantu."
+      ],
+      "objectives": [
+        "Murid dapat memberikan 3 alasan yang jelas tentang faedah menggunakan pengangkutan awam.",
+        "Murid dapat menggunakan 5 kata bantu (contoh: sudah, belum, hendak, dapat) dalam pertuturan.",
+        "Murid dapat memberi respons kepada soalan inferens tentang masa depan pengangkutan awam.",
+        "Murid dapat bercerita tentang pengalaman perjalanan dengan pengangkutan awam."
+      ],
+      "activities": [
+        "Perbincangan: Jenis-jenis pengangkutan awam dan faedahnya.",
+        "Latih tubi: Penggunaan kata bantu aspek (sudah, belum) dan ragam (hendak, mahu).",
+        "Aktiviti 'Bercerita': Murid berkongsi pengalaman menaiki bas/komuter.",
+        "Sesi soal jawab: Guru mengajukan soalan inferens tentang masa depan pengangkutan awam.",
+        "Mendengar dan merumus maklumat daripada pengumuman di stesen.",
+        "Membaca petikan tentang perkhidmatan awam."
+      ],
+      "assessments": [
+        "Ujian Lisan: Memberi penerangan dan alasan.",
+        "Senarai semak: Penggunaan kata bantu.",
+        "Pemerhatian: Respons soalan inferens.",
+        "Rubrik: Kelancaran bercerita."
+      ],
+      "aids": [
+        "Carta Kata Bantu.",
+        "Gambar jenis-jenis pengangkutan awam.",
+        "Audio pengumuman awam.",
+        "Peta laluan pengangkutan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 7: Pesta Buku (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat untuk membuat ramalan.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber.",
+        "3.2.2 Membina dan menulis perenggan dengan idea utama dan sampingan yang sesuai.",
+        "5.1.12 Memahami dan menggunakan kata ganda: (iii) berentak.",
+        "1.2.2 Memberikan penerangan tentang jenis buku."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan merumus 3 maklumat utama tentang faedah membaca.",
+        "Murid dapat membuat 1 ramalan yang logik tentang kandungan buku berdasarkan tajuk/gambar.",
+        "Murid dapat menggunakan 5 kata ganda berentak (contoh: kuih-muih, warna-warni, sayur-mayur) dalam ayat.",
+        "Murid dapat menulis perenggan (6 ayat) tentang buku kegemaran."
+      ],
+      "activities": [
+        "Membaca pelbagai jenis teks (iklan, petikan, resensi buku).",
+        "Aktiviti 'Jelajah Buku': Membaca tajuk dan membuat ramalan tentang isi kandungan.",
+        "Latihan merumus maklumat tentang faedah membaca.",
+        "Latihan membina ayat menggunakan kata ganda berentak.",
+        "Perbincangan: Jenis-jenis buku (fiksi, non-fiksi).",
+        "Menulis perenggan berpandu tentang kepentingan buku."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Merumus maklumat dan membuat ramalan.",
+        "Latihan bertulis: Penggunaan kata ganda berentak.",
+        "Ujian Lisan: Memberi penerangan tentang buku.",
+        "Rubrik: Penulisan perenggan."
+      ],
+      "aids": [
+        "Pelbagai jenis buku/teks.",
+        "Carta Kata Ganda Berentak.",
+        "Lembaran kerja merumus dan meramal.",
+        "Papan kenyataan mini (resensi buku)."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 8: Pasar Tani (Penulisan Kreatif)",
+      "skill_name": "Penulisan",
+      "standards": [
+        "3.2.1 Membina dan menulis pelbagai jenis ayat majmuk.",
+        "3.3.1 Menghasilkan penulisan bukan naratif (laporan/dialog) secara berpandu.",
+        "3.3.2 Mengembangkan idea utama menjadi perenggan.",
+        "3.2.3 Mengedit dan memurnikan hasil penulisan: kosa kata dan struktur ayat.",
+        "5.1.13 Memahami dan menggunakan kata majmuk.",
+        "4.2.1 Melafazkan dan memahami sajak."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan penulisan bukan naratif (dialog antara penjual dan pembeli) dengan lancar.",
+        "Murid dapat menggunakan sekurang-kurangnya 5 kata majmuk dalam penulisan.",
+        "Murid dapat mengedit dan memurnikan 3 kesalahan struktur ayat (ayat pasif/aktif).",
+        "Murid dapat menulis perenggan (8 ayat) tentang pengalaman di pasar."
+      ],
+      "activities": [
+        "Perbincangan: Aktiviti di pasar tani (menawar harga, jenis jualan).",
+        "Latihan membina ayat majmuk pancangan dan gabungan.",
+        "Menulis dialog berpandu antara penjual dan pembeli.",
+        "Aktiviti memurnikan teks: Menyemak kosa kata dan struktur ayat.",
+        "Melafazkan sajak bertema makanan dan hasil pertanian.",
+        "Latihan menggunakan kata majmuk (contoh: tanggungjawab, setiausahasiswa)."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan dialog.",
+        "Senarai semak: Penggunaan ayat majmuk dan kata majmuk.",
+        "Latihan bertulis: Pengeditan struktur ayat.",
+        "Rubrik: Koherensi penulisan."
+      ],
+      "aids": [
+        "Teks dialog model.",
+        "Carta jenis-jenis ayat majmuk.",
+        "Lembaran kerja penulisan dialog.",
+        "Gambar/Video pasar tani."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 9: Adat Resam (Seni Bahasa)",
+      "skill_name": "Seni Bahasa",
+      "standards": [
+        "4.3.1 Melafazkan dan memahami puisi dengan sebutan yang jelas, intonasi yang betul dan penghayatan.",
+        "4.4.1 Menyanyikan lagu dan memahami maksud lirik.",
+        "4.4.2 Menghasilkan lirik lagu mudah (2 rangkap) secara berpandu.",
+        "1.3.1 Bercerita tentang adat resam kaum.",
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan puisi/pantun 4 rangkap dengan penghayatan yang sesuai.",
+        "Murid dapat menyatakan 3 nilai murni/mesej daripada puisi/lagu.",
+        "Murid dapat menghasilkan 2 rangkap lirik lagu mudah tentang adat resam.",
+        "Murid dapat bercerita tentang 1 adat resam kaum di Malaysia."
+      ],
+      "activities": [
+        "Mendengar dan melafazkan puisi/pantun bertema adat resam.",
+        "Menyanyikan lagu bertema kebudayaan dan adat.",
+        "Perbincangan: Nilai-nilai murni dalam adat resam.",
+        "Aktiviti 'Pencipta Lirik': Murid menulis lirik lagu tentang perayaan/adat secara berpandu.",
+        "Bercerita tentang pengalaman menghadiri majlis adat.",
+        "Membaca petikan ringkas tentang pelbagai kaum."
+      ],
+      "assessments": [
+        "Ujian Lisan: Melafazkan puisi (dinilai penghayatan dan intonasi).",
+        "Penilaian bertulis: Menghasilkan lirik lagu.",
+        "Pemerhatian: Keupayaan memahami dan menyatakan nilai.",
+        "Rubrik: Kelancaran bercerita tentang adat."
+      ],
+      "aids": [
+        "Teks puisi/pantun tentang adat.",
+        "Lirik lagu kebudayaan.",
+        "Gambar/Video adat resam.",
+        "Lembaran kerja penulisan lirik."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 10: Bijak Urus Wang (Tatabahasa - Kata Berimbuhan)",
+      "skill_name": "Tatabahasa (Kata Berimbuhan)",
+      "standards": [
+        "5.1.14 Memahami dan menggunakan kata berimbuhan: (i) awalan, (ii) akhiran, (iii) apitan.",
+        "5.1.15 Memahami dan menggunakan kata bilangan: (i) tentu, (ii) tak tentu.",
+        "1.2.2 Memberikan penerangan tentang pengurusan kewangan.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber.",
+        "3.2.2 Membina dan menulis perenggan."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti dan menggunakan 6 kata berimbuhan awalan, akhiran, dan apitan.",
+        "Murid dapat menggunakan 4 kata bilangan tentu dan tak tentu dalam ayat.",
+        "Murid dapat memberi penerangan tentang 3 cara menguruskan wang dengan bijak.",
+        "Murid dapat menulis perenggan tentang kepentingan menabung."
+      ],
+      "activities": [
+        "Perbincangan: Pengurusan kewangan (menabung, berbelanja).",
+        "Aktiviti 'Detektif Imbuhan': Mencari kata berimbuhan dalam petikan tentang perniagaan.",
+        "Latihan membina ayat menggunakan kata berimbuhan awalan, akhiran, dan apitan.",
+        "Latihan membina ayat menggunakan kata bilangan tentu (dua buah, sepuluh biji) dan tak tentu (beberapa, segala).",
+        "Membaca dan merumus maklumat daripada brosur kewangan.",
+        "Menulis perenggan tentang menabung."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penggunaan kata berimbuhan dan kata bilangan.",
+        "Ujian Lisan: Memberi penerangan tentang pengurusan wang.",
+        "Latihan bertulis: Penulisan perenggan.",
+        "Senarai semak: Kepelbagaian imbuhan."
+      ],
+      "aids": [
+        "Carta Kata Berimbuhan dan Kata Bilangan.",
+        "Brosur/Artikel ringkas tentang kewangan.",
+        "Lembaran kerja tatabahasa.",
+        "Gambar wang/tabung."
+      ]
+    },
+    // --- TAHUN 4: 10 UNIT ---
+    {
+      "year": 4,
+      "topic_name": "Unit 1: Keunikan Budaya (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap soalan bercapah dan soalan inferens secara terperinci.",
+        "1.2.1 Bertutur untuk menjelaskan maklumat tentang budaya dengan hujah yang jitu.",
+        "1.2.2 Memberikan penerangan tentang sesuatu isu dengan alasan yang logik.",
+        "1.3.1 Bercerita tentang warisan budaya dengan sebutan yang jelas dan intonasi yang sesuai.",
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat.",
+        "5.1.1 Memahami dan menggunakan pelbagai jenis kata nama."
+      ],
+      "objectives": [
+        "Murid dapat memberikan respons yang bernas dan terperinci kepada soalan inferens tentang kepentingan budaya.",
+        "Murid dapat menjelaskan 2 keunikan budaya (pakaian, makanan, atau perayaan) dengan hujah yang jitu.",
+        "Murid dapat menggunakan 5 jenis kata nama (am, khas, terbitan, majmuk) dalam pertuturan.",
+        "Murid dapat bercerita tentang pengalaman menyertai aktiviti kebudayaan."
+      ],
+      "activities": [
+        "Perbincangan: Keunikan budaya pelbagai kaum di Malaysia.",
+        "Aktiviti 'Debat Ringkas': Membincangkan kepentingan mempertahankan warisan budaya.",
+        "Latih tubi: Penggunaan pelbagai jenis kata nama (terbitan, majmuk).",
+        "Bercerita: Murid berkongsi pengetahuan tentang warisan budaya.",
+        "Mendengar dan merumus maklumat daripada wawancara tokoh budaya.",
+        "Membaca petikan tentang seni dan warisan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Memberi penerangan dan hujah yang jitu (sumatif).",
+        "Senarai semak: Penggunaan pelbagai jenis kata nama.",
+        "Pemerhatian: Keterlibatan dalam perbincangan/debat.",
+        "Rubrik: Kejelasan dan kelancaran bercerita."
+      ],
+      "aids": [
+        "Carta jenis-jenis kata nama (termasuk terbitan/majmuk).",
+        "Audio/video wawancara tokoh budaya.",
+        "Gambar warisan budaya (tarian, makanan, pakaian).",
+        "Kad situasi debat."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 2: Kesihatan Awam (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat untuk membuat justifikasi.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber dengan tepat.",
+        "2.4.1 Membaca dan memahami bahan sastera dan bukan sastera (artikel kesihatan).",
+        "3.3.1 Menghasilkan penulisan bukan naratif (rencana/laporan) secara separa berpandu.",
+        "5.1.2 Memahami dan menggunakan pelbagai jenis kata adjektif.",
+        "4.3.1 Melafazkan dan memahami puisi."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan mengenal pasti maklumat tersirat untuk membuat justifikasi yang kukuh.",
+        "Murid dapat merumus maklumat tentang isu kesihatan awam daripada 3 sumber berbeza.",
+        "Murid dapat menggunakan 6 jenis kata adjektif (sifat, warna, waktu, ukuran, bentuk, pancaindera) dalam ayat.",
+        "Murid dapat menulis rencana ringkas (2 perenggan) tentang pencegahan penyakit."
+      ],
+      "activities": [
+        "Membaca artikel tentang isu kesihatan awam (denggi, obesiti).",
+        "Aktiviti 'Justifikasi Teks': Mencari bukti dalam teks untuk menyokong sesuatu pernyataan.",
+        "Latihan merumus maklumat daripada graf/jadual dan teks.",
+        "Latihan membina ayat menggunakan pelbagai jenis kata adjektif.",
+        "Menulis rencana ringkas tentang amalan hidup sihat (separa berpandu).",
+        "Melafazkan puisi bertema kesihatan."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Merumus maklumat dan membuat justifikasi.",
+        "Latihan bertulis: Penggunaan pelbagai jenis kata adjektif.",
+        "Penilaian bertulis: Penulisan rencana ringkas.",
+        "Senarai semak: Ketepatan maklumat."
+      ],
+      "aids": [
+        "Artikel/Teks berita kesihatan awam.",
+        "Graf/Jadual statistik kesihatan.",
+        "Carta pelbagai jenis kata adjektif.",
+        "Lembaran kerja merumus."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 3: Cerpen Remaja (Kemahiran Menulis)",
+      "skill_name": "Menulis",
+      "standards": [
+        "3.2.1 Membina dan menulis pelbagai jenis ayat majmuk: (iii) gabungan.",
+        "3.3.1 Menghasilkan penulisan naratif dan bukan naratif secara separa berpandu dan bebas.",
+        "3.3.2 Mengembangkan idea utama dan sampingan menjadi perenggan yang koheren.",
+        "4.4.1 Menyanyikan lagu dan memahami maksud lirik.",
+        "5.1.3 Memahami dan menggunakan pelbagai jenis kata kerja: (i) aktif, (ii) pasif, (iii) frasa kerja.",
+        "2.4.1 Membaca dan memahami bahan sastera dan bukan sastera."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan cerpen ringkas (3 perenggan) yang mempunyai plot, watak, dan latar.",
+        "Murid dapat menggunakan ayat majmuk gabungan (contoh: lalu, serta, atau) dengan betul.",
+        "Murid dapat menggunakan kata kerja aktif, pasif, dan frasa kerja dalam penulisan.",
+        "Murid dapat mengembangkan idea utama menjadi perenggan yang koheren (perkembangan 3 idea sampingan)."
+      ],
+      "activities": [
+        "Membaca cerpen remaja dan menganalisis elemen sastera (plot, watak, latar).",
+        "Latihan membina ayat majmuk gabungan menggunakan pelbagai kata hubung gabungan.",
+        "Latihan membina ayat menggunakan pelbagai jenis kata kerja (aktif, pasif).",
+        "Menulis cerpen ringkas secara separa berpandu.",
+        "Aktiviti 'Mengembangkan Idea': Menambah detail kepada idea utama.",
+        "Menyanyikan lagu dan memahami maksud liriknya."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan cerpen (dinilai elemen sastera dan struktur ayat).",
+        "Senarai semak: Penggunaan ayat majmuk gabungan dan pelbagai kata kerja.",
+        "Latihan bertulis: Mengembangkan perenggan.",
+        "Rubrik: Koherensi dan kreativiti penulisan."
+      ],
+      "aids": [
+        "Contoh cerpen ringkas.",
+        "Carta elemen sastera (plot, watak).",
+        "Lembaran kerja penulisan cerpen.",
+        "Carta Kata Kerja (aktif/pasif)."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 4: Inovasi dan Kreativiti (Tatabahasa - Frasa Nama & Frasa Kerja)",
+      "skill_name": "Tatabahasa (Frasa Nama & Frasa Kerja)",
+      "standards": [
+        "5.2.1 Memahami dan menggunakan frasa nama: (i) inti dan penerang, (ii) penerang dan inti.",
+        "5.2.2 Memahami dan menggunakan frasa kerja: (i) FN + KK, (ii) KK + FN.",
+        "1.2.1 Bertutur untuk menjelaskan sesuatu isu dengan hujah yang jitu.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber.",
+        "3.3.1 Menghasilkan penulisan bukan naratif (ulasan)."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti dan menggunakan 4 jenis frasa nama (inti dan penerang/sebaliknya).",
+        "Murid dapat mengenal pasti dan menggunakan 4 jenis frasa kerja (FN + KK / KK + FN).",
+        "Murid dapat menjelaskan 2 faedah inovasi dengan hujah yang jitu.",
+        "Murid dapat menulis ulasan ringkas (2 perenggan) tentang satu ciptaan."
+      ],
+      "activities": [
+        "Perbincangan: Kepentingan inovasi dan kreativiti.",
+        "Latihan membina ayat menggunakan pelbagai jenis frasa nama (contoh: rumah batu, kasut merah).",
+        "Latihan membina ayat menggunakan pelbagai jenis frasa kerja (contoh: membasuh baju, dia menyanyi).",
+        "Membaca dan merumus maklumat daripada artikel tentang ciptaan baharu.",
+        "Menulis ulasan ringkas tentang satu inovasi.",
+        "Aktiviti 'Analisis Ayat': Mengenal pasti frasa nama dan frasa kerja dalam petikan."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penggunaan frasa nama dan frasa kerja.",
+        "Ujian Lisan: Memberi hujah tentang inovasi.",
+        "Latihan bertulis: Penulisan ulasan.",
+        "Senarai semak: Ketepatan analisis frasa."
+      ],
+      "aids": [
+        "Carta Frasa Nama dan Frasa Kerja.",
+        "Artikel tentang inovasi.",
+        "Lembaran kerja tatabahasa.",
+        "Gambar ciptaan baharu."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 5: Perpaduan Teras Negara (Tatabahasa - Frasa Adjektif & Frasa Sendi Nama)",
+      "skill_name": "Tatabahasa (Frasa Adjektif & Frasa Sendi Nama)",
+      "standards": [
+        "5.2.3 Memahami dan menggunakan frasa adjektif: (i) penguat hadapan, (ii) penguat belakang.",
+        "5.2.4 Memahami dan menggunakan frasa sendi nama.",
+        "1.2.2 Memberikan penerangan tentang nilai perpaduan dengan alasan yang logik.",
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat.",
+        "3.3.1 Menghasilkan penulisan bukan naratif (laporan)."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti dan menggunakan 4 jenis frasa adjektif (penguat hadapan/belakang) dengan betul.",
+        "Murid dapat mengenal pasti dan menggunakan 5 frasa sendi nama yang lengkap (sendi nama + FN).",
+        "Murid dapat memberi penerangan tentang 3 kepentingan perpaduan dengan alasan logik.",
+        "Murid dapat menulis perenggan laporan ringkas tentang aktiviti perpaduan."
+      ],
+      "activities": [
+        "Perbincangan: Kepentingan perpaduan kaum.",
+        "Latihan membina ayat menggunakan frasa adjektif (contoh: amat cantik, cantik sekali).",
+        "Latihan membina ayat menggunakan frasa sendi nama (contoh: di tepi sungai, ke pasar raya).",
+        "Membaca petikan tentang aktiviti perpaduan di sekolah.",
+        "Menulis perenggan laporan tentang sambutan Hari Kebangsaan.",
+        "Lakonan: Dialog bertema perpaduan."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penggunaan frasa adjektif dan frasa sendi nama.",
+        "Ujian Lisan: Memberi penerangan tentang perpaduan.",
+        "Latihan bertulis: Penulisan laporan.",
+        "Senarai semak: Ketepatan penggunaan frasa sendi nama."
+      ],
+      "aids": [
+        "Carta Frasa Adjektif dan Frasa Sendi Nama.",
+        "Gambar aktiviti perpaduan.",
+        "Teks laporan model.",
+        "Lembaran kerja tatabahasa."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 6: Pengurusan Masa (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap soalan bercapah dan inferens.",
+        "1.2.2 Memberikan penerangan tentang teknik pengurusan masa dengan hujah yang jitu.",
+        "1.3.1 Bercerita tentang pengalaman mengurus masa dengan berkesan.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber.",
+        "5.1.1 Memahami dan menggunakan pelbagai jenis kata nama."
+      ],
+      "objectives": [
+        "Murid dapat memberikan 3 hujah yang jitu tentang kepentingan pengurusan masa.",
+        "Murid dapat menggunakan 5 jenis kata nama (abstrak, konkrit, terbitan) dalam pertuturan.",
+        "Murid dapat memberi respons kepada soalan inferens tentang kegagalan mengurus masa.",
+        "Murid dapat bercerita tentang pengalaman menggunakan jadual waktu."
+      ],
+      "activities": [
+        "Perbincangan: Teknik pengurusan masa (jadual, keutamaan).",
+        "Aktiviti 'Jadual Saya': Murid berkongsi jadual harian dan memberi penerangan.",
+        "Latih tubi: Penggunaan kata nama abstrak (kebahagiaan, kerajinan) dan konkrit.",
+        "Sesi soal jawab: Guru mengajukan soalan inferens tentang akibat tidak mengurus masa.",
+        "Mendengar dan merumus maklumat daripada ceramah ringkas tentang pengurusan masa.",
+        "Membaca petikan tentang tokoh yang berjaya menguruskan masa."
+      ],
+      "assessments": [
+        "Ujian Lisan: Memberi penerangan dan hujah yang jitu.",
+        "Senarai semak: Penggunaan pelbagai jenis kata nama.",
+        "Pemerhatian: Respons soalan inferens.",
+        "Rubrik: Kelancaran bercerita."
+      ],
+      "aids": [
+        "Carta jenis-jenis kata nama.",
+        "Contoh jadual waktu.",
+        "Audio ceramah motivasi.",
+        "Lembaran kerja 'Rancang Masa Saya'."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 7: Warisan Negeri (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat untuk membuat justifikasi.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber dengan tepat.",
+        "2.4.1 Membaca dan memahami bahan sastera dan bukan sastera (maklumat sejarah).",
+        "3.3.1 Menghasilkan penulisan bukan naratif (fakta sejarah) secara separa berpandu.",
+        "5.1.3 Memahami dan menggunakan kata kerja aktif dan pasif."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan merumus 4 fakta utama tentang warisan negeri.",
+        "Murid dapat membuat justifikasi yang kukuh tentang kepentingan memelihara warisan.",
+        "Murid dapat menggunakan 4 kata kerja aktif dan 4 kata kerja pasif dalam ayat.",
+        "Murid dapat menulis perenggan (3 perenggan) tentang satu warisan negeri."
+      ],
+      "activities": [
+        "Membaca artikel tentang warisan sejarah negeri (bangunan lama, adat).",
+        "Aktiviti 'Justifikasi Teks': Mencari bukti dalam teks untuk menyokong pemeliharaan warisan.",
+        "Latihan merumus maklumat daripada peta/infografik dan teks.",
+        "Latihan membina ayat menggunakan kata kerja aktif dan pasif.",
+        "Menulis rencana ringkas tentang warisan negeri (separa berpandu).",
+        "Membaca bahan sastera rakyat (lagenda negeri)."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Merumus maklumat dan membuat justifikasi.",
+        "Latihan bertulis: Penggunaan kata kerja aktif/pasif.",
+        "Penilaian bertulis: Penulisan rencana ringkas.",
+        "Senarai semak: Ketepatan fakta."
+      ],
+      "aids": [
+        "Artikel/Teks sejarah negeri.",
+        "Infografik warisan negeri.",
+        "Carta Kata Kerja Aktif dan Pasif.",
+        "Lembaran kerja penulisan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 8: Karnival Sekolah (Penulisan Kreatif)",
+      "skill_name": "Penulisan",
+      "standards": [
+        "3.2.2 Membina dan menulis perenggan (8-10 ayat) dengan idea utama dan sampingan yang koheren.",
+        "3.3.1 Menghasilkan penulisan naratif dan bukan naratif secara separa berpandu dan bebas.",
+        "3.3.2 Mengembangkan idea utama dan sampingan menjadi perenggan yang kohesif.",
+        "5.2.1 Memahami dan menggunakan frasa nama dan frasa kerja.",
+        "1.2.2 Memberikan penerangan tentang penganjuran acara."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan penulisan bukan naratif (laporan/poster) tentang penganjuran karnival.",
+        "Murid dapat menulis perenggan (10 ayat) yang kohesif tentang pengalaman di karnival.",
+        "Murid dapat menggunakan frasa nama dan frasa kerja yang pelbagai dalam penulisan.",
+        "Murid dapat mengedit dan memurnikan 4 kesalahan ejaan dan tanda baca dalam draf penulisan."
+      ],
+      "activities": [
+        "Perbincangan: Merancang dan menganjurkan karnival sekolah.",
+        "Menulis laporan ringkas tentang penganjuran karnival (fokus perkembangan idea).",
+        "Latihan membina ayat menggunakan frasa nama dan frasa kerja yang kompleks.",
+        "Menghasilkan poster/iklan untuk karnival.",
+        "Aktiviti memurnikan teks: Menyemak kohesi dan ejaan/tanda baca.",
+        "Memberikan penerangan tentang langkah-langkah penganjuran."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan laporan/poster.",
+        "Senarai semak: Kohesi perenggan (penggunaan penanda wacana).",
+        "Latihan bertulis: Penggunaan frasa nama dan frasa kerja.",
+        "Rubrik: Ketelitian pengeditan."
+      ],
+      "aids": [
+        "Contoh laporan/poster acara.",
+        "Carta penanda wacana (selain itu, justeru).",
+        "Lembaran kerja penulisan.",
+        "Carta Frasa."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 9: Bahasa Indah (Seni Bahasa)",
+      "skill_name": "Seni Bahasa",
+      "standards": [
+        "4.3.1 Melafazkan dan memahami puisi dengan sebutan, intonasi dan gaya yang sesuai.",
+        "4.4.1 Menyanyikan lagu dan memahami maksud lirik.",
+        "4.4.2 Menghasilkan lirik lagu (3 rangkap) secara berpandu.",
+        "4.5.1 Mengenal pasti dan menggunakan peribahasa: (i) simpulan bahasa, (ii) perumpamaan.",
+        "1.3.1 Bercerita menggunakan bahasa yang indah."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan puisi/sajak dengan gaya dan penghayatan yang meyakinkan.",
+        "Murid dapat mengenal pasti dan menggunakan 5 simpulan bahasa dan 3 perumpamaan dalam ayat.",
+        "Murid dapat menghasilkan 3 rangkap lirik lagu bertema keindahan alam.",
+        "Murid dapat bercerita menggunakan 2 peribahasa yang sesuai."
+      ],
+      "activities": [
+        "Mendengar dan melafazkan sajak dengan pelbagai gaya.",
+        "Perbincangan: Maksud simpulan bahasa dan perumpamaan.",
+        "Latihan membina ayat menggunakan peribahasa.",
+        "Aktiviti 'Pencipta Lirik': Murid menulis lirik lagu secara berpandu (fokus rima dan irama).",
+        "Bercerita: Menyusun cerita pendek dan memasukkan peribahasa.",
+        "Menganalisis bahasa indah dalam lirik lagu."
+      ],
+      "assessments": [
+        "Ujian Lisan: Melafazkan sajak (dinilai gaya dan penghayatan).",
+        "Penilaian bertulis: Penggunaan peribahasa dalam ayat.",
+        "Penilaian bertulis: Menghasilkan lirik lagu.",
+        "Rubrik: Kelancaran bercerita menggunakan peribahasa."
+      ],
+      "aids": [
+        "Teks sajak/puisi.",
+        "Carta Peribahasa (simpulan bahasa dan perumpamaan).",
+        "Lirik lagu.",
+        "Lembaran kerja penulisan lirik."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 10: Bijak Teknologi (Tatabahasa - Ayat Aktif & Ayat Pasif)",
+      "skill_name": "Tatabahasa (Ayat Aktif & Ayat Pasif)",
+      "standards": [
+        "5.3.1 Memahami dan menggunakan ayat aktif: (i) transitif, (ii) tak transitif.",
+        "5.3.2 Memahami dan menggunakan ayat pasif: (i) kata kerja pasif berimbuhan di-, (ii) kata kerja pasif tanpa imbuhan (kata ganti nama diri pertama dan kedua).",
+        "1.2.1 Bertutur untuk menjelaskan maklumat tentang teknologi dengan hujah yang jitu.",
+        "2.4.1 Membaca dan memahami bahan bukan sastera (artikel teknologi).",
+        "3.3.1 Menghasilkan penulisan bukan naratif (artikel)."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti dan membina 4 ayat aktif dan 4 ayat pasif yang betul.",
+        "Murid dapat menggunakan kata kerja pasif berimbuhan 'di-' dan pasif tanpa imbuhan (KGND 1/2) dengan tepat.",
+        "Murid dapat menjelaskan 2 kesan teknologi dengan hujah yang jitu.",
+        "Murid dapat menulis artikel ringkas (2 perenggan) tentang teknologi kegemaran."
+      ],
+      "activities": [
+        "Perbincangan: Faedah dan risiko penggunaan teknologi.",
+        "Latihan membina ayat aktif transitif dan tak transitif.",
+        "Latihan mengubah ayat aktif kepada pasif dan sebaliknya.",
+        "Latihan membina ayat pasif menggunakan kata ganti nama diri pertama dan kedua (contoh: Buku itu saya baca).",
+        "Membaca artikel tentang teknologi.",
+        "Menulis artikel ringkas tentang teknologi."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Membina dan mengubah ayat aktif dan pasif (sumatif).",
+        "Ujian Lisan: Memberi hujah tentang teknologi.",
+        "Latihan bertulis: Penulisan artikel.",
+        "Senarai semak: Ketepatan penggunaan kata ganti nama diri dalam ayat pasif."
+      ],
+      "aids": [
+        "Carta Ayat Aktif dan Ayat Pasif.",
+        "Artikel tentang teknologi.",
+        "Lembaran kerja tatabahasa.",
+        "Gambar gajet/aplikasi."
+      ]
+    },
+    // --- TAHUN 5: 10 UNIT ---
+    {
+      "year": 5,
+      "topic_name": "Unit 1: Keperibadian Mulia (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap pelbagai soalan dan pandangan dengan justifikasi.",
+        "1.2.1 Bertutur untuk menjelaskan sesuatu isu dengan hujah dan fakta yang relevan.",
+        "1.2.2 Memberikan penerangan tentang konsep/prinsip dengan alasan yang mantap.",
+        "1.3.2 Menyampaikan maklumat dan pandangan dengan menggunakan laras bahasa yang sesuai.",
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat untuk membuat justifikasi.",
+        "5.1.1 Memahami dan menggunakan pelbagai jenis kata nama."
+      ],
+      "objectives": [
+        "Murid dapat memberikan respons kepada pandangan rakan tentang nilai murni dengan justifikasi yang mantap.",
+        "Murid dapat menjelaskan 2 konsep keperibadian mulia dengan hujah dan fakta yang relevan.",
+        "Murid dapat menyampaikan maklumat dalam laras bahasa yang formal dan tidak formal.",
+        "Murid dapat menggunakan 6 jenis kata nama dalam pertuturan (termasuk abstrak dan konkrit)."
+      ],
+      "activities": [
+        "Perbincangan: Konsep keperibadian mulia (amanah, ikhlas, jujur).",
+        "Aktiviti 'Debat Formal': Membincangkan kepentingan nilai murni dalam kerjaya (fokus justifikasi dan fakta).",
+        "Latih tubi: Penggunaan laras bahasa formal (ucapan) dan tidak formal (perbualan biasa).",
+        "Menyampaikan maklumat tentang tokoh yang berkeperibadian mulia.",
+        "Mendengar dan merumus maklumat daripada ceramah tentang etika.",
+        "Membaca petikan dan membuat justifikasi tentang tindakan watak."
+      ],
+      "assessments": [
+        "Ujian Lisan: Memberi penerangan dan hujah yang mantap (sumatif).",
+        "Senarai semak: Penggunaan laras bahasa yang sesuai.",
+        "Pemerhatian: Respons terhadap pandangan rakan.",
+        "Rubrik: Kualiti justifikasi dan fakta."
+      ],
+      "aids": [
+        "Carta Kata Nama (abstrak/konkrit).",
+        "Contoh teks ucapan formal dan dialog tidak formal.",
+        "Audio ceramah tentang etika.",
+        "Kad situasi debat."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 2: Cabaran Global (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat untuk membuat inferens dan kesimpulan.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber dengan tepat dan terperinci.",
+        "2.4.1 Membaca dan memahami bahan sastera dan bukan sastera (artikel isu global).",
+        "3.3.1 Menghasilkan penulisan bukan naratif (rencana/editorial) secara bebas.",
+        "5.1.2 Memahami dan menggunakan pelbagai jenis kata adjektif: (i) semua jenis, (ii) kata penguat.",
+        "4.3.1 Melafazkan dan memahami puisi."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan mengenal pasti maklumat tersirat untuk membuat 2 inferens dan 1 kesimpulan yang logik tentang isu global.",
+        "Murid dapat merumus maklumat tentang isu global (kemiskinan, alam sekitar) daripada pelbagai sumber.",
+        "Murid dapat menggunakan 8 jenis kata adjektif dan pelbagai kata penguat (amat, nian, sekali) dalam ayat.",
+        "Murid dapat menulis rencana/editorial ringkas (3 perenggan) tentang penyelesaian isu global."
+      ],
+      "activities": [
+        "Membaca artikel tentang isu global (contoh: krisis air, pengangguran).",
+        "Aktiviti 'Peta Inferens': Membuat inferens dan kesimpulan berdasarkan bukti teks.",
+        "Latihan merumus maklumat daripada teks, graf, dan petikan wawancara.",
+        "Latihan membina ayat menggunakan pelbagai kata adjektif dan kata penguat.",
+        "Menulis rencana/editorial secara bebas tentang isu global.",
+        "Melafazkan puisi bertema kesedaran global."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Membuat inferens dan kesimpulan (sumatif).",
+        "Latihan bertulis: Penggunaan pelbagai kata adjektif dan kata penguat.",
+        "Penilaian bertulis: Penulisan rencana/editorial (kandungan dan bahasa).",
+        "Senarai semak: Keupayaan merumus maklumat terperinci."
+      ],
+      "aids": [
+        "Artikel/Teks berita isu global.",
+        "Infografik dan statistik.",
+        "Carta Kata Adjektif dan Kata Penguat.",
+        "Lembaran kerja penulisan editorial."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 3: Karangan Berformat (Kemahiran Menulis)",
+      "skill_name": "Menulis",
+      "standards": [
+        "3.2.1 Membina dan menulis pelbagai jenis ayat majmuk.",
+        "3.3.1 Menghasilkan penulisan berformat: (i) surat kiriman rasmi, (ii) ucapan, (iii) laporan.",
+        "3.3.2 Mengembangkan idea utama dan sampingan menjadi perenggan yang kohesif dan koheren.",
+        "4.4.1 Menyanyikan lagu dan memahami maksud lirik.",
+        "5.1.3 Memahami dan menggunakan pelbagai jenis kata kerja: (iv) kata kerja bantu, (v) kata kerja terbitan (meN...i, meN...kan).",
+        "2.4.1 Membaca dan memahami bahan sastera dan bukan sastera."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan surat kiriman rasmi (format lengkap).",
+        "Murid dapat menggunakan 5 jenis kata kerja terbitan (meN...i, meN...kan) dengan betul.",
+        "Murid dapat mengembangkan perenggan dengan kohesi dan koheren yang tinggi.",
+        "Murid dapat membina pelbagai jenis ayat majmuk (relatif, komplemen, gabungan) dalam penulisan."
+      ],
+      "activities": [
+        "Membaca dan menganalisis pelbagai jenis karangan berformat (surat rasmi, laporan, ucapan).",
+        "Latihan membina ayat menggunakan kata kerja terbitan (contoh: menduduki, menjalankan).",
+        "Latihan membina pelbagai jenis ayat majmuk.",
+        "Menulis surat kiriman rasmi (separa berpandu).",
+        "Aktiviti 'Analisis Kohesi': Mengenal pasti dan menambah penanda wacana yang sesuai.",
+        "Menganalisis bahasa formal dalam ucapan."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan surat kiriman rasmi (dinilai format, bahasa, dan isi).",
+        "Senarai semak: Penggunaan kata kerja terbitan dan pelbagai ayat majmuk.",
+        "Latihan bertulis: Analisis kohesi perenggan.",
+        "Rubrik: Kelengkapan format."
+      ],
+      "aids": [
+        "Contoh karangan berformat (surat rasmi, ucapan).",
+        "Carta Kata Kerja Terbitan.",
+        "Carta penanda wacana.",
+        "Lembaran kerja penulisan berformat."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 4: Sains dan Kehidupan (Tatabahasa - Kata Tugas)",
+      "skill_name": "Tatabahasa (Kata Tugas)",
+      "standards": [
+        "5.1.4 Memahami dan menggunakan kata hubung (semua jenis).",
+        "5.1.5 Memahami dan menggunakan kata sendi nama (semua jenis).",
+        "5.1.6 Memahami dan menggunakan kata tugas (semua jenis: kata penguat, kata bantu, kata nafi, kata arah, kata tanya, kata seru, dsb.).",
+        "1.2.2 Memberikan penerangan tentang konsep sains dengan alasan yang mantap.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti dan menggunakan sekurang-kurangnya 10 jenis kata tugas dalam ayat.",
+        "Murid dapat membezakan dan menggunakan kata tugas yang sering bercelaru (contoh: di vs. pada, dari vs. daripada).",
+        "Murid dapat memberi penerangan tentang 2 konsep sains dengan alasan yang mantap (menggunakan pelbagai kata tugas).",
+        "Murid dapat membina ayat majmuk dan ayat tunggal dengan kepelbagaian kata tugas."
+      ],
+      "activities": [
+        "Perbincangan: Konsep sains dalam kehidupan (contoh: kitaran air).",
+        "Aktiviti 'Analisis Teks': Mengenal pasti dan mengelaskan semua jenis kata tugas dalam petikan sains.",
+        "Latihan membina ayat yang mengandungi gabungan pelbagai kata tugas.",
+        "Latihan membezakan penggunaan kata tugas (latih tubi kesalahan umum).",
+        "Membaca dan merumus maklumat daripada artikel sains yang kompleks.",
+        "Menulis perenggan penerangan tentang satu proses sains."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Analisis dan penggunaan pelbagai jenis kata tugas (sumatif).",
+        "Ujian Lisan: Memberi penerangan konsep sains (dinilai penggunaan kata tugas).",
+        "Latihan bertulis: Pembinaan ayat dengan kata tugas bercelaru.",
+        "Senarai semak: Kepelbagaian jenis kata tugas."
+      ],
+      "aids": [
+        "Carta jenis-jenis Kata Tugas (lengkap).",
+        "Artikel/Teks sains yang kompleks.",
+        "Lembaran kerja tatabahasa (latihan perbezaan).",
+        "Rajah/Model konsep sains."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 5: Persekitaran Lestari (Tatabahasa - Ayat Majmuk Pancangan)",
+      "skill_name": "Tatabahasa (Ayat Majmuk Pancangan)",
+      "standards": [
+        "5.3.3 Memahami dan menggunakan pelbagai jenis ayat majmuk pancangan: (i) relatif, (ii) komplemen, (iii) keterangan.",
+        "5.3.4 Memahami dan menggunakan pelbagai jenis ayat tanya: (i) dengan kata tanya, (ii) tanpa kata tanya.",
+        "1.2.1 Bertutur untuk menjelaskan isu alam sekitar dengan hujah dan fakta.",
+        "2.3.2 Membaca dan mengenal pasti maklumat tersirat untuk membuat inferens.",
+        "3.3.1 Menghasilkan penulisan bukan naratif (artikel)."
+      ],
+      "objectives": [
+        "Murid dapat membina 6 ayat majmuk pancangan yang pelbagai (relatif, komplemen, keterangan) dengan tepat.",
+        "Murid dapat membina 4 ayat tanya dengan dan tanpa kata tanya yang betul.",
+        "Murid dapat menjelaskan 2 langkah memelihara persekitaran lestari dengan hujah dan fakta.",
+        "Murid dapat menulis artikel ringkas (3 perenggan) tentang penjagaan alam."
+      ],
+      "activities": [
+        "Perbincangan: Isu kelestarian alam sekitar dan penyelesaiannya.",
+        "Latihan membina ayat majmuk pancangan keterangan (contoh: sungguhpun, meskipun, agar).",
+        "Latihan membina pelbagai jenis ayat tanya (contoh: 'Adakah kita patut...' atau 'Mengapa kita perlu...').",
+        "Membaca artikel tentang projek kelestarian.",
+        "Menulis artikel tentang amalan hijau.",
+        "Aktiviti 'Analisis Ayat': Mengenal pasti klausa utama dan klausa pancangan."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Pembinaan ayat majmuk pancangan dan ayat tanya (sumatif).",
+        "Ujian Lisan: Memberi hujah tentang kelestarian alam.",
+        "Latihan bertulis: Penulisan artikel.",
+        "Senarai semak: Ketepatan penggunaan kata hubung pancangan."
+      ],
+      "aids": [
+        "Carta Ayat Majmuk Pancangan dan Ayat Tanya.",
+        "Artikel isu kelestarian.",
+        "Lembaran kerja tatabahasa.",
+        "Gambar/Video projek hijau."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 6: Pengangkutan Masa Depan (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap pandangan dan hujah dengan kritikal.",
+        "1.2.1 Bertutur untuk menghuraikan idea dan konsep secara terperinci.",
+        "1.3.2 Menyampaikan maklumat dan pandangan dengan menggunakan laras bahasa yang formal dan tidak formal.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber.",
+        "5.3.1 Memahami dan menggunakan pelbagai jenis ayat aktif."
+      ],
+      "objectives": [
+        "Murid dapat memberikan respons secara kritikal terhadap pandangan tentang pengangkutan masa depan.",
+        "Murid dapat menghuraikan 2 idea pengangkutan masa depan secara terperinci (fakta dan ramalan).",
+        "Murid dapat menggunakan laras bahasa formal (pembentangan) dan tidak formal (perbualan) secara bergilir-gilir.",
+        "Murid dapat menggunakan pelbagai jenis ayat aktif (transitif, tak transitif) dalam huraian."
+      ],
+      "activities": [
+        "Perbincangan: Pengangkutan futuristik dan kesannya.",
+        "Aktiviti 'Pembentangan Konsep': Murid membentangkan konsep pengangkutan masa depan (formal).",
+        "Latih tubi: Penggunaan laras bahasa formal dan tidak formal dalam dialog.",
+        "Sesi soal jawab: Murid memberi hujah balas secara kritikal.",
+        "Mendengar dan merumus maklumat daripada artikel/video teknologi pengangkutan.",
+        "Membaca petikan tentang pembangunan teknologi."
+      ],
+      "assessments": [
+        "Ujian Lisan: Pembentangan konsep (dinilai huraian terperinci dan bahasa).",
+        "Senarai semak: Penggunaan laras bahasa dan respons kritikal.",
+        "Pemerhatian: Penggunaan pelbagai jenis ayat aktif.",
+        "Rubrik: Kualiti hujah."
+      ],
+      "aids": [
+        "Gambar/Video pengangkutan futuristik.",
+        "Contoh teks pembentangan formal.",
+        "Audio dialog formal/tidak formal.",
+        "Lembaran kerja merumus."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 7: Kenali Sejarah (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat untuk membuat inferens dan kesimpulan.",
+        "2.4.1 Membaca dan memahami bahan sastera dan bukan sastera (teks sejarah).",
+        "3.3.1 Menghasilkan penulisan bukan naratif (esei fakta) secara bebas.",
+        "5.3.2 Memahami dan menggunakan pelbagai jenis ayat pasif.",
+        "1.3.2 Menyampaikan maklumat dan pandangan."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan merumus maklumat tersirat untuk membuat 2 inferens dan 1 kesimpulan tentang peristiwa sejarah.",
+        "Murid dapat menggunakan pelbagai jenis ayat pasif (kata kerja pasif berimbuhan di-, pasif tanpa imbuhan) dengan tepat dalam ayat.",
+        "Murid dapat menulis esei fakta ringkas (3 perenggan) tentang sejarah negara secara bebas.",
+        "Murid dapat menyampaikan maklumat sejarah dengan bahasa yang jelas."
+      ],
+      "activities": [
+        "Membaca artikel sejarah (contoh: pembentukan Malaysia, tokoh kemerdekaan).",
+        "Aktiviti 'Analisis Sejarah': Membuat inferens dan kesimpulan tentang punca/akibat peristiwa.",
+        "Latihan membina ayat pasif menggunakan pelbagai subjek (termasuk bukan manusia).",
+        "Menulis esei fakta ringkas secara bebas.",
+        "Perbincangan: Kepentingan memelihara artifak sejarah.",
+        "Menyampaikan maklumat tentang tokoh sejarah."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Membuat inferens dan kesimpulan.",
+        "Latihan bertulis: Penggunaan pelbagai jenis ayat pasif (sumatif).",
+        "Penilaian bertulis: Penulisan esei fakta.",
+        "Senarai semak: Ketepatan fakta sejarah."
+      ],
+      "aids": [
+        "Teks/Artikel sejarah negara.",
+        "Carta jenis-jenis Ayat Pasif.",
+        "Gambar/Artifak sejarah.",
+        "Lembaran kerja penulisan esei."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 8: Karangan Bebas (Penulisan Kreatif)",
+      "skill_name": "Penulisan",
+      "standards": [
+        "3.2.2 Membina dan menulis perenggan yang kohesif dan koheren dengan menggunakan bahasa yang gramatis.",
+        "3.3.1 Menghasilkan penulisan naratif dan bukan naratif secara bebas (esei/cerpen).",
+        "3.3.2 Mengembangkan idea utama dan sampingan dengan huraian dan contoh yang terperinci.",
+        "5.3.3 Memahami dan menggunakan pelbagai jenis ayat majmuk: (i) pancangan, (ii) gabungan.",
+        "1.3.2 Menyampaikan maklumat dan pandangan."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan penulisan esei/cerpen (4 perenggan) secara bebas dengan bahasa yang gramatis.",
+        "Murid dapat mengembangkan perenggan dengan huraian dan contoh yang terperinci.",
+        "Murid dapat menggunakan pelbagai jenis ayat majmuk (pancangan dan gabungan) dalam penulisan.",
+        "Murid dapat mengedit dan memurnikan 5 kesalahan tatabahasa (tense, SVA) dalam draf penulisan."
+      ],
+      "activities": [
+        "Perbincangan: Teknik penulisan kreatif (penggunaan unsur saspens, metafora).",
+        "Menulis draf esei/cerpen secara bebas (fokus kepada perkembangan idea).",
+        "Latihan membina ayat majmuk yang kompleks dan panjang.",
+        "Aktiviti 'Analisis Ayat': Menilai penggunaan ayat yang gramatis.",
+        "Aktiviti memurnikan teks: Menyemak tatabahasa, ejaan, dan tanda baca secara kritis.",
+        "Menyampaikan maklumat dalam bentuk sinopsis."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan esei/cerpen bebas (dinilai kualiti, koherensi, dan tatabahasa).",
+        "Senarai semak: Penggunaan ayat majmuk yang kompleks.",
+        "Latihan bertulis: Pengeditan tatabahasa.",
+        "Rubrik: Kualiti huraian dan contoh."
+      ],
+      "aids": [
+        "Contoh penulisan esei/cerpen yang cemerlang.",
+        "Carta Penanda Wacana Lanjutan.",
+        "Lembaran kerja penulisan bebas.",
+        "Garis panduan semakan draf."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 9: Bahasa Klasik (Seni Bahasa)",
+      "skill_name": "Seni Bahasa",
+      "standards": [
+        "4.3.1 Melafazkan dan memahami puisi dengan sebutan, intonasi, gaya dan penghayatan yang sesuai.",
+        "4.4.1 Menyanyikan lagu dan memahami maksud lirik.",
+        "4.5.1 Mengenal pasti dan menggunakan peribahasa: (iii) bidalan, (iv) pepatah.",
+        "4.5.2 Mengenal pasti dan menggunakan bahasa kiasan dan bahasa klasik.",
+        "1.3.2 Menyampaikan maklumat dan pandangan."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan puisi tradisional (syair/gurindam) dengan penuh penghayatan.",
+        "Murid dapat mengenal pasti dan menggunakan 5 bidalan dan 3 pepatah dalam konteks yang sesuai.",
+        "Murid dapat mengenal pasti 3 bahasa kiasan dan 3 perkataan bahasa klasik (contoh: hatta, syahadan) dalam teks.",
+        "Murid dapat menyampaikan pandangan tentang nilai peribahasa."
+      ],
+      "activities": [
+        "Mendengar dan melafazkan puisi tradisional dan pantun berkait.",
+        "Perbincangan: Maksud bidalan dan pepatah.",
+        "Latihan membina ayat menggunakan peribahasa yang dipelajari.",
+        "Aktiviti 'Pencarian Bahasa Klasik': Mencari perkataan bahasa klasik dalam petikan hikayat.",
+        "Bercerita: Menyusun cerita pendek dan memasukkan bahasa kiasan.",
+        "Menganalisis bahasa indah dalam teks klasik."
+      ],
+      "assessments": [
+        "Ujian Lisan: Melafazkan puisi tradisional (dinilai penghayatan dan ketepatan).",
+        "Penilaian bertulis: Penggunaan bidalan, pepatah, dan bahasa kiasan.",
+        "Latihan bertulis: Mengenal pasti bahasa klasik.",
+        "Rubrik: Kelancaran menyampaikan pandangan."
+      ],
+      "aids": [
+        "Teks puisi tradisional (syair, gurindam).",
+        "Carta Peribahasa (bidalan dan pepatah).",
+        "Petikan ringkas teks klasik.",
+        "Lembaran kerja tatabahasa."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 10: Kerjaya Impian (Tatabahasa - Sintaksis)",
+      "skill_name": "Tatabahasa (Sintaksis)",
+      "standards": [
+        "5.3.1 Memahami dan menggunakan pelbagai jenis ayat aktif dan ayat pasif.",
+        "5.3.3 Memahami dan menggunakan pelbagai jenis ayat majmuk: (i) pancangan, (ii) gabungan.",
+        "5.3.4 Memahami dan menggunakan pelbagai jenis ayat: (i) penyata, (ii) tanya, (iii) perintah, (iv) seruan.",
+        "1.2.1 Bertutur untuk menghuraikan idea dan konsep secara terperinci.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber."
+      ],
+      "objectives": [
+        "Murid dapat membina dan menggunakan 4 jenis ayat dasar (penyata, tanya, perintah, seruan) dengan betul.",
+        "Murid dapat menggunakan ayat aktif, pasif, dan majmuk dalam huraian yang terperinci.",
+        "Murid dapat menghuraikan 2 kerjaya impian secara terperinci (syarat, tugas, cabaran).",
+        "Murid dapat merumus maklumat tentang kerjaya daripada pelbagai sumber."
+      ],
+      "activities": [
+        "Perbincangan: Kerjaya masa depan dan syarat-syaratnya.",
+        "Aktiviti 'Pembina Ayat': Membina ayat penyata, tanya, perintah, dan seruan berdasarkan gambar.",
+        "Latihan mengubah ayat tunggal kepada majmuk dan sebaliknya (variasi ayat).",
+        "Latihan menghuraikan kerjaya impian (fokus kepelbagaian struktur ayat).",
+        "Membaca dan merumus maklumat daripada brosur kerjaya.",
+        "Lakonan: Wawancara kerja (menggunakan pelbagai jenis ayat tanya)."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Pembinaan 4 jenis ayat dasar dan pelbagai jenis ayat majmuk (sumatif).",
+        "Ujian Lisan: Huraian kerjaya impian (dinilai kepelbagaian struktur ayat).",
+        "Latihan bertulis: Merumus maklumat kerjaya.",
+        "Senarai semak: Ketepatan penggunaan ayat."
+      ],
+      "aids": [
+        "Carta Sintaksis (jenis-jenis ayat).",
+        "Brosur/Artikel tentang kerjaya.",
+        "Lembaran kerja tatabahasa.",
+        "Kad situasi wawancara."
+      ]
+    },
+    // --- TAHUN 6: 10 UNIT ---
+    {
+      "year": 6,
+      "topic_name": "Unit 1: Patriotisme (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap pelbagai soalan dan hujah dengan kritis.",
+        "1.2.1 Bertutur untuk menghuraikan isu dan konsep secara terperinci dan berkesan.",
+        "1.3.2 Menyampaikan maklumat dan pandangan dengan menggunakan laras bahasa formal dan peribahasa.",
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat untuk membuat penilaian.",
+        "5.1.1 Memahami dan menggunakan pelbagai jenis kata nama (penilaian)."
+      ],
+      "objectives": [
+        "Murid dapat memberikan respons kepada hujah dengan kritis dan menilai kelemahan hujah tersebut.",
+        "Murid dapat menghuraikan 2 isu patriotisme secara terperinci dan berkesan (laras formal).",
+        "Murid dapat menggunakan 3 peribahasa (pepatah, bidalan) yang sesuai dalam pertuturan.",
+        "Murid dapat menyampaikan pandangan tentang kepentingan Rukun Negara."
+      ],
+      "activities": [
+        "Perbincangan: Isu patriotisme dan peranan generasi muda.",
+        "Aktiviti 'Forum': Murid membentangkan hujah dan menilai hujah rakan secara kritis.",
+        "Latih tubi: Penggunaan peribahasa dalam ayat.",
+        "Menyampaikan ucapan ringkas bertema patriotisme (laras formal).",
+        "Mendengar dan merumus maklumat daripada wawancara tokoh negara.",
+        "Membaca petikan dan menilai tindakan watak dari sudut patriotisme."
+      ],
+      "assessments": [
+        "Ujian Lisan: Pembentangan hujah (dinilai kritis, laras bahasa, dan peribahasa).",
+        "Senarai semak: Penggunaan peribahasa dan laras bahasa formal.",
+        "Pemerhatian: Keterlibatan dalam forum (kritis).",
+        "Rubrik: Kualiti huraian yang terperinci."
+      ],
+      "aids": [
+        "Carta Peribahasa dan Laras Bahasa Formal.",
+        "Audio/video wawancara tokoh.",
+        "Kad situasi forum.",
+        "Teks ucapan patriotisme."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 2: Isu Semasa (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat untuk membuat penilaian dan rumusan.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber dengan tepat, terperinci dan menyeluruh.",
+        "2.4.1 Membaca dan memahami bahan sastera dan bukan sastera (artikel isu semasa).",
+        "3.3.1 Menghasilkan penulisan bukan naratif (rencana/editorial) secara bebas dan profesional.",
+        "5.1.2 Memahami dan menggunakan pelbagai jenis kata adjektif (penilaian)."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan mengenal pasti maklumat tersirat untuk membuat 2 penilaian dan 1 rumusan menyeluruh tentang isu semasa.",
+        "Murid dapat merumus maklumat isu semasa daripada sekurang-kurangnya 4 sumber berbeza (teks, graf, statistik).",
+        "Murid dapat menggunakan pelbagai jenis kata adjektif dan kata penguat untuk menimbulkan kesan emosi dalam penulisan.",
+        "Murid dapat menulis rencana/editorial (4 perenggan) secara bebas dengan gaya profesional."
+      ],
+      "activities": [
+        "Membaca pelbagai artikel tentang isu semasa (ekonomi, sosial, politik ringkas).",
+        "Aktiviti 'Meja Bulat': Membincangkan isu dan membuat penilaian berasaskan fakta.",
+        "Latihan merumus maklumat daripada pelbagai media (graf, jadual, teks).",
+        "Latihan membina ayat menggunakan kata adjektif untuk menimbulkan emosi (amat sedih, sungguh memilukan).",
+        "Menulis rencana/editorial secara bebas dengan mengikut struktur profesional.",
+        "Menganalisis gaya bahasa dalam teks berita."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Membuat penilaian dan rumusan menyeluruh (sumatif).",
+        "Latihan bertulis: Penggunaan kata adjektif (emosi/penilaian).",
+        "Penilaian bertulis: Penulisan rencana/editorial profesional.",
+        "Senarai semak: Keupayaan merumus maklumat menyeluruh."
+      ],
+      "aids": [
+        "Artikel/Teks berita isu semasa (pelbagai).",
+        "Graf/Jadual statistik.",
+        "Carta Kata Adjektif (emosi/penilaian).",
+        "Lembaran kerja penulisan profesional."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 3: Esei Lengkap (Kemahiran Menulis)",
+      "skill_name": "Menulis",
+      "standards": [
+        "3.2.2 Membina dan menulis perenggan yang kohesif dan koheren dengan menggunakan bahasa yang gramatis.",
+        "3.3.1 Menghasilkan penulisan esei (5 perenggan) secara bebas.",
+        "3.3.2 Mengembangkan idea utama dan sampingan dengan huraian, contoh, dan penegasan yang mantap.",
+        "4.4.1 Menyanyikan lagu dan memahami maksud lirik.",
+        "5.3.4 Memahami dan menggunakan pelbagai jenis ayat dasar (semua jenis).",
+        "2.4.1 Membaca dan memahami bahan sastera dan bukan sastera."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan esei lengkap (5 perenggan) yang mempunyai pendahuluan, isi, dan penutup yang mantap.",
+        "Murid dapat mengembangkan idea utama dengan huraian, contoh, dan penegasan yang mantap dalam setiap perenggan.",
+        "Murid dapat menggunakan pelbagai jenis ayat dasar (penyata, tanya, perintah, seruan) untuk variasi dalam penulisan.",
+        "Murid dapat mengedit dan memurnikan 7 kesalahan tatabahasa, ejaan, dan tanda baca."
+      ],
+      "activities": [
+        "Membaca dan menganalisis struktur esei yang cemerlang (5 perenggan).",
+        "Menulis draf esei secara bebas (fokus kepada keseimbangan perenggan).",
+        "Latihan membina ayat dasar untuk variasi dalam penulisan.",
+        "Aktiviti 'Pembangunan Perenggan': Menambah penegasan pada setiap isi utama.",
+        "Aktiviti memurnikan teks: Menyemak tatabahasa, ejaan, dan koherensi secara intensif.",
+        "Menganalisis penggunaan penanda wacana lanjutan."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan esei lengkap (dinilai struktur, huraian, koherensi, dan bahasa gramatis - sumatif akhir).",
+        "Senarai semak: Keseimbangan perenggan dan penegasan idea.",
+        "Latihan bertulis: Pengeditan dan pemurnian draf.",
+        "Rubrik: Kualiti bahasa dan huraian terperinci."
+      ],
+      "aids": [
+        "Contoh esei lengkap (5 perenggan) yang cemerlang.",
+        "Carta struktur esei.",
+        "Garis panduan semakan tatabahasa.",
+        "Lembaran kerja penulisan esei."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 4: Sains, Teknologi dan Kemajuan (Tatabahasa - Variasi Ayat)",
+      "skill_name": "Tatabahasa (Variasi Ayat)",
+      "standards": [
+        "5.3.1 Memahami dan menggunakan pelbagai jenis ayat aktif dan ayat pasif.",
+        "5.3.3 Memahami dan menggunakan pelbagai jenis ayat majmuk (semua jenis).",
+        "5.3.5 Memahami dan menggunakan ayat songsang dan ayat biasa.",
+        "1.2.1 Bertutur untuk menghuraikan isu dan konsep secara terperinci dan berkesan.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber."
+      ],
+      "objectives": [
+        "Murid dapat membina 5 ayat songsang (subjek selepas predikat) dengan betul.",
+        "Murid dapat mengubah ayat biasa kepada songsang dan sebaliknya.",
+        "Murid dapat menggunakan variasi ayat (aktif, pasif, majmuk, songsang) dalam huraian terperinci.",
+        "Murid dapat menghuraikan 2 konsep teknologi canggih dengan kepelbagaian struktur ayat."
+      ],
+      "activities": [
+        "Perbincangan: Peranan sains dan teknologi dalam kemajuan negara.",
+        "Latihan membina ayat songsang (penegasan pada predikat).",
+        "Latihan mengubah ayat biasa kepada songsang dan sebaliknya.",
+        "Latihan membina perenggan menggunakan variasi struktur ayat (aktif, pasif, majmuk, songsang).",
+        "Membaca dan merumus maklumat daripada artikel teknologi canggih.",
+        "Menulis perenggan penerangan tentang satu ciptaan (fokus variasi ayat)."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Pembinaan dan mengubah ayat songsang (sumatif).",
+        "Ujian Lisan: Huraian konsep (dinilai variasi ayat).",
+        "Latihan bertulis: Penulisan perenggan dengan variasi ayat.",
+        "Senarai semak: Ketepatan penggunaan ayat songsang."
+      ],
+      "aids": [
+        "Carta Ayat Songsang dan Ayat Biasa.",
+        "Artikel tentang teknologi canggih.",
+        "Lembaran kerja tatabahasa (variasi ayat).",
+        "Contoh perenggan dengan kepelbagaian struktur."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 5: Pengguna Bijak (Tatabahasa - Kesalahan Umum)",
+      "skill_name": "Tatabahasa (Kesalahan Umum)",
+      "standards": [
+        "5.4.1 Menganalisis dan membetulkan pelbagai kesalahan bahasa (ejaan, tanda baca, kosa kata, tatabahasa).",
+        "5.4.2 Menganalisis dan membetulkan kesalahan tatabahasa (frasa, klausa, ayat, imbuhan, kata ganda, dsb.).",
+        "1.2.1 Bertutur untuk menghuraikan isu dan konsep secara terperinci dan berkesan.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber.",
+        "3.3.1 Menghasilkan penulisan bukan naratif (surat aduan)."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti dan membetulkan 10 kesalahan umum bahasa (ejaan, tanda baca, kosa kata, tatabahasa) dalam satu petikan.",
+        "Murid dapat menganalisis dan membetulkan 5 kesalahan tatabahasa yang kompleks (contoh: penggunaan kata sendi nama bercelaru).",
+        "Murid dapat menghuraikan 2 hak pengguna dengan bahasa yang gramatis.",
+        "Murid dapat menulis surat aduan rasmi dengan mematuhi semua peraturan bahasa."
+      ],
+      "activities": [
+        "Perbincangan: Hak dan tanggungjawab sebagai pengguna bijak.",
+        "Aktiviti 'Detektif Bahasa': Menganalisis dan membetulkan kesalahan dalam petikan/dialog yang diberi.",
+        "Latih tubi: Pembetulan kesalahan imbuhan, kata ganda, dan frasa yang kompleks.",
+        "Latihan menulis surat aduan rasmi (fokus ketepatan bahasa).",
+        "Membaca dan merumus maklumat daripada artikel kepenggunaan.",
+        "Lakonan: Membuat aduan secara lisan (formal)."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Menganalisis dan membetulkan kesalahan bahasa dan tatabahasa (sumatif).",
+        "Ujian Lisan: Lakonan membuat aduan (dinilai ketepatan bahasa).",
+        "Latihan bertulis: Penulisan surat aduan rasmi.",
+        "Senarai semak: Ketepatan pembetulan kesalahan."
+      ],
+      "aids": [
+        "Teks/Petikan dengan kesalahan bahasa yang disengajakan.",
+        "Carta Kesalahan Umum Bahasa.",
+        "Contoh surat aduan rasmi.",
+        "Lembaran kerja pembetulan kesalahan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 6: Malaysia Negara Kita (Mendengar dan Bertutur)",
+      "skill_name": "Mendengar dan Bertutur",
+      "standards": [
+        "1.1.2 Mendengar, memahami dan memberikan respons terhadap hujah dan pandangan dengan kritis.",
+        "1.2.1 Bertutur untuk menghuraikan isu dan konsep secara terperinci dan berkesan.",
+        "1.3.2 Menyampaikan maklumat, pandangan dan hujah dengan menggunakan laras bahasa rasmi dan peribahasa.",
+        "2.3.3 Membaca dan merumus maklumat daripada pelbagai sumber.",
+        "5.4.1 Menganalisis dan membetulkan pelbagai kesalahan bahasa."
+      ],
+      "objectives": [
+        "Murid dapat menghuraikan 2 keistimewaan Malaysia (ekonomi, sosial, geografi) secara terperinci dan berkesan.",
+        "Murid dapat menyampaikan maklumat dalam laras bahasa rasmi (ucapan), menggunakan 3 peribahasa.",
+        "Murid dapat memberi respons secara kritis terhadap pandangan tentang pembangunan negara.",
+        "Murid dapat membetulkan 5 kesalahan bahasa dalam draf ucapan secara lisan."
+      ],
+      "activities": [
+        "Perbincangan: Keistimewaan Malaysia dan cabaran pembangunan.",
+        "Aktiviti 'Ucapan Ringkas': Menyampaikan ucapan tentang masa depan Malaysia (laras rasmi).",
+        "Latih tubi: Penggunaan peribahasa dan ungkapan menarik dalam pertuturan.",
+        "Sesi soal jawab: Murid membina soalan bercapah dan memberi respons kritis.",
+        "Mendengar dan merumus maklumat daripada wawancara pemimpin.",
+        "Menganalisis dan membetulkan kesalahan bahasa dalam draf ucapan."
+      ],
+      "assessments": [
+        "Ujian Lisan: Menyampaikan ucapan (dinilai kualiti huraian, laras rasmi, dan peribahasa - sumatif).",
+        "Senarai semak: Penggunaan peribahasa dan laras rasmi.",
+        "Pemerhatian: Respons kritis terhadap hujah.",
+        "Rubrik: Kelancaran dan keberkesanan huraian."
+      ],
+      "aids": [
+        "Teks ucapan rasmi model.",
+        "Carta ungkapan dan peribahasa.",
+        "Audio wawancara pemimpin.",
+        "Gambar/Infografik tentang Malaysia."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 7: Jendela Dunia (Membaca dan Memahami)",
+      "skill_name": "Membaca dan Memahami",
+      "standards": [
+        "2.3.2 Membaca dan mengenal pasti maklumat tersurat dan tersirat untuk membuat penilaian dan rumusan menyeluruh.",
+        "2.4.1 Membaca dan memahami pelbagai bahan sastera dan bukan sastera (laporan antarabangsa).",
+        "3.3.1 Menghasilkan penulisan bukan naratif (ulasan kritis) secara bebas.",
+        "5.3.4 Memahami dan menggunakan pelbagai jenis ayat dasar (semua jenis).",
+        "1.3.2 Menyampaikan maklumat dan pandangan."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan merumus maklumat tersirat untuk membuat penilaian dan rumusan menyeluruh tentang isu antarabangsa.",
+        "Murid dapat menulis ulasan kritis (4 perenggan) tentang satu laporan antarabangsa secara bebas.",
+        "Murid dapat menggunakan pelbagai jenis ayat dasar untuk variasi dan penegasan dalam ulasan.",
+        "Murid dapat menyampaikan pandangan tentang isu antarabangsa dengan bahasa yang berkesan."
+      ],
+      "activities": [
+        "Membaca laporan/artikel tentang isu antarabangsa (ekonomi, alam sekitar, konflik).",
+        "Aktiviti 'Penilaian Teks': Menilai kesahihan maklumat dan kredibiliti sumber.",
+        "Latihan merumus maklumat daripada teks dan sumber global.",
+        "Menulis ulasan kritis (memasukkan pandangan dan justifikasi).",
+        "Perbincangan: Peranan Malaysia dalam isu global.",
+        "Membaca bahan sastera (cerita rakyat/mitos global) dan membandingkannya."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan ulasan kritis (dinilai penilaian, rumusan, dan struktur ayat - sumatif).",
+        "Latihan bertulis: Merumus maklumat menyeluruh.",
+        "Ujian Lisan: Menyampaikan pandangan tentang isu antarabangsa.",
+        "Rubrik: Kualiti kritikan dan justifikasi."
+      ],
+      "aids": [
+        "Laporan/Artikel antarabangsa (disesuaikan).",
+        "Garis panduan penulisan ulasan kritis.",
+        "Carta kepelbagaian ayat dasar.",
+        "Peta dunia."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 8: Laporan Rasmi (Penulisan Bebas dan Profesional)",
+      "skill_name": "Penulisan",
+      "standards": [
+        "3.2.2 Membina dan menulis perenggan yang kohesif dan koheren dengan menggunakan bahasa yang gramatis.",
+        "3.3.1 Menghasilkan penulisan berformat: (i) minit mesyuarat, (ii) kertas cadangan, (iii) laporan rasmi (penuh).",
+        "3.3.2 Mengembangkan idea utama dan sampingan dengan huraian, contoh, dan penegasan secara profesional.",
+        "5.3.3 Memahami dan menggunakan pelbagai jenis ayat majmuk (semua jenis)."
+      ],
+      "objectives": [
+        "Murid dapat menghasilkan laporan rasmi (format lengkap) secara bebas dan profesional.",
+        "Murid dapat menulis minit mesyuarat yang ringkas dan tepat.",
+        "Murid dapat mengembangkan idea dengan huraian terperinci dan bahasa yang formal.",
+        "Murid dapat menggunakan pelbagai jenis ayat majmuk untuk memastikan kelancaran dan koherensi laporan."
+      ],
+      "activities": [
+        "Membaca dan menganalisis contoh laporan rasmi yang cemerlang (laporan aktiviti, mesyuarat).",
+        "Latihan membina ayat yang formal dan teknikal.",
+        "Menulis draf laporan rasmi secara bebas.",
+        "Aktiviti 'Analisis Koherensi': Menyemak penggunaan penanda wacana yang sesuai untuk laporan.",
+        "Latihan menulis minit mesyuarat berpandukan rakaman/dialog.",
+        "Menganalisis penggunaan bahasa yang formal dan objektif."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan laporan rasmi (dinilai format, bahasa, isi, dan profesionalisme - sumatif akhir).",
+        "Senarai semak: Kelengkapan format laporan dan penggunaan bahasa formal.",
+        "Latihan bertulis: Menulis minit mesyuarat.",
+        "Rubrik: Kualiti perkembangan idea dan koherensi."
+      ],
+      "aids": [
+        "Contoh laporan rasmi dan minit mesyuarat.",
+        "Garis panduan penulisan laporan.",
+        "Carta bahasa formal/objektif.",
+        "Lembaran kerja penulisan berformat."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 9: Warisan Sastera (Seni Bahasa)",
+      "skill_name": "Seni Bahasa",
+      "standards": [
+        "4.3.1 Melafazkan dan memahami puisi dengan sebutan, intonasi, gaya dan penghayatan yang kritis.",
+        "4.4.1 Menyanyikan lagu dan memahami maksud lirik dengan mendalam.",
+        "4.5.1 Mengenal pasti dan menggunakan peribahasa (semua jenis) secara meluas.",
+        "4.5.2 Mengenal pasti dan menggunakan bahasa kiasan dan bahasa klasik (meluas).",
+        "1.3.2 Menyampaikan maklumat dan pandangan secara kritis."
+      ],
+      "objectives": [
+        "Murid dapat melafazkan puisi/sajak dengan gaya yang amat sesuai dan kritikal (mengikut tema).",
+        "Murid dapat mengenal pasti dan menggunakan 10 peribahasa (semua jenis) dengan tepat dan meluas.",
+        "Murid dapat menggunakan 5 bahasa kiasan dan 5 perkataan klasik (dalam penulisan/pertuturan).",
+        "Murid dapat menyampaikan pandangan kritis tentang nilai estetika sastera."
+      ],
+      "activities": [
+        "Mendengar dan melafazkan pelbagai jenis sastera (sajak kontemporari, petikan klasik).",
+        "Perbincangan: Maksud peribahasa yang kompleks dan bahasa klasik (mendalam).",
+        "Latihan membina ayat menggunakan peribahasa secara meluas.",
+        "Aktiviti 'Kritikan Sastera': Murid menilai nilai estetika puisi/sajak.",
+        "Bercerita: Menyusun cerita dengan memasukkan bahasa kiasan dan klasik.",
+        "Menganalisis gaya bahasa penulis terkenal."
+      ],
+      "assessments": [
+        "Ujian Lisan: Melafazkan sastera (dinilai penghayatan dan kritikan - sumatif).",
+        "Penilaian bertulis: Penggunaan peribahasa dan bahasa kiasan (meluas).",
+        "Latihan bertulis: Menganalisis bahasa klasik.",
+        "Rubrik: Kualiti kritikan dan penghayatan sastera."
+      ],
+      "aids": [
+        "Teks sastera (klasik dan kontemporari).",
+        "Carta Peribahasa (lengkap).",
+        "Glosari bahasa klasik.",
+        "Lembaran kerja analisis sastera."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 10: Persediaan Masa Depan (Sintaksis Lanjutan)",
+      "skill_name": "Tatabahasa (Sintaksis Lanjutan)",
+      "standards": [
+        "5.3.1 Memahami dan menggunakan pelbagai jenis ayat aktif dan pasif.",
+        "5.3.3 Memahami dan menggunakan pelbagai jenis ayat majmuk (semua jenis).",
+        "5.3.5 Memahami dan menggunakan ayat songsang dan ayat biasa.",
+        "5.4.1 Menganalisis dan membetulkan pelbagai kesalahan bahasa (kompleks).",
+        "1.2.1 Bertutur untuk menghuraikan isu dan konsep secara terperinci dan berkesan.",
+        "3.3.1 Menghasilkan penulisan berformat (ucapan/karangan)."
+      ],
+      "objectives": [
+        "Murid dapat membina pelbagai jenis ayat (aktif, pasif, majmuk, songsang) dalam satu perenggan (variasi tinggi).",
+        "Murid dapat menghuraikan 2 persediaan masa depan secara terperinci, menggunakan sintaksis yang kompleks.",
+        "Murid dapat membetulkan 5 kesalahan sintaksis yang kompleks (contoh: kekeliruan struktur klausa).",
+        "Murid dapat menulis ucapan perpisahan (karangan berformat) dengan bahasa yang gramatis dan variasi ayat yang tinggi."
+      ],
+      "activities": [
+        "Perbincangan: Persediaan untuk alam sekolah menengah dan kerjaya.",
+        "Latihan membina perenggan dengan variasi ayat (aktif-pasif-majmuk-songsang).",
+        "Latihan menganalisis dan membetulkan kesalahan sintaksis yang kompleks.",
+        "Menulis ucapan perpisahan/motivasi (fokus variasi ayat).",
+        "Membaca dan merumus maklumat tentang syarat-syarat kemasukan sekolah menengah.",
+        "Lakonan: Memberi nasihat kepada pelajar junior."
+      ],
+      "assessments": [
+        "Penilaian bertulis: Penulisan ucapan (dinilai variasi ayat dan ketepatan sintaksis - sumatif akhir).",
+        "Ujian Lisan: Huraian persediaan masa depan (dinilai variasi ayat).",
+        "Latihan bertulis: Pembetulan kesalahan sintaksis.",
+        "Rubrik: Kualiti struktur ayat dan tatabahasa."
+      ],
+      "aids": [
+        "Carta Sintaksis Lanjutan.",
+        "Teks ucapan perpisahan model.",
+        "Lembaran kerja pembetulan sintaksis.",
+        "Brosur sekolah menengah."
+      ]
+    }
+  ]
+}

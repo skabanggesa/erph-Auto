@@ -1,0 +1,1820 @@
+{
+  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Matematik - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
+  "subject": "Matematik",
+  "data": [
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 1: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 1,
+      "topic_name": "Unit 1: Nombor hingga 100",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.1.1 Menamakan dan menulis nombor dalam perkataan dan angka.",
+        "1.1.2 Membandingkan nombor (lebih besar daripada, lebih kecil daripada).",
+        "1.1.3 Melengkapkan sebarang rangkaian nombor hingga 100."
+      ],
+      "objectives": [
+        "Murid dapat menamakan nombor 1 hingga 100 dengan betul.",
+        "Murid dapat menulis sebarang nombor dalam perkataan dan angka.",
+        "Murid dapat menyusun nombor mengikut tertib menaik dan menurun."
+      ],
+      "activities": [
+        "Permainan 'Pilih Kad Nombor': Murid membandingkan kad nombor.",
+        "Latih Amal: Melengkapkan jadual nombor yang hilang.",
+        "Aktiviti Kumpulan: Menggunakan blok asas (contoh: Dienes) untuk menunjukkan nilai tempat (sa, puluh)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Sebutan nombor dalam angka dan perkataan.",
+        "Latihan Bertulis: Menyusun 10 nombor mengikut tertib.",
+        "Penilaian Amali: Keupayaan murid menggunakan blok Dienes untuk menunjukkan nilai tempat."
+      ],
+      "aids": [
+        "Kad imbas nombor 1-100.",
+        "Blok asas (Dienes Blocks).",
+        "Carta nilai tempat."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 2: Operasi Tambah dan Tolak Asas",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.2.1 Melakukan operasi tambah dalam lingkungan fakta asas.",
+        "1.2.2 Melakukan operasi tolak dalam lingkungan fakta asas.",
+        "1.2.3 Menyelesaikan masalah harian melibatkan tambah dan tolak."
+      ],
+      "objectives": [
+        "Murid dapat menambah 2 nombor hingga hasil tambah 18 dengan lancar.",
+        "Murid dapat menolak 2 nombor hingga baki 18 dengan lancar.",
+        "Murid dapat menyelesaikan 2 masalah ayat matematik mudah (tambah dan tolak)."
+      ],
+      "activities": [
+        "Permainan 'Galah Panjang Nombor': Menambah/menolak nombor dengan bergerak di atas lantai.",
+        "Latih Amal: Menggunakan jari atau pembilang untuk menambah dan menolak.",
+        "Perbincangan: Mencipta cerita matematik (ayat matematik) daripada situasi harian."
+      ],
+      "assessments": [
+        "Kuiz Fakta Asas: 20 soalan tambah/tolak dalam 5 minit.",
+        "Latihan Bertulis: Menyelesaikan 5 masalah ayat matematik bergambar.",
+        "Penilaian Amali: Keupayaan murid menggunakan pembilang untuk menunjukkan operasi."
+      ],
+      "aids": [
+        "Pembilang (counters), biji guli.",
+        "Kad fakta asas tambah dan tolak.",
+        "Lembaran kerja bergambar."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 3: Wang hingga RM10",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.1.1 Mengenal pasti mata wang Malaysia (syiling dan wang kertas).",
+        "3.1.2 Menyatakan nilai wang dalam sebutan ringgit dan sen.",
+        "3.1.3 Melakukan tambah dan tolak wang hingga RM10."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti 4 jenis syiling dan 2 jenis wang kertas (RM1, RM5).",
+        "Murid dapat menyatakan gabungan wang yang berbeza untuk nilai tertentu (cth: 50 sen).",
+        "Murid dapat menyelesaikan 2 masalah tambah atau tolak melibatkan wang hingga RM10."
+      ],
+      "activities": [
+        "Aktiviti 'Jual Beli': Murid berlakon membeli dan menjual barang menggunakan wang mainan.",
+        "Latih Amal: Mengira wang syiling untuk membentuk nilai tertentu.",
+        "Perbincangan: Pentingnya menyimpan wang."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid mengira baki daripada pembelian mudah.",
+        "Latihan Bertulis: Padankan wang dengan nilainya.",
+        "Ujian Lisan: Soalan tentang nilai mata wang Malaysia."
+      ],
+      "aids": [
+        "Wang mainan (syiling dan wang kertas).",
+        "Gambar/Carta mata wang Malaysia.",
+        "Kad harga barang mainan."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 4: Masa dan Waktu (Jam)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.2.1 Menyatakan waktu dalam jam.",
+        "3.2.2 Menamakan hari dan bulan dalam setahun.",
+        "3.2.3 Mengira tempoh mudah dalam jam (cth: dari jam 8 pagi ke 9 pagi)."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan menulis waktu dalam jam (cth: 1 petang) menggunakan jam analog dan digital.",
+        "Murid dapat menyebut 7 hari dalam seminggu mengikut urutan.",
+        "Murid dapat mengira tempoh dalam jam bagi 2 aktiviti mudah."
+      ],
+      "activities": [
+        "Latihan Jam: Menggunakan jam model untuk menetapkan waktu.",
+        "Nyanyian: Lagu tentang hari dan bulan.",
+        "Perbincangan: Rutin harian dan waktu yang berkaitan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid menetapkan waktu yang disebut oleh guru pada jam model.",
+        "Latihan Bertulis: Melengkapkan waktu yang hilang dalam jadual harian.",
+        "Ujian Lisan: Menyebut bulan-bulan dalam setahun."
+      ],
+      "aids": [
+        "Jam model (analog).",
+        "Jam dinding sebenar.",
+        "Carta Hari dan Bulan."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 5: Bentuk 2D dan 3D Asas",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "4.1.1 Mengenal pasti bentuk 2D (segi empat sama, segi empat tepat, segi tiga, bulatan).",
+        "4.1.2 Mengenal pasti bentuk 3D (kubus, kuboid, kon, silinder, sfera).",
+        "4.1.3 Mengelaskan bentuk mengikut ciri-cirinya."
+      ],
+      "objectives": [
+        "Murid dapat menamakan 4 bentuk 2D dan 5 bentuk 3D dengan betul.",
+        "Murid dapat menyatakan bilangan sisi dan bucu bagi 2 bentuk 2D.",
+        "Murid dapat mengelaskan objek sebenar mengikut bentuk 3D mereka."
+      ],
+      "activities": [
+        "Aktiviti 'Kenali Bentuk': Murid mencari objek di dalam kelas yang berbentuk 2D/3D.",
+        "Latih Amal: Melukis bentuk 2D dan melabelkan sisi dan bucu.",
+        "Permainan: Menyentuh dan mengenal pasti bentuk 3D dengan mata tertutup."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid mengelaskan objek sebenar mengikut bentuk 3D.",
+        "Latihan Bertulis: Melabelkan bentuk dan ciri-cirinya.",
+        "Ujian Lisan: Soalan tentang perbezaan bentuk 2D dan 3D."
+      ],
+      "aids": [
+        "Model pepejal bentuk 3D.",
+        "Kad gambar bentuk 2D.",
+        "Blok Cantuman."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 6: Panjang, Jisim, dan Isipadu Cecair (Perbandingan)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.3.1 Menggunakan perbandingan istilah panjang (panjang/pendek, tinggi/rendah).",
+        "3.3.2 Menggunakan perbandingan istilah jisim (berat/ringan).",
+        "3.3.3 Menggunakan perbandingan istilah isipadu cecair (penuh/separuh penuh, lebih banyak/kurang banyak)."
+      ],
+      "objectives": [
+        "Murid dapat membandingkan panjang/tinggi 3 objek menggunakan istilah yang sesuai.",
+        "Murid dapat membandingkan jisim 2 objek secara angaran (berat/ringan).",
+        "Murid dapat membandingkan isipadu cecair dalam 2 bekas menggunakan istilah yang sesuai."
+      ],
+      "activities": [
+        "Eksperimen: Mengukur panjang objek menggunakan unit bukan piawai (cth: klip kertas, jengkal).",
+        "Aktiviti 'Timbang Anggaran': Murid mengangkat objek dan membuat perbandingan jisim.",
+        "Demonstrasi: Mengisi air dalam pelbagai bekas untuk menunjukkan isipadu yang berbeza."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid membuat perbandingan panjang dan jisim objek dengan betul.",
+        "Latihan Bertulis: Melabelkan gambar dengan istilah perbandingan yang tepat.",
+        "Ujian Lisan: Soalan perbandingan isipadu cecair."
+      ],
+      "aids": [
+        "Objek pelbagai saiz dan jisim.",
+        "Bekas air pelbagai saiz.",
+        "Blok/Pembaris bukan piawai."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 7: Pecahan Asas",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "2.1.1 Mengenal pasti pecahan wajar (setengah, suku).",
+        "2.1.2 Menulis pecahan wajar dalam angka dan perkataan.",
+        "2.1.3 Mewakilkan pecahan sebagai bahagian daripada keseluruhan."
+      ],
+      "objectives": [
+        "Murid dapat menamakan dan menulis pecahan 'satu per dua' dan 'satu per empat'.",
+        "Murid dapat melorekkan kawasan yang mewakili pecahan wajar (setengah, suku).",
+        "Murid dapat membandingkan nilai pecahan setengah dan suku."
+      ],
+      "activities": [
+        "Aktiviti Melipat Kertas: Murid melipat kertas untuk menunjukkan pecahan setengah dan suku.",
+        "Latih Amal: Mewarna rajah untuk mewakili pecahan yang diberi.",
+        "Perbincangan: Contoh pecahan dalam kehidupan harian (cth: memotong kek)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid melipat kertas untuk menghasilkan pecahan yang betul.",
+        "Latihan Bertulis: Menulis dan melorekkan pecahan.",
+        "Ujian Lisan: Soalan perbandingan nilai pecahan."
+      ],
+      "aids": [
+        "Kertas warna/A4.",
+        "Rajah/Model pecahan (cth: pizza).",
+        "Kad imbas pecahan."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 8: Pengendalian Data (Piktograf)",
+      "skill_name": "Statistik dan Kebarangkalian",
+      "standards": [
+        "5.1.1 Mengumpul dan mengelas data.",
+        "5.1.2 Membaca piktograf mudah.",
+        "5.1.3 Mentafsir maklumat daripada piktograf."
+      ],
+      "objectives": [
+        "Murid dapat mengumpul data ringkas (cth: bilangan pensel setiap murid).",
+        "Murid dapat membaca maklumat daripada piktograf (1 simbol mewakili 1 unit).",
+        "Murid dapat menjawab 2 soalan mudah berdasarkan piktograf yang diberi."
+      ],
+      "activities": [
+        "Aktiviti 'Kira dan Catat': Mengira bilangan buku/pensel dalam kumpulan dan merekod.",
+        "Projek Mini: Membina piktograf mudah menggunakan hasil kiraan (cth: menggunakan pelekat sebagai simbol).",
+        "Perbincangan: Apakah maklumat yang boleh kita dapat dari piktograf?"
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid membina piktograf dengan betul.",
+        "Latihan Bertulis: Menjawab soalan berdasarkan piktograf.",
+        "Ujian Lisan: Soalan tentang data yang dikumpulkan."
+      ],
+      "aids": [
+        "Objek untuk dikira (pensel, pemadam).",
+        "Pelekat/Gambar kecil untuk piktograf.",
+        "Contoh piktograf mudah."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 9: Nombor hingga 100 (Operasi Campur)",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.3.1 Melakukan operasi tambah dalam lingkungan 100.",
+        "1.3.2 Melakukan operasi tolak dalam lingkungan 100.",
+        "1.3.3 Menyelesaikan masalah tambah dan tolak harian melibatkan nombor hingga 100."
+      ],
+      "objectives": [
+        "Murid dapat melakukan operasi tambah tanpa mengumpul semula dalam lingkungan 100.",
+        "Murid dapat melakukan operasi tolak tanpa meminjam dalam lingkungan 100.",
+        "Murid dapat menyelesaikan 2 masalah ayat matematik melibatkan operasi campur."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan tambah dan tolak menggunakan grid 100.",
+        "Permainan 'Larian Nombor': Murid berlari untuk menyelesaikan soalan tambah/tolak di papan putih.",
+        "Aktiviti Kumpulan: Mencipta soalan cerita untuk rakan-rakan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 10 soalan tambah dan tolak tanpa mengumpul semula/meminjam.",
+        "Latihan Penyelesaian Masalah: Menilai keupayaan murid menterjemah masalah cerita ke ayat matematik.",
+        "Penilaian Amali: Keupayaan murid menggunakan abakus untuk operasi."
+      ],
+      "aids": [
+        "Grid 100 (Hundred chart).",
+        "Abakus atau sempoa.",
+        "Papan putih dan pen marker."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 10: Ulangan dan Pengayaan",
+      "skill_name": "Sintesis Matematik",
+      "standards": [
+        "1.4.1 Menyatakan hubungan antara nombor, operasi, sukatan, dan ruang.",
+        "1.4.2 Mengaplikasi kemahiran yang dipelajari dalam konteks kehidupan harian.",
+        "1.4.3 Menggunakan bahasa matematik yang betul."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 5 istilah matematik yang dipelajari dalam Tahun 1.",
+        "Murid dapat menyelesaikan 3 masalah berangkai yang melibatkan 2 topik berbeza (cth: nombor dan wang).",
+        "Murid dapat merumuskan konsep asas matematik Tahun 1."
+      ],
+      "activities": [
+        "Projek Mini: 'Diari Matematik Saya' - Mencatat penggunaan matematik dalam sehari.",
+        "Permainan Papan: Melibatkan semua topik Tahun 1.",
+        "Kuiz Interaktif: Ulang kaji konsep asas."
+      ],
+      "assessments": [
+        "Penilaian Projek: Diari Matematik (dinilai aplikasi dan kemahiran).",
+        "Ujian Akhir: Soalan campuran yang merangkumi semua topik.",
+        "Ujian Lisan: Soalan sintesis tentang penggunaan matematik dalam kehidupan sebenar."
+      ],
+      "aids": [
+        "Kad imbas istilah matematik.",
+        "Permainan papan yang direka khas.",
+        "Buku Kerja Ulang Kaji."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 2: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 2,
+      "topic_name": "Unit 1: Nombor hingga 1000",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.1.1 Menamakan dan menulis nombor hingga 1000.",
+        "1.1.2 Menentukan nilai tempat dan nilai digit.",
+        "1.1.3 Menganggar dan membundarkan nombor hingga ratus terdekat."
+      ],
+      "objectives": [
+        "Murid dapat menulis nombor hingga 1000 dalam angka dan perkataan.",
+        "Murid dapat membundarkan sebarang nombor hingga ratus terdekat dengan betul.",
+        "Murid dapat menyatakan nilai tempat dan nilai digit bagi 3 digit nombor."
+      ],
+      "activities": [
+        "Latih Amal: Menggunakan kad nilai tempat untuk membentuk nombor 3 digit.",
+        "Aktiviti Pembundaran: Permainan 'Panah Pembundaran'.",
+        "Perbincangan: Mengapa kita perlu menganggar dan membundar nombor."
+      ],
+      "assessments": [
+        "Latihan Bertulis: Soalan pembundaran dan nilai tempat/digit.",
+        "Ujian Lisan: Sebutan nombor yang ditunjukkan pada kad.",
+        "Penilaian Amali: Keupayaan murid menganggar bilangan objek dalam bekas."
+      ],
+      "aids": [
+        "Kad nilai tempat dan digit.",
+        "Lembaran kerja pembundaran.",
+        "Objek kecil untuk penganggaran."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 2: Operasi Tambah dan Tolak dalam 1000",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.2.1 Melakukan operasi tambah hingga 3 nombor dalam lingkungan 1000.",
+        "1.2.2 Melakukan operasi tolak melibatkan dua nombor dalam lingkungan 1000.",
+        "1.2.3 Menyelesaikan masalah harian melibatkan tambah dan tolak."
+      ],
+      "objectives": [
+        "Murid dapat menambah 3 nombor hingga 1000 dengan mengumpul semula.",
+        "Murid dapat menolak nombor hingga 1000 dengan meminjam.",
+        "Murid dapat menyelesaikan 3 masalah cerita (ayat matematik) yang melibatkan tambah/tolak."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan tambah/tolak menggunakan kaedah bentuk lazim.",
+        "Permainan 'Penyiasat Nombor': Mencari nombor yang hilang dalam ayat matematik.",
+        "Perbincangan: Menggunakan pelbagai strategi (cth: garis nombor) untuk menyemak jawapan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 10 soalan operasi tambah dan tolak 3 digit.",
+        "Latihan Penyelesaian Masalah: Menilai keupayaan murid menunjukkan jalan kerja yang lengkap.",
+        "Kuiz Pantas: Fakta asas tambah dan tolak."
+      ],
+      "aids": [
+        "Blok Dienes.",
+        "Garis nombor.",
+        "Lembaran kerja bentuk lazim."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 3: Operasi Darab dan Bahagi Asas",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.3.1 Mengenal pasti konsep darab (penambahan berulang).",
+        "1.3.2 Mengenal pasti konsep bahagi (tolak berulang, pengumpulan).",
+        "1.3.3 Menghafal fakta asas darab dan bahagi (sifir 2, 3, 4, 5, 10)."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan konsep darab sebagai penambahan berulang.",
+        "Murid dapat menyelesaikan 80% fakta asas darab (sifir 2, 3, 4, 5, 10) dengan lancar.",
+        "Murid dapat menyelesaikan masalah bahagi mudah menggunakan kaedah tolak berulang."
+      ],
+      "activities": [
+        "Latih Amal: Menggunakan kumpulan objek untuk menunjukkan darab dan bahagi.",
+        "Nyanyian Sifir: Menghafal sifir melalui lagu.",
+        "Permainan 'Roda Sifir': Latih tubi sifir dalam kumpulan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 20 soalan fakta asas darab dan bahagi.",
+        "Penilaian Amali: Keupayaan murid mewakilkan ayat matematik darab menggunakan objek.",
+        "Ujian Lisan: Soalan konsep darab/bahagi."
+      ],
+      "aids": [
+        "Pembilang, guli.",
+        "Kad imbas sifir.",
+        "Carta fakta asas darab."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 4: Wang hingga RM50",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.1.1 Melakukan tambah dan tolak wang hingga RM50.",
+        "3.1.2 Melakukan darab dan bahagi wang melibatkan nombor 1 digit.",
+        "3.1.3 Menyelesaikan masalah wang harian yang melibatkan 4 operasi asas."
+      ],
+      "objectives": [
+        "Murid dapat menambah dan menolak wang hingga RM50 dengan betul (operasi dua langkah).",
+        "Murid dapat melakukan darab dan bahagi wang dengan nombor satu digit.",
+        "Murid dapat menyelesaikan 2 masalah harian yang melibatkan operasi wang."
+      ],
+      "activities": [
+        "Aktiviti 'Belanja Sekolah': Murid menguruskan bajet wang mainan untuk perbelanjaan sekolah.",
+        "Latih Amal: Menyelesaikan soalan tambah, tolak, darab, dan bahagi wang (bentuk lazim).",
+        "Perbincangan: Membuat keputusan kewangan yang mudah."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan operasi gabungan wang.",
+        "Penilaian Amali: Keupayaan murid mengira kos purata barang (bahagi mudah).",
+        "Latihan Penyelesaian Masalah: Menilai keupayaan murid menterjemah masalah wang."
+      ],
+      "aids": [
+        "Wang mainan hingga RM50.",
+        "Risalah harga barang.",
+        "Buku kira-kira mini."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 5: Masa dan Waktu (Minit)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.2.1 Menyatakan dan merekodkan waktu dalam jam dan minit.",
+        "3.2.2 Mengira tempoh dalam jam dan minit.",
+        "3.2.3 Menyelesaikan masalah masa harian."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan merekodkan waktu dalam jam dan minit (cth: 4:30).",
+        "Murid dapat mengira tempoh dalam jam dan minit bagi aktiviti yang mudah.",
+        "Murid dapat menukarkan unit masa (1 jam = 60 minit) secara asas."
+      ],
+      "activities": [
+        "Latihan Jam: Menggunakan jam model untuk menunjukkan waktu dan menghitung minit.",
+        "Aktiviti 'Diari Masa': Murid mencatat permulaan dan akhir 3 aktiviti dan mengira tempohnya.",
+        "Perbincangan: Mengapa kita perlu tahu tempoh masa."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid membaca waktu pada jam analog dengan minit.",
+        "Latihan Bertulis: Soalan pengiraan tempoh masa dan penukaran unit.",
+        "Ujian Lisan: Soalan tentang waktu dalam bentuk 'pagi', 'petang', 'malam'."
+      ],
+      "aids": [
+        "Jam model (analog dan digital).",
+        "Jam randik.",
+        "Carta penukaran unit masa (jam ke minit)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 6: Pecahan, Perpuluhan, dan Peratus Asas",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "2.1.1 Mengenal pasti dan menulis pecahan wajar.",
+        "2.2.1 Mengenal pasti dan menulis perpuluhan hingga dua tempat perpuluhan.",
+        "2.3.1 Mengenal pasti dan menulis peratus (asas 100)."
+      ],
+      "objectives": [
+        "Murid dapat melorekkan pecahan, perpuluhan (0.50), dan peratus (50%) pada grid 10x10.",
+        "Murid dapat menukar pecahan per 10 dan per 100 kepada perpuluhan.",
+        "Murid dapat mewakilkan peratus sebagai bahagian daripada keseluruhan."
+      ],
+      "activities": [
+        "Latih Amal: Menggunakan grid 10x10 untuk mewakilkan perpuluhan dan peratus.",
+        "Aktiviti Melipat Kertas: Menunjukkan pecahan per 10.",
+        "Perbincangan: Contoh pecahan, perpuluhan, dan peratus dalam kehidupan harian (cth: diskaun, skor)."
+      ],
+      "assessments": [
+        "Latihan Bertulis: Menukar dan melorekkan pecahan/perpuluhan/peratus.",
+        "Ujian Lisan: Soalan konsep perpuluhan (cth: 0.1 sama dengan 1/10).",
+        "Penilaian Amali: Keupayaan murid mewakilkan 25% pada rajah."
+      ],
+      "aids": [
+        "Grid 10x10 (kertas atau papan putih).",
+        "Carta pecahan, perpuluhan, dan peratus.",
+        "Pensel warna."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 7: Panjang, Jisim, dan Isipadu Cecair (Unit Piawai)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.3.1 Mengukur panjang objek menggunakan unit piawai (cm, m).",
+        "3.4.1 Mengukur jisim objek menggunakan unit piawai (g, kg).",
+        "3.4.2 Mengukur isipadu cecair menggunakan unit piawai (ml, l)."
+      ],
+      "objectives": [
+        "Murid dapat mengukur panjang dan jisim objek menggunakan unit piawai (cm, m, g, kg) dengan betul.",
+        "Murid dapat menukarkan cm kepada m (asas) dan g kepada kg (asas).",
+        "Murid dapat mengukur dan merekodkan isipadu cecair dalam ml dan l."
+      ],
+      "activities": [
+        "Eksperimen: Mengukur panjang pelbagai objek menggunakan pembaris dan pita pengukur.",
+        "Amali: Mengukur jisim objek menggunakan penimbang imbang dan unit piawai.",
+        "Demonstrasi: Mengukur isipadu air menggunakan silinder penyukat."
+      ],
+      "assessments": [
+        "Penilaian Amali: Ketepatan murid membaca skala pembaris dan penimbang.",
+        "Latihan Bertulis: Soalan penukaran unit dan merekod hasil pengukuran.",
+        "Ujian Lisan: Soalan tentang alat yang sesuai untuk mengukur jisim/isipadu."
+      ],
+      "aids": [
+        "Pembaris dan pita pengukur.",
+        "Penimbang (imbangan), set pemberat piawai.",
+        "Silinder penyukat, air, bikar."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 8: Ruang (Lilitan dan Luas Asas)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "4.2.1 Menentukan perimeter (lilitan) dan luas bentuk 2D (segi empat sama/tepat) menggunakan grid.",
+        "4.2.2 Menyelesaikan masalah perimeter dan luas asas."
+      ],
+      "objectives": [
+        "Murid dapat menghitung perimeter bentuk 2D mudah menggunakan unit bukan piawai (petak grid).",
+        "Murid dapat menghitung luas bentuk 2D mudah menggunakan unit bukan piawai (petak grid).",
+        "Murid dapat membandingkan luas 2 bentuk yang berbeza saiz."
+      ],
+      "activities": [
+        "Latih Amal: Menghitung perimeter dan luas rajah pada kertas grid.",
+        "Aktiviti Luar: Mengukur perimeter (lilitan) meja/papan putih menggunakan tali.",
+        "Perbincangan: Mengapa perimeter dan luas adalah berbeza."
+      ],
+      "assessments": [
+        "Latihan Bertulis: Mengira perimeter dan luas rajah grid.",
+        "Penilaian Amali: Keupayaan murid mengira perimeter objek sebenar.",
+        "Ujian Lisan: Soalan tentang unit yang digunakan untuk perimeter dan luas."
+      ],
+      "aids": [
+        "Kertas grid (square paper).",
+        "Tali atau benang.",
+        "Rajah pelbagai bentuk 2D."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 9: Pengendalian Data (Piktograf Lanjutan)",
+      "skill_name": "Statistik dan Kebarangkalian",
+      "standards": [
+        "5.1.1 Mengumpul, mengelas dan menyusun data.",
+        "5.1.2 Membaca dan membina piktograf (1 simbol mewakili 2, 5, atau 10 unit).",
+        "5.1.3 Mentafsir dan membuat kesimpulan ringkas daripada piktograf."
+      ],
+      "objectives": [
+        "Murid dapat membina piktograf dengan 1 simbol mewakili 2 unit.",
+        "Murid dapat mentafsir maklumat daripada piktograf yang menggunakan simbol berlainan nilai.",
+        "Murid dapat membuat 2 kesimpulan ringkas berdasarkan data dalam piktograf."
+      ],
+      "activities": [
+        "Projek Mini: Mengumpul data (cth: hobi murid) dan membina piktograf dengan simbol mewakili 2.",
+        "Latih Amal: Menyelesaikan masalah bertulis berdasarkan piktograf yang kompleks.",
+        "Perbincangan: Mengapa simbol yang berlainan nilai digunakan dalam piktograf."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid membina piktograf yang memenuhi kriteria.",
+        "Latihan Bertulis: Menjawab soalan mentafsir piktograf.",
+        "Ujian Lisan: Soalan tentang data yang paling banyak/paling sedikit."
+      ],
+      "aids": [
+        "Contoh piktograf pelbagai nilai simbol.",
+        "Bahan grafik untuk membina piktograf.",
+        "Jadual data mentah."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 10: Penyelesaian Masalah Kritis",
+      "skill_name": "Sintesis Matematik",
+      "standards": [
+        "1.4.1 Menggunakan strategi penyelesaian masalah (4 langkah Polya).",
+        "1.4.2 Menyelesaikan masalah harian yang melibatkan operasi campuran dan wang.",
+        "1.4.3 Menggunakan pelbagai kaedah penyelesaian yang logik."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan 4 langkah penyelesaian masalah (memahami, merancang, melaksanakan, menyemak).",
+        "Murid dapat menyelesaikan 2 masalah yang melibatkan 2 langkah operasi (cth: tambah dan tolak).",
+        "Murid dapat menggunakan kaedah melukis gambar rajah untuk menyelesaikan masalah."
+      ],
+      "activities": [
+        "Latih Amal: Menganalisis masalah cerita dan mengenal pasti maklumat utama.",
+        "Aktiviti Kumpulan: Menyelesaikan masalah menggunakan model bar/gambar rajah.",
+        "Perbincangan: Membandingkan pelbagai cara penyelesaian masalah yang sama."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 5 masalah cerita yang memerlukan 2 langkah operasi (dinilai jalan kerja).",
+        "Penilaian Amali: Pemerhatian keupayaan murid menggunakan model bar untuk menyelesaikan masalah.",
+        "Ujian Lisan: Penerangan langkah penyelesaian masalah."
+      ],
+      "aids": [
+        "Kad senario masalah.",
+        "Carta langkah Polya.",
+        "Bahan lukisan/model bar."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 3: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 3,
+      "topic_name": "Unit 1: Nombor hingga 10000",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.1.1 Menamakan dan menulis nombor hingga 10000.",
+        "1.1.2 Mencerakinkan nombor mengikut nilai tempat dan nilai digit.",
+        "1.1.3 Membandingkan nombor dan melengkapkan pola nombor."
+      ],
+      "objectives": [
+        "Murid dapat membaca dan menulis nombor hingga 10000 dengan betul.",
+        "Murid dapat mencerakinkan nombor mengikut nilai tempat (cth: 4 ribu + 5 ratus + ...) dan nilai digit.",
+        "Murid dapat mengenal pasti pola nombor bagi 3 siri nombor (cth: tambah 5, tolak 10)."
+      ],
+      "activities": [
+        "Aktiviti 'Cabaran Nombor Terbesar': Murid membentuk nombor 4 digit terbesar/terkecil menggunakan kad digit.",
+        "Latih Amal: Mencerakinkan nombor menggunakan jadual nilai tempat.",
+        "Permainan: Melengkapkan rangkaian nombor yang mengikut pola tertentu."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan mencerakinkan nombor dan melengkapkan pola.",
+        "Ujian Lisan: Soalan perbandingan nombor dan nilai tempat.",
+        "Penilaian Amali: Keupayaan murid menggunakan abakus untuk mewakilkan nombor 4 digit."
+      ],
+      "aids": [
+        "Kad digit 0-9.",
+        "Jadual nilai tempat.",
+        "Abakus."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 2: Operasi Tambah dan Tolak dalam 10000",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.2.1 Melakukan operasi tambah melibatkan empat nombor hingga 10000.",
+        "1.2.2 Melakukan operasi tolak melibatkan dua nombor daripada nombor hingga 10000.",
+        "1.2.3 Menyelesaikan masalah harian melibatkan tambah dan tolak."
+      ],
+      "objectives": [
+        "Murid dapat menambah 4 nombor hingga 10000 dengan teknik yang betul.",
+        "Murid dapat menolak 2 nombor secara berturut-turut (dua langkah tolak).",
+        "Murid dapat menyelesaikan 3 masalah cerita yang melibatkan operasi tambah/tolak."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan tambah/tolak dalam bentuk lazim, melibatkan pengumpulan semula/meminjam berganda.",
+        "Permainan 'Papan Putih Lumba': Menyelesaikan soalan tambah/tolak 4 digit dalam masa yang ditetapkan.",
+        "Perbincangan: Menyemak jawapan menggunakan operasi songsang."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 10 soalan tambah/tolak 4 digit (termasuk operasi berturut-turut).",
+        "Latihan Penyelesaian Masalah: Menilai ketepatan jalan kerja.",
+        "Kuiz Fakta: Ulang kaji fakta asas untuk kelancaran."
+      ],
+      "aids": [
+        "Lembaran kerja tambah/tolak 4 digit.",
+        "Marker dan papan putih mini.",
+        "Kalkulator (untuk semakan jawapan)."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 3: Operasi Darab dan Bahagi Lanjutan",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.3.1 Melakukan operasi darab (3 digit dengan 1 digit, 4 digit dengan 1 digit).",
+        "1.3.2 Melakukan operasi bahagi (3 digit dengan 1 digit, 4 digit dengan 1 digit).",
+        "1.3.3 Menyelesaikan masalah harian melibatkan darab dan bahagi."
+      ],
+      "objectives": [
+        "Murid dapat melakukan operasi darab nombor 3 digit dengan nombor 1 digit dengan betul.",
+        "Murid dapat melakukan operasi bahagi nombor 4 digit dengan nombor 1 digit (termasuk baki).",
+        "Murid dapat menyelesaikan 3 masalah cerita darab dan bahagi dengan tepat."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan darab/bahagi bentuk lazim yang melibatkan pengumpulan semula/bakian.",
+        "Aktiviti Kumpulan: Mencipta 'Soalan Cerita Darab/Bahagi' berdasarkan situasi kelas.",
+        "Demonstrasi: Menunjukkan konsep bahagi dengan baki menggunakan objek."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 10 soalan darab/bahagi (4 digit dengan 1 digit).",
+        "Latihan Penyelesaian Masalah: Menilai keupayaan murid menulis ayat matematik yang betul.",
+        "Ujian Lisan: Soalan konsep darab/bahagi."
+      ],
+      "aids": [
+        "Lembaran kerja darab/bahagi bentuk lazim.",
+        "Pembilang untuk demonstrasi bakian.",
+        "Kad fakta asas darab (sifir 6, 7, 8, 9, 12)."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 4: Pecahan, Perpuluhan, dan Peratus",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "2.1.1 Menukar pecahan tak wajar kepada nombor bercampur dan sebaliknya.",
+        "2.2.1 Menambah dan menolak perpuluhan hingga dua tempat perpuluhan.",
+        "2.3.1 Mencari peratus daripada suatu kuantiti."
+      ],
+      "objectives": [
+        "Murid dapat menukar pecahan tak wajar kepada nombor bercampur dan sebaliknya dengan tepat.",
+        "Murid dapat menambah dan menolak 3 perpuluhan hingga dua tempat perpuluhan.",
+        "Murid dapat mencari peratus bagi kuantiti mudah (cth: 10% daripada 50)."
+      ],
+      "activities": [
+        "Latih Amal: Menggunakan rajah untuk menunjukkan penukaran pecahan tak wajar/nombor bercampur.",
+        "Aktiviti Kumpulan: Menyelesaikan soalan tambah/tolak perpuluhan menggunakan grid.",
+        "Perbincangan: Contoh mencari peratus dalam kehidupan harian (cth: ujian, diskaun)."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan penukaran pecahan, operasi perpuluhan, dan pengiraan peratus.",
+        "Penilaian Amali: Keupayaan murid mewakilkan 1.5 sebagai nombor bercampur.",
+        "Kuiz Konsep: Soalan perbandingan nilai pecahan, perpuluhan, dan peratus."
+      ],
+      "aids": [
+        "Rajah/Model pecahan.",
+        "Grid 10x10.",
+        "Lembaran kerja penukaran unit."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 5: Peratus (Lanjutan)",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "2.3.2 Menyelesaikan masalah harian melibatkan peratus.",
+        "2.3.3 Mengaitkan peratus dengan pecahan dan perpuluhan."
+      ],
+      "objectives": [
+        "Murid dapat menukar peratus kepada pecahan per 100 dan perpuluhan.",
+        "Murid dapat menyelesaikan 2 masalah cerita melibatkan pengiraan peratus mudah (cth: harga diskaun).",
+        "Murid dapat membandingkan peratus yang berbeza."
+      ],
+      "activities": [
+        "Aktiviti 'Jualan Murah': Murid mengira harga barang selepas diskaun peratus.",
+        "Latih Amal: Menukar peratus ke pecahan dan perpuluhan dalam jadual.",
+        "Perbincangan: Di mana kita melihat peratus dalam berita/iklan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan pengiraan peratus daripada kuantiti dan masalah cerita.",
+        "Latihan Bertulis: Melengkapkan jadual perbandingan peratus, pecahan, dan perpuluhan.",
+        "Ujian Lisan: Soalan tentang aplikasi peratus dalam kewangan asas."
+      ],
+      "aids": [
+        "Risalah jualan murah.",
+        "Grid 10x10.",
+        "Carta penukaran peratus."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 6: Wang hingga RM1000",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.1.1 Melakukan operasi gabungan (tambah dan tolak) wang hingga RM1000.",
+        "3.1.2 Melakukan operasi darab dan bahagi wang dengan nombor hingga 10.",
+        "3.1.3 Menyelesaikan masalah wang harian yang melibatkan 4 operasi asas."
+      ],
+      "objectives": [
+        "Murid dapat melakukan operasi gabungan (tambah dan tolak) wang dalam bentuk lazim.",
+        "Murid dapat melakukan darab wang dengan nombor 2 digit dan bahagi wang dengan nombor 1 digit.",
+        "Murid dapat menyelesaikan 3 masalah cerita wang (operasi gabungan)."
+      ],
+      "activities": [
+        "Aktiviti 'Bajet Keluarga': Murid merancang bajet ringkas untuk perbelanjaan bulanan.",
+        "Latih Amal: Menyelesaikan soalan darab/bahagi wang dalam bentuk lazim.",
+        "Perbincangan: Konsep untung, rugi, dan simpanan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 10 soalan operasi gabungan wang (termasuk darab dan bahagi).",
+        "Latihan Penyelesaian Masalah: Menilai jalan kerja yang betul untuk masalah wang.",
+        "Penilaian Produk: Ketepatan bajet ringkas yang dirancang."
+      ],
+      "aids": [
+        "Wang mainan hingga RM1000.",
+        "Buku Tunai Ringkas.",
+        "Borang Bajet."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 7: Masa dan Waktu (Unit Lanjutan)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.2.1 Menukar unit masa (jam ke minit, hari ke jam, tahun ke bulan).",
+        "3.2.2 Melakukan operasi tambah dan tolak masa (jam dan minit).",
+        "3.2.3 Menyelesaikan masalah masa harian."
+      ],
+      "objectives": [
+        "Murid dapat menukar unit masa (tahun ke bulan, hari ke jam, jam ke minit) dengan tepat.",
+        "Murid dapat melakukan operasi tambah dan tolak masa (jam dan minit) tanpa penukaran unit silang yang kompleks.",
+        "Murid dapat menyelesaikan 2 masalah cerita melibatkan tempoh masa."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan penukaran unit masa dalam jadual.",
+        "Aktiviti 'Jadual Perjalanan': Mengira masa ketibaan/berlepas (tambah/tolak masa).",
+        "Perbincangan: Mengapa kita perlu menukar unit masa."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan penukaran unit masa dan operasi tambah/tolak masa.",
+        "Penilaian Amali: Keupayaan murid menggunakan kalendar untuk mengira bulan/hari.",
+        "Latihan Penyelesaian Masalah: Menilai keupayaan murid mengira tempoh dengan betul."
+      ],
+      "aids": [
+        "Kalendar.",
+        "Jam model.",
+        "Carta penukaran unit masa."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 8: Panjang, Jisim, dan Isipadu (Operasi)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.3.1 Melakukan operasi tambah dan tolak panjang (m dan cm).",
+        "3.4.1 Melakukan operasi tambah dan tolak jisim (kg dan g).",
+        "3.5.1 Melakukan operasi tambah dan tolak isipadu cecair (l dan ml)."
+      ],
+      "objectives": [
+        "Murid dapat melakukan operasi tambah dan tolak panjang, jisim, dan isipadu cecair yang melibatkan penukaran unit mudah.",
+        "Murid dapat menyelesaikan 3 masalah cerita yang melibatkan operasi sukatan.",
+        "Murid dapat menukarkan unit sukatan (m ke cm, kg ke g, l ke ml) dengan tepat."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan tambah/tolak sukatan dalam bentuk lazim.",
+        "Eksperimen: Menambah/menolak isipadu air dan merekodkan hasilnya.",
+        "Perbincangan: Mengapa penting untuk menyusun unit yang sama dalam bentuk lazim sukatan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan operasi tambah/tolak panjang, jisim, dan isipadu (termasuk penukaran unit).",
+        "Penilaian Amali: Ketepatan murid melakukan penukaran unit (m/cm, kg/g, l/ml).",
+        "Latihan Penyelesaian Masalah: Menilai jalan kerja bagi masalah sukatan."
+      ],
+      "aids": [
+        "Alat sukatan (pembaris, penimbang, silinder penyukat).",
+        "Carta penukaran unit sukatan.",
+        "Lembaran kerja bentuk lazim sukatan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 9: Ruang (Isipadu Asas)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "4.2.1 Menentukan isipadu pepejal (kubus/kuboid) menggunakan unit kubus 1 cm³.",
+        "4.2.2 Menyelesaikan masalah isipadu asas."
+      ],
+      "objectives": [
+        "Murid dapat menghitung isipadu kubus dan kuboid menggunakan petak/blok unit (1 cm³).",
+        "Murid dapat membandingkan isipadu 2 bentuk 3D yang berbeza saiz.",
+        "Murid dapat menyatakan unit piawai bagi isipadu pepejal (cm³)."
+      ],
+      "activities": [
+        "Aktiviti 'Susun Blok': Murid menggunakan blok cantuman untuk membentuk kubus/kuboid dan menghitung isipadunya.",
+        "Latih Amal: Mengira isipadu rajah 3D yang dilukis pada kertas isometri.",
+        "Perbincangan: Perbezaan antara isipadu cecair (l/ml) dan isipadu pepejal (cm³)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid menghitung isipadu model yang dibina.",
+        "Latihan Bertulis: Mengira isipadu rajah 3D pada kertas grid.",
+        "Ujian Lisan: Soalan tentang konsep isipadu."
+      ],
+      "aids": [
+        "Blok unit (unit cubes).",
+        "Model pepejal kubus dan kuboid.",
+        "Kertas isometri."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 10: Pengendalian Data (Carta Palang)",
+      "skill_name": "Statistik dan Kebarangkalian",
+      "standards": [
+        "5.1.1 Membaca dan membina carta palang.",
+        "5.1.2 Mentafsir maklumat daripada carta palang.",
+        "5.1.3 Membuat kesimpulan berdasarkan carta palang."
+      ],
+      "objectives": [
+        "Murid dapat membina carta palang mudah berdasarkan data yang diberikan.",
+        "Murid dapat membaca maklumat daripada carta palang (paksi x dan y).",
+        "Murid dapat membuat 2 kesimpulan yang relevan berdasarkan carta palang."
+      ],
+      "activities": [
+        "Projek Mini: Mengumpul data (cth: makanan kegemaran) dan membina carta palang.",
+        "Latih Amal: Menjawab soalan mentafsir carta palang (cth: berapa perbezaan nilai).",
+        "Perbincangan: Mengapa carta palang lebih mudah dibaca daripada jadual data mentah."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid membina carta palang yang dilabel dengan betul.",
+        "Latihan Bertulis: Soalan mentafsir carta palang dan pengiraan mudah.",
+        "Ujian Lisan: Soalan perbandingan data dalam carta."
+      ],
+      "aids": [
+        "Kertas graf.",
+        "Contoh carta palang yang dilabel dengan betul.",
+        "Jadual data mentah."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 4: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 4,
+      "topic_name": "Unit 1: Nombor hingga 100000",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.1.1 Membaca, menyebut, dan menulis nombor hingga 100000.",
+        "1.1.2 Menentukan nilai tempat, nilai digit, dan mencerakinkan nombor.",
+        "1.1.3 Menganggar dan membundarkan nombor hingga puluh ribu terdekat."
+      ],
+      "objectives": [
+        "Murid dapat menulis sebarang nombor hingga 100000 dalam perkataan dan angka.",
+        "Murid dapat menentukan nilai tempat dan nilai digit bagi nombor 5 digit.",
+        "Murid dapat membundarkan nombor hingga puluh ribu terdekat dengan tepat."
+      ],
+      "activities": [
+        "Aktiviti 'Larian Nombor': Menyusun kad nombor 5 digit mengikut tertib.",
+        "Latih Amal: Membundarkan nombor menggunakan garis nombor.",
+        "Perbincangan: Aplikasi nombor besar dalam kehidupan (cth: populasi, jarak)."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan pembundaran, nilai tempat, dan pencerakinan.",
+        "Ujian Lisan: Soalan membaca nombor 5 digit dengan betul.",
+        "Penilaian Amali: Keupayaan murid menggunakan blok Dienes untuk mewakilkan nombor 5 digit."
+      ],
+      "aids": [
+        "Kad imbas nombor 5 digit.",
+        "Garis nombor pembundaran.",
+        "Jadual nilai tempat."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 2: Operasi Gabungan (Tambah, Tolak, Darab, Bahagi)",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.2.1 Melakukan operasi gabungan (tambah dan tolak) hingga 100000.",
+        "1.2.2 Melakukan operasi gabungan (darab dan bahagi) hingga 100000.",
+        "1.2.3 Menyelesaikan masalah harian melibatkan operasi gabungan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan operasi gabungan tambah dan tolak mengikut urutan yang betul.",
+        "Murid dapat melakukan operasi gabungan darab dan bahagi mengikut urutan yang betul.",
+        "Murid dapat menyelesaikan 3 masalah cerita yang melibatkan operasi gabungan."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan operasi gabungan tanpa dan dengan kurungan (asas).",
+        "Aktiviti Kumpulan: 'Penyiasat Urutan Operasi' - Menyelesaikan soalan yang sengaja disusun salah.",
+        "Perbincangan: Kepentingan urutan operasi (konsep BODMAS/BIDMAS secara asas)."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 10 soalan operasi gabungan (dinilai urutan dan ketepatan).",
+        "Latihan Penyelesaian Masalah: Soalan cerita operasi gabungan.",
+        "Kuiz Konsep: Soalan tentang urutan operasi."
+      ],
+      "aids": [
+        "Lembaran kerja operasi gabungan.",
+        "Carta urutan operasi (asas).",
+        "Kalkulator (untuk semakan)."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 3: Pecahan, Perpuluhan, dan Peratus (Hubungan)",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "2.1.1 Menambah dan menolak pecahan (penyebut sama dan tak sama).",
+        "2.2.1 Melakukan operasi darab perpuluhan dengan nombor bulat.",
+        "2.3.1 Menukar pecahan dan perpuluhan kepada peratus dan sebaliknya."
+      ],
+      "objectives": [
+        "Murid dapat menambah dan menolak pecahan dengan penyebut tak sama (asas).",
+        "Murid dapat mendarab perpuluhan dengan nombor bulat hingga 10.",
+        "Murid dapat menukar pecahan tak wajar/nombor bercampur kepada perpuluhan dan peratus."
+      ],
+      "activities": [
+        "Latih Amal: Menambah/menolak pecahan menggunakan rajah/model.",
+        "Aktiviti Kumpulan: Menyelesaikan soalan darab perpuluhan (bentuk lazim).",
+        "Perbincangan: Menggunakan kad imbas untuk menunjukkan penukaran 3 unit (pecahan, perpuluhan, peratus)."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan operasi pecahan, darab perpuluhan, dan penukaran unit.",
+        "Penilaian Amali: Keupayaan murid menggunakan rajah untuk menunjukkan penambahan pecahan.",
+        "Kuiz Konsep: Soalan perbandingan nilai pecahan, perpuluhan, dan peratus."
+      ],
+      "aids": [
+        "Rajah/Model pecahan.",
+        "Carta penukaran unit.",
+        "Lembaran kerja darab perpuluhan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 4: Wang hingga RM10000",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.1.1 Melakukan operasi gabungan (tambah, tolak, darab, bahagi) wang hingga RM10000.",
+        "3.1.2 Mengenal pasti untung, rugi, diskaun, dan faedah (asas).",
+        "3.1.3 Menyelesaikan masalah wang harian yang melibatkan untung dan rugi."
+      ],
+      "objectives": [
+        "Murid dapat melakukan operasi gabungan wang (tambah, tolak, darab, bahagi) dengan betul.",
+        "Murid dapat menghitung untung atau rugi dalam situasi pembelian mudah.",
+        "Murid dapat menyelesaikan 3 masalah cerita wang (operasi gabungan dan untung/rugi)."
+      ],
+      "activities": [
+        "Aktiviti 'Pasar Raya': Murid mengira kos pembelian, untung, dan rugi menggunakan harga sebenar barang.",
+        "Latih Amal: Menyelesaikan soalan operasi gabungan wang dalam bentuk lazim.",
+        "Perbincangan: Konsep simpanan, faedah, dan pelaburan (asas)."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan operasi gabungan wang dan pengiraan untung/rugi.",
+        "Latihan Penyelesaian Masalah: Menilai keupayaan murid menterjemah masalah untung/rugi.",
+        "Ujian Lisan: Soalan tentang konsep diskaun dan faedah."
+      ],
+      "aids": [
+        "Wang mainan.",
+        "Resit pembelian.",
+        "Formula untung/rugi."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 5: Masa dan Waktu (Zon Masa)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.2.1 Menukar unit masa melibatkan jam dan hari, hari dan minggu.",
+        "3.2.2 Melakukan operasi darab dan bahagi masa.",
+        "3.2.3 Menyatakan dan menyelesaikan masalah masa melibatkan zon masa (asas)."
+      ],
+      "objectives": [
+        "Murid dapat menukar unit masa (tahun ke bulan, hari ke jam, minggu ke hari).",
+        "Murid dapat melakukan operasi darab dan bahagi masa (jam dan minit).",
+        "Murid dapat menyatakan perbezaan waktu bagi 2 negara (zon masa asas)."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan darab dan bahagi masa dalam bentuk lazim.",
+        "Aktiviti 'Kembara Dunia': Mengira perbezaan waktu antara Malaysia dan 2 negara lain.",
+        "Perbincangan: Mengapa zon masa diwujudkan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan penukaran unit masa, darab/bahagi masa, dan zon masa.",
+        "Penilaian Amali: Keupayaan murid menggunakan peta zon masa (asas).",
+        "Latihan Penyelesaian Masalah: Menilai keupayaan murid mengira tempoh bagi perjalanan yang jauh."
+      ],
+      "aids": [
+        "Peta Zon Masa Dunia (asas).",
+        "Carta penukaran unit masa.",
+        "Jam model."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 6: Panjang, Jisim, dan Isipadu (Gabungan Operasi)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.3.1 Melakukan operasi darab dan bahagi panjang.",
+        "3.4.1 Melakukan operasi darab dan bahagi jisim.",
+        "3.5.1 Melakukan operasi darab dan bahagi isipadu cecair.",
+        "3.5.2 Menyelesaikan masalah harian melibatkan sukatan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan operasi darab dan bahagi panjang (m, cm, km) dengan nombor 1 digit.",
+        "Murid dapat melakukan operasi darab dan bahagi jisim (kg, g) dan isipadu (l, ml).",
+        "Murid dapat menyelesaikan 3 masalah cerita yang melibatkan operasi gabungan sukatan."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan darab/bahagi sukatan yang melibatkan penukaran unit.",
+        "Eksperimen: Mengira jisim purata sebiji epal (bahagi jisim total).",
+        "Perbincangan: Mengaplikasi sukatan dalam reka bentuk dan pembinaan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan operasi darab/bahagi sukatan dan penukaran unit.",
+        "Latihan Penyelesaian Masalah: Menilai jalan kerja yang melibatkan operasi berganda.",
+        "Penilaian Amali: Ketepatan murid melakukan pengiraan purata jisim."
+      ],
+      "aids": [
+        "Alat sukatan.",
+        "Carta penukaran unit sukatan.",
+        "Lembaran kerja bentuk lazim."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 7: Ruang (Garis Selari, Serenjang, dan Sudut)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "4.1.1 Mengenal pasti dan melukis garis selari dan garis serenjang.",
+        "4.1.2 Mengenal pasti dan menamakan sudut (tirus, tegak, cakah).",
+        "4.1.3 Mengukur sudut menggunakan protraktor (asas)."
+      ],
+      "objectives": [
+        "Murid dapat melukis garis selari dan garis serenjang menggunakan set segi tiga.",
+        "Murid dapat mengenal pasti 3 jenis sudut (tirus, tegak, cakah) pada rajah.",
+        "Murid dapat mengukur sudut sehingga 90 darjah dengan protraktor (asas)."
+      ],
+      "activities": [
+        "Latih Amal: Melukis garis selari dan serenjang pada kertas grid.",
+        "Aktiviti 'Mencari Sudut': Murid mencari dan mengukur sudut yang terdapat di dalam kelas.",
+        "Perbincangan: Aplikasi garis selari/serenjang dalam pembinaan bangunan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid melukis garis serenjang dan mengukur sudut.",
+        "Latihan Bertulis: Melabelkan jenis-jenis sudut.",
+        "Ujian Lisan: Soalan tentang ciri-ciri garis selari."
+      ],
+      "aids": [
+        "Protraktor, pembaris, set segi tiga.",
+        "Kertas grid.",
+        "Carta jenis-jenis sudut."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 8: Ruang (Luas dan Perimeter)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "4.2.1 Mengira perimeter bentuk 2D (segi empat sama, segi empat tepat, segi tiga).",
+        "4.2.2 Mengira luas bentuk 2D (segi empat sama, segi empat tepat).",
+        "4.2.3 Menyelesaikan masalah harian melibatkan luas dan perimeter."
+      ],
+      "objectives": [
+        "Murid dapat mengira perimeter dan luas segi empat sama/tepat menggunakan formula.",
+        "Murid dapat mengira perimeter segi tiga (asas).",
+        "Murid dapat menyelesaikan 2 masalah cerita melibatkan luas dan perimeter."
+      ],
+      "activities": [
+        "Aktiviti 'Ukuran Bilik Darjah': Murid mengira perimeter dan luas kawasan di dalam kelas.",
+        "Latih Amal: Menyelesaikan soalan pengiraan luas dan perimeter pada rajah.",
+        "Perbincangan: Mengapa tukang kebun perlu tahu luas dan perimeter."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan pengiraan luas dan perimeter menggunakan formula.",
+        "Latihan Penyelesaian Masalah: Soalan cerita luas dan perimeter.",
+        "Penilaian Amali: Keupayaan murid menggunakan pita ukur untuk mengira perimeter."
+      ],
+      "aids": [
+        "Pita ukur.",
+        "Formula luas dan perimeter (poster).",
+        "Rajah pelbagai bentuk 2D."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 9: Koordinat dan Nisbah Asas",
+      "skill_name": "Statistik dan Kebarangkalian",
+      "standards": [
+        "5.1.1 Mengenal pasti paksi-x, paksi-y, dan asalan (asas).",
+        "5.1.2 Menyatakan koordinat bagi sesuatu titik (asas).",
+        "5.2.1 Menulis nisbah asas (cth: 1:2) dalam perkataan dan angka."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti kedudukan paksi-x, paksi-y, dan asalan pada satah Cartesan.",
+        "Murid dapat menyatakan koordinat bagi 3 titik yang ditandakan pada grid (asas).",
+        "Murid dapat menulis nisbah mudah (cth: bilangan pensel kepada bilangan pemadam)."
+      ],
+      "activities": [
+        "Permainan 'Kapal Karam': Murid meneka koordinat rakan.",
+        "Latih Amal: Menanda titik pada satah Cartesan.",
+        "Aktiviti Kumpulan: Menentukan nisbah bagi objek dalam kelas."
+      ],
+      "assessments": [
+        "Penilaian Amali: Keupayaan murid menanda titik dan menyatakan koordinat.",
+        "Latihan Bertulis: Soalan menulis nisbah dan menentukan koordinat.",
+        "Ujian Lisan: Soalan tentang konsep asalan."
+      ],
+      "aids": [
+        "Kertas grid (satah Cartesan).",
+        "Model satah Cartesan.",
+        "Objek untuk demonstrasi nisbah."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 10: Pengendalian Data (Mod, Median, Min Asas)",
+      "skill_name": "Statistik dan Kebarangkalian",
+      "standards": [
+        "5.3.1 Mengumpul dan mengelas data (mentah).",
+        "5.3.2 Mencari mod, median, dan min (purata) bagi set data mudah.",
+        "5.3.3 Mentafsir data dan membuat kesimpulan."
+      ],
+      "objectives": [
+        "Murid dapat mengira mod, median, dan min bagi set data dengan kurang daripada 10 nilai.",
+        "Murid dapat menyelesaikan masalah harian melibatkan min (purata).",
+        "Murid dapat mentafsir nilai mod, median, dan min."
+      ],
+      "activities": [
+        "Aktiviti 'Ketinggian Murid': Mengukur ketinggian, merekod, dan mengira mod, median, dan min.",
+        "Latih Amal: Menyelesaikan soalan pengiraan min, mod, dan median.",
+        "Perbincangan: Mengapa purata (min) penting (cth: purata skor ujian)."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan pengiraan mod, median, dan min.",
+        "Penilaian Amali: Keupayaan murid merekod data mentah dan menyusunnya.",
+        "Latihan Penyelesaian Masalah: Soalan cerita melibatkan purata."
+      ],
+      "aids": [
+        "Pita ukur.",
+        "Jadual data mentah.",
+        "Formula min, mod, median (poster)."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 5: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 5,
+      "topic_name": "Unit 1: Nombor hingga 1,000,000",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.1.1 Membaca, menyebut, dan menulis nombor hingga 1,000,000.",
+        "1.1.2 Menentukan nilai tempat dan nilai digit bagi nombor 6 digit.",
+        "1.1.3 Menyelesaikan masalah harian melibatkan perpuluhan dan peratus dalam sejuta."
+      ],
+      "objectives": [
+        "Murid dapat menulis sebarang nombor hingga 1,000,000 dalam perkataan dan angka.",
+        "Murid dapat mencerakinkan nombor hingga juta mengikut nilai tempat dan nilai digit.",
+        "Murid dapat membundarkan nombor hingga ratus ribu terdekat."
+      ],
+      "activities": [
+        "Aktiviti 'Loteri Nombor': Murid meneka nombor yang dibundarkan kepada ratus ribu terdekat.",
+        "Latih Amal: Mencerakinkan nombor besar menggunakan jadual.",
+        "Perbincangan: Menggunakan nombor besar (juta) dalam konteks sebenar (cth: bajet negara, populasi)."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan pencerakinan, pembundaran, dan nilai tempat.",
+        "Ujian Lisan: Soalan membaca nombor 6 digit dengan lancar.",
+        "Penilaian Amali: Keupayaan murid menyusun nombor besar mengikut tertib."
+      ],
+      "aids": [
+        "Jadual nilai tempat hingga juta.",
+        "Kad imbas nombor besar.",
+        "Peta minda konsep nombor."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 2: Operasi Tambah/Tolak Pecahan dan Perpuluhan",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "2.1.1 Melakukan operasi tambah dan tolak nombor bercampur.",
+        "2.1.2 Melakukan operasi gabungan tambah dan tolak pecahan.",
+        "2.2.1 Melakukan operasi darab dan bahagi perpuluhan (dengan nombor bulat/perpuluhan)."
+      ],
+      "objectives": [
+        "Murid dapat menambah dan menolak nombor bercampur yang melibatkan penyebut tak sama.",
+        "Murid dapat mendarab perpuluhan dengan perpuluhan (hingga 2 tempat perpuluhan).",
+        "Murid dapat membahagi perpuluhan dengan nombor bulat (asas)."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan operasi gabungan pecahan dengan penukaran unit yang kompleks.",
+        "Aktiviti Kumpulan: Menggunakan rajah untuk menunjukkan pendaraban perpuluhan.",
+        "Perbincangan: Mengapa perlu mencari penyebut sepunya dalam operasi pecahan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 10 soalan operasi pecahan (tambah/tolak nombor bercampur) dan perpuluhan (darab/bahagi).",
+        "Latihan Penyelesaian Masalah: Soalan cerita melibatkan pecahan/perpuluhan.",
+        "Penilaian Amali: Keupayaan murid mewakilkan hasil darab perpuluhan pada grid."
+      ],
+      "aids": [
+        "Rajah pecahan/perpuluhan.",
+        "Lembaran kerja grid 10x10.",
+        "Carta langkah operasi pecahan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 3: Operasi Bergabung dengan Kurungan",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.2.1 Melakukan operasi gabungan tambah/tolak dan darab/bahagi dengan kurungan.",
+        "1.2.2 Menyelesaikan masalah harian melibatkan operasi gabungan dengan kurungan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan operasi yang terdapat kurungan mengikut keutamaan yang betul.",
+        "Murid dapat membezakan urutan operasi dengan dan tanpa kurungan.",
+        "Murid dapat menyelesaikan 2 masalah cerita yang menggunakan operasi gabungan dengan kurungan."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan set soalan yang sama dengan dan tanpa kurungan untuk melihat perbezaan hasil.",
+        "Permainan 'Pilih Kurungan': Murid meletakkan kurungan untuk mendapatkan hasil yang dikehendaki.",
+        "Perbincangan: Membina ayat matematik dengan kurungan daripada masalah cerita."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 10 soalan operasi gabungan dengan kurungan (dinilai urutan dan ketepatan).",
+        "Latihan Penyelesaian Masalah: Menilai keupayaan murid menulis ayat matematik dengan kurungan yang betul.",
+        "Kuiz Konsep: Soalan tentang peranan kurungan dalam operasi."
+      ],
+      "aids": [
+        "Kad soalan operasi gabungan.",
+        "Carta keutamaan operasi (BODMAS/BIDMAS).",
+        "Lembaran kerja bergred."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 4: Masa dan Waktu (Tempoh Lanjutan)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.2.1 Melakukan operasi darab dan bahagi masa (melibatkan tahun, bulan, hari).",
+        "3.2.2 Mengira tempoh masa antara dua tarikh.",
+        "3.2.3 Menyelesaikan masalah masa harian melibatkan tempoh."
+      ],
+      "objectives": [
+        "Murid dapat mendarab dan membahagi masa melibatkan tahun/bulan, bulan/hari.",
+        "Murid dapat mengira tempoh masa (dalam hari/minggu) antara dua tarikh (cth: Hari Raya ke Hari Kebangsaan).",
+        "Murid dapat menyelesaikan 3 masalah cerita yang melibatkan operasi masa yang kompleks."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan darab/bahagi masa dengan penukaran unit yang kompleks.",
+        "Aktiviti 'Jadual Projek': Murid merancang jadual projek dan mengira tempoh dalam minggu/bulan.",
+        "Perbincangan: Mengaplikasi pengiraan tempoh dalam merancang acara."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan operasi darab/bahagi masa dan pengiraan tempoh antara dua tarikh.",
+        "Penilaian Amali: Keupayaan murid menggunakan kalendar untuk mengira tempoh.",
+        "Latihan Penyelesaian Masalah: Menilai ketepatan jalan kerja bagi masalah masa."
+      ],
+      "aids": [
+        "Kalendar tahunan.",
+        "Carta penukaran unit masa (tahun, bulan, minggu, hari).",
+        "Lembaran kerja bentuk lazim masa."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 5: Ruang (Isipadu Bentuk Gabungan)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "4.2.1 Mengira isipadu kubus dan kuboid menggunakan formula (panjang x lebar x tinggi).",
+        "4.2.2 Mengira isipadu bentuk gabungan (kubus dan kuboid).",
+        "4.2.3 Menyelesaikan masalah harian melibatkan isipadu."
+      ],
+      "objectives": [
+        "Murid dapat mengira isipadu kubus dan kuboid menggunakan formula (cm³ atau m³).",
+        "Murid dapat mengira isipadu bentuk gabungan 2 kubus/kuboid.",
+        "Murid dapat menyelesaikan 2 masalah cerita yang melibatkan isipadu bentuk gabungan."
+      ],
+      "activities": [
+        "Aktiviti 'Bina dan Kira': Murid membina bentuk gabungan menggunakan blok dan mengira isipadunya.",
+        "Latih Amal: Menyelesaikan soalan pengiraan isipadu bentuk gabungan dengan label yang betul.",
+        "Perbincangan: Mengaplikasi isipadu dalam penyimpanan barang (cth: kotak, tangki air)."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan pengiraan isipadu bentuk gabungan.",
+        "Penilaian Amali: Keupayaan murid mengira isipadu model yang dibina dengan unit yang betul.",
+        "Latihan Penyelesaian Masalah: Menilai keupayaan murid mengenal pasti ukuran yang diperlukan."
+      ],
+      "aids": [
+        "Blok cantuman/unit.",
+        "Formula isipadu (poster).",
+        "Rajah bentuk gabungan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 6: Panjang (Unit Lanjutan)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.3.1 Menukar unit panjang (km ke m, m ke cm, cm ke mm) dan sebaliknya.",
+        "3.3.2 Melakukan operasi gabungan (4 operasi) panjang.",
+        "3.3.3 Menyelesaikan masalah harian melibatkan panjang."
+      ],
+      "objectives": [
+        "Murid dapat menukar unit panjang melibatkan mm, cm, m, dan km dengan tepat.",
+        "Murid dapat melakukan operasi gabungan panjang (tambah, tolak, darab, bahagi) yang melibatkan penukaran unit.",
+        "Murid dapat menyelesaikan 3 masalah cerita yang melibatkan panjang dan jarak."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan penukaran unit panjang dalam jadual.",
+        "Eksperimen: Mengukur dan mengira jarak purata perjalanan (darab/bahagi panjang).",
+        "Perbincangan: Mengaplikasi panjang dalam bidang kejuruteraan dan pembinaan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan operasi gabungan panjang dan penukaran unit.",
+        "Latihan Penyelesaian Masalah: Menilai jalan kerja yang melibatkan operasi berganda.",
+        "Penilaian Amali: Ketepatan murid melakukan penukaran unit (km ke m, m ke cm)."
+      ],
+      "aids": [
+        "Pita ukur.",
+        "Carta penukaran unit panjang.",
+        "Peta laluan (untuk pengiraan jarak)."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 7: Jisim (Unit Lanjutan)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.4.1 Menukar unit jisim (kg ke g) dan sebaliknya.",
+        "3.4.2 Melakukan operasi gabungan (4 operasi) jisim.",
+        "3.4.3 Menyelesaikan masalah harian melibatkan jisim."
+      ],
+      "objectives": [
+        "Murid dapat menukar unit jisim (kg ke g) dan sebaliknya dengan tepat.",
+        "Murid dapat melakukan operasi gabungan jisim (tambah, tolak, darab, bahagi) yang melibatkan penukaran unit.",
+        "Murid dapat menyelesaikan 3 masalah cerita yang melibatkan jisim dan berat."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan operasi gabungan jisim dengan penukaran unit.",
+        "Eksperimen: Mengukur dan mengira jisim purata pelbagai barang (operasi bahagi jisim).",
+        "Perbincangan: Mengaplikasi jisim dalam perniagaan dan perdagangan."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan operasi gabungan jisim dan penukaran unit.",
+        "Latihan Penyelesaian Masalah: Menilai jalan kerja yang melibatkan operasi berganda.",
+        "Penilaian Amali: Ketepatan murid melakukan penukaran unit jisim (kg ke g)."
+      ],
+      "aids": [
+        "Penimbang (imbangan).",
+        "Carta penukaran unit jisim.",
+        "Bahan dapur (gula, tepung) untuk pengukuran."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 8: Isipadu Cecair (Unit Lanjutan)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.5.1 Menukar unit isipadu cecair (l ke ml) dan sebaliknya.",
+        "3.5.2 Melakukan operasi gabungan (4 operasi) isipadu cecair.",
+        "3.5.3 Menyelesaikan masalah harian melibatkan isipadu cecair."
+      ],
+      "objectives": [
+        "Murid dapat menukar unit isipadu cecair (l ke ml) dan sebaliknya dengan tepat.",
+        "Murid dapat melakukan operasi gabungan isipadu cecair (tambah, tolak, darab, bahagi) yang melibatkan penukaran unit.",
+        "Murid dapat menyelesaikan 3 masalah cerita yang melibatkan isipadu cecair (cth: tangki air)."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan operasi gabungan isipadu cecair dengan penukaran unit.",
+        "Eksperimen: Mengukur isipadu air yang diperlukan untuk resepi (operasi darab/bahagi isipadu).",
+        "Perbincangan: Mengaplikasi isipadu cecair dalam perubatan dan industri minuman."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan operasi gabungan isipadu cecair dan penukaran unit.",
+        "Latihan Penyelesaian Masalah: Menilai jalan kerja yang melibatkan operasi berganda.",
+        "Penilaian Amali: Ketepatan murid melakukan penukaran unit isipadu (l ke ml)."
+      ],
+      "aids": [
+        "Silinder penyukat, bikar.",
+        "Carta penukaran unit isipadu cecair.",
+        "Air berwarna."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 9: Koordinat dan Nisbah",
+      "skill_name": "Statistik dan Kebarangkalian",
+      "standards": [
+        "5.1.1 Menentukan kedudukan dan jarak antara dua titik pada satah Cartesan (asas).",
+        "5.2.1 Menentukan nisbah dua kuantiti (1:n, n:1).",
+        "5.2.2 Menyelesaikan masalah harian melibatkan nisbah."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan koordinat bagi 5 titik dan menentukan jarak mengufuk/menegak antara dua titik.",
+        "Murid dapat menulis nisbah dalam bentuk 1:n atau n:1.",
+        "Murid dapat menyelesaikan 2 masalah cerita nisbah mudah (cth: skala, resipi)."
+      ],
+      "activities": [
+        "Permainan 'Peta Harta Karun': Murid mencari harta karun menggunakan koordinat.",
+        "Latih Amal: Menyelesaikan soalan penentuan nisbah dan koordinat.",
+        "Perbincangan: Mengaplikasi nisbah dalam skala peta dan resipi."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan menentukan koordinat, jarak, dan nisbah.",
+        "Penilaian Amali: Keupayaan murid menggunakan satah Cartesan dan menentukan nisbah.",
+        "Latihan Penyelesaian Masalah: Soalan cerita nisbah."
+      ],
+      "aids": [
+        "Kertas grid (satah Cartesan).",
+        "Kad senario nisbah.",
+        "Peta minda koordinat."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 10: Kebarangkalian Asas",
+      "skill_name": "Statistik dan Kebarangkalian",
+      "standards": [
+        "5.3.1 Menyatakan kebarangkalian (pasti, mustahil, besar kemungkinan, kecil kemungkinan).",
+        "5.3.2 Menyelesaikan masalah harian melibatkan kebarangkalian asas."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 4 istilah kebarangkalian dan memberi 1 contoh bagi setiap satu.",
+        "Murid dapat menentukan kebarangkalian bagi sesuatu peristiwa mudah (cth: melambung syiling).",
+        "Murid dapat membandingkan kebarangkalian dua peristiwa yang berbeza."
+      ],
+      "activities": [
+        "Eksperimen: Melambung syiling atau membaling dadu dan merekod hasil.",
+        "Aktiviti Kumpulan: Menilai kebarangkalian pelbagai senario (cth: hujan esok, menang loteri).",
+        "Perbincangan: Mengaplikasi kebarangkalian dalam permainan dan ramalan cuaca."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan melabelkan peristiwa dengan istilah kebarangkalian yang betul.",
+        "Penilaian Amali: Pemerhatian keupayaan murid merekod hasil eksperimen kebarangkalian.",
+        "Ujian Lisan: Soalan perbandingan kebarangkalian."
+      ],
+      "aids": [
+        "Syiling, dadu, guli berwarna dalam beg.",
+        "Carta istilah kebarangkalian.",
+        "Jadual eksperimen kebarangkalian."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 6: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 6,
+      "topic_name": "Unit 1: Nombor hingga 10,000,000",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.1.1 Membaca, menyebut, dan menulis nombor hingga 10,000,000.",
+        "1.1.2 Menentukan nilai tempat dan nilai digit bagi nombor hingga 7 digit.",
+        "1.1.3 Menganggar dan membundarkan nombor hingga juta terdekat."
+      ],
+      "objectives": [
+        "Murid dapat menulis sebarang nombor hingga 10,000,000 dalam perkataan dan angka.",
+        "Murid dapat menentukan nilai tempat dan nilai digit bagi nombor 7 digit.",
+        "Murid dapat membundarkan nombor hingga juta terdekat dengan tepat."
+      ],
+      "activities": [
+        "Aktiviti 'Jutawan Nombor': Murid meneka nombor yang dibundarkan kepada juta terdekat.",
+        "Latih Amal: Mencerakinkan nombor hingga juta menggunakan jadual.",
+        "Perbincangan: Aplikasi nombor 7 digit dalam data ekonomi dan populasi dunia."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan pencerakinan, pembundaran, dan nilai tempat nombor 7 digit.",
+        "Ujian Lisan: Soalan membaca nombor 7 digit dengan lancar.",
+        "Penilaian Amali: Keupayaan murid membandingkan nombor yang dibundarkan."
+      ],
+      "aids": [
+        "Jadual nilai tempat hingga juta.",
+        "Kad imbas nombor besar.",
+        "Data populasi/ekonomi sebenar."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 2: Operasi Gabungan Lanjutan",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "1.2.1 Melakukan operasi gabungan (4 operasi) melibatkan kurungan.",
+        "1.2.2 Menyelesaikan masalah harian melibatkan operasi gabungan yang kompleks.",
+        "1.2.3 Menggunakan kalkulator untuk menyemak hasil (teknologi)."
+      ],
+      "objectives": [
+        "Murid dapat melakukan operasi gabungan (tambah, tolak, darab, bahagi) dengan kurungan yang melibatkan nombor hingga sejuta.",
+        "Murid dapat menyelesaikan 3 masalah cerita yang memerlukan urutan operasi yang kompleks.",
+        "Murid dapat menggunakan kalkulator untuk mengesahkan jawapan operasi gabungan."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan operasi gabungan yang kompleks dengan langkah demi langkah.",
+        "Aktiviti Kumpulan: Mencipta masalah cerita operasi gabungan untuk rakan.",
+        "Perbincangan: Kepentingan menulis jalan kerja yang sistematik."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 10 soalan operasi gabungan yang kompleks (dinilai jalan kerja).",
+        "Latihan Penyelesaian Masalah: Soalan cerita pelbagai langkah.",
+        "Penilaian Amali: Pemerhatian keupayaan murid menggunakan kalkulator dengan betul."
+      ],
+      "aids": [
+        "Kalkulator.",
+        "Lembaran kerja operasi gabungan kompleks.",
+        "Carta keutamaan operasi."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 3: Pecahan, Perpuluhan, dan Peratus (Semakan)",
+      "skill_name": "Nombor dan Operasi",
+      "standards": [
+        "2.1.1 Menyelesaikan masalah harian melibatkan pecahan (darab dan bahagi).",
+        "2.2.1 Menyelesaikan masalah harian melibatkan perpuluhan (darab dan bahagi).",
+        "2.3.1 Menyelesaikan masalah harian melibatkan peratus (untung, rugi, faedah)."
+      ],
+      "objectives": [
+        "Murid dapat menyelesaikan operasi darab dan bahagi pecahan dengan nombor bulat dan pecahan lain.",
+        "Murid dapat menyelesaikan operasi darab dan bahagi perpuluhan (hingga 3 tempat perpuluhan).",
+        "Murid dapat mengira peratus untung, rugi, dan faedah mudah."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan darab/bahagi pecahan dan perpuluhan.",
+        "Aktiviti 'Pengiraan Kewangan': Mengira untung, rugi, dan faedah simpanan menggunakan peratus.",
+        "Perbincangan: Menggunakan konsep peratus dalam situasi kewangan sebenar."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan operasi darab/bahagi pecahan, perpuluhan, dan peratus kewangan.",
+        "Latihan Penyelesaian Masalah: Soalan cerita melibatkan semua unit nombor.",
+        "Kuiz Konsep: Soalan tentang kaitan antara pecahan, perpuluhan, dan peratus."
+      ],
+      "aids": [
+        "Model pecahan.",
+        "Lembaran kerja pengiraan faedah/untung.",
+        "Carta penukaran unit."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 4: Masa dan Waktu (Sistem 24 Jam)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "3.2.1 Menukar waktu dalam sistem 12 jam kepada sistem 24 jam dan sebaliknya.",
+        "3.2.2 Menyelesaikan masalah harian melibatkan sistem 12 jam dan 24 jam.",
+        "3.2.3 Menyelesaikan masalah harian melibatkan operasi masa yang kompleks (4 operasi)."
+      ],
+      "objectives": [
+        "Murid dapat menukar waktu dari sistem 12 jam ke 24 jam dan sebaliknya dengan tepat.",
+        "Murid dapat melakukan operasi gabungan masa yang melibatkan penukaran unit dan sistem 24 jam.",
+        "Murid dapat menyelesaikan 3 masalah cerita yang melibatkan jadual waktu penerbangan/perjalanan."
+      ],
+      "activities": [
+        "Latih Amal: Menyelesaikan soalan penukaran sistem 12 jam/24 jam.",
+        "Aktiviti 'Jadual Penerbangan': Merancang perjalanan menggunakan jadual waktu 24 jam.",
+        "Perbincangan: Mengapa sistem 24 jam digunakan secara meluas."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan penukaran sistem waktu dan operasi gabungan masa.",
+        "Latihan Penyelesaian Masalah: Soalan cerita melibatkan pengiraan tempoh dan sistem 24 jam.",
+        "Penilaian Amali: Keupayaan murid membaca jadual waktu 24 jam."
+      ],
+      "aids": [
+        "Carta perbandingan sistem 12 jam dan 24 jam.",
+        "Jadual waktu pengangkutan awam.",
+        "Jam model."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 5: Ruang (Luas Permukaan)",
+      "skill_name": "Sukatan dan Geometri",
+      "standards": [
+        "4.2.1 Mengira luas permukaan bentuk 3D (kubus dan kuboid).",
+        "4.2.2 Mengira luas bentuk gabungan 2D dan 3D (asas).",
+        "4.2.3 Menyelesaikan masalah harian melibatkan luas permukaan."
+      ],
+      "objectives": [
+        "Murid dapat mengira luas permukaan kubus dan kuboid menggunakan formula (asas).",
+        "Murid dapat melukis bentangan (net) kubus dan kuboid.",
+        "Murid dapat menyelesaikan 2 masalah cerita yang melibatkan luas permukaan (cth: mengecat bilik)."
+      ],
+      "activities": [
+        "Projek 'Bentangan': Murid membina dan melukis bentangan kubus dan kuboid.",
+        "Latih Amal: Menyelesaikan soalan pengiraan luas permukaan bentuk 3D.",
+        "Perbincangan: Mengaplikasi luas permukaan dalam pembungkusan dan reka bentuk."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan pengiraan luas permukaan kubus/kuboid.",
+        "Penilaian Amali: Keupayaan murid melukis bentangan dengan betul.",
+        "Latihan Penyelesaian Masalah: Soalan cerita luas permukaan."
+      ],
+      "aids": [
+        "Model bentangan kubus dan kuboid.",
+        "Formula luas permukaan (poster).",
+        "Bahan untuk melukis bentangan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 6: Algebra Asas (Ungkapan)",
+      "skill_name": "Perkaitan dan Algebra",
+      "standards": [
+        "5.1.1 Mengenal pasti pemboleh ubah dalam situasi harian.",
+        "5.1.2 Menulis ungkapan algebra mudah (cth: x + 2, 3y).",
+        "5.1.3 Menentukan nilai ungkapan algebra mudah."
+      ],
+      "objectives": [
+        "Murid dapat mengenal pasti pemboleh ubah dalam masalah cerita.",
+        "Murid dapat menulis 3 ungkapan algebra mudah daripada pernyataan bertulis.",
+        "Murid dapat mengira nilai ungkapan algebra apabila nilai pemboleh ubah diberi."
+      ],
+      "activities": [
+        "Aktiviti 'Kotak Misteri': Murid menggunakan kotak untuk mewakili pemboleh ubah dan menulis ungkapan.",
+        "Latih Amal: Menyelesaikan soalan mencari nilai ungkapan algebra.",
+        "Perbincangan: Mengapa algebra penting dalam matematik."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan menulis dan mengira nilai ungkapan algebra.",
+        "Ujian Lisan: Soalan mengenal pasti pemboleh ubah dalam situasi harian.",
+        "Penilaian Amali: Keupayaan murid menggunakan objek untuk mewakilkan ungkapan."
+      ],
+      "aids": [
+        "Kotak/beg misteri.",
+        "Kad senario pemboleh ubah.",
+        "Lembaran kerja algebra asas."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 7: Nisbah dan Kadaran",
+      "skill_name": "Perkaitan dan Algebra",
+      "standards": [
+        "5.2.1 Menentukan nisbah tiga kuantiti (a:b:c).",
+        "5.2.2 Menyelesaikan masalah harian melibatkan kadaran (proportions).",
+        "5.2.3 Mengaitkan nisbah dengan pecahan dan peratus."
+      ],
+      "objectives": [
+        "Murid dapat menulis nisbah 3 kuantiti (a:b:c) dengan tepat.",
+        "Murid dapat menyelesaikan masalah kadaran mudah (cth: mencari harga untuk 5 unit jika harga 2 unit diketahui).",
+        "Murid dapat menyatakan nisbah dalam bentuk pecahan."
+      ],
+      "activities": [
+        "Aktiviti 'Resepi Kadaran': Murid menyesuaikan resepi mengikut nisbah bahan.",
+        "Latih Amal: Menyelesaikan masalah kadaran menggunakan jadual.",
+        "Perbincangan: Aplikasi nisbah dalam skala peta dan perkongsian harta."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan pengiraan nisbah 3 kuantiti dan kadaran.",
+        "Latihan Penyelesaian Masalah: Soalan cerita nisbah dan kadaran.",
+        "Penilaian Amali: Keupayaan murid menggunakan jadual untuk menyelesaikan masalah kadaran."
+      ],
+      "aids": [
+        "Resepi mudah.",
+        "Kad senario nisbah/kadaran.",
+        "Carta perbandingan nisbah."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 8: Pengendalian Data (Mod, Median, Min Lanjutan)",
+      "skill_name": "Statistik dan Kebarangkalian",
+      "standards": [
+        "6.1.1 Mencari mod, median, dan min bagi set data yang banyak.",
+        "6.1.2 Menentukan julat dan beza antara nilai data.",
+        "6.1.3 Menyelesaikan masalah harian melibatkan mod, median, min, dan julat."
+      ],
+      "objectives": [
+        "Murid dapat mengira mod, median, dan min bagi set data dengan 20 nilai.",
+        "Murid dapat mengira julat bagi set data.",
+        "Murid dapat menyelesaikan 3 masalah cerita yang melibatkan pengiraan purata (min) yang lebih kompleks."
+      ],
+      "activities": [
+        "Aktiviti 'Analisis Data': Mengumpulkan data (cth: skor ujian kelas) dan mengira mod, median, min, dan julat.",
+        "Latih Amal: Menyelesaikan soalan pengiraan purata.",
+        "Perbincangan: Perbezaan dan kegunaan min, median, dan mod dalam analisis data."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan pengiraan mod, median, min, dan julat (set data besar).",
+        "Latihan Penyelesaian Masalah: Soalan cerita melibatkan purata dan julat.",
+        "Penilaian Amali: Keupayaan murid mengumpul dan menyusun data dengan betul."
+      ],
+      "aids": [
+        "Jadual data mentah.",
+        "Kalkulator (untuk semakan).",
+        "Carta formula min, mod, median, julat."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 9: Kebarangkalian Penuh",
+      "skill_name": "Statistik dan Kebarangkalian",
+      "standards": [
+        "6.2.1 Menyatakan kebarangkalian dalam pecahan (cth: 1/2, 1/4).",
+        "6.2.2 Membandingkan kebarangkalian pelbagai peristiwa.",
+        "6.2.3 Menyelesaikan masalah harian melibatkan kebarangkalian dalam pecahan."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan kebarangkalian dalam bentuk pecahan bagi pelbagai peristiwa.",
+        "Murid dapat membandingkan nilai kebarangkalian dalam pecahan.",
+        "Murid dapat menyelesaikan 2 masalah cerita yang melibatkan pengiraan kebarangkalian (cth: memilih guli berwarna)."
+      ],
+      "activities": [
+        "Eksperimen: Melambung syiling/memilih kad berwarna dan menyatakan kebarangkalian dalam pecahan.",
+        "Aktiviti Kumpulan: Mencipta 'Cabaran Kebarangkalian' menggunakan pelbagai objek.",
+        "Perbincangan: Mengapa nilai kebarangkalian tidak pernah melebihi 1."
+      ],
+      "assessments": [
+        "Ujian Bertulis: Soalan menulis kebarangkalian dalam pecahan dan penyelesaian masalah.",
+        "Penilaian Amali: Pemerhatian keupayaan murid merekod hasil eksperimen kebarangkalian.",
+        "Ujian Lisan: Soalan perbandingan kebarangkalian dalam pecahan."
+      ],
+      "aids": [
+        "Guli pelbagai warna dalam beg.",
+        "Dadu.",
+        "Carta konsep kebarangkalian (0 hingga 1)."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 10: Penyelesaian Masalah Kritis Lanjutan",
+      "skill_name": "Sintesis Matematik",
+      "standards": [
+        "1.3.1 Menyelesaikan masalah harian yang melibatkan gabungan semua topik (nombor, sukatan, ruang, statistik).",
+        "1.3.2 Menggunakan kemahiran berfikir aras tinggi (KBAT) dalam penyelesaian masalah.",
+        "1.3.3 Menyemak penyelesaian masalah dengan pelbagai cara."
+      ],
+      "objectives": [
+        "Murid dapat menyelesaikan 3 masalah berangkai yang melibatkan gabungan 3 topik berbeza (cth: wang, peratus, dan masa).",
+        "Murid dapat menjelaskan dan membandingkan 2 kaedah penyelesaian masalah yang berbeza.",
+        "Murid dapat merumuskan konsep matematik Tahun 1 hingga 6."
+      ],
+      "activities": [
+        "Projek Penyelesaian Masalah: 'Cabaran Jualan Bazar' - Masalah multi-topik melibatkan wang, peratus, min, dan luas.",
+        "Perbincangan Kritis: Menganalisis soalan KBAT dan merancang strategi penyelesaian.",
+        "Pembentangan Kumpulan: Membentangkan jalan kerja bagi masalah yang kompleks."
+      ],
+      "assessments": [
+        "Ujian Bertulis: 5 soalan KBAT yang merangkumi semua topik Tahun 6 (sumatif akhir).",
+        "Penilaian Projek: Keupayaan murid menyelesaikan masalah multi-topik dan pembentangan jalan kerja.",
+        "Ujian Lisan: Soalan sintesis tentang peranan matematik dalam bidang yang berbeza."
+      ],
+      "aids": [
+        "Kad senario masalah KBAT.",
+        "Papan putih/flip chart untuk pembentangan.",
+        "Bahan rujukan formula KSSR."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eRPH Auto - Login</title>
+  <link rel="stylesheet" href="assets/css/login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Log Masuk eRPH</h2>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Emel" required />
+        <input type="password" id="password" placeholder="Kata Laluan" required />
+        <button type="submit">Log Masuk</button>
+        <p id="error" class="error"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script type="module" src="assets/js/config.js"></script>
+  <script type="module" src="assets/js/auth.js"></script>
+</body>
+</html>

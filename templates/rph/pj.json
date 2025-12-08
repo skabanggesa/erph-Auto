@@ -1,0 +1,1824 @@
+{
+  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Pendidikan Jasmani - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
+  "subject": "Pendidikan Jasmani",
+  "data": [
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 1: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 1,
+      "topic_name": "Unit 1: Pergerakan Asas Lokomotor dan Bukan Lokomotor",
+      "skill_name": "Kemahiran Pergerakan",
+      "standards": [
+        "1.1.1 Melakukan pergerakan lokomotor (berjalan, berlari, melompat) dalam pelbagai arah.",
+        "1.1.2 Melakukan pergerakan bukan lokomotor (meregang, membongkok, memusing) mengikut arahan.",
+        "5.1.1 Mengenal pasti ruang (am dan peribadi) semasa melakukan pergerakan."
+      ],
+      "objectives": [
+        "Murid dapat membezakan 3 pergerakan lokomotor dan 3 pergerakan bukan lokomotor.",
+        "Murid dapat melakukan pergerakan lokomotor ke hadapan dan ke sisi dengan betul.",
+        "Murid dapat melakukan aktiviti secara berpasangan tanpa bersentuhan."
+      ],
+      "activities": [
+        "Permainan: 'Ikut Kata Saya' (lokomotor dan bukan lokomotor).",
+        "Latih Tubi: Melakukan pergerakan meregang, membongkok, dan memusing.",
+        "Aktiviti Kumpulan: Melakukan larian perlahan mengikut garisan di padang."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan murid melakukan pergerakan mengikut arahan.",
+        "Ujian Lisan: Soalan konsep ruang peribadi.",
+        "Senarai Semak: Pergerakan lokomotor yang dikuasai."
+      ],
+      "aids": [
+        "Tanda Kon (Cones).",
+        "Garisan penanda.",
+        "Muzik iringan (untuk bukan lokomotor)."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 2: Keseimbangan dan Kestabilan Badan",
+      "skill_name": "Kemahiran Pergerakan (Gimnastik Asas)",
+      "standards": [
+        "1.2.1 Melakukan imbangan statik dan dinamik (sokongan satu tapak).",
+        "1.2.2 Mengaplikasikan konsep pusat graviti dalam imbangan.",
+        "5.2.1 Mengamalkan keselamatan diri dan alatan sebelum, semasa, dan selepas aktiviti."
+      ],
+      "objectives": [
+        "Murid dapat melakukan imbangan statik 'Burung Terbang' selama 5 saat.",
+        "Murid dapat melakukan imbangan dinamik (berjalan atas garisan) dengan stabil.",
+        "Murid dapat menyatakan 2 peraturan keselamatan alatan."
+      ],
+      "activities": [
+        "Latih Tubi: Imbangan bangau (satu kaki).",
+        "Permainan: Berjalan di atas tali/garisan penanda.",
+        "Simulasi: Imbangan berpasangan (secara mudah)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian kestabilan semasa imbangan statik/dinamik.",
+        "Ujian Lisan: Soalan konsep imbangan.",
+        "Senarai Semak: Prosedur keselamatan alatan."
+      ],
+      "aids": [
+        "Tali/garisan penanda.",
+        "Tilam gimnastik.",
+        "Buku skrap postur imbangan."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 3: Kemahiran Asas Membaling dan Melambung",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.3.1 Melakukan kemahiran membaling dan melambung objek ke sasaran.",
+        "1.3.2 Melakukan kemahiran membaling sisi (underhand/overhand) dengan betul.",
+        "5.3.1 Mempamerkan semangat kesukanan dan bermain secara adil."
+      ],
+      "objectives": [
+        "Murid dapat membaling bola besar melepasi paras kepala (overhand throw).",
+        "Murid dapat melambung bola kecil dan menangkapnya semula 5 kali berturut-turut.",
+        "Murid dapat mengamalkan giliran semasa melakukan aktiviti membaling."
+      ],
+      "activities": [
+        "Latih Tubi: Melambung bola sendiri dan menangkap.",
+        "Permainan: Balapan membaling (sasaran kon).",
+        "Aktiviti Kumpulan: Membaling pundi kacang ke dalam bakul."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik membaling (pergerakan tangan dan badan).",
+        "Ujian Lisan: Soalan konsep giliran.",
+        "Senarai Semak: Ketepatan balingan ke sasaran."
+      ],
+      "aids": [
+        "Bola lembut/Bola besar.",
+        "Pundi kacang.",
+        "Bakul/Kon (sasaran)."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 4: Kemahiran Asas Menangkap dan Menerima",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.4.1 Melakukan kemahiran menangkap objek yang dilambung oleh diri sendiri.",
+        "1.4.2 Melakukan kemahiran menangkap objek yang dilambung oleh rakan (aras dada).",
+        "5.4.1 Menerima cabaran dan berasa seronok semasa mengambil bahagian."
+      ],
+      "objectives": [
+        "Murid dapat menangkap bola pantul dengan dua tangan 5 kali berturut-turut.",
+        "Murid dapat menerima balingan bola aras dada daripada rakan dalam jarak 3 meter.",
+        "Murid menunjukkan ekspresi wajah yang gembira sepanjang aktiviti."
+      ],
+      "activities": [
+        "Latih Tubi: Menangkap bola pantul sendiri.",
+        "Aktiviti Berpasangan: Membaling dan menangkap bola dari jarak dekat.",
+        "Permainan: 'Kucing dan Tikus' (menangkap bola)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan menangkap bola (lembut/keras).",
+        "Ujian Lisan: Soalan perasaan semasa aktiviti.",
+        "Senarai Semak: Penggunaan dua tangan untuk menangkap."
+      ],
+      "aids": [
+        "Bola lembut saiz kecil/sederhana.",
+        "Sarung tangan (jika perlu).",
+        "Dinding (untuk aktiviti pantulan)."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 5: Kecergasan - Daya Tahan Kardiovaskular (Jantung)",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "3.1.1 Melakukan aktiviti fizikal yang dapat meningkatkan kadar degupan jantung.",
+        "3.1.2 Mengenal pasti denyutan nadi rehat dan selepas aktiviti.",
+        "4.1.1 Menyatakan kepentingan aktiviti daya tahan kardiovaskular."
+      ],
+      "objectives": [
+        "Murid dapat melakukan larian perlahan (jogging) selama 3 minit tanpa henti.",
+        "Murid dapat mengambil denyutan nadi di pergelangan tangan (dengan bimbingan).",
+        "Murid dapat menyatakan 2 kepentingan menjaga jantung yang sihat."
+      ],
+      "activities": [
+        "Latih Tubi: Larian pelbagai aras (tinggi, sederhana, rendah).",
+        "Permainan: 'Kejar Mengejar' (Tagging Game).",
+        "Perbincangan: Kepentingan memanaskan dan menyejukkan badan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan larian berterusan 3 minit.",
+        "Ujian Lisan: Soalan kepentingan aktiviti jantung.",
+        "Senarai Semak: Prosedur mengambil denyutan nadi."
+      ],
+      "aids": [
+        "Jam randik.",
+        "Carta prosedur mengambil denyutan nadi.",
+        "Muzik rancak."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 6: Kecergasan - Kekuatan dan Daya Tahan Otot",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "3.2.1 Melakukan aktiviti yang melibatkan kekuatan otot utama (lengan, kaki, teras).",
+        "3.2.2 Melakukan aktiviti regangan otot selepas aktiviti.",
+        "4.2.1 Menyatakan kepentingan regangan otot."
+      ],
+      "objectives": [
+        "Murid dapat melakukan 'Jejak Kasut' (Squats) 5 kali dengan teknik yang betul.",
+        "Murid dapat melakukan 'Duduk Tegak' (Sit-up) 5 kali dengan bimbingan.",
+        "Murid dapat menunjukkan 3 regangan otot utama (lengan, paha, betis)."
+      ],
+      "activities": [
+        "Latih Tubi: 'Duck Walk' (jalan itik) dan 'Bear Crawl' (merangkak beruang).",
+        "Permainan: 'Membina Benteng' (menggunakan kekuatan kaki).",
+        "Aktiviti Kumpulan: Regangan Statik dan Dinamik."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik dan bilangan ulangan (Sit-up, Squats).",
+        "Ujian Lisan: Soalan kepentingan otot yang kuat.",
+        "Senarai Semak: Pelakuan regangan yang betul."
+      ],
+      "aids": [
+        "Tilam senaman.",
+        "Buku panduan regangan bergambar.",
+        "Muzik."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 7: Pergerakan Berirama - Corak Pergerakan Asas",
+      "skill_name": "Pergerakan Berirama",
+      "standards": [
+        "2.1.1 Melakukan pelbagai corak pergerakan (lokomotor dan bukan lokomotor) mengikut irama.",
+        "2.1.2 Mengenal pasti tempo (cepat dan perlahan) pergerakan.",
+        "5.4.1 Mengaplikasikan kreativiti dalam pergerakan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan 5 pergerakan lokomotor (cth: jalan, lari, lompat, galop, skip) mengikut tempo muzik.",
+        "Murid dapat membezakan pergerakan cepat dan perlahan.",
+        "Murid dapat mencipta 3 pergerakan kreatif ringkas secara individu."
+      ],
+      "activities": [
+        "Latih Tubi: Melakukan pergerakan mengikut tempo dram/gong.",
+        "Aktiviti Kumpulan: Mencipta rangkaian pergerakan ringkas (2-3 langkah).",
+        "Permainan: 'Tarian Patung' (bergerak dan berhenti mengikut muzik)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan pergerakan mengikut irama.",
+        "Ujian Lisan: Soalan konsep tempo.",
+        "Senarai Semak: Kreativiti dalam pergerakan."
+      ],
+      "aids": [
+        "Alat muzik perkusi (dram, kastanet).",
+        "Pemain muzik dan lagu berirama.",
+        "Ruang yang luas."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 8: Gimnastik Asas - Guling Hadapan",
+      "skill_name": "Kemahiran Pergerakan (Gimnastik)",
+      "standards": [
+        "1.5.1 Melakukan guling hadapan dengan bimbingan dan teknik yang selamat.",
+        "1.5.2 Melakukan persediaan, gulingan, dan pendaratan yang betul.",
+        "5.2.1 Mengamalkan langkah keselamatan yang ditetapkan guru."
+      ],
+      "objectives": [
+        "Murid dapat melakukan persediaan gulingan (mencangkung, tangan di hadapan) dengan betul.",
+        "Murid dapat melakukan gulingan hadapan dengan lancar (menggunakan bantuan/sokongan).",
+        "Murid dapat mendarat dengan stabil selepas gulingan."
+      ],
+      "activities": [
+        "Latih Tubi: Persediaan gulingan (posisi kepala dan tangan).",
+        "Demonstrasi: Guru menunjukkan teknik gulingan yang betul.",
+        "Amali: Melakukan gulingan hadapan (dengan pengawasan rapat)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik gulingan dan pendaratan.",
+        "Ujian Lisan: Soalan prosedur keselamatan.",
+        "Senarai Semak: Kepatuhan kepada arahan guru."
+      ],
+      "aids": [
+        "Tilam gimnastik tebal.",
+        "Tilam landai (ramp mat).",
+        "Carta teknik gulingan."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 9: Akuatik - Keselamatan Asas Air",
+      "skill_name": "Akuatik dan Keselamatan",
+      "standards": [
+        "2.2.1 Menyatakan peraturan keselamatan asas di kolam renang/kawasan air.",
+        "2.2.2 Melakukan pergerakan di dalam air (berjalan, mengutip objek) dengan selamat.",
+        "4.3.1 Menyatakan 3 langkah keselamatan diri dalam situasi kecemasan air."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 peraturan keselamatan di kolam renang (cth: tidak berlari, tidak menolak rakan).",
+        "Murid dapat melakukan hembusan nafas di dalam air 5 kali berturut-turut.",
+        "Murid dapat berjalan di dalam air aras pinggang dengan yakin."
+      ],
+      "activities": [
+        "Latih Tubi: Menghembus nafas di dalam air (Bubble Blowing).",
+        "Simulasi: Berjalan di dalam air dan mengutip objek.",
+        "Perbincangan: Pakaian yang sesuai di dalam air dan risiko di kawasan air dalam."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keyakinan dan pergerakan di dalam air.",
+        "Ujian Lisan: Soalan peraturan keselamatan air.",
+        "Senarai Semak: Keupayaan hembusan nafas di dalam air."
+      ],
+      "aids": [
+        "Kolam renang cetek (simulasi di ruang kering jika tiada kolam).",
+        "Pelampung.",
+        "Carta peraturan kolam renang."
+      ]
+    },
+    {
+      "year": 1,
+      "topic_name": "Unit 10: Permainan Tradisional dan Etika Bersukan",
+      "skill_name": "Rekreasi dan Kesukanan",
+      "standards": [
+        "2.3.1 Melakukan permainan tradisional yang melibatkan kemahiran asas pergerakan (cth: Konda-Kondi, Galah Panjang).",
+        "5.5.1 Menyatakan kepentingan mengikut peraturan permainan.",
+        "5.5.2 Bekerjasama dan menghormati rakan sepasukan/lawan."
+      ],
+      "objectives": [
+        "Murid dapat bermain 1 permainan tradisional (cth: Galah Panjang) dengan mengikut peraturan.",
+        "Murid dapat menunjukkan kerjasama dengan rakan sepasukan.",
+        "Murid dapat menyatakan 2 kepentingan mematuhi peraturan permainan."
+      ],
+      "activities": [
+        "Permainan: Galah Panjang atau Bola Beracun.",
+        "Perbincangan: Bagaimana kerjasama membantu memenangi permainan.",
+        "Simulasi: Bersalaman dan mengucapkan tahniah kepada pasukan lawan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian kerjasama dan kepatuhan peraturan.",
+        "Ujian Lisan: Soalan kepentingan etika bersukan.",
+        "Senarai Semak: Penglibatan aktif dalam permainan."
+      ],
+      "aids": [
+        "Alatan permainan tradisional (cth: rotan, tiang).",
+        "Ruang padang/gelanggang.",
+        "Buku peraturan permainan tradisional."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 2: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 2,
+      "topic_name": "Unit 1: Kemahiran Asas Menendang dan Menggelecek",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.3.1 Melakukan kemahiran menendang bola ke sasaran (statik).",
+        "1.3.2 Melakukan kemahiran menggelecek bola dengan kaki (kawalan rapat).",
+        "5.1.1 Mengenal pasti jarak yang sesuai untuk menendang bola."
+      ],
+      "objectives": [
+        "Murid dapat menendang bola ke sasaran sejauh 5 meter.",
+        "Murid dapat menggelecek bola 5 meter dalam satu garisan lurus tanpa hilang kawalan.",
+        "Murid dapat menyatakan bahagian kaki yang digunakan untuk menggelecek dan menendang."
+      ],
+      "activities": [
+        "Latih Tubi: Menendang bola ke arah dinding/sasaran.",
+        "Aktiviti Individu: Menggelecek bola secara zig-zag antara kon.",
+        "Permainan: Bola Sepak Kecil (Mini Soccer)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik menendang dan kawalan gelecekan.",
+        "Ujian Lisan: Soalan bahagian kaki yang digunakan.",
+        "Senarai Semak: Ketepatan tendangan ke sasaran."
+      ],
+      "aids": [
+        "Bola sepak/Bola getah saiz kecil.",
+        "Kon (untuk zig-zag).",
+        "Sasaran (tiang gol mini)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 2: Kemahiran Asas Memukul dan Menampar",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.4.1 Melakukan kemahiran memukul bola pegun (statik) menggunakan alatan (kayu/tangan).",
+        "1.4.2 Melakukan kemahiran menampar (volleyball style set) bola aras dada.",
+        "5.2.1 Memahami kepentingan pemanasan dan penyejukan badan."
+      ],
+      "objectives": [
+        "Murid dapat memukul bola kecil pegun sejauh 5 meter menggunakan kayu hoki/kayu lembut.",
+        "Murid dapat menampar bola ke atas 5 kali berturut-turut.",
+        "Murid dapat menyatakan 2 fungsi utama memanaskan badan."
+      ],
+      "activities": [
+        "Latih Tubi: Memukul bola statik ke sasaran.",
+        "Aktiviti Individu: Menampar bola ke atas dan menangkap semula.",
+        "Permainan: 'Memukul ke Sasaran'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik memukul dan kekuatan pukulan.",
+        "Ujian Lisan: Soalan kepentingan memanaskan badan.",
+        "Senarai Semak: Ketepatan penamparan."
+      ],
+      "aids": [
+        "Kayu pemukul lembut/kayu hoki plastik.",
+        "Bola lembut/bola tenis.",
+        "Net mini."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 3: Kecergasan - Fleksibiliti (Kelenturan)",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "3.3.1 Melakukan pelbagai jenis regangan statik dan dinamik.",
+        "3.3.2 Mengenal pasti otot-otot utama yang diregangkan.",
+        "4.1.1 Menyatakan kepentingan fleksibiliti dalam mengelakkan kecederaan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan 5 regangan dinamik utama sebelum aktiviti.",
+        "Murid dapat melakukan 3 regangan statik utama (cth: duduk jangkau) dan menahan 8 saat.",
+        "Murid dapat menyatakan 2 kepentingan fleksibiliti."
+      ],
+      "activities": [
+        "Latih Tubi: Regangan Dinamik (gerakan hayunan lengan, kaki).",
+        "Aktiviti Kumpulan: Regangan Statik berpasangan (bantuan).",
+        "Perbincangan: Mengapa kelenturan penting untuk sukan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik dan tempoh regangan (8 saat statik).",
+        "Ujian Lisan: Soalan kepentingan kelenturan.",
+        "Senarai Semak: Otot yang diregangkan (label)."
+      ],
+      "aids": [
+        "Tilam senaman.",
+        "Carta Regangan bergambar.",
+        "Jam randik."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 4: Kecergasan - Komposisi Badan dan Nutrisi Asas",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "3.4.1 Menyatakan maksud komposisi badan (asas).",
+        "3.4.2 Mengenal pasti jenis makanan yang sihat dan tidak sihat (Pirimid Makanan).",
+        "4.2.1 Mengamalkan pemakanan seimbang harian."
+      ],
+      "objectives": [
+        "Murid dapat menyatakan maksud 'Badan Sihat' secara ringkas.",
+        "Murid dapat menyenaraikan 5 makanan dalam Piramid Makanan.",
+        "Murid dapat memilih 2 makanan sihat dan 1 makanan tidak sihat untuk sarapan (simulasi)."
+      ],
+      "activities": [
+        "Perbincangan: Kepentingan menjaga berat badan ideal.",
+        "Aktiviti Kumpulan: Melabel makanan dalam Piramid Makanan.",
+        "Simulasi: Perancangan menu harian sihat."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan konsep komposisi badan dan nutrisi.",
+        "Latihan Bertulis: Melabel Piramid Makanan.",
+        "Senarai Semak: Pilihan makanan sihat (simulasi)."
+      ],
+      "aids": [
+        "Carta Piramid Makanan.",
+        "Gambar-gambar makanan sihat/tidak sihat.",
+        "Risalah nutrisi."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 5: Pergerakan Berirama - Corak Langkah Lanjutan",
+      "skill_name": "Pergerakan Berirama",
+      "standards": [
+        "2.1.1 Melakukan rangkaian pergerakan lokomotor dan bukan lokomotor mengikut tempo.",
+        "2.1.2 Mengenal pasti perkaitan antara rentak, irama, dan pergerakan.",
+        "5.3.1 Menghayati nilai estetika dalam pergerakan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan rangkaian 5 langkah pergerakan (gabungan lokomotor dan bukan lokomotor) mengikut muzik.",
+        "Murid dapat melakukan pergerakan 'Chasse' dan 'Skip' dengan lancar.",
+        "Murid menunjukkan ekspresi yang sesuai dengan tema pergerakan."
+      ],
+      "activities": [
+        "Latih Tubi: Corak langkah Chasse, Polka, dan Skip.",
+        "Aktiviti Berpasangan: Mencipta rangkaian pergerakan ringkas (choreography).",
+        "Persembahan: Rangkaian pergerakan mengikut genre muzik terpilih."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan corak langkah dan rangkaian.",
+        "Ujian Lisan: Soalan konsep rentak dan irama.",
+        "Senarai Semak: Keseragaman pergerakan berpasangan."
+      ],
+      "aids": [
+        "Muzik instrumental berirama (cth: 3/4, 4/4).",
+        "Video contoh tarian asas.",
+        "Ruang yang sesuai."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 6: Gimnastik Asas - Melonjak dan Mendarat",
+      "skill_name": "Kemahiran Pergerakan (Gimnastik)",
+      "standards": [
+        "1.5.1 Melakukan kemahiran melonjak dari pelbagai aras dan mendarat dengan stabil.",
+        "1.5.2 Mengaplikasikan prinsip serap daya semasa mendarat.",
+        "5.4.1 Menunjukkan keyakinan diri semasa melakukan pergerakan."
+      ],
+      "objectives": [
+        "Murid dapat melonjak dari tempat tinggi (kotak) dan mendarat dengan fleksi lutut yang betul.",
+        "Murid dapat melakukan pendaratan dua kaki yang stabil dan seimbang.",
+        "Murid menunjukkan keyakinan diri semasa melonjak."
+      ],
+      "activities": [
+        "Latih Tubi: Latihan melonjak dan mendarat (Hop, Leap, Jump).",
+        "Aktiviti Kumpulan: Melonjak dari kotak/tilam yang berbeza ketinggian.",
+        "Permainan: 'Melonjak Melepasi Halangan'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik mendarat (fleksi lutut dan kestabilan).",
+        "Ujian Lisan: Soalan fungsi lutut semasa mendarat.",
+        "Senarai Semak: Keyakinan diri dan teknik lonjakan."
+      ],
+      "aids": [
+        "Kotak (Box Plinth) atau bangku rendah.",
+        "Tilam gimnastik.",
+        "Kon (untuk halangan)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 7: Kemahiran Asas Permainan Jaring dan Dinding",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.6.1 Melakukan kemahiran asas permainan jaring (cth: hantaran aras dada).",
+        "1.6.2 Melakukan kemahiran asas permainan dinding (cth: memantul bola ke dinding).",
+        "5.5.1 Bekerjasama dan menghormati rakan sepasukan/lawan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan hantaran aras dada (chest pass) sejauh 3 meter kepada rakan.",
+        "Murid dapat memantul bola ke dinding dan menangkapnya semula 5 kali berturut-turut.",
+        "Murid dapat menyatakan 2 kelebihan bermain dalam satu pasukan."
+      ],
+      "activities": [
+        "Latih Tubi: Hantaran aras dada berpasangan.",
+        "Aktiviti Individu: Memantul bola ke dinding dan menerima semula.",
+        "Permainan: 'Bola Tampar' mini (menggunakan balon/bola lembut)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik hantaran dan penerimaan.",
+        "Ujian Lisan: Soalan kepentingan kerjasama.",
+        "Senarai Semak: Bilangan hantaran yang berjaya."
+      ],
+      "aids": [
+        "Bola saiz sederhana (bola jaring/bola tampar lembut).",
+        "Dinding yang sesuai.",
+        "Net/Tali (untuk permainan jaring)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 8: Kemahiran Asas Permainan Memukul dan Memadang",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.7.1 Melakukan kemahiran memukul bola yang dilambung oleh rakan (bimbingan).",
+        "1.7.2 Melakukan larian tapak (base running) dan memadang (fielding) asas.",
+        "5.5.1 Mematuhi peraturan asas permainan memukul."
+      ],
+      "objectives": [
+        "Murid dapat memukul bola yang dilambung rakan (dari jarak dekat) ke kawasan lapang.",
+        "Murid dapat berlari ke tapak (base) yang ditentukan selepas memukul.",
+        "Murid dapat memadang bola dan membaling kepada rakan (relay throw) dengan betul."
+      ],
+      "activities": [
+        "Latih Tubi: Memukul bola yang dilambung (Toss Ball).",
+        "Simulasi: Larian tapak (First Base Run).",
+        "Permainan: 'Rounders' mini (peraturan dipermudahkan)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik memukul dan kemahiran memadang.",
+        "Ujian Lisan: Soalan peraturan larian tapak.",
+        "Senarai Semak: Bilangan pukulan yang kena."
+      ],
+      "aids": [
+        "Tee (tempat letak bola)/Kayu pemukul lembut.",
+        "Bola tenis/bola getah.",
+        "Penanda tapak (bases)."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 9: Adab dan Etika Ketika Bersukan",
+      "skill_name": "Kesukanan",
+      "standards": [
+        "5.5.1 Menyatakan adab-adab sebelum, semasa, dan selepas bersukan (cth: berpakaian sesuai, tidak mengejek lawan).",
+        "5.5.2 Mengamalkan semangat kesukanan (fair play) dalam setiap aktiviti.",
+        "5.5.3 Membantu rakan dan guru semasa aktiviti."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 adab bersukan (cth: menghormati pengadil, tidak bergaduh).",
+        "Murid dapat menunjukkan amalan 'fair play' (cth: mengakui kesalahan sendiri).",
+        "Murid dapat membantu mengemas dan menyimpan alatan dengan teratur."
+      ],
+      "activities": [
+        "Perbincangan: Kepentingan adab dan etika dalam sukan.",
+        "Simulasi: Berlakon sebagai pemain yang adil dan tidak adil.",
+        "Aktiviti Kumpulan: Mengemas alatan selepas sesi PJ."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian tingkah laku (adab dan etika) sepanjang sesi PJ.",
+        "Ujian Lisan: Soalan konsep 'fair play'.",
+        "Senarai Semak: Tanggungjawab mengemas alatan."
+      ],
+      "aids": [
+        "Carta Adab Bersukan.",
+        "Kad senario tingkah laku (baik/buruk).",
+        "Alatan PJ."
+      ]
+    },
+    {
+      "year": 2,
+      "topic_name": "Unit 10: Rekreasi - Permainan Rakyat",
+      "skill_name": "Rekreasi dan Kesenggangan",
+      "standards": [
+        "2.3.1 Melakukan pelbagai jenis permainan rakyat yang melibatkan pergerakan (cth: Congkak, Batu Seremban - sebagai tambahan).",
+        "2.3.2 Mengenal pasti peraturan dan cara bermain permainan rakyat.",
+        "5.6.1 Menghargai dan mengekalkan warisan budaya (permainan rakyat)."
+      ],
+      "objectives": [
+        "Murid dapat bermain 1 permainan rakyat (cth: Batu Seremban/Tarik Tali) mengikut peraturan.",
+        "Murid dapat menyatakan asal usul permainan yang dimainkan (ringkas).",
+        "Murid menunjukkan minat dan keseronokan semasa bermain permainan rakyat."
+      ],
+      "activities": [
+        "Permainan: Batu Seremban/Tarik Tali/Lompat Getah.",
+        "Perbincangan: Nilai-nilai murni dalam permainan rakyat (cth: kesabaran, fokus).",
+        "Aktiviti Kumpulan: Mencari maklumat tentang permainan rakyat yang lain."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian kemahiran dan penglibatan dalam permainan.",
+        "Ujian Lisan: Soalan peraturan permainan rakyat.",
+        "Senarai Semak: Keseronokan dan minat."
+      ],
+      "aids": [
+        "Alatan permainan rakyat (getah, batu, tali).",
+        "Video/gambar permainan rakyat.",
+        "Ruang yang sesuai."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 3: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 3,
+      "topic_name": "Unit 1: Kemahiran Asas Bola Baling dan Bola Keranjang",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.1.1 Melakukan kemahiran menghantar dan menerima bola (paras dada/lantun).",
+        "1.1.2 Melakukan kemahiran menggelecek bola (Handball dribble/Basketball dribble).",
+        "5.1.1 Mengenal pasti ruang yang sesuai untuk bergerak dan menjaring."
+      ],
+      "objectives": [
+        "Murid dapat menghantar dan menerima bola aras dada 5 kali berturut-turut (jarak 5 meter).",
+        "Murid dapat menggelecek bola rendah dan tinggi dalam jarak 10 meter.",
+        "Murid dapat menjaringkan bola ke dalam bakul/sasaran dengan bimbingan."
+      ],
+      "activities": [
+        "Latih Tubi: Hantaran aras dada dan lantun (berpasangan).",
+        "Aktiviti Individu: Menggelecek bola rendah dan tinggi (Basketball/Handball).",
+        "Permainan: 'Handball' mini (menggunakan peraturan ringkas)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik menghantar dan menggelecek.",
+        "Ujian Lisan: Soalan konsep ruang bergerak.",
+        "Senarai Semak: Ketepatan menjaring bola ke sasaran."
+      ],
+      "aids": [
+        "Bola saiz bola keranjang/bola baling.",
+        "Kon (untuk gelecekan).",
+        "Bakul/Sasaran jaring."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 2: Kecergasan - Latihan Jeda dan Larian Berterusan",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "3.1.1 Melakukan latihan jeda (interval training) ringkas untuk daya tahan kardiovaskular.",
+        "3.1.2 Mengukur dan merekodkan denyutan nadi sebelum dan selepas aktiviti.",
+        "4.1.1 Menentukan sasaran kadar denyutan nadi yang sesuai untuk meningkatkan kecergasan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan larian jeda (lari pantas 30 saat, rehat 30 saat) sebanyak 3 set.",
+        "Murid dapat mengukur dan merekodkan denyutan nadi rehat dan sasaran dengan tepat (bimbingan).",
+        "Murid dapat menyatakan 2 kepentingan latihan jeda."
+      ],
+      "activities": [
+        "Latih Tubi: Latihan jeda ringkas (lari/berjalan).",
+        "Aktiviti Individu: Mengukur nadi dan merekod dalam jadual.",
+        "Perbincangan: Konsep Kadar Denyutan Nadi Sasaran (ringkas)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan latihan jeda.",
+        "Ujian Lisan: Soalan konsep denyutan nadi sasaran.",
+        "Jadual Rekod: Ketepatan merekodkan nadi."
+      ],
+      "aids": [
+        "Jam randik.",
+        "Jadual rekod nadi.",
+        "Carta Kadar Denyutan Nadi Sasaran."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 3: Kecergasan - Kekuatan Teras (Core Strength)",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "3.2.1 Melakukan aktiviti yang dapat meningkatkan kekuatan otot teras (perut dan belakang).",
+        "3.2.2 Mengenal pasti otot-otot teras yang terlibat dalam pergerakan.",
+        "4.2.1 Menyatakan kepentingan otot teras yang kuat untuk postur badan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan 'Plank' selama 20 saat dengan teknik yang betul.",
+        "Murid dapat melakukan 'Superman' (extension belakang) 5 kali ulangan.",
+        "Murid dapat menyatakan 2 kepentingan otot teras yang kuat (cth: postur yang baik)."
+      ],
+      "activities": [
+        "Latih Tubi: 'Plank' dan 'Side Plank' (dengan bimbingan).",
+        "Aktiviti Individu: Senaman 'Bridge' dan 'Crunches' ringan.",
+        "Perbincangan: Kaitan antara kekuatan teras dan duduk tegak."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik dan tempoh 'Plank'.",
+        "Ujian Lisan: Soalan kepentingan otot teras.",
+        "Senarai Semak: Teknik senaman teras yang betul."
+      ],
+      "aids": [
+        "Tilam senaman.",
+        "Jam randik.",
+        "Carta senaman otot teras."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 4: Gimnastik - Rangkaian Pergerakan dan Persembahan",
+      "skill_name": "Kemahiran Pergerakan (Gimnastik)",
+      "standards": [
+        "1.5.1 Menggabungkan 3 kemahiran gimnastik asas (imbas, guling, lonjak) dalam satu rangkaian.",
+        "1.5.2 Melakukan persembahan rangkaian pergerakan dengan licin dan estetika.",
+        "5.4.1 Menghargai persembahan rakan dan memberi maklum balas yang membina."
+      ],
+      "objectives": [
+        "Murid dapat mencipta dan melakukan rangkaian 3 pergerakan (cth: Imbangan V + Guling Hadapan + Lonjakan) secara individu.",
+        "Murid dapat melakukan rangkaian pergerakan tanpa henti (licin).",
+        "Murid dapat memberi 1 maklum balas positif kepada persembahan rakan."
+      ],
+      "activities": [
+        "Latih Tubi: Menggabungkan pergerakan (transisi antara kemahiran).",
+        "Aktiviti Kumpulan: Mencipta dan mempersembahkan rangkaian gimnastik ringkas.",
+        "Perbincangan: Aspek kelicinan dan estetika dalam persembahan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan menggabung dan kelicinan rangkaian.",
+        "Ujian Lisan: Soalan aspek estetika dalam gimnastik.",
+        "Senarai Semak: Transisi pergerakan yang lancar."
+      ],
+      "aids": [
+        "Tilam gimnastik.",
+        "Muzik iringan (jika perlu).",
+        "Borang maklum balas rakan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 5: Pergerakan Berirama - Tarian Kreatif dan Folklorik",
+      "skill_name": "Pergerakan Berirama",
+      "standards": [
+        "2.1.1 Mencipta dan melakukan rangkaian pergerakan yang bertema (cth: alam semula jadi).",
+        "2.1.2 Menghayati dan melakukan pergerakan asas tarian folklorik (cth: tarian Zapin/Inang asas).",
+        "5.3.1 Menghargai kepelbagaian budaya melalui tarian."
+      ],
+      "objectives": [
+        "Murid dapat mencipta dan mempersembahkan tarian kreatif bertema (3 gerakan utama).",
+        "Murid dapat melakukan 2 langkah asas tarian folklorik yang dipelajari.",
+        "Murid dapat menyatakan 2 ciri unik tarian yang dipersembahkan."
+      ],
+      "activities": [
+        "Latih Tubi: Langkah-langkah tarian asas (Zapin/Inang).",
+        "Aktiviti Kumpulan: Mencipta tarian kreatif mengikut tema.",
+        "Persembahan: Tarian mengikut iringan muzik tradisional."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keseragaman pergerakan dan kreativiti.",
+        "Ujian Lisan: Soalan ciri-ciri tarian tradisional.",
+        "Senarai Semak: Kepatuhan kepada langkah asas tarian."
+      ],
+      "aids": [
+        "Muzik tradisional (Zapin, Inang, dll).",
+        "Pakaian/Prop ringkas (jika ada).",
+        "Video contoh tarian folklorik."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 6: Akuatik - Apungan dan Luncuran",
+      "skill_name": "Akuatik dan Keselamatan",
+      "standards": [
+        "2.2.1 Melakukan kemahiran apungan (timbul) dan luncuran di permukaan air.",
+        "2.2.2 Mengaplikasikan teknik apungan yang betul (badan lurus, kepala di dalam air).",
+        "5.2.1 Mengamalkan keselamatan diri dan rakan semasa di dalam air."
+      ],
+      "objectives": [
+        "Murid dapat melakukan apungan statik (apungan bintang) selama 5 saat (bantuan/tanpa bantuan).",
+        "Murid dapat melakukan luncuran dari dinding kolam sejauh 3 meter.",
+        "Murid dapat menyatakan 2 kepentingan kemahiran apungan."
+      ],
+      "activities": [
+        "Latih Tubi: Apungan bintang (depan dan belakang).",
+        "Aktiviti Individu: Luncuran dari dinding (dinding tendangan).",
+        "Permainan: 'Siapa Terapung Paling Lama'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik apungan dan jarak luncuran.",
+        "Ujian Lisan: Soalan kepentingan apungan.",
+        "Senarai Semak: Kepatuhan kepada arahan guru."
+      ],
+      "aids": [
+        "Kolam renang (aras dada).",
+        "Pelampung (Noodle/Kickboard).",
+        "Papan luncur."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 7: Kemahiran Asas Permainan Bola Baling (Menyerang)",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.1.1 Mengaplikasikan kemahiran menghantar, menerima, dan menggelecek dalam situasi menyerang.",
+        "1.1.2 Mengenal pasti posisi asas pemain (penyerang, pertahanan).",
+        "5.5.1 Bekerjasama dalam kumpulan untuk mencapai matlamat (menjaring)."
+      ],
+      "objectives": [
+        "Murid dapat melakukan hantaran pantas dalam situasi larian (running pass).",
+        "Murid dapat menjaringkan gol ke sasaran (ringkas) dalam formasi menyerang (2 lawan 1).",
+        "Murid dapat bermain secara berkumpulan dengan mengaplikasikan 1 strategi menyerang (cth: 'Give and Go')."
+      ],
+      "activities": [
+        "Latih Tubi: Hantaran 'Give and Go' berpasangan.",
+        "Permainan: 'Keep Away' (menghantar bola untuk mengelak lawan).",
+        "Simulasi: Situasi 2 lawan 1 (menjaring gol)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan menghantar dan menjaring dalam situasi permainan.",
+        "Ujian Lisan: Soalan konsep menyerang.",
+        "Senarai Semak: Kerjasama dan strategi menyerang."
+      ],
+      "aids": [
+        "Bola baling.",
+        "Garis penanda gelanggang.",
+        "Sasaran gol."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 8: Kemahiran Asas Permainan Jaring dan Dinding (Menghadang)",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.6.1 Melakukan kemahiran asas menghalang/menghadang dalam permainan jaring (cth: Badminton/Badminton mini).",
+        "1.6.2 Melakukan kemahiran asas servis dan pulangan asas (forehand/backhand).",
+        "5.6.1 Mengenal pasti risiko kecederaan dan cara pencegahannya."
+      ],
+      "objectives": [
+        "Murid dapat melakukan servis ke hadapan (underarm service) ke kawasan lawan.",
+        "Murid dapat mengembalikan bulu tangkis/bola yang dipukul rakan (pulangan asas).",
+        "Murid dapat menyatakan 2 cara mencegah kecederaan sukan (cth: pakai kasut sesuai)."
+      ],
+      "activities": [
+        "Latih Tubi: Servis ke hadapan berpasangan (melepasi jaring).",
+        "Permainan: 'Badminton' mini (single atau double dengan peraturan dipermudahkan).",
+        "Perbincangan: Peralatan keselamatan dalam sukan jaring."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik servis dan pulangan.",
+        "Ujian Lisan: Soalan pencegahan kecederaan.",
+        "Senarai Semak: Bilangan servis yang berjaya melepasi jaring."
+      ],
+      "aids": [
+        "Raket badminton dan bulu tangkis/bola lembut.",
+        "Net badminton/Tali.",
+        "Garis gelanggang."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 9: Rekreasi - Aktiviti Lasak dan Orienteering Asas",
+      "skill_name": "Rekreasi dan Kesenggangan",
+      "standards": [
+        "2.3.1 Melakukan aktiviti rekreasi luar (cth: mencari harta karun/orienteering asas).",
+        "2.3.2 Menggunakan kemahiran peta dan kompas asas (bimbingan).",
+        "5.7.1 Mempamerkan sikap bekerjasama dan berdikari."
+      ],
+      "objectives": [
+        "Murid dapat bekerjasama mencari 3 poin/objek dalam kawasan sekolah (orienteering).",
+        "Murid dapat menggunakan arah mata angin asas (cth: Utara, Selatan) untuk mencari lokasi.",
+        "Murid dapat menunjukkan 2 ciri berdikari (cth: menyiapkan tugasan tanpa bantuan)."
+      ],
+      "activities": [
+        "Latih Tubi: Mengenal arah mata angin dan simbol peta asas.",
+        "Aktiviti Kumpulan: Orienteering mini di kawasan sekolah (zon selamat).",
+        "Perbincangan: Persediaan sebelum aktiviti luar (pakaian, air)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian kerjasama dan keupayaan mencari poin.",
+        "Ujian Lisan: Soalan arah mata angin asas.",
+        "Senarai Semak: Penglibatan dan sikap berdikari."
+      ],
+      "aids": [
+        "Peta kawasan sekolah (ringkas).",
+        "Kompas (jika ada) atau penanda arah.",
+        "Borang jawapan."
+      ]
+    },
+    {
+      "year": 3,
+      "topic_name": "Unit 10: Kesukanan - Kepimpinan dan Pematuhan Peraturan",
+      "skill_name": "Kesukanan",
+      "standards": [
+        "5.5.1 Melakukan peranan sebagai pemimpin dan ahli kumpulan yang bertanggungjawab.",
+        "5.5.2 Menyatakan kepentingan mematuhi peraturan dan arahan guru/pengadil.",
+        "5.5.3 Mempamerkan komunikasi yang berkesan dalam kumpulan."
+      ],
+      "objectives": [
+        "Murid dapat memimpin satu sesi pemanasan badan (dengan bimbingan).",
+        "Murid dapat menyatakan 2 ciri pemimpin yang baik (cth: adil, bertanggungjawab).",
+        "Murid dapat berkomunikasi dengan rakan sepasukan semasa aktiviti."
+      ],
+      "activities": [
+        "Latih Amal: Murid bergilir memimpin sesi pemanasan badan.",
+        "Perbincangan: Tanggungjawab ahli dan ketua kumpulan.",
+        "Simulasi: Penyelesaian konflik ringkas semasa permainan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian peranan kepimpinan dan komunikasi.",
+        "Ujian Lisan: Soalan ciri-ciri pemimpin/ahli yang baik.",
+        "Senarai Semak: Kepatuhan peraturan dan arahan."
+      ],
+      "aids": [
+        "Buku panduan pemanasan badan.",
+        "Carta ciri-ciri pemimpin.",
+        "Alatan PJ."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 4: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 4,
+      "topic_name": "Unit 1: Kemahiran Asas Hoki dan Permainan Hoki Mini",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.1.1 Melakukan kemahiran asas memukul (push pass) dan menggelecek hoki.",
+        "1.1.2 Mengaplikasikan kemahiran asas hoki dalam permainan kecil (Hoki Mini).",
+        "5.1.1 Mengenal pasti strategi asas pertahanan (man-to-man/zone)."
+      ],
+      "objectives": [
+        "Murid dapat melakukan 'push pass' sejauh 5 meter kepada rakan dengan ketepatan yang tinggi.",
+        "Murid dapat menggelecek bola hoki melepasi 3 kon tanpa hilang kawalan.",
+        "Murid dapat bermain Hoki Mini dengan mengaplikasikan 1 strategi pertahanan asas."
+      ],
+      "activities": [
+        "Latih Tubi: Push Pass berpasangan dan Menggelecek Hoki.",
+        "Permainan: Hoki Mini (3 vs 3) di kawasan kecil.",
+        "Perbincangan: Peraturan asas Hoki Mini (cth: tiada mengangkat kayu)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik push pass dan kawalan gelecekan.",
+        "Ujian Lisan: Soalan strategi pertahanan asas.",
+        "Senarai Semak: Kerjasama dan pematuhan peraturan."
+      ],
+      "aids": [
+        "Kayu Hoki (plastik/ringan) dan bola hoki/bola lembut.",
+        "Kon (untuk gelecekan).",
+        "Sasaran gol mini."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 2: Kecergasan - Kelajuan dan Kuasa",
+      "skill_name": "Kecergasan Fizikal (Lakuan Motor)",
+      "standards": [
+        "3.1.1 Melakukan aktiviti yang dapat meningkatkan kelajuan (sprint 30 meter).",
+        "3.1.2 Melakukan aktiviti yang dapat meningkatkan kuasa (lompat jauh berdiri).",
+        "4.1.1 Menyatakan kepentingan kelajuan dan kuasa dalam sukan (cth: larian, lompatan)."
+      ],
+      "objectives": [
+        "Murid dapat melakukan larian pecut 30 meter dengan teknik permulaan yang betul.",
+        "Murid dapat melakukan lompat jauh berdiri melebihi 1 meter.",
+        "Murid dapat menyatakan 2 sukan yang memerlukan kelajuan dan kuasa yang tinggi."
+      ],
+      "activities": [
+        "Latih Tubi: Larian pecut 30 meter (latihan permulaan).",
+        "Aktiviti Individu: Lompat Jauh Berdiri (rekod jarak).",
+        "Permainan: 'Lumba Pecut Bersama Objek'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pengukuran masa larian pecut dan jarak lompatan.",
+        "Ujian Lisan: Soalan kepentingan kelajuan dan kuasa.",
+        "Senarai Semak: Teknik larian pecut dan lompatan."
+      ],
+      "aids": [
+        "Jam randik dan pita ukur.",
+        "Garisan permulaan/penamat.",
+        "Kawasan lompatan yang selamat."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 3: Kecergasan - Ketangkasan dan Masa Tindak Balas",
+      "skill_name": "Kecergasan Fizikal (Lakuan Motor)",
+      "standards": [
+        "3.2.1 Melakukan aktiviti yang dapat meningkatkan ketangkasan (agility).",
+        "3.2.2 Melakukan aktiviti yang dapat menguji masa tindak balas (reaction time).",
+        "4.2.1 Menyatakan kepentingan ketangkasan dan masa tindak balas dalam kehidupan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan ujian lari ulang-alik (Shuttle Run) 4x10m dengan masa yang direkodkan.",
+        "Murid dapat bertindak balas terhadap isyarat visual/audio dalam masa yang cepat (cth: menangkap pembaris).",
+        "Murid dapat menyatakan 2 situasi harian yang memerlukan ketangkasan (cth: mengelak objek)."
+      ],
+      "activities": [
+        "Latih Tubi: Lari ulang-alik (Shuttle Run) antara kon.",
+        "Aktiviti Berpasangan: Menangkap pembaris (Reaction Time Ruler Test).",
+        "Permainan: 'Dodgeball' (latihan mengelak dan menangkap)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pengukuran masa lari ulang-alik dan masa tindak balas (pembaris).",
+        "Ujian Lisan: Soalan kepentingan ketangkasan.",
+        "Senarai Semak: Teknik larian dan tindak balas."
+      ],
+      "aids": [
+        "Kon dan pembaris.",
+        "Jam randik dan pita ukur.",
+        "Borang rekod masa."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 4: Gimnastik - Hambur dan Pendaratan Lanjutan",
+      "skill_name": "Kemahiran Pergerakan (Gimnastik)",
+      "standards": [
+        "1.5.1 Melakukan hambur (vault) dengan sokongan tangan dan pendaratan yang stabil (di atas kotak/tilam).",
+        "1.5.2 Mengaplikasikan fasa lonjakan, penerbangan, dan mendarat dalam hambur.",
+        "5.2.1 Mengamalkan keselamatan dan mendapatkan bantuan guru semasa hambur."
+      ],
+      "objectives": [
+        "Murid dapat melakukan hambur dengan meletakkan tangan dan melonjak dari spring board (bimbingan).",
+        "Murid dapat mendarat dengan stabil dan selamat selepas hambur.",
+        "Murid dapat menyatakan 2 langkah keselamatan semasa melakukan hambur."
+      ],
+      "activities": [
+        "Latih Tubi: Lonjakan dari spring board ke atas tilam.",
+        "Amali: Hambur dengan sokongan tangan (menggunakan kotak rendah).",
+        "Perbincangan: Prinsip daya serapan semasa mendarat."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik hambur dan kestabilan pendaratan.",
+        "Ujian Lisan: Soalan keselamatan hambur.",
+        "Senarai Semak: Pelakuan fasa lonjakan dan penerbangan."
+      ],
+      "aids": [
+        "Spring board (papan anjal).",
+        "Kotak/Tilam gimnastik.",
+        "Alatan sokongan (spotting) oleh guru."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 5: Pergerakan Berirama - Corak Gerakan Mengikut Muzik",
+      "skill_name": "Pergerakan Berirama",
+      "standards": [
+        "2.1.1 Mencipta dan melakukan rangkaian pergerakan (choreography) mengikut jenis muzik (cth: Pop, Latin).",
+        "2.1.2 Mengenal pasti dan menggunakan tempo, irama, dan corak pergerakan dalam persembahan.",
+        "5.3.1 Menghargai persembahan muzik dan tarian pelbagai budaya."
+      ],
+      "objectives": [
+        "Murid dapat mencipta dan mempersembahkan rangkaian pergerakan (5-8 kiraan) dengan muzik yang dipilih.",
+        "Murid dapat melakukan pergerakan dengan ekspresi dan keyakinan yang sesuai.",
+        "Murid dapat menyatakan 2 perbezaan antara tarian kreatif dan tarian tradisional."
+      ],
+      "activities": [
+        "Latih Tubi: Langkah-langkah tarian mengikut genre muzik.",
+        "Aktiviti Kumpulan: Mencipta koreografi ringkas (4 baris lirik/muzik).",
+        "Persembahan: Tarian mengikut iringan muzik."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan koreografi dan keseragaman.",
+        "Ujian Lisan: Soalan konsep irama dan tempo.",
+        "Senarai Semak: Kreativiti dan ekspresi."
+      ],
+      "aids": [
+        "Muzik dari pelbagai genre.",
+        "Video tutorial tarian asas.",
+        "Cermin (jika ada)."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 6: Akuatik - Tendangan Kaki dan Keselamatan Air",
+      "skill_name": "Akuatik dan Keselamatan",
+      "standards": [
+        "2.2.1 Melakukan tendangan kaki (flutter kick) dengan betul semasa luncuran (pegangan papan luncur).",
+        "2.2.2 Menyatakan 3 kaedah membantu mangsa lemas (reach, throw, row, go - asas).",
+        "5.2.1 Mengamalkan keselamatan dan prosedur kecemasan di air."
+      ],
+      "objectives": [
+        "Murid dapat melakukan tendangan kaki bebas (flutter kick) sejauh 5 meter dengan papan luncur.",
+        "Murid dapat menunjukkan teknik tendangan kaki yang betul (dari pinggul, kaki lurus).",
+        "Murid dapat menyatakan 2 kaedah membantu mangsa lemas tanpa masuk ke dalam air (reach, throw)."
+      ],
+      "activities": [
+        "Latih Tubi: Tendangan kaki di tepi kolam (tanpa bergerak).",
+        "Aktiviti Individu: Luncuran dengan tendangan kaki (papan luncur).",
+        "Simulasi: Teknik membantu mangsa lemas (gunakan tali/batang)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik tendangan kaki dan jarak pergerakan.",
+        "Ujian Lisan: Soalan kaedah membantu mangsa lemas.",
+        "Senarai Semak: Kepatuhan kepada prosedur keselamatan."
+      ],
+      "aids": [
+        "Kolam renang.",
+        "Papan luncur.",
+        "Tali/Batang (untuk simulasi penyelamatan)."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 7: Kemahiran Asas Permainan Bola Tampar Mini",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.6.1 Melakukan kemahiran asas servis bawah (underhand serve) bola tampar.",
+        "1.6.2 Melakukan kemahiran asas menerima hantaran (forearm pass/dig).",
+        "5.5.1 Bekerjasama dalam kumpulan untuk menyambut dan menghantar bola."
+      ],
+      "objectives": [
+        "Murid dapat melakukan servis bawah (underhand serve) melepasi jaring dari jarak 5 meter.",
+        "Murid dapat melakukan 'forearm pass' (dig) ke aras rakan 5 kali berturut-turut.",
+        "Murid dapat bermain Bola Tampar Mini (3 vs 3) dengan mematuhi giliran."
+      ],
+      "activities": [
+        "Latih Tubi: Servis bawah secara individu dan berpasangan.",
+        "Aktiviti Berpasangan: Forearm Pass dan Set (hantaran atas kepala).",
+        "Permainan: Bola Tampar Mini (peraturan dipermudahkan)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik servis bawah dan forearm pass.",
+        "Ujian Lisan: Soalan peraturan giliran servis.",
+        "Senarai Semak: Bilangan servis yang berjaya."
+      ],
+      "aids": [
+        "Bola tampar lembut/bola pantai.",
+        "Net/Tali bola tampar.",
+        "Garis gelanggang."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 8: Kemahiran Asas Atletik - Lari Berhalangan dan Lompatan",
+      "skill_name": "Kemahiran Pergerakan",
+      "standards": [
+        "1.7.1 Melakukan kemahiran asas lari berhalangan (melangkah dan melompat halangan rendah).",
+        "1.7.2 Melakukan kemahiran asas lompat tinggi (gaya gunting).",
+        "5.6.1 Menyatakan kepentingan menguasai teknik yang betul dalam atletik."
+      ],
+      "objectives": [
+        "Murid dapat melangkah dan melompat 3 halangan rendah dengan lancar.",
+        "Murid dapat melakukan lompat tinggi (gaya gunting) dengan teknik lonjakan yang betul.",
+        "Murid dapat menyatakan 2 kepentingan teknik yang betul dalam atletik."
+      ],
+      "activities": [
+        "Latih Tubi: Larian melangkah halangan (hurdles rendah).",
+        "Aktiviti Individu: Lompat tinggi (gaya gunting) ke atas tilam.",
+        "Permainan: 'Lari Halangan Berpasangan'."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik lompatan dan kelancaran melangkah halangan.",
+        "Ujian Lisan: Soalan kepentingan teknik yang betul.",
+        "Senarai Semak: Ketinggian lompatan yang berjaya."
+      ],
+      "aids": [
+        "Halangan rendah (hurdles).",
+        "Tiang dan palang lompat tinggi.",
+        "Tilam pendaratan."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 9: Kesihatan - Pemakanan Seimbang dan Kalori",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "4.3.1 Menerangkan konsep pemakanan seimbang dan keperluan kalori harian (asas).",
+        "4.3.2 Mengenal pasti punca dan risiko penyakit tidak berjangkit (cth: obesiti).",
+        "4.3.3 Mengamalkan gaya hidup sihat untuk mencegah penyakit."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 3 faedah pemakanan seimbang.",
+        "Murid dapat mengira keperluan kalori harian (asas: kalori vs aktiviti fizikal).",
+        "Murid dapat menyatakan 2 risiko obesiti."
+      ],
+      "activities": [
+        "Perbincangan: Kaitan aktiviti fizikal dan pengambilan kalori.",
+        "Aktiviti Kumpulan: Merancang menu harian sihat mengikut kalori (asas).",
+        "Simulasi: Memilih makanan di kafeteria sekolah."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan konsep kalori dan pemakanan seimbang.",
+        "Latihan Bertulis: Merancang menu sihat (asas).",
+        "Senarai Semak: Pilihan makanan sihat (simulasi)."
+      ],
+      "aids": [
+        "Carta Piramid Makanan Malaysia.",
+        "Jadual ringkas kalori makanan.",
+        "Buku rujukan nutrisi."
+      ]
+    },
+    {
+      "year": 4,
+      "topic_name": "Unit 10: Rekreasi - Permainan Berstrategi",
+      "skill_name": "Rekreasi dan Kesenggangan",
+      "standards": [
+        "2.3.1 Melakukan permainan rekreasi yang memerlukan strategi dan taktik (cth: Catur, Dam - sebagai tambahan, atau permainan fizikal berstrategi).",
+        "2.3.2 Mengenal pasti peraturan dan cara bermain permainan berstrategi.",
+        "5.7.1 Mempamerkan pemikiran kritis dalam menyelesaikan masalah permainan."
+      ],
+      "objectives": [
+        "Murid dapat bermain 1 permainan berstrategi (cth: Bola Sentuh/Touch Rugby dipermudahkan) dengan mengaplikasikan taktik.",
+        "Murid dapat merancang 2 strategi ringkas untuk memenangi permainan.",
+        "Murid dapat menunjukkan pemikiran kritis semasa permainan (cth: mengubah strategi jika gagal)."
+      ],
+      "activities": [
+        "Latih Tubi: Pergerakan mengikut strategi (cth: pergerakan bola dalam Touch Rugby).",
+        "Permainan: 'Touch Rugby' (peraturan dipermudahkan).",
+        "Perbincangan: Kepentingan strategi dalam sukan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian aplikasi strategi dan kerjasama.",
+        "Ujian Lisan: Soalan strategi permainan.",
+        "Senarai Semak: Penglibatan dan pemikiran kritis."
+      ],
+      "aids": [
+        "Bola lembut/Bola raga.",
+        "Garis penanda gelanggang.",
+        "Carta strategi asas."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 5: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 5,
+      "topic_name": "Unit 1: Kemahiran Asas Ragbi Sentuh (Touch Rugby)",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.1.1 Melakukan kemahiran menghantar bola ke belakang (backward pass) dengan tepat.",
+        "1.1.2 Melakukan kemahiran mengelak (dodging) dan larian pantas.",
+        "5.1.1 Mengaplikasikan taktik menyerang (chain pass) dalam permainan."
+      ],
+      "objectives": [
+        "Murid dapat melakukan hantaran ke belakang 5 kali berturut-turut (chain pass).",
+        "Murid dapat melakukan pergerakan mengelak (dodging) untuk melepasi pertahanan.",
+        "Murid dapat bermain Ragbi Sentuh dengan mengaplikasikan strategi 'chain pass'."
+      ],
+      "activities": [
+        "Latih Tubi: Hantaran ke belakang dan latihan mengelak.",
+        "Aktiviti Berpasangan: 'Touch and Go' (larian dan hantaran pantas).",
+        "Permainan: Ragbi Sentuh (Touch Rugby) mini."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik hantaran dan kemahiran mengelak.",
+        "Ujian Lisan: Soalan taktik menyerang (chain pass).",
+        "Senarai Semak: Kerjasama dan ketepatan hantaran."
+      ],
+      "aids": [
+        "Bola ragbi (saiz kecil/sederhana).",
+        "Kon.",
+        "Garis penanda gelanggang."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 2: Kecergasan - Latihan Litar (Circuit Training)",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "3.1.1 Melakukan Latihan Litar yang melibatkan daya tahan kardiovaskular, kekuatan, dan daya tahan otot.",
+        "3.1.2 Merancang stesen latihan litar ringkas (3-5 stesen).",
+        "4.1.1 Menyatakan faedah Latihan Litar untuk kecergasan menyeluruh."
+      ],
+      "objectives": [
+        "Murid dapat melaksanakan 1 pusingan Latihan Litar (5 stesen) dengan betul dan tempoh rehat yang ditetapkan.",
+        "Murid dapat merancang 1 set Latihan Litar (nama stesen, alatan, tempoh).",
+        "Murid dapat menyatakan 3 faedah Latihan Litar (cth: menjimatkan masa, pelbagai aktiviti)."
+      ],
+      "activities": [
+        "Demonstrasi: Teknik yang betul untuk setiap stesen (cth: Burpees, Jumping Jack).",
+        "Latih Amal: Melaksanakan Latihan Litar (5 stesen, 30 saat setiap stesen).",
+        "Aktiviti Kumpulan: Merancang dan melukis stesen Latihan Litar."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik dan tempoh ulangan Latihan Litar.",
+        "Ujian Lisan: Soalan faedah Latihan Litar.",
+        "Pelan Latihan: Kualiti rancangan Latihan Litar."
+      ],
+      "aids": [
+        "Jam randik dan whistle.",
+        "Kon, tali skipping, tilam senaman.",
+        "Carta senaman stesen."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 3: Kecergasan - Koordinasi dan Imbangan Lanjutan",
+      "skill_name": "Kecergasan Fizikal (Lakuan Motor)",
+      "standards": [
+        "3.2.1 Melakukan aktiviti yang dapat meningkatkan koordinasi mata-tangan dan mata-kaki.",
+        "3.2.2 Melakukan imbangan dinamik dengan mata tertutup (bimbingan).",
+        "4.2.1 Menyatakan kepentingan koordinasi dalam kehidupan harian (cth: memandu, menulis)."
+      ],
+      "objectives": [
+        "Murid dapat melakukan latihan koordinasi 'Juggling' (menggunakan 2 bola/pundi kacang) 5 kali berturut-turut.",
+        "Murid dapat berjalan atas garisan lurus dengan mata tertutup (jarak 5 meter) dengan bimbingan.",
+        "Murid dapat menyatakan 2 kepentingan koordinasi yang baik."
+      ],
+      "activities": [
+        "Latih Tubi: Juggling (2 objek) dan latihan 'figure 8' bola kaki.",
+        "Aktiviti Individu: Berjalan atas garisan lurus (mata tertutup).",
+        "Permainan: 'Follow the Leader' (pergerakan kompleks)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan Juggling dan imbangan mata tertutup.",
+        "Ujian Lisan: Soalan kepentingan koordinasi.",
+        "Senarai Semak: Teknik Juggling yang betul."
+      ],
+      "aids": [
+        "Pundi kacang/Bola kecil.",
+        "Tali/Garisan penanda.",
+        "Kain penutup mata."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 4: Gimnastik - Akrobatik Asas (Pyramid)",
+      "skill_name": "Kemahiran Pergerakan (Gimnastik)",
+      "standards": [
+        "1.5.1 Mencipta dan melakukan piramid statik (pyramid) berpasangan dan berkumpulan (3 orang).",
+        "1.5.2 Mengaplikasikan prinsip kestabilan dan sokongan dalam pembinaan piramid.",
+        "5.4.1 Mengamalkan kerjasama, keyakinan, dan tanggungjawab semasa melakukan piramid."
+      ],
+      "objectives": [
+        "Murid dapat melakukan piramid 2 orang (cth: 'Bird's Nest') dengan kestabilan selama 5 saat.",
+        "Murid dapat menyatakan 2 prinsip keselamatan semasa membina piramid.",
+        "Murid dapat menunjukkan kerjasama dan tanggungjawab sebagai penyokong atau pelaku."
+      ],
+      "activities": [
+        "Latih Tubi: Teknik sokongan dan imbangan berpasangan.",
+        "Aktiviti Kumpulan: Mencipta dan melakukan piramid 3 orang (pyramid).",
+        "Perbincangan: Peranan dan tanggungjawab setiap ahli dalam piramid."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian kestabilan dan keselamatan piramid.",
+        "Ujian Lisan: Soalan prinsip kestabilan dan sokongan.",
+        "Senarai Semak: Tanggungjawab dan kerjasama."
+      ],
+      "aids": [
+        "Tilam gimnastik tebal.",
+        "Carta postur piramid asas.",
+        "Alatan sokongan (jika perlu)."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 5: Pergerakan Berirama - Tarian Kontemporari dan Kebudayaan",
+      "skill_name": "Pergerakan Berirama",
+      "standards": [
+        "2.1.1 Mencipta dan melakukan rangkaian pergerakan yang mempunyai tema dan mesej (Kontemporari/Moden).",
+        "2.1.2 Melakukan pergerakan dengan tenaga, ruang, dan masa yang pelbagai.",
+        "5.3.1 Menghargai dan menghormati persembahan rakan yang pelbagai budaya."
+      ],
+      "objectives": [
+        "Murid dapat mencipta dan mempersembahkan tarian yang menyampaikan 1 mesej (cth: alam sekitar).",
+        "Murid dapat melakukan pergerakan 'Level Change' (perubahan aras - tinggi, sederhana, rendah).",
+        "Murid dapat menyatakan 2 aspek dinamik pergerakan (cth: tenaga, ruang, masa)."
+      ],
+      "activities": [
+        "Latih Tubi: Pergerakan mengikut aras (level change) dan dinamik.",
+        "Aktiviti Kumpulan: Mencipta koreografi Kontemporari ringkas.",
+        "Persembahan: Tarian mengikut iringan muzik moden."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan pergerakan dinamik dan ekspresi.",
+        "Ujian Lisan: Soalan konsep tenaga dan ruang dalam pergerakan.",
+        "Senarai Semak: Kreativiti dan mesej tarian."
+      ],
+      "aids": [
+        "Muzik instrumental/moden.",
+        "Ruang persembahan.",
+        "Video contoh tarian Kontemporari."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 6: Akuatik - Kuak Asas (Gaya Bebas)",
+      "skill_name": "Akuatik dan Keselamatan",
+      "standards": [
+        "2.2.1 Melakukan kuak gaya bebas (freestyle/front crawl) asas (tangan dan tendangan kaki).",
+        "2.2.2 Mengaplikasikan teknik pernafasan sisi (side breathing) yang betul.",
+        "5.2.1 Sentiasa berhati-hati dan menyokong rakan di dalam air."
+      ],
+      "objectives": [
+        "Murid dapat melakukan kuak gaya bebas (gabungan tendangan, tangan, nafas) sejauh 5 meter (bantuan/tanpa bantuan).",
+        "Murid dapat melakukan pernafasan sisi dengan betul (menghadap ke tepi).",
+        "Murid dapat menunjukkan 2 ciri sokongan kepada rakan di dalam air."
+      ],
+      "activities": [
+        "Latih Tubi: Teknik ayunan tangan dan pernafasan sisi (di tepi kolam).",
+        "Aktiviti Individu: Kuak gaya bebas sejauh 5 meter (dengan papan luncur).",
+        "Simulasi: 'Water Treading' (mengapung tanpa bergerak)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik kuak tangan, tendangan kaki, dan pernafasan.",
+        "Ujian Lisan: Soalan teknik pernafasan sisi.",
+        "Senarai Semak: Sokongan rakan di dalam air."
+      ],
+      "aids": [
+        "Kolam renang.",
+        "Papan luncur.",
+        "Video teknik kuak gaya bebas."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 7: Kecergasan - Pengukuran Indeks Jisim Badan (BMI)",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "3.4.1 Mengukur dan merekodkan berat, ketinggian, dan Indeks Jisim Badan (BMI) diri sendiri.",
+        "3.4.2 Menilai status BMI dan merancang langkah untuk mengekalkannya.",
+        "4.3.1 Menyatakan faedah mengekalkan berat badan sihat."
+      ],
+      "objectives": [
+        "Murid dapat mengukur berat dan ketinggian diri sendiri dengan tepat.",
+        "Murid dapat mengira BMI dan menentukan status BMI (cth: Kurang Berat, Normal, Berlebihan Berat) dengan bimbingan.",
+        "Murid dapat menyatakan 2 aktiviti yang boleh membantu mengekalkan BMI Normal."
+      ],
+      "activities": [
+        "Latih Amal: Mengukur berat dan ketinggian (berpasangan).",
+        "Aktiviti Individu: Mengira dan melabel BMI dalam borang rekod.",
+        "Perbincangan: Langkah-langkah untuk mencapai BMI Normal."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian ketepatan pengukuran berat/tinggi.",
+        "Ujian Lisan: Soalan konsep BMI dan kepentingannya.",
+        "Borang Rekod: Kiraan dan status BMI yang tepat."
+      ],
+      "aids": [
+        "Pita ukur/Stadiometer.",
+        "Penimbang berat.",
+        "Carta BMI dan panduan pengiraan."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 8: Kesihatan Sukan - Pencegahan dan Rawatan Kecederaan Asas (R.I.C.E)",
+      "skill_name": "Kesukanan dan Kesihatan",
+      "standards": [
+        "4.4.1 Menyatakan jenis-jenis kecederaan sukan yang biasa (cth: terseliuh, luka, sengal otot).",
+        "4.4.2 Menerangkan dan melakukan prosedur rawatan kecederaan asas R.I.C.E (Rest, Ice, Compression, Elevation).",
+        "5.6.1 Bertanggungjawab mengendalikan situasi kecederaan asas."
+      ],
+      "objectives": [
+        "Murid dapat menyenaraikan 3 jenis kecederaan sukan yang biasa.",
+        "Murid dapat menjelaskan maksud dan langkah-langkah R.I.C.E.",
+        "Murid dapat melakukan simulasi rawatan R.I.C.E. untuk kecederaan terseliuh kaki."
+      ],
+      "activities": [
+        "Perbincangan: Punca dan jenis kecederaan sukan.",
+        "Demonstrasi: Teknik rawatan R.I.C.E. (guru).",
+        "Simulasi: Murid melakukan rawatan R.I.C.E. berpasangan (peranan mangsa dan penyelamat)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik simulasi R.I.C.E.",
+        "Ujian Lisan: Soalan konsep R.I.C.E.",
+        "Senarai Semak: Prosedur rawatan yang betul."
+      ],
+      "aids": [
+        "Carta Prosedur R.I.C.E.",
+        "Ais/Tuala, Pembalut elastik, Bantal (untuk simulasi).",
+        "Peti kecemasan asas."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 9: Rekreasi - Perkhemahan dan Ikatan Tali Asas",
+      "skill_name": "Rekreasi dan Kesenggangan",
+      "standards": [
+        "2.3.1 Melakukan kemahiran ikatan tali asas (cth: buku sila, simpul manuk).",
+        "2.3.2 Menyatakan 3 kegunaan ikatan tali asas dalam aktiviti luar/perkhemahan.",
+        "5.7.1 Bekerjasama dan berdisiplin semasa aktiviti luar."
+      ],
+      "objectives": [
+        "Murid dapat melakukan ikatan buku sila dan simpul manuk dengan betul.",
+        "Murid dapat menyatakan 3 kegunaan ikatan tali yang dipelajari (cth: menyambung tali, mengikat kayu).",
+        "Murid dapat menunjukkan 2 ciri berdisiplin semasa aktiviti luar."
+      ],
+      "activities": [
+        "Latih Tubi: Ikatan buku sila dan simpul manuk.",
+        "Aktiviti Kumpulan: Menggunakan ikatan tali untuk membuat rak/projek ringkas.",
+        "Perbincangan: Keselamatan dan persediaan untuk aktiviti perkhemahan."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian ketepatan ikatan tali.",
+        "Ujian Lisan: Soalan kegunaan ikatan tali.",
+        "Senarai Semak: Kerjasama dan disiplin."
+      ],
+      "aids": [
+        "Tali (saiz sederhana).",
+        "Kayu/Dahan kecil.",
+        "Carta jenis-jenis ikatan tali."
+      ]
+    },
+    {
+      "year": 5,
+      "topic_name": "Unit 10: Projek - Merancang Sesi Latihan",
+      "skill_name": "Sintesis PJK",
+      "standards": [
+        "4.5.1 Merancang satu sesi latihan PJ (memanaskan badan, isi, menyejukkan badan) mengikut prinsip kecergasan.",
+        "4.5.2 Menyatakan 3 prinsip asas latihan (F.I.T.T: Frequency, Intensity, Time, Type).",
+        "5.5.1 Mempamerkan peranan ketua dan ahli kumpulan dalam merancang aktiviti."
+      ],
+      "objectives": [
+        "Murid dapat merancang 1 sesi latihan PJ (45 minit) dengan memasukkan 3 komponen kecergasan.",
+        "Murid dapat menjelaskan maksud F.I.T.T. secara ringkas.",
+        "Murid dapat mengetuai 1 segmen latihan (cth: menyejukkan badan)."
+      ],
+      "activities": [
+        "Perbincangan: Prinsip F.I.T.T. dan aplikasi dalam sukan.",
+        "Aktiviti Kumpulan: Merancang dan menulis Pelan Sesi Latihan PJ.",
+        "Amali: Murid mengetuai segmen latihan yang dirancang."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan mengetuai segmen latihan.",
+        "Ujian Lisan: Soalan prinsip F.I.T.T.",
+        "Pelan Latihan: Kualiti dan kelengkapan pelan yang dirancang."
+      ],
+      "aids": [
+        "Borang Pelan Sesi Latihan.",
+        "Carta Prinsip F.I.T.T.",
+        "Buku rujukan perancangan latihan."
+      ]
+    },
+    // ------------------------------------------------------------------------------------------------
+    // --- TAHUN 6: 10 UNIT ---
+    // ------------------------------------------------------------------------------------------------
+    {
+      "year": 6,
+      "topic_name": "Unit 1: Kemahiran Asas Bola Sepak (Menyerang dan Bertahan)",
+      "skill_name": "Kemahiran Asas Permainan",
+      "standards": [
+        "1.1.1 Melakukan kemahiran asas menanduk (heading) dan melakukan 'wall pass'.",
+        "1.1.2 Mengaplikasikan taktik menyerang (overload) dan bertahan (man-to-man) dalam Bola Sepak Mini.",
+        "5.1.1 Mengambil keputusan yang tepat semasa situasi permainan (latihan amali)."
+      ],
+      "objectives": [
+        "Murid dapat menanduk bola pegun/bola yang dilambung dari rakan dengan betul.",
+        "Murid dapat bermain Bola Sepak Mini (5 vs 5) dengan mengaplikasikan 1 taktik menyerang dan 1 taktik bertahan.",
+        "Murid dapat membuat 2 keputusan tepat (cth: hantar atau gelecek) dalam simulasi permainan."
+      ],
+      "activities": [
+        "Latih Tubi: Teknik menanduk bola dan Wall Pass berpasangan.",
+        "Latih Amal: Taktik menyerang (overload 3 vs 2).",
+        "Permainan: Bola Sepak Mini (aplikasi taktik)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik menanduk dan aplikasi taktik.",
+        "Ujian Lisan: Soalan taktik menyerang dan bertahan.",
+        "Senarai Semak: Pembuatan keputusan semasa permainan."
+      ],
+      "aids": [
+        "Bola sepak saiz 4/5.",
+        "Kon.",
+        "Sasaran gol mini."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 2: Kecergasan - Ujian Kecergasan Fizikal Kebangsaan (SEGAK)",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "3.1.1 Melakukan Ujian SEGAK (BMI, Naik Turun Bangku, Tekan Tubi, Ringkuk Tubi Separa, Jangkauan Melunjur).",
+        "3.1.2 Menganalisis dan mentafsir keputusan Ujian SEGAK.",
+        "4.1.1 Merancang program latihan ringkas untuk meningkatkan skor SEGAK."
+      ],
+      "objectives": [
+        "Murid dapat melakukan 5 komponen Ujian SEGAK dengan teknik dan prosedur yang betul.",
+        "Murid dapat menganalisis skor SEGAK diri sendiri dan menentukan tahap kecergasan.",
+        "Murid dapat merancang 1 aktiviti untuk meningkatkan komponen SEGAK yang lemah."
+      ],
+      "activities": [
+        "Latih Tubi: Latihan teknik Ujian SEGAK (fokus teknik tekan tubi dan ringkuk tubi separa).",
+        "Amali: Pelaksanaan Ujian SEGAK secara menyeluruh.",
+        "Aktiviti Individu: Menganalisis dan mentafsir skor SEGAK."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pengukuran dan rekod skor SEGAK (mengikut norma kebangsaan).",
+        "Ujian Lisan: Soalan kepentingan setiap komponen SEGAK.",
+        "Borang Rekod: Ketepatan rekod dan tafsiran skor."
+      ],
+      "aids": [
+        "Bangku, Pembaris Jangkauan Melunjur, Tilam senaman.",
+        "Jam randik dan whistle.",
+        "Borang rekod Ujian SEGAK."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 3: Kecergasan - Program Latihan Jangka Panjang",
+      "skill_name": "Kecergasan Fizikal (Kesihatan)",
+      "standards": [
+        "3.2.1 Mereka bentuk Program Latihan Jangka Panjang (8-12 minggu) untuk mencapai matlamat kecergasan.",
+        "3.2.2 Melaksanakan dan memantau program latihan secara berterusan.",
+        "4.2.1 Menilai kemajuan diri dan membuat penyesuaian kepada program latihan."
+      ],
+      "objectives": [
+        "Murid dapat mereka bentuk pelan latihan mingguan (8 minggu) berdasarkan prinsip F.I.T.T.",
+        "Murid dapat melaksanakan 1 minggu pertama pelan latihan yang direka.",
+        "Murid dapat menilai kemajuan diri (cth: peningkatan daya tahan) dan menyatakan 1 penyesuaian yang diperlukan."
+      ],
+      "activities": [
+        "Perbincangan: Penetapan matlamat S.M.A.R.T. (Specific, Measurable, Achievable, Relevant, Time-bound).",
+        "Aktiviti Kumpulan: Mereka bentuk pelan latihan jangka panjang.",
+        "Latih Amal: Melaksanakan 1 sesi latihan mengikut pelan yang direka."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melaksanakan sesi latihan.",
+        "Ujian Lisan: Soalan konsep matlamat S.M.A.R.T.",
+        "Dokumen Perancangan: Kualiti dan realistik pelan latihan."
+      ],
+      "aids": [
+        "Borang Perancangan Latihan.",
+        "Carta Matlamat S.M.A.R.T.",
+        "Buku log latihan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 4: Gimnastik - Rangkaian Pergerakan Individu dan Berkumpulan",
+      "skill_name": "Kemahiran Pergerakan (Gimnastik)",
+      "standards": [
+        "1.5.1 Mencipta rangkaian pergerakan yang kompleks (5-7 kemahiran) secara individu atau berkumpulan.",
+        "1.5.2 Melakukan persembahan yang licin, kreatif, dan bertenaga.",
+        "5.4.1 Menerima kritikan membina dan bekerjasama dalam menghasilkan persembahan."
+      ],
+      "objectives": [
+        "Murid dapat mencipta dan mempersembahkan rangkaian gimnastik (cth: Guling + Imbangan + Hambur ringkas) yang kompleks.",
+        "Murid dapat melakukan persembahan dengan keyakinan yang tinggi dan transisi yang lancar.",
+        "Murid dapat memberi 2 kritikan membina kepada persembahan rakan."
+      ],
+      "activities": [
+        "Latih Tubi: Transisi antara kemahiran (memastikan kelancaran).",
+        "Aktiviti Kumpulan: Mencipta dan mempersembahkan rangkaian gimnastik (dengan iringan muzik).",
+        "Sesi: Maklum balas rakan sebaya (peer assessment)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan rangkaian kompleks dan kelancaran transisi.",
+        "Ujian Lisan: Soalan aspek kelancaran persembahan.",
+        "Borang Maklum Balas: Kualiti kritikan membina."
+      ],
+      "aids": [
+        "Tilam gimnastik.",
+        "Muzik.",
+        "Borang pemarkahan persembahan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 5: Pergerakan Berirama - Aerobik Berintensiti Rendah",
+      "skill_name": "Pergerakan Berirama",
+      "standards": [
+        "2.1.1 Melakukan rangkaian pergerakan aerobik (low impact) mengikut rentak muzik yang berterusan (5 minit).",
+        "2.1.2 Membezakan antara pergerakan aerobik dan bukan aerobik.",
+        "5.3.1 Menghayati nilai kerjasama dan keyakinan diri dalam persembahan aerobik."
+      ],
+      "objectives": [
+        "Murid dapat melakukan rangkaian pergerakan aerobik (low impact) selama 5 minit secara berterusan.",
+        "Murid dapat melakukan 5 langkah aerobik asas (cth: March, Knee Lift, Tap Step).",
+        "Murid dapat menyatakan 2 faedah senaman aerobik."
+      ],
+      "activities": [
+        "Latih Tubi: Langkah-langkah aerobik asas (March, Grapevine).",
+        "Aktiviti Kumpulan: Mencipta koreografi aerobik 5 minit.",
+        "Amali: Melakukan sesi aerobik berintensiti rendah secara beramai-ramai."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan melakukan pergerakan aerobik secara berterusan.",
+        "Ujian Lisan: Soalan konsep senaman aerobik.",
+        "Senarai Semak: Keseragaman dan teknik langkah asas."
+      ],
+      "aids": [
+        "Muzik aerobik rancak.",
+        "Video langkah aerobik asas.",
+        "Ruang yang sesuai."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 6: Akuatik - Kuak Lanjutan (Kuak Dada) dan Penyelamatan",
+      "skill_name": "Akuatik dan Keselamatan",
+      "standards": [
+        "2.2.1 Melakukan kuak dada (breaststroke) asas (koordinasi tangan, tendangan, pernafasan).",
+        "2.2.2 Mengaplikasikan kemahiran Water Treading (mengapung tanpa bergerak) dan asas penyelamatan air.",
+        "5.2.1 Bertindak balas secara efektif dalam situasi kecemasan air."
+      ],
+      "objectives": [
+        "Murid dapat melakukan kuak dada sejauh 5 meter (dengan papan luncur/tanpa bantuan).",
+        "Murid dapat melakukan Water Treading selama 30 saat.",
+        "Murid dapat melakukan simulasi menyelamat rakan yang lemas (teknik 'Throw') dengan peralatan."
+      ],
+      "activities": [
+        "Latih Tubi: Teknik tendangan kuak dada ('Frog Kick') dan pergerakan tangan.",
+        "Aktiviti Individu: Water Treading dan Kuak Dada.",
+        "Simulasi: Penyelamatan air menggunakan tali atau batang."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik kuak dada dan Water Treading.",
+        "Ujian Lisan: Soalan prosedur asas penyelamatan air.",
+        "Senarai Semak: Kepatuhan kepada prosedur keselamatan."
+      ],
+      "aids": [
+        "Kolam renang.",
+        "Papan luncur, tali, dan batang.",
+        "Video teknik kuak dada."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 7: Kesihatan - Isu Dadah, Arak, dan Rokok (D.A.R)",
+      "skill_name": "Kesukanan dan Kesihatan",
+      "standards": [
+        "4.3.1 Menerangkan kesan buruk penyalahgunaan Dadah, Arak, dan Rokok (D.A.R) kepada kesihatan fizikal dan mental.",
+        "4.3.2 Mengenal pasti punca dan cara menghindari penyalahgunaan D.A.R.",
+        "5.6.1 Mengambil pendirian teguh untuk menolak D.A.R."
+      ],
+      "objectives": [
+        "Murid dapat menjelaskan 3 kesan buruk penyalahgunaan D.A.R. kepada badan.",
+        "Murid dapat menyenaraikan 3 punca remaja terjerumus ke dalam D.A.R.",
+        "Murid dapat melakukan simulasi menolak ajakan mengambil D.A.R. secara berkesan."
+      ],
+      "activities": [
+        "Perbincangan: Kaitan D.A.R. dengan prestasi sukan dan gaya hidup sihat.",
+        "Aktiviti Kumpulan: Mencipta poster/slogan anti-D.A.R.",
+        "Simulasi: Peranan menolak ajakan rakan sebaya (peer pressure)."
+      ],
+      "assessments": [
+        "Ujian Lisan: Soalan konsep dan kesan D.A.R.",
+        "Latihan Bertulis: Menyatakan punca dan cara menghindari D.A.R.",
+        "Penilaian Amali: Keberkesanan simulasi penolakan D.A.R."
+      ],
+      "aids": [
+        "Carta/Poster Kesan D.A.R.",
+        "Video kempen anti-D.A.R.",
+        "Risalah maklumat kesihatan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 8: Kepimpinan dalam Sukan dan Pengurusan Pertandingan",
+      "skill_name": "Kesukanan",
+      "standards": [
+        "5.5.1 Melakukan peranan sebagai ketua/kapten pasukan dan pengurus pertandingan (asas).",
+        "5.5.2 Menyatakan 3 ciri kepimpinan yang efektif dalam sukan (cth: motivasi, komunikasi, adil).",
+        "5.5.3 Mengendalikan satu perlawanan sukan kecil (cth: menjadi pengadil/pencatat skor)."
+      ],
+      "objectives": [
+        "Murid dapat memimpin pasukan merancang strategi untuk 1 perlawanan sukan.",
+        "Murid dapat melakukan peranan sebagai pengadil (asas) dalam permainan kecil.",
+        "Murid dapat menyatakan 2 peranan kapten pasukan yang bertanggungjawab."
+      ],
+      "activities": [
+        "Latih Amal: Murid bergilir menjadi kapten dan pengadil (permainan kecil).",
+        "Perbincangan: Kepimpinan transformasional dan peranan pengadil.",
+        "Aktiviti Kumpulan: Merancang dan melaksanakan satu kejohanan mini (cth: round robin)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian keupayaan memimpin dan mengendalikan perlawanan.",
+        "Ujian Lisan: Soalan ciri kepimpinan sukan.",
+        "Senarai Semak: Keadilan dan ketegasan semasa mengadil."
+      ],
+      "aids": [
+        "Whistle dan bendera pengadil.",
+        "Borang keputusan dan jadual perlawanan.",
+        "Carta ciri pemimpin sukan."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 9: Rekreasi - Permainan Berkemahiran Lanjutan",
+      "skill_name": "Rekreasi dan Kesenggangan",
+      "standards": [
+        "2.3.1 Melakukan permainan rekreasi yang memerlukan kemahiran motor yang kompleks (cth: Frisbee, Boomerang).",
+        "2.3.2 Mengaplikasikan kemahiran dan strategi permainan rekreasi lanjutan.",
+        "5.7.1 Mempamerkan tumpuan dan ketekunan yang tinggi semasa aktiviti."
+      ],
+      "objectives": [
+        "Murid dapat melontar cakera (Frisbee) sejauh 10 meter dengan teknik yang betul.",
+        "Murid dapat bermain 'Ultimate Frisbee' (peraturan dipermudahkan) dengan mengaplikasikan 1 strategi hantaran.",
+        "Murid dapat menunjukkan tumpuan yang tinggi semasa melakukan lontaran cakera."
+      ],
+      "activities": [
+        "Latih Tubi: Teknik melontar cakera (backhand throw, forehand throw).",
+        "Permainan: 'Ultimate Frisbee' mini (tanpa sentuhan).",
+        "Perbincangan: Semangat persahabatan dalam permainan Frisbee."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian teknik lontaran cakera dan ketepatan hantaran.",
+        "Ujian Lisan: Soalan peraturan Ultimate Frisbee.",
+        "Senarai Semak: Tumpuan dan ketekunan."
+      ],
+      "aids": [
+        "Cakera (Frisbee).",
+        "Kon (untuk penanda sasaran).",
+        "Video teknik lontaran cakera."
+      ]
+    },
+    {
+      "year": 6,
+      "topic_name": "Unit 10: Festival Sukan Sekolah (Sintesis PJK)",
+      "skill_name": "Sintesis PJK",
+      "standards": [
+        "4.5.1 Menganjurkan dan melaksanakan satu Festival Sukan Sekolah (acara kecil) secara berkumpulan.",
+        "5.8.1 Mengaplikasikan semua kemahiran, kecergasan, dan nilai murni PJK Tahun 1-6.",
+        "5.8.2 Menunjukkan peranan sebagai penganjur, peserta, dan pegawai yang bertanggungjawab."
+      ],
+      "objectives": [
+        "Murid dapat merancang, mengurus, dan melaksanakan 1 acara sukan mini (cth: Sukan Rakyat/Sukan Tara).",
+        "Murid dapat menunjukkan kemahiran motor asas dan kecergasan yang diperolehi (sebagai peserta).",
+        "Murid dapat bertindak sebagai petugas (cth: pencatat, pengadil, pengurus alatan) dengan penuh tanggungjawab."
+      ],
+      "activities": [
+        "Aktiviti Kumpulan: Merancang struktur Festival Sukan (Acara, Jadual, Tugas).",
+        "Amali: Melaksanakan Festival Sukan Mini (sebagai penganjur/peserta).",
+        "Perbincangan: Refleksi kendiri (kekuatan dan kelemahan dalam pengurusan)."
+      ],
+      "assessments": [
+        "Penilaian Amali: Pemerhatian pelaksanaan acara dan tanggungjawab petugas.",
+        "Ujian Lisan: Soalan pengurusan acara sukan.",
+        "Laporan Projek: Dokumen perancangan dan laporan Festival Sukan."
+      ],
+      "aids": [
+        "Borang Perancangan Acara.",
+        "Alatan sukan pelbagai.",
+        "Carta organisasi festival."
+      ]
+    }
+  ]
+}
