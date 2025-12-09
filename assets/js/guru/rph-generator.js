@@ -115,6 +115,7 @@ window.selectSession = async (sesi, dateStr) => {
     const topics = await res.json();
 
     if (!Array.isArray(topics) || topics.length === 0) {
+      if (!topics || !topics.topic_name) { // <-- Kod Baharu
       throw new Error('Tiada topik dalam template.');
     }
 
@@ -147,3 +148,4 @@ window.selectSession = async (sesi, dateStr) => {
       `<p class="error">Ralat: ${err.message}</p>`;
   }
 };
+
