@@ -132,7 +132,7 @@ window.selectSession = async (sesi, dateStr) => {
       status: 'draft',
       dataRPH: selectedTopic,
       refleksi: '',
-      updatedAt: new Date()
+      updatedAt: new Date(),
       uid: firebase.auth().currentUser.uid
     };
     
@@ -147,6 +147,7 @@ window.selectSession = async (sesi, dateStr) => {
       `<p class="error">Ralat: ${err.message}</p>`;
   }
 };
+
 
 
 
