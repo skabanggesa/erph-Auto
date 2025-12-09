@@ -113,10 +113,9 @@ window.selectSession = async (sesi, dateStr) => {
     const res = await fetch(getTemplateUrl(sesi.matapelajaran));
     if (!res.ok) throw new Error('Template tidak dijumpai untuk ' + sesi.matapelajaran);
     const topics = await res.json();
-    console.log('Data topik yang dimuatkan:', topics);
-      if (!topics || !topics.topic_name) { // <-- Kod Baharu
-      throw new Error('Tiada topik dalam template.');
-    }
+    if (!Array.isArray(topics) || topics.length === 0) { 
+    throw new Error('Tiada topik dalam template.');
+}
 
     // Kira indeks topik berdasarkan bulan
     const topicIndex = (month - 1) % topics.length;
@@ -147,6 +146,7 @@ window.selectSession = async (sesi, dateStr) => {
       `<p class="error">Ralat: ${err.message}</p>`;
   }
 };
+
 
 
 
