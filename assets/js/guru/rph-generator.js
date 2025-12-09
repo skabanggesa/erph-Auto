@@ -104,19 +104,17 @@ async function generateRphForDate() {
 // Fungsi global untuk pilih sesi (telah diperbetulkan)
 window.selectSession = async (sesi, dateStr) => {
   document.getElementById('generatorResult').innerHTML = '<p>Memuatkan template...</p>';
-  const selectedDate = new Date(dateStr);
+  // Objek Date tanpa masa (hanya digunakan untuk mengira bulan)
+  const selectedDate = new Date(dateStr); 
   const month = selectedDate.getMonth() + 1; // Jan = 1
 
   // Ambil template dari GitHub
-  const subjectKey = sesi.matapelajaran.toLowerCase().replace(/\s+/g, ' ');
   try {
     const res = await fetch(getTemplateUrl(sesi.matapelajaran));
     if (!res.ok) throw new Error('Template tidak dijumpai untuk ' + sesi.matapelajaran);
     
-    // Asumsi: JSON kini adalah tatasusunan terus selepas pembetulan SyntaxError.
     const topics = await res.json();
     
-    // Logik semakan array untuk isu 'Tiada topik dalam template.'
     if (!Array.isArray(topics) || topics.length === 0) { 
         throw new Error('Tiada topik dalam template.');
     }
@@ -124,13 +122,27 @@ window.selectSession = async (sesi, dateStr) => {
     // Kira indeks topik berdasarkan bulan
     const topicIndex = (month - 1) % topics.length;
     const selectedTopic = topics[topicIndex];
+    
+    // --- KOD PEMBETULAN MASA UTAMA ---
+    
+    // 1. Dapatkan jam dan minit dari sesi.masaMula (e.g., "07:10")
+    const [startHour, startMinute] = sesi.masaMula.split(':').map(Number);
+
+    // 2. Cipta objek Tarikh yang baharu
+    const rphDate = new Date(dateStr); 
+
+    // 3. Tetapkan masa pada objek Tarikh dalam zon waktu tempatan
+    rphDate.setHours(startHour, startMinute, 0, 0); 
+    
+    // --- KOD PEMBETULAN MASA TAMAT ---
 
     // Simpan sebagai draf
     const rphData = {
-      // PEMBETULAN: Guna 'uid' untuk konsisten dengan Peraturan Firebase & buang 'userId'
+      // PEMBETULAN: Menggunakan rphDate yang dibetulkan masanya
       uid: auth.currentUser.uid, 
       
-      tarikh: selectedDate,
+      tarikh: rphDate, // <--- OBJEK DATE KINI MENGANDUNGI MASA SESI (cth. 07:10)
+      
       matapelajaran: sesi.matapelajaran,
       kelas: sesi.kelas,
       masaMula: sesi.masaMula,
@@ -138,11 +150,9 @@ window.selectSession = async (sesi, dateStr) => {
       status: 'draft',
       dataRPH: selectedTopic,
       refleksi: '',
-      // PEMBETULAN: Koma yang hilang telah dibetulkan, dan rujukan 'firebase.auth()' dibuang.
       updatedAt: new Date() 
     };
     
-    // Operasi addDoc kini akan berjaya selepas Peraturan Keselamatan dikemas kini.
     const docRef = await addDoc(collection(db, 'rph'), rphData);
     alert('RPH berjaya dijana dan disimpan sebagai draf!');
     
