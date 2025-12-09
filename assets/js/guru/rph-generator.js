@@ -134,7 +134,7 @@ window.selectSession = async (sesi, dateStr) => {
       refleksi: '',
       updatedAt: new Date()
     };
-
+    uid: firebase.auth().currentUser.uid
     const docRef = await addDoc(collection(db, 'rph'), rphData);
     alert('RPH berjaya dijana dan disimpan sebagai draf!');
     
@@ -146,6 +146,7 @@ window.selectSession = async (sesi, dateStr) => {
       `<p class="error">Ralat: ${err.message}</p>`;
   }
 };
+
 
 
 
