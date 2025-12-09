@@ -10,7 +10,7 @@ const navbar = document.getElementById('navbar');
 const userNameEl = document.getElementById('userName');
 const welcomeEl = document.getElementById('welcome');
 
-// Helper: Redirect
+// Helper: Redirect (DIUBAH SUAI UNTUK MENGHENTIKAN GELUNG PENGALIHAN)
 function redirectIfLoggedIn() {
   onAuthStateChanged(auth, async (user) => {
     if (user) {
@@ -19,15 +19,20 @@ function redirectIfLoggedIn() {
         const userData = userDoc.data();
         localStorage.setItem('userRole', userData.role);
         localStorage.setItem('userName', userData.name);
-        window.location.href = 'dashboard.html';
+
+        // HANYA alih ke dashboard.html jika pengguna berada di index.html
+        if (window.location.pathname.endsWith('index.html') || loginForm) { 
+          window.location.href = 'dashboard.html';
+        }
       } else {
         alert('Akaun tidak sah. Sila hubungi pentadbir.');
         signOut(auth);
       }
-    }
-    // Jika di index.html dan belum login, biarkan
-    if (window.location.pathname.endsWith('dashboard.html') && !user) {
-      window.location.href = 'index.html';
+    } else {
+      // Jika pengguna TIDAK log masuk dan berada di dashboard, alih ke index.html
+      if (window.location.pathname.endsWith('dashboard.html')) {
+        window.location.href = 'index.html';
+      }
     }
   });
 }
@@ -42,7 +47,7 @@ if (loginForm) {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      // Redirect akan dikendali oleh onAuthStateChanged
+      // PENGALIHAN AKAN DIKENDALIKAN OLEH onAuthStateChanged DALAM redirectIfLoggedIn()
     } catch (err) {
       let msg = 'Ralat log masuk.';
       if (err.code === 'auth/invalid-credential') {
@@ -83,15 +88,12 @@ function setupDashboardUI() {
   }
 }
 
-// Panggil bila di dashboard atau index (telah diubah suai)
+// Panggil bila di dashboard
 if (window.location.pathname.endsWith('dashboard.html')) {
   redirectIfLoggedIn();
   setupDashboardUI();
-} else if (loginForm) { // <--- PERUBAHAN DI SINI (Semak kewujudan borang)
-  // Hanya redirect jika dah login
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      window.location.href = 'dashboard.html';
-    }
-  });
+} else if (loginForm) { 
+  // Jika di halaman login (index.html/root), panggil redirectIfLoggedIn. 
+  // Ini akan mengendalikan pengalihan ke dashboard jika pengguna sudah log masuk.
+  redirectIfLoggedIn();
 }
