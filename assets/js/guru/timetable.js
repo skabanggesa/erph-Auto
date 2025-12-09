@@ -1,4 +1,5 @@
 import { auth, db } from '../config.js';
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"; // <--- TAMBAH IMPORT INI
 import { 
   collection, doc, getDoc, setDoc 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
@@ -14,20 +15,27 @@ export function loadTimetableModule() {
 }
 
 async function checkAndLoadTimetable() {
-  const user = auth.currentUser;
-  if (!user) return;
+  // Gantikan cek auth.currentUser yang synchronous dengan onAuthStateChanged
+  onAuthStateChanged(auth, async (user) => {
+    if (!user) {
+      // Jika tiada pengguna (hanya sebagai langkah berjaga-jaga), alih ke halaman login
+      window.location.href = 'index.html'; 
+      return;
+    }
+    
+    // Sambung logik utama apabila pengguna disahkan
+    const docRef = doc(db, 'jadual', user.uid);
+    const docSnap = await getDoc(docRef);
 
-  const docRef = doc(db, 'jadual', user.uid);
-  const docSnap = await getDoc(docRef);
-
-  const content = document.getElementById('content');
-  if (docSnap.exists()) {
-    // Papar dashboard utama guru
-    loadGuruDashboard();
-  } else {
-    // Papar borang jadual mingguan
-    showTimetableForm();
-  }
+    // const content = document.getElementById('content'); // Tidak diperlukan di sini
+    if (docSnap.exists()) {
+      // Papar dashboard utama guru
+      loadGuruDashboard();
+    } else {
+      // Papar borang jadual mingguan
+      showTimetableForm();
+    }
+  });
 }
 
 function showTimetableForm() {
