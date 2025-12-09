@@ -1,7 +1,6 @@
 {
   "curriculum_title": "English Language Curriculum (DSKP KPM/CEFR) - Year 1 to Year 6 (10 Units per Year)",
   "data": [
-    // --- YEAR 1: 10 UNITS ---
     {
       "year": 1,
       "topic_name": "Unit 1: I'm the Best! (Self-Introduction & Greetings)",
@@ -412,7 +411,6 @@
         "Audio recording of the poem."
       ]
     },
-    // --- YEAR 2: 10 UNITS ---
     {
       "year": 2,
       "topic_name": "Unit 1: The New School (Routines & Timetables)",
@@ -823,7 +821,6 @@
         "Worksheets for receipt writing."
       ]
     },
-    // --- YEAR 3: 10 UNITS ---
     {
       "year": 3,
       "topic_name": "Unit 1: Welcome to My World (Describing People & Places)",
@@ -2468,4 +2465,5 @@
       ]
     }
   ]
+
 }
