@@ -22,18 +22,49 @@ const db = getFirestore(app);
 // Peta nama matapelajaran → nama fail JSON
 // Dikekalkan sebagai global kerana mungkin digunakan dalam fail lain tanpa import
 window.MAP_SUBJECT_TO_FILE = {
+  // Tambah kunci singkatan untuk subjek yang mungkin dipendekkan dalam Firestore
+  
+  // BAHASA
+  'BM': 'bm', // <--- Ditambah: Jika data Firestore guna singkatan
   'Bahasa Melayu': 'bm',
+
+  'BI': 'bi', // <--- Ditambah: Jika data Firestore guna singkatan (Penyelesaian masalah ralat 404)
   'Bahasa Inggeris': 'bi',
+
+  // STEM
+  'MT': 'mt', // <--- Ditambah
   'Matematik': 'mt',
+
+  'SN': 'sn', // <--- Ditambah
   'Sains': 'sn',
+
+  // PENDIDIKAN
+  'PAI': 'pai', // <--- Ditambah
   'Pendidikan Islam': 'pai',
+  
+  'BA': 'ba', // <--- Ditambah
   'Buddha Agama': 'ba', // Sesuaikan jika nama sebenar berbeza
+
+  // SUBJEK LAIN
+  'SJ': 'sj', // <--- Ditambah
   'Sejarah': 'sj',
+
+  'PJ': 'pj', // <--- Ditambah
   'Pendidikan Jasmani': 'pj',
+
+  'PK': 'pk', // <--- Ditambah
   'Pendidikan Kesihatan': 'pk',
+
+  'MZ': 'mz', // <--- Ditambah
   'Muzik': 'mz',
+  
+  'PSV': 'psv', // <--- Ditambah
   'Pendidikan Seni Visual': 'psv',
+
+  'RBT': 'rbt', // <--- Ditambah
   'Reka Bentuk dan Teknologi': 'rbt',
+
+  'Pra': 'pra', // <--- Ditambah
   'Pravocational': 'pra' // atau "Pravocational Studies", dsb.
 };
 
