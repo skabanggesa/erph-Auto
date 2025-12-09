@@ -3,6 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+// Konfigurasi Firebase projek anda
 const firebaseConfig = {
   apiKey: "AIzaSyAo-FyVocjOa8rD-ALoTeDdkJCqDyvQSt0",
   authDomain: "erph-auto.firebaseapp.com",
@@ -13,15 +14,38 @@ const firebaseConfig = {
   measurementId: "G-NV65Z5R7JH"
 };
 
-// Initialize
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-// Export untuk modul lain
-export { app, auth, db };
-
-// Utility: ambil fail JSON dari GitHub
-window.getTemplateUrl = (subject) => {
-  return `https://raw.githubusercontent.com/skabanggesa/erph-Auto/main/templates/rph/${subject}.json`;
+// Peta nama matapelajaran → nama fail JSON
+// Dikekalkan sebagai global kerana mungkin digunakan dalam fail lain tanpa import
+window.MAP_SUBJECT_TO_FILE = {
+  'Bahasa Melayu': 'bm',
+  'Bahasa Inggeris': 'bi',
+  'Matematik': 'mt',
+  'Sains': 'sn',
+  'Pendidikan Islam': 'pai',
+  'Buddha Agama': 'ba', // Sesuaikan jika nama sebenar berbeza
+  'Sejarah': 'sj',
+  'Pendidikan Jasmani': 'pj',
+  'Pendidikan Kesihatan': 'pk',
+  'Muzik': 'mz',
+  'Pendidikan Seni Visual': 'psv',
+  'Reka Bentuk dan Teknologi': 'rbt',
+  'Pravocational': 'pra' // atau "Pravocational Studies", dsb.
 };
+
+// Fungsi untuk dapatkan URL template JSON dari GitHub
+const getTemplateUrl = (subjectDisplayName) => { // <--- TELAH DIUBAH SUAI
+  const filename = window.MAP_SUBJECT_TO_FILE[subjectDisplayName];
+  if (!filename) {
+    console.warn(`Tiada template untuk matapelajaran: ${subjectDisplayName}`);
+    return null;
+  }
+  return `https://raw.githubusercontent.com/skabanggesa/erph-Auto/main/templates/rph/${filename}.json`;
+};
+
+// Eksport untuk modular JS
+export { app, auth, db, getTemplateUrl }; // <--- TELAH DIUBAH SUAI
