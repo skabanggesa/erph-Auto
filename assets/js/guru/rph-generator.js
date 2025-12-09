@@ -24,6 +24,7 @@ export function loadRphGenerator() {
   document.getElementById('btnGenerate').addEventListener('click', generateRphForDate);
 }
 
+// FUNGSI INI TELAH DIBETULKAN UNTUK MENGGUNAKAN DATA ATTRIBUTES
 async function generateRphForDate() {
   const dateInput = document.getElementById('rphDate').value;
   if (!dateInput) {
@@ -32,9 +33,9 @@ async function generateRphForDate() {
   }
 
   const selectedDate = new Date(dateInput);
+  // Pastikan format hari adalah sama dengan yang disimpan dalam jadual (contoh: "Isnin")
   const hari = selectedDate.toLocaleDateString('ms-MY', { weekday: 'long' });
   
-  // Semak jika hari dalam jadual (Isnin-Jumaat)
   if (!['Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat'].includes(hari)) {
     document.getElementById('generatorResult').innerHTML = 
       '<p class="error">RPH hanya boleh dijana untuk Isnin hingga Jumaat.</p>';
@@ -64,26 +65,52 @@ async function generateRphForDate() {
   // Paparkan pilihan sesi
   let html = `<h3>Pilih Sesi untuk ${hari}, ${selectedDate.toLocaleDateString('ms-MY')}</h3>`;
   sesiHari.forEach((sesi, idx) => {
+    // Escape quote marks (") dalam JSON string ke &quot; untuk selamat dalam atribut HTML
+    const safeSesi = JSON.stringify(sesi).replace(/"/g, '&quot;'); 
+    
     html += `
       <div class="session-item">
         <span>${sesi.masaMula} - ${sesi.masaTamat} | ${sesi.matapelajaran} | ${sesi.kelas}</span>
-        <button class="btn" onclick="window.selectSession(${JSON.stringify(sesi)}, '${dateInput}')">Pilih</button>
+        <button 
+          class="btn select-session-btn" 
+          data-sesi="${safeSesi}" 
+          data-date="${dateInput}">Pilih</button>
       </div>
     `;
   });
 
-  document.getElementById('generatorResult').innerHTML = html;
+  const resultDiv = document.getElementById('generatorResult');
+  resultDiv.innerHTML = html;
+  
+  // Pasang Event Listeners pada butang selepas HTML disuntik
+  document.querySelectorAll('.select-session-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      // Ambil semula JSON string, gantikan &quot; dengan " asal, dan parse
+      const sesiString = this.getAttribute('data-sesi').replace(/&quot;/g, '"');
+      try {
+        const sesi = JSON.parse(sesiString);
+        const dateStr = this.getAttribute('data-date');
+        
+        // Panggil fungsi global
+        window.selectSession(sesi, dateStr);
+      } catch (e) {
+        console.error("Ralat parsing sesi JSON:", e);
+        alert("Ralat: Gagal memproses data sesi.");
+      }
+    });
+  });
 }
 
-// Fungsi global untuk pilih sesi
+// Fungsi global untuk pilih sesi (kekal sama)
 window.selectSession = async (sesi, dateStr) => {
   const selectedDate = new Date(dateStr);
   const month = selectedDate.getMonth() + 1; // Jan = 1
 
   // Ambil template dari GitHub
-  const subjectKey = sesi.matapelajaran.toLowerCase().replace(/\s+/g, '_');
+  // PENTING: getTemplateUrl kini diimport dari config.js, jadi ia perlu dieksport di sana.
+  const subjectKey = sesi.matapelajaran.toLowerCase().replace(/\s+/g, ' ');
   try {
-    const res = await fetch(getTemplateUrl(subjectKey));
+    const res = await fetch(getTemplateUrl(sesi.matapelajaran));
     if (!res.ok) throw new Error('Template tidak dijumpai untuk ' + sesi.matapelajaran);
     const topics = await res.json();
 
