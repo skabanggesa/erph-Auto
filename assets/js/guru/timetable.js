@@ -1,11 +1,63 @@
+// timetable.js - KOD YANG TELAH DIUBAH SUAI
+
 import { auth, db } from '../config.js';
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"; // <--- TAMBAH IMPORT INI
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { 
   collection, doc, getDoc, setDoc 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // Hari dalam minggu (Isnin = 1, ... Jumaat = 5)
 const weekdays = ['Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat'];
+
+// -------------------------------------------------------------
+// FUNGSI GLOBAL SEMENTARA (Diletakkan di luar showTimetableForm)
+// -------------------------------------------------------------
+window.sessions = {}; // PENTING: Wujudkan objek sesi di skop yang boleh diakses
+
+window.updateSession = function(dayId, id, field, value) {
+  const sess = window.sessions[dayId].find(s => s.id === id);
+  if (sess) sess[field] = value;
+};
+
+window.removeSession = function(dayId, id) {
+  window.sessions[dayId] = window.sessions[dayId].filter(s => s.id !== id);
+  window.renderSessions(dayId);
+};
+
+window.renderSessions = function(dayId) {
+  const container = document.getElementById('sessions-' + dayId);
+  container.innerHTML = '';
+  window.sessions[dayId].forEach(sess => {
+    const div = document.createElement('div');
+    div.className = 'session-item';
+    // Gunakan fungsi global yang telah ditakrifkan di atas
+    div.innerHTML = `
+      <div>
+        <input type="time" value="${sess.start}" onchange="window.updateSession('${dayId}', '${sess.id}', 'start', this.value)">
+        - 
+        <input type="time" value="${sess.end}" onchange="window.updateSession('${dayId}', '${sess.id}', 'end', this.value)">
+        <input type="text" placeholder="Mata Pelajaran" value="${sess.subject}" onchange="window.updateSession('${dayId}', '${sess.id}', 'subject', this.value)" style="width:120px;margin:0 5px;">
+        <input type="text" placeholder="Kelas" value="${sess.class}" onchange="window.updateSession('${dayId}', '${sess.id}', 'class', this.value)" style="width:80px;">
+      </div>
+      <button type="button" onclick="window.removeSession('${dayId}', '${sess.id}')" style="background:#f44336;color:white;border:none;padding:2px 6px;">X</button>
+    `;
+    container.appendChild(div);
+  });
+};
+
+window.addSession = function(dayId) {
+  const id = 'sess_' + Date.now();
+  // Pastikan dayId wujud sebelum menolak
+  if (!window.sessions[dayId]) {
+      window.sessions[dayId] = [];
+  }
+  window.sessions[dayId].push({ id, start: '08:00', end: '09:00', subject: '', class: '' });
+  window.renderSessions(dayId);
+};
+// -------------------------------------------------------------
+// AKHIR FUNGSI GLOBAL SEMENTARA
+// -------------------------------------------------------------
+
 
 export function loadTimetableModule() {
   const content = document.getElementById('content');
@@ -15,24 +67,18 @@ export function loadTimetableModule() {
 }
 
 async function checkAndLoadTimetable() {
-  // Gantikan cek auth.currentUser yang synchronous dengan onAuthStateChanged
   onAuthStateChanged(auth, async (user) => {
     if (!user) {
-      // Jika tiada pengguna (hanya sebagai langkah berjaga-jaga), alih ke halaman login
       window.location.href = 'index.html'; 
       return;
     }
     
-    // Sambung logik utama apabila pengguna disahkan
     const docRef = doc(db, 'jadual', user.uid);
     const docSnap = await getDoc(docRef);
 
-    // const content = document.getElementById('content'); // Tidak diperlukan di sini
     if (docSnap.exists()) {
-      // Papar dashboard utama guru
       loadGuruDashboard();
     } else {
-      // Papar borang jadual mingguan
       showTimetableForm();
     }
   });
@@ -45,14 +91,20 @@ function showTimetableForm() {
       <p>Sila isi jadual anda untuk Isnin hingga Jumaat.</p>
   `;
 
+  // 1. Inisialisasi sessions untuk hari baru (kosongkan data lama)
+  window.sessions = {};
+
   weekdays.forEach((day, idx) => {
     const dayId = day.toLowerCase();
+    // Inisialisasi array sesi untuk hari ini
+    window.sessions[dayId] = [];
+    
     html += `
       <div class="weekday">
         <div class="day-header">${day}</div>
         <div id="sessions-${dayId}"></div>
-        <button type="button" class="btn" onclick="addSession('${dayId}')">+ Tambah Sesi</button>
-      </div>
+        <button type="button" class="btn" onclick="window.addSession('${dayId}')">+ Tambah Sesi</button> 
+        </div>
     `;
   });
 
@@ -60,55 +112,19 @@ function showTimetableForm() {
       <button id="saveTimetable" class="btn btn-save">Simpan Jadual</button>
       <div id="timetableError" style="color:red; margin-top:10px;"></div>
     </div>
-    <script>
-      window.sessions = {};
-      ${weekdays.map(d => `window.sessions['${d.toLowerCase()}'] = [];`).join('\n')}
-
-      window.addSession = function(dayId) {
-        const id = 'sess_' + Date.now();
-        window.sessions[dayId].push({ id, start: '08:00', end: '09:00', subject: '', class: '' });
-        renderSessions(dayId);
-      };
-
-      window.renderSessions = function(dayId) {
-        const container = document.getElementById('sessions-' + dayId);
-        container.innerHTML = '';
-        window.sessions[dayId].forEach(sess => {
-          const div = document.createElement('div');
-          div.className = 'session-item';
-          div.innerHTML = \`
-            <div>
-              <input type="time" value="\${sess.start}" onchange="window.updateSession('\${dayId}', '\${sess.id}', 'start', this.value)">
-              - 
-              <input type="time" value="\${sess.end}" onchange="window.updateSession('\${dayId}', '\${sess.id}', 'end', this.value)">
-              <input type="text" placeholder="Mata Pelajaran" value="\${sess.subject}" onchange="window.updateSession('\${dayId}', '\${sess.id}', 'subject', this.value)" style="width:120px;margin:0 5px;">
-              <input type="text" placeholder="Kelas" value="\${sess.class}" onchange="window.updateSession('\${dayId}', '\${sess.id}', 'class', this.value)" style="width:80px;">
-            </div>
-            <button type="button" onclick="window.removeSession('\${dayId}', '\${sess.id}')" style="background:#f44336;color:white;border:none;padding:2px 6px;">X</button>
-          \`;
-          container.appendChild(div);
-        });
-      };
-
-      window.updateSession = function(dayId, id, field, value) {
-        const sess = window.sessions[dayId].find(s => s.id === id);
-        if (sess) sess[field] = value;
-      };
-
-      window.removeSession = function(dayId, id) {
-        window.sessions[dayId] = window.sessions[dayId].filter(s => s.id !== id);
-        window.renderSessions(dayId);
-      };
-
-      // Tambah sesi awal untuk setiap hari
-      ${weekdays.map(d => `addSession('${d.toLowerCase()}');`).join('\n')}
-    </script>
-  `;
+    `;
 
   document.getElementById('content').innerHTML = html;
+  
+  // 2. Laksanakan inisialisasi yang dulunya dalam tag <script> di sini
+  // Tambah sesi awal untuk setiap hari
+  weekdays.forEach(day => window.addSession(day.toLowerCase())); 
+
+  // 3. Tambah event listener untuk simpan
   document.getElementById('saveTimetable').addEventListener('click', saveTimetableToFirestore);
 }
 
+// ... (Kekalkan fungsi saveTimetableToFirestore dan loadGuruDashboard seperti sedia ada)
 async function saveTimetableToFirestore() {
   const errorDiv = document.getElementById('timetableError');
   errorDiv.textContent = '';
