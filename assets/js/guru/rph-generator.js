@@ -113,7 +113,7 @@ window.selectSession = async (sesi, dateStr) => {
     const res = await fetch(getTemplateUrl(sesi.matapelajaran));
     if (!res.ok) throw new Error('Template tidak dijumpai untuk ' + sesi.matapelajaran);
     const topics = await res.json();
-
+    console.log('Data topik yang dimuatkan:', topics);
       if (!topics || !topics.topic_name) { // <-- Kod Baharu
       throw new Error('Tiada topik dalam template.');
     }
@@ -147,5 +147,6 @@ window.selectSession = async (sesi, dateStr) => {
       `<p class="error">Ralat: ${err.message}</p>`;
   }
 };
+
 
 
