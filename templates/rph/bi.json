@@ -1231,7 +1231,6 @@
         "Simple reading text about cultural traditions."
       ]
     },
-    // --- YEAR 4: 10 UNITS ---
     {
       "year": 4,
       "topic_name": "Unit 1: Where Are You From? (Countries & Nationalities)",
@@ -1642,7 +1641,6 @@
         "Worksheets for plan writing."
       ]
     },
-    // --- YEAR 5: 10 UNITS ---
     {
       "year": 5,
       "topic_name": "Unit 1: The First Day (Social Skills & Complex Sentences)",
@@ -2053,7 +2051,6 @@
         "Worksheets for time expressions."
       ]
     },
-    // --- YEAR 6: 10 UNITS ---
     {
       "year": 6,
       "topic_name": "Unit 1: Back to School (Revision of Tenses & Grammar)",
@@ -2467,3 +2464,4 @@
   ]
 
 }
+
