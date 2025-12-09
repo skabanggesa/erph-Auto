@@ -101,21 +101,25 @@ async function generateRphForDate() {
   });
 }
 
-// Fungsi global untuk pilih sesi (kekal sama)
+// Fungsi global untuk pilih sesi (telah diperbetulkan)
 window.selectSession = async (sesi, dateStr) => {
+  document.getElementById('generatorResult').innerHTML = '<p>Memuatkan template...</p>';
   const selectedDate = new Date(dateStr);
   const month = selectedDate.getMonth() + 1; // Jan = 1
 
   // Ambil template dari GitHub
-  // PENTING: getTemplateUrl kini diimport dari config.js, jadi ia perlu dieksport di sana.
   const subjectKey = sesi.matapelajaran.toLowerCase().replace(/\s+/g, ' ');
   try {
     const res = await fetch(getTemplateUrl(sesi.matapelajaran));
     if (!res.ok) throw new Error('Template tidak dijumpai untuk ' + sesi.matapelajaran);
+    
+    // Asumsi: JSON kini adalah tatasusunan terus selepas pembetulan SyntaxError.
     const topics = await res.json();
+    
+    // Logik semakan array untuk isu 'Tiada topik dalam template.'
     if (!Array.isArray(topics) || topics.length === 0) { 
-    throw new Error('Tiada topik dalam template.');
-}
+        throw new Error('Tiada topik dalam template.');
+    }
 
     // Kira indeks topik berdasarkan bulan
     const topicIndex = (month - 1) % topics.length;
@@ -123,7 +127,9 @@ window.selectSession = async (sesi, dateStr) => {
 
     // Simpan sebagai draf
     const rphData = {
-      userId: auth.currentUser.uid,
+      // PEMBETULAN: Guna 'uid' untuk konsisten dengan Peraturan Firebase & buang 'userId'
+      uid: auth.currentUser.uid, 
+      
       tarikh: selectedDate,
       matapelajaran: sesi.matapelajaran,
       kelas: sesi.kelas,
@@ -132,10 +138,11 @@ window.selectSession = async (sesi, dateStr) => {
       status: 'draft',
       dataRPH: selectedTopic,
       refleksi: '',
-      updatedAt: new Date(),
-      uid: firebase.auth().currentUser.uid
+      // PEMBETULAN: Koma yang hilang telah dibetulkan, dan rujukan 'firebase.auth()' dibuang.
+      updatedAt: new Date() 
     };
     
+    // Operasi addDoc kini akan berjaya selepas Peraturan Keselamatan dikemas kini.
     const docRef = await addDoc(collection(db, 'rph'), rphData);
     alert('RPH berjaya dijana dan disimpan sebagai draf!');
     
@@ -147,10 +154,3 @@ window.selectSession = async (sesi, dateStr) => {
       `<p class="error">Ralat: ${err.message}</p>`;
   }
 };
-
-
-
-
-
-
-
