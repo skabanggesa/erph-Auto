@@ -1,10 +1,4 @@
-{
-  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Bahasa Arab - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
-  "subject": "Bahasa Arab",
-  "data": [
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 1: 10 UNIT (Fokus: Asas Sebutan & Perbendaharaan Kata Ringkas) ---
-    // ------------------------------------------------------------------------------------------------
+[
     {
       "year": 1,
       "topic_name": "Unit 1: Ta'aruf (Perkenalan Diri)",
@@ -295,9 +289,6 @@
         "Bahan permainan interaktif."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 2: 10 UNIT (Fokus: Ayat Mudah & Kata Nama Jamak) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 2,
       "topic_name": "Unit 1: Al-Jism (Anggota Badan)",
@@ -588,9 +579,6 @@
         "Bahan binaan model mini."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 3: 10 UNIT (Fokus: Kata Kerja Lampau & Perbualan Ringkas) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 3,
       "topic_name": "Unit 1: Al-Madrasah (Persekitaran Sekolah)",
@@ -881,9 +869,6 @@
         "Jadual Perbandingan Māḍī dan Mudhari'."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 4: 10 UNIT (Fokus: Kata Ganti Nama & Struktur Ayat Lanjutan) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 4,
       "topic_name": "Unit 1: Ana wa Asdiqā'ī (Saya dan Kawan-kawan)",
@@ -1174,9 +1159,6 @@
         "Bahan bacaan dialog."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 5: 10 UNIT (Fokus: Kata Hubung & Penulisan Ekspresif) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 5,
       "topic_name": "Unit 1: Al-Riyāḍah (Sukan dan Aktiviti Fizikal)",
@@ -1467,9 +1449,6 @@
         "Jadual Perbandingan Struktur Ayat."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 6: 10 UNIT (Fokus: Kefasihan & Penulisan Formal) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 6,
       "topic_name": "Unit 1: Al-Tārīkh wa al-Thaqāfah (Sejarah dan Budaya)",
@@ -1760,5 +1739,6 @@
         "Rubrik Penilaian Kefasihan Lisan."
       ]
     }
-  ]
-}
+  
+]
+
