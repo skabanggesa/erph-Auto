@@ -15,12 +15,12 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* --- Gaya Khusus untuk Butang Log Keluar (Pembetulan) --- */
+/* GAYA BUTANG LOG KELUAR (YANG SUDAH BERJAYA) */
 #logoutBtn {
   background: #dc3545; /* Merah untuk tindakan log keluar/bahaya */
   color: white;
   border: none;
-  padding: 10px 18px; /* Saiz lebih baik */
+  padding: 10px 18px; /* Diperkemas */
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold; 
@@ -68,6 +68,8 @@ body {
 .btn-success {
     background-color: #28a745;
     color: white;
+    /* Tambahan untuk butang rph-edit.js */
+    padding: 10px 20px; 
 }
 .btn-success:hover {
     background-color: #1e7e34;
@@ -81,7 +83,24 @@ body {
     background-color: #c82333;
 }
 
-/* Gaya untuk borang dan sesi entry (digunakan dalam jadual-editor) */
+/* Gaya Butang Khusus (rph-edit.js) */
+#btnSaveDraft {
+    background-color: #28a745; /* Simpan Draf - Hijau */
+    color: white;
+    margin-right: 10px;
+}
+#btnSubmitRph {
+    background-color: #0d6efd; /* Hantar RPH - Biru */
+    color: white;
+    margin-right: 10px;
+}
+#btnCancel {
+    background-color: #6c757d; /* Kembali - Kelabu */
+    color: white;
+}
+
+
+/* Gaya untuk Borang dan Input (jadual-editor.js & rph-edit.js) */
 .form-group {
     margin-bottom: 15px;
 }
@@ -92,13 +111,15 @@ body {
     margin-bottom: 5px;
 }
 
-.session-entry {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #fff;
+    box-sizing: border-box; 
+    font-family: inherit; 
 }
+
 .session-entry input[type="text"], 
 .session-entry input[type="time"], 
 .session-entry select {
@@ -109,54 +130,79 @@ body {
     box-sizing: border-box; 
 }
 
-/* --- Gaya untuk Jadual Waktu Mingguan (Grid View - Permintaan Terdahulu) --- */
+.session-entry {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Gaya untuk senarai sesi (rph-generator.js) */
+.session-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+
+/* --- Gaya untuk Jadual Waktu Mingguan (Grid View) - PEMBETULAN --- */
 
 .timetable-grid {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; 
     margin-top: 15px;
-    table-layout: fixed; 
+    table-layout: fixed; /* Penting untuk lebar kolum seragam */
 }
 
+/* Kunci: Tetapkan padding ke 0 pada sel */
 .timetable-grid th, .timetable-grid td {
     border: 1px solid #ddd;
-    padding: 5px; 
+    padding: 0; /* **PENTING** Memastikan .session-cell mengawal padding */
     text-align: center;
     vertical-align: top;
 }
 
-/* Garisan pemisah antara Hari (Kolum) */
-.timetable-grid th, .timetable-grid td {
-    border-right: 2px solid #ccc; 
-    border-bottom: 1px solid #ddd;
-}
-.timetable-grid th:last-child, .timetable-grid td:last-child {
-    border-right: 1px solid #ddd; 
-}
-
+/* Gaya Header */
 .timetable-grid th {
     background-color: #0d6efd; 
     color: white;
     font-weight: bold;
+    padding: 10px 5px; 
 }
 
+/* Gaya Kolum Masa */
 .time-cell {
     background-color: #f8f9fa; 
     font-weight: bold;
     width: 80px; 
     font-size: 0.9em;
+    padding: 5px; /* Padding di sini dikekalkan */
+}
+
+/* Gaya Sel Data */
+.timetable-grid td {
+    height: 90px; 
+    position: relative; /* Memastikan td berkelakuan seperti sel biasa */
 }
 
 .session-cell {
-    height: 90px; 
+    /* PENTING: Memastikan sesi mengambil ruang sel penuh dan menyusun isinya */
+    height: 100%; 
+    width: 100%; 
+    box-sizing: border-box; 
+    
     cursor: default;
     transition: background-color 0.1s;
-    min-width: 120px; 
     
-    /* Flexbox untuk penyusunan teks 3 baris: Subjek, Kelas, Masa */
+    /* Flexbox untuk menyusun teks 3 baris secara menegak dalam SATU sesi */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: center; /* Digunakan Center untuk paparan yang lebih baik */
     align-items: center;
     text-align: center;
     padding: 5px;
@@ -171,6 +217,7 @@ body {
     background-color: #d0e0ff; 
 }
 
+/* Baris 1: Mata Pelajaran (Subjek) */
 .session-cell .subject {
     font-weight: bold;
     font-size: 1.1em;
@@ -178,36 +225,19 @@ body {
     margin-bottom: 2px;
 }
 
+/* Baris 2: Kelas */
 .session-cell .class {
     font-size: 0.9em;
     color: #343a40; 
     font-weight: 500;
 }
 
+/* Baris 3: Masa Mula - Masa Tamat */
 .session-cell .time {
     font-size: 0.8em;
     color: #6c757d;
     margin-top: 2px;
-    display: block; 
-}
-
-/* Gaya untuk editor sesi (borang baru) */
-.session-editor {
-    padding: 15px;
-    border: 1px solid #0d6efd;
-    border-radius: 5px;
-    background-color: #f0f8ff;
-    margin-bottom: 20px;
-}
-
-.session-editor input[type="text"], 
-.session-editor input[type="time"], 
-.session-editor select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
+    display: none; /* Disembunyikan untuk menjimatkan ruang dalam grid */
 }
 
 /* Gaya untuk status error/success */
