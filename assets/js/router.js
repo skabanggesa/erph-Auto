@@ -1,75 +1,95 @@
-// router.js
+// assets/js/router.js (KOD LENGKAP: Menambah export navigate dan membetulkan logik initial load)
 
-// Peta laluan yang memetakan laluan URL ringkas kepada fungsi pemuat modul
+// Map routes to module files and loading function
 const routes = {
-    // LALUAN GURU: Dashboard utama
-    'home': () => import('./guru/guru-dashboard.js').then(m => m.loadGuruDashboard()), 
+    // Laluan Log Masuk
+    'login': { file: 'auth.js', func: 'loadLoginPage' },
     
-    // LALUAN GURU: Jana RPH
-    'rph-generator': () => import('./guru/rph-generator.js').then(m => m.loadRphGenerator()),
-
-    // LALUAN GURU: Senarai RPH (Sejarah)
-    // *** PEMBETULAN NAMA FAIL/FUNGSI DI SINI ***
-    // Menukar rph-list.js kepada rph-history.js dan memanggil loadRphHistory()
-    'rph-list': () => import('./guru/rph-history.js').then(m => m.loadRphHistory()), 
+    // Laluan Guru
+    'guru-home': { file: 'guru/dashboard.js', func: 'loadGuruDashboard' },
+    'guru-jadual': { file: 'guru/jadual-editor.js', func: 'loadJadualEditor' },
+    'guru-rph-generator': { file: 'guru/rph-generator.js', func: 'loadRphGenerator' },
+    'guru-rph-history': { file: 'guru/rph-history.js', func: 'loadRphHistory' },
+    'guru-rph-edit': { file: 'guru/rph-edit.js', func: 'loadRphEdit' },
     
-    // LALUAN GURU: Editor Jadual Waktu
-    'jadual-editor': () => import('./guru/jadual-editor.js').then(m => m.loadJadualEditor()),
-
-    // LALUAN GURU: Edit RPH - Menerima ID dokumen sebagai hujah
-    'rph-edit': (rphId) => import('./guru/rph-edit.js').then(m => m.loadRphEdit(rphId)), 
-
-    // Laluan Admin (jika diperlukan)
-    'admin-home': () => import('./admin/dashboard.js').then(m => m.loadAdminDashboard()),
+    // Laluan Admin
+    'admin-home': { file: 'admin/dashboard.js', func: 'loadAdminDashboard' },
+    // Anda akan tambah 'admin-review-rph' di sini nanti
 };
 
-// Menetapkan fungsi navigasi global yang boleh dipanggil dari HTML/JS lain
-window.router = {
-    // Menggunakan operator rest/spread (...) untuk menghantar hujah tambahan (seperti rphId)
-    navigate: function(path, ...args) { 
-        const contentDiv = document.getElementById('content');
-        
-        if (routes[path]) {
-            contentDiv.innerHTML = '<p>Memuatkan kandungan...</p>';
-            
-            // Panggil fungsi pemuat modul dari peta laluan dan luluskan hujah
-            routes[path](...args) 
-                .catch(error => {
-                    console.error(`Gagal memuatkan modul untuk laluan ${path}:`, error);
-                    contentDiv.innerHTML = `<p class="error">Ralat memuatkan modul: ${path}. Sila semak konsol.</p>`;
-                });
-        } else {
-            console.error('Laluan tidak wujud:', path);
-            window.router.navigate('home'); // Kembali ke dashboard jika laluan tidak sah
-        }
+/**
+ * Handles navigation by dynamically importing the required module.
+ * @param {string} routeName - The name of the route to navigate to.
+ * @param {*} [param] - Optional parameter to pass to the loading function.
+ */
+export async function navigate(routeName, param) { // <--- KRITIKAL: FUNGSI INI KINI DIEKSPORT
+    const role = localStorage.getItem('userRole');
+    const contentDiv = document.getElementById('content');
+    
+    let key = routeName;
+    
+    // Pilihan: Guna 'home' sebagai laluan default berdasarkan peranan
+    if (routeName === 'home') {
+        key = role === 'admin' ? 'admin-home' : 'guru-jadual'; // Guru bermula di jadual editor
     }
+    
+    const route = routes[key];
+
+    if (!route) {
+        contentDiv.innerHTML = `<p class="error">Laluan '${routeName}' tidak dijumpai.</p>`;
+        return;
+    }
+
+    try {
+        // Laluan adalah relatif kepada folder 'assets/js/'
+        const module = await import(`./${route.file}`);
+
+        // Panggil fungsi pemuat modul
+        if (typeof module[route.func] === 'function') {
+            await module[route.func](param);
+        } else {
+            console.error(`Gagal memuatkan modul untuk laluan ${routeName}: ${route.func} is not a function.`);
+            contentDiv.innerHTML = `<p class="error">Ralat aplikasi: Gagal memuatkan fungsi ${route.func} untuk laluan ${routeName}.</p>`;
+        }
+
+    } catch (e) {
+        console.error(`Gagal memuatkan modul untuk laluan ${routeName}:`, e);
+        contentDiv.innerHTML = `<p class="error">Gagal memuatkan modul untuk laluan ${routeName}: ${e.message}</p>`;
+    }
+}
+
+// KRITIKAL: Pendedahan fungsi navigate secara global untuk onclick/inline-HTML
+window.router = {
+    navigate: navigate
 };
 
 
-// Panggil selepas auth.js dimuatkan
+// Logik pemuatan awal selepas DOM dimuatkan
 document.addEventListener('DOMContentLoaded', async () => {
-  if (!window.location.pathname.endsWith('dashboard.html')) return;
+    // Hanya berjalan jika kita berada di dashboard.html
+    if (!window.location.pathname.includes('dashboard.html')) return;
 
-  const role = localStorage.getItem('userRole');
-  const contentDiv = document.getElementById('content');
-  const roleStyle = document.getElementById('role-style');
+    const role = localStorage.getItem('userRole');
+    const contentDiv = document.getElementById('content');
+    const roleStyle = document.getElementById('role-style');
 
-  if (!role) {
-    contentDiv.innerHTML = '<p>Sesi tamat. Sila log masuk semula.</p>';
-    return;
-  }
+    if (!role) {
+        contentDiv.innerHTML = '<p>Sesi tamat. Sila log masuk semula.</p>';
+        return;
+    }
 
-  // Muatkan CSS mengikut role
-  roleStyle.href = role === 'admin' 
-    ? '/erph-Auto/assets/css/admin.css' 
-    : '/erph-Auto/assets/css/guru.css';
+    // Muatkan CSS mengikut role (jika anda masih menggunakan logik ini di router.js)
+    // Sila pastikan file 'guru.css' wujud
+    roleStyle.href = role === 'admin' 
+      ? 'assets/css/admin.css' 
+      : 'assets/css/guru.css';
 
-  // Gunakan router baharu untuk memuatkan Dashboard
-  if (role === 'admin') {
-    window.router.navigate('admin-home'); 
-  } else if (role === 'guru') {
-    window.router.navigate('home'); 
-  } else {
-    contentDiv.innerHTML = '<p>Peranan tidak dikenali.</p>';
-  }
+    // Mulakan navigasi berdasarkan peranan
+    if (role === 'admin') {
+        navigate('admin-home');
+    } else if (role === 'guru') {
+        navigate('guru-jadual'); // Mulakan dengan jadual editor (laluan yang sudah kita bangunkan)
+    } else {
+        contentDiv.innerHTML = '<p>Peranan tidak dikenali.</p>';
+    }
 });
