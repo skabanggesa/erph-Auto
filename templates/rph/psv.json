@@ -1,10 +1,4 @@
-{
-  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Pendidikan Seni Visual (PSV) - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
-  "subject": "Pendidikan Seni Visual",
-  "data": [
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 1: 10 UNIT (Fokus: Eksplorasi Asas & Media) ---
-    // ------------------------------------------------------------------------------------------------
+[
     {
       "year": 1,
       "topic_name": "Unit 1: Garisan, Rupa, dan Bentuk di Sekeliling Saya",
@@ -297,9 +291,6 @@
         "Label karya, meja pameran, bahan hiasan."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 2: 10 UNIT (Fokus: Manipulasi Media & Teknik Mudah) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 2,
       "topic_name": "Unit 1: Ilusi Ruang dan Kedudukan Objek",
@@ -585,9 +576,6 @@
         "Kadbod, pembaris, gam, gunting, pensel warna/penanda."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 3: 10 UNIT (Fokus: Kemahiran & Ekspresi) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 3,
       "topic_name": "Unit 1: Lukisan Perspektif Satu Titik (Asas)",
@@ -873,9 +861,6 @@
         "Kotak kasut, kertas warna, cat, bahan terbuang, lampu suluh mini."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 4: 10 UNIT (Fokus: Aplikasi Pengetahuan & Fungsi) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 4,
       "topic_name": "Unit 1: Ilustrasi Teks (Kesan Visual dan Penceritaan)",
@@ -1161,9 +1146,6 @@
         "Pensel, kertas lukisan, penanda warna/cat."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 5: 10 UNIT (Fokus: Inovasi & Integrasi Media) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 5,
       "topic_name": "Unit 1: Lukisan Perspektif Dua Titik (Asas)",
@@ -1448,9 +1430,6 @@
         "Kadbod, pembaris, gunting, alat hiasan, contoh bungkusan yang unik."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 6: 10 UNIT (Fokus: Sintesis, Ekspresi, dan Apresiasi Mendalam) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 6,
       "topic_name": "Unit 1: Penceritaan Visual (Siri Lukisan Komik/Mural)",
@@ -1733,5 +1712,6 @@
         "Karya terpilih, folder portfolio, label karya, bahan pameran."
       ]
     }
-  ]
-}
+  
+]
+
