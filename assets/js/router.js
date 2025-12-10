@@ -2,17 +2,21 @@
 
 // Peta laluan yang memetakan laluan URL ringkas kepada fungsi pemuat modul
 const routes = {
-    // LALUAN DIBETULKAN: Menambah sub-folder './guru/'
+    // LALUAN GURU: Dashboard utama
     'home': () => import('./guru/guru-dashboard.js').then(m => m.loadGuruDashboard()), 
     
-    // LALUAN DIBETULKAN: Mengandaikan modul guru lain juga berada di sub-folder 'guru/'
+    // LALUAN GURU: Jana RPH
     'rph-generator': () => import('./guru/rph-generator.js').then(m => m.loadRphGenerator()),
-    'rph-list': () => import('./guru/rph-list.js').then(m => m.loadRphList()), 
+
+    // LALUAN GURU: Senarai RPH (Sejarah)
+    // *** PEMBETULAN NAMA FAIL/FUNGSI DI SINI ***
+    // Menukar rph-list.js kepada rph-history.js dan memanggil loadRphHistory()
+    'rph-list': () => import('./guru/rph-history.js').then(m => m.loadRphHistory()), 
     
-    // LALUAN DIBETULKAN: Editor Jadual Waktu
+    // LALUAN GURU: Editor Jadual Waktu
     'jadual-editor': () => import('./guru/jadual-editor.js').then(m => m.loadJadualEditor()),
 
-    // LALUAN : RPH edit
+    // LALUAN GURU: Edit RPH - Menerima ID dokumen sebagai hujah
     'rph-edit': (rphId) => import('./guru/rph-edit.js').then(m => m.loadRphEdit(rphId)), 
 
     // Laluan Admin (jika diperlukan)
@@ -21,15 +25,15 @@ const routes = {
 
 // Menetapkan fungsi navigasi global yang boleh dipanggil dari HTML/JS lain
 window.router = {
-    navigate: function(path) {
+    // Menggunakan operator rest/spread (...) untuk menghantar hujah tambahan (seperti rphId)
+    navigate: function(path, ...args) { 
         const contentDiv = document.getElementById('content');
         
         if (routes[path]) {
-            // Bersihkan kandungan sebelum memuatkan modul baharu
             contentDiv.innerHTML = '<p>Memuatkan kandungan...</p>';
             
-            // Panggil fungsi pemuat modul dari peta laluan
-            routes[path]()
+            // Panggil fungsi pemuat modul dari peta laluan dan luluskan hujah
+            routes[path](...args) 
                 .catch(error => {
                     console.error(`Gagal memuatkan modul untuk laluan ${path}:`, error);
                     contentDiv.innerHTML = `<p class="error">Ralat memuatkan modul: ${path}. Sila semak konsol.</p>`;
@@ -44,7 +48,7 @@ window.router = {
 
 // Panggil selepas auth.js dimuatkan
 document.addEventListener('DOMContentLoaded', async () => {
-  if (!window.location.pathname.endsWith('dashboard.html')) return; // Pastikan hanya berjalan di dashboard
+  if (!window.location.pathname.endsWith('dashboard.html')) return;
 
   const role = localStorage.getItem('userRole');
   const contentDiv = document.getElementById('content');
@@ -62,10 +66,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Gunakan router baharu untuk memuatkan Dashboard
   if (role === 'admin') {
-    // Jika admin, navigasi ke laluan admin
     window.router.navigate('admin-home'); 
   } else if (role === 'guru') {
-    // Jika guru, navigasi ke laluan dashboard guru ('home')
     window.router.navigate('home'); 
   } else {
     contentDiv.innerHTML = '<p>Peranan tidak dikenali.</p>';
