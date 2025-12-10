@@ -1,65 +1,82 @@
-import { auth, db } from '../config.js';
+// rph-history.js (Pastikan fail ini berada dalam folder assets/js/guru/)
+
+import { auth, db } from '../config.js'; 
 import { 
-  collection, query, where, getDocs, orderBy 
+    collection, query, where, getDocs, orderBy 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+// Fungsi untuk memuatkan senarai RPH yang hanya dimiliki oleh guru semasa
 export async function loadRphHistory() {
-  const content = document.getElementById('content');
-  content.innerHTML = '<p>Memuatkan senarai RPH...</p>';
-
-  const q = query(
-    collection(db, 'rph'),
-    where('userId', '==', auth.currentUser.uid),
-    orderBy('tarikh', 'desc')
-  );
-  const querySnapshot = await getDocs(q);
-
-  let html = `
-    <div class="guru-section">
-      <h2>Senarai RPH Saya</h2>
-      <div id="rphList">
-  `;
-
-  if (querySnapshot.empty) {
-    html += '<p>Anda belum menjana sebarang RPH.</p>';
-  } else {
-    querySnapshot.forEach(doc => {
-      const r = doc.data();
-      const tarikh = r.tarikh.toDate ? r.tarikh.toDate().toLocaleDateString('ms-MY') : '–';
-      const status = r.status === 'draft' ? 'Draf' : 
-                    r.status === 'submitted' ? 'Dihantar' : 'Disemak';
-      const statusColor = r.status === 'draft' ? '#888' : 
-                         r.status === 'submitted' ? '#1976d2' : '#388e3c';
-
-      html += `
-        <div class="rph-card">
-          <h4>${r.matapelajaran} - ${r.kelas}</h4>
-          <div class="rph-meta">
-            Tarikh: ${tarikh} | Status: <span style="color:${statusColor}">${status}</span>
-          </div>
-          <div class="rph-actions">
-            <button class="btn" onclick="window.viewRph('${doc.id}')">Lihat/Edit</button>
-          </div>
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <div class="guru-section">
+            <h2>Memuatkan Senarai RPH Saya...</h2>
         </div>
-      `;
-    });
-  }
+    `;
 
-  html += `
-      </div>
-      <button id="btnBackDashboard" class="btn">Kembali ke Dashboard</button>
-    </div>
-  `;
+    const user = auth.currentUser;
+    if (!user) {
+        content.innerHTML = '<p class="error">Sesi tamat. Sila log masuk semula.</p>';
+        return;
+    }
 
-  content.innerHTML = html;
+    try {
+        const rphCollection = collection(db, 'rph');
+        
+        // KLAUSA KRITIKAL: Hanya meminta RPH di mana medan 'uid' sepadan dengan UID pengguna semasa.
+        // Ini mematuhi Peraturan Keselamatan Firestore yang baru.
+        const q = query(
+            rphCollection, 
+            where("uid", "==", user.uid), 
+            orderBy("tarikh", "desc") 
+        );
+        
+        const querySnapshot = await getDocs(q);
+        
+        let html = `
+            <div class="guru-section">
+                <h2>Senarai RPH Saya</h2>
+                <button class="btn btn-secondary" onclick="router.navigate('home')" style="margin-bottom: 20px;">Kembali ke Dashboard</button>
+        `;
+        
+        if (querySnapshot.empty) {
+            html += '<p>Anda belum mempunyai sebarang RPH. Sila jana RPH baru.</p>';
+        } else {
+            html += '<table class="rph-list-table">';
+            html += '<thead><tr><th>Tarikh</th><th>Mata Pelajaran</th><th>Kelas</th><th>Status</th><th>Tindakan</th></tr></thead><tbody>';
+            
+            querySnapshot.docs.forEach(doc => {
+                const data = doc.data();
+                const tarikh = data.tarikh.toDate ? data.tarikh.toDate().toLocaleDateString('ms-MY') : 'N/A';
+                
+                html += `
+                    <tr>
+                        <td>${tarikh}</td>
+                        <td>${data.matapelajaran}</td>
+                        <td>${data.kelas}</td>
+                        <td>${data.status.toUpperCase()}</td>
+                        <td>
+                            <button class="btn btn-sm" onclick="router.navigate('rph-edit', '${doc.id}')">Edit</button>
+                        </td>
+                    </tr>
+                `;
+            });
+            html += '</tbody></table>';
+        }
 
-  document.getElementById('btnBackDashboard').addEventListener('click', () => {
-    // Muat semula timetable module (ia akan redirect ke dashboard jika jadual wujud)
-    import('./timetable.js').then(m => m.loadTimetableModule());
-  });
+        html += `</div>`;
+        content.innerHTML = html;
+        
+    } catch (e) {
+        console.error("Ralat memuatkan sejarah RPH:", e);
+        // Memaparkan ralat kepada pengguna
+        content.innerHTML = `<p class="error">Ralat memuatkan senarai RPH: ${e.message}</p>
+        <button class="btn btn-secondary" onclick="router.navigate('home')">Kembali ke Dashboard</button>`;
+    }
 }
 
-// Fungsi global untuk edit
-window.viewRph = (rphId) => {
-  import('./rph-edit.js').then(m => m.loadRphEdit(rphId));
-};
+
+// Nota: Anda mungkin perlu menambah fungsi rph-edit ke router.js anda
+// router.js:
+// 'rph-edit': (rphId) => import('./guru/rph-edit.js').then(m => m.loadRphEdit(rphId)), 
+// Jika anda belum melakukannya.
