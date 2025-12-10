@@ -1,8 +1,6 @@
-// assets/js/admin/dashboard.js (KOD LENGKAP & PEMBETULAN LALUAN IMPORT)
+// assets/js/admin/dashboard.js (DIKEMASKINI: Import navigate DIBUANG)
 
-// PEMBETULAN KRITIKAL: Laluan import ke config.js dan router.js
-import { auth, db } from '../config.js'; // Betul: Naik satu level ke assets/js/
-import { navigate } from '../router.js';  // Betul: Naik satu level ke assets/js/
+import { auth, db } from '../config.js'; 
 
 import { 
     collection, query, where, getDocs, 
@@ -12,7 +10,6 @@ import {
 
 /**
  * Fungsi utama yang dipanggil oleh router.js apabila admin log masuk.
- * Ini akan memaparkan kandungan dashboard admin.
  */
 export async function loadAdminDashboard() {
     const content = document.getElementById('content');
@@ -60,7 +57,6 @@ async function loadRphReviewList() {
     contentArea.innerHTML = '<p>Mencari RPH yang telah dihantar oleh guru...</p>';
 
     try {
-        // Query: Cari RPH yang statusnya 'submitted'
         const q = query(collection(db, 'rph'), where('status', '==', 'submitted'));
         const querySnapshot = await getDocs(q);
 
@@ -92,12 +88,10 @@ async function loadRphReviewList() {
             const rph = docSnapshot.data();
             rph.id = docSnapshot.id;
             
-            // Dapatkan nama guru dari Firestore 'users' collection
             const userRef = doc(db, 'users', rph.uid);
             guruPromises.push(getFirestoreDoc(userRef).then(userSnap => {
                 const namaGuru = userSnap.exists() ? userSnap.data().name || 'Tidak Diketahui' : 'Tidak Diketahui';
                 
-                // Format tarikh
                 const tarikhFormat = rph.tarikh.toDate ? rph.tarikh.toDate().toLocaleDateString('ms-MY') : rph.tarikh;
                 
                 return `
@@ -134,5 +128,6 @@ async function loadRphReviewList() {
 function adminReviewRph(rphId) {
     alert(`Membuka RPH ID: ${rphId} untuk semakan. Fungsi ini akan datang!`);
     
-    // navigate('admin-review-rph', rphId); // Ini akan berfungsi apabila anda sediakan laluan admin-review-rph dalam router.js
+    // Guna fungsi global yang ditakrifkan oleh router.js
+    // router.navigate('admin-review-rph', rphId);
 }
