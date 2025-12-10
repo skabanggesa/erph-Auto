@@ -1,4 +1,94 @@
-/* --- Penambahan Gaya untuk Jadual Waktu Mingguan (Grid View) --- */
+/* style.css (KOD LENGKAP & DIKEMASKINI) */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#logoutBtn {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#logoutBtn:hover {
+  background: #b71c1c;
+}
+
+/* --- Gaya Tambahan untuk Button, Form, dan Guru Section --- */
+.guru-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.1s;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+.btn-secondary:hover {
+    background-color: #5c636a;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+.btn-success:hover {
+    background-color: #1e7e34;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* --- Gaya untuk Jadual Waktu Mingguan (Grid View) --- */
 
 .timetable-grid {
     width: 100%;
@@ -9,62 +99,87 @@
 
 .timetable-grid th, .timetable-grid td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 5px; /* Kurangkan padding untuk lebih ruang teks */
     text-align: center;
     vertical-align: top;
 }
 
+/* Menambah garisan pemisah yang lebih jelas antara hari (kolum) */
+.timetable-grid th, .timetable-grid td {
+    border-right: 2px solid #ccc; 
+    border-bottom: 1px solid #ddd;
+}
+.timetable-grid th:last-child, .timetable-grid td:last-child {
+    border-right: 1px solid #ddd; /* Kolum terakhir tidak perlu pemisah yang tebal */
+}
+
 .timetable-grid th {
-    background-color: #0d6efd; /* Biru primary */
+    background-color: #0d6efd; 
     color: white;
     font-weight: bold;
 }
 
 .time-cell {
-    background-color: #f8f9fa; /* Kelabu muda untuk kolum masa */
+    background-color: #f8f9fa; 
     font-weight: bold;
     width: 80px; /* Lebar tetap untuk kolum masa */
+    font-size: 0.9em;
 }
 
 .session-cell {
-    height: 60px; /* Ketinggian seragam untuk setiap sesi */
+    height: 90px; /* Ketinggian seragam untuk memuatkan 3 baris teks */
     cursor: default;
     transition: background-color 0.1s;
-    min-width: 120px; /* Lebar minimum untuk setiap hari */
+    min-width: 120px; 
+    
+    /* PENTING: Menggunakan Flexbox untuk menyusun teks secara menegak */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Untuk menyusun elemen di atas, tengah, dan bawah */
+    align-items: center;
+    text-align: center;
+    padding: 5px;
 }
 
 .session-cell.filled {
-    background-color: #e9f0fe; /* Warna untuk sel yang mempunyai sesi */
+    background-color: #e9f0fe; 
     cursor: pointer;
 }
 
 .session-cell.filled:hover {
-    background-color: #d0e0ff; /* Kesan hover */
+    background-color: #d0e0ff; 
 }
 
+/* Baris 1: Mata Pelajaran (Subjek) */
 .session-cell .subject {
     font-weight: bold;
-    display: block;
+    font-size: 1.1em;
     color: #0d6efd;
+    margin-bottom: 2px;
 }
 
+/* Baris 2: Kelas */
 .session-cell .class {
     font-size: 0.9em;
-    color: #6c757d;
+    color: #343a40; 
+    font-weight: 500;
 }
 
-/* Gaya untuk editor sesi (borang baru) */
+/* Baris 3: Masa Mula - Masa Tamat */
+.session-cell .time {
+    font-size: 0.8em;
+    color: #6c757d;
+    margin-top: 2px;
+    display: block; 
+}
+
+/* Gaya untuk editor sesi (borang) */
 .session-editor {
     padding: 15px;
     border: 1px solid #0d6efd;
     border-radius: 5px;
     background-color: #f0f8ff;
     margin-bottom: 20px;
-}
-
-.session-editor .form-group {
-    margin-bottom: 10px;
-    text-align: left; /* Alignment untuk borang editor */
 }
 
 .session-editor input[type="text"], 
@@ -74,20 +189,5 @@
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Penting untuk lebar 100% */
-}
-
-.btn-danger {
-    background-color: #dc3545;
-    color: white;
-}
-.btn-danger:hover {
-    background-color: #c82333;
-}
-.btn-success {
-    background-color: #28a745;
-    color: white;
-}
-.btn-success:hover {
-    background-color: #1e7e34;
+    box-sizing: border-box; 
 }
