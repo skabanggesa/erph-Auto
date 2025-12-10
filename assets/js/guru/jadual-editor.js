@@ -1,4 +1,4 @@
-// jadual-editor.js (KOD LENGKAP & DIKEMASKINI)
+// jadual-editor.js (KOD LENGKAP & DIKEMASKINI: Paparan Grid)
 
 import { auth, db } from '../config.js';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
@@ -34,7 +34,8 @@ export async function loadJadualEditor() {
     window.deleteSession = deleteSession;
     window.saveSession = saveSession;
     window.cancelEdit = cancelEdit;
-
+    
+    // Sesi baru akan dimuatkan dan dipaparkan dalam format grid
     await fetchAndDisplayJadual();
 }
 
@@ -88,7 +89,7 @@ function formatJadualData(senaraiSesi) {
     });
 
     // 2. Susun masa secara kronologi untuk baris
-    const masaSesiTersusun = Array.from(masaUnik).sort();
+    const masaSesiTersusun = Array.from(masaSesiTersusun).sort();
 
     return { jadualGrid, masaSesiTersusun };
 }
@@ -108,7 +109,7 @@ function renderJadualGrid(jadualArray) {
         <table class="timetable-grid">
             <thead>
                 <tr>
-                    <th>Masa</th>
+                    <th>Masa Mula</th>
                     ${HARI.map(hari => `<th>${hari}</th>`).join('')}
                 </tr>
             </thead>
@@ -124,13 +125,15 @@ function renderJadualGrid(jadualArray) {
             const entry = jadualGrid[hari] ? jadualGrid[hari][masa] : null;
 
             if (entry) {
-                // Sesi Wujud
+                // Sesi Wujud: Paparkan data lengkap mengikut format permintaan pengguna
+                const sesi = entry.sesi;
                 html += `
                     <td class="session-cell filled" 
                         data-index="${entry.index}"
                         onclick="editSession(${entry.index})">
-                        <span class="subject">${entry.sesi.matapelajaran}</span><br>
-                        <span class="class">${entry.sesi.kelas}</span>
+                        <span class="subject">${sesi.matapelajaran}</span>
+                        <span class="class">${sesi.kelas}</span>
+                        <span class="time">${sesi.masaMula} - ${sesi.masaTamat}</span>
                     </td>
                 `;
             } else {
@@ -152,6 +155,7 @@ function renderJadualGrid(jadualArray) {
     gridDiv.innerHTML = html;
     
     document.getElementById('saveAllBtn').addEventListener('click', saveJadual);
+    // Batal akan memuat semula data asal dari Firestore
     document.getElementById('cancelAllBtn').addEventListener('click', fetchAndDisplayJadual);
 }
 
@@ -196,7 +200,7 @@ function renderEditorForm(sesi = null, index = -1) {
         </div>
         
         <button class="btn btn-success" onclick="saveSession()">Simpan Sesi</button>
-        ${index !== -1 ? `<button class="btn btn-danger" onclick="deleteSession(${index})">Padam Sesi Ini</button>` : ''}
+        ${index !== -1 ? `<button class="btn btn-danger" onclick="deleteSession(${index}, true)">Padam Sesi Ini</button>` : ''}
         <button class="btn btn-secondary" onclick="cancelEdit()">Batal</button>
     `;
 }
@@ -205,6 +209,7 @@ function cancelEdit() {
     document.getElementById('sessionEditor').style.display = 'none';
     document.getElementById('addSessionBtn').style.display = 'block';
     editingIndex = -1;
+    document.getElementById('editorStatus').innerHTML = '';
 }
 
 function editSession(index) {
@@ -217,6 +222,8 @@ function editSession(index) {
 
 function saveSession() {
     const statusDiv = document.getElementById('editorStatus');
+    statusDiv.textContent = '';
+
     const newSesi = {
         hari: document.getElementById('editorHari').value,
         masaMula: document.getElementById('editorMasaMula').value,
@@ -258,18 +265,19 @@ function saveSession() {
     renderJadualGrid(currentJadual);
 }
 
-function deleteSession(indexToRemove) {
+function deleteSession(indexToRemove, fromEditor = false) {
     if (confirm('Anda pasti mahu membuang sesi ini?')) {
         currentJadual.splice(indexToRemove, 1);
         
         document.getElementById('editorStatus').innerHTML = '<p class="success">Sesi berjaya dibuang dari draf tempatan. Sila klik "Simpan Semua Perubahan" untuk menyimpan ke Firebase.</p>';
         
         // Tutup borang dan muat semula grid
-        cancelEdit();
+        if (fromEditor) {
+            cancelEdit();
+        }
         renderJadualGrid(currentJadual);
     }
 }
-
 
 // ----------------------------------------------------------------------
 // Fungsi Penyimpanan ke Firestore
@@ -282,6 +290,22 @@ async function saveJadual() {
 
     if (!user) {
         statusDiv.innerHTML = '<p class="error">Pengguna tidak log masuk.</p>';
+        return;
+    }
+
+    // Semak Konflik sekali lagi sebelum simpanan akhir (terutamanya masa mula yang sama)
+    const masaMulaMap = {};
+    let hasConflict = false;
+    currentJadual.forEach(sesi => {
+        const key = `${sesi.hari}-${sesi.masaMula}`;
+        if (masaMulaMap[key]) {
+            hasConflict = true;
+        }
+        masaMulaMap[key] = true;
+    });
+
+    if (hasConflict) {
+        statusDiv.innerHTML = '<p class="error">Gagal menyimpan: Terdapat konflik masa mula/hari yang sama dalam jadual. Sila betulkan.</p>';
         return;
     }
 
