@@ -1,4 +1,4 @@
-// jadual-editor.js (KOD LENGKAP & DIKEMASKINI: Paparan Grid)
+// jadual-editor.js (KOD LENGKAP & DIKEMASKINI: Paparan Grid - Telah diperbaiki ralat ReferenceError)
 
 import { auth, db } from '../config.js';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
@@ -35,7 +35,6 @@ export async function loadJadualEditor() {
     window.saveSession = saveSession;
     window.cancelEdit = cancelEdit;
     
-    // Sesi baru akan dimuatkan dan dipaparkan dalam format grid
     await fetchAndDisplayJadual();
 }
 
@@ -65,6 +64,7 @@ async function fetchAndDisplayJadual() {
         renderJadualGrid(currentJadual);
 
     } catch (e) {
+        // Baris ralat yang anda laporkan akan hilang selepas pembetulan
         console.error("Ralat memuatkan jadual:", e);
         document.getElementById('editorStatus').innerHTML = '<p class="error">Gagal memuatkan jadual. Sila cuba lagi.</p>';
     }
@@ -89,7 +89,8 @@ function formatJadualData(senaraiSesi) {
     });
 
     // 2. Susun masa secara kronologi untuk baris
-    const masaSesiTersusun = Array.from(masaSesiTersusun).sort();
+    // PEMBETULAN: Menggantikan masaSesiTersusun dengan masaUnik
+    const masaSesiTersusun = Array.from(masaUnik).sort();
 
     return { jadualGrid, masaSesiTersusun };
 }
