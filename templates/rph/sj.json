@@ -1,10 +1,4 @@
-{
-  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Sejarah - Tahun 4 hingga Tahun 6 (10 Unit setiap Tahun)",
-  "subject": "Sejarah",
-  "data": [
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 4: 10 UNIT (Tema: Sejarah Kita - Asal Usul dan Institusi) ---
-    // ------------------------------------------------------------------------------------------------
+[
     {
       "year": 4,
       "topic_name": "Unit 1: Mengenali Sejarah",
@@ -305,9 +299,6 @@
         "Carta konsep warisan sosiobudaya."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 5: 10 UNIT (Tema: Warisan Negara - Kedaulatan dan Penjajahan) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 5,
       "topic_name": "Unit 1: Kedaulatan Negeri-Negeri Melayu",
@@ -608,9 +599,6 @@
         "Bahan perdebatan."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 6: 10 UNIT (Tema: Negara Kita - Kemerdekaan dan Pembentukan Malaysia) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 6,
       "topic_name": "Unit 1: Langkah ke Arah Kemerdekaan",
@@ -911,5 +899,6 @@
         "Bahan persembahan Wawasan Negara."
       ]
     }
-  ]
-}
+  
+]
+
