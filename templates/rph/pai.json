@@ -1,10 +1,4 @@
-{
-  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Pendidikan Agama Islam (PAI) - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
-  "subject": "Pendidikan Agama Islam",
-  "data": [
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 1: 10 UNIT ---
-    // ------------------------------------------------------------------------------------------------
+[
     {
       "year": 1,
       "topic_name": "Unit 1: Asas Akidah - Rukun Iman",
@@ -91,10 +85,7 @@
       ],
       "aids": [
         "Model tempat Wuduk.",
-        "Carta langkah Wuduk bergambar 
-
-[Image of steps for wudu for children]
-.",
+        "Carta langkah Wuduk bergambar \n\n[Image of steps for wudu for children]\n.",
         "Rakaman audio niat Wuduk."
       ]
     },
@@ -308,9 +299,6 @@
         "Kad gambar adab."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 2: 10 UNIT ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 2,
       "topic_name": "Unit 1: Akidah - Nama-Nama Allah (Asmaul Husna)",
@@ -611,9 +599,6 @@
         "Permainan PAI yang direka khas."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 3: 10 UNIT ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 3,
       "topic_name": "Unit 1: Akidah - Malaikat dan Tugasnya",
@@ -914,9 +899,6 @@
         "Poster kebersihan diri."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 4: 10 UNIT ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 4,
       "topic_name": "Unit 1: Akidah - Kitab Allah (Al-Quran)",
@@ -1217,9 +1199,6 @@
         "Buku cerita ringkas tentang Jiran."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 5: 10 UNIT ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 5,
       "topic_name": "Unit 1: Akidah - Hari Kiamat",
@@ -1520,9 +1499,6 @@
         "Buku cerita ringkas tentang lisan."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 6: 10 UNIT ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 6,
       "topic_name": "Unit 1: Akidah - Qada' dan Qadar",
@@ -1823,5 +1799,6 @@
         "Video ringkas kesan pembaziran."
       ]
     }
-  ]
-}
+  
+]
+
