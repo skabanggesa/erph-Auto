@@ -1,3 +1,5 @@
+// config.js
+
 // Firebase modular SDK
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
@@ -16,67 +18,73 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
+
+// Mendapatkan dan Mengeksport Objek Utama
+// Gunakan 'export const' supaya modul lain boleh mengimportnya
+export const auth = getAuth(app);
+export const db = getFirestore(app);
 
 // Peta nama matapelajaran → nama fail JSON
-// Dikekalkan sebagai global kerana mungkin digunakan dalam fail lain tanpa import
+// Dikekalkan sebagai global supaya fungsi di bawah boleh mengaksesnya tanpa 'this'
 window.MAP_SUBJECT_TO_FILE = {
   // Tambah kunci singkatan untuk subjek yang mungkin dipendekkan dalam Firestore
   
   // BAHASA
-  'BM': 'bm', // <--- Ditambah: Jika data Firestore guna singkatan
+  'BM': 'bm', 
   'Bahasa Melayu': 'bm',
 
-  'BI': 'bi', // <--- Ditambah: Jika data Firestore guna singkatan (Penyelesaian masalah ralat 404)
+  'BI': 'bi', // Dikenal pasti digunakan dalam jadual
   'Bahasa Inggeris': 'bi',
 
   // STEM
-  'MT': 'mt', // <--- Ditambah
+  'MT': 'mt', 
   'Matematik': 'mt',
 
-  'SN': 'sn', // <--- Ditambah
+  'SN': 'sn', 
   'Sains': 'sn',
 
   // PENDIDIKAN
-  'PAI': 'pai', // <--- Ditambah
+  'PAI': 'pai', 
   'Pendidikan Islam': 'pai',
   
-  'BA': 'ba', // <--- Ditambah
-  'Buddha Agama': 'ba', // Sesuaikan jika nama sebenar berbeza
+  'BA': 'ba', 
+  'Buddha Agama': 'ba', 
 
   // SUBJEK LAIN
-  'SJ': 'sj', // <--- Ditambah
+  'SJ': 'sj', 
   'Sejarah': 'sj',
 
-  'PJ': 'pj', // <--- Ditambah
+  'PJ': 'pj', 
   'Pendidikan Jasmani': 'pj',
 
-  'PK': 'pk', // <--- Ditambah
+  'PK': 'pk', 
   'Pendidikan Kesihatan': 'pk',
 
-  'MZ': 'mz', // <--- Ditambah
+  'MZ': 'mz', 
   'Muzik': 'mz',
   
-  'PSV': 'psv', // <--- Ditambah
+  'PSV': 'psv', 
   'Pendidikan Seni Visual': 'psv',
 
-  'RBT': 'rbt', // <--- Ditambah
+  'RBT': 'rbt', 
   'Reka Bentuk dan Teknologi': 'rbt',
 
-  'Pra': 'pra', // <--- Ditambah
-  'Pravocational': 'pra' // atau "Pravocational Studies", dsb.
+  'Pra': 'pra', 
+  'Pravocational': 'pra' 
 };
 
 // Fungsi untuk dapatkan URL template JSON dari GitHub
-const getTemplateUrl = (subjectDisplayName) => { // <--- TELAH DIUBAH SUAI
+export const getTemplateUrl = (subjectDisplayName) => { // <-- Menggunakan export const
   const filename = window.MAP_SUBJECT_TO_FILE[subjectDisplayName];
   if (!filename) {
-    console.warn(`Tiada template untuk matapelajaran: ${subjectDisplayName}`);
+    console.warn(`Tiada template fail JSON untuk matapelajaran: ${subjectDisplayName}`);
+    // Jika tiada padanan, ralat 404 akan berlaku pada fetch.
     return null;
   }
+  // URL GitHub anda
   return `https://raw.githubusercontent.com/skabanggesa/erph-Auto/main/templates/rph/${filename}.json`;
 };
 
-// Eksport untuk modular JS
-export { app, auth, db, getTemplateUrl }; // <--- TELAH DIUBAH SUAI
+// **Nota:** Baris `export { app, auth, db, getTemplateUrl };` yang lama telah digantikan
+// dengan `export const auth = ...` dan `export const getTemplateUrl = ...`
+// untuk struktur modular yang lebih kemas.
