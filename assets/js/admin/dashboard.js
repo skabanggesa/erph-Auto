@@ -1,11 +1,14 @@
-// assets/js/admin/dashboard.js
+// assets/js/admin/dashboard.js (KOD LENGKAP & PEMBETULAN LALUAN IMPORT)
 
-import { auth, db } from '../../config.js'; 
+// PEMBETULAN KRITIKAL: Laluan import ke config.js dan router.js
+import { auth, db } from '../config.js'; // Betul: Naik satu level ke assets/js/
+import { navigate } from '../router.js';  // Betul: Naik satu level ke assets/js/
+
 import { 
     collection, query, where, getDocs, 
     doc, getDoc as getFirestoreDoc 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-import { navigate } from '../../router.js'; // Import fungsi navigasi
+
 
 /**
  * Fungsi utama yang dipanggil oleh router.js apabila admin log masuk.
@@ -58,7 +61,6 @@ async function loadRphReviewList() {
 
     try {
         // Query: Cari RPH yang statusnya 'submitted'
-        // Anda boleh tukar 'submitted' kepada 'hantar' jika itu yang digunakan dalam guru-side
         const q = query(collection(db, 'rph'), where('status', '==', 'submitted'));
         const querySnapshot = await getDocs(q);
 
@@ -130,10 +132,7 @@ async function loadRphReviewList() {
 // FUNGSI: Logik Semakan RPH (Placeholder)
 // -------------------------------------------------------------
 function adminReviewRph(rphId) {
-    // Apabila guru klik "Semak", kita akan navigasi ke halaman review RPH
-    // Fail admin-rph-review.js akan dibangunkan kemudian.
     alert(`Membuka RPH ID: ${rphId} untuk semakan. Fungsi ini akan datang!`);
     
-    // Gunakan router untuk navigasi ke halaman review, membawa ID RPH
     // navigate('admin-review-rph', rphId); // Ini akan berfungsi apabila anda sediakan laluan admin-review-rph dalam router.js
 }
