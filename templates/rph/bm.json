@@ -1,8 +1,4 @@
-{
-  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Bahasa Melayu - Tahun 1 hingga Tahun 6 (10 Unit setiap Tahun)",
-  "subject": "Bahasa Melayu",
-  "data": [
-    // --- TAHUN 1: 10 UNIT ---
+[
     {
       "year": 1,
       "topic_name": "Unit 1: Mari Berkenalan (Kemahiran Mendengar dan Bertutur)",
@@ -393,7 +389,6 @@
         "Lembaran kerja membina ayat."
       ]
     },
-    // --- TAHUN 2: 10 UNIT ---
     {
       "year": 2,
       "topic_name": "Unit 1: Hidup Bersama (Mendengar dan Bertutur)",
@@ -780,7 +775,6 @@
         "Lembaran kerja tatabahasa."
       ]
     },
-    // --- TAHUN 3: 10 UNIT ---
     {
       "year": 3,
       "topic_name": "Unit 1: Jati Diri (Mendengar dan Bertutur)",
@@ -1165,7 +1159,6 @@
         "Gambar wang/tabung."
       ]
     },
-    // --- TAHUN 4: 10 UNIT ---
     {
       "year": 4,
       "topic_name": "Unit 1: Keunikan Budaya (Mendengar dan Bertutur)",
@@ -1549,7 +1542,6 @@
         "Gambar gajet/aplikasi."
       ]
     },
-    // --- TAHUN 5: 10 UNIT ---
     {
       "year": 5,
       "topic_name": "Unit 1: Keperibadian Mulia (Mendengar dan Bertutur)",
@@ -1933,7 +1925,6 @@
         "Kad situasi wawancara."
       ]
     },
-    // --- TAHUN 6: 10 UNIT ---
     {
       "year": 6,
       "topic_name": "Unit 1: Patriotisme (Mendengar dan Bertutur)",
@@ -2315,5 +2306,6 @@
         "Brosur sekolah menengah."
       ]
     }
-  ]
-}
+  
+]
+
