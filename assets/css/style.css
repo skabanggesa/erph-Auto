@@ -1,4 +1,4 @@
-/* style.css (KOD LENGKAP & DIKEMASKINI) */
+/* style.css (KOD LENGKAP & DIKEMASKINI: PEMBETULAN FINAL) */
 
 body {
   margin: 0;
@@ -15,20 +15,23 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* GAYA BUTANG LOG KELUAR */
 #logoutBtn {
-  background: #d32f2f;
+  background: #dc3545; 
   color: white;
   border: none;
-  padding: 8px 16px;
+  padding: 10px 18px; 
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold; 
+  transition: background-color 0.2s;
 }
 
 #logoutBtn:hover {
-  background: #b71c1c;
+  background: #c82333; 
 }
 
-/* --- Gaya Tambahan untuk Button, Form, dan Guru Section --- */
+/* --- Gaya Asas untuk Komponen Guru/Admin --- */
 .guru-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -65,6 +68,7 @@ body {
 .btn-success {
     background-color: #28a745;
     color: white;
+    padding: 10px 20px; 
 }
 .btn-success:hover {
     background-color: #1e7e34;
@@ -78,6 +82,7 @@ body {
     background-color: #c82333;
 }
 
+/* Gaya untuk Borang dan Input */
 .form-group {
     margin-bottom: 15px;
 }
@@ -88,54 +93,79 @@ body {
     margin-bottom: 5px;
 }
 
-/* --- Gaya untuk Jadual Waktu Mingguan (Grid View) --- */
+.session-editor input[type="text"], 
+.session-editor input[type="time"], 
+.session-editor select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+/* --- Gaya untuk Jadual Waktu Mingguan (Grid View) - PEMBETULAN KRITIKAL --- */
 
 .timetable-grid {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; 
     margin-top: 15px;
-    table-layout: fixed; /* Memastikan lebar kolum sekata */
+    table-layout: fixed; /* Penting untuk lebar kolum seragam */
+    /* Kunci: Pastikan ia berkelakuan seperti Table */
+    display: table; 
 }
 
+/* Kunci: Tetapkan padding ke 0 pada sel */
 .timetable-grid th, .timetable-grid td {
     border: 1px solid #ddd;
-    padding: 5px; /* Kurangkan padding untuk lebih ruang teks */
+    padding: 0; 
     text-align: center;
     vertical-align: top;
+    /* Kunci: Pastikan ia berkelakuan seperti Table Cell */
+    display: table-cell; 
 }
 
-/* Menambah garisan pemisah yang lebih jelas antara hari (kolum) */
+/* Garisan pemisah antara Hari (Kolum) */
 .timetable-grid th, .timetable-grid td {
     border-right: 2px solid #ccc; 
     border-bottom: 1px solid #ddd;
 }
 .timetable-grid th:last-child, .timetable-grid td:last-child {
-    border-right: 1px solid #ddd; /* Kolum terakhir tidak perlu pemisah yang tebal */
+    border-right: 1px solid #ddd; 
 }
 
 .timetable-grid th {
     background-color: #0d6efd; 
     color: white;
     font-weight: bold;
+    padding: 10px 5px; 
 }
 
+/* Gaya Kolum Masa */
 .time-cell {
     background-color: #f8f9fa; 
     font-weight: bold;
-    width: 80px; /* Lebar tetap untuk kolum masa */
+    width: 80px; 
     font-size: 0.9em;
+    padding: 5px; 
+}
+
+/* Gaya Sel Data */
+.timetable-grid td {
+    height: 90px; 
 }
 
 .session-cell {
-    height: 90px; /* Ketinggian seragam untuk memuatkan 3 baris teks */
+    height: 100%; 
+    width: 100%; 
+    box-sizing: border-box; 
     cursor: default;
     transition: background-color 0.1s;
-    min-width: 120px; 
     
-    /* PENTING: Menggunakan Flexbox untuk menyusun teks secara menegak */
+    /* Flexbox untuk menyusun teks 3 baris secara menegak */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Untuk menyusun elemen di atas, tengah, dan bawah */
+    /* KUNCI PEMBETULAN: Kembali ke space-between untuk 3 baris teks (Atas, Tengah, Bawah) */
+    justify-content: space-between; 
     align-items: center;
     text-align: center;
     padding: 5px;
@@ -170,24 +200,16 @@ body {
     font-size: 0.8em;
     color: #6c757d;
     margin-top: 2px;
-    display: block; 
+    display: block; /* Pastikan ia dipaparkan pada barisnya */
 }
 
-/* Gaya untuk editor sesi (borang) */
-.session-editor {
-    padding: 15px;
-    border: 1px solid #0d6efd;
-    border-radius: 5px;
-    background-color: #f0f8ff;
-    margin-bottom: 20px;
+/* Gaya untuk status error/success */
+.error {
+    color: #dc3545;
+    font-weight: bold;
 }
 
-.session-editor input[type="text"], 
-.session-editor input[type="time"], 
-.session-editor select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
+.success {
+    color: #28a745;
+    font-weight: bold;
 }
