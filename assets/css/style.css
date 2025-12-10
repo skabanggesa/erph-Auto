@@ -1,27 +1,93 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9f9f9;
+/* --- Penambahan Gaya untuk Jadual Waktu Mingguan (Grid View) --- */
+
+.timetable-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    table-layout: fixed; /* Memastikan lebar kolum sekata */
 }
 
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 25px;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.timetable-grid th, .timetable-grid td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
 }
 
-#logoutBtn {
-  background: #d32f2f;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
+.timetable-grid th {
+    background-color: #0d6efd; /* Biru primary */
+    color: white;
+    font-weight: bold;
 }
 
-#logoutBtn:hover {
-  background: #b71c1c;
+.time-cell {
+    background-color: #f8f9fa; /* Kelabu muda untuk kolum masa */
+    font-weight: bold;
+    width: 80px; /* Lebar tetap untuk kolum masa */
+}
+
+.session-cell {
+    height: 60px; /* Ketinggian seragam untuk setiap sesi */
+    cursor: default;
+    transition: background-color 0.1s;
+    min-width: 120px; /* Lebar minimum untuk setiap hari */
+}
+
+.session-cell.filled {
+    background-color: #e9f0fe; /* Warna untuk sel yang mempunyai sesi */
+    cursor: pointer;
+}
+
+.session-cell.filled:hover {
+    background-color: #d0e0ff; /* Kesan hover */
+}
+
+.session-cell .subject {
+    font-weight: bold;
+    display: block;
+    color: #0d6efd;
+}
+
+.session-cell .class {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+/* Gaya untuk editor sesi (borang baru) */
+.session-editor {
+    padding: 15px;
+    border: 1px solid #0d6efd;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    margin-bottom: 20px;
+}
+
+.session-editor .form-group {
+    margin-bottom: 10px;
+    text-align: left; /* Alignment untuk borang editor */
+}
+
+.session-editor input[type="text"], 
+.session-editor input[type="time"], 
+.session-editor select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Penting untuk lebar 100% */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+.btn-success:hover {
+    background-color: #1e7e34;
 }
