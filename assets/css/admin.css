@@ -1,92 +1,121 @@
-/* Gaya khusus admin */
-.admin-section {
-  max-width: 1000px;
-  margin: 20px auto;
+/* assets/css/admin.css (GAYA ADMIN DIKEMASKINI) */
+
+/* Import semua gaya asas dari style.css untuk konsistensi */
+/* Jika @import tidak berfungsi kerana laluan relatif, anda boleh salin/tampal gaya asas dari style.css di sini */
+/* Kami gunakan gaya yang berasingan di sini untuk memudahkan pengurusan */
+
+
+/* --- Gaya Asas (Salinan dari style.css untuk kestabilan) --- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
   background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.admin-section h2 {
-  color: #d32f2f;
-  margin-top: 0;
-}
-
-.table-container {
-  overflow-x: auto;
-  margin-top: 15px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  background-color: #ffebee;
-  color: #c62828;
-}
-
-tr:hover {
-  background-color: #f9f9f9;
-}
-
-.btn {
-  padding: 6px 12px;
+#logoutBtn {
+  background: #dc3545; 
+  color: white;
   border: none;
+  padding: 10px 18px; 
   border-radius: 4px;
   cursor: pointer;
-  font-size: 14px;
-  margin-right: 5px;
+  font-weight: bold; 
+  transition: background-color 0.2s;
 }
 
-.btn-delete {
-  background: #f44336;
-  color: white;
+#logoutBtn:hover {
+  background: #c82333; 
 }
 
-.btn-review {
-  background: #2196f3;
-  color: white;
+
+/* --- Gaya Admin Spesifik --- */
+.admin-section {
+    max-width: 1200px; /* Lebar yang lebih besar untuk paparan admin */
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.btn:hover {
-  opacity: 0.9;
+/* Gaya Button (Konsisten dengan style.css) */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.1s;
 }
 
-.form-group {
-  margin: 15px 0;
+.btn-primary {
+    background-color: #0d6efd;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+.btn-secondary:hover {
+    background-color: #5c636a;
 }
 
-.form-group input,
-.form-group select {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.btn-sm { /* Untuk butang 'Semak' di jadual */
+    padding: 5px 10px;
+    font-size: 0.85em;
+    font-weight: normal;
 }
 
-/* Analisis carta (placeholder) */
-.chart-container {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fafafa;
-  margin-top: 20px;
-  border: 1px dashed #ccc;
+
+/* --- Gaya Jadual Data RPH --- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #e9ecef; /* Latar belakang header yang lebih terang */
+    color: #495057;
+    font-weight: bold;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Status: submitted (Menunggu Semakan) */
+.status-submitted {
+    font-weight: bold;
+    color: #ffc107; /* Kuning/Jingga */
+}
+
+/* Gaya untuk status error/success */
+.error {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.success {
+    color: #28a745;
+    font-weight: bold;
 }
