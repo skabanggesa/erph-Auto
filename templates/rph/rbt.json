@@ -1,10 +1,4 @@
-{
-  "curriculum_title": "Kurikulum Standard Sekolah Rendah (KSSR) Reka Bentuk dan Teknologi (RBT) - Tahun 4 hingga Tahun 6 (10 Unit setiap Tahun)",
-  "subject": "Reka Bentuk dan Teknologi (RBT)",
-  "data": [
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 4: 10 UNIT (Fokus: Asas Reka Bentuk, Peralatan, dan Projek Mudah) ---
-    // ------------------------------------------------------------------------------------------------
+[
     {
       "year": 4,
       "topic_name": "Unit 1: Pengenalan kepada Reka Bentuk dan Teknologi",
@@ -314,9 +308,6 @@
         "Senarai semak pengujian projek."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 5: 10 UNIT (Fokus: Aplikasi Elektromekanikal, Pengaturcaraan Asas, dan Inovasi) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 5,
       "topic_name": "Unit 1: Reka Bentuk Secara Terperinci",
@@ -627,9 +618,6 @@
         "Rubrik penilaian projek elektromekanikal."
       ]
     },
-    // ------------------------------------------------------------------------------------------------
-    // --- TAHUN 6: 10 UNIT (Fokus: Automasi, Keusahawanan, dan Dokumentasi Profesional) ---
-    // ------------------------------------------------------------------------------------------------
     {
       "year": 6,
       "topic_name": "Unit 1: Pembangunan dan Dokumentasi Projek",
@@ -940,5 +928,6 @@
         "Rubrik penilaian projek dan pembentangan."
       ]
     }
-  ]
-}
+  
+]
+
