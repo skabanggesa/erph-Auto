@@ -1,11 +1,27 @@
-// rph-history.js (Pastikan fail ini berada dalam folder assets/js/guru/)
+// rph-history.js
 
 import { auth, db } from '../config.js'; 
 import { 
-    collection, query, where, getDocs, orderBy 
+    collection, query, where, getDocs, orderBy, deleteDoc, doc 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// Fungsi untuk memuatkan senarai RPH yang hanya dimiliki oleh guru semasa
+// Eksport deleteRph agar boleh digunakan oleh butang
+window.deleteRph = async (rphId) => {
+    if (!confirm("Adakah anda pasti mahu memadam RPH ini? Tindakan ini tidak boleh dibatalkan.")) {
+        return;
+    }
+
+    try {
+        await deleteDoc(doc(db, 'rph', rphId));
+        alert('RPH berjaya dipadam.');
+        // Muat semula senarai selepas berjaya memadam
+        loadRphHistory(); 
+    } catch (e) {
+        console.error("Ralat memadam RPH:", e);
+        alert(`Gagal memadam RPH: ${e.message}`);
+    }
+}
+
 export async function loadRphHistory() {
     const content = document.getElementById('content');
     content.innerHTML = `
@@ -23,8 +39,6 @@ export async function loadRphHistory() {
     try {
         const rphCollection = collection(db, 'rph');
         
-        // KLAUSA KRITIKAL: Hanya meminta RPH di mana medan 'uid' sepadan dengan UID pengguna semasa.
-        // Ini mematuhi Peraturan Keselamatan Firestore yang baru.
         const q = query(
             rphCollection, 
             where("uid", "==", user.uid), 
@@ -43,6 +57,7 @@ export async function loadRphHistory() {
             html += '<p>Anda belum mempunyai sebarang RPH. Sila jana RPH baru.</p>';
         } else {
             html += '<table class="rph-list-table">';
+            // PERUBAHAN: Tambah lajur 'Padam'
             html += '<thead><tr><th>Tarikh</th><th>Mata Pelajaran</th><th>Kelas</th><th>Status</th><th>Tindakan</th></tr></thead><tbody>';
             
             querySnapshot.docs.forEach(doc => {
@@ -57,6 +72,7 @@ export async function loadRphHistory() {
                         <td>${data.status.toUpperCase()}</td>
                         <td>
                             <button class="btn btn-sm" onclick="router.navigate('rph-edit', '${doc.id}')">Edit</button>
+                            <button class="btn btn-sm btn-danger" onclick="deleteRph('${doc.id}')">Padam</button>
                         </td>
                     </tr>
                 `;
@@ -69,14 +85,7 @@ export async function loadRphHistory() {
         
     } catch (e) {
         console.error("Ralat memuatkan sejarah RPH:", e);
-        // Memaparkan ralat kepada pengguna
         content.innerHTML = `<p class="error">Ralat memuatkan senarai RPH: ${e.message}</p>
         <button class="btn btn-secondary" onclick="router.navigate('home')">Kembali ke Dashboard</button>`;
     }
 }
-
-
-// Nota: Anda mungkin perlu menambah fungsi rph-edit ke router.js anda
-// router.js:
-// 'rph-edit': (rphId) => import('./guru/rph-edit.js').then(m => m.loadRphEdit(rphId)), 
-// Jika anda belum melakukannya.
