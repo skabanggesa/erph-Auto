@@ -1,44 +1,53 @@
-// jadual-editor.js
+// jadual-editor.js (KOD LENGKAP & DIKEMASKINI)
 
 import { auth, db } from '../config.js';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const HARI = ["Isnin", "Selasa", "Rabu", "Khamis", "Jumaat"];
-let currentJadual = []; // Simpan state jadual semasa
+let currentJadual = []; // Simpan state jadual semasa (Array of session objects)
+let editingIndex = -1;  // -1 untuk menambah, >= 0 untuk mengedit sesi sedia ada
 
 export async function loadJadualEditor() {
     const content = document.getElementById('content');
     content.innerHTML = `
         <div class="guru-section">
             <h2>Urus Jadual Waktu Mingguan</h2>
-            <div id="jadualForm">
+            <button class="btn btn-secondary" onclick="router.navigate('home')" style="margin-bottom: 20px;">Kembali ke Dashboard</button>
+            
+            <div id="jadualGridContainer">
                 <p>Memuatkan jadual semasa...</p>
             </div>
+            
+            <div id="editorFormContainer" style="margin-top: 20px;">
+                <button id="addSessionBtn" class="btn btn-primary">+ Tambah Sesi Baru</button>
+                <div id="sessionEditor" class="session-editor" style="display:none;"></div>
+            </div>
+
             <div id="editorStatus" style="margin-top: 15px;"></div>
-            <button id="addSessionBtn" class="btn" style="margin-top: 20px;">+ Tambah Sesi</button>
-            <button id="saveJadualBtn" class="btn btn-primary" style="margin-top: 20px;">Simpan Perubahan</button>
-            <button class="btn btn-secondary" onclick="router.navigate('home')">Kembali ke Dashboard</button>
         </div>
     `;
 
-    document.getElementById('addSessionBtn').addEventListener('click', () => addSessionToUI({
-        hari: HARI[0], masaMula: "08:00", masaTamat: "09:00", matapelajaran: "", kelas: ""
-    }));
-    document.getElementById('saveJadualBtn').addEventListener('click', saveJadual);
+    document.getElementById('addSessionBtn').addEventListener('click', () => renderEditorForm());
+
+    // Jadikan fungsi global supaya boleh dicetuskan oleh sel jadual yang dijana secara dinamik
+    window.editSession = editSession;
+    window.deleteSession = deleteSession;
+    window.saveSession = saveSession;
+    window.cancelEdit = cancelEdit;
 
     await fetchAndDisplayJadual();
 }
 
 // ----------------------------------------------------------------------
-// Fungsi Pemuatan
+// Fungsi Pemuatan Data dari Firestore
 // ----------------------------------------------------------------------
 
 async function fetchAndDisplayJadual() {
     const user = auth.currentUser;
-    const formDiv = document.getElementById('jadualForm');
+    const gridDiv = document.getElementById('jadualGridContainer');
     
     if (!user) {
-        formDiv.innerHTML = '<p class="error">Sila log masuk untuk mengurus jadual.</p>';
+        gridDiv.innerHTML = '<p class="error">Sila log masuk untuk mengurus jadual.</p>';
         return;
     }
 
@@ -47,18 +56,12 @@ async function fetchAndDisplayJadual() {
         const jadualSnap = await getDoc(jadualRef);
         
         if (jadualSnap.exists()) {
-            // Data sudah ada, muatkan senarai
             currentJadual = jadualSnap.data().senarai || []; 
-            if (currentJadual.length === 0) {
-                 formDiv.innerHTML = '<p>Anda belum mempunyai sebarang sesi. Sila tambah sesi baru.</p>';
-            }
         } else {
-            // Dokumen belum wujud, sediakan array kosong
             currentJadual = []; 
-            formDiv.innerHTML = '<p>Dokumen jadual anda belum wujud. Sila tambah sesi pertama anda.</p>';
         }
 
-        renderJadualUI(currentJadual);
+        renderJadualGrid(currentJadual);
 
     } catch (e) {
         console.error("Ralat memuatkan jadual:", e);
@@ -67,115 +70,229 @@ async function fetchAndDisplayJadual() {
 }
 
 // ----------------------------------------------------------------------
-// Fungsi Render UI
+// Logik Reorganisasi Data & Render Grid
 // ----------------------------------------------------------------------
 
-function renderJadualUI(jadualArray) {
-    const formDiv = document.getElementById('jadualForm');
-    formDiv.innerHTML = ''; 
+function formatJadualData(senaraiSesi) {
+    const jadualGrid = {};
+    const masaUnik = new Set(); 
 
-    if (jadualArray.length === 0) {
-        formDiv.innerHTML = '<p>Sila klik "Tambah Sesi" untuk memulakan.</p>';
-    }
-
-    jadualArray.forEach((sesi, index) => {
-        formDiv.appendChild(createSessionElement(sesi, index));
+    // 1. Kumpulkan sesi mengikut Hari dan Masa
+    senaraiSesi.forEach((sesi, index) => {
+        if (!jadualGrid[sesi.hari]) {
+            jadualGrid[sesi.hari] = {};
+        }
+        // Simpan sesi dan indexnya
+        jadualGrid[sesi.hari][sesi.masaMula] = { sesi: sesi, index: index };
+        masaUnik.add(sesi.masaMula);
     });
+
+    // 2. Susun masa secara kronologi untuk baris
+    const masaSesiTersusun = Array.from(masaUnik).sort();
+
+    return { jadualGrid, masaSesiTersusun };
 }
 
-function createSessionElement(sesi, index) {
-    const div = document.createElement('div');
-    div.className = 'session-entry';
-    div.dataset.index = index;
+function renderJadualGrid(jadualArray) {
+    const gridDiv = document.getElementById('jadualGridContainer');
     
-    // HTML untuk borang editor
-    div.innerHTML = `
-        <hr/>
-        <h4>Sesi ${index + 1}</h4>
+    if (jadualArray.length === 0) {
+        gridDiv.innerHTML = '<p>Anda belum mempunyai sesi pengajaran. Sila tambah sesi baru.</p>';
+        return;
+    }
+
+    const { jadualGrid, masaSesiTersusun } = formatJadualData(jadualArray);
+
+    let html = `
+        <p>Klik pada sesi di bawah untuk mengedit atau memadam. Setelah selesai, klik "Simpan Semua Perubahan".</p>
+        <table class="timetable-grid">
+            <thead>
+                <tr>
+                    <th>Masa</th>
+                    ${HARI.map(hari => `<th>${hari}</th>`).join('')}
+                </tr>
+            </thead>
+            <tbody>
+    `;
+
+    // Bina Baris
+    masaSesiTersusun.forEach((masa) => {
+        html += `<tr><td class="time-cell">${masa}</td>`;
+        
+        // Bina Sel untuk setiap Hari
+        HARI.forEach(hari => {
+            const entry = jadualGrid[hari] ? jadualGrid[hari][masa] : null;
+
+            if (entry) {
+                // Sesi Wujud
+                html += `
+                    <td class="session-cell filled" 
+                        data-index="${entry.index}"
+                        onclick="editSession(${entry.index})">
+                        <span class="subject">${entry.sesi.matapelajaran}</span><br>
+                        <span class="class">${entry.sesi.kelas}</span>
+                    </td>
+                `;
+            } else {
+                // Sesi Tidak Wujud: Sel kosong
+                html += `<td class="session-cell empty"></td>`;
+            }
+        });
+
+        html += `</tr>`;
+    });
+
+    html += `
+            </tbody>
+        </table>
+        <button id="saveAllBtn" class="btn btn-primary" style="margin-top: 20px; margin-right: 10px;">Simpan Semua Perubahan</button>
+        <button id="cancelAllBtn" class="btn btn-secondary" style="margin-top: 20px;">Batal</button>
+    `;
+
+    gridDiv.innerHTML = html;
+    
+    document.getElementById('saveAllBtn').addEventListener('click', saveJadual);
+    document.getElementById('cancelAllBtn').addEventListener('click', fetchAndDisplayJadual);
+}
+
+// ----------------------------------------------------------------------
+// Logik Editor Sesi (Borang)
+// ----------------------------------------------------------------------
+
+function renderEditorForm(sesi = null, index = -1) {
+    editingIndex = index;
+    const editorDiv = document.getElementById('sessionEditor');
+    document.getElementById('addSessionBtn').style.display = 'none';
+    editorDiv.style.display = 'block';
+
+    const defaultSesi = sesi || {
+        hari: HARI[0], masaMula: "08:00", masaTamat: "09:00", matapelajaran: "", kelas: ""
+    };
+
+    editorDiv.innerHTML = `
+        <hr>
+        <h4>${sesi ? 'Edit Sesi' : 'Tambah Sesi Baru'}</h4>
         <div class="form-group">
             <label>Hari:</label>
-            <select data-key="hari" value="${sesi.hari}">
-                ${HARI.map(h => `<option value="${h}" ${sesi.hari === h ? 'selected' : ''}>${h}</option>`).join('')}
+            <select id="editorHari">
+                ${HARI.map(h => `<option value="${h}" ${defaultSesi.hari === h ? 'selected' : ''}>${h}</option>`).join('')}
             </select>
         </div>
         <div class="form-group">
             <label>Masa Mula:</label>
-            <input type="time" data-key="masaMula" value="${sesi.masaMula}" required>
+            <input type="time" id="editorMasaMula" value="${defaultSesi.masaMula}" required>
         </div>
         <div class="form-group">
             <label>Masa Tamat:</label>
-            <input type="time" data-key="masaTamat" value="${sesi.masaTamat}" required>
+            <input type="time" id="editorMasaTamat" value="${defaultSesi.masaTamat}" required>
         </div>
         <div class="form-group">
             <label>Mata Pelajaran:</label>
-            <input type="text" data-key="matapelajaran" value="${sesi.matapelajaran}" required>
+            <input type="text" id="editorMatapelajaran" value="${defaultSesi.matapelajaran}" required>
         </div>
         <div class="form-group">
             <label>Kelas:</label>
-            <input type="text" data-key="kelas" value="${sesi.kelas}" required>
+            <input type="text" id="editorKelas" value="${defaultSesi.kelas}" required>
         </div>
-        <button class="btn btn-danger btn-sm remove-session-btn" data-index="${index}">Buang</button>
+        
+        <button class="btn btn-success" onclick="saveSession()">Simpan Sesi</button>
+        ${index !== -1 ? `<button class="btn btn-danger" onclick="deleteSession(${index})">Padam Sesi Ini</button>` : ''}
+        <button class="btn btn-secondary" onclick="cancelEdit()">Batal</button>
     `;
-
-    // Pasang Event Listeners untuk mengemas kini currentJadual apabila input berubah
-    div.querySelectorAll('input, select').forEach(input => {
-        input.addEventListener('change', (e) => updateCurrentJadual(index, e.target.dataset.key, e.target.value));
-    });
-
-    // Event Listener untuk butang Buang
-    div.querySelector('.remove-session-btn').addEventListener('click', (e) => removeSession(index));
-
-    return div;
 }
 
-function addSessionToUI(defaultSesi) {
-    currentJadual.push(defaultSesi);
-    renderJadualUI(currentJadual); // Render semula keseluruhan UI
+function cancelEdit() {
+    document.getElementById('sessionEditor').style.display = 'none';
+    document.getElementById('addSessionBtn').style.display = 'block';
+    editingIndex = -1;
 }
 
-function updateCurrentJadual(index, key, value) {
-    // Memastikan nombor disimpan sebagai nombor jika perlu, tetapi di sini semua adalah string/masa
-    currentJadual[index][key] = value; 
-}
-
-function removeSession(indexToRemove) {
-    if (confirm('Anda pasti mahu membuang sesi ini?')) {
-        currentJadual = currentJadual.filter((_, index) => index !== indexToRemove);
-        renderJadualUI(currentJadual);
-    }
+function editSession(index) {
+    renderEditorForm(currentJadual[index], index);
 }
 
 // ----------------------------------------------------------------------
-// Fungsi Penyimpanan
+// Logik Manipulasi Data (CRUD pada Array)
+// ----------------------------------------------------------------------
+
+function saveSession() {
+    const statusDiv = document.getElementById('editorStatus');
+    const newSesi = {
+        hari: document.getElementById('editorHari').value,
+        masaMula: document.getElementById('editorMasaMula').value,
+        masaTamat: document.getElementById('editorMasaTamat').value,
+        matapelajaran: document.getElementById('editorMatapelajaran').value.trim(),
+        kelas: document.getElementById('editorKelas').value.trim(),
+    };
+
+    // Semakan validasi
+    if (!newSesi.hari || !newSesi.masaMula || !newSesi.masaTamat || !newSesi.matapelajaran || !newSesi.kelas) {
+        statusDiv.innerHTML = '<p class="error">Sila isi semua medan sesi.</p>';
+        return;
+    }
+    
+    // Semakan Konflik: Hari & Masa Mula yang sama
+    const conflictIndex = currentJadual.findIndex((sesi, idx) => 
+        idx !== editingIndex && 
+        sesi.hari === newSesi.hari && 
+        sesi.masaMula === newSesi.masaMula
+    );
+
+    if (conflictIndex !== -1) {
+        statusDiv.innerHTML = '<p class="error">Ralat: Sudah ada sesi pada hari dan masa mula yang sama. Sila pilih masa mula yang berbeza.</p>';
+        return;
+    }
+
+    if (editingIndex === -1) {
+        // Tambah Sesi Baru
+        currentJadual.push(newSesi);
+    } else {
+        // Edit Sesi Sedia Ada
+        currentJadual[editingIndex] = newSesi;
+    }
+
+    statusDiv.innerHTML = '<p class="success">Sesi berjaya dikemas kini dalam draf tempatan. Sila klik "Simpan Semua Perubahan" untuk menyimpan ke Firebase.</p>';
+    
+    // Tutup borang dan muat semula grid
+    cancelEdit();
+    renderJadualGrid(currentJadual);
+}
+
+function deleteSession(indexToRemove) {
+    if (confirm('Anda pasti mahu membuang sesi ini?')) {
+        currentJadual.splice(indexToRemove, 1);
+        
+        document.getElementById('editorStatus').innerHTML = '<p class="success">Sesi berjaya dibuang dari draf tempatan. Sila klik "Simpan Semua Perubahan" untuk menyimpan ke Firebase.</p>';
+        
+        // Tutup borang dan muat semula grid
+        cancelEdit();
+        renderJadualGrid(currentJadual);
+    }
+}
+
+
+// ----------------------------------------------------------------------
+// Fungsi Penyimpanan ke Firestore
 // ----------------------------------------------------------------------
 
 async function saveJadual() {
     const user = auth.currentUser;
     const statusDiv = document.getElementById('editorStatus');
-    statusDiv.innerHTML = '<p>Menyimpan perubahan...</p>';
+    statusDiv.innerHTML = '<p>Menyimpan perubahan ke Firebase...</p>';
 
     if (!user) {
         statusDiv.innerHTML = '<p class="error">Pengguna tidak log masuk.</p>';
         return;
     }
-    
-    // Semakan Asas: Pastikan semua sesi mempunyai data penting (cth. masa mula/tamat)
-    const isValid = currentJadual.every(sesi => 
-        sesi.hari && sesi.masaMula && sesi.masaTamat && sesi.matapelajaran && sesi.kelas
-    );
-    if (!isValid) {
-         statusDiv.innerHTML = '<p class="error">Ralat: Sila isi semua medan dalam setiap sesi.</p>';
-         return;
-    }
 
-    // Menggunakan setDoc untuk menimpa dokumen sedia ada atau mencipta yang baru
     const jadualRef = doc(db, 'jadual', user.uid);
     try {
         await setDoc(jadualRef, { senarai: currentJadual });
         
-        statusDiv.innerHTML = '<p class="success">Jadual waktu berjaya dikemas kini!</p>';
-        // Reload UI untuk mengesahkan data
-        setTimeout(() => fetchAndDisplayJadual(), 1000); 
+        statusDiv.innerHTML = '<p class="success">Jadual waktu berjaya disimpan ke Firebase!</p>';
+        
+        cancelEdit();
+        setTimeout(() => fetchAndDisplayJadual(), 1500); 
 
     } catch (e) {
         console.error("Ralat menyimpan jadual:", e);
