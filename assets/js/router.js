@@ -10,7 +10,10 @@ const routes = {
     'rph-list': () => import('./guru/rph-list.js').then(m => m.loadRphList()), 
     
     // LALUAN DIBETULKAN: Editor Jadual Waktu
-    'jadual-editor': () => import('./guru/jadual-editor.js').then(m => m.loadJadualEditor()), 
+    'jadual-editor': () => import('./guru/jadual-editor.js').then(m => m.loadJadualEditor()),
+
+    // LALUAN : RPH edit
+    'rph-edit': (rphId) => import('./guru/rph-edit.js').then(m => m.loadRphEdit(rphId)), 
 
     // Laluan Admin (jika diperlukan)
     'admin-home': () => import('./admin/dashboard.js').then(m => m.loadAdminDashboard()),
