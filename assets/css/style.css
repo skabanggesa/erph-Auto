@@ -15,20 +15,23 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* --- Gaya Khusus untuk Butang Log Keluar (Pembetulan) --- */
 #logoutBtn {
-  background: #d32f2f;
+  background: #dc3545; /* Merah untuk tindakan log keluar/bahaya */
   color: white;
   border: none;
-  padding: 8px 16px;
+  padding: 10px 18px; /* Saiz lebih baik */
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold; 
+  transition: background-color 0.2s;
 }
 
 #logoutBtn:hover {
-  background: #b71c1c;
+  background: #c82333; /* Lebih gelap semasa hover */
 }
 
-/* --- Gaya Tambahan untuk Button, Form, dan Guru Section --- */
+/* --- Gaya Asas untuk Komponen Guru/Admin --- */
 .guru-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -78,6 +81,7 @@ body {
     background-color: #c82333;
 }
 
+/* Gaya untuk borang dan sesi entry (digunakan dalam jadual-editor) */
 .form-group {
     margin-bottom: 15px;
 }
@@ -88,29 +92,46 @@ body {
     margin-bottom: 5px;
 }
 
-/* --- Gaya untuk Jadual Waktu Mingguan (Grid View) --- */
+.session-entry {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.session-entry input[type="text"], 
+.session-entry input[type="time"], 
+.session-entry select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+/* --- Gaya untuk Jadual Waktu Mingguan (Grid View - Permintaan Terdahulu) --- */
 
 .timetable-grid {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    table-layout: fixed; /* Memastikan lebar kolum sekata */
+    table-layout: fixed; 
 }
 
 .timetable-grid th, .timetable-grid td {
     border: 1px solid #ddd;
-    padding: 5px; /* Kurangkan padding untuk lebih ruang teks */
+    padding: 5px; 
     text-align: center;
     vertical-align: top;
 }
 
-/* Menambah garisan pemisah yang lebih jelas antara hari (kolum) */
+/* Garisan pemisah antara Hari (Kolum) */
 .timetable-grid th, .timetable-grid td {
     border-right: 2px solid #ccc; 
     border-bottom: 1px solid #ddd;
 }
 .timetable-grid th:last-child, .timetable-grid td:last-child {
-    border-right: 1px solid #ddd; /* Kolum terakhir tidak perlu pemisah yang tebal */
+    border-right: 1px solid #ddd; 
 }
 
 .timetable-grid th {
@@ -122,20 +143,20 @@ body {
 .time-cell {
     background-color: #f8f9fa; 
     font-weight: bold;
-    width: 80px; /* Lebar tetap untuk kolum masa */
+    width: 80px; 
     font-size: 0.9em;
 }
 
 .session-cell {
-    height: 90px; /* Ketinggian seragam untuk memuatkan 3 baris teks */
+    height: 90px; 
     cursor: default;
     transition: background-color 0.1s;
     min-width: 120px; 
     
-    /* PENTING: Menggunakan Flexbox untuk menyusun teks secara menegak */
+    /* Flexbox untuk penyusunan teks 3 baris: Subjek, Kelas, Masa */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Untuk menyusun elemen di atas, tengah, dan bawah */
+    justify-content: space-between; 
     align-items: center;
     text-align: center;
     padding: 5px;
@@ -150,7 +171,6 @@ body {
     background-color: #d0e0ff; 
 }
 
-/* Baris 1: Mata Pelajaran (Subjek) */
 .session-cell .subject {
     font-weight: bold;
     font-size: 1.1em;
@@ -158,14 +178,12 @@ body {
     margin-bottom: 2px;
 }
 
-/* Baris 2: Kelas */
 .session-cell .class {
     font-size: 0.9em;
     color: #343a40; 
     font-weight: 500;
 }
 
-/* Baris 3: Masa Mula - Masa Tamat */
 .session-cell .time {
     font-size: 0.8em;
     color: #6c757d;
@@ -173,7 +191,7 @@ body {
     display: block; 
 }
 
-/* Gaya untuk editor sesi (borang) */
+/* Gaya untuk editor sesi (borang baru) */
 .session-editor {
     padding: 15px;
     border: 1px solid #0d6efd;
@@ -190,4 +208,15 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box; 
+}
+
+/* Gaya untuk status error/success */
+.error {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.success {
+    color: #28a745;
+    font-weight: bold;
 }
