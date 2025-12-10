@@ -2,18 +2,15 @@
 
 // Peta laluan yang memetakan laluan URL ringkas kepada fungsi pemuat modul
 const routes = {
-    // Laluan ini memuatkan UI Dashboard Guru yang mengandungi butang navigasi.
-    // Kita anggap UI Dashboard Guru berada dalam 'guru-dashboard.js'
-    'home': () => import('./guru-dashboard.js').then(m => m.loadGuruDashboard()), 
+    // LALUAN DIBETULKAN: Menambah sub-folder './guru/'
+    'home': () => import('./guru/guru-dashboard.js').then(m => m.loadGuruDashboard()), 
     
-    // Laluan untuk menjana RPH
-    'rph-generator': () => import('./rph-generator.js').then(m => m.loadRphGenerator()),
-
-    // Laluan untuk menyenaraikan RPH (Anggapkan fail ini wujud)
-    'rph-list': () => import('./rph-list.js').then(m => m.loadRphList()), 
+    // LALUAN DIBETULKAN: Mengandaikan modul guru lain juga berada di sub-folder 'guru/'
+    'rph-generator': () => import('./guru/rph-generator.js').then(m => m.loadRphGenerator()),
+    'rph-list': () => import('./guru/rph-list.js').then(m => m.loadRphList()), 
     
-    // LALUAN BAHARU: Editor Jadual Waktu
-    'jadual-editor': () => import('./jadual-editor.js').then(m => m.loadJadualEditor()), 
+    // LALUAN DIBETULKAN: Editor Jadual Waktu
+    'jadual-editor': () => import('./guru/jadual-editor.js').then(m => m.loadJadualEditor()), 
 
     // Laluan Admin (jika diperlukan)
     'admin-home': () => import('./admin/dashboard.js').then(m => m.loadAdminDashboard()),
