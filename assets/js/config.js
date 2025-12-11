@@ -17,18 +17,19 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig); // <<< KRITIKAL: app kini dieksport
+export const app = initializeApp(firebaseConfig); // <<< KRITIKAL: 'app' kini dieksport
+
+// Mendapatkan dan Mengeksport Objek Utama
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 
 // Peta nama matapelajaran → nama fail JSON
-// Dikekalkan sebagai global kerana mungkin digunakan dalam fail lain
-export const MAP_SUBJECT_TO_FILE = {
+export const MAP_SUBJECT_TO_FILE = { // <<< Tukar kepada 'export const'
   // BAHASA
   'BM': 'bm', 
   'Bahasa Melayu': 'bm',
 
-  'BI': 'bi', 
+  'BI': 'bi', // Dikenal pasti digunakan dalam jadual
   'Bahasa Inggeris': 'bi',
 
   // STEM
@@ -68,4 +69,13 @@ export const MAP_SUBJECT_TO_FILE = {
   'Pravocational': 'pra' 
 };
 
-// ... (Jika ada fungsi lain di bawah, letakkannya di sini dan eksport jika perlu)
+// Fungsi untuk dapatkan URL template JSON dari GitHub
+export const getTemplateUrl = (subjectDisplayName) => {
+  const filename = MAP_SUBJECT_TO_FILE[subjectDisplayName]; // <<< Menggunakan MAP_SUBJECT_TO_FILE yang dieksport
+  if (!filename) {
+    console.warn(`Tiada template fail JSON untuk matapelajaran: ${subjectDisplayName}`);
+    return null;
+  }
+  // URL GitHub anda
+  return `https://raw.githubusercontent.com/skabanggesa/erph-Auto/main/templates/rph/${filename}.json`;
+};
