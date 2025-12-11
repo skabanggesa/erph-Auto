@@ -8,48 +8,35 @@ import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase
 const loginForm = document.getElementById('loginForm');
 const errorDiv = document.getElementById('error');
 const logoutBtn = document.getElementById('logoutBtn');
-const navbar = document.getElementById('navbar');
+// Elemen ini digunakan dalam setupDashboardUI, tetapi logik utama kini di router.js
 const userNameEl = document.getElementById('userName');
 const welcomeEl = document.getElementById('welcome');
 
 
-// Helper: Mengalih ke dashboard jika sudah log masuk
+// Helper: Mengalih ke dashboard jika sudah log masuk (Hanya digunakan di index.html)
 function redirectIfLoggedIn() {
   onAuthStateChanged(auth, async (user) => {
     if (user) {
-      // Dapatkan data pengguna dari Firestore
       const userDoc = await getDoc(doc(db, 'users', user.uid));
       
       if (userDoc.exists()) {
         const userData = userDoc.data();
         
-        // Simpan Role dan Nama ke localStorage (Cache)
+        // KRITIKAL: Simpan Role dan Nama ke localStorage
         localStorage.setItem('userRole', userData.role);
-        localStorage.setItem('userName', userData.name);
+        localStorage.setItem('userName', userData.name); // <<< DISIMPAN DI SINI
 
         // HANYA alih ke dashboard.html jika pengguna berada di index.html
         if (window.location.pathname.endsWith('index.html') || loginForm) { 
           window.location.href = 'dashboard.html';
-          return; // Hentikan fungsi
-        }
-        
-        // Setup UI jika berada di dashboard.html (Perlu dipanggil di sini jika ini dieksekusi)
-        if (window.location.pathname.includes('dashboard.html')) {
-             setupDashboardUI();
+          return; 
         }
 
       } else {
         alert('Akaun tidak sah. Sila hubungi pentadbir.');
         signOut(auth);
       }
-    } else {
-        // Setup UI hanya jika logout
-        if (window.location.pathname.includes('dashboard.html')) {
-            // Sesi tamat. router.js akan mengambil alih dan memaparkan mesej "Sesi tamat"
-        } else {
-            // Di index.html, tiada tindakan.
-        }
-    }
+    } 
   });
 }
 
@@ -69,9 +56,24 @@ if (loginForm) {
     const password = loginForm.password.value;
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const result = await signInWithEmailAndPassword(auth, email, password);
       
-      // onAuthStateChanged akan mengendalikan fetching role dan pengalihan ke dashboard.html
+      // Setelah log masuk berjaya, lakukan fetching role dan pengalihan:
+      const user = result.user;
+      const userDoc = await getDoc(doc(db, 'users', user.uid));
+      
+      if (userDoc.exists()) {
+          const userData = userDoc.data();
+          
+          // KRITIKAL: Simpan role dan nama ke localStorage
+          localStorage.setItem('userRole', userData.role);
+          localStorage.setItem('userName', userData.name); // <<< DISIMPAN DI SINI
+          
+          window.location.href = 'dashboard.html'; // Alih ke dashboard
+      } else {
+          alert('Data peranan pengguna tidak dijumpai. Sila hubungi pentadbir.');
+          await signOut(auth);
+      }
 
     } catch (err) {
       let msg = 'Ralat log masuk.';
@@ -91,25 +93,4 @@ if (logoutBtn) {
     localStorage.removeItem('userName');
     window.location.href = 'index.html';
   });
-}
-
-// Setup dashboard UI selepas login (dipanggil oleh router.js jika diperlukan)
-export function setupDashboardUI() { // <<< PENTING: Eksport fungsi ini jika modul lain menggunakannya
-  if (navbar) {
-    const role = localStorage.getItem('userRole');
-    const name = localStorage.getItem('userName');
-    
-    if (name) userNameEl.textContent = name;
-    
-    // Tukar warna mengikut role
-    if (role === 'admin') {
-      welcomeEl.style.color = '#d32f2f';
-    } else {
-      welcomeEl.style.color = '#1976d2';
-    }
-    navbar.style.display = 'flex';
-    navbar.style.justifyContent = 'space-between';
-    navbar.style.padding = '15px';
-    navbar.style.background = '#f5f5f5';
-  }
 }
