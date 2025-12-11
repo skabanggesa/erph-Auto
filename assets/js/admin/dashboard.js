@@ -1,7 +1,6 @@
-// assets/js/admin/dashboard.js (DIKEMASKINI: Import navigate DIBUANG)
+// assets/js/admin/dashboard.js (KOD LENGKAP & DIKEMASKINI)
 
 import { auth, db } from '../config.js'; 
-
 import { 
     collection, query, where, getDocs, 
     doc, getDoc as getFirestoreDoc 
@@ -23,111 +22,51 @@ export async function loadAdminDashboard() {
     content.innerHTML = `
         <div class="admin-section">
             <h2>Dashboard Pentadbir</h2>
-            <p>Selamat datang, Pentadbir! Sila semak RPH yang telah dihantar oleh guru.</p>
+            <p>Selamat datang, Pentadbir! Sila pilih tindakan di bawah.</p>
             
             <div id="admin-actions" style="margin-top: 20px;">
                 <button id="viewRphBtn" class="btn btn-primary">1. Semak RPH Guru</button>
                 <button id="manageUsersBtn" class="btn btn-secondary" style="margin-left: 10px;">2. Urus Pengguna (Akaun)</button>
+                <button id="viewAnalyticsBtn" class="btn btn-secondary" style="margin-left: 10px;">3. Analisis & Laporan</button>
             </div>
             
-            <div id="admin-content-area" style="margin-top: 30px;">
-                </div>
+            <div id="adminContent" style="margin-top: 30px;">
+                <p>Sila klik butang di atas untuk memulakan tugas pentadbiran.</p>
+            </div>
         </div>
     `;
 
-    // Pasang Event Listeners
-    document.getElementById('viewRphBtn').addEventListener('click', loadRphReviewList);
+    // ------------------------------------------------------------
+    // 🔑 KRITIKAL: EVENT LISTENERS
+    // ------------------------------------------------------------
+    
+    // 1. Urus Pengguna (Memanggil fungsi baharu dari teachers.js)
     document.getElementById('manageUsersBtn').addEventListener('click', () => {
-        document.getElementById('admin-content-area').innerHTML = '<p>Fungsi Urus Pengguna akan datang.</p>';
+        document.getElementById('adminContent').innerHTML = '<p>Memuatkan modul Urus Pengguna...</p>';
+        // IMPORT DYNAMIC: Panggil loadTeachersPage dari teachers.js
+        import('./teachers.js').then(m => m.loadTeachersPage());
+    });
+    
+    // 2. Semak RPH Guru (Anggap anda ada rph-list.js)
+    document.getElementById('viewRphBtn').addEventListener('click', () => {
+        document.getElementById('adminContent').innerHTML = '<p>Memuatkan senarai RPH...</p>';
+        // Gantikan ini dengan modul RPH sebenar anda, jika ia berbeza
+        import('./rph-list.js').then(m => m.loadRphListPage()); 
     });
 
-    // Muatkan fungsi utama (Semak RPH) secara automatik
-    await loadRphReviewList(); 
+    // 3. Analisis & Laporan (Placeholder)
+    document.getElementById('viewAnalyticsBtn').addEventListener('click', () => {
+        const contentArea = document.getElementById('adminContent');
+        contentArea.innerHTML = '<p>Ciri Analisis & Laporan akan datang...</p>';
+        // import('./analytics.js').then(m => m.loadAnalytics());
+    });
 
-    // Jadikan fungsi global untuk digunakan oleh butang di dalam grid
-    window.adminReviewRph = adminReviewRph;
+    // Pilihan: Boleh tambahkan logik untuk memuatkan senarai RPH secara lalai
+    // document.getElementById('viewRphBtn').click();
 }
 
-// -------------------------------------------------------------
-// FUNGSI: Muatkan Senarai RPH yang Perlu Disemak
-// -------------------------------------------------------------
-
-async function loadRphReviewList() {
-    const contentArea = document.getElementById('admin-content-area');
-    contentArea.innerHTML = '<p>Mencari RPH yang telah dihantar oleh guru...</p>';
-
-    try {
-        const q = query(collection(db, 'rph'), where('status', '==', 'submitted'));
-        const querySnapshot = await getDocs(q);
-
-        let html = '<h3>RPH Menunggu Semakan</h3>';
-
-        if (querySnapshot.empty) {
-            html += '<p>Tiada RPH yang dihantar untuk semakan buat masa ini.</p>';
-            contentArea.innerHTML = html;
-            return;
-        }
-
-        html += `
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Tarikh</th>
-                        <th>Guru</th>
-                        <th>Kelas</th>
-                        <th>Mata Pelajaran</th>
-                        <th>Status</th>
-                        <th>Tindakan</th>
-                    </tr>
-                </thead>
-                <tbody>
-        `;
-
-        const guruPromises = [];
-        querySnapshot.forEach(docSnapshot => {
-            const rph = docSnapshot.data();
-            rph.id = docSnapshot.id;
-            
-            const userRef = doc(db, 'users', rph.uid);
-            guruPromises.push(getFirestoreDoc(userRef).then(userSnap => {
-                const namaGuru = userSnap.exists() ? userSnap.data().name || 'Tidak Diketahui' : 'Tidak Diketahui';
-                
-                const tarikhFormat = rph.tarikh.toDate ? rph.tarikh.toDate().toLocaleDateString('ms-MY') : rph.tarikh;
-                
-                return `
-                    <tr>
-                        <td>${tarikhFormat}</td>
-                        <td>${namaGuru}</td>
-                        <td>${rph.kelas}</td>
-                        <td>${rph.matapelajaran}</td>
-                        <td class="status-submitted">${rph.status.toUpperCase()}</td>
-                        <td>
-                            <button class="btn btn-primary btn-sm" onclick="adminReviewRph('${rph.id}')">Semak</button>
-                        </td>
-                    </tr>
-                `;
-            }));
-        });
-
-        const rows = await Promise.all(guruPromises);
-        html += rows.join('');
-        html += '</tbody></table>';
-        
-        contentArea.innerHTML = html;
-        
-
-    } catch (e) {
-        console.error("Ralat memuatkan senarai RPH:", e);
-        contentArea.innerHTML = '<p class="error">Gagal memuatkan senarai RPH. Sila semak konsol.</p>';
-    }
-}
-
-// -------------------------------------------------------------
+// ------------------------------------------------------------
 // FUNGSI: Logik Semakan RPH (Placeholder)
-// -------------------------------------------------------------
-function adminReviewRph(rphId) {
-    alert(`Membuka RPH ID: ${rphId} untuk semakan. Fungsi ini akan datang!`);
-    
-    // Guna fungsi global yang ditakrifkan oleh router.js
-    // router.navigate('admin-review-rph', rphId);
-}
+// ------------------------------------------------------------
+// Nota: Anda mungkin mahu memindahkan fungsi ini ke rph-list.js
+// function adminReviewRph(rphId) { ... }
