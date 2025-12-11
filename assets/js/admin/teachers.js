@@ -1,33 +1,38 @@
-// assets/js/admin/teachers.js (KOD LENGKAP & DIKEMASKINI: Tukar Padam ke Nyahaktif)
+// assets/js/admin/teachers.js (KOD LENGKAP & DIKEMASKINI: UI Kemas & Fungsi Nyahaktif/Aktif Semula)
 
 import { auth, db } from '../config.js';
 import { 
   createUserWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { 
-  collection, addDoc, getDocs, doc, updateDoc, query, where, getDoc 
+  collection, addDoc, getDocs, doc, updateDoc, query, where
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 
 export async function loadTeachersPage() {
-  const content = document.getElementById('adminContent');
-  content.innerHTML = `
+  const adminContent = document.getElementById('adminContent');
+  adminContent.innerHTML = `
     <div class="admin-section">
       <h2>Daftar Guru Baru</h2>
+      
       <div class="form-group">
-        <label>Nama</label>
-        <input type="text" id="teacherName" placeholder="Nama penuh" />
+        <label for="teacherName">Nama</label>
+        <input type="text" id="teacherName" placeholder="Nama penuh" class="form-control" />
       </div>
       <div class="form-group">
-        <label>Emel</label>
-        <input type="email" id="teacherEmail" placeholder="emel@guru.edu.my" />
+        <label for="teacherEmail">Emel</label>
+        <input type="email" id="teacherEmail" placeholder="emel@guru.edu.my" class="form-control" />
       </div>
       <div class="form-group">
-        <label>Kata Laluan</label>
-        <input type="password" id="teacherPassword" placeholder="Minimum 6 aksara" />
+        <label for="teacherPassword">Kata Laluan</label>
+        <input type="password" id="teacherPassword" placeholder="Minimum 6 aksara" class="form-control" />
       </div>
-      <button id="btnRegisterTeacher" class="btn btn-primary">Daftar Guru</button>
-      <div id="teacherError" style="color:red; margin-top:10px;"></div>
+      
+      <div class="admin-buttons">
+          <button id="btnRegisterTeacher" class="btn btn-primary">Daftar Guru</button>
+      </div>
+      
+      <div id="teacherError" class="status-message error" style="margin-top:10px;"></div>
 
       <h3 style="margin-top: 30px;">Senarai Guru Berdaftar</h3>
       <div class="table-container">
@@ -40,14 +45,19 @@ export async function loadTeachersPage() {
               <th>Tindakan</th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody>
+              <tr><td colspan="4">Memuatkan data guru...</td></tr>
+          </tbody>
         </table>
       </div>
+      <div id="statusUpdate" class="status-message" style="margin-top: 15px;"></div>
     </div>
   `;
 
-  // Daftar guru
+  // Lampirkan Event Listener
   document.getElementById('btnRegisterTeacher').addEventListener('click', registerTeacher);
+  
+  // Muatkan senarai guru (Fungsi ini akan menentukan sama ada senarai dipaparkan)
   await loadTeachersList();
 }
 
@@ -73,12 +83,12 @@ async function registerTeacher() {
   try {
     errorDiv.textContent = 'Mendaftar...';
     
-    // Cipta pengguna Firebase Authentication
+    // 1. Cipta pengguna Firebase Authentication
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
-    // Simpan ke Firestore (KRITIKAL: Tambah status: 'active')
-    await addDoc(collection(db, 'users'), {
+    // 2. Simpan ke Firestore (KRITIKAL: Dokumen ini yang diperlukan oleh loadTeachersList)
+    const userDocRef = await addDoc(collection(db, 'users'), {
       uid: user.uid,
       name: name,
       email: email,
@@ -88,70 +98,85 @@ async function registerTeacher() {
     });
 
     errorDiv.textContent = 'Guru berjaya didaftar!';
+    
+    // Kosongkan borang
     document.getElementById('teacherName').value = '';
     document.getElementById('teacherEmail').value = '';
     document.getElementById('teacherPassword').value = '';
+    
+    // Muat semula senarai
     await loadTeachersList();
+    
   } catch (err) {
-    console.error(err);
+    console.error("Ralat Pendaftaran:", err);
     if (err.code === 'auth/email-already-in-use') {
       errorDiv.textContent = 'Emel sudah digunakan.';
     } else {
-      errorDiv.textContent = 'Ralat: ' + err.message;
+      errorDiv.textContent = 'Ralat: Gagal mendaftar guru. ' + err.message;
     }
   }
 }
 
 /**
- * Memuatkan dan memaparkan senarai pengguna (guru).
+ * Memuatkan dan memaparkan senarai pengguna (guru) dari Firestore.
  */
 async function loadTeachersList() {
-  // Hanya ambil pengguna dengan role 'guru'. Kita akan tapis 'status' di klien.
-  const q = query(collection(db, 'users'), where('role', '==', 'guru'));
-  const querySnapshot = await getDocs(q);
-  const tbody = document.querySelector('#teachersTable tbody');
-  tbody.innerHTML = '';
-
-  querySnapshot.forEach(doc => {
-    const data = doc.data();
-    const docId = doc.id;
-    const status = data.status || 'active'; // Default kepada active jika tiada field
-    const isDiasabled = status === 'disabled';
+    const tbody = document.querySelector('#teachersTable tbody');
+    tbody.innerHTML = '<tr><td colspan="4">Memuatkan data guru...</td></tr>';
     
-    const row = tbody.insertRow();
-    row.innerHTML = `
-      <td>${data.name}</td>
-      <td>${data.email}</td>
-      <td>
-        <span style="font-weight: bold; color: ${isDiasabled ? '#d32f2f' : '#1976d2'}">
-          ${isDiasabled ? 'Nyahaktif' : 'Aktif'}
-        </span>
-      </td>
-      <td>
-        <button 
-          class="btn ${isDiasabled ? 'btn-primary' : 'btn-delete'}" 
-          data-docid="${docId}" 
-          data-current-status="${status}">
-          ${isDiasabled ? 'Aktifkan Semula' : 'Nyahaktifkan'}
-        </button>
-      </td>
-    `;
-  });
+    try {
+        // Query hanya dokumen pengguna dengan role 'guru' dalam koleksi 'users'
+        const q = query(collection(db, 'users'), where('role', '==', 'guru'));
+        const querySnapshot = await getDocs(q);
+        
+        let htmlRows = '';
+        
+        querySnapshot.forEach(doc => {
+            const data = doc.data();
+            const docId = doc.id; // ID Dokumen Firestore
+            const status = data.status || 'active'; // Default kepada active jika field tiada
+            const isDiasabled = status === 'disabled';
+            
+            htmlRows += `
+                <tr>
+                    <td>${data.name || 'Tiada Nama'}</td>
+                    <td>${data.email}</td>
+                    <td>
+                        <span style="font-weight: bold; color: ${isDiasabled ? '#d32f2f' : '#1976d2'}">
+                            ${isDiasabled ? 'Nyahaktif' : 'Aktif'}
+                        </span>
+                    </td>
+                    <td>
+                        <button 
+                            class="btn ${isDiasabled ? 'btn-primary' : 'btn-delete'}" 
+                            data-docid="${docId}" 
+                            data-current-status="${status}">
+                            ${isDiasabled ? 'Aktifkan Semula' : 'Nyahaktifkan'}
+                        </button>
+                    </td>
+                </tr>
+            `;
+        });
+        
+        tbody.innerHTML = htmlRows || '<tr><td colspan="4">Tiada akaun guru berdaftar ditemui dalam Firestore.</td></tr>';
 
-  // Tambah event listener untuk Nyahaktif/Aktif Semula
-  document.querySelectorAll('.btn-delete, .btn-primary').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const docId = e.target.dataset.docid;
-      const currentStatus = e.target.dataset.currentStatus;
-      toggleTeacherStatus(docId, currentStatus);
-    });
-  });
+        // Tambah event listener untuk Nyahaktif/Aktif Semula
+        document.querySelectorAll('#teachersTable button').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const docId = e.target.dataset.docid;
+                const currentStatus = e.target.dataset.currentStatus;
+                toggleTeacherStatus(docId, currentStatus);
+            });
+        });
+
+    } catch (err) {
+        console.error("Ralat memuatkan senarai pengguna:", err);
+        tbody.innerHTML = `<tr><td colspan="4" class="error">Gagal memuatkan senarai: ${err.message}. Pastikan Peraturan Keselamatan anda betul.</td></tr>`;
+    }
 }
 
 /**
- * Menukar status pengguna antara 'active' dan 'disabled'.
- * Ini hanya mengubah dokumen Firestore, tetapi Peraturan Keselamatan anda
- * perlu menyekat pengguna 'disabled' daripada mengakses data (cth. RPH, Jadual).
+ * Menukar status pengguna antara 'active' dan 'disabled' dalam Firestore.
  * @param {string} docId - ID dokumen Firestore (Bukan UID Auth)
  * @param {string} currentStatus - Status semasa ('active' atau 'disabled')
  */
@@ -159,20 +184,25 @@ async function toggleTeacherStatus(docId, currentStatus) {
   const newStatus = currentStatus === 'active' ? 'disabled' : 'active';
   const actionText = newStatus === 'disabled' ? 'nyahaktifkan' : 'aktifkan semula';
 
-  if (!confirm(`Adakah anda pasti mahu ${actionText} akaun ini?`)) return;
+  if (!confirm(`Adakah anda pasti mahu ${actionText} akaun ini? Ini akan menyekat akses mereka kepada sistem RPH/Jadual jika Peraturan Keselamatan anda telah dikemas kini.`)) return;
 
   const docRef = doc(db, 'users', docId);
   try {
     // UPDATE Firestore document
     await updateDoc(docRef, {
       status: newStatus,
-      // Pilihan: anda juga boleh membuang role/menetapkan role khas jika status tidak cukup
-      // role: newStatus === 'disabled' ? 'disabled' : 'guru' 
     });
     
-    alert(`Guru berjaya di${actionText} (status Firestore dikemas kini).`);
+    // Berikan maklum balas
+    const statusDiv = document.getElementById('statusUpdate');
+    statusDiv.innerHTML = `<p class="success">Guru berjaya di${actionText}.</p>`;
+    
+    // Muat semula senarai
     await loadTeachersList();
+    
   } catch (err) {
-    alert('Gagal mengemas kini status: ' + err.message);
+    const statusDiv = document.getElementById('statusUpdate');
+    statusDiv.innerHTML = `<p class="error">Gagal mengemas kini status: ${err.message}</p>`;
+    console.error("Ralat Toggle Status:", err);
   }
 }
