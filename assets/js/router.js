@@ -1,4 +1,10 @@
-// assets/js/router.js (KOD LENGKAP: Menambah export navigate dan membetulkan logik initial load)
+// assets/js/router.js (KOD LENGKAP & STABIL)
+
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { app, db } from './config.js'; // KRITIKAL: Import 'app' & 'db'
+
+const firebaseAuth = getAuth(app); 
 
 // Map routes to module files and loading function
 const routes = {
@@ -14,23 +20,20 @@ const routes = {
     
     // Laluan Admin
     'admin-home': { file: 'admin/dashboard.js', func: 'loadAdminDashboard' },
-    // Anda akan tambah 'admin-review-rph' di sini nanti
 };
 
 /**
  * Handles navigation by dynamically importing the required module.
- * @param {string} routeName - The name of the route to navigate to.
- * @param {*} [param] - Optional parameter to pass to the loading function.
  */
-export async function navigate(routeName, param) { // <--- KRITIKAL: FUNGSI INI KINI DIEKSPORT
+export async function navigate(routeName, param) { 
     const role = localStorage.getItem('userRole');
     const contentDiv = document.getElementById('content');
     
     let key = routeName;
     
-    // Pilihan: Guna 'home' sebagai laluan default berdasarkan peranan
+    // Default laluan selepas log masuk
     if (routeName === 'home') {
-        key = role === 'admin' ? 'admin-home' : 'guru-jadual'; // Guru bermula di jadual editor
+        key = role === 'admin' ? 'admin-home' : 'guru-jadual'; 
     }
     
     const route = routes[key];
@@ -41,10 +44,8 @@ export async function navigate(routeName, param) { // <--- KRITIKAL: FUNGSI INI 
     }
 
     try {
-        // Laluan adalah relatif kepada folder 'assets/js/'
         const module = await import(`./${route.file}`);
 
-        // Panggil fungsi pemuat modul
         if (typeof module[route.func] === 'function') {
             await module[route.func](param);
         } else {
@@ -58,38 +59,58 @@ export async function navigate(routeName, param) { // <--- KRITIKAL: FUNGSI INI 
     }
 }
 
-// KRITIKAL: Pendedahan fungsi navigate secara global untuk onclick/inline-HTML
+// Pendedahan fungsi navigate secara global
 window.router = {
     navigate: navigate
 };
 
 
 // Logik pemuatan awal selepas DOM dimuatkan
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
     // Hanya berjalan jika kita berada di dashboard.html
     if (!window.location.pathname.includes('dashboard.html')) return;
 
-    const role = localStorage.getItem('userRole');
     const contentDiv = document.getElementById('content');
     const roleStyle = document.getElementById('role-style');
+    const navbar = document.getElementById('navbar');
+    
+    contentDiv.innerHTML = '<p class="guru-section">Memuatkan sesi...</p>';
+    navbar.style.display = 'none';
 
-    if (!role) {
-        contentDiv.innerHTML = '<p>Sesi tamat. Sila log masuk semula.</p>';
-        return;
-    }
+    // KRITIKAL: Tunggu sehingga status pengesahan Firebase dipastikan
+    onAuthStateChanged(firebaseAuth, async (user) => { // Tambah 'async' di sini
+        if (user) {
+            let role = localStorage.getItem('userRole');
+            
+            // FALLBACK: Jika role hilang dari localStorage walaupun sesi Firebase sah
+            if (!role) {
+                try {
+                    const userDoc = await getDoc(doc(db, 'users', user.uid));
+                    if (userDoc.exists()) {
+                        role = userDoc.data().role;
+                        localStorage.setItem('userRole', role); // Simpan semula di localStorage
+                    }
+                } catch (e) {
+                    console.error("Gagal membaca role dari Firestore sebagai fallback:", e);
+                }
+            }
 
-    // Muatkan CSS mengikut role (jika anda masih menggunakan logik ini di router.js)
-    // Sila pastikan file 'guru.css' wujud
-    roleStyle.href = role === 'admin' 
-      ? 'assets/css/admin.css' 
-      : 'assets/css/guru.css';
+            if (role) {
+                // Sesi sah & Role ada
+                navbar.style.display = 'flex';
+                roleStyle.href = role === 'admin' 
+                    ? 'assets/css/admin.css' 
+                    : 'assets/css/guru.css';
+                
+                navigate('home');
+            } else {
+                // Sesi sah, tetapi peranan tidak dijumpai di mana-mana
+                contentDiv.innerHTML = '<div class="guru-section"><p class="error">Sesi sah, tetapi peranan tidak dapat ditentukan. Sila <a href="index.html">log masuk semula</a>.</p></div>';
+            }
 
-    // Mulakan navigasi berdasarkan peranan
-    if (role === 'admin') {
-        navigate('admin-home');
-    } else if (role === 'guru') {
-        navigate('guru-jadual'); // Mulakan dengan jadual editor (laluan yang sudah kita bangunkan)
-    } else {
-        contentDiv.innerHTML = '<p>Peranan tidak dikenali.</p>';
-    }
+        } else {
+            // Pengguna tidak log masuk atau sesi tamat
+            contentDiv.innerHTML = '<div class="guru-section"><p class="error">Sesi tamat. Sila <a href="index.html">log masuk semula</a>.</p></div>';
+        }
+    });
 });
