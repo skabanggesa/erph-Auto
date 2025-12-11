@@ -1,4 +1,4 @@
-// assets/js/admin/teachers.js (KOD LENGKAP & DIKEMASKINI: UI Kemas & Fungsi Nyahaktif/Aktif Semula)
+// assets/js/admin/teachers.js (KOD LENGKAP & DIKEMASKINI: UI Kemas, Tukar Padam ke Nyahaktif)
 
 import { auth, db } from '../config.js';
 import { 
@@ -54,16 +54,11 @@ export async function loadTeachersPage() {
     </div>
   `;
 
-  // Lampirkan Event Listener
   document.getElementById('btnRegisterTeacher').addEventListener('click', registerTeacher);
-  
-  // Muatkan senarai guru (Fungsi ini akan menentukan sama ada senarai dipaparkan)
   await loadTeachersList();
 }
 
-/**
- * Mendaftar akaun guru baharu ke Firebase Auth dan Firestore.
- */
+
 async function registerTeacher() {
   const name = document.getElementById('teacherName').value.trim();
   const email = document.getElementById('teacherEmail').value.trim();
@@ -74,7 +69,6 @@ async function registerTeacher() {
     errorDiv.textContent = 'Sila isi semua medan.';
     return;
   }
-
   if (password.length < 6) {
     errorDiv.textContent = 'Kata laluan mesti sekurang-kurangnya 6 aksara.';
     return;
@@ -87,24 +81,22 @@ async function registerTeacher() {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
-    // 2. Simpan ke Firestore (KRITIKAL: Dokumen ini yang diperlukan oleh loadTeachersList)
-    const userDocRef = await addDoc(collection(db, 'users'), {
+    // 2. Simpan ke Firestore
+    await addDoc(collection(db, 'users'), {
       uid: user.uid,
       name: name,
       email: email,
       role: 'guru',
-      status: 'active', // <<< DEFAULT STATUS BARU
+      status: 'active',
       createdAt: new Date()
     });
 
     errorDiv.textContent = 'Guru berjaya didaftar!';
     
-    // Kosongkan borang
     document.getElementById('teacherName').value = '';
     document.getElementById('teacherEmail').value = '';
     document.getElementById('teacherPassword').value = '';
     
-    // Muat semula senarai
     await loadTeachersList();
     
   } catch (err) {
@@ -117,15 +109,12 @@ async function registerTeacher() {
   }
 }
 
-/**
- * Memuatkan dan memaparkan senarai pengguna (guru) dari Firestore.
- */
+
 async function loadTeachersList() {
     const tbody = document.querySelector('#teachersTable tbody');
     tbody.innerHTML = '<tr><td colspan="4">Memuatkan data guru...</td></tr>';
     
     try {
-        // Query hanya dokumen pengguna dengan role 'guru' dalam koleksi 'users'
         const q = query(collection(db, 'users'), where('role', '==', 'guru'));
         const querySnapshot = await getDocs(q);
         
@@ -133,8 +122,8 @@ async function loadTeachersList() {
         
         querySnapshot.forEach(doc => {
             const data = doc.data();
-            const docId = doc.id; // ID Dokumen Firestore
-            const status = data.status || 'active'; // Default kepada active jika field tiada
+            const docId = doc.id;
+            const status = data.status || 'active'; 
             const isDiasabled = status === 'disabled';
             
             htmlRows += `
@@ -171,33 +160,24 @@ async function loadTeachersList() {
 
     } catch (err) {
         console.error("Ralat memuatkan senarai pengguna:", err);
-        tbody.innerHTML = `<tr><td colspan="4" class="error">Gagal memuatkan senarai: ${err.message}. Pastikan Peraturan Keselamatan anda betul.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="4" class="error">Gagal memuatkan senarai: ${err.message}.</td></tr>`;
     }
 }
 
-/**
- * Menukar status pengguna antara 'active' dan 'disabled' dalam Firestore.
- * @param {string} docId - ID dokumen Firestore (Bukan UID Auth)
- * @param {string} currentStatus - Status semasa ('active' atau 'disabled')
- */
+
 async function toggleTeacherStatus(docId, currentStatus) {
   const newStatus = currentStatus === 'active' ? 'disabled' : 'active';
   const actionText = newStatus === 'disabled' ? 'nyahaktifkan' : 'aktifkan semula';
 
-  if (!confirm(`Adakah anda pasti mahu ${actionText} akaun ini? Ini akan menyekat akses mereka kepada sistem RPH/Jadual jika Peraturan Keselamatan anda telah dikemas kini.`)) return;
+  if (!confirm(`Adakah anda pasti mahu ${actionText} akaun ini?`)) return;
 
   const docRef = doc(db, 'users', docId);
   try {
-    // UPDATE Firestore document
-    await updateDoc(docRef, {
-      status: newStatus,
-    });
+    await updateDoc(docRef, { status: newStatus });
     
-    // Berikan maklum balas
     const statusDiv = document.getElementById('statusUpdate');
     statusDiv.innerHTML = `<p class="success">Guru berjaya di${actionText}.</p>`;
     
-    // Muat semula senarai
     await loadTeachersList();
     
   } catch (err) {
