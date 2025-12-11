@@ -1,121 +1,135 @@
-/* assets/css/admin.css (GAYA ADMIN DIKEMASKINI) */
-
-/* Import semua gaya asas dari style.css untuk konsistensi */
-/* Jika @import tidak berfungsi kerana laluan relatif, anda boleh salin/tampal gaya asas dari style.css di sini */
-/* Kami gunakan gaya yang berasingan di sini untuk memudahkan pengurusan */
-
-
-/* --- Gaya Asas (Salinan dari style.css untuk kestabilan) --- */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9f9f9;
-}
-
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 25px;
+/* Gaya khusus admin */
+.admin-section {
+  max-width: 1000px;
+  margin: 20px auto;
   background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
 }
 
-#logoutBtn {
-  background: #dc3545; 
-  color: white;
+.admin-section h2, .admin-section h3 {
+  color: #d32f2f; /* Merah untuk tajuk Admin */
+  margin-top: 0;
+  border-bottom: 2px solid #ffebee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* --- Gaya Borang (Untuk Daftar Guru) --- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Penting untuk padding tidak melebihi lebar 100% */
+    font-size: 16px;
+}
+
+.admin-buttons {
+    margin-top: 20px;
+}
+
+/* --- Gaya Status Message --- */
+.status-message {
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.status-message.error {
+    background-color: #fce4e4;
+    color: #c62828;
+    border: 1px solid #c62828;
+}
+
+.status-message.success {
+    background-color: #e8f5e9;
+    color: #388e3c;
+    border: 1px solid #388e3c;
+}
+
+
+/* --- Gaya Jadual (Senarai Guru) --- */
+.table-container {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px; /* Supaya kelihatan lebih kemas pada skrin kecil */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #ffebee; /* Warna latar belakang Admin */
+  color: #c62828;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Kolum Status */
+td:nth-child(3) {
+    font-weight: bold;
+}
+td:nth-child(4) {
+    /* Kolum Tindakan */
+    white-space: nowrap; /* Elakkan butang pecah ke baris baru */
+}
+
+
+/* --- Gaya Butang (Butang Nyahaktif/Aktif Semula) --- */
+.btn {
+  padding: 8px 15px; /* Saiz butang yang lebih baik */
   border: none;
-  padding: 10px 18px; 
   border-radius: 4px;
   cursor: pointer;
-  font-weight: bold; 
+  font-size: 14px;
+  margin-right: 5px;
   transition: background-color 0.2s;
 }
 
-#logoutBtn:hover {
-  background: #c82333; 
-}
-
-
-/* --- Gaya Admin Spesifik --- */
-.admin-section {
-    max-width: 1200px; /* Lebar yang lebih besar untuk paparan admin */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Gaya Button (Konsisten dengan style.css) */
-.btn {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.1s;
-}
-
 .btn-primary {
-    background-color: #0d6efd;
-    color: white;
+  background: #1976d2; /* Biru: Untuk Daftar / Aktif Semula */
+  color: white;
 }
+
 .btn-primary:hover {
-    background-color: #0b5ed7;
+  background: #1565c0;
+}
+
+.btn-delete {
+  background: #d32f2f; /* Merah: Untuk Nyahaktifkan */
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #b71c1c;
 }
 
 .btn-secondary {
     background-color: #6c757d;
     color: white;
-}
-.btn-secondary:hover {
-    background-color: #5c636a;
-}
-
-.btn-sm { /* Untuk butang 'Semak' di jadual */
-    padding: 5px 10px;
-    font-size: 0.85em;
-    font-weight: normal;
-}
-
-
-/* --- Gaya Jadual Data RPH --- */
-.data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.data-table th, .data-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-.data-table th {
-    background-color: #e9ecef; /* Latar belakang header yang lebih terang */
-    color: #495057;
-    font-weight: bold;
-}
-
-.data-table tbody tr:hover {
-    background-color: #f8f9fa;
-}
-
-/* Status: submitted (Menunggu Semakan) */
-.status-submitted {
-    font-weight: bold;
-    color: #ffc107; /* Kuning/Jingga */
-}
-
-/* Gaya untuk status error/success */
-.error {
-    color: #dc3545;
-    font-weight: bold;
-}
-
-.success {
-    color: #28a745;
-    font-weight: bold;
 }
