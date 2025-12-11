@@ -2,23 +2,18 @@
 
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-import { app, db } from './config.js'; // KRITIKAL: Import 'app' & 'db'
+import { app, db } from './config.js'; // PASTIKAN 'app' & 'db' dieksport dari config.js
 
 const firebaseAuth = getAuth(app); 
 
-// Map routes to module files and loading function
+// Map routes
 const routes = {
-    // Laluan Log Masuk
     'login': { file: 'auth.js', func: 'loadLoginPage' },
-    
-    // Laluan Guru
-    'guru-home': { file: 'guru/dashboard.js', func: 'loadGuruDashboard' },
+    'guru-home': { file: 'guru/dashboard.js', func: 'loadGuruDashboard' }, 
     'guru-jadual': { file: 'guru/jadual-editor.js', func: 'loadJadualEditor' },
     'guru-rph-generator': { file: 'guru/rph-generator.js', func: 'loadRphGenerator' },
     'guru-rph-history': { file: 'guru/rph-history.js', func: 'loadRphHistory' },
     'guru-rph-edit': { file: 'guru/rph-edit.js', func: 'loadRphEdit' },
-    
-    // Laluan Admin
     'admin-home': { file: 'admin/dashboard.js', func: 'loadAdminDashboard' },
 };
 
@@ -31,7 +26,6 @@ export async function navigate(routeName, param) {
     
     let key = routeName;
     
-    // Default laluan selepas log masuk
     if (routeName === 'home') {
         key = role === 'admin' ? 'admin-home' : 'guru-jadual'; 
     }
@@ -78,7 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navbar.style.display = 'none';
 
     // KRITIKAL: Tunggu sehingga status pengesahan Firebase dipastikan
-    onAuthStateChanged(firebaseAuth, async (user) => { // Tambah 'async' di sini
+    onAuthStateChanged(firebaseAuth, async (user) => { 
+        const userNameEl = document.getElementById('userName'); // Dapatkan elemen nama di sini
+        
         if (user) {
             let role = localStorage.getItem('userRole');
             
@@ -87,11 +83,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 try {
                     const userDoc = await getDoc(doc(db, 'users', user.uid));
                     if (userDoc.exists()) {
-                        role = userDoc.data().role;
-                        localStorage.setItem('userRole', role); // Simpan semula di localStorage
+                        const userData = userDoc.data();
+                        role = userData.role;
+                        
+                        // Simpan semula di localStorage (termasuk nama)
+                        localStorage.setItem('userRole', role); 
+                        localStorage.setItem('userName', userData.name); 
                     }
                 } catch (e) {
-                    console.error("Gagal membaca role dari Firestore sebagai fallback:", e);
+                    console.error("Gagal membaca role/nama dari Firestore sebagai fallback:", e);
                 }
             }
 
@@ -102,6 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     ? 'assets/css/admin.css' 
                     : 'assets/css/guru.css';
                 
+                // >>> KRITIKAL: PAPARKAN NAMA PENGGUNA
+                const name = localStorage.getItem('userName');
+                if (userNameEl && name) {
+                    userNameEl.textContent = name;
+                }
+
                 navigate('home');
             } else {
                 // Sesi sah, tetapi peranan tidak dijumpai di mana-mana
