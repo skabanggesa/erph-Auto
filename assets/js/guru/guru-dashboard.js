@@ -23,7 +23,7 @@ export function loadGuruDashboard() {
                     Senarai RPH Saya
                 </button>
                 
-                <button class="btn btn-secondary" onclick="router.navigate('guru-timetable')">
+                <button class="btn btn-secondary" onclick="router.navigate('guru-jadual')">
                     Urus Jadual Waktu
                 </button>
                 
