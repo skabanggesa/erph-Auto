@@ -41,11 +41,11 @@ export async function loadRphListPage() {
   tbody.innerHTML = '';
 
   // Muatkan senarai guru untuk rujukan nama
-  const teachers = {};
+const teachers = {};
   const teacherSnap = await getDocs(collection(db, 'users'));
   teacherSnap.forEach(doc => {
     const d = doc.data();
-    if (d.role === 'guru') teachers[d.uid] = d.name;
+    if (d.role === 'guru') teachers[d.uid] = d.name; // <--- ISU MUNGKIN DI SINI
   });
 
   querySnapshot.forEach(doc => {
@@ -93,4 +93,5 @@ export async function loadRphListPage() {
     });
   });
 }
+
 
