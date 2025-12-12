@@ -45,7 +45,6 @@ export async function loadRphListPage() {
   const teacherSnap = await getDocs(collection(db, 'users'));
   teacherSnap.forEach(doc => {
     const d = doc.data();
-    // Kunci di sini adalah d.uid, jadi ia mesti digunakan di bawah
     if (d.role === 'guru') teachers[d.uid] = d.name;
   });
 
@@ -94,3 +93,4 @@ export async function loadRphListPage() {
     });
   });
 }
+
