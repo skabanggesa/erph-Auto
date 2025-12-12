@@ -12,7 +12,7 @@ export async function loadJadualEditor() {
     content.innerHTML = `
         <div class="guru-section">
             <h2>Urus Jadual Waktu Mingguan</h2>
-            <button class="btn btn-secondary" onclick="router.navigate('home')" style="margin-bottom: 20px;">Kembali ke Dashboard</button>
+            <button class=\"btn btn-secondary\" onclick=\"router.navigate('guru-home')\" style=\"margin-bottom: 20px;\">Kembali ke Dashboard</button>
             
             <div id="jadualGridContainer">
                 <p>Memuatkan jadual semasa...</p>
