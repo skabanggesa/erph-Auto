@@ -71,7 +71,7 @@ export async function loadRphHistory() {
                         <td>${data.kelas}</td>
                         <td>${data.status.toUpperCase()}</td>
                         <td>
-                            <button class="btn btn-sm" onclick="router.navigate('rph-edit', '${doc.id}')">Edit</button>
+                            <button class="btn btn-sm" onclick="router.navigate('guru-rph-edit', '${doc.id}')">Edit</button>
                             <button class="btn btn-sm btn-danger" onclick="deleteRph('${doc.id}')">Padam</button>
                         </td>
                     </tr>
@@ -89,3 +89,4 @@ export async function loadRphHistory() {
         <button class="btn btn-secondary" onclick="router.navigate('home')">Kembali ke Dashboard</button>`;
     }
 }
+
