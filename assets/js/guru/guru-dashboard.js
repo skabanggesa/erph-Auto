@@ -15,15 +15,15 @@ export function loadGuruDashboard() {
             <h2>Dashboard Guru</h2>
             <div class="dashboard-actions">
                 
-                <button class="btn btn-primary" onclick="router.navigate('rph-generator')">
+                <button class="btn btn-primary" onclick="router.navigate('guru/rph-generator')">
                     Jana RPH Baru
                 </button>
                 
-                <button class="btn btn-info" onclick="router.navigate('rph-list')">
+                <button class="btn btn-info" onclick="router.navigate('guru/rph-history')">
                     Senarai RPH Saya
                 </button>
                 
-                <button class="btn btn-secondary" onclick="router.navigate('jadual-editor')">
+                <button class="btn btn-secondary" onclick="router.navigate('guru/jadual-editor')">
                     Urus Jadual Waktu
                 </button>
                 
