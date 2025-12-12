@@ -45,7 +45,8 @@ const teachers = {};
   const teacherSnap = await getDocs(collection(db, 'users'));
   teacherSnap.forEach(doc => {
     const d = doc.data();
-    if (d.role === 'guru') teachers[d.uid] = d.name; // <--- ISU MUNGKIN DI SINI
+    // Gunakan ID Dokumen (doc.id) sebagai kunci. Ini adalah UID yang dijamin betul.
+    if (d.role === 'guru') teachers[doc.id] = d.name; 
   });
 
   querySnapshot.forEach(doc => {
@@ -93,5 +94,6 @@ const teachers = {};
     });
   });
 }
+
 
 
