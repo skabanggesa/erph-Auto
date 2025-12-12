@@ -213,3 +213,27 @@ body {
     color: #28a745;
     font-weight: bold;
 }
+
+/* Penataan Gaya untuk Header Logo */
+.header-logo {
+    display: flex; /* Susun imej dan teks secara sebaris */
+    flex-direction: column; /* Letakkan imej di atas teks */
+    align-items: center; /* Pusatkan secara mendatar */
+    margin-bottom: 20px; /* Jarak dari kotak log masuk */
+}
+
+/* Penataan Gaya untuk Imej Logo */
+.header-logo .logo-img {
+    width: 80px; /* Saiz logo yang sesuai */
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Penataan Gaya untuk Tajuk */
+.header-logo h1 {
+    color: #1976d2; /* Warna biru (sesuaikan dengan tema anda) */
+    font-size: 1.5em; /* Saiz fon yang lebih kecil daripada h2 dalam kad */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
