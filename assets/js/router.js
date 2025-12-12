@@ -9,7 +9,7 @@ const firebaseAuth = getAuth(app);
 // Map routes
 const routes = {
     'login': { file: 'auth.js', func: 'loadLoginPage' },
-    'guru-home': { file: 'guru/dashboard.js', func: 'loadGuruDashboard' }, 
+    'guru-home': { file: 'guru/guru-dashboard.js', func: 'loadGuruDashboard' }, 
     'guru-jadual': { file: 'guru/jadual-editor.js', func: 'loadJadualEditor' },
     'guru-rph-generator': { file: 'guru/rph-generator.js', func: 'loadRphGenerator' },
     'guru-rph-history': { file: 'guru/rph-history.js', func: 'loadRphHistory' },
