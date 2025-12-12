@@ -49,7 +49,7 @@ export async function loadRphListPage() {
     const status = data.status === 'submitted' ? 'Menunggu Semakan' : 'Disemak';
     const row = tbody.insertRow();
     row.innerHTML = `
-      <td>${teachers[data.userId] || '–'}</td>
+      <td>${teachers[data.uid] || '–'}</td>
       <td>${data.kelas || '–'}</td>
       <td>${data.matapelajaran || '–'}</td>
       <td>${tarikh}</td>
@@ -67,4 +67,5 @@ export async function loadRphListPage() {
       import('./review.js').then(m => m.loadReviewPage(rphId));
     });
   });
+
 }
