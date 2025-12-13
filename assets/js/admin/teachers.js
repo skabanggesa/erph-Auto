@@ -5,7 +5,7 @@ import {
   createUserWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { 
-  collection, addDoc, getDocs, doc, updateDoc, query, where
+  collection, setDoc, getDocs, doc, updateDoc, query, where
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 
@@ -82,10 +82,10 @@ async function registerTeacher() {
     const user = userCredential.user;
 
     // 2. Simpan ke Firestore (KRITIKAL: menetapkan role dan status)
-    // Nota: Menggunakan addDoc di sini, ID dokumen akan menjadi ID Rawak. 
+    // Nota: Menggunakan setDoc di sini, ID dokumen akan menjadi ID Rawak. 
     // Jika anda mahu ID dokumen sama dengan UID, guna setDoc(doc(db, 'users', user.uid), {...})
-    // Namun, kita kekalkan addDoc kerana ia sudah ada dalam kod asal anda.
-    await addDoc(collection(db, 'users'), {
+    // Namun, kita kekalkan setDoc kerana ia sudah ada dalam kod asal anda.
+    await setDoc(collection(db, 'users'), {
       uid: user.uid,
       name: name,
       email: email,
@@ -126,7 +126,7 @@ async function loadTeachersList() {
         
         querySnapshot.forEach(doc => {
             const data = doc.data();
-            // Nota: doc.id mungkin berbeza daripada data.uid jika menggunakan addDoc
+            // Nota: doc.id mungkin berbeza daripada data.uid jika menggunakan setDoc
             const docId = doc.id; 
             const status = data.status || 'active'; 
             const isDiasabled = status === 'disabled';
@@ -192,3 +192,4 @@ async function toggleTeacherStatus(docId, currentStatus) {
     console.error("Ralat Toggle Status:", err);
   }
 }
+
