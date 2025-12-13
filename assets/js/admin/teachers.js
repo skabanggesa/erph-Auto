@@ -81,11 +81,12 @@ async function registerTeacher() {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
-    // 2. Simpan ke Firestore (KRITIKAL: menetapkan role dan status)
-    // Nota: Menggunakan setDoc di sini, ID dokumen akan menjadi ID Rawak. 
-    // Jika anda mahu ID dokumen sama dengan UID, guna setDoc(doc(db, 'users', user.uid), {...})
-    // Namun, kita kekalkan setDoc kerana ia sudah ada dalam kod asal anda.
-    await setDoc(collection(db, 'users'), {
+    // 2. Simpan ke Firestore MENGGUNAKAN setDoc (ID Dokumen = UID)
+    // SINTAKS YANG BETUL: doc(db, 'koleksi', ID_DOKUMEN)
+    const userDocRef = doc(db, 'users', user.uid); 
+    
+    // Gunakan setDoc untuk menetapkan dokumen dengan ID = user.uid
+    await setDoc(userDocRef, { 
       uid: user.uid,
       name: name,
       email: email,
@@ -111,7 +112,6 @@ async function registerTeacher() {
     }
   }
 }
-
 
 async function loadTeachersList() {
     const tbody = document.querySelector('#teachersTable tbody');
@@ -192,4 +192,5 @@ async function toggleTeacherStatus(docId, currentStatus) {
     console.error("Ralat Toggle Status:", err);
   }
 }
+
 
