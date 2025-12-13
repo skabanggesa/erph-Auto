@@ -1,4 +1,4 @@
-// assets/js/admin/teachers.js (KOD LENGKAP & DIKEMASKINI: UI Kemas, Tukar Padam ke Nyahaktif)
+// assets/js/admin/teachers.js (KOD LENGKAP & DISAHKAN)
 
 import { auth, db } from '../config.js';
 import { 
@@ -81,13 +81,16 @@ async function registerTeacher() {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
-    // 2. Simpan ke Firestore
+    // 2. Simpan ke Firestore (KRITIKAL: menetapkan role dan status)
+    // Nota: Menggunakan addDoc di sini, ID dokumen akan menjadi ID Rawak. 
+    // Jika anda mahu ID dokumen sama dengan UID, guna setDoc(doc(db, 'users', user.uid), {...})
+    // Namun, kita kekalkan addDoc kerana ia sudah ada dalam kod asal anda.
     await addDoc(collection(db, 'users'), {
       uid: user.uid,
       name: name,
       email: email,
-      role: 'guru',
-      status: 'active',
+      role: 'guru', // Peranan ditetapkan
+      status: 'active', // Status ditetapkan
       createdAt: new Date()
     });
 
@@ -115,6 +118,7 @@ async function loadTeachersList() {
     tbody.innerHTML = '<tr><td colspan="4">Memuatkan data guru...</td></tr>';
     
     try {
+        // Hanya query pengguna dengan role 'guru'. Memerlukan kebenaran 'list' Admin.
         const q = query(collection(db, 'users'), where('role', '==', 'guru'));
         const querySnapshot = await getDocs(q);
         
@@ -122,7 +126,8 @@ async function loadTeachersList() {
         
         querySnapshot.forEach(doc => {
             const data = doc.data();
-            const docId = doc.id;
+            // Nota: doc.id mungkin berbeza daripada data.uid jika menggunakan addDoc
+            const docId = doc.id; 
             const status = data.status || 'active'; 
             const isDiasabled = status === 'disabled';
             
@@ -160,6 +165,7 @@ async function loadTeachersList() {
 
     } catch (err) {
         console.error("Ralat memuatkan senarai pengguna:", err);
+        // Ralat FirebaseError: Missing or insufficient permissions akan dipaparkan di sini
         tbody.innerHTML = `<tr><td colspan="4" class="error">Gagal memuatkan senarai: ${err.message}.</td></tr>`;
     }
 }
