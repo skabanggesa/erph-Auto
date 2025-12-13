@@ -1,4 +1,4 @@
-// assets/js/admin/review.js (KOD LENGKAP & DIKEMASKINI: Pembetulan Nama Medan RPH)
+// assets/js/admin/review.js (KOD LENGKAP & PEMBETULAN TERAKHIR NAMA MEDAN)
 
 import { auth, db } from '../config.js';
 import { 
@@ -10,11 +10,29 @@ import { loadRphListPage } from './rph-list.js';
 
 let currentRphId = null;
 
+// Fungsi pembantu untuk memaparkan data (string, array, atau kosong)
+function renderData(data) {
+    if (!data) return '–';
+    
+    // Jika ia adalah array, tukar kepada senarai HTML
+    if (Array.isArray(data)) {
+        const cleanData = data.filter(item => item && String(item).trim() !== '');
+        if (cleanData.length === 0) return '–';
+        return `<ul style="margin: 0; padding-left: 20px;">${cleanData.map(item => `<li>${item}</li>`).join('')}</ul>`;
+    }
+    
+    // Jika ia string, pulangkan string
+    return String(data).trim() || '–';
+}
+
+/**
+ * Fungsi utama untuk memuatkan halaman semakan RPH.
+ * @param {string} rphId - ID dokumen RPH yang hendak disemak.
+ */
 export async function loadReviewPage(rphId) {
   const content = document.getElementById('adminContent');
   currentRphId = rphId;
 
-  // KRITIKAL: Semakan awal untuk mengelak ralat 'indexOf'
   if (!rphId || typeof rphId !== 'string') {
       content.innerHTML = '<p class="error">Ralat: ID RPH tidak sah. Sila kembali ke senarai.</p>';
       return;
@@ -51,9 +69,6 @@ export async function loadReviewPage(rphId) {
             statusDisplay = rph.status.toUpperCase();
     }
 
-    // Fungsi pembantu untuk memaparkan senarai (jika data disimpan sebagai array)
-    const renderList = (data) => Array.isArray(data) ? `<ul>${data.map(item => `<li>${item}</li>`).join('')}</ul>` : data || '–';
-
     content.innerHTML = `
       <div class="admin-section">
         <h2>Semak RPH</h2>
@@ -68,16 +83,16 @@ export async function loadReviewPage(rphId) {
             <div style="background:#f9f9f9; padding:15px; border-radius:5px; margin:10px 0;">
                 
                 <h4>1. Sasaran Pembelajaran (Objectives & Skills)</h4>
-                <p><strong>Objektif:</strong> ${renderList(rph.objectives)}</p>
-                <p><strong>Nama Kemahiran:</strong> ${rph.skill_name || '–'}</p>
+                <p><strong>Objektif:</strong> ${renderData(rph.objectives)}</p>
+                <p><strong>Nama Kemahiran:</strong> ${renderData(rph.skill_name)}</p>
                 
                 <h4>2. Kandungan & Aktiviti</h4>
-                <p><strong>Aktiviti P&P:</strong> ${renderList(rph.activities)}</p>
-                <p><strong>Bahan Bantu Mengajar (BBM):</strong> ${renderList(rph.aids)}</p>
+                <p><strong>Aktiviti P&P:</strong> ${renderData(rph.activities)}</p>
+                <p><strong>Bahan Bantu Mengajar (BBM):</strong> ${renderData(rph.aids)}</p>
 
                 <h4>3. Penilaian & Refleksi</h4>
-                <p><strong>Penilaian:</strong> ${renderList(rph.assessments)}</p>
-                <p><strong>Refleksi:</strong> ${rph.refleksi || '–'}</p> 
+                <p><strong>Penilaian:</strong> ${renderData(rph.assessments)}</p>
+                <p><strong>Refleksi:</strong> ${renderData(rph.refleksi)}</p> 
             </div>
             
             <p style="margin-top: 15px;">Masa Sesi: ${rph.masaMula || '–'} - ${rph.masaTamat || '–'}</p>
@@ -99,6 +114,7 @@ export async function loadReviewPage(rphId) {
     `;
 
     // Muatkan nama guru secara berasingan
+    // KRITIKAL: Menggunakan rph.uid, bukan rph.userId (seperti dalam perbincangan awal)
     const teacherSnap = await getDoc(doc(db, 'users', rph.uid)); 
     if (teacherSnap.exists()) {
       document.getElementById('guruNamePlaceholder').textContent = teacherSnap.data().name;
@@ -131,6 +147,8 @@ export async function loadReviewPage(rphId) {
  */
 async function updateRphStatus(newStatus) {
     if (!currentRphId || !auth.currentUser) return;
+
+    // ... (Logik updateDoc yang sama)
 
     const comment = document.getElementById('adminComment').value;
     const statusDiv = document.getElementById('reviewStatusMessage');
