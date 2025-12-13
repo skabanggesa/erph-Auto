@@ -82,7 +82,8 @@ async function registerTeacher() {
     const user = userCredential.user;
 
     // 2. Simpan ke Firestore (Mencipta dokumen role secara automatik)
-    // SINTAKS YANG BETUL: Mendapatkan rujukan dokumen menggunakan doc(db, 'koleksi', ID_DOKUMEN)
+    // SINTAKS YANG BETUL: doc(db, 'koleksi', ID_DOKUMEN)
+    // ID Dokumen = UID pengguna baru
     const userDocRef = doc(db, 'users', user.uid); 
     
     await setDoc(userDocRef, { // Menggunakan setDoc dengan rujukan dokumen yang betul
