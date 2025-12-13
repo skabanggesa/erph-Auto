@@ -87,7 +87,7 @@ export async function loadReviewPage(rphId) {
             <p><strong>Guru:</strong> <span id="guruNamePlaceholder">Memuatkan...</span></p>
             <p><strong>Kelas:</strong> ${rph.kelas || '–'}</p>
             <p><strong>Mata Pelajaran:</strong> ${rph.matapelajaran || '–'}</p>
-            <p><strong>Topik:</strong> ${rph.topic_name || '–'} (Tahun ${rph.year || '–'})</p>
+            <p><strong>Topik:</strong> ${rph.topic_name || '–'}</p>
             <p><strong>Tarikh:</strong> ${tarikh}</p>
             <p><strong>Status Semasa:</strong> ${statusDisplay}</p>
             <hr>
@@ -182,3 +182,4 @@ async function updateRphStatus(newStatus) {
         statusDiv.innerHTML = `<p class="error">Gagal mengemaskini status: ${e.message}</p>`;
     }
 }
+
