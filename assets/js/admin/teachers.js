@@ -1,4 +1,4 @@
-// assets/js/admin/teachers.js (KOD LENGKAP & DISAHKAN)
+// assets/js/admin/teachers.js (KOD LENGKAP & DIPERBETULKAN)
 
 import { auth, db } from '../config.js';
 import { 
@@ -81,12 +81,11 @@ async function registerTeacher() {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
-    // 2. Simpan ke Firestore MENGGUNAKAN setDoc (ID Dokumen = UID)
-    // SINTAKS YANG BETUL: doc(db, 'koleksi', ID_DOKUMEN)
+    // 2. Simpan ke Firestore MENGGUNAKAN setDoc
+    // KRITIKAL: doc(db, 'users', user.uid) untuk memastikan ID Dokumen = UID
     const userDocRef = doc(db, 'users', user.uid); 
     
-    // Gunakan setDoc untuk menetapkan dokumen dengan ID = user.uid
-    await setDoc(userDocRef, { 
+    await setDoc(userDocRef, { // Sintaks setDoc yang betul
       uid: user.uid,
       name: name,
       email: email,
@@ -101,6 +100,7 @@ async function registerTeacher() {
     document.getElementById('teacherEmail').value = '';
     document.getElementById('teacherPassword').value = '';
     
+    // Muatkan semula senarai untuk memaparkan guru baru
     await loadTeachersList();
     
   } catch (err) {
@@ -108,10 +108,12 @@ async function registerTeacher() {
     if (err.code === 'auth/email-already-in-use') {
       errorDiv.textContent = 'Emel sudah digunakan.';
     } else {
-      errorDiv.textContent = 'Ralat: Gagal mendaftar guru. ' + err.message;
+      // Ralat ini mungkin adalah Missing Permissions
+      errorDiv.textContent = 'Ralat: Gagal mendaftar guru. Sila semak kebenaran Admin. ' + err.message;
     }
   }
 }
+
 
 async function loadTeachersList() {
     const tbody = document.querySelector('#teachersTable tbody');
@@ -126,7 +128,6 @@ async function loadTeachersList() {
         
         querySnapshot.forEach(doc => {
             const data = doc.data();
-            // Nota: doc.id mungkin berbeza daripada data.uid jika menggunakan setDoc
             const docId = doc.id; 
             const status = data.status || 'active'; 
             const isDiasabled = status === 'disabled';
@@ -192,5 +193,3 @@ async function toggleTeacherStatus(docId, currentStatus) {
     console.error("Ralat Toggle Status:", err);
   }
 }
-
-
