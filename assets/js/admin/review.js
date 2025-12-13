@@ -1,4 +1,4 @@
-// assets/js/admin/review.js (KOD LENGKAP & DIKEMASKINI)
+// assets/js/admin/review.js (KOD LENGKAP & DIKEMASKINI: Pembetulan Nama Medan RPH)
 
 import { auth, db } from '../config.js';
 import { 
@@ -14,7 +14,7 @@ export async function loadReviewPage(rphId) {
   const content = document.getElementById('adminContent');
   currentRphId = rphId;
 
-  // 🔑 KRITIKAL: Semakan awal untuk mengelak ralat 'indexOf'
+  // KRITIKAL: Semakan awal untuk mengelak ralat 'indexOf'
   if (!rphId || typeof rphId !== 'string') {
       content.innerHTML = '<p class="error">Ralat: ID RPH tidak sah. Sila kembali ke senarai.</p>';
       return;
@@ -23,7 +23,6 @@ export async function loadReviewPage(rphId) {
   content.innerHTML = '<p>Memuatkan RPH...</p>';
 
   try {
-    // Baris ini akan berfungsi kerana rphId telah disahkan
     const docSnap = await getDoc(doc(db, 'rph', rphId)); 
     if (!docSnap.exists()) {
       content.innerHTML = '<p>RPH tidak dijumpai.</p>';
@@ -33,7 +32,7 @@ export async function loadReviewPage(rphId) {
     const rph = docSnap.data();
     const tarikh = rph.tarikh.toDate ? rph.tarikh.toDate().toLocaleDateString('ms-MY') : '–';
     
-    // Asumsi: Guru telah menyimpan data 'matapelajaran' dan 'kelas' dalam RPH
+    // Logik paparan status
     let statusDisplay = '';
     switch (rph.status) {
         case 'submitted':
@@ -52,6 +51,9 @@ export async function loadReviewPage(rphId) {
             statusDisplay = rph.status.toUpperCase();
     }
 
+    // Fungsi pembantu untuk memaparkan senarai (jika data disimpan sebagai array)
+    const renderList = (data) => Array.isArray(data) ? `<ul>${data.map(item => `<li>${item}</li>`).join('')}</ul>` : data || '–';
+
     content.innerHTML = `
       <div class="admin-section">
         <h2>Semak RPH</h2>
@@ -64,14 +66,21 @@ export async function loadReviewPage(rphId) {
             <hr>
             <h3>Isi RPH</h3>
             <div style="background:#f9f9f9; padding:15px; border-radius:5px; margin:10px 0;">
-                <h4>Sasaran Pembelajaran</h4>
-                <p><strong>Fokus:</strong> ${rph.fokus || '–'}</p>
-                <p><strong>Standard Kandungan:</strong> ${rph.standardKandungan || '–'}</p>
-                <p><strong>Standard Pembelajaran:</strong> ${rph.standardPembelajaran || '–'}</p>
-                <h4>Aktiviti & Refleksi</h4>
-                <p><strong>Aktiviti:</strong> ${rph.aktiviti || '–'}</p>
-                <p><strong>Refleksi:</strong> ${rph.refleksi || '–'}</p>
+                
+                <h4>1. Sasaran Pembelajaran (Objectives & Skills)</h4>
+                <p><strong>Objektif:</strong> ${renderList(rph.objectives)}</p>
+                <p><strong>Nama Kemahiran:</strong> ${rph.skill_name || '–'}</p>
+                
+                <h4>2. Kandungan & Aktiviti</h4>
+                <p><strong>Aktiviti P&P:</strong> ${renderList(rph.activities)}</p>
+                <p><strong>Bahan Bantu Mengajar (BBM):</strong> ${renderList(rph.aids)}</p>
+
+                <h4>3. Penilaian & Refleksi</h4>
+                <p><strong>Penilaian:</strong> ${renderList(rph.assessments)}</p>
+                <p><strong>Refleksi:</strong> ${rph.refleksi || '–'}</p> 
             </div>
+            
+            <p style="margin-top: 15px;">Masa Sesi: ${rph.masaMula || '–'} - ${rph.masaTamat || '–'}</p>
         </div>
         
         <div id="reviewActions" style="margin-top: 20px;">
@@ -90,7 +99,6 @@ export async function loadReviewPage(rphId) {
     `;
 
     // Muatkan nama guru secara berasingan
-    // KRITIKAL: Menggunakan rph.uid, bukan rph.userId
     const teacherSnap = await getDoc(doc(db, 'users', rph.uid)); 
     if (teacherSnap.exists()) {
       document.getElementById('guruNamePlaceholder').textContent = teacherSnap.data().name;
@@ -100,7 +108,7 @@ export async function loadReviewPage(rphId) {
 
     // Pasang Event Listeners
     document.getElementById('btnBack').addEventListener('click', () => {
-      loadRphListPage(); // Guna import function
+      loadRphListPage(); 
     });
     
     if (document.getElementById('btnApprove')) {
