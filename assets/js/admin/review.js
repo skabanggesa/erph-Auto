@@ -1,4 +1,4 @@
-// assets/js/admin/review.js (KOD LENGKAP & PEMBETULAN TERAKHIR NAMA MEDAN)
+// assets/js/admin/review.js (KOD LENGKAP & PEMBETULAN KHUSUS UNTUK DATA STRING PANJANG)
 
 import { auth, db } from '../config.js';
 import { 
@@ -10,19 +10,30 @@ import { loadRphListPage } from './rph-list.js';
 
 let currentRphId = null;
 
-// Fungsi pembantu untuk memaparkan data (string, array, atau kosong)
+// Fungsi pembantu KRITIKAL untuk memaparkan data (string, array, atau kosong)
 function renderData(data) {
     if (!data) return '–';
     
-    // Jika ia adalah array, tukar kepada senarai HTML
+    let items = [];
+
+    // Jika data adalah array (seperti standards)
     if (Array.isArray(data)) {
-        const cleanData = data.filter(item => item && String(item).trim() !== '');
-        if (cleanData.length === 0) return '–';
-        return `<ul style="margin: 0; padding-left: 20px;">${cleanData.map(item => `<li>${item}</li>`).join('')}</ul>`;
+        items = data;
+    } 
+    // Jika data adalah string (seperti activities, objectives)
+    else if (typeof data === 'string') {
+        // Pecahkan string berdasarkan koma atau baris baru, kemudian tapis entri kosong
+        items = data.split(/[\n,]/).map(s => s.trim()).filter(s => s.length > 0);
+    } 
+    // Data lain (seperti skill_name)
+    else {
+        return String(data).trim() || '–';
     }
+
+    if (items.length === 0) return '–';
     
-    // Jika ia string, pulangkan string
-    return String(data).trim() || '–';
+    // Paparkan item dalam senarai tidak berturutan
+    return `<ul style="margin: 0; padding-left: 20px;">${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
 }
 
 /**
@@ -76,14 +87,16 @@ export async function loadReviewPage(rphId) {
             <p><strong>Guru:</strong> <span id="guruNamePlaceholder">Memuatkan...</span></p>
             <p><strong>Kelas:</strong> ${rph.kelas || '–'}</p>
             <p><strong>Mata Pelajaran:</strong> ${rph.matapelajaran || '–'}</p>
+            <p><strong>Topik:</strong> ${rph.topic_name || '–'} (Tahun ${rph.year || '–'})</p>
             <p><strong>Tarikh:</strong> ${tarikh}</p>
             <p><strong>Status Semasa:</strong> ${statusDisplay}</p>
             <hr>
             <h3>Isi RPH</h3>
             <div style="background:#f9f9f9; padding:15px; border-radius:5px; margin:10px 0;">
                 
-                <h4>1. Sasaran Pembelajaran (Objectives & Skills)</h4>
+                <h4>1. Sasaran Pembelajaran</h4>
                 <p><strong>Objektif:</strong> ${renderData(rph.objectives)}</p>
+                <p><strong>Standard:</strong> ${renderData(rph.standards)}</p>
                 <p><strong>Nama Kemahiran:</strong> ${renderData(rph.skill_name)}</p>
                 
                 <h4>2. Kandungan & Aktiviti</h4>
@@ -114,7 +127,6 @@ export async function loadReviewPage(rphId) {
     `;
 
     // Muatkan nama guru secara berasingan
-    // KRITIKAL: Menggunakan rph.uid, bukan rph.userId (seperti dalam perbincangan awal)
     const teacherSnap = await getDoc(doc(db, 'users', rph.uid)); 
     if (teacherSnap.exists()) {
       document.getElementById('guruNamePlaceholder').textContent = teacherSnap.data().name;
@@ -122,7 +134,7 @@ export async function loadReviewPage(rphId) {
       document.getElementById('guruNamePlaceholder').textContent = 'Nama Guru Tidak Diketahui';
     }
 
-    // Pasang Event Listeners
+    // Pasang Event Listeners (Logik ini sama seperti sebelumnya)
     document.getElementById('btnBack').addEventListener('click', () => {
       loadRphListPage(); 
     });
@@ -141,14 +153,9 @@ export async function loadReviewPage(rphId) {
   }
 }
 
-/**
- * Mengemaskini status RPH.
- * @param {string} newStatus - Status baharu ('approved' atau 'rejected').
- */
+// ... Fungsi updateRphStatus adalah sama ...
 async function updateRphStatus(newStatus) {
     if (!currentRphId || !auth.currentUser) return;
-
-    // ... (Logik updateDoc yang sama)
 
     const comment = document.getElementById('adminComment').value;
     const statusDiv = document.getElementById('reviewStatusMessage');
