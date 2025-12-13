@@ -81,11 +81,11 @@ async function registerTeacher() {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
-    // 2. Simpan ke Firestore MENGGUNAKAN setDoc
-    // KRITIKAL: doc(db, 'users', user.uid) untuk memastikan ID Dokumen = UID
+    // 2. Simpan ke Firestore (Mencipta dokumen role secara automatik)
+    // SINTAKS YANG BETUL: Mendapatkan rujukan dokumen menggunakan doc(db, 'koleksi', ID_DOKUMEN)
     const userDocRef = doc(db, 'users', user.uid); 
     
-    await setDoc(userDocRef, { // Sintaks setDoc yang betul
+    await setDoc(userDocRef, { // Menggunakan setDoc dengan rujukan dokumen yang betul
       uid: user.uid,
       name: name,
       email: email,
@@ -100,7 +100,6 @@ async function registerTeacher() {
     document.getElementById('teacherEmail').value = '';
     document.getElementById('teacherPassword').value = '';
     
-    // Muatkan semula senarai untuk memaparkan guru baru
     await loadTeachersList();
     
   } catch (err) {
@@ -108,7 +107,6 @@ async function registerTeacher() {
     if (err.code === 'auth/email-already-in-use') {
       errorDiv.textContent = 'Emel sudah digunakan.';
     } else {
-      // Ralat ini mungkin adalah Missing Permissions
       errorDiv.textContent = 'Ralat: Gagal mendaftar guru. Sila semak kebenaran Admin. ' + err.message;
     }
   }
