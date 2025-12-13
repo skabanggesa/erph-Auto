@@ -1,4 +1,4 @@
-// assets/js/admin/review.js (KOD LENGKAP & PEMBETULAN KHUSUS UNTUK DATA STRING PANJANG)
+// assets/js/admin/review.js (KOD LENGKAP & PEMBETULAN AKHIR)
 
 import { auth, db } from '../config.js';
 import { 
@@ -22,10 +22,18 @@ function renderData(data) {
     } 
     // Jika data adalah string (seperti activities, objectives)
     else if (typeof data === 'string') {
-        // Pecahkan string berdasarkan koma atau baris baru, kemudian tapis entri kosong
-        items = data.split(/[\n,]/).map(s => s.trim()).filter(s => s.length > 0);
+        // CUBALAH pecahkan string berdasarkan koma atau baris baru
+        let parts = data.split(/[\n,]/).map(s => s.trim()).filter(s => s.length > 0);
+        
+        if (parts.length > 1) {
+             // Jika terdapat lebih dari satu bahagian, gunakan senarai
+             items = parts;
+        } else {
+             // Jika tiada pemisah (atau hanya satu item), ia adalah string biasa, pulangkan ia
+             return String(data).trim() || '–';
+        }
     } 
-    // Data lain (seperti skill_name)
+    // Data lain (seperti skill_name yang sepatutnya string tunggal)
     else {
         return String(data).trim() || '–';
     }
@@ -87,7 +95,7 @@ export async function loadReviewPage(rphId) {
             <p><strong>Guru:</strong> <span id="guruNamePlaceholder">Memuatkan...</span></p>
             <p><strong>Kelas:</strong> ${rph.kelas || '–'}</p>
             <p><strong>Mata Pelajaran:</strong> ${rph.matapelajaran || '–'}</p>
-            <p><strong>Topik:</strong> ${rph.topic_name || '–'}</p>
+            <p><strong>Topik:</strong> ${rph.topic_name || '–'} (Tahun ${rph.year || '–'})</p>
             <p><strong>Tarikh:</strong> ${tarikh}</p>
             <p><strong>Status Semasa:</strong> ${statusDisplay}</p>
             <hr>
@@ -134,7 +142,7 @@ export async function loadReviewPage(rphId) {
       document.getElementById('guruNamePlaceholder').textContent = 'Nama Guru Tidak Diketahui';
     }
 
-    // Pasang Event Listeners (Logik ini sama seperti sebelumnya)
+    // Pasang Event Listeners 
     document.getElementById('btnBack').addEventListener('click', () => {
       loadRphListPage(); 
     });
@@ -153,7 +161,7 @@ export async function loadReviewPage(rphId) {
   }
 }
 
-// ... Fungsi updateRphStatus adalah sama ...
+// ... Fungsi updateRphStatus (sama seperti sebelumnya)
 async function updateRphStatus(newStatus) {
     if (!currentRphId || !auth.currentUser) return;
 
@@ -172,7 +180,6 @@ async function updateRphStatus(newStatus) {
 
         statusDiv.innerHTML = `<p class="success">Status RPH berjaya dikemaskini kepada: ${newStatus.toUpperCase()}</p>`;
         
-        // Muat semula senarai semakan selepas kemaskini
         setTimeout(() => {
             loadRphListPage(); 
         }, 1000);
@@ -182,4 +189,3 @@ async function updateRphStatus(newStatus) {
         statusDiv.innerHTML = `<p class="error">Gagal mengemaskini status: ${e.message}</p>`;
     }
 }
-
