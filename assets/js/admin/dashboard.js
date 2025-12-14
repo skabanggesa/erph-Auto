@@ -54,19 +54,19 @@ export async function loadAdminDashboard() {
         import('./rph-list.js').then(m => m.loadRphListPage()); 
     });
 
-    // 3. Analisis & Laporan (Placeholder)
-    document.getElementById('viewAnalyticsBtn').addEventListener('click', () => {
-        const contentArea = document.getElementById('adminContent');
-        contentArea.innerHTML = '<p>Ciri Analisis & Laporan akan datang...</p>';
-        // import('./analytics.js').then(m => m.loadAnalytics());
-    });
-
-    // Pilihan: Boleh tambahkan logik untuk memuatkan senarai RPH secara lalai
-    // document.getElementById('viewRphBtn').click();
-}
+    // 3. Analisis & Laporan
+    // Kita guna router.navigate untuk memanggil laluan 'admin-analytics' yang telah ditakrifkan dalam router.js
+    const analyticsBtn = document.getElementById('viewAnalyticsBtn');
+    if (analyticsBtn) {
+        analyticsBtn.addEventListener('click', () => {
+            // Memanggil fungsi router global
+            window.router.navigate('admin-analytics'); 
+        });
+    }
 
 // ------------------------------------------------------------
 // FUNGSI: Logik Semakan RPH (Placeholder)
 // ------------------------------------------------------------
 // Nota: Anda mungkin mahu memindahkan fungsi ini ke rph-list.js
 // function adminReviewRph(rphId) { ... }
+
