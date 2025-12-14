@@ -13,7 +13,8 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Selaraskan item ke atas */
+  /* TELAH DIKEMASKINI: Menyusun item di tengah secara menegak */
+  align-items: center; 
   width: 90%; 
   max-width: 1000px; /* Lebar maksimum untuk keseluruhan kawasan log masuk */
   gap: 30px; /* Jarak antara logo/teks dan kotak log masuk */
@@ -25,7 +26,7 @@ body {
     flex: 1; /* Ambil ruang yang ada */
     max-width: 55%; /* Hadkan lebar kawasan info */
     text-align: center;
-    padding-top: 50px; /* Selaraskan dengan bahagian atas kotak log masuk */
+    /* DIBUANG: padding-top: 50px; (Kerana align-items: center kini menguruskannya) */
 }
 
 /* 🔑 KRITIKAL: Mengecilkan Logo */
@@ -136,7 +137,3 @@ body {
         max-width: 100px; /* Logo yang lebih kecil lagi pada mudah alih */
     }
 }
-
-
-
-
