@@ -38,7 +38,7 @@ body {
 
 .info-side h2 {
     color: #444;
-    font-size: 0.4em;
+    font-size: 0.8em;
     margin-bottom: 20px;
 }
 
@@ -55,6 +55,7 @@ body {
 .readme-content h3, .readme-content h4 {
     color: #1976d2;
     margin-top: 10px;
+    font-size: 0.8em;
 }
 
 .readme-content ul {
@@ -134,5 +135,6 @@ body {
         max-width: 100px; /* Logo yang lebih kecil lagi pada mudah alih */
     }
 }
+
 
 
