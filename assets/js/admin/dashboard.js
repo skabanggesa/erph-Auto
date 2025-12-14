@@ -11,7 +11,8 @@ import {
  * Fungsi utama yang dipanggil oleh router.js apabila admin log masuk.
  */
 export async function loadAdminDashboard() {
-    const content = document.getElementById('content');
+    // Note: 'content' adalah DIV luaran yang dimuatkan oleh router.js
+    const content = document.getElementById('content'); 
     
     const user = auth.currentUser;
     if (!user) {
@@ -50,16 +51,16 @@ export async function loadAdminDashboard() {
     // 2. Semak RPH Guru (Anggap anda ada rph-list.js)
     document.getElementById('viewRphBtn').addEventListener('click', () => {
         document.getElementById('adminContent').innerHTML = '<p>Memuatkan senarai RPH...</p>';
-        // Gantikan ini dengan modul RPH sebenar anda, jika ia berbeza
+        // Gantikan ini dengan modul RPH sebenar anda, jika ia berbeza (Contoh: rph-review.js)
         import('./rph-list.js').then(m => m.loadRphListPage()); 
     });
 
     // 3. Analisis & Laporan
-    // Kita guna router.navigate untuk memanggil laluan 'admin-analytics' yang telah ditakrifkan dalam router.js
+    // MENGGUNAKAN ROUTER: Ini menyelesaikan masalah placeholder lama anda.
     const analyticsBtn = document.getElementById('viewAnalyticsBtn');
     if (analyticsBtn) {
         analyticsBtn.addEventListener('click', () => {
-            // Memanggil fungsi router global
+            // Memanggil fungsi router global yang tahu cara memuatkan analytics.js
             window.router.navigate('admin-analytics'); 
         });
     }
@@ -67,6 +68,7 @@ export async function loadAdminDashboard() {
 // ------------------------------------------------------------
 // FUNGSI: Logik Semakan RPH (Placeholder)
 // ------------------------------------------------------------
-// Nota: Anda mungkin mahu memindahkan fungsi ini ke rph-list.js
-// function adminReviewRph(rphId) { ... }
+// Anda boleh meletakkan fungsi pembantu di bawah jika perlu, tetapi ia biasanya lebih baik
+// dimasukkan ke dalam modul yang berkaitan (seperti rph-list.js)
 
+}
