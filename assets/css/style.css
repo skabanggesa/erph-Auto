@@ -219,7 +219,7 @@ body {
     display: flex; /* Susun imej dan teks secara sebaris */
     flex-direction: column; /* Letakkan imej di atas teks */
     align-items: center; /* Pusatkan secara mendatar */
-    margin-bottom: 20px; /* Jarak dari kotak log masuk */
+    margin-bottom: 30px; /* Jarak dari kotak log masuk */
 }
 
 /* Penataan Gaya untuk Imej Logo */
@@ -237,5 +237,6 @@ body {
     margin: 0;
     padding: 0;
 }
+
 
 
