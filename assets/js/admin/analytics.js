@@ -25,18 +25,17 @@ export async function loadAnalytics() {
     const teachers = {};
     teacherSnap.forEach(doc => {
       const d = doc.data();
-      teachers[d.uid] = d.name; 
+      teachers[d.uid] = d.name; // Kunci: UID, Nilai: Nama
     });
 
     // 2. Dapatkan semua RPH
-    // Memerlukan kebenaran 'list' Admin pada koleksi /rph
-    const rphSnap = await getDocs(collection(db, 'rph'));
+    const rphSnap = await getDocs(collection(db, 'rph')); // RPH disimpan di sini
     const stats = {};
 
     rphSnap.forEach(doc => {
       const r = doc.data();
       
-      // <<< KRITIKAL: Tukar dari r.userId ke r.uid (Asumsi medan yang betul dalam RPH adalah uid)
+      // <<< KRITIKAL 1: Guna r.uid (ID pengguna) BUKAN r.userId
       const teacherUid = r.uid; 
 
       if (!teachers[teacherUid]) return; // Langkau jika data guru tidak dijumpai
@@ -46,24 +45,23 @@ export async function loadAnalytics() {
             name: teachers[teacherUid], 
             total: 0, 
             submitted: 0, 
-            approved: 0, // DITAMBAH
+            approved: 0, // GUNA 'approved' (daripada 'reviewed' lama)
             rejected: 0  // DITAMBAH
         };
       }
       
       stats[teacherUid].total++;
       
-      // Kirakan statistik mengikut status terkini
+      // <<< KRITIKAL 2: Guna 'approved' dan 'rejected' sebagai status RPH
       if (r.status === 'submitted') stats[teacherUid].submitted++;
-      if (r.status === 'approved') stats[teacherUid].approved++; // DIGUNAKAN
-      if (r.status === 'rejected') stats[teacherUid].rejected++; // DIGUNAKAN
-      // Status 'reviewed' (lama) telah dikeluarkan
+      if (r.status === 'approved') stats[teacherUid].approved++; 
+      if (r.status === 'rejected') stats[teacherUid].rejected++; 
     });
 
-    // 3. Paparkan data dalam jadual (Pastikan tajuk selaras dengan data yang dikira)
+    // 3. Paparkan data dalam jadual
     let html = '<h3>Prestasi Mengikut Guru</h3><div class="table-container"><table><thead><tr><th>Guru</th><th>Jumlah RPH Dicipta</th><th>Menunggu Semakan</th><th>Diluluskan</th><th>Ditolak</th></tr></thead><tbody>';
     
-    // Sort by Total RPH descending
+    // Susun mengikut Jumlah RPH
     const sortedStats = Object.values(stats).sort((a, b) => b.total - a.total);
 
     sortedStats.forEach(s => {
@@ -81,7 +79,7 @@ export async function loadAnalytics() {
     document.getElementById('analyticsDetails').innerHTML = html;
 
   } catch (err) {
-    document.getElementById('analyticsDetails').innerHTML = `<p class="error">Gagal memuatkan Analisis: ${err.message}. Sila semak semula Peraturan Keselamatan Firestore untuk kebenaran 'list' Admin pada koleksi /users dan /rph.</p>`;
+    document.getElementById('analyticsDetails').innerHTML = `<p class="error">Gagal memuatkan Analisis: ${err.message}. Sila semak semula Peraturan Keselamatan Firestore.</p>`;
     console.error("Ralat Memuatkan Analisis:", err);
   }
 }
