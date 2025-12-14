@@ -1,8 +1,7 @@
-// assets/js/admin/rph-review.js (FAIL INI MESTI DICIPTA DAN DIEKSPORT DENGAN BETUL)
+// assets/js/admin/rph-review.js (LIST VIEW)
 
-// *** KRITIKAL: Pastikan laluan relatif ke config.js adalah betul ***
-// Jika config.js berada di assets/js/config.js, maka laluan ini adalah yang betul
-import { db } from '../../config.js'; 
+// *** KRITIKAL: Laluan ini kini dibetulkan kepada '../config.js' (satu tahap ke atas) ***
+import { db } from '../config.js'; 
 import { 
   collection, query, where, getDocs 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
@@ -11,10 +10,9 @@ const navigate = window.router?.navigate;
 
 /**
  * Memuatkan halaman senarai semakan RPH untuk Admin, ditapis mengikut UID guru.
- * * @param {Object} params - Objek yang mengandungi parameter laluan, cth., { uid: 'UID_GURU' }
+ * Fungsi ini dipanggil oleh router.js untuk laluan 'admin-rph-review'.
  */
 export async function loadRphReviewPage(params) {
-    // FUNGSI INI MESTI MEMPUNYAI KATA KUNCI 'export'
     const content = document.getElementById('adminContent');
     const teacherUid = params?.uid;
     
@@ -47,7 +45,7 @@ export async function loadRphReviewPage(params) {
             
             // 2. Cuba dapatkan nama guru
             let teacherName = teacherUid;
-            // *Nota: Kueri ini juga memerlukan Indeks Firestore. Alternatif: Guna doc.id jika uid == doc id*
+            // *NOTA: Kueri 'where' ini mungkin gagal jika tiada Indeks, tetapi kueri List View Analisis kita memintas isu ini. Kita guna cara ini untuk kesederhanaan.*
             const teacherQuery = query(collection(db, 'users'), where('uid', '==', teacherUid));
             const teacherDoc = await getDocs(teacherQuery);
             if (!teacherDoc.empty) {
