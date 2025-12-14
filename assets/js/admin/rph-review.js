@@ -1,7 +1,7 @@
 // assets/js/admin/rph-review.js (LIST VIEW - MUKTAMAD)
 
 // KRITIKAL: Laluan ini mesti betul
-import { db } from '../../config.js'; 
+import { db } from '../config.js'; 
 import { 
   collection, query, where, getDocs 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
