@@ -1,4 +1,4 @@
-// assets/js/admin/analytics.js (VERSI MUKTAMAD: BYPASS INDEX FIREBASE)
+// assets/js/admin/analytics.js (VERSI MUKTAMAD: BYPASS INDEX FIRESTORE)
 
 import { db } from '../config.js';
 import { 
@@ -7,15 +7,15 @@ import {
 
 export async function loadAnalytics() {
   const content = document.getElementById('adminContent');
-  
   content.innerHTML = `
     <div class="admin-section">
       <h2>Analisis Penghantaran RPH</h2>
       <p>Data dikira berdasarkan status RPH yang terakhir ('draft', 'submitted', 'approved', 'rejected').</p>
       
-      <div id="analyticsDetails" style="margin-top:30px;">
+      <div id="analyticsDetails" style="margin-top:20px;">
           <p>Memuatkan data...</p>
       </div>
+      
     </div>
   `;
 
