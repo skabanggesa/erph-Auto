@@ -224,8 +224,8 @@ body {
 
 /* Penataan Gaya untuk Imej Logo */
 .header-logo .logo-img {
-    width: 40px; /* Saiz logo yang sesuai */
-    height: 40px;
+    max-width: 30px; /* Saiz logo yang sesuai */
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -237,4 +237,5 @@ body {
     margin: 0;
     padding: 0;
 }
+
 
