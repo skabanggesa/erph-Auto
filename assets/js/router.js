@@ -21,7 +21,7 @@ const routes = {
     
     // [1] ADMIN RPH LIST VIEW (untuk penapisan dari Analisis)
     // Fail: assets/js/admin/rph-review.js (Yang perlu anda cipta)
-    'admin-rph-review': { file: 'admin/rph-review.js', func: 'loadRphReviewPage' }, 
+    'admin-rph-review': { file: 'admin/rph-individual.js', func: 'loadRphReviewPage' }, 
     
     // [2] ADMIN RPH DETAIL VIEW (untuk semakan perincian satu RPH)
     // Fail: assets/js/admin/review.js (Fail yang telah anda muat naik)
