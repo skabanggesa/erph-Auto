@@ -1,4 +1,4 @@
-// assets/js/admin/analytics.js (DIKEMASKINI)
+// assets/js/admin/analytics.js (VERSI TERAKHIR & DIPERBETULKAN)
 
 import { db } from '../config.js';
 import { 
@@ -12,9 +12,6 @@ export async function loadAnalytics() {
       <h2>Analisis Penghantaran RPH</h2>
       <p>Data dikira berdasarkan status RPH yang terakhir ('draft', 'submitted', 'approved', 'rejected').</p>
       
-      <div class="chart-container">
-        </div>
-      
       <div id="analyticsDetails" style="margin-top:20px;">
           <p>Memuatkan data...</p>
       </div>
@@ -23,7 +20,7 @@ export async function loadAnalytics() {
   `;
 
   try {
-    // 1. Dapatkan semua guru (Memerlukan kebenaran 'list' Admin pada koleksi /users)
+    // 1. Dapatkan semua guru (menggunakan uid sebagai kunci)
     const teacherSnap = await getDocs(query(collection(db, 'users'), where('role', '==', 'guru')));
     const teachers = {};
     teacherSnap.forEach(doc => {
@@ -31,14 +28,17 @@ export async function loadAnalytics() {
       teachers[d.uid] = d.name; 
     });
 
-    // 2. Dapatkan semua RPH (Memerlukan kebenaran 'list' Admin pada koleksi /rph)
+    // 2. Dapatkan semua RPH
+    // Memerlukan kebenaran 'list' Admin pada koleksi /rph
     const rphSnap = await getDocs(collection(db, 'rph'));
     const stats = {};
 
     rphSnap.forEach(doc => {
       const r = doc.data();
-      const teacherUid = r.uid; // Menggunakan 'uid' yang betul (merujuk kepada guru yang mencipta RPH)
       
+      // <<< KRITIKAL: Tukar dari r.userId ke r.uid (Asumsi medan yang betul dalam RPH adalah uid)
+      const teacherUid = r.uid; 
+
       if (!teachers[teacherUid]) return; // Langkau jika data guru tidak dijumpai
 
       if (!stats[teacherUid]) {
@@ -46,20 +46,21 @@ export async function loadAnalytics() {
             name: teachers[teacherUid], 
             total: 0, 
             submitted: 0, 
-            approved: 0,
-            rejected: 0
+            approved: 0, // DITAMBAH
+            rejected: 0  // DITAMBAH
         };
       }
       
       stats[teacherUid].total++;
       
-      // Kirakan statistik mengikut status
+      // Kirakan statistik mengikut status terkini
       if (r.status === 'submitted') stats[teacherUid].submitted++;
-      if (r.status === 'approved') stats[teacherUid].approved++;
-      if (r.status === 'rejected') stats[teacherUid].rejected++;
+      if (r.status === 'approved') stats[teacherUid].approved++; // DIGUNAKAN
+      if (r.status === 'rejected') stats[teacherUid].rejected++; // DIGUNAKAN
+      // Status 'reviewed' (lama) telah dikeluarkan
     });
 
-    // 3. Paparkan data dalam jadual
+    // 3. Paparkan data dalam jadual (Pastikan tajuk selaras dengan data yang dikira)
     let html = '<h3>Prestasi Mengikut Guru</h3><div class="table-container"><table><thead><tr><th>Guru</th><th>Jumlah RPH Dicipta</th><th>Menunggu Semakan</th><th>Diluluskan</th><th>Ditolak</th></tr></thead><tbody>';
     
     // Sort by Total RPH descending
@@ -78,14 +79,9 @@ export async function loadAnalytics() {
     html += '</tbody></table></div>';
 
     document.getElementById('analyticsDetails').innerHTML = html;
-    
-    // Anda boleh menambah fungsi carta di sini jika diperlukan
-    // renderChart(sortedStats); 
 
   } catch (err) {
     document.getElementById('analyticsDetails').innerHTML = `<p class="error">Gagal memuatkan Analisis: ${err.message}. Sila semak semula Peraturan Keselamatan Firestore untuk kebenaran 'list' Admin pada koleksi /users dan /rph.</p>`;
     console.error("Ralat Memuatkan Analisis:", err);
   }
 }
-
-// Anda boleh menambah fungsi renderChart(stats) di sini menggunakan library Chart.js jika berminat.
