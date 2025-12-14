@@ -38,7 +38,7 @@ body {
 
 .info-side h2 {
     color: #444;
-    font-size: 0.9em;
+    font-size: 0.4em;
     margin-bottom: 20px;
 }
 
@@ -134,4 +134,5 @@ body {
         max-width: 100px; /* Logo yang lebih kecil lagi pada mudah alih */
     }
 }
+
 
