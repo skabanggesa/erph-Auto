@@ -7,21 +7,21 @@ import {
 
 export async function loadAnalytics() {
   const content = document.getElementById('adminContent');
+  
   content.innerHTML = `
     <div class="admin-section">
       <h2>Analisis Penghantaran RPH</h2>
       <p>Data dikira berdasarkan status RPH yang terakhir ('draft', 'submitted', 'approved', 'rejected').</p>
       
-      <div id="analyticsDetails" style="margin-top:20px;">
+      <div id="analyticsDetails" style="margin-top:30px;">
           <p>Memuatkan data...</p>
       </div>
-      
     </div>
   `;
 
   try {
-    // 1. Dapatkan SEMUA pengguna (Gantikan kueri 'where' untuk mengelakkan masalah Indeks)
-    // Admin dibenarkan 'list' koleksi /users, jadi operasi ini akan berjaya.
+    // 1. GANTIKAN Kueri 'where' yang gagal. 
+    // Ambil SEMUA pengguna, dan tapis 'guru' di sini. Admin mempunyai izin 'list' penuh.
     const userSnap = await getDocs(collection(db, 'users')); 
     
     const teachers = {};
@@ -31,13 +31,13 @@ export async function loadAnalytics() {
       const d = doc.data();
       
       // Tapis role 'guru' pada sisi klien (JavaScript)
-      if (d.role === 'guru') { // Membandingkan dengan 'guru' huruf kecil
+      if (d.role === 'guru') { 
           teachers[d.uid] = d.name; 
           guruCount++;
       }
     });
 
-    // Semak jika tiada guru (atau jika data 'role' salah)
+    // Semak jika tiada guru yang sah
     if (guruCount === 0) {
         document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ Gagal memuatkan Analisis: Tiada pengguna dengan peranan 'guru' ditemui dalam koleksi /users. Sila pastikan medan 'role' adalah <span style="font-weight: bold;">"guru"</span>.</p>`;
         return;
@@ -47,7 +47,6 @@ export async function loadAnalytics() {
     // 2. Dapatkan semua RPH
     const rphSnap = await getDocs(collection(db, 'rph'));
     
-    // ... (Logik Pemprosesan Data yang selebihnya adalah SAMA)
     const stats = {};
     let matchedRphCount = 0;
 
@@ -60,6 +59,7 @@ export async function loadAnalytics() {
       const r = doc.data();
       const teacherUid = r.uid; 
       
+      // Padankan dengan senarai guru yang telah ditapis di atas
       if (teachers[teacherUid]) { 
           matchedRphCount++;
           if (!stats[teacherUid]) {
@@ -71,16 +71,17 @@ export async function loadAnalytics() {
           if (r.status === 'approved') stats[teacherUid].approved++; 
           if (r.status === 'rejected') stats[teacherUid].rejected++; 
       } else {
+          // Hanya akan dipaparkan jika guru wujud tetapi RPH menggunakan UID yang salah
           console.warn(`RPH ID ${doc.id} dilangkau: UID guru '${teacherUid}' tidak wujud dalam senarai pengguna /users.`);
       }
     });
 
     if (matchedRphCount === 0) {
-        document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ RPH ditemui (${rphSnap.size} dokumen), tetapi tiada satu pun yang sepadan dengan guru yang disenaraikan. Semak medan <span style="font-weight: bold;">\`uid\`</span> dalam dokumen RPH anda berbanding UID dalam dokumen pengguna.</p>`;
+        document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ RPH ditemui (${rphSnap.size} dokumen), tetapi tiada satu pun yang sepadan dengan guru yang disenaraikan. Semak medan <span style="font-weight: bold;">\`uid\`</span> dalam dokumen RPH anda.</p>`;
         return;
     }
 
-    // Paparkan Data
+    // 3. Paparkan Data
     let html = '<h3>Prestasi Mengikut Guru</h3><div class="table-container"><table><thead><tr><th>Guru</th><th>Jumlah RPH Dicipta</th><th>Menunggu Semakan</th><th>Diluluskan</th><th>Ditolak</th></tr></thead><tbody>';
     const sortedStats = Object.values(stats).sort((a, b) => b.total - a.total);
 
