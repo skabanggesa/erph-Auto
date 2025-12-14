@@ -78,8 +78,11 @@ export async function loadAnalytics() {
 
     document.getElementById('analyticsDetails').innerHTML = html;
 
-  } catch (err) {
-    document.getElementById('analyticsDetails').innerHTML = `<p class="error">Gagal memuatkan Analisis: ${err.message}. Sila semak semula Peraturan Keselamatan Firestore.</p>`;
+} catch (err) {
+    // Tambah log ralat terperinci di sini
     console.error("Ralat Memuatkan Analisis:", err);
+    // Paparkan ralat tersebut
+    document.getElementById('analyticsDetails').innerHTML = `<p class="error">Gagal memuatkan Analisis: ${err.message}. (SEMALAHKAN FIREBASE RULES)</p>`;
   }
 }
+
