@@ -1,18 +1,15 @@
-// assets/js/admin/analytics.js (VERSI MUKTAMAD: BYPASS INDEX FIRESTORE & PAPARAN LENGKAP)
+// assets/js/admin/analytics.js (VERSI MUKTAMAD: MENGGUNAKAN ID DOKUMEN SEBAGAI UID)
 
 import { db } from '../config.js';
 import { 
   collection, getDocs
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// Anggapkan window.router.navigate telah didedahkan oleh router.js
-// Pastikan anda telah menambah laluan admin-rph-review dalam router.js
 const navigate = window.router?.navigate; 
 
 export async function loadAnalytics() {
   const content = document.getElementById('adminContent');
   
-  // Sediakan paparan awal
   content.innerHTML = `
     <div class="admin-section">
       <h2>Analisis Penghantaran RPH</h2>
@@ -26,7 +23,6 @@ export async function loadAnalytics() {
 
   try {
     // 1. Dapatkan SEMUA pengguna (BYPASS INDEX FIRESTORE)
-    // Kueri ini mengatasi masalah ketiadaan indeks pada medan 'role'.
     const userSnap = await getDocs(collection(db, 'users')); 
     
     const teachers = {};
@@ -35,16 +31,15 @@ export async function loadAnalytics() {
     userSnap.forEach(doc => {
       const d = doc.data();
       
-      // Tapis role 'guru' pada sisi klien (JavaScript)
       if (d.role === 'guru') { 
-          teachers[d.uid] = d.name; 
+          // >>> KRITIKAL: GUNA doc.id (ID DOKUMEN) BUKAN d.uid
+          teachers[doc.id] = d.name; // doc.id adalah UID Firebase Auth
           guruCount++;
       }
     });
 
-    // PEMERIKSAAN KRITIKAL 1: Jika tiada guru (atau data role salah)
     if (guruCount === 0) {
-        document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ Gagal memuatkan Analisis: Tiada pengguna dengan peranan 'guru' ditemui dalam koleksi /users. Sila pastikan medan 'role' adalah <span style="font-weight: bold;">"guru"</span>.</p>`;
+        document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ Gagal memuatkan Analisis: Tiada pengguna dengan peranan 'guru' ditemui dalam koleksi /users.</p>`;
         return;
     }
 
@@ -56,7 +51,6 @@ export async function loadAnalytics() {
     const stats = {};
     let matchedRphCount = 0;
 
-    // PEMERIKSAAN KRITIKAL 2: Jika tiada RPH
     if (rphSnap.empty) {
         document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ Tiada RPH yang ditemui dalam koleksi /rph. Analisis tidak dapat dijalankan.</p>`;
         return;
@@ -66,7 +60,7 @@ export async function loadAnalytics() {
       const r = doc.data();
       const teacherUid = r.uid; 
       
-      // Padankan dengan senarai guru yang telah ditapis
+      // Padankan RPH.uid dengan ID Dokumen Guru (doc.id)
       if (teachers[teacherUid]) { 
           matchedRphCount++;
           totalStats.total++;
@@ -94,18 +88,14 @@ export async function loadAnalytics() {
       }
     });
 
-    // Hitung submitted aggregate
     totalStats.submitted = totalStats.total - totalStats.approved - totalStats.rejected; 
 
-    // PEMERIKSAAN KRITIKAL 3: Jika RPH ditemui tetapi tiada yang sepadan
     if (matchedRphCount === 0) {
-        document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ RPH ditemui (${rphSnap.size} dokumen), tetapi tiada satu pun yang sepadan dengan guru yang disenaraikan. Semak medan <span style="font-weight: bold;">\`uid\`</span> dalam dokumen RPH anda.</p>`;
+        document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ RPH ditemui (${rphSnap.size} dokumen), tetapi tiada satu pun yang sepadan dengan guru yang disenaraikan. Sila sahkan UID dalam dokumen RPH anda sepadan dengan ID Dokumen Pengguna dalam koleksi /users.</p>`;
         return;
     }
 
-    // 3. Paparkan Data (Termasuk kemas kini paparan)
-
-    // A. Ringkasan Agregat
+    // 3. Paparkan Data
     let html = `<h3>Ringkasan Keseluruhan</h3>
         <style>
           .summary-card-container { display: flex; gap: 20px; flex-wrap: wrap; }
@@ -121,7 +111,6 @@ export async function loadAnalytics() {
             <div class="summary-card rejected-color">Ditolak: <strong>${totalStats.rejected}</strong></div>
         </div>`;
 
-    // B. Jadual Terperinci
     html += '<h3 style="margin-top: 30px;">Prestasi Mengikut Guru</h3><div class="table-container"><table><thead><tr><th>Guru</th><th>Jumlah RPH</th><th>Menunggu Semakan</th><th>Diluluskan</th><th>Ditolak</th><th>% Diluluskan</th></tr></thead><tbody>';
     
     const sortedStats = Object.values(stats).sort((a, b) => b.total - a.total);
