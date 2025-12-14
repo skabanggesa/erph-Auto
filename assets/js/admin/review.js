@@ -45,18 +45,25 @@ function renderData(data) {
 }
 
 
-export async function loadReviewPage(rphId) {
+// *** TANDATANGAN FUNGSI DIPERBETULKAN ***
+export async function loadReviewPage(params) {
   const content = document.getElementById('adminContent');
+  
+  // 🔑 KRITIKAL: Ekstrak ID dokumen (string) dari objek params
+  const rphId = params?.id;
+  
   currentRphId = rphId; // Simpan ID RPH untuk fungsi update
 
-  if (!rphId) {
-    content.innerHTML = '<p class="error">Ralat: ID RPH tidak sah.</p>';
+  // Perubahan pada semakan awal: pastikan ia adalah string
+  if (!rphId || typeof rphId !== 'string') {
+    content.innerHTML = '<p class="error">Ralat: ID RPH tidak sah. Sila kembali ke senarai.</p>';
     return;
   }
 
   content.innerHTML = '<p>Memuatkan RPH...</p>';
 
   try {
+    // Baris ini kini menerima string yang sah sebagai ID dokumen
     const docSnap = await getDoc(doc(db, 'rph', rphId));
     if (!docSnap.exists()) {
       content.innerHTML = '<p>RPH tidak dijumpai.</p>';
