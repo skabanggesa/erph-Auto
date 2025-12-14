@@ -15,11 +15,20 @@ const routes = {
     'guru-rph-history': { file: 'guru/rph-history.js', func: 'loadRphHistory' },
     'guru-rph-edit': { file: 'guru/rph-edit.js', func: 'loadRphEdit' },
     
-    // --- LALUAN ADMIN ---
+// --- LALUAN ADMIN ---
     'admin-home': { file: 'admin/dashboard.js', func: 'loadAdminDashboard' },
-    'admin-teachers': { file: 'admin/teachers.js', func: 'loadTeachersPage' }, // Tambah: Senarai & Daftar Guru
-    'admin-rph-review': { file: 'admin/rph-review.js', func: 'loadRphReviewPage' }, // Tambah: Semakan RPH
-    'admin-analytics': { file: 'admin/analytics.js', func: 'loadAnalytics' }, // Tambah: Analisis & Laporan (PENTING!)
+    'admin-teachers': { file: 'admin/teachers.js', func: 'loadTeachersPage' }, 
+    
+    // [1] ADMIN RPH LIST VIEW (untuk penapisan dari Analisis)
+    // Fail: assets/js/admin/rph-review.js (Yang perlu anda cipta)
+    'admin-rph-review': { file: 'admin/rph-review.js', func: 'loadRphReviewPage' }, 
+    
+    // [2] ADMIN RPH DETAIL VIEW (untuk semakan perincian satu RPH)
+    // Fail: assets/js/admin/review.js (Fail yang telah anda muat naik)
+    'admin-rph-detail': { file: 'admin/review.js', func: 'loadReviewPage' },
+    
+    // [3] ANALISIS & LAPORAN
+    'admin-analytics': { file: 'admin/analytics.js', func: 'loadAnalytics' }, 
 };
 
 /**
