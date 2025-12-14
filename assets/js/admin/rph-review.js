@@ -1,6 +1,6 @@
-// assets/js/admin/rph-review.js (LIST VIEW - MUKTAMAD)
+// assets/js/admin/rph-review.js (LIST VIEW - PASTIKAN IMPORT INI SAMA DENGAN review.js)
 
-// KRITIKAL: Laluan ini mesti betul
+// Mesti sama seperti yang berfungsi dalam review.js
 import { db } from '../config.js'; 
 import { 
   collection, query, where, getDocs 
@@ -8,18 +8,24 @@ import {
 
 const navigate = window.router?.navigate; 
 
-/**
- * Memuatkan halaman senarai semakan RPH untuk Admin, ditapis mengikut UID guru.
- * KRITIKAL: MESTI ADA KATA KUNCI 'export'
- */
 export async function loadRphReviewPage(params) {
     const content = document.getElementById('adminContent');
     const teacherUid = params?.uid;
     
-    // ... (kod HTML awal) ...
+    if (!teacherUid) {
+        content.innerHTML = '<div class="admin-section"><p class="warning">⚠️ Sila pilih guru dari Analisis Laporan untuk memulakan semakan.</p></div>';
+        return;
+    }
+
+    content.innerHTML = `
+        <div class="admin-section">
+            <h2>Semakan RPH Guru</h2>
+            <p>Memuatkan RPH yang dihantar oleh guru ini...</p>
+            <div id="rphReviewList" style="margin-top: 20px;"></div>
+        </div>
+    `;
 
     try {
-        // 1. Dapatkan RPH untuk guru ini
         const rphQuery = query(
             collection(db, 'rph'),
             where('uid', '==', teacherUid)
@@ -32,12 +38,11 @@ export async function loadRphReviewPage(params) {
             html += `<p class="warning">Tiada RPH ditemui untuk guru ini.</p>`;
         } else {
             
-            // 2. Cuba dapatkan nama guru (Kaitkan UID RPH dengan UID Pengguna)
             let teacherName = teacherUid;
-            const teacherQuery = query(collection(db, 'users'), where('uid', '==', teacherUid));
-            const teacherDoc = await getDocs(teacherQuery);
-            if (!teacherDoc.empty) {
-                teacherName = teacherDoc.docs[0].data().name;
+            // Gunakan doc(db, 'users', teacherUid) jika UID == Doc ID (Cara yang lebih stabil)
+            const teacherDoc = await getDoc(doc(db, 'users', teacherUid)); 
+            if (teacherDoc.exists()) {
+                teacherName = teacherDoc.data().name;
             }
 
             html += `<h3>Senarai RPH untuk ${teacherName}</h3>
@@ -51,7 +56,6 @@ export async function loadRphReviewPage(params) {
             
             rphSnap.forEach(doc => {
                 const r = doc.data();
-                // Butang ini memanggil laluan detail view ('admin-rph-detail')
                 html += `<tr>
                     <td>${doc.id}</td>
                     <td><span class="status-${r.status}">${r.status ? r.status.toUpperCase() : 'N/A'}</span></td>
