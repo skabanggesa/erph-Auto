@@ -1,74 +1,84 @@
-// assets/js/admin/dashboard.js (KOD LENGKAP & DIKEMASKINI)
+// assets/js/admin/analytics.js (DIPERBETULKAN UNTUK MENGGUNAKAN 'uid' BUKAN 'userId')
 
-import { auth, db } from '../config.js'; 
+import { db } from '../config.js';
 import { 
-    collection, query, where, getDocs, 
-    doc, getDoc as getFirestoreDoc 
+  collection, getDocs, query, where 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+export async function loadAnalytics() {
+  const content = document.getElementById('adminContent');
+  content.innerHTML = `
+    <div class="admin-section">
+      <h2>Analisis Penghantaran RPH</h2>
+      <p>Data dikira berdasarkan status RPH yang terakhir ('draft', 'submitted', 'approved', 'rejected').</p>
+      
+      <div id="analyticsDetails" style="margin-top:20px;">
+          <p>Memuatkan data...</p>
+      </div>
+      
+    </div>
+  `;
 
-/**
- * Fungsi utama yang dipanggil oleh router.js apabila admin log masuk.
- */
-export async function loadAdminDashboard() {
-    // Note: 'content' adalah DIV luaran yang dimuatkan oleh router.js
-    const content = document.getElementById('content'); 
-    
-    const user = auth.currentUser;
-    if (!user) {
-        content.innerHTML = '<p class="error">Sesi tamat. Sila log masuk semula.</p>';
-        return;
-    }
-
-    content.innerHTML = `
-        <div class="admin-section">
-            <h2>Dashboard Pentadbir</h2>
-            <p>Selamat datang, Pentadbir! Sila pilih tindakan di bawah.</p>
-            
-            <div id="admin-actions" style="margin-top: 20px;">
-                <button id="viewRphBtn" class="btn btn-primary">1. Semak RPH Guru</button>
-                <button id="manageUsersBtn" class="btn btn-secondary" style="margin-left: 10px;">2. Urus Pengguna (Akaun)</button>
-                <button id="viewAnalyticsBtn" class="btn btn-secondary" style="margin-left: 10px;">3. Analisis & Laporan</button>
-            </div>
-            
-            <div id="adminContent" style="margin-top: 30px;">
-                <p>Sila klik butang di atas untuk memulakan tugas pentadbiran.</p>
-            </div>
-        </div>
-    `;
-
-    // ------------------------------------------------------------
-    // 🔑 KRITIKAL: EVENT LISTENERS
-    // ------------------------------------------------------------
-    
-    // 1. Urus Pengguna (Memanggil fungsi baharu dari teachers.js)
-    document.getElementById('manageUsersBtn').addEventListener('click', () => {
-        document.getElementById('adminContent').innerHTML = '<p>Memuatkan modul Urus Pengguna...</p>';
-        // IMPORT DYNAMIC: Panggil loadTeachersPage dari teachers.js
-        import('./teachers.js').then(m => m.loadTeachersPage());
-    });
-    
-    // 2. Semak RPH Guru (Anggap anda ada rph-list.js)
-    document.getElementById('viewRphBtn').addEventListener('click', () => {
-        document.getElementById('adminContent').innerHTML = '<p>Memuatkan senarai RPH...</p>';
-        // Gantikan ini dengan modul RPH sebenar anda, jika ia berbeza (Contoh: rph-review.js)
-        import('./rph-list.js').then(m => m.loadRphListPage()); 
+  try {
+    // 1. Dapatkan semua guru (menggunakan uid sebagai kunci)
+    const teacherSnap = await getDocs(query(collection(db, 'users'), where('role', '==', 'guru')));
+    const teachers = {};
+    teacherSnap.forEach(doc => {
+      const d = doc.data();
+      teachers[d.uid] = d.name; // Kunci: UID, Nilai: Nama
     });
 
-    // 3. Analisis & Laporan
-    // MENGGUNAKAN ROUTER: Ini menyelesaikan masalah placeholder lama anda.
-    const analyticsBtn = document.getElementById('viewAnalyticsBtn');
-    if (analyticsBtn) {
-        analyticsBtn.addEventListener('click', () => {
-            // Memanggil fungsi router global yang tahu cara memuatkan analytics.js
-            window.router.navigate('admin-analytics'); 
-        });
-    }
+    // 2. Dapatkan semua RPH
+    const rphSnap = await getDocs(collection(db, 'rph'));
+    const stats = {};
 
-// ------------------------------------------------------------
-// FUNGSI: Logik Semakan RPH (Placeholder)
-// ------------------------------------------------------------
-// Anda boleh meletakkan fungsi pembantu di bawah jika perlu, tetapi ia biasanya lebih baik
-// dimasukkan ke dalam modul yang berkaitan (seperti rph-list.js)
+    rphSnap.forEach(doc => {
+      const r = doc.data();
+      const teacherUid = r.uid; // <<< KRITIKAL: Guna r.uid (Bukan r.userId)
 
+      if (!teachers[teacherUid]) return; // Langkau jika data guru tidak dijumpai
+
+      if (!stats[teacherUid]) {
+        stats[teacherUid] = { 
+            name: teachers[teacherUid], 
+            total: 0, 
+            submitted: 0, 
+            approved: 0, // Tambah medan ini untuk selaras dengan tajuk jadual baru anda
+            rejected: 0  // Tambah medan ini
+        };
+      }
+      
+      stats[teacherUid].total++;
+      
+      // Kirakan statistik mengikut status (menggunakan status yang betul)
+      if (r.status === 'submitted') stats[teacherUid].submitted++;
+      if (r.status === 'approved') stats[teacherUid].approved++;
+      if (r.status === 'rejected') stats[teacherUid].rejected++;
+    });
+
+    // 3. Paparkan data dalam jadual (Pastikan tajuk selaras dengan data yang dikira)
+    let html = '<h3>Prestasi Mengikut Guru</h3><div class="table-container"><table><thead><tr><th>Guru</th><th>Jumlah RPH Dicipta</th><th>Menunggu Semakan</th><th>Diluluskan</th><th>Ditolak</th></tr></thead><tbody>';
+    
+    // Sort by Total RPH descending
+    const sortedStats = Object.values(stats).sort((a, b) => b.total - a.total);
+
+    sortedStats.forEach(s => {
+      // Pastikan s.approved dan s.rejected digunakan di sini
+      html += `<tr>
+        <td>${s.name}</td>
+        <td>${s.total}</td>
+        <td>${s.submitted}</td>
+        <td>${s.approved}</td>
+        <td>${s.rejected}</td>
+      </tr>`;
+    });
+    
+    html += '</tbody></table></div>';
+
+    document.getElementById('analyticsDetails').innerHTML = html;
+
+  } catch (err) {
+    document.getElementById('analyticsDetails').innerHTML = `<p class="error">Gagal memuatkan Analisis: ${err.message}. Sila semak semula Peraturan Keselamatan Firestore.</p>`;
+    console.error("Ralat Memuatkan Analisis:", err);
+  }
 }
