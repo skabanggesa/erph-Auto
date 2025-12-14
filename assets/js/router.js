@@ -18,7 +18,7 @@ const routes = {
     // --- LALUAN ADMIN ---
     'admin-home': { file: 'admin/dashboard.js', func: 'loadAdminDashboard' },
     'admin-teachers': { file: 'admin/teachers.js', func: 'loadTeachersPage' }, // Tambah: Senarai & Daftar Guru
-    'admin-rph-review': { file: 'admin/review.js', func: 'loadRphReviewPage' }, // Tambah: Semakan RPH
+    'admin-rph-review': { file: 'admin/rph-review.js', func: 'loadRphReviewPage' }, // Tambah: Semakan RPH
     'admin-analytics': { file: 'admin/analytics.js', func: 'loadAnalytics' }, // Tambah: Analisis & Laporan (PENTING!)
 };
 
