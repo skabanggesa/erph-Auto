@@ -232,11 +232,12 @@ body {
 /* Penataan Gaya untuk Tajuk */
 .header-logo h1 {
     color: #1976d2; /* Warna biru (sesuaikan dengan tema anda) */
-    font-size: 1.5em; /* Saiz fon yang lebih kecil daripada h2 dalam kad */
+    font-size: 0.9em; /* Saiz fon yang lebih kecil daripada h2 dalam kad */
     text-align: center;
     margin: 0;
     padding: 0;
 }
+
 
 
 
