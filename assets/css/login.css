@@ -9,18 +9,67 @@ body {
   height: 100vh;
 }
 
+/* 🔑 KRITIKAL: Tukar container kepada Flexbox untuk menyusun item */
 .container {
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: flex-start; /* Selaraskan item ke atas */
+  width: 90%; 
+  max-width: 1000px; /* Lebar maksimum untuk keseluruhan kawasan log masuk */
+  gap: 30px; /* Jarak antara logo/teks dan kotak log masuk */
+  padding: 20px;
 }
 
+/* 🔑 KRITIKAL: Gaya untuk kawasan logo/readme (bahagian kiri) */
+.info-side {
+    flex: 1; /* Ambil ruang yang ada */
+    max-width: 55%; /* Hadkan lebar kawasan info */
+    text-align: center;
+    padding-top: 50px; /* Selaraskan dengan bahagian atas kotak log masuk */
+}
+
+/* 🔑 KRITIKAL: Mengecilkan Logo */
+#logo {
+    max-width: 150px; /* Saiz maksimum logo: KECILKAN DI SINI */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.info-side h2 {
+    color: #444;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk kandungan README */
+.readme-content {
+    text-align: left;
+    background: #eef3f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.readme-content h3, .readme-content h4 {
+    color: #1976d2;
+    margin-top: 10px;
+}
+
+.readme-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Kotak Log Masuk (Card) */
 .card {
   background: white;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  width: 350px; /* Lebar lalai untuk desktop */
+  width: 350px; /* Lebar tetap untuk borang log masuk */
+  flex-shrink: 0; /* Pastikan ia tidak mengecut */
 }
 
 .card h2 {
@@ -61,13 +110,27 @@ body {
   text-align: center;
 }
 
-/* ======================================= */
-/* MEDIA QUERY: Mudah Alih (max-width: 480px) */
-/* ======================================= */
-@media screen and (max-width: 480px) {
+/* Gaya Responsif untuk Skrin Mudah Alih */
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column; /* Susun item secara menegak pada skrin kecil */
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+    
+    .info-side {
+        max-width: 100%; 
+        width: 90%;
+        padding-top: 20px;
+    }
+    
     .card {
-        width: 90%; /* Ambil 90% daripada lebar skrin */
-        max-width: 350px;
-        padding: 20px;
+        width: 90%; 
+        margin-top: 20px;
+    }
+
+    #logo {
+        max-width: 100px; /* Logo yang lebih kecil lagi pada mudah alih */
     }
 }
