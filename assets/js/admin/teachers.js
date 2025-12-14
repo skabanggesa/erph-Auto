@@ -83,9 +83,10 @@ async function registerTeacher() {
 
     // 2. Simpan ke Firestore (Mencipta dokumen role secara automatik)
     // KRITIKAL: doc(db, 'koleksi', ID_DOKUMEN)
-    const userDocRef = doc(db, 'users', user.uid); // <--- PEMBETULAN KRITIKAL DI SINI
+    // user.uid memastikan ID Dokumen adalah unik dan sepadan dengan Auth
+    const userDocRef = doc(db, 'users', user.uid); // <--- PEMBETULAN SINTAKS KRITIKAL
     
-    await setDoc(userDocRef, { // setDoc menggunakan rujukan dokumen userDocRef yang betul
+    await setDoc(userDocRef, { // setDoc kini menggunakan rujukan dokumen yang betul
       uid: user.uid,
       name: name,
       email: email,
@@ -107,8 +108,7 @@ async function registerTeacher() {
     if (err.code === 'auth/email-already-in-use') {
       errorDiv.textContent = 'Emel sudah digunakan.';
     } else {
-      // Ralat ini mungkin berlaku jika Admin gagal semakan kebenaran (isAdmin())
-      errorDiv.textContent = 'Ralat: Gagal mendaftar guru. Sila semak kebenaran Admin. ' + err.message;
+      errorDiv.textContent = 'Ralat: Gagal mendaftar guru. ' + err.message;
     }
   }
 }
@@ -191,5 +191,6 @@ async function toggleTeacherStatus(docId, currentStatus) {
     console.error("Ralat Toggle Status:", err);
   }
 }
+
 
 
