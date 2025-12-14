@@ -1,17 +1,22 @@
-// assets/js/admin/analytics.js (VERSI DIAGNOSIS RPH SAHAJA)
+// assets/js/admin/analytics.js (VERSI MUKTAMAD: BYPASS INDEX FIRESTORE & PAPARAN LENGKAP)
 
 import { db } from '../config.js';
 import { 
   collection, getDocs
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+// Anggapkan window.router.navigate telah didedahkan oleh router.js
+// Pastikan anda telah menambah laluan admin-rph-review dalam router.js
+const navigate = window.router?.navigate; 
+
 export async function loadAnalytics() {
   const content = document.getElementById('adminContent');
   
+  // Sediakan paparan awal
   content.innerHTML = `
     <div class="admin-section">
-      <h2>Diagnosis RPH Sahaja</h2>
-      <p>Ini menguji sama ada Admin boleh membaca koleksi RPH tanpa memproses data guru.</p>
+      <h2>Analisis Penghantaran RPH</h2>
+      <p>Data dikira berdasarkan status RPH yang terakhir ('draft', 'submitted', 'approved', 'rejected').</p>
       
       <div id="analyticsDetails" style="margin-top:30px;">
           <p>Memuatkan data...</p>
@@ -20,45 +25,126 @@ export async function loadAnalytics() {
   `;
 
   try {
-    // 1. HANYA Dapatkan semua RPH
-    const rphSnap = await getDocs(collection(db, 'rph')); 
-    const totalRph = rphSnap.size;
+    // 1. Dapatkan SEMUA pengguna (BYPASS INDEX FIRESTORE)
+    // Kueri ini mengatasi masalah ketiadaan indeks pada medan 'role'.
+    const userSnap = await getDocs(collection(db, 'users')); 
+    
+    const teachers = {};
+    let guruCount = 0;
 
-    let html = `<h3>Keputusan Diagnosis</h3>
-        <p>Status: <span style="font-weight: bold; color: ${totalRph > 0 ? 'green' : 'red'};">Berjaya mencapai koleksi /rph.</span></p>
-        <p>Jumlah Dokumen RPH Ditemui: <strong style="font-size: 1.5em;">${totalRph}</strong></p>
-    `;
+    userSnap.forEach(doc => {
+      const d = doc.data();
+      
+      // Tapis role 'guru' pada sisi klien (JavaScript)
+      if (d.role === 'guru') { 
+          teachers[d.uid] = d.name; 
+          guruCount++;
+      }
+    });
 
-    if (totalRph > 0) {
-        html += `<div class="table-container"><table><thead>
-            <tr><th>Doc ID</th><th>UID Guru (RPH.uid)</th><th>Status</th></tr>
-        </thead><tbody>`;
-        
-        rphSnap.forEach(doc => {
-            const r = doc.data();
-            html += `<tr>
-                <td>${doc.id}</td>
-                <td>${r.uid || 'UID HILANG'}</td>
-                <td>${r.status || 'STATUS HILANG'}</td>
-            </tr>`;
-        });
-        
-        html += '</tbody></table></div>';
-        
-        // Mesej pengesahan
-        html += `<p style="margin-top: 20px;">
-            <span style="font-weight: bold; color: green;">BERITA BAIK!</span><br>
-            Jika anda melihat senarai di atas, ia mengesahkan bahawa <span style="font-weight: bold;">Masalah Analisis adalah 100% pada bahagian kod yang memuatkan senarai Guru (/users).</span>
-        </p>`;
-        
-    } else {
-        html += `<p class="error">Gagal membaca data RPH. Sila semak semula Peraturan Keselamatan Firestore untuk koleksi /rph (izin 'list' untuk Admin).</p>`;
+    // PEMERIKSAAN KRITIKAL 1: Jika tiada guru (atau data role salah)
+    if (guruCount === 0) {
+        document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ Gagal memuatkan Analisis: Tiada pengguna dengan peranan 'guru' ditemui dalam koleksi /users. Sila pastikan medan 'role' adalah <span style="font-weight: bold;">"guru"</span>.</p>`;
+        return;
     }
 
+
+    // 2. Dapatkan semua RPH & Proses Data
+    const rphSnap = await getDocs(collection(db, 'rph'));
+    
+    let totalStats = { total: 0, submitted: 0, approved: 0, rejected: 0 }; 
+    const stats = {};
+    let matchedRphCount = 0;
+
+    // PEMERIKSAAN KRITIKAL 2: Jika tiada RPH
+    if (rphSnap.empty) {
+        document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ Tiada RPH yang ditemui dalam koleksi /rph. Analisis tidak dapat dijalankan.</p>`;
+        return;
+    }
+    
+    rphSnap.forEach(doc => {
+      const r = doc.data();
+      const teacherUid = r.uid; 
+      
+      // Padankan dengan senarai guru yang telah ditapis
+      if (teachers[teacherUid]) { 
+          matchedRphCount++;
+          totalStats.total++;
+          
+          if (!stats[teacherUid]) {
+            stats[teacherUid] = { 
+                uid: teacherUid, 
+                name: teachers[teacherUid], 
+                total: 0, submitted: 0, approved: 0, rejected: 0  
+            };
+          }
+          
+          stats[teacherUid].total++;
+          if (r.status === 'submitted') stats[teacherUid].submitted++;
+          if (r.status === 'approved') {
+             stats[teacherUid].approved++;
+             totalStats.approved++;
+          }
+          if (r.status === 'rejected') {
+             stats[teacherUid].rejected++;
+             totalStats.rejected++;
+          }
+      } else {
+          console.warn(`RPH ID ${doc.id} dilangkau: UID guru '${teacherUid}' tidak wujud dalam senarai pengguna /users.`);
+      }
+    });
+
+    // Hitung submitted aggregate
+    totalStats.submitted = totalStats.total - totalStats.approved - totalStats.rejected; 
+
+    // PEMERIKSAAN KRITIKAL 3: Jika RPH ditemui tetapi tiada yang sepadan
+    if (matchedRphCount === 0) {
+        document.getElementById('analyticsDetails').innerHTML = `<p class="warning">⚠️ RPH ditemui (${rphSnap.size} dokumen), tetapi tiada satu pun yang sepadan dengan guru yang disenaraikan. Semak medan <span style="font-weight: bold;">\`uid\`</span> dalam dokumen RPH anda.</p>`;
+        return;
+    }
+
+    // 3. Paparkan Data (Termasuk kemas kini paparan)
+
+    // A. Ringkasan Agregat
+    let html = `<h3>Ringkasan Keseluruhan</h3>
+        <style>
+          .summary-card-container { display: flex; gap: 20px; flex-wrap: wrap; }
+          .summary-card { padding: 15px; border-radius: 8px; flex-grow: 1; min-width: 150px; text-align: center; border: 1px solid #ccc; }
+          .approved-color { background-color: #e6ffe6; border-color: #66cc66; }
+          .submitted-color { background-color: #fffbe6; border-color: #ffcc00; }
+          .rejected-color { background-color: #ffe6e6; border-color: #ff6666; }
+        </style>
+        <div class="summary-card-container">
+            <div class="summary-card">Jumlah RPH: <strong>${totalStats.total}</strong></div>
+            <div class="summary-card approved-color">Diluluskan: <strong>${totalStats.approved}</strong></div>
+            <div class="summary-card submitted-color">Menunggu Semakan: <strong>${totalStats.submitted}</strong></div>
+            <div class="summary-card rejected-color">Ditolak: <strong>${totalStats.rejected}</strong></div>
+        </div>`;
+
+    // B. Jadual Terperinci
+    html += '<h3 style="margin-top: 30px;">Prestasi Mengikut Guru</h3><div class="table-container"><table><thead><tr><th>Guru</th><th>Jumlah RPH</th><th>Menunggu Semakan</th><th>Diluluskan</th><th>Ditolak</th><th>% Diluluskan</th></tr></thead><tbody>';
+    
+    const sortedStats = Object.values(stats).sort((a, b) => b.total - a.total);
+
+    sortedStats.forEach(s => {
+      const approvedRate = s.total > 0 ? ((s.approved / s.total) * 100).toFixed(0) : 0;
+      const rateColor = approvedRate >= 75 ? 'color: green;' : approvedRate >= 50 ? 'color: orange;' : 'color: red;';
+      
+      html += `<tr>
+        <td><a href="#" onclick="${navigate ? `window.router.navigate('admin-rph-review', { uid: '${s.uid}' });` : `console.error('Router tidak tersedia');`} return false;">${s.name}</a></td>
+        <td>${s.total}</td>
+        <td>${s.submitted}</td>
+        <td>${s.approved}</td>
+        <td>${s.rejected}</td>
+        <td style="${rateColor} font-weight: bold;">${approvedRate}%</td>
+      </tr>`;
+    });
+    
+    html += '</tbody></table></div>';
     document.getElementById('analyticsDetails').innerHTML = html;
 
   } catch (err) {
-    document.getElementById('analyticsDetails').innerHTML = `<p class="error">Ralat Kritikal (Kod atau Kebenaran): ${err.message}. Sila semak konsol F12.</p>`;
-    console.error("Ralat Diagnosis RPH:", err);
+    document.getElementById('analyticsDetails').innerHTML = `<p class="error">Gagal memuatkan Analisis (Ralat Kritikal): ${err.message}. Sila semak Peraturan Keselamatan Firestore.</p>`;
+    console.error("Ralat Memuatkan Analisis:", err);
   }
 }
