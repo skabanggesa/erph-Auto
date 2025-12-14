@@ -1,13 +1,17 @@
-// assets/js/admin/rph-review.js (LIST VIEW - PASTIKAN IMPORT INI SAMA DENGAN review.js)
+// assets/js/admin/rph-review.js (LIST VIEW - MUKTAMAD)
 
-// Mesti sama seperti yang berfungsi dalam review.js
+// KRITIKAL: Laluan yang betul telah disahkan berfungsi di sini
 import { db } from '../config.js'; 
 import { 
-  collection, query, where, getDocs 
+  collection, query, where, getDocs, // Fungsi yang anda sudah ada
+  doc, getDoc, // <<< FUNGSI BARU YANG DITAMBAH UNTUK MEMBETULKAN RALAT
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const navigate = window.router?.navigate; 
 
+/**
+ * Memuatkan halaman senarai semakan RPH untuk Admin, ditapis mengikut UID guru.
+ */
 export async function loadRphReviewPage(params) {
     const content = document.getElementById('adminContent');
     const teacherUid = params?.uid;
@@ -26,6 +30,7 @@ export async function loadRphReviewPage(params) {
     `;
 
     try {
+        // 1. Dapatkan RPH untuk guru ini
         const rphQuery = query(
             collection(db, 'rph'),
             where('uid', '==', teacherUid)
@@ -38,8 +43,9 @@ export async function loadRphReviewPage(params) {
             html += `<p class="warning">Tiada RPH ditemui untuk guru ini.</p>`;
         } else {
             
+            // 2. Cuba dapatkan nama guru
             let teacherName = teacherUid;
-            // Gunakan doc(db, 'users', teacherUid) jika UID == Doc ID (Cara yang lebih stabil)
+            // Baris ini (dan penggunaan 'doc') kini berfungsi kerana getDoc dan doc telah diimport
             const teacherDoc = await getDoc(doc(db, 'users', teacherUid)); 
             if (teacherDoc.exists()) {
                 teacherName = teacherDoc.data().name;
@@ -56,6 +62,7 @@ export async function loadRphReviewPage(params) {
             
             rphSnap.forEach(doc => {
                 const r = doc.data();
+                // Butang ini memanggil laluan detail view ('admin-rph-detail')
                 html += `<tr>
                     <td>${doc.id}</td>
                     <td><span class="status-${r.status}">${r.status ? r.status.toUpperCase() : 'N/A'}</span></td>
@@ -69,7 +76,8 @@ export async function loadRphReviewPage(params) {
         document.getElementById('rphReviewList').innerHTML = html;
 
     } catch (error) {
-        document.getElementById('rphReviewList').innerHTML = `<p class="error">Gagal memuatkan senarai RPH: ${error.message}</p>`;
+        // Paparkan ralat yang lebih bermakna
+        document.getElementById('rphReviewList').innerHTML = `<p class="error">Gagal memuatkan senarai RPH: ${error.message}. (Semak peraturan Firestore untuk /users dan /rph)</p>`;
         console.error("Ralat memuatkan semakan RPH:", error);
     }
 }
