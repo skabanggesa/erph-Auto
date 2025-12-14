@@ -1,8 +1,8 @@
-// assets/js/router.js (KOD LENGKAP & STABIL)
+// assets/js/router.js (KOD LENGKAP & STABIL DENGAN LALUAN ADMIN BARU)
 
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-import { app, db } from './config.js'; // PASTIKAN 'app' & 'db' dieksport dari config.js
+import { app, db } from './config.js'; 
 
 const firebaseAuth = getAuth(app); 
 
@@ -14,7 +14,12 @@ const routes = {
     'guru-rph-generator': { file: 'guru/rph-generator.js', func: 'loadRphGenerator' },
     'guru-rph-history': { file: 'guru/rph-history.js', func: 'loadRphHistory' },
     'guru-rph-edit': { file: 'guru/rph-edit.js', func: 'loadRphEdit' },
+    
+    // --- LALUAN ADMIN ---
     'admin-home': { file: 'admin/dashboard.js', func: 'loadAdminDashboard' },
+    'admin-teachers': { file: 'admin/teachers.js', func: 'loadTeachersPage' }, // Tambah: Senarai & Daftar Guru
+    'admin-rph-review': { file: 'admin/rph-review.js', func: 'loadRphReviewPage' }, // Tambah: Semakan RPH
+    'admin-analytics': { file: 'admin/analytics.js', func: 'loadAnalytics' }, // Tambah: Analisis & Laporan (PENTING!)
 };
 
 /**
@@ -33,23 +38,29 @@ export async function navigate(routeName, param) {
     const route = routes[key];
 
     if (!route) {
-        contentDiv.innerHTML = `<p class="error">Laluan '${routeName}' tidak dijumpai.</p>`;
+        contentDiv.innerHTML = `<p class="error">Laluan '${routeName}' tidak dijumpai. Sila semak router.js.</p>`;
         return;
     }
 
     try {
+        // Paparkan kawasan kandungan yang betul
+        const targetDivId = routeName.startsWith('admin-') ? 'adminContent' : 'content';
+        const targetDiv = document.getElementById(targetDivId) || document.getElementById('content');
+
+        targetDiv.innerHTML = '<p class="loading-message">Memuatkan modul...</p>'; // Tunjukkan pemuatan
+
         const module = await import(`./${route.file}`);
 
         if (typeof module[route.func] === 'function') {
             await module[route.func](param);
         } else {
             console.error(`Gagal memuatkan modul untuk laluan ${routeName}: ${route.func} is not a function.`);
-            contentDiv.innerHTML = `<p class="error">Ralat aplikasi: Gagal memuatkan fungsi ${route.func} untuk laluan ${routeName}.</p>`;
+            targetDiv.innerHTML = `<p class="error">Ralat aplikasi: Gagal memuatkan fungsi ${route.func} untuk laluan ${routeName}.</p>`;
         }
 
     } catch (e) {
         console.error(`Gagal memuatkan modul untuk laluan ${routeName}:`, e);
-        contentDiv.innerHTML = `<p class="error">Gagal memuatkan modul untuk laluan ${routeName}: ${e.message}</p>`;
+        document.getElementById('content').innerHTML = `<p class="error">Gagal memuatkan modul untuk laluan ${routeName}: ${e.message}</p>`;
     }
 }
 
@@ -73,22 +84,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // KRITIKAL: Tunggu sehingga status pengesahan Firebase dipastikan
     onAuthStateChanged(firebaseAuth, async (user) => { 
-        const userNameEl = document.getElementById('userName'); // Dapatkan elemen nama di sini
+        const userNameEl = document.getElementById('userName'); 
         
         if (user) {
             let role = localStorage.getItem('userRole');
             
-            // FALLBACK: Jika role hilang dari localStorage walaupun sesi Firebase sah
+            // FALLBACK: Dapatkan role dari Firestore jika localStorage hilang
             if (!role) {
                 try {
                     const userDoc = await getDoc(doc(db, 'users', user.uid));
                     if (userDoc.exists()) {
                         const userData = userDoc.data();
+                        
+                        // Semak Status Nyahaktif (seperti yang ditunjukkan dalam teachers.js)
+                        if (userData.status === 'disabled') {
+                            // Mengeluarkan mesej Akaun tidak sah
+                            alert("Akaun tidak sah. Sila hubungi pentadbir."); 
+                            firebaseAuth.signOut();
+                            window.location.href = 'index.html';
+                            return;
+                        }
+                        
                         role = userData.role;
                         
                         // Simpan semula di localStorage (termasuk nama)
                         localStorage.setItem('userRole', role); 
                         localStorage.setItem('userName', userData.name); 
+                    } else {
+                        // Mengeluarkan mesej Data peranan pengguna tidak dijumpai
+                        alert("Data peranan pengguna tidak dijumpai. Sila hubungi pentadbir.");
+                        firebaseAuth.signOut();
+                        window.location.href = 'index.html';
+                        return;
                     }
                 } catch (e) {
                     console.error("Gagal membaca role/nama dari Firestore sebagai fallback:", e);
@@ -102,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ? 'assets/css/admin.css' 
                     : 'assets/css/guru.css';
                 
-                // >>> KRITIKAL: PAPARKAN NAMA PENGGUNA
+                // PAPARKAN NAMA PENGGUNA
                 const name = localStorage.getItem('userName');
                 if (userNameEl && name) {
                     userNameEl.textContent = name;
