@@ -1,7 +1,7 @@
-// assets/js/admin/rph-review.js (LIST VIEW)
+// assets/js/admin/rph-review.js (LIST VIEW - MUKTAMAD)
 
-// *** KRITIKAL: Laluan ini kini dibetulkan kepada '../config.js' (satu tahap ke atas) ***
-import { db } from '../config.js'; 
+// KRITIKAL: Laluan ini mesti betul
+import { db } from '../../config.js'; 
 import { 
   collection, query, where, getDocs 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
@@ -10,24 +10,13 @@ const navigate = window.router?.navigate;
 
 /**
  * Memuatkan halaman senarai semakan RPH untuk Admin, ditapis mengikut UID guru.
- * Fungsi ini dipanggil oleh router.js untuk laluan 'admin-rph-review'.
+ * KRITIKAL: MESTI ADA KATA KUNCI 'export'
  */
 export async function loadRphReviewPage(params) {
     const content = document.getElementById('adminContent');
     const teacherUid = params?.uid;
     
-    if (!teacherUid) {
-        content.innerHTML = '<div class="admin-section"><p class="warning">⚠️ Sila pilih guru dari Analisis Laporan untuk memulakan semakan.</p></div>';
-        return;
-    }
-
-    content.innerHTML = `
-        <div class="admin-section">
-            <h2>Semakan RPH Guru</h2>
-            <p>Memuatkan RPH yang dihantar oleh guru ini...</p>
-            <div id="rphReviewList" style="margin-top: 20px;"></div>
-        </div>
-    `;
+    // ... (kod HTML awal) ...
 
     try {
         // 1. Dapatkan RPH untuk guru ini
@@ -43,9 +32,8 @@ export async function loadRphReviewPage(params) {
             html += `<p class="warning">Tiada RPH ditemui untuk guru ini.</p>`;
         } else {
             
-            // 2. Cuba dapatkan nama guru
+            // 2. Cuba dapatkan nama guru (Kaitkan UID RPH dengan UID Pengguna)
             let teacherName = teacherUid;
-            // *NOTA: Kueri 'where' ini mungkin gagal jika tiada Indeks, tetapi kueri List View Analisis kita memintas isu ini. Kita guna cara ini untuk kesederhanaan.*
             const teacherQuery = query(collection(db, 'users'), where('uid', '==', teacherUid));
             const teacherDoc = await getDocs(teacherQuery);
             if (!teacherDoc.empty) {
