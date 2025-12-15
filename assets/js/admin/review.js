@@ -1,12 +1,10 @@
-// assets/js/admin/review.js (KOD LENGKAP & PEMBETULAN STRUKTUR DATA)
+// assets/js/admin/review.js (KOD LENGKAP & PEMBETULAN PARAMETER ROUTER)
 
 import { auth, db } from '../config.js';
 import { 
   doc, getDoc, updateDoc 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// Import loadRphListPage supaya boleh kembali ke senarai
-// *** Pastikan fail rph-list.js wujud dan fungsi loadRphListPage() dieksport ***
 import { loadRphListPage } from './rph-list.js'; 
 
 let currentRphId = null;
@@ -45,26 +43,25 @@ function renderData(data) {
 }
 
 
-// *** TANDATANGAN FUNGSI DIPERBETULKAN ***
+// 🔑 PEMBETULAN KRITIKAL: Tukar 'rphId' kepada 'params' untuk menerima Objek Router
 export async function loadReviewPage(params) {
+  
+  // Ekstrak ID sebenar. Jika params adalah objek {id: '...'}, ambil .id. Jika ia string, gunakannya terus.
+  const rphId = params?.id || params;
+  
   const content = document.getElementById('adminContent');
-  
-  // 🔑 KRITIKAL: Ekstrak ID dokumen (string) dari objek params
-  const rphId = params?.id;
-  
-  currentRphId = rphId; // Simpan ID RPH untuk fungsi update
+  currentRphId = rphId; 
 
-  // Perubahan pada semakan awal: pastikan ia adalah string
+  // Sekarang semak sama ada rphId adalah string ID yang sah
   if (!rphId || typeof rphId !== 'string') {
-    content.innerHTML = '<p class="error">Ralat: ID RPH tidak sah. Sila kembali ke senarai.</p>';
+    content.innerHTML = '<p class="error">Ralat: ID RPH tidak sah. Sila kembali ke senarai RPH. (Masalah Router/Parameter)</p>';
     return;
   }
 
   content.innerHTML = '<p>Memuatkan RPH...</p>';
 
   try {
-    // Baris ini kini menerima string yang sah sebagai ID dokumen
-    const docSnap = await getDoc(doc(db, 'rph', rphId));
+    const docSnap = await getDoc(doc(db, 'rph', rphId)); // Ini kini akan menerima string ID yang sah
     if (!docSnap.exists()) {
       content.innerHTML = '<p>RPH tidak dijumpai.</p>';
       return;
@@ -76,9 +73,11 @@ export async function loadReviewPage(params) {
     // AKSES DATA RPH: Guna rph.dataRPH.medan_sebenar
     const dataRPH = rph.dataRPH || {}; 
 
-    // Logik paparan status
+    // Logik paparan status - KEMASKINI KRITIKAL (Menghalang ralat jenis data)
     let statusDisplay = '';
-    switch (rph.status) {
+    const currentStatus = String(rph.status || 'N/A').toLowerCase(); 
+
+    switch (currentStatus) {
         case 'submitted':
             statusDisplay = '<span style="color: blue;">MENUNGGU SEMAKAN</span>';
             break;
@@ -92,7 +91,9 @@ export async function loadReviewPage(params) {
             statusDisplay = 'DRAF';
             break;
         default:
-            statusDisplay = rph.status.toUpperCase();
+            // Jika status lain (cth: PRA), paparkan nilai UPPERCASEnya
+            statusDisplay = currentStatus.toUpperCase(); 
+            break;
     }
 
 
@@ -132,10 +133,10 @@ export async function loadReviewPage(params) {
                 <label>Komen Pentadbir (Pilihan)</label>
                 <textarea id="adminComment" rows="3" style="width:100%; padding:8px;" placeholder="Masukkan komen penolakan di sini, jika ada.">${rph.reviewerComment || ''}</textarea>
             </div>
-            ${(rph.status === 'submitted' || rph.status === 'rejected') ? `
+            ${(currentStatus === 'submitted' || currentStatus === 'rejected') ? `
                 <button id="btnApprove" class="btn btn-success" style="margin-right: 10px;">Luluskan</button>
                 <button id="btnReject" class="btn btn-danger" style="margin-right: 10px;">Tolak</button>
-            ` : `<p>RPH ini telah ${rph.status.toUpperCase()}.</p>`}
+            ` : `<p>RPH ini telah ${currentStatus.toUpperCase()}.</p>`}
             <button id="btnBack" class="btn btn-secondary">Kembali ke Senarai</button>
         </div>
         <div id="reviewStatusMessage" style="margin-top: 15px;"></div>
@@ -143,7 +144,7 @@ export async function loadReviewPage(params) {
     `;
 
     // Muatkan nama guru
-    const teacherSnap = await getDoc(doc(db, 'users', rph.uid)); // Guna rph.uid, bukan rph.userId
+    const teacherSnap = await getDoc(doc(db, 'users', rph.uid)); 
     if (teacherSnap.exists()) {
       document.getElementById('guruNamePlaceholder').textContent = teacherSnap.data().name;
     } else {
