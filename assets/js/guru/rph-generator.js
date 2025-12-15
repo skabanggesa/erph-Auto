@@ -135,6 +135,7 @@ async function generateAllRphInBatch() {
 
         for (const sesi of sesiHari) {
             try {
+                // Panggil fungsi penjanaan RPH tunggal
                 await generateRphForSingleSession(selectedDate, sesi); 
                 successCount++;
             } catch (err) {
@@ -158,10 +159,14 @@ async function generateAllRphInBatch() {
             </div>
         `;
         
-        // 🔑 Event listener butang yang memanggil loadRphHistoryPage()
-        document.getElementById('btnViewRphList').addEventListener('click', () => {
-             loadRphHistoryPage(); 
-        });
+        // 🔑 PEMBETULAN KRITIKAL: Dapatkan elemen butang BARU selepas innerHTML diisi
+        const btnViewRphList = document.getElementById('btnViewRphList');
+        if (btnViewRphList) {
+             btnViewRphList.addEventListener('click', () => {
+                 // Butang kini berfungsi dan memanggil fungsi dari rph-history.js
+                 loadRphHistoryPage(); 
+             });
+        }
         
     } catch (error) {
         console.error("Ralat utama semasa penjanaan kelompok:", error);
@@ -171,7 +176,6 @@ async function generateAllRphInBatch() {
         btn.textContent = 'Jana SEMUA RPH';
     }
 }
-
 
 /**
  * 🔄 FUNGSI 3: Logik untuk menjana RPH untuk satu sesi.
@@ -230,3 +234,4 @@ async function generateRphForSingleSession(selectedDate, sesi) {
     
     console.log(`RPH untuk ${sesi.matapelajaran} - ${sesi.kelas} berjaya dijana. Doc ID: ${docRef.id}`);
 }
+
