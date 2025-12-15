@@ -31,6 +31,7 @@ export async function loadAdminDashboard() {
                 <button id="viewRphBtn" class="btn btn-primary">1. Semak RPH Guru</button>
                 <button id="manageUsersBtn" class="btn btn-secondary" style="margin-left: 10px;">2. Urus Pengguna (Akaun)</button>
                 <button id="viewAnalyticsBtn" class="btn btn-secondary" style="margin-left: 10px;">3. Analisis & Laporan</button>
+                <button id="viewMaintenanceBtn" class="btn btn-warning" style="margin-left: 10px;">4. Penyelenggaraan & Statistik</button>
             </div>
             
             <div id="adminContent" style="margin-top: 30px;">
@@ -61,5 +62,11 @@ export async function loadAdminDashboard() {
         // Menggunakan window.router.navigate yang ditakrifkan dalam router.js
         window.router.navigate('admin-analytics'); 
     });
+    
+    // 4. Penyelenggaraan & Statistik (Butang Baharu)
+    document.getElementById('viewMaintenanceBtn').addEventListener('click', () => {
+        // Mengarahkan ke laluan admin-maintenance yang baru dikonfigurasi
+        window.router.navigate('admin-maintenance'); 
+    });
 
-} // <--- KRITIKAL: KURUNGAN TUTUP UNTUK loadAdminDashboard
+}
