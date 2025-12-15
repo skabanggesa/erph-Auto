@@ -28,7 +28,10 @@ const routes = {
     'admin-rph-detail': { file: 'admin/review.js', func: 'loadReviewPage' },
     
     // [3] ANALISIS & LAPORAN
-    'admin-analytics': { file: 'admin/analytics.js', func: 'loadAnalytics' }, 
+    'admin-analytics': { file: 'admin/analytics.js', func: 'loadAnalytics' },
+
+    // [4] PENYELENGGARAAN & STATISTIK (Laluan Baharu)
+    'admin-maintenance': { file: 'admin/admin-maintenance.js', func: 'loadAdminMaintenancePage' },
 };
 
 /**
