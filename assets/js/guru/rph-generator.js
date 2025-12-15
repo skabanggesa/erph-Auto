@@ -164,7 +164,7 @@ async function generateAllRphInBatch() {
         if (btnViewRphList) {
              btnViewRphList.addEventListener('click', () => {
                  // Butang kini berfungsi dan memanggil fungsi dari rph-history.js
-                 loadRphHistoryPage(); 
+                 loadRphHistory(); 
              });
         }
         
@@ -234,5 +234,6 @@ async function generateRphForSingleSession(selectedDate, sesi) {
     
     console.log(`RPH untuk ${sesi.matapelajaran} - ${sesi.kelas} berjaya dijana. Doc ID: ${docRef.id}`);
 }
+
 
 
