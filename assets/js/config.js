@@ -65,7 +65,7 @@ export const MAP_SUBJECT_TO_FILE = { // <<< Tukar kepada 'export const'
   'RBT': 'rbt', 
   'Reka Bentuk dan Teknologi': 'rbt',
 
-  'Pra': 'pra', 
+  'PRA': 'pra', 
   'Pravocational': 'pra' 
 };
 
