@@ -61,8 +61,7 @@ export async function loadRphReviewPage(params) {
             rphSnap.forEach(doc => {
                 const r = doc.data();
                 
-                // 🔑 PEMBETULAN MUKTAMAD: Tukar status kepada string secara eksplisit
-                // Ini mencegah ralat yang menghentikan gelung forEach.
+                // 🔑 PEMBETULAN MUKTAMAD: Tukar status kepada string secara eksplisit untuk mengelakkan ralat 'toUpperCase'
                 const statusValue = String(r.status || 'N/A');
                 const statusText = statusValue.toUpperCase();
                 
@@ -80,7 +79,6 @@ export async function loadRphReviewPage(params) {
         document.getElementById('rphReviewList').innerHTML = html;
 
     } catch (error) {
-        // Paparkan ralat yang lebih bermakna
         document.getElementById('rphReviewList').innerHTML = `<p class="error">Gagal memuatkan senarai RPH: ${error.message}. (Semak peraturan Firestore untuk /users dan /rph)</p>`;
         console.error("Ralat memuatkan semakan RPH:", error);
     }
