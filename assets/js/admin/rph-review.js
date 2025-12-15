@@ -1,10 +1,10 @@
-// assets/js/admin/rph-review.js (LIST VIEW - MUKTAMAD)
+// assets/js/admin/rph-review.js (LIST VIEW - DIBETULKAN UNTUK STATUS NON-STRING)
 
 // KRITIKAL: Laluan yang betul telah disahkan berfungsi di sini
 import { db } from '../config.js'; 
 import { 
-  collection, query, where, getDocs, // Fungsi yang anda sudah ada
-  doc, getDoc, // <<< FUNGSI BARU YANG DITAMBAH UNTUK MEMBETULKAN RALAT
+  collection, query, where, getDocs, 
+  doc, getDoc, 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const navigate = window.router?.navigate; 
@@ -45,7 +45,6 @@ export async function loadRphReviewPage(params) {
             
             // 2. Cuba dapatkan nama guru
             let teacherName = teacherUid;
-            // Baris ini (dan penggunaan 'doc') kini berfungsi kerana getDoc dan doc telah diimport
             const teacherDoc = await getDoc(doc(db, 'users', teacherUid)); 
             if (teacherDoc.exists()) {
                 teacherName = teacherDoc.data().name;
@@ -62,10 +61,15 @@ export async function loadRphReviewPage(params) {
             
             rphSnap.forEach(doc => {
                 const r = doc.data();
-                // Butang ini memanggil laluan detail view ('admin-rph-detail')
+                
+                // 🔑 PEMBETULAN KRITIKAL: Tukar status kepada string secara eksplisit
+                const statusValue = String(r.status || 'N/A');
+                const statusText = statusValue.toUpperCase();
+                
+                // Guna statusValue.toLowerCase() untuk class CSS, guna statusText untuk paparan
                 html += `<tr>
                     <td>${doc.id}</td>
-                    <td><span class="status-${r.status}">${r.status ? r.status.toUpperCase() : 'N/A'}</span></td>
+                    <td><span class="status-${statusValue.toLowerCase()}">${statusText}</span></td>
                     <td><button onclick="${navigate ? `window.router.navigate('admin-rph-detail', { id: '${doc.id}' });` : `console.error('Router tidak tersedia');`}">Lihat/Semak</button></td>
                 </tr>`;
             });
