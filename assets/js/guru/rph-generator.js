@@ -1,11 +1,12 @@
 import { auth, db, getTemplateUrl } from '../config.js';
 import { 
-  doc, getDoc, collection, addDoc, query, where, getDocs 
+  doc, getDoc, collection, addDoc, query, where, getDocs // Tambah query, where, getDocs
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// Import fungsi dari fail rph-form.js atau fail generator anda yang lain
-// Anda perlu memastikan fungsi ini dieksport dan tersedia.
-// import { loadRphForm } from './rph-form.js'; 
+// Import fungsi dari fail rph-edit.js jika anda mahu terus edit satu RPH selepas penjanaan batch
+// Jika anda tidak mahu import/redirect selepas batch, buang baris ini dan baris yang memanggilnya.
+// import { loadRphEdit } from './rph-edit.js'; 
+
 
 export function loadRphGenerator() {
   const content = document.getElementById('content');
@@ -37,8 +38,9 @@ export function loadRphGenerator() {
   loadScheduledSessions();
 }
 
+
 /**
- * Memuatkan sesi yang dijadualkan untuk tarikh yang dipilih (daripada Firestore /jadual)
+ * 🔄 FUNGSI 1: Hanya memuatkan dan memaparkan sesi yang dijadualkan (Menggantikan fungsi generateRphForDate lama)
  */
 async function loadScheduledSessions() {
     const dateInput = document.getElementById('rphDate').value;
@@ -48,39 +50,44 @@ async function loadScheduledSessions() {
         return;
     }
 
-    const dayOfWeek = new Date(dateInput).getDay(); // 0=Ahad, 1=Isnin, ... 6=Sabtu
-    const dayMap = ['Ahad', 'Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat', 'Sabtu'];
-    const currentDay = dayMap[dayOfWeek];
+    const selectedDate = new Date(dateInput);
+    const hari = selectedDate.toLocaleDateString('ms-MY', { weekday: 'long' });
     
-    resultDiv.innerHTML = `<p>Mencari sesi untuk **${currentDay}**...</p>`;
+    if (!['Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat'].includes(hari)) {
+        document.getElementById('generatorResult').innerHTML = 
+          '<p class="error">RPH hanya boleh dijana untuk Isnin hingga Jumaat.</p>';
+        return;
+    }
+    
+    resultDiv.innerHTML = `<p>Mencari sesi untuk **${hari}**...</p>`;
     
     try {
-        const jadwalRef = doc(db, 'jadual', auth.currentUser.uid);
-        const jadwalSnap = await getDoc(jadwalRef);
+        const user = auth.currentUser;
+        const jadualRef = doc(db, 'jadual', user.uid);
+        const jadualSnap = await getDoc(jadualRef);
 
-        if (!jadwalSnap.exists() || !jadwalSnap.data() || !jadwalSnap.data()[currentDay]) {
-            resultDiv.innerHTML = `<p class="warning">Tiada jadual waktu ditemui untuk hari ${currentDay}.</p>`;
+        if (!jadualSnap.exists() || !jadualSnap.data() || !jadualSnap.data().senarai) {
+            resultDiv.innerHTML = `<p class="error">Jadual mingguan belum diisi. Sila isi jadual dahulu.</p>`;
             return;
         }
 
-        const dailyJadwal = jadwalSnap.data()[currentDay];
+        const senaraiJadual = jadualSnap.data().senarai;
+        const sesiHari = senaraiJadual.filter(s => s.hari === hari);
         
-        let html = `<h3>Sesi untuk ${currentDay}, ${new Date(dateInput).toLocaleDateString('ms-MY')}</h3>`;
+        let html = `<h3>Sesi untuk ${hari}, ${selectedDate.toLocaleDateString('ms-MY')}</h3>`;
         
-        if (dailyJadwal.length === 0) {
+        if (sesiHari.length === 0) {
             html += '<p>Tiada sesi mengajar dijadualkan pada hari ini.</p>';
         } else {
-             // ❌ MENGHILANGKAN BUTANG PILIH SATU PERSATU.
-             // Butang "Jana SEMUA RPH" yang baru di atas akan mengendalikan semua sesi.
-             
+             // Paparkan senarai sesi sahaja (BUTANG PILIH DIBUANG)
              html += `<ul style="padding-left: 20px;">
-                 ${dailyJadwal.map((sesi, index) => `
+                 ${sesiHari.map((sesi) => `
                      <li style="margin-bottom: 10px;">
                          **${sesi.masaMula} - ${sesi.masaTamat}** | ${sesi.matapelajaran} | ${sesi.kelas}
                      </li>
                  `).join('')}
              </ul>
-             <p class="success">Klik butang **Jana SEMUA RPH** di atas untuk menjana ${dailyJadwal.length} RPH sekaligus.</p>`;
+             <p class="success">Klik butang **Jana SEMUA RPH** di atas untuk menjana ${sesiHari.length} RPH sekaligus.</p>`;
         }
         
         resultDiv.innerHTML = html;
@@ -93,7 +100,7 @@ async function loadScheduledSessions() {
 
 
 /**
- * 🔑 FUNGSI UTAMA BARU: Menjana SEMUA RPH untuk setiap sesi pada tarikh yang dipilih.
+ * 🔑 FUNGSI 2: Menjana SEMUA RPH untuk setiap sesi pada tarikh yang dipilih (BATCH PROCESS).
  */
 async function generateAllRphInBatch() {
     const dateInput = document.getElementById('rphDate').value;
@@ -104,48 +111,52 @@ async function generateAllRphInBatch() {
         return;
     }
 
-    const dayOfWeek = new Date(dateInput).getDay(); 
-    const dayMap = ['Ahad', 'Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat', 'Sabtu'];
-    const currentDay = dayMap[dayOfWeek];
+    const selectedDate = new Date(dateInput);
+    const hari = selectedDate.toLocaleDateString('ms-MY', { weekday: 'long' });
     
+    if (!['Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat'].includes(hari)) {
+        alert('RPH hanya boleh dijana untuk Isnin hingga Jumaat.');
+        return;
+    }
+
     // Matikan butang dan paparkan status
     const btn = document.getElementById('btnGenerateAll');
     btn.disabled = true;
     btn.textContent = 'Memproses... Sila Tunggu';
-    resultDiv.innerHTML = `<p class="info">Memulakan penjanaan RPH kelompok untuk ${currentDay}, ${new Date(dateInput).toLocaleDateString('ms-MY')}...</p>`;
-    
-    const selectedDate = new Date(dateInput);
+    resultDiv.innerHTML = `<p class="info">Memulakan penjanaan RPH kelompok untuk ${hari}, ${selectedDate.toLocaleDateString('ms-MY')}...</p>`;
     
     try {
-        const jadwalRef = doc(db, 'jadual', auth.currentUser.uid);
-        const jadwalSnap = await getDoc(jadwalRef);
+        const user = auth.currentUser;
+        const jadualRef = doc(db, 'jadual', user.uid);
+        const jadualSnap = await getDoc(jadualRef);
+
+        const senaraiJadual = jadualSnap.data().senarai;
+        const sesiHari = senaraiJadual.filter(s => s.hari === hari);
         
-        if (!jadwalSnap.exists() || !jadwalSnap.data() || !jadwalSnap.data()[currentDay]) {
-            resultDiv.innerHTML = `<p class="warning">Tiada jadual waktu ditemui untuk hari ${currentDay}. Penjanaan dibatalkan.</p>`;
-            btn.disabled = false;
-            btn.textContent = 'Jana SEMUA RPH';
-            return;
-        }
-
-        const dailyJadwal = jadwalSnap.data()[currentDay];
         let successCount = 0;
-        let failCount = 0;
+        let skipCount = 0;
 
-        for (const sesi of dailyJadwal) {
+        for (const sesi of sesiHari) {
             try {
-                // Panggil fungsi penjanaan RPH tunggal yang diubah suai
+                // Panggil fungsi penjanaan RPH tunggal
                 await generateRphForSingleSession(selectedDate, sesi); 
                 successCount++;
             } catch (err) {
-                console.error(`Gagal menjana RPH untuk sesi ${sesi.matapelajaran} - ${sesi.kelas}:`, err);
-                failCount++;
+                // Jika ralat adalah kerana RPH sudah wujud, kira sebagai skip
+                if (err.message.includes('RPH sudah wujud')) {
+                    skipCount++;
+                    console.log(`DILANGKAU: RPH untuk ${sesi.matapelajaran} - ${sesi.kelas} sudah wujud.`);
+                } else {
+                    console.error(`Gagal menjana RPH untuk sesi ${sesi.matapelajaran} - ${sesi.kelas}:`, err);
+                }
             }
         }
 
         resultDiv.innerHTML = `
             <p class="success">✅ Penjanaan Selesai!</p>
             <p>RPH berjaya dijana dan disimpan sebagai draf: **${successCount} sesi**</p>
-            ${failCount > 0 ? `<p class="error">RPH gagal dijana: **${failCount} sesi** (Sila semak log konsol)</p>` : ''}
+            ${skipCount > 0 ? `<p class="warning">RPH yang dilangkau kerana sudah wujud: **${skipCount} sesi**</p>` : ''}
+            <p>Sila pergi ke 'Lihat RPH' untuk menyemak dan menghantar.</p>
         `;
         
     } catch (error) {
@@ -159,13 +170,12 @@ async function generateAllRphInBatch() {
 
 
 /**
- * 🔄 FUNGSI UTAMA: Logik untuk menjana RPH untuk satu sesi.
- * (Diubah suai daripada generateRphForDate asal anda untuk menerima tarikh & sesi sebagai parameter)
+ * 🔄 FUNGSI 3: Logik untuk menjana RPH untuk satu sesi (Diubah suai dari window.selectSession yang lama)
  */
 async function generateRphForSingleSession(selectedDate, sesi) {
     const month = selectedDate.getMonth() + 1; // 1 (Jan) hingga 12 (Dis)
     
-    // Semak sama ada RPH sudah wujud
+    // 1. Semak sama ada RPH sudah wujud
     const existingRphQuery = query(
         collection(db, 'rph'),
         where('uid', '==', auth.currentUser.uid),
@@ -179,27 +189,24 @@ async function generateRphForSingleSession(selectedDate, sesi) {
     const existingRphSnap = await getDocs(existingRphQuery);
 
     if (!existingRphSnap.empty) {
-        // Jika RPH sudah wujud, langkau penjanaan dan baling ralat yang boleh ditangkap
+        // Jika RPH sudah wujud, langkau penjanaan dan baling ralat
         throw new Error(`RPH sudah wujud (${sesi.matapelajaran} - ${sesi.kelas}).`);
     }
     
-    // 1. Dapatkan URL template
-    const templateName = sesi.matapelajaran.toLowerCase().replace(/[^a-z0-9]/g, '');
-    const template_url = getTemplateUrl(templateName);
-
-    // 2. Muatkan template
-    const res = await fetch(template_url);
+    // 2. Dapatkan URL template & Muatkan template
+    // Guna getTemplateUrl(sesi.matapelajaran)
+    const res = await fetch(getTemplateUrl(sesi.matapelajaran));
     if (!res.ok) {
-        throw new Error(`Gagal memuatkan template untuk ${sesi.matapelajaran} (${template_url}).`);
+        throw new Error('Template tidak dijumpai untuk ' + sesi.matapelajaran);
     }
+    
     const topics = await res.json();
     
     if (!Array.isArray(topics) || topics.length === 0) { 
         throw new Error('Tiada topik dalam template.');
     }
 
-    // 3. Kira indeks topik berdasarkan bulan
-    // Urutan topik dikira berdasarkan BULAN tarikh
+    // 3. Kira indeks topik berdasarkan bulan (Urutan topik dikira berdasarkan BULAN tarikh)
     const topicIndex = (month - 1) % topics.length;
     const selectedTopic = topics[topicIndex];
 
@@ -220,10 +227,7 @@ async function generateRphForSingleSession(selectedDate, sesi) {
     // Operasi addDoc
     const docRef = await addDoc(collection(db, 'rph'), rphData);
     
-    // Tiada alert di sini, kerana ia adalah proses kelompok.
-    // Console log untuk tujuan debug:
+    // TIDAK membuat alert atau redirect ke halaman edit kerana ia adalah proses kelompok.
+    // console log untuk tujuan debug
     console.log(`RPH untuk ${sesi.matapelajaran} - ${sesi.kelas} berjaya dijana. Doc ID: ${docRef.id}`);
 }
-
-// FUNGSI LAMA generateRphForDate TELAH DIGABUNGKAN DAN DIUBAH SUAI KE generateRphForSingleSession.
-// Anda boleh memadamkan fungsi generateRphForDate yang lama sepenuhnya.
