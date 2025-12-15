@@ -4,7 +4,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // 🔑 IMPORT YANG DIKEMASKINI: Mengimport dari rph-history.js
-import { loadRphHistoryPage } from './rph-history.js'; 
+import { loadRphHistory } from './rph-history.js'; 
 
 export function loadRphGenerator() {
   const content = document.getElementById('content');
@@ -234,4 +234,5 @@ async function generateRphForSingleSession(selectedDate, sesi) {
     
     console.log(`RPH untuk ${sesi.matapelajaran} - ${sesi.kelas} berjaya dijana. Doc ID: ${docRef.id}`);
 }
+
 
