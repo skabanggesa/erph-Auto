@@ -1,12 +1,10 @@
 import { auth, db, getTemplateUrl } from '../config.js';
 import { 
-  doc, getDoc, collection, addDoc, query, where, getDocs // Tambah query, where, getDocs
+  doc, getDoc, collection, addDoc, query, where, getDocs
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// Import fungsi dari fail rph-edit.js jika anda mahu terus edit satu RPH selepas penjanaan batch
-// Jika anda tidak mahu import/redirect selepas batch, buang baris ini dan baris yang memanggilnya.
-// import { loadRphEdit } from './rph-edit.js'; 
-
+// 🔑 IMPORT YANG DIKEMASKINI: Mengimport dari rph-history.js
+import { loadRphHistoryPage } from './rph-history.js'; 
 
 export function loadRphGenerator() {
   const content = document.getElementById('content');
@@ -34,13 +32,12 @@ export function loadRphGenerator() {
   document.getElementById('rphDate').addEventListener('change', loadScheduledSessions);
   document.getElementById('btnGenerateAll').addEventListener('click', generateAllRphInBatch);
   
-  // Muatkan sesi secara automatik apabila halaman dimuatkan
   loadScheduledSessions();
 }
 
 
 /**
- * 🔄 FUNGSI 1: Hanya memuatkan dan memaparkan sesi yang dijadualkan (Menggantikan fungsi generateRphForDate lama)
+ * 🔄 FUNGSI 1: Hanya memuatkan dan memaparkan sesi yang dijadualkan.
  */
 async function loadScheduledSessions() {
     const dateInput = document.getElementById('rphDate').value;
@@ -79,7 +76,7 @@ async function loadScheduledSessions() {
         if (sesiHari.length === 0) {
             html += '<p>Tiada sesi mengajar dijadualkan pada hari ini.</p>';
         } else {
-             // Paparkan senarai sesi sahaja (BUTANG PILIH DIBUANG)
+             // Paparkan senarai sesi sahaja 
              html += `<ul style="padding-left: 20px;">
                  ${sesiHari.map((sesi) => `
                      <li style="margin-bottom: 10px;">
@@ -90,11 +87,11 @@ async function loadScheduledSessions() {
              <p class="success">Klik butang **Jana SEMUA RPH** di atas untuk menjana ${sesiHari.length} RPH sekaligus.</p>`;
         }
         
-        resultDiv.innerHTML = html;
+        document.getElementById('generatorResult').innerHTML = html;
 
     } catch (error) {
         console.error("Ralat memuatkan sesi:", error);
-        resultDiv.innerHTML = `<p class="error">Gagal memuatkan sesi jadual: ${error.message}</p>`;
+        document.getElementById('generatorResult').innerHTML = `<p class="error">Gagal memuatkan sesi jadual: ${error.message}</p>`;
     }
 }
 
@@ -138,11 +135,9 @@ async function generateAllRphInBatch() {
 
         for (const sesi of sesiHari) {
             try {
-                // Panggil fungsi penjanaan RPH tunggal
                 await generateRphForSingleSession(selectedDate, sesi); 
                 successCount++;
             } catch (err) {
-                // Jika ralat adalah kerana RPH sudah wujud, kira sebagai skip
                 if (err.message.includes('RPH sudah wujud')) {
                     skipCount++;
                     console.log(`DILANGKAU: RPH untuk ${sesi.matapelajaran} - ${sesi.kelas} sudah wujud.`);
@@ -152,12 +147,21 @@ async function generateAllRphInBatch() {
             }
         }
 
+        // KEMASKINI HTML UNTUK BUTANG LIHAT RPH
         resultDiv.innerHTML = `
             <p class="success">✅ Penjanaan Selesai!</p>
             <p>RPH berjaya dijana dan disimpan sebagai draf: **${successCount} sesi**</p>
             ${skipCount > 0 ? `<p class="warning">RPH yang dilangkau kerana sudah wujud: **${skipCount} sesi**</p>` : ''}
-            <p>Sila pergi ke 'Lihat RPH' untuk menyemak dan menghantar.</p>
+            
+            <div style="margin-top: 15px;">
+                <button id="btnViewRphList" class="btn">Lihat RPH</button>
+            </div>
         `;
+        
+        // 🔑 Event listener butang yang memanggil loadRphHistoryPage()
+        document.getElementById('btnViewRphList').addEventListener('click', () => {
+             loadRphHistoryPage(); 
+        });
         
     } catch (error) {
         console.error("Ralat utama semasa penjanaan kelompok:", error);
@@ -170,10 +174,10 @@ async function generateAllRphInBatch() {
 
 
 /**
- * 🔄 FUNGSI 3: Logik untuk menjana RPH untuk satu sesi (Diubah suai dari window.selectSession yang lama)
+ * 🔄 FUNGSI 3: Logik untuk menjana RPH untuk satu sesi.
  */
 async function generateRphForSingleSession(selectedDate, sesi) {
-    const month = selectedDate.getMonth() + 1; // 1 (Jan) hingga 12 (Dis)
+    const month = selectedDate.getMonth() + 1; 
     
     // 1. Semak sama ada RPH sudah wujud
     const existingRphQuery = query(
@@ -189,12 +193,10 @@ async function generateRphForSingleSession(selectedDate, sesi) {
     const existingRphSnap = await getDocs(existingRphQuery);
 
     if (!existingRphSnap.empty) {
-        // Jika RPH sudah wujud, langkau penjanaan dan baling ralat
         throw new Error(`RPH sudah wujud (${sesi.matapelajaran} - ${sesi.kelas}).`);
     }
     
     // 2. Dapatkan URL template & Muatkan template
-    // Guna getTemplateUrl(sesi.matapelajaran)
     const res = await fetch(getTemplateUrl(sesi.matapelajaran));
     if (!res.ok) {
         throw new Error('Template tidak dijumpai untuk ' + sesi.matapelajaran);
@@ -206,14 +208,14 @@ async function generateRphForSingleSession(selectedDate, sesi) {
         throw new Error('Tiada topik dalam template.');
     }
 
-    // 3. Kira indeks topik berdasarkan bulan (Urutan topik dikira berdasarkan BULAN tarikh)
+    // 3. Kira indeks topik berdasarkan bulan
     const topicIndex = (month - 1) % topics.length;
     const selectedTopic = topics[topicIndex];
 
     // 4. Simpan sebagai draf
     const rphData = {
       uid: auth.currentUser.uid, 
-      tarikh: selectedDate, // Simpan objek Date (Firestore Timestamp)
+      tarikh: selectedDate, 
       matapelajaran: sesi.matapelajaran,
       kelas: sesi.kelas,
       masaMula: sesi.masaMula,
@@ -224,10 +226,7 @@ async function generateRphForSingleSession(selectedDate, sesi) {
       updatedAt: new Date() 
     };
     
-    // Operasi addDoc
     const docRef = await addDoc(collection(db, 'rph'), rphData);
     
-    // TIDAK membuat alert atau redirect ke halaman edit kerana ia adalah proses kelompok.
-    // console log untuk tujuan debug
     console.log(`RPH untuk ${sesi.matapelajaran} - ${sesi.kelas} berjaya dijana. Doc ID: ${docRef.id}`);
 }
