@@ -61,12 +61,12 @@ export async function loadRphReviewPage(params) {
             rphSnap.forEach(doc => {
                 const r = doc.data();
                 
-                // 🔑 PEMBETULAN MUKTAMAD: Tukar status kepada string secara eksplisit sebelum digunakan
-                // Ini mencegah ralat 'toUpperCase is not a function' atau 'indexOf is not a function'
+                // 🔑 PEMBETULAN MUKTAMAD: Tukar status kepada string secara eksplisit
+                // Ini mencegah ralat yang menghentikan gelung forEach.
                 const statusValue = String(r.status || 'N/A');
                 const statusText = statusValue.toUpperCase();
                 
-                // Guna statusValue.toLowerCase() untuk class CSS, guna statusText untuk paparan
+                // Guna statusValue.toLowerCase() untuk class CSS (cth: status-pra), guna statusText untuk paparan
                 html += `<tr>
                     <td>${doc.id}</td>
                     <td><span class="status-${statusValue.toLowerCase()}">${statusText}</span></td>
