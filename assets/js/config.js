@@ -62,6 +62,8 @@ export const MAP_SUBJECT_TO_FILE = {
   'Pendidikan Jasmani': 'pj',
   'PK': 'pk', 
   'Pendidikan Kesihatan': 'pk',
+  'PJK': 'pjk', 
+  'Pendidikan Jasmani Kesihatan': 'pjk',
 
   // --- KEMANUSIAAN & LAIN-LAIN ---
   'SJ': 'sj', 
