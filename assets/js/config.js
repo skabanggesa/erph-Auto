@@ -24,51 +24,55 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 
 // Peta nama matapelajaran → nama fail JSON
-export const MAP_SUBJECT_TO_FILE = { // <<< Tukar kepada 'export const'
-  // BAHASA
+export const MAP_SUBJECT_TO_FILE = {
+  // --- BAHASA ---
   'BM': 'bm', 
   'Bahasa Melayu': 'bm',
-
-  'BI': 'bi', // Dikenal pasti digunakan dalam jadual
+  'BMK': 'bmk', // Baru (Bahasa Melayu Khas)
+  'BI': 'bi', 
   'Bahasa Inggeris': 'bi',
+  'BIK': 'bik', // Baru (Bahasa Inggeris Khas)
 
-  // STEM
+  // --- STEM & TEKNOLOGI ---
   'MT': 'mt', 
   'Matematik': 'mt',
-
+  'MTK': 'mtk', // Baru (Matematik Khas)
   'SN': 'sn', 
   'Sains': 'sn',
-
-  // PENDIDIKAN
-  'PAI': 'pai', 
-  'Pendidikan Islam': 'pai',
-  
-  'BA': 'ba', 
-  'Buddha Agama': 'ba', 
-
-  // SUBJEK LAIN
-  'SJ': 'sj', 
-  'Sejarah': 'sj',
-
-  'PJ': 'pj', 
-  'Pendidikan Jasmani': 'pj',
-
-  'PK': 'pk', 
-  'Pendidikan Kesihatan': 'pk',
-
-  'MZ': 'mz', 
-  'Muzik': 'mz',
-  
-  'PSV': 'psv', 
-  'Pendidikan Seni Visual': 'psv',
-
+  'TMK': 'tmk', // Baru (Teknologi Maklumat & Komunikasi)
   'RBT': 'rbt', 
   'Reka Bentuk dan Teknologi': 'rbt',
 
+  // --- PENDIDIKAN AGAMA & MORAL ---
+  'PAI': 'pai', 
+  'Pendidikan Islam': 'pai',
+  'PAIK': 'paik', // Baru (Pendidikan Agama Islam Khas)
+  'PMK': 'pmk',  // Baru (Pendidikan Moral Khas)
+  'BA': 'ba', 
+  'Bahasa Arab': 'ba', 
+
+  // --- KESENIAN & JASMANI ---
+  'MZ': 'mz', 
+  'Muzik': 'mz',
+  'MZK': 'mzk',  // Baru (Muzik Khas)
+  'PSV': 'psv', 
+  'Pendidikan Seni Visual': 'psv',
+  'PSVK': 'psvk', // Baru (Pendidikan Seni Visual Khas)
+  'PJ': 'pj', 
+  'Pendidikan Jasmani': 'pj',
+  'PK': 'pk', 
+  'Pendidikan Kesihatan': 'pk',
+
+  // --- KEMANUSIAAN & LAIN-LAIN ---
+  'SJ': 'sj', 
+  'Sejarah': 'sj',
+  'KMK': 'kmk', // Baru (Kemahiran Manipulatif Khas / Kemanusiaan)
+  'KHA': 'kha', // Baru (Kemahiran Hidup / KHA)
+  'PD': 'pd',   // Baru (Pengurusan Diri)
+  'PSAS': 'psas', // Baru
   'PRA': 'pra', 
   'Pravocational': 'pra' 
 };
-
 // Fungsi untuk dapatkan URL template JSON dari GitHub
 export const getTemplateUrl = (subjectDisplayName) => {
   const filename = MAP_SUBJECT_TO_FILE[subjectDisplayName]; // <<< Menggunakan MAP_SUBJECT_TO_FILE yang dieksport
