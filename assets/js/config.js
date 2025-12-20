@@ -50,6 +50,8 @@ export const MAP_SUBJECT_TO_FILE = {
   'PMK': 'pmk',  // Baru (Pendidikan Moral Khas)
   'BA': 'ba', 
   'Bahasa Arab': 'ba', 
+  'TAS': 'tas', 
+  'Tasmik': 'tas', 
 
   // --- KESENIAN & JASMANI ---
   'MZ': 'mz', 
