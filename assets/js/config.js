@@ -87,6 +87,45 @@ export const MAP_SUBJECT_TO_FILE = {
   'PAIP': 'paip', 
   'Pendidikan Agama Islam Pra': 'paip',
 };
+
+// Kamus Singkatan → Nama Penuh untuk paparan (UI)
+export const MAP_SUBJECT_TO_FULLNAME = {
+  'BM': 'BAHASA MELAYU',
+  'BMK': 'BAHASA MELAYU KHAS',
+  'BI': 'BAHASA INGGERIS',
+  'BIK': 'BAHASA INGGERIS KHAS',
+  'MT': 'MATEMATIK',
+  'MTK': 'MATEMATIK KHAS',
+  'SN': 'SAINS',
+  'TMK': 'TEKNOLOGI MAKLUMAT & KOMUNIKASI',
+  'RBT': 'REKA BENTUK DAN TEKNOLOGI',
+  'PAI': 'PENDIDIKAN AGAMA ISLAM',
+  'PAIK': 'PENDIDIKAN AGAMA ISLAM KHAS',
+  'PMK': 'PENDIDIKAN MORAL KHAS',
+  'TAS': 'TASAWWUR ISLAM', // Subjek baharu anda
+  'SJ': 'SEJARAH',
+  'PJ': 'PENDIDIKAN JASMANI',
+  'PK': 'PENDIDIKAN KESIHATAN',
+  'MZ': 'MUZIK',
+  'MZK': 'MUZIK KHAS',
+  'PSV': 'PENDIDIKAN SENI VISUAL',
+  'PSVK': 'PENDIDIKAN SENI VISUAL KHAS',
+  'KMK': 'KEMAHIRAN MANIPULATIF KHAS',
+  'KHA': 'KEMAHIRAN HIDUP (KHA)',
+  'PD': 'PENGURUSAN DIRI',
+  'PSAS': 'PENDIDIKAN SAINS SOSIAL & ALAM SEKITAR',
+  'PRA': 'PRAVOCATIONAL'
+};
+
+/**
+ * Fungsi pembantu untuk mendapatkan nama penuh matapelajaran
+ */
+export function getFullSubjectName(code) {
+  if (!code) return 'TIADA MAKLUMAT';
+  // Ambil nama penuh dari kamus, jika tiada pulangkan kod asal (e.g. BI)
+  return MAP_SUBJECT_TO_FULLNAME[code.toUpperCase()] || code.toUpperCase();
+}
+
 // Fungsi untuk dapatkan URL template JSON dari GitHub
 export const getTemplateUrl = (subjectDisplayName) => {
   const filename = MAP_SUBJECT_TO_FILE[subjectDisplayName]; // <<< Menggunakan MAP_SUBJECT_TO_FILE yang dieksport
