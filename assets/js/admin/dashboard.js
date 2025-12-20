@@ -1,4 +1,4 @@
-// assets/js/admin/dashboard.js (KOD LENGKAP & BERSIH)
+// assets/js/admin/dashboard.js (KOD LENGKAP DENGAN AUDIT LOG)
 
 import { auth, db } from '../config.js'; 
 import { 
@@ -22,16 +22,18 @@ export async function loadAdminDashboard() {
     }
 
     // Gantikan kandungan utama dengan template dashboard
+    // Menambah butang ke-5: Audit Log (Aktiviti)
     content.innerHTML = `
         <div class="admin-section">
             <h2>Dashboard Pentadbir</h2>
             <p>Selamat datang, Pentadbir! Sila pilih tindakan di bawah.</p>
             
-            <div id="admin-actions" style="margin-top: 20px;">
+            <div id="admin-actions" style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px;">
                 <button id="viewRphBtn" class="btn btn-primary">1. Semak RPH Guru</button>
-                <button id="manageUsersBtn" class="btn btn-secondary" style="margin-left: 10px;">2. Urus Pengguna (Akaun)</button>
-                <button id="viewAnalyticsBtn" class="btn btn-secondary" style="margin-left: 10px;">3. Analisis & Laporan</button>
-                <button id="viewMaintenanceBtn" class="btn btn-warning" style="margin-left: 10px;">4. Penyelenggaraan & Statistik</button>
+                <button id="manageUsersBtn" class="btn btn-secondary">2. Urus Pengguna (Akaun)</button>
+                <button id="viewAnalyticsBtn" class="btn btn-secondary">3. Analisis & Laporan</button>
+                <button id="viewMaintenanceBtn" class="btn btn-warning">4. Penyelenggaraan & Statistik</button>
+                <button id="viewAuditLogsBtn" class="btn btn-info" style="background-color: #17a2b8; color: white; border: none;">5. Audit Log (Aktiviti)</button>
             </div>
             
             <div id="adminContent" style="margin-top: 30px;">
@@ -41,32 +43,43 @@ export async function loadAdminDashboard() {
     `;
 
     // ------------------------------------------------------------
-    // 🔑 KRITIKAL: EVENT LISTENERS
+    // 🔑 EVENT LISTENERS
     // ------------------------------------------------------------
     
-    // 1. Urus Pengguna (Teachers.js)
+    // 1. Semak RPH Guru (rph-list.js)
+    document.getElementById('viewRphBtn').addEventListener('click', () => {
+        document.getElementById('adminContent').innerHTML = '<p>Memuatkan senarai RPH...</p>';
+        import('./rph-list.js').then(m => m.loadRphListPage()); 
+    });
+
+    // 2. Urus Pengguna (teachers.js)
     document.getElementById('manageUsersBtn').addEventListener('click', () => {
         document.getElementById('adminContent').innerHTML = '<p>Memuatkan modul Urus Pengguna...</p>';
         import('./teachers.js').then(m => m.loadTeachersPage());
     });
     
-    // 2. Semak RPH Guru (rph-list.js/rph-review.js)
-    document.getElementById('viewRphBtn').addEventListener('click', () => {
-        document.getElementById('adminContent').innerHTML = '<p>Memuatkan senarai RPH...</p>';
-        // Anda mungkin mahu menukar ini kepada 'rph-review.js'
-        import('./rph-list.js').then(m => m.loadRphListPage()); 
-    });
-
     // 3. Analisis & Laporan
     document.getElementById('viewAnalyticsBtn').addEventListener('click', () => {
-        // Menggunakan window.router.navigate yang ditakrifkan dalam router.js
         window.router.navigate('admin-analytics'); 
     });
     
-    // 4. Penyelenggaraan & Statistik (Butang Baharu)
+    // 4. Penyelenggaraan & Statistik
     document.getElementById('viewMaintenanceBtn').addEventListener('click', () => {
-        // Mengarahkan ke laluan admin-maintenance yang baru dikonfigurasi
         window.router.navigate('admin-maintenance'); 
+    });
+
+    // 5. Audit Log (Aktiviti Sistem) - PENAMBAHBAIKAN BARU
+    document.getElementById('viewAuditLogsBtn').addEventListener('click', () => {
+        document.getElementById('adminContent').innerHTML = '<p>Memuatkan Audit Log...</p>';
+        
+        // Import fail audit-logs.js secara dinamik
+        import('./audit-logs.js').then(m => {
+            m.loadAuditLogs();
+        }).catch(err => {
+            console.error("Gagal memuatkan modul Audit Log:", err);
+            document.getElementById('adminContent').innerHTML = 
+                `<p class="error">Ralat: Gagal memuatkan fail audit-logs.js. Sila pastikan fail wujud di folder assets/js/admin/.</p>`;
+        });
     });
 
 }
