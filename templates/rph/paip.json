@@ -1,0 +1,102 @@
+[
+  {
+    "year": "Pra",
+    "topic_name": "Unit 1: Huruf Hijaiyah Alif - Ya",
+    "skill_name": "Al-Quran",
+    "standards": ["PI 1.1.1 Menyebut huruf hijaiyah tunggal"],
+    "objectives": ["Murid dapat menyebut huruf hijaiyah tunggal dengan betul."],
+    "activities": ["Nyanyian lagu hijaiyah.", "Menulis huruf di atas pasir."],
+    "assessments": ["Latihan sebutan."],
+    "aids": ["Kad huruf hijaiyah", "Video lagu"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 2: Rukun Islam",
+    "skill_name": "Akidah",
+    "standards": ["PI 2.1.1 Menyatakan Rukun Islam"],
+    "objectives": ["Murid dapat menyebut 5 Rukun Islam mengikut turutan."],
+    "activities": ["Aktiviti 'Hand Print' 5 rukun.", "Bercerita tentang solat & puasa."],
+    "assessments": ["Hafalan Rukun Islam."],
+    "aids": ["Carta Rukun Islam"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 3: Rukun Iman",
+    "skill_name": "Akidah",
+    "standards": ["PI 2.3.1 Menyebut Rukun Iman"],
+    "objectives": ["Murid dapat menyebut 6 Rukun Iman."],
+    "activities": ["Permainan pancing Rukun Iman.", "Nasyid Rukun Iman."],
+    "assessments": ["Lisan Rukun Iman."],
+    "aids": ["Kad bergambar", "Audio nasyid"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 4: Cara Berwuduk",
+    "skill_name": "Ibadah",
+    "standards": ["PI 3.2.1 Mengenal anggota wuduk"],
+    "objectives": ["Murid dapat menamakan anggota wuduk dengan betul."],
+    "activities": ["Simulasi wuduk di singki.", "Susun urutan gambar wuduk."],
+    "assessments": ["Amali wuduk."],
+    "aids": ["Poster wuduk", "Air singki"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 5: Solat Lima Waktu",
+    "skill_name": "Ibadah",
+    "standards": ["PI 3.3.1 Menyebut nama solat fardu"],
+    "objectives": ["Murid dapat menamakan Subuh, Zuhur, Asar, Maghrib, Isya."],
+    "activities": ["Mewarna jam waktu solat.", "Simulasi gerakan solat."],
+    "assessments": ["Menyebut nama solat."],
+    "aids": ["Sejadah", "Model jam"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 6: Sayangi Nabi Muhammad SAW",
+    "skill_name": "Sirah",
+    "standards": ["PI 4.1.1 Menyatakan nama Rasulullah"],
+    "objectives": ["Murid mengenali nama ayah, ibu dan datuk Nabi."],
+    "activities": ["Pohon keluarga Nabi.", "Bercerita sifat amanah Nabi."],
+    "assessments": ["Pemerhatian minat dalam sirah."],
+    "aids": ["Buku cerita sirah"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 7: Adab Makan dan Minum",
+    "skill_name": "Akhlak",
+    "standards": ["PI 5.1.2 Menunjukkan adab makan"],
+    "objectives": ["Murid dapat membaca doa makan dan minum."],
+    "activities": ["Jamuan ringan di kelas.", "Latihan membaca doa beramai-ramai."],
+    "assessments": ["Amalan adab sebelum makan."],
+    "aids": ["Makanan", "Carta doa"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 8: Adab dengan Ibu Bapa",
+    "skill_name": "Akhlak",
+    "standards": ["PI 5.1.4 Melafazkan ucapan bertatasusila"],
+    "objectives": ["Murid menghormati dan menyayangi ibu bapa."],
+    "activities": ["Membuat kad ucapan sayang.", "Lakonan bersalam-salaman."],
+    "assessments": ["Sikap kesantunan."],
+    "aids": ["Kertas warna", "Pensel warna"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 9: Kalimah Syahadah",
+    "skill_name": "Akidah",
+    "standards": ["PI 2.2.1 Melafazkan dua kalimah syahadah"],
+    "objectives": ["Murid dapat melafazkan syahadah dan maksudnya."],
+    "activities": ["Hafalan secara berkumpulan.", "Latihan sebutan makhraj."],
+    "assessments": ["Ujian hafal syahadah."],
+    "aids": ["Audio syahadah"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 10: Kebersihan Diri",
+    "skill_name": "Akhlak",
+    "standards": ["PI 5.1.1 Mengamalkan kebersihan diri"],
+    "objectives": ["Murid menjaga kebersihan tubuh badan sebagai tuntutan Islam."],
+    "activities": ["Demontrasi memotong kuku.", "Cara mencuci tangan."],
+    "assessments": ["Pemerhatian kekemasan diri."],
+    "aids": ["Ketip kuku", "Sabun"]
+  }
+]

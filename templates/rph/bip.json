@@ -1,0 +1,102 @@
+[
+  {
+    "year": "Pra",
+    "topic_name": "Unit 1: Greetings",
+    "skill_name": "Listening and Speaking",
+    "standards": ["BI 1.2.1 Listen to and recite nursery rhymes", "BI 1.3.1 Use simple greetings"],
+    "objectives": ["Pupils can say 'Good Morning' and 'Hello'.", "Pupils can sing the 'Hello' song."],
+    "activities": ["Role play greetings.", "Singing nursery rhymes."],
+    "assessments": ["Observation of social interaction."],
+    "aids": ["Puppets", "Audio player"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 2: My Body",
+    "skill_name": "Listening and Speaking",
+    "standards": ["BI 1.1.1 Listen to and identify common sounds"],
+    "objectives": ["Pupils can name 5 parts of the body.", "Pupils can follow 'Simon Says' instructions."],
+    "activities": ["Simon Says game.", "Labeling body parts chart."],
+    "assessments": ["Pointing to body parts correctly."],
+    "aids": ["Human body poster", "Stickers"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 3: Colors around Me",
+    "skill_name": "Reading and Writing",
+    "standards": ["BI 2.2.1 Recognise letters of the alphabet"],
+    "objectives": ["Pupils can identify primary colors.", "Pupils can read color words."],
+    "activities": ["Color mixing experiment.", "Matching colors to objects."],
+    "assessments": ["Color recognition test."],
+    "aids": ["Flashcards", "Watercolors"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 4: My Family",
+    "skill_name": "Speaking",
+    "standards": ["BI 1.3.2 Talk about oneself", "BI 1.3.3 Talk about family"],
+    "objectives": ["Pupils can name family members (Father, Mother)."],
+    "activities": ["Show and tell with family photos.", "Drawing family tree."],
+    "assessments": ["Verbal presentation about family."],
+    "aids": ["Family photos", "Crayons"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 5: My School",
+    "skill_name": "Vocabulary",
+    "standards": ["BI 2.1.2 Show awareness of print"],
+    "objectives": ["Pupils can name 5 classroom objects."],
+    "activities": ["Classroom scavenger hunt.", "Naming station objects."],
+    "assessments": ["Oral naming of objects."],
+    "aids": ["School supplies", "Labels"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 6: Animals",
+    "skill_name": "Listening and Speaking",
+    "standards": ["BI 1.1.2 Listen to and respond to sounds"],
+    "objectives": ["Pupils can mimic animal sounds.", "Pupils can name domestic animals."],
+    "activities": ["Old MacDonald Had a Farm song.", "Mask making."],
+    "assessments": ["Animal identification."],
+    "aids": ["Animal masks", "Sound clips"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 7: Numbers 1-10",
+    "skill_name": "Early Literacy",
+    "standards": ["BI 2.2.5 Recognise and sound out letters"],
+    "objectives": ["Pupils can count from 1 to 10 in English."],
+    "activities": ["Number hopscotch.", "Counting marbles."],
+    "assessments": ["Counting accuracy."],
+    "aids": ["Number cards", "Marbles"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 8: Food and Drinks",
+    "skill_name": "Reading",
+    "standards": ["BI 2.3.2 Read familiar words printed in the environment"],
+    "objectives": ["Pupils can name healthy food.", "Pupils can express 'I like...'."],
+    "activities": ["Food sorting (Healthy/Unhealthy).", "Role play at a cafe."],
+    "assessments": ["Vocabulary usage in sentences."],
+    "aids": ["Plastic food toys", "Menus"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 9: Weather",
+    "skill_name": "Listening and Speaking",
+    "standards": ["BI 1.2.2 Listen to and respond to stories"],
+    "objectives": ["Pupils can identify sunny, rainy, and windy weather."],
+    "activities": ["Weather wheel creation.", "Storytelling about rain."],
+    "assessments": ["Weather chart observation."],
+    "aids": ["Weather wheel", "Storybook"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 10: Transport",
+    "skill_name": "General Knowledge",
+    "standards": ["BI 3.2.1 Write recognisable letters"],
+    "objectives": ["Pupils can name land, water, and air transport."],
+    "activities": ["Toy car race.", "Making paper planes."],
+    "assessments": ["Categorizing transport types."],
+    "aids": ["Toy vehicles", "Paper"]
+  }
+]

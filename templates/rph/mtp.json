@@ -1,0 +1,102 @@
+[
+  {
+    "year": "Pra",
+    "topic_name": "Unit 1: Padanan Satu ke Satu",
+    "skill_name": "Pranombor",
+    "standards": ["MA 1.1.1 Memadankan objek berpasangan"],
+    "objectives": ["Murid dapat memadankan objek yang sama warna.", "Murid dapat memadankan stoking berpasangan."],
+    "activities": ["Mencari pasangan kasut.", "Memadankan tudung botol dengan botol."],
+    "assessments": ["Ketepatan memadankan pasangan."],
+    "aids": ["Stoking", "Tudung botol"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 2: Perbandingan Saiz dan Kuantiti",
+    "skill_name": "Pranombor",
+    "standards": ["MA 1.2.1 Membandingkan dua kumpulan objek"],
+    "objectives": ["Murid dapat membezakan besar/kecil dan banyak/sedikit."],
+    "activities": ["Menyusun bongkah mengikut saiz.", "Mengasingkan guli dalam bekas."],
+    "assessments": ["Pemerhatian perbandingan."],
+    "aids": ["Bongkah pelbagai saiz", "Guli"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 3: Nombor 1 hingga 5",
+    "skill_name": "Konsep Nombor",
+    "standards": ["MA 2.1.1 Menyebut nombor 1-10 secara urutan"],
+    "objectives": ["Murid dapat mengenal dan menulis nombor 1-5."],
+    "activities": ["Membentuk nombor dengan plastisin.", "Membilang jari."],
+    "assessments": ["Ujian menulis nombor.", "Membilang objek."],
+    "aids": ["Kad nombor", "Plastisin"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 4: Nombor 6 hingga 10",
+    "skill_name": "Konsep Nombor",
+    "standards": ["MA 2.1.4 Membilang objek"],
+    "objectives": ["Murid dapat membilang objek sehingga 10."],
+    "activities": ["Aktiviti 'Number Hunt'.", "Permainan dadu besar."],
+    "assessments": ["Keupayaan membilang rawak."],
+    "aids": ["Dadu", "Gambar buah-buahan"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 5: Operasi Tambah Mudah",
+    "skill_name": "Operasi Nombor",
+    "standards": ["MA 3.1.1 Menyatakan hasil tambah dua himpunan objek"],
+    "objectives": ["Murid dapat menambah dalam lingkungan 10."],
+    "activities": ["Gunakan pembilang (counters).", "Cerita tambah (1 epal tambah 1 epal)."],
+    "assessments": ["Lembaran kerja tambah."],
+    "aids": ["Pembilang", "Abakus mudah"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 6: Operasi Tolak Mudah",
+    "skill_name": "Operasi Nombor",
+    "standards": ["MA 3.2.1 Mengeluarkan objek dari himpunan"],
+    "objectives": ["Murid dapat menolak dalam lingkungan 10."],
+    "activities": ["Permainan 'Pop the Balloon'.", "Simulasi makan biskut."],
+    "assessments": ["Pemerhatian konsep mengeluarkan."],
+    "aids": ["Belon", "Biskut"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 7: Wang Malaysia",
+    "skill_name": "Nilai Wang",
+    "standards": ["MA 4.1.1 Mengecam mata wang Malaysia"],
+    "objectives": ["Murid dapat mengecam syiling 5, 10, 20 dan 50 sen."],
+    "activities": ["Tekapan syiling di atas kertas.", "Main peranan jual beli."],
+    "assessments": ["Mengenal pasti nilai syiling."],
+    "aids": ["Syiling sebenar", "Duit mainan"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 8: Masa dan Waktu",
+    "skill_name": "Konsep Masa",
+    "standards": ["MA 5.1.1 Menyatakan waktu dalam sehari"],
+    "objectives": ["Murid dapat membezakan waktu siang dan malam."],
+    "activities": ["Menyusun gambar aktiviti harian.", "Membaca jam bulat."],
+    "assessments": ["Penerangan waktu pagi, petang, malam."],
+    "aids": ["Model jam", "Kad gambar harian"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 9: Bentuk 2D",
+    "skill_name": "Geometri",
+    "standards": ["MA 6.2.1 Mengecam bentuk dua dimensi"],
+    "objectives": ["Murid dapat menamakan bulat, segitiga, segiempat."],
+    "activities": ["Mencari bentuk di persekitaran.", "Melukis menggunakan bentuk."],
+    "assessments": ["Latihan padanan bentuk."],
+    "aids": ["Blok geometri", "Kertas lukisan"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 10: Pola dan Corak",
+    "skill_name": "Pola",
+    "standards": ["MA 1.4.1 Mengenal pasti pola"],
+    "objectives": ["Murid dapat melengkapkan pola berulang (AB-AB)."],
+    "activities": ["Menyusun manik mengikut warna.", "Capan ubi kentang membentuk corak."],
+    "assessments": ["Kebolehan menyambung pola."],
+    "aids": ["Manik", "Warna air"]
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "year": 1,
+    "topic_name": "Unit 1: Kepercayaan kepada Tuhan (Dunia Ciptaan Tuhan)",
+    "skill_name": "Nilai 1: Kepercayaan kepada Tuhan",
+    "standards": ["1.1 Menyatakan ciptaan Tuhan", "1.2 Menunjukkan rasa syukur terhadap ciptaan Tuhan"],
+    "objectives": ["Murid dapat membezakan ciptaan Tuhan dan buatan manusia.", "Murid menyatakan cara menjaga alam semulajadi."],
+    "activities": ["Lawatan ke taman sekolah.", "Melukis dan mewarna gambar alam."],
+    "assessments": ["Pemerhatian", "Lembaran kerja"],
+    "aids": ["Gambar alam", "Video pendek"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 2: Bantuan di Rumah",
+    "skill_name": "Nilai 2: Baik Hati",
+    "standards": ["2.1 Memberi bantuan kepada ahli keluarga"],
+    "objectives": ["Murid dapat membantu ibu bapa di rumah.", "Murid menyatakan perasaan membantu keluarga."],
+    "activities": ["Main peranan situasi di rumah.", "Membuat jadual tugasan membantu."],
+    "assessments": ["Rekod anekdot", "Laporan ibu bapa"],
+    "aids": ["Kad tugasan"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 3: Tanggungjawab Diri",
+    "skill_name": "Nilai 3: Bertanggungjawab",
+    "standards": ["3.1 Melaksanakan tanggungjawab terhadap diri sendiri"],
+    "objectives": ["Murid dapat menguruskan kebersihan diri.", "Murid menjaga peralatan sekolah dengan baik."],
+    "activities": ["Latihan mengemas beg sekolah.", "Amali membasuh tangan."],
+    "assessments": ["Senarai semak kendiri"],
+    "aids": ["Kit kebersihan", "Beg sekolah"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 4: Berterima Kasih kepada Keluarga",
+    "skill_name": "Nilai 4: Berterima Kasih",
+    "standards": ["4.1 Menunjukkan penghargaan kepada keluarga"],
+    "objectives": ["Murid mengucapkan terima kasih dengan sopan.", "Murid membuat hadiah ringkas untuk keluarga."],
+    "activities": ["Membuat kad ucapan.", "Nyanyian lagu kasih sayang."],
+    "assessments": ["Hasil kerja"],
+    "aids": ["Kertas warna", "Pelekat"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 5: Sopan Santun Amalan Kita",
+    "skill_name": "Nilai 5: Hemah Tinggi",
+    "standards": ["5.1 Mengamalkan tutur kata yang sopan"],
+    "objectives": ["Murid menggunakan kata 'maaf' dan 'tolong'.", "Murid menunjukkan adab semasa makan."],
+    "activities": ["Simulasi meminta izin.", "Permainan kata-kata hikmat."],
+    "assessments": ["Pemerhatian tingkah laku"],
+    "aids": ["Kad perkataan"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 6: Hormat Ahli Keluarga",
+    "skill_name": "Nilai 6: Hormat",
+    "standards": ["6.1 Menghormati ahli keluarga"],
+    "objectives": ["Murid menunjukkan cara bersalam dengan orang tua.", "Murid mendengar nasihat ibu bapa."],
+    "activities": ["Demonstrasi adab bersalam.", "Bercerita tentang keluarga."],
+    "assessments": ["Lisan"],
+    "aids": ["Gambar keluarga"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 7: Sayangi Diri Sendiri",
+    "skill_name": "Nilai 7: Kasih Sayang",
+    "standards": ["7.1 Menyayangi diri sendiri"],
+    "objectives": ["Murid menyatakan kepentingan menjaga kesihatan.", "Murid melakukan aktiviti yang digemari."],
+    "activities": ["Membuat poster 'Saya Sayang Diri'.", "Senaman ringan."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Cermin", "Poster"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 8: Keadilan dalam Perkongsian",
+    "skill_name": "Nilai 8: Keadilan",
+    "standards": ["8.1 Bersikap adil dalam keluarga"],
+    "objectives": ["Murid membahagi makanan secara sama rata.", "Murid mengambil giliran dengan sabar."],
+    "activities": ["Aktiviti membahagi buah-buahan.", "Permainan berkumpulan."],
+    "assessments": ["Rekod pemerhatian"],
+    "aids": ["Makanan", "Alatan mainan"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 9: Berani Mengaku Salah",
+    "skill_name": "Nilai 9: Keberanian",
+    "standards": ["9.1 Berani bercakap benar"],
+    "objectives": ["Murid berani meminta maaf selepas melakukan kesilapan.", "Murid berani tampil ke hadapan."],
+    "activities": ["Bercerita kisah kejujuran.", "Simulasi mengaku salah."],
+    "assessments": ["Refleksi kendiri"],
+    "aids": ["Buku cerita"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 10: Jujur dalam Tindakan",
+    "skill_name": "Nilai 10: Kejujuran",
+    "standards": ["10.1 Bersikap jujur kepada ahli keluarga"],
+    "objectives": ["Murid tidak mengambil barang orang lain.", "Murid bercakap benar kepada ibu bapa."],
+    "activities": ["Kuiz 'Benar atau Salah'.", "Simulasi memulangkan baki wang."],
+    "assessments": ["Soal jawab"],
+    "aids": ["Duit mainan"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 1: Kepercayaan di Rumah (Ibadat Jiran)",
+    "skill_name": "Nilai 1: Kepercayaan kepada Tuhan",
+    "standards": ["1.1 Menghormati amalan agama jiran"],
+    "objectives": ["Murid menyatakan kepentingan menghormati agama jiran.", "Murid mengenal pasti tempat ibadat jiran."],
+    "activities": ["Mewarna gambar tempat ibadat.", "Diskusi tentang perayaan jiran."],
+    "assessments": ["Kuiz lisan"],
+    "aids": ["Peta kejiranan", "Gambar"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 2: Membantu Jiran (Prihatin)",
+    "skill_name": "Nilai 2: Baik Hati",
+    "standards": ["2.1 Memberi bantuan kepada jiran"],
+    "objectives": ["Murid menolong jiran yang memerlukan bantuan.", "Murid menunjukkan sikap empati."],
+    "activities": ["Simulasi membantu jiran angkat barang.", "Projek 'Ziarah Jiran'."],
+    "assessments": ["Senarai semak"],
+    "aids": ["Kad situasi"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 3: Tanggungjawab Terhadap Jiran",
+    "skill_name": "Nilai 3: Bertanggungjawab",
+    "standards": ["3.1 Melaksanakan tanggungjawab sebagai jiran"],
+    "objectives": ["Murid menjaga kebersihan lorong rumah.", "Murid tidak membuat bising."],
+    "activities": ["Kempen kebersihan kawasan perumahan.", "Membuat poster amaran."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Peralatan cuci"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 4: Penghargaan Kepada Jiran",
+    "skill_name": "Nilai 4: Berterima Kasih",
+    "standards": ["4.1 Menghargai sumbangan jiran"],
+    "objectives": ["Murid mengucapkan terima kasih kepada jiran.", "Murid membalas pemberian jiran."],
+    "activities": ["Aktiviti tukar-tukar makanan.", "Menulis nota penghargaan."],
+    "assessments": ["Hasil kerja"],
+    "aids": ["Bekas makanan"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 5: Adab dengan Jiran",
+    "skill_name": "Nilai 5: Hemah Tinggi",
+    "standards": ["5.1 Bersopan santun terhadap jiran"],
+    "objectives": ["Murid memberi salam kepada jiran.", "Murid menggunakan bahasa yang lembut."],
+    "activities": ["Lakon layar bertema jiran.", "Latihan menyapa jiran."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Video pendek"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 6: Hormati Privasi Jiran",
+    "skill_name": "Nilai 6: Hormat",
+    "standards": ["6.1 Menghormati privasi dan harta benda jiran"],
+    "objectives": ["Murid meminta izin sebelum masuk ke rumah jiran.", "Murid tidak menyentuh barang jiran tanpa izin."],
+    "activities": ["Simulasi meminta izin meminjam barang.", "Perbincangan tentang privasi."],
+    "assessments": ["Soal jawab"],
+    "aids": ["Barang mainan"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 7: Kasih Sayang Terhadap Jiran",
+    "skill_name": "Nilai 7: Kasih Sayang",
+    "standards": ["7.1 Menunjukkan kasih sayang terhadap jiran"],
+    "objectives": ["Murid bertanya khabar jiran yang sakit.", "Murid meraikan hari lahir jiran."],
+    "activities": ["Membuat kad ucapan 'Cepat Sembuh'.", "Simulasi melawat jiran."],
+    "assessments": ["Rekod anekdot"],
+    "aids": ["Kad ucapan"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 8: Adil Kepada Jiran",
+    "skill_name": "Nilai 8: Keadilan",
+    "standards": ["8.1 Mengamalkan sikap adil terhadap jiran"],
+    "objectives": ["Murid membahagi penggunaan ruang parking secara adil.", "Murid tidak pilih kasih dalam kejiranan."],
+    "activities": ["Aktiviti penyelesaian konflik jiran.", "Permainan adil."],
+    "assessments": ["Latihan bertulis"],
+    "aids": ["Gambar situasi"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 9: Berani Menghadapi Cabaran Jiran",
+    "skill_name": "Nilai 9: Keberanian",
+    "standards": ["9.1 Berani menegur perlakuan jiran yang salah"],
+    "objectives": ["Murid berani menegur secara sopan.", "Murid melaporkan kejadian buruk kepada ibu bapa."],
+    "activities": ["Simulasi cara menegur jiran.", "Bercerita tentang keselamatan."],
+    "assessments": ["Lisan"],
+    "aids": ["Dialog"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 10: Kejujuran Terhadap Jiran",
+    "skill_name": "Nilai 10: Kejujuran",
+    "standards": ["10.1 Bersikap jujur dengan jiran"],
+    "objectives": ["Murid memulangkan barang jiran yang tertinggal.", "Murid tidak bercerita buruk tentang jiran."],
+    "activities": ["Aktiviti 'Lost and Found' jiran.", "Simulasi bercakap benar."],
+    "assessments": ["Refleksi"],
+    "aids": ["Barang jiran"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 1: Kepercayaan Warga Sekolah",
+    "skill_name": "Nilai 1: Kepercayaan kepada Tuhan",
+    "standards": ["1.1 Menghormati amalan ibadat warga sekolah"],
+    "objectives": ["Murid mengetahui pelbagai agama di sekolah.", "Murid menghormati rakan yang sedang beribadat."],
+    "activities": ["Peta buih tempat ibadat.", "Tayangan video perayaan."],
+    "assessments": ["Latihan padanan"],
+    "aids": ["Video", "Peta i-Think"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 2: Bantuan di Sekolah",
+    "skill_name": "Nilai 2: Baik Hati",
+    "standards": ["2.1 Memberi bantuan kepada warga sekolah"],
+    "objectives": ["Murid membantu guru membawa buku.", "Murid menolong rakan yang terjatuh."],
+    "activities": ["Projek 'Rakan Bantu Rakan'.", "Amali membantu guru."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Buku-buku"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 3: Tanggungjawab di Sekolah",
+    "skill_name": "Nilai 3: Bertanggungjawab",
+    "standards": ["3.1 Melaksanakan tanggungjawab di sekolah"],
+    "objectives": ["Murid menjalankan tugas mengikut jadual.", "Murid menjaga harta benda sekolah."],
+    "activities": ["Aktiviti membersihkan kelas.", "Latihan menjaga kerusi meja."],
+    "assessments": ["Senarai semak bertugas"],
+    "aids": ["Peralatan kebersihan"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 4: Penghargaan Kepada Warga Sekolah",
+    "skill_name": "Nilai 4: Berterima Kasih",
+    "standards": ["4.1 Menghargai sumbangan warga sekolah"],
+    "objectives": ["Murid mengucapkan terima kasih kepada pekerja sekolah.", "Murid membuat kad Hari Guru."],
+    "activities": ["Menulis surat penghargaan.", "Simulasi menghargai pak cik kebun."],
+    "assessments": ["Hasil kerja"],
+    "aids": ["Kertas", "Pen"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 5: Beradab di Sekolah",
+    "skill_name": "Nilai 5: Hemah Tinggi",
+    "standards": ["5.1 Mengamalkan sikap sopan santun di sekolah"],
+    "objectives": ["Murid mengetuk pintu sebelum masuk kelas.", "Murid memberi salam kepada semua guru."],
+    "activities": ["Simulasi adab masuk pejabat.", "Latihan sapaan sopan."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Pintu kelas"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 6: Hormati Peraturan Sekolah",
+    "skill_name": "Nilai 6: Hormat",
+    "standards": ["6.1 Mematuhi peraturan sekolah"],
+    "objectives": ["Murid mematuhi waktu persekolahan.", "Murid menghormati simbol sekolah."],
+    "activities": ["Membaca buku peraturan.", "Melukis lencana sekolah."],
+    "assessments": ["Kuiz peraturan"],
+    "aids": ["Buku peraturan"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 7: Sayangi Warga Sekolah",
+    "skill_name": "Nilai 7: Kasih Sayang",
+    "standards": ["7.1 Menunjukkan kasih sayang di sekolah"],
+    "objectives": ["Murid tidak membuli rakan.", "Murid memupuk semangat setiakawan."],
+    "activities": ["Kempen Anti-Buli.", "Permainan 'Jejak Rakan Baik'."],
+    "assessments": ["Rekod disiplin"],
+    "aids": ["Poster anti-buli"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 8: Keadilan dalam Kelas",
+    "skill_name": "Nilai 8: Keadilan",
+    "standards": ["8.1 Bersikap adil dalam agihan tugas"],
+    "objectives": ["Murid membahagi kumpulan secara adil.", "Murid tidak berat sebelah dalam membuat keputusan."],
+    "activities": ["Permainan 'Pilih Ketua Kelab'.", "Latihan membahagi kerja kumpulan."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Kad tugas"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 9: Berani Mempertahankan Nama Sekolah",
+    "skill_name": "Nilai 9: Keberanian",
+    "standards": ["9.1 Menunjukkan keberanian mempertahankan imej sekolah"],
+    "objectives": ["Murid berani mengambil bahagian dalam pertandingan.", "Murid menjaga nama baik sekolah di luar."],
+    "activities": ["Simulasi pertandingan antara sekolah.", "Ceramah motivasi diri."],
+    "assessments": ["Penyertaan"],
+    "aids": ["Piala", "Lencana"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 10: Kejujuran di Sekolah",
+    "skill_name": "Nilai 10: Kejujuran",
+    "standards": ["10.1 Bersikap jujur dalam akademik dan sukan"],
+    "objectives": ["Murid tidak meniru semasa peperiksaan.", "Murid mengakui kesilapan kepada guru."],
+    "activities": ["Ikrar kejujuran murid.", "Kuiz integriti."],
+    "assessments": ["Pemerhatian ujian"],
+    "aids": ["Kertas soalan"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 1: Kepercayaan kepada Tuhan (Amalan Jiran)",
+    "skill_name": "Nilai 1: Kepercayaan kepada Tuhan",
+    "standards": ["1.1 Menghormati amalan keagamaan jiran", "1.2 Menerangkan kepentingan menghormati agama jiran"],
+    "objectives": ["Murid menghargai perbezaan agama.", "Murid menunjukkan toleransi semasa sambutan perayaan jiran."],
+    "activities": ["Buku skrap perayaan kaum.", "Lawatan ke tempat ibadat berhampiran."],
+    "assessments": ["Buku skrap", "Lisan"],
+    "aids": ["Gambar perayaan"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 2: Prihatin Terhadap Jiran",
+    "skill_name": "Nilai 2: Baik Hati",
+    "standards": ["2.1 Memberi sokongan moral kepada jiran"],
+    "objectives": ["Murid memberi kata semangat kepada jiran yang ditimpa musibah.", "Murid melibatkan diri dalam khidmat komuniti."],
+    "activities": ["Program ziarah kebajikan.", "Menulis surat sokongan."],
+    "assessments": ["Refleksi diri"],
+    "aids": ["Surat"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 3: Tanggungjawab Kejiranan",
+    "skill_name": "Nilai 3: Bertanggungjawab",
+    "standards": ["3.1 Menjalankan tanggungjawab dalam kejiranan"],
+    "objectives": ["Murid mengikut peraturan kawasan perumahan.", "Murid menjaga fasiliti awam di taman."],
+    "activities": ["Aktiviti membersihkan taman permainan.", "Perbincangan peraturan kejiranan."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Alatan taman"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 4: Penghargaan Jasa Jiran",
+    "skill_name": "Nilai 4: Berterima Kasih",
+    "standards": ["4.1 Menunjukkan penghargaan terhadap jasa jiran"],
+    "objectives": ["Murid menghargai bantuan jiran semasa ketiadaan ibu bapa.", "Murid meraikan sumbangan jiran."],
+    "activities": ["Jamuan penghargaan kejiranan.", "Membuat cenderahati."],
+    "assessments": ["Hasil kerja"],
+    "aids": ["Bahan kraf"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 5: Adab dengan Masyarakat",
+    "skill_name": "Nilai 5: Hemah Tinggi",
+    "standards": ["5.1 Berkomunikasi secara sopan dengan jiran"],
+    "objectives": ["Murid menunjukkan budi peketi yang mulia.", "Murid menjaga imej keluarga dalam masyarakat."],
+    "activities": ["Simulasi majlis keraian jiran.", "Lakon peranan."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Video adab"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 6: Hormati Kepelbagaian Budaya",
+    "skill_name": "Nilai 6: Hormat",
+    "standards": ["6.1 Menghormati budaya dan adat resam jiran"],
+    "objectives": ["Murid memahami pantang larang kaum lain.", "Murid menunjukkan rasa hormat terhadap cara hidup jiran."],
+    "activities": ["Pameran kebudayaan mini.", "Demonstrasi pakaian tradisional."],
+    "assessments": ["Lisan"],
+    "aids": ["Pakaian tradisional"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 7: Kasih Sayang Sejagat",
+    "skill_name": "Nilai 7: Kasih Sayang",
+    "standards": ["7.1 Menyayangi persekitaran tempat tinggal"],
+    "objectives": ["Murid menjaga flora dan fauna di kawasan jiran.", "Murid menanam pokok di kawasan kejiranan."],
+    "activities": ["Projek 'Green Neighborhood'.", "Menyiram pokok jiran."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Anak pokok"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 8: Keadilan dalam Komuniti",
+    "skill_name": "Nilai 8: Keadilan",
+    "standards": ["8.1 Bersikap adil dalam komuniti"],
+    "objectives": ["Murid membahagi giliran penggunaan padang secara adil.", "Murid tidak menindas jiran yang lemah."],
+    "activities": ["Diskusi 'Keadilan untuk Semua'.", "Permainan simulasi ekonomi."],
+    "assessments": ["Latihan bertulis"],
+    "aids": ["Buku nota"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 9: Berani Membela Kebenaran",
+    "skill_name": "Nilai 9: Keberanian",
+    "standards": ["9.1 Berani bertindak untuk kebaikan jiran"],
+    "objectives": ["Murid berani melaporkan kecurian di rumah jiran.", "Murid mempertahankan jiran yang difitnah."],
+    "activities": ["Simulasi panggilan kecemasan.", "Lakon peranan 'Jiran Hero'."],
+    "assessments": ["Lisan"],
+    "aids": ["Telefon mainan"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 10: Kejujuran Terhadap Masyarakat",
+    "skill_name": "Nilai 10: Kejujuran",
+    "standards": ["10.1 Mengamalkan sikap jujur dalam kejiranan"],
+    "objectives": ["Murid tidak merosakkan harta jiran secara sengaja.", "Murid bercakap benar tentang kejadian di taman."],
+    "activities": ["Simulasi memulangkan barang jiran.", "Cerita motivasi."],
+    "assessments": ["Refleksi"],
+    "aids": ["Gambar"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 1: Kepercayaan Agama di Malaysia",
+    "skill_name": "Nilai 1: Kepercayaan kepada Tuhan",
+    "standards": ["1.1 Menghormati kebebasan beragama di Malaysia"],
+    "objectives": ["Murid memahami Perlembagaan tentang agama.", "Murid menghargai kepelbagaian kepercayaan."],
+    "activities": ["Mengkaji perlembagaan (ringkas).", "Peta minda agama."],
+    "assessments": ["Peta minda"],
+    "aids": ["Buku rujukan"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 2: Sukarelawan Komuniti",
+    "skill_name": "Nilai 2: Baik Hati",
+    "standards": ["2.1 Menyertai aktiviti kesukarelaan"],
+    "objectives": ["Murid menyumbang tenaga dalam kerja amal.", "Murid membantu mangsa bencana."],
+    "activities": ["Kempen kutipan derma.", "Bekerja di rumah kebajikan."],
+    "assessments": ["Laporan aktiviti"],
+    "aids": ["Kotak derma"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 3: Menjaga Kemudahan Awam",
+    "skill_name": "Nilai 3: Bertanggungjawab",
+    "standards": ["3.1 Melindungi kemudahan awam di Malaysia"],
+    "objectives": ["Murid tidak melakukan vandalisme.", "Murid melaporkan kerosakan kemudahan awam."],
+    "activities": ["Kempen Anti-Vandalisme.", "Menulis emel kepada pihak berkuasa."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Poster"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 4: Penghargaan Warisan Negara",
+    "skill_name": "Nilai 4: Berterima Kasih",
+    "standards": ["4.1 Menghargai warisan dan sejarah negara"],
+    "objectives": ["Murid menghargai jasa pejuang kemerdekaan.", "Murid menjaga tapak warisan."],
+    "activities": ["Lawatan ke muzium.", "Pertandingan esei sejarah."],
+    "assessments": ["Esei"],
+    "aids": ["Gambar tokoh"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 5: Sopan Santun Terhadap Pemimpin",
+    "skill_name": "Nilai 5: Hemah Tinggi",
+    "standards": ["5.1 Beradab sopan dengan pemimpin masyarakat"],
+    "objectives": ["Murid menunjukkan rasa hormat kepada ketua kampung/YB.", "Murid menggunakan bahasa istana/hormat."],
+    "activities": ["Simulasi temu bual pemimpin.", "Latihan menulis surat rasmi."],
+    "assessments": ["Lisan"],
+    "aids": ["Contoh surat"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 6: Hormat Institusi Beraja",
+    "skill_name": "Nilai 6: Hormat",
+    "standards": ["6.1 Menghormati Institusi Beraja di Malaysia"],
+    "objectives": ["Murid mengenali Yang di-Pertuan Agong.", "Murid menunjukkan adab semasa lagu kebesaran."],
+    "activities": ["Mewarna JKR (Jata Negara).", "Tayangan pertabalan Agong."],
+    "assessments": ["Kuiz"],
+    "aids": ["Gambar Agong"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 7: Sayangi Malaysia",
+    "skill_name": "Nilai 7: Kasih Sayang",
+    "standards": ["7.1 Menunjukkan kasih sayang terhadap negara"],
+    "objectives": ["Murid menjaga nama baik negara.", "Murid berbangga dengan produk Malaysia."],
+    "activities": ["Kempen 'Beli Barangan Malaysia'.", "Nyanyian lagu patriotik."],
+    "assessments": ["Penyertaan"],
+    "aids": ["Bendera"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 8: Keadilan Sosial",
+    "skill_name": "Nilai 8: Keadilan",
+    "standards": ["8.1 Mengamalkan keadilan sosial dalam komuniti"],
+    "objectives": ["Murid menghormati hak asasi setiap individu.", "Murid tidak mendiskriminasi kaum/bangsa."],
+    "activities": ["Forum 'Keadilan untuk Semua'.", "Aktiviti simulasi hak."],
+    "assessments": ["Forum"],
+    "aids": ["Slaid"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 9: Berani Mempertahankan Kebenaran Masyarakat",
+    "skill_name": "Nilai 9: Keberanian",
+    "standards": ["9.1 Berani menyuarakan pendapat untuk kebaikan"],
+    "objectives": ["Murid berani memberi idea dalam mesyuarat.", "Murid berani menolak ajakan negatif."],
+    "activities": ["Debat ringkas.", "Simulasi 'Katakan Tidak'."],
+    "assessments": ["Debat"],
+    "aids": ["Topik debat"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 10: Integriti Masyarakat",
+    "skill_name": "Nilai 10: Kejujuran",
+    "standards": ["10.1 Mengamalkan integriti dalam kehidupan harian"],
+    "objectives": ["Murid menolak amalan rasuah/sogokan.", "Murid amanah dalam memegang jawatan."],
+    "activities": ["Ceramah integriti.", "Latihan amanah duit kelas."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Poster integriti"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 1: Kepercayaan Sejagat",
+    "skill_name": "Nilai 1: Kepercayaan kepada Tuhan",
+    "standards": ["1.1 Menghormati kepercayaan masyarakat dunia"],
+    "objectives": ["Murid memahami kepelbagaian agama dunia.", "Murid memupuk semangat kedamaian sejagat."],
+    "activities": ["Kajian agama dunia.", "Membuat poster keamanan dunia."],
+    "assessments": ["Laporan"],
+    "aids": ["Peta dunia"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 2: Bantuan Kemanusiaan Global",
+    "skill_name": "Nilai 2: Baik Hati",
+    "standards": ["2.1 Memberi sumbangan kepada isu kemanusiaan dunia"],
+    "objectives": ["Murid prihatin dengan nasib mangsa perang/bencana luar negara.", "Murid menyertai program bantuan global."],
+    "activities": ["Kempen 'Save the Children'.", "Menulis surat kepada rakan antarabangsa."],
+    "assessments": ["Refleksi"],
+    "aids": ["Video isu global"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 3: Tanggungjawab Terhadap Dunia",
+    "skill_name": "Nilai 3: Bertanggungjawab",
+    "standards": ["3.1 Melaksanakan tanggungjawab memelihara bumi"],
+    "objectives": ["Murid mengurangkan jejak karbon.", "Murid menyokong kempen 'Go Green' global."],
+    "activities": ["Projek kitar semula sekolah.", "Kajian pemanasan global."],
+    "assessments": ["Projek"],
+    "aids": ["Tong kitar semula"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 4: Penghargaan Kepada Tokoh Dunia",
+    "skill_name": "Nilai 4: Berterima Kasih",
+    "standards": ["4.1 Menghargai sumbangan tokoh kemanusiaan dunia"],
+    "objectives": ["Murid mengenali tokoh seperti Nelson Mandela/Ibu Teresa.", "Murid menghargai inovasi saintis dunia."],
+    "activities": ["Biografi tokoh dunia.", "Persembahan multimedia."],
+    "assessments": ["Multimedia"],
+    "aids": ["Internet"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 5: Etika Siber (Hemah Tinggi)",
+    "skill_name": "Nilai 5: Hemah Tinggi",
+    "standards": ["5.1 Berkomunikasi secara berhemah dalam dunia siber"],
+    "objectives": ["Murid tidak melakukan buli siber.", "Murid menggunakan bahasa yang sopan di media sosial."],
+    "activities": ["Kempen 'Klik Dengan Bijak'.", "Simulasi komen positif."],
+    "assessments": ["Pemerhatian siber"],
+    "aids": ["Komputer"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 6: Hormat Undang-undang Antarabangsa",
+    "skill_name": "Nilai 6: Hormat",
+    "standards": ["6.1 Menghormati undang-undang dan protokol antarabangsa"],
+    "objectives": ["Murid memahami kepentingan undang-undang jalan raya antarabangsa.", "Murid menghormati kedaulatan negara lain."],
+    "activities": ["Kajian peraturan antarabangsa.", "Permainan simulasi sempadan."],
+    "assessments": ["Kuiz"],
+    "aids": ["Gambar passport"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 7: Kasih Sayang Tanpa Sempadan",
+    "skill_name": "Nilai 7: Kasih Sayang",
+    "standards": ["7.1 Menunjukkan kasih sayang terhadap hidupan sejagat"],
+    "objectives": ["Murid menyayangi haiwan terancam dunia.", "Murid memelihara ekosistem laut global."],
+    "activities": ["Kempen 'Save the Turtles'.", "Projek pembersihan pantai."],
+    "assessments": ["Laporan projek"],
+    "aids": ["Video hidupan laut"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 8: Keadilan Di Peringkat Global",
+    "skill_name": "Nilai 8: Keadilan",
+    "standards": ["8.1 Menyokong keadilan dalam perdagangan dan hak global"],
+    "objectives": ["Murid memahami konsep 'Fair Trade'.", "Murid menyokong hak pendidikan untuk semua kanak-kanak dunia."],
+    "activities": ["Simulasi kedai 'Fair Trade'.", "Forum hak kanak-kanak."],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Produk Fair Trade"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 9: Berani Menghadapi Cabaran Dunia",
+    "skill_name": "Nilai 9: Keberanian",
+    "standards": ["9.1 Berani menyahut cabaran global"],
+    "objectives": ["Murid berani bersaing di peringkat antarabangsa.", "Murid berani menyuarakan hak di platform global."],
+    "activities": ["Pertandingan debat/pidato antarabangsa.", "Simulasi PBB (Model UN)."],
+    "assessments": ["Pidato"],
+    "aids": ["Podium"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 10: Kejujuran Asas Kedamaian Dunia",
+    "skill_name": "Nilai 10: Kejujuran",
+    "standards": ["10.1 Mengamalkan kejujuran dalam perhubungan global"],
+    "objectives": ["Murid memahami kesan berita palsu global.", "Murid mengamalkan integriti dalam urusan antarabangsa."],
+    "activities": ["Analisis berita 'True or Fake'.", "Aktiviti cek fakta siber."],
+    "assessments": ["Latihan bertulis"],
+    "aids": ["Berita akhbar"]
+  }
+]

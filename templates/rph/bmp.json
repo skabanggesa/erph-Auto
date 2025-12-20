@@ -1,0 +1,102 @@
+[
+  {
+    "year": "Pra",
+    "topic_name": "Unit 1: Mari Mengenal Huruf Vokal",
+    "skill_name": "Kemahiran Membaca",
+    "standards": ["BM 2.2.1 Mengenal pasti abjad", "BM 2.2.2 Menyebut dan membunyikan huruf vokal"],
+    "objectives": ["Murid dapat membunyikan 5 huruf vokal dengan betul.", "Murid dapat memadankan huruf kecil dan besar vokal."],
+    "activities": ["Nyanyian lagu vokal.", "Mencari huruf dalam kotak pasir.", "Membentuk huruf vokal menggunakan 'clay'."],
+    "assessments": ["Pemerhatian sebutan.", "Lembaran kerja padanan."],
+    "aids": ["Kad imbasan vokal", "Tanah liat"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 2: Konsonan Awal",
+    "skill_name": "Kemahiran Membaca",
+    "standards": ["BM 2.2.3 Mengenal pasti dan menyebut huruf konsonan"],
+    "objectives": ["Murid dapat menyebut 10 huruf konsonan awal.", "Murid dapat menulis huruf konsonan dengan cara yang betul."],
+    "activities": ["Permainan pancing huruf.", "Menulis huruf di atas udara."],
+    "assessments": ["Senarai semak pengecaman huruf.", "Latihan menulis."],
+    "aids": ["Alat memancing mainan", "Papan putih kecil"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 3: Suku Kata Terbuka (KV)",
+    "skill_name": "Kemahiran Membaca",
+    "standards": ["BM 2.3.1 Membunyikan suku kata terbuka"],
+    "objectives": ["Murid dapat membunyikan suku kata 'ba, bi, bu, be, bo'.", "Murid dapat menggabung dua suku kata terbuka."],
+    "activities": ["Roda suku kata.", "Cantuman kad suku kata."],
+    "assessments": ["Ujian lisan membaca suku kata."],
+    "aids": ["Kad suku kata", "Roda impian"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 4: Perkataan Mudah (KV+KV)",
+    "skill_name": "Kemahiran Membaca",
+    "standards": ["BM 2.3.2 Membaca perkataan yang mengandungi suku kata terbuka"],
+    "objectives": ["Murid dapat membaca 5 perkataan KV+KV (bola, baju, roti)."],
+    "activities": ["Membaca label di dalam kelas.", "Permainan 'Teka Gambar'."],
+    "assessments": ["Kelancaran membaca perkataan mudah."],
+    "aids": ["Gambar objek", "Label perkataan"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 5: Suku Kata Tertutup (KVK)",
+    "skill_name": "Kemahiran Membaca",
+    "standards": ["BM 2.3.3 Membunyikan suku kata tertutup"],
+    "objectives": ["Murid dapat membunyikan suku kata tertutup (bas, jam, van)."],
+    "activities": ["Ketuk meja mengikut bunyi suku kata.", "Mencari benda tersembunyi."],
+    "assessments": ["Penilaian bunyi fonetik."],
+    "aids": ["Kad KVK", "Objek sebenar"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 6: Perkataan (KVK+KVK)",
+    "skill_name": "Kemahiran Membaca",
+    "standards": ["BM 2.3.4 Membaca perkataan yang mengandungi suku kata tertutup"],
+    "objectives": ["Murid dapat membaca perkataan seperti 'bantal', 'cincin'."],
+    "activities": ["Aktiviti 'Word Search' mudah.", "Mengeja secara lisan."],
+    "assessments": ["Ejaan lisan.", "Hasil kerja lembaran."],
+    "aids": ["Puzzle perkataan", "Buku skrap"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 7: Frasa Mudah",
+    "skill_name": "Kemahiran Membaca",
+    "standards": ["BM 2.4.1 Membaca frasa yang mengandungi perkataan suku kata terbuka"],
+    "objectives": ["Murid dapat membaca frasa 'Baju biru', 'Bola saya'."],
+    "activities": ["Membaca bersama guru.", "Padankan frasa dengan gambar."],
+    "assessments": ["Bacaan mekanis frasa."],
+    "aids": ["Buku besar (Big Book)", "Kad frasa"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 8: Ayat Tunggal",
+    "skill_name": "Kemahiran Membaca",
+    "standards": ["BM 2.4.3 Membaca dan memahami ayat mudah"],
+    "objectives": ["Murid dapat membaca ayat tunggal dengan intonasi betul."],
+    "activities": ["Membaca petikan pendek.", "Susun perkataan menjadi ayat."],
+    "assessments": ["Pemerhatian bacaan ayat."],
+    "aids": ["Carta ayat", "Kad perkataan berwarna"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 9: Menulis Huruf dan Perkataan",
+    "skill_name": "Kemahiran Menulis",
+    "standards": ["BM 3.2.1 Menulis huruf kecil dengan cara yang betul"],
+    "objectives": ["Murid dapat menulis ayat mudah dengan tulisan yang kemas."],
+    "activities": ["Menyalin ayat dari papan putih.", "Menulis di atas pasir."],
+    "assessments": ["Kekemasan tulisan.", "Cara pegangan pensel."],
+    "aids": ["Buku garis tiga", "Pensel triangular"]
+  },
+  {
+    "year": "Pra",
+    "topic_name": "Unit 10: Cerita Pendek",
+    "skill_name": "Kemahiran Membaca dan Memahami",
+    "standards": ["BM 2.5.1 Membaca dan menceritakan semula cerita yang dibaca"],
+    "objectives": ["Murid dapat menceritakan semula isi cerita yang dibaca."],
+    "activities": ["Bercerita menggunakan boneka.", "Melukis watak cerita."],
+    "assessments": ["Keupayaan bercerita semula."],
+    "aids": ["Boneka jari", "Buku cerita"]
+  }
+]
