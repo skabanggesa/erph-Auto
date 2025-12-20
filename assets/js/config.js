@@ -78,8 +78,6 @@ export const MAP_SUBJECT_TO_FILE = {
   'PSAS': 'psas', // Baru
   'AFP': 'afp', 
   'Aktiviti Fizikal': 'afp'
-  'BMP': 'bmp', 
-  'Bahasa Melayu Pra': 'bmp'
   'BIP': 'bip', 
   'Bahasa Inggeris Pra': 'bip'
   'MTP': 'mtp', 
