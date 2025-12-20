@@ -51,7 +51,9 @@ export const MAP_SUBJECT_TO_FILE = {
   'BA': 'ba', 
   'Bahasa Arab': 'ba', 
   'TAS': 'tas', 
-  'Tasmik': 'tas', 
+  'Tasmik': 'tas',
+  'PM': 'pm', 
+  'Pendidikan Moral': 'pm',
 
   // --- KESENIAN & JASMANI ---
   'MZ': 'mz', 
@@ -74,8 +76,16 @@ export const MAP_SUBJECT_TO_FILE = {
   'KHA': 'kha', // Baru (Kemahiran Hidup / KHA)
   'PD': 'pd',   // Baru (Pengurusan Diri)
   'PSAS': 'psas', // Baru
-  'PRA': 'pra', 
-  'Pravocational': 'pra' 
+  'AFP': 'afp', 
+  'Aktiviti Fizikal': 'afp'
+  'BMP': 'bmp', 
+  'Bahasa Melayu Pra': 'bmp'
+  'BIP': 'bip', 
+  'Bahasa Inggeris Pra': 'bip'
+  'MTP': 'mtp', 
+  'Matematik Pra': 'mtp'
+  'PAIP': 'paip', 
+  'Pendidikan Agama Islam Pra': 'paip'
 };
 // Fungsi untuk dapatkan URL template JSON dari GitHub
 export const getTemplateUrl = (subjectDisplayName) => {
