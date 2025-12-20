@@ -77,13 +77,15 @@ export const MAP_SUBJECT_TO_FILE = {
   'PD': 'pd',   // Baru (Pengurusan Diri)
   'PSAS': 'psas', // Baru
   'AFP': 'afp', 
-  'Aktiviti Fizikal': 'afp'
+  'Aktiviti Fizikal': 'afp',
+  'BMP': 'bmp',
+  'Bahasa Melayu Pra': 'bmp',
   'BIP': 'bip', 
-  'Bahasa Inggeris Pra': 'bip'
+  'Bahasa Inggeris Pra': 'bip',
   'MTP': 'mtp', 
-  'Matematik Pra': 'mtp'
+  'Matematik Pra': 'mtp',
   'PAIP': 'paip', 
-  'Pendidikan Agama Islam Pra': 'paip'
+  'Pendidikan Agama Islam Pra': 'paip',
 };
 // Fungsi untuk dapatkan URL template JSON dari GitHub
 export const getTemplateUrl = (subjectDisplayName) => {
