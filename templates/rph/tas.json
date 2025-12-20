@@ -1,0 +1,607 @@
+[
+  {
+    "year": 1,
+    "topic_name": "Unit 1: Mengenal Huruf Hijaiyah Tunggal",
+    "skill_name": "Tasmik / Iqra' 1",
+    "standards": ["1.1.1 Menyebut huruf tunggal berbaris fathah."],
+    "objectives": ["Murid menyebut 28 huruf makhraj betul."],
+    "activities": ["Talaqqi Musyafahah", "Kad Imbasan"],
+    "assessments": ["Ujian Sebutan"],
+    "aids": ["Iqra' 1", "Carta Huruf"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 2: Huruf Hijaiyah Berbaris Kasrah",
+    "skill_name": "Tasmik / Iqra' 1",
+    "standards": ["1.1.2 Membunyikan huruf berbaris bawah."],
+    "objectives": ["Murid membezakan bunyi 'i' pada huruf."],
+    "activities": ["Latih tubi sebutan", "Permainan bunyi"],
+    "assessments": ["Semakan bacaan individu"],
+    "aids": ["Iqra' 1"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 3: Huruf Hijaiyah Berbaris Dhommah",
+    "skill_name": "Tasmik / Iqra' 1",
+    "standards": ["1.1.3 Membunyikan huruf berbaris depan."],
+    "objectives": ["Murid membunyikan huruf 'u' dengan tepat."],
+    "activities": ["Nyanyian baris", "Tasmik guru"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Iqra' 1"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 4: Mengenal Bentuk Huruf Bersambung (Awal)",
+    "skill_name": "Tasmik / Iqra' 2",
+    "standards": ["1.2.1 Mengenal rupa huruf di awal kalimah."],
+    "objectives": ["Murid mengecam perubahan bentuk huruf."],
+    "activities": ["Padanan kad huruf", "Tulis udara"],
+    "assessments": ["Latihan padanan"],
+    "aids": ["Papan putih", "Iqra' 2"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 5: Huruf Bersambung di Tengah dan Akhir",
+    "skill_name": "Tasmik / Iqra' 2",
+    "standards": ["1.2.2 Membaca kalimah pendek bersambung."],
+    "objectives": ["Murid membaca 2-3 huruf bersambung."],
+    "activities": ["Bacaan bergilir", "Bimbingan rakan"],
+    "assessments": ["Ujian kelancaran"],
+    "aids": ["Iqra' 2"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 6: Bacaan Kalimah Pendek Berbaris Fathah",
+    "skill_name": "Tasmik / Iqra' 2",
+    "standards": ["1.2.3 Membaca ayat 3 kalimah berbaris atas."],
+    "objectives": ["Murid membaca tanpa mengeja."],
+    "activities": ["Bacaan pantas", "Tikrar"],
+    "assessments": ["Rekod Tasmik"],
+    "aids": ["Iqra' 2"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 7: Pengenalan Makhraj Al-Jauf (Rongga)",
+    "skill_name": "Tasmik / Tajwid Asas",
+    "standards": ["1.3.1 Mengenal punca bunyi huruf mad."],
+    "objectives": ["Murid mengeluarkan bunyi dari rongga."],
+    "activities": ["Demonstrasi guru", "Simulasi"],
+    "assessments": ["Pemerhatian makhraj"],
+    "aids": ["Rajah Makhraj"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 8: Pengenalan Makhraj Al-Halq (Kerongkong)",
+    "skill_name": "Tasmik / Tajwid Asas",
+    "standards": ["1.3.2 Menyebut huruf halqi dengan jelas."],
+    "objectives": ["Murid menyebut Hamzah, Ha, Ain, Ha, Ghain, Kha."],
+    "activities": ["Latih tubi bunyi", "Talaqqi"],
+    "assessments": ["Ujian lisan"],
+    "aids": ["Carta Kerongkong"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 9: Adab Membaca Iqra' dan Al-Quran",
+    "skill_name": "Adab",
+    "standards": ["1.4.1 Mengamalkan adab sebelum membaca."],
+    "objectives": ["Murid duduk sopan dan menghadap kiblat."],
+    "activities": ["Amali adab", "Main peranan"],
+    "assessments": ["Pemerhatian tingkah laku"],
+    "aids": ["Poster Adab"]
+  },
+  {
+    "year": 1,
+    "topic_name": "Unit 10: Pengukuhan Bacaan Iqra' 1 & 2",
+    "skill_name": "Tasmik / Pengukuhan",
+    "standards": ["1.5.1 Menguasai bacaan tahap Iqra' 2."],
+    "objectives": ["Murid bersedia naik ke Iqra' 3."],
+    "activities": ["Maraton Tasmik", "Ujian naik tahap"],
+    "assessments": ["Keputusan Ujian Tahap"],
+    "aids": ["Buku Rekod"]
+  },
+
+  {
+    "year": 2,
+    "topic_name": "Unit 1: Bacaan Mad Asli (Alif)",
+    "skill_name": "Tasmik / Iqra' 3",
+    "standards": ["2.1.1 Membaca bunyi panjang 2 harakat."],
+    "objectives": ["Murid membezakan bacaan pendek dan panjang."],
+    "activities": ["Gerakan tangan (2 harakat)", "Talaqqi"],
+    "assessments": ["Ujian bacaan panjang"],
+    "aids": ["Iqra' 3"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 2: Bacaan Mad Asli (Wau dan Ya)",
+    "skill_name": "Tasmik / Iqra' 3",
+    "standards": ["2.1.2 Mengenal tanda mad wau dan ya sakinah."],
+    "objectives": ["Murid membaca baris depan dan bawah yang panjang."],
+    "activities": ["Perbandingan bunyi", "Tikrar"],
+    "assessments": ["Rekod Pencapaian"],
+    "aids": ["Iqra' 3"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 3: Bacaan Tanwin (Baris Dua)",
+    "skill_name": "Tasmik / Iqra' 3",
+    "standards": ["2.2.1 Membunyikan tanwin fathah, kasrah, dhommah."],
+    "objectives": ["Murid menyebut bunyi 'an, in, un'."],
+    "activities": ["Latih tubi tanwin", "Padanan bunyi"],
+    "assessments": ["Ujian sebutan tanwin"],
+    "aids": ["Iqra' 3"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 4: Pengenalan Tanda Mati (Sukun)",
+    "skill_name": "Tasmik / Iqra' 4",
+    "standards": ["2.3.1 Membaca huruf yang dimatikan."],
+    "objectives": ["Murid membunyikan huruf sukun dengan tepat."],
+    "activities": ["Ejaan bunyi mati", "Tasmik individu"],
+    "assessments": ["Semakan kelancaran"],
+    "aids": ["Iqra' 4"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 5: Bacaan Huruf Lin (Wau dan Ya)",
+    "skill_name": "Tasmik / Iqra' 4",
+    "standards": ["2.3.2 Membaca bunyi lembut 'au' dan 'ai'."],
+    "objectives": ["Murid membaca kalimah contohnya 'Baitun'."],
+    "activities": ["Latih tubi Lin", "Contoh ayat"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Iqra' 4"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 6: Hukum Qalqalah Sughra",
+    "skill_name": "Tasmik / Tajwid",
+    "standards": ["2.4.1 Mengenal bunyi lantunan pada huruf sukun."],
+    "objectives": ["Murid melantunkan bunyi Qutbu Jadin."],
+    "activities": ["Demonstrasi lantunan", "Talaqqi"],
+    "assessments": ["Ujian Tajwid"],
+    "aids": ["Kad Huruf Qalqalah"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 7: Bacaan Ayat Berbaris Tanwin dan Sukun",
+    "skill_name": "Tasmik / Iqra' 4",
+    "standards": ["2.5.1 Membaca kombinasi baris dan tanda sukun."],
+    "objectives": ["Murid membaca ayat panjang secara bersambung."],
+    "activities": ["Bacaan ayat pendek", "Tadarus"],
+    "assessments": ["Kelancaran"],
+    "aids": ["Iqra' 4"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 8: Mengenal Makhraj Al-Lisan (Lidah)",
+    "skill_name": "Tasmik / Tajwid",
+    "standards": ["2.6.1 Menyebut huruf lidah (Qof, Kaf, Jim)."],
+    "objectives": ["Murid meletakkan lidah pada posisi betul."],
+    "activities": ["Rajah kedudukan lidah", "Latihan sebutan"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Model Gigi/Lidah"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 9: Mengenal Tanda Waqaf (Berhenti)",
+    "skill_name": "Tasmik / Adab",
+    "standards": ["2.7.1 Mengenal simbol berhenti di akhir ayat."],
+    "objectives": ["Murid berhenti pada tanda bulatan ayat."],
+    "activities": ["Latihan nafas", "Tanda berhenti"],
+    "assessments": ["Praktikal waqaf"],
+    "aids": ["Iqra' 4"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 10: Penilaian Iqra' 3 & 4",
+    "skill_name": "Tasmik / Penilaian",
+    "standards": ["2.8.1 Menguasai kemahiran Iqra' 4."],
+    "objectives": ["Murid beralih ke Iqra' 5."],
+    "activities": ["Ujian Lisan Tahunan", "Ganjaran bintang"],
+    "assessments": ["Borang Penilaian"],
+    "aids": ["Sijil Tahap"]
+  },
+
+  {
+    "year": 3,
+    "topic_name": "Unit 1: Bacaan Sabdu (Syaddah)",
+    "skill_name": "Tasmik / Iqra' 5",
+    "standards": ["3.1.1 Membaca kalimah bertanda syaddah."],
+    "objectives": ["Murid menekan sebutan pada huruf bersabdu."],
+    "activities": ["Latih tekan sebutan", "Talaqqi"],
+    "assessments": ["Rekod Tasmik"],
+    "aids": ["Iqra' 5"]
+  },
+  {
+    "year": 2,
+    "topic_name": "Unit 2: Nun dan Mim Syaddah (Ghunnah)",
+    "skill_name": "Tasmik / Tajwid",
+    "standards": ["3.1.2 Membaca dengung 2 harakat."],
+    "objectives": ["Murid mendengungkan bunyi 'Anna' dan 'Amma'."],
+    "activities": ["Simulasi dengung hidung", "Tikrar"],
+    "assessments": ["Ujian Dengung"],
+    "aids": ["Iqra' 5"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 3: Alif Lam Qamariah",
+    "skill_name": "Tasmik / Tajwid",
+    "standards": ["3.2.1 Membaca 'Al' dengan jelas."],
+    "objectives": ["Murid mengenal tanda sukun pada lam."],
+    "activities": ["Cari 'Al' dalam buku", "Bacaan jelas"],
+    "assessments": ["Latihan bertulis"],
+    "aids": ["Iqra' 5"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 4: Alif Lam Syamsiah",
+    "skill_name": "Tasmik / Tajwid",
+    "standards": ["3.2.2 Membaca 'Al' secara idgham (masuk)."],
+    "objectives": ["Murid tidak membunyikan 'Lam'."],
+    "activities": ["Perbandingan Syamsiah/Qamariah", "Tasmik"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Iqra' 5"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 5: Lafzul Jalah (Lafaz Allah)",
+    "skill_name": "Tasmik / Tajwid",
+    "standards": ["3.3.1 Mengenal bunyi tebal dan nipis Allah."],
+    "objectives": ["Murid membezakan Allah (tebal) dan lillah (nipis)."],
+    "activities": ["Latih tubi kalimah Allah", "Analisis baris"],
+    "assessments": ["Ujian makhraj"],
+    "aids": ["Iqra' 6"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 6: Mengenal Tanda Wakaf (Mim, La, Jim)",
+    "skill_name": "Tasmik / Iqra' 6",
+    "standards": ["3.4.1 Mengenal hukum berhenti pada simbol."],
+    "objectives": ["Murid tahu bila wajib atau dilarang berhenti."],
+    "activities": ["Bulatkan tanda wakaf", "Praktikal"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Iqra' 6"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 7: Bacaan Ayat Panjang Iqra' 6",
+    "skill_name": "Tasmik / Iqra' 6",
+    "standards": ["3.5.1 Membaca petikan ayat Al-Quran."],
+    "objectives": ["Murid membaca dengan kelancaran tinggi."],
+    "activities": ["Tadarus berkelompok", "Bimbingan"],
+    "assessments": ["Ujian Kelancaran"],
+    "aids": ["Iqra' 6"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 8: Pengenalan Surah Al-Fatihah",
+    "skill_name": "Tasmik / Al-Quran",
+    "standards": ["3.6.1 Membaca Fatihah dengan tajwid."],
+    "objectives": ["Murid menguasai ummul kitab sebagai asas solat."],
+    "activities": ["Talaqqi", "Hafazan"],
+    "assessments": ["Ujian Amali Solat"],
+    "aids": ["Carta Al-Fatihah"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 9: Makhraj Al-Khaisyum (Pangkal Hidung)",
+    "skill_name": "Tasmik / Tajwid",
+    "standards": ["3.7.1 Mengenal punca bunyi dengung."],
+    "objectives": ["Murid mengeluarkan dengung dari hidung."],
+    "activities": ["Ujian picit hidung", "Latih dengung"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Rajah Hidung"]
+  },
+  {
+    "year": 3,
+    "topic_name": "Unit 10: Persediaan Masuk Al-Quran (Khatam Iqra')",
+    "skill_name": "Tasmik / Penilaian",
+    "standards": ["3.8.1 Tamat Iqra' 6."],
+    "objectives": ["Murid bersedia membaca Mushaf Al-Quran."],
+    "activities": ["Majlis mini khatam Iqra'", "Ujian Kelayakan"],
+    "assessments": ["Sijil Iqra'"],
+    "aids": ["Mushaf Al-Quran"]
+  },
+
+  {
+    "year": 4,
+    "topic_name": "Unit 1: Pengenalan Mushaf Rasm Uthmani",
+    "skill_name": "Al-Quran / Juz 1",
+    "standards": ["4.1.1 Mengenal tanda bacaan dalam Mushaf."],
+    "objectives": ["Murid faham perbezaan tanda Iqra' dan Mushaf."],
+    "activities": ["Penerangan tanda", "Tasmik awal"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Mushaf Al-Quran"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 2: Hukum Nun Sakinah (Izhar Halqi)",
+    "skill_name": "Tajwid / Juz 2",
+    "standards": ["4.2.1 Membaca nun mati tanpa dengung."],
+    "objectives": ["Murid membunyikan 'N' dengan jelas."],
+    "activities": ["Cari hukum dalam juz 2", "Talaqqi"],
+    "assessments": ["Ujian Lisan"],
+    "aids": ["Kad Hukum Izhar"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 3: Hukum Nun Sakinah (Idgham)",
+    "skill_name": "Tajwid / Juz 3",
+    "standards": ["4.2.2 Mengenal Maal Ghunnah & Bila Ghunnah."],
+    "objectives": ["Murid memasukkan bunyi nun ke dalam huruf."],
+    "activities": ["Latih tubi idgham", "Analisis ayat"],
+    "assessments": ["Ujian Tajwid"],
+    "aids": ["Carta Tajwid"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 4: Hukum Nun Sakinah (Iqlab)",
+    "skill_name": "Tajwid / Juz 4",
+    "standards": ["4.2.3 Menukar bunyi 'N' kepada 'M'."],
+    "objectives": ["Murid mengecam tanda 'Mim' kecil."],
+    "activities": ["Tasmik surah Al-Baqarah", "Simulasi"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 5: Hukum Nun Sakinah (Ikhfa' Haqiqi)",
+    "skill_name": "Tajwid / Juz 5",
+    "standards": ["4.2.4 Membaca dengung samar."],
+    "objectives": ["Murid menyembunyikan bunyi nun."],
+    "activities": ["Talaqqi", "Cari 15 huruf ikhfa'"],
+    "assessments": ["Rekod Tasmik"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 6: Kelancaran Bacaan Juz 6 & 7",
+    "skill_name": "Al-Quran",
+    "standards": ["4.3.1 Membaca 2 halaman sehari."],
+    "objectives": ["Murid meningkatkan kualiti bacaan."],
+    "activities": ["Tadarus pagi", "Mendengar Qari"],
+    "assessments": ["Semakan muka surat"],
+    "aids": ["Audio MP3"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 7: Hukum Mim Sakinah (Izhar Syafawi)",
+    "skill_name": "Tajwid / Juz 8",
+    "standards": ["4.4.1 Membaca 'M' mati dengan jelas."],
+    "objectives": ["Murid tidak mendengungkan Mim sukun."],
+    "activities": ["Latih tubi ayat", "Tasmik individu"],
+    "assessments": ["Ujian Lisan"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 8: Mim Sakinah (Idgham Mithlain & Ikhfa' Syafawi)",
+    "skill_name": "Tajwid / Juz 9",
+    "standards": ["4.4.2 Membaca dengung pada mim mati."],
+    "objectives": ["Murid membezakan bunyi 'M' masuk dan samar."],
+    "activities": ["Analisis hukum mim", "Talaqqi"],
+    "assessments": ["Rekod Tasmik"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 9: Adab Terhadap Mushaf Al-Quran",
+    "skill_name": "Adab",
+    "standards": ["4.5.1 Menjaga kesucian Al-Quran."],
+    "objectives": ["Murid membawa Quran dengan hormat."],
+    "activities": ["Gotong-royong susun Quran", "Main peranan"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Mushaf"]
+  },
+  {
+    "year": 4,
+    "topic_name": "Unit 10: Penilaian Juz 1 - 10",
+    "skill_name": "Al-Quran / Penilaian",
+    "standards": ["4.6.1 Mencapai sasaran 10 Juzuk."],
+    "objectives": ["Murid bersedia memasuki tahun 5."],
+    "activities": ["Ujian UTQ tahap 1", "Majlis Iktiraf"],
+    "assessments": ["Laporan Prestasi"],
+    "aids": ["Buku Rekod"]
+  },
+
+  {
+    "year": 5,
+    "topic_name": "Unit 1: Tahsin Al-Quran Juz 11-12",
+    "skill_name": "Al-Quran",
+    "standards": ["5.1.1 Memperbaiki sebutan kalimah sukar."],
+    "objectives": ["Murid membaca dengan makhraj sempurna."],
+    "activities": ["Tahsin berkelompok", "Mendengar Qari"],
+    "assessments": ["Pemerhatian tajwid"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 2: Hukum Ra' (Tafkhim / Tebal)",
+    "skill_name": "Tajwid / Juz 13",
+    "standards": ["5.2.1 Membaca Ra' berbaris atas/depan."],
+    "objectives": ["Murid melafazkan bunyi Ra' yang tebal."],
+    "activities": ["Latih tubi kalimah Ra'", "Talaqqi"],
+    "assessments": ["Ujian Lisan"],
+    "aids": ["Kad Ra'"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 3: Hukum Ra' (Tarqiq / Nipis)",
+    "skill_name": "Tajwid / Juz 14",
+    "standards": ["5.2.2 Membaca Ra' berbaris bawah."],
+    "objectives": ["Murid melafazkan bunyi Ra' yang nipis."],
+    "activities": ["Perbandingan bunyi Ra'", "Tasmik"],
+    "assessments": ["Rekod individu"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 4: Mad Silah Qasirah & Tawilah",
+    "skill_name": "Tajwid / Juz 15",
+    "standards": ["5.3.1 Membaca mad pada Ha Dhamir."],
+    "objectives": ["Murid membezakan panjang 2 dan 5 harakat."],
+    "activities": ["Latihan nafas", "Analisis ayat"],
+    "assessments": ["Ujian tajwid"],
+    "aids": ["Carta Mad"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 5: Kelancaran Bacaan Juz 16 & 17",
+    "skill_name": "Al-Quran",
+    "standards": ["5.4.1 Membaca mengikut Mushaf bertanda."],
+    "objectives": ["Murid lancar membaca tanpa tersekat."],
+    "activities": ["Tadarus pagi", "Semakan rakan"],
+    "assessments": ["Ganjaran bintang"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 6: Hukum Qalqalah Kubra",
+    "skill_name": "Tajwid / Juz 18",
+    "standards": ["5.5.1 Lantunan kuat di akhir ayat."],
+    "objectives": ["Murid melantunkan huruf waqaf dengan kuat."],
+    "activities": ["Praktikal waqaf", "Talaqqi"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 7: Mad Lazim Harfi & Kalimi",
+    "skill_name": "Tajwid / Juz 19",
+    "standards": ["5.6.1 Membaca tanda mad ombak (6 harakat)."],
+    "objectives": ["Murid membaca kalimah 'Waladhollin'."],
+    "activities": ["Latihan harakat panjang", "Tikrar"],
+    "assessments": ["Ujian bacaan panjang"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 8: Mengenal Tanda Saktah",
+    "skill_name": "Tajwid / Juz 20",
+    "standards": ["5.7.1 Berhenti sejenak tanpa ambil nafas."],
+    "objectives": ["Murid berhenti 1 saat pada tanda Saktah."],
+    "activities": ["Demonstrasi Saktah", "Cari tanda Saktah"],
+    "assessments": ["Praktikal"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 9: Adab Pembaca Al-Quran Berjaya",
+    "skill_name": "Adab",
+    "standards": ["5.8.1 Istiqamah membaca setiap hari."],
+    "objectives": ["Murid menjadikan Quran amalan harian."],
+    "activities": ["Borang mutabaah", "Cerita motivasi"],
+    "assessments": ["Penilaian kendiri"],
+    "aids": ["Buku Rekod"]
+  },
+  {
+    "year": 5,
+    "topic_name": "Unit 10: Penilaian Juz 11 - 20",
+    "skill_name": "Al-Quran / Penilaian",
+    "standards": ["5.9.1 Mencapai sasaran 20 Juzuk."],
+    "objectives": ["Murid bersedia memasuki tahun akhir."],
+    "activities": ["Ujian Tilawah Peringkat Kelas", "Ganjaran"],
+    "assessments": ["Keputusan UTQ"],
+    "aids": ["Sijil"]
+  },
+
+  {
+    "year": 6,
+    "topic_name": "Unit 1: Tahsin Al-Quran Juz 21-22",
+    "skill_name": "Al-Quran",
+    "standards": ["6.1.1 Mencapai tahap kelancaran tinggi."],
+    "objectives": ["Murid membaca dengan sebutan fasih."],
+    "activities": ["Talaqqi Musyafahah", "Mendengar Qari"],
+    "assessments": ["Semakan muka surat"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 2: Bacaan Gharib (Imalah & Isymam)",
+    "skill_name": "Tajwid / Juz 23",
+    "standards": ["6.2.1 Membaca bunyi 'e' (Imalah) & muncung (Isymam)."],
+    "objectives": ["Murid membaca kalimah 'Majreha'."],
+    "activities": ["Bimbingan khas guru", "Latih sebutan"],
+    "assessments": ["Ujian Tajwid Khusus"],
+    "aids": ["Kad Gharib"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 3: Bacaan Gharib (Tashil & Naqal)",
+    "skill_name": "Tajwid / Juz 24",
+    "standards": ["6.2.2 Membaca kalimah khusus dalam Al-Quran."],
+    "objectives": ["Murid menyebut 'A-a'jamiyun'."],
+    "activities": ["Demonstrasi Tashil", "Analisis Mushaf"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Al-Quran"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 4: Kelancaran Bacaan Juz 25 & 26",
+    "skill_name": "Al-Quran",
+    "standards": ["6.3.1 Membaca berterusan (Istiqamah)."],
+    "objectives": ["Murid membaca 3-4 muka surat sehari."],
+    "activities": ["Klinik Al-Quran", "Tadarus"],
+    "assessments": ["Rekod Mingguan"],
+    "aids": ["Mushaf"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 5: Fokus Tajwid Juz 27 & 28",
+    "skill_name": "Tajwid / Pengukuhan",
+    "standards": ["6.4.1 Mengaplikasi semua hukum tajwid."],
+    "objectives": ["Murid membaca secara spontan dengan tajwid."],
+    "activities": ["Kuiz Tajwid", "Tasmik intensif"],
+    "assessments": ["Ujian Bertulis Tajwid"],
+    "aids": ["Modul Tajwid"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 6: Bacaan Juz Amma (Juz 30)",
+    "skill_name": "Al-Quran / Tilawah",
+    "standards": ["6.5.1 Membaca surah lazim dengan tartil."],
+    "objectives": ["Murid bersedia untuk hafazan surah pilihan."],
+    "activities": ["Tilawah surah pendek", "Hafazan"],
+    "assessments": ["Ujian Hafazan"],
+    "aids": ["Carta Juz Amma"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 7: Persediaan Majlis Khatam Al-Quran",
+    "skill_name": "Al-Quran / Praktikal",
+    "standards": ["6.6.1 Menyempurnakan baki bacaan."],
+    "objectives": ["Murid menghabiskan 30 Juzuk."],
+    "activities": ["Latihan bacaan khatam", "Tasmik akhir"],
+    "assessments": ["Penyemakan terakhir"],
+    "aids": ["Mushaf"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 8: Adab Selepas Khatam Al-Quran",
+    "skill_name": "Adab",
+    "standards": ["6.7.1 Membaca doa khatam & syukur."],
+    "objectives": ["Murid menghargai pencapaian rohani."],
+    "activities": ["Sesi doa", "Refleksi"],
+    "assessments": ["Pemerhatian"],
+    "aids": ["Buku Doa"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 9: Simulasi Majlis Khatam",
+    "skill_name": "Al-Quran / Adab",
+    "standards": ["6.8.1 Memahami tatacara khatam."],
+    "objectives": ["Murid tahu protokol majlis."],
+    "activities": ["Latihan perarakan & bacaan", "Gotong-royong"],
+    "assessments": ["Praktikal"],
+    "aids": ["Bunga manggar/Rehal"]
+  },
+  {
+    "year": 6,
+    "topic_name": "Unit 10: Penilaian Akhir & Khatam 30 Juzuk",
+    "skill_name": "Al-Quran / Penilaian",
+    "standards": ["6.9.1 Lulus UTQ Akhir."],
+    "objectives": ["Murid mendapat sijil Khatam Al-Quran."],
+    "activities": ["Majlis Khatam Al-Quran Sekolah", "Anugerah"],
+    "assessments": ["Sijil Khatam Al-Quran Kebangsaan"],
+    "aids": ["Sijil / Hadiah"]
+  }
+]
