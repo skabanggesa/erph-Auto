@@ -23,8 +23,10 @@ window.deleteRph = async (rphId) => {
 
 export async function loadRphHistory() {
     const content = document.getElementById('content');
+    
+    // Paparan loading sementara data diambil
     content.innerHTML = `
-        <div style="text-align: center; padding: 40px;">
+        <div style="padding: 40px; text-align: center; color: #666;">
             <p>Memuatkan Senarai RPH Saya...</p>
         </div>
     `;
@@ -45,41 +47,81 @@ export async function loadRphHistory() {
         
         const querySnapshot = await getDocs(q);
         
+        // CSS Dalaman untuk memastikan paparan kemas tanpa bergantung pada fail CSS luaran
         let html = `
             <style>
-                .rph-container { max-width: 1100px; margin: 0 auto; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-                .rph-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; border-bottom: 2px solid #eee; padding-bottom: 15px; }
-                .rph-table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-                .rph-table th { background-color: #f8f9fa; color: #333; text-align: left; padding: 15px; border-bottom: 2px solid #dee2e6; font-weight: 600; }
-                .rph-table td { padding: 15px; border-bottom: 1px solid #eee; vertical-align: middle; color: #444; }
-                .rph-table tr:hover { background-color: #f1f7ff; }
+                .history-container {
+                    background: white;
+                    padding: 25px;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+                    max-width: 1100px;
+                    margin: 0 auto;
+                }
+                .history-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                .rph-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 10px;
+                }
+                .rph-table th {
+                    background-color: #f8f9fa;
+                    color: #2c3e50;
+                    text-align: left;
+                    padding: 15px;
+                    border-bottom: 2px solid #eee;
+                    font-weight: 600;
+                }
+                .rph-table td {
+                    padding: 15px;
+                    border-bottom: 1px solid #f1f1f1;
+                    color: #444;
+                }
+                .rph-table tr:hover {
+                    background-color: #f9fbff;
+                }
+                .status-badge {
+                    padding: 5px 12px;
+                    border-radius: 20px;
+                    font-size: 0.75rem;
+                    font-weight: bold;
+                    display: inline-block;
+                }
+                .status-draft { background: #fff3cd; color: #856404; }
+                .status-submitted { background: #d4edda; color: #155724; }
                 
-                .badge { padding: 6px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; display: inline-block; }
-                .badge-draft { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
-                .badge-submitted { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-                
-                .action-btn { padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
-                .btn-edit { background-color: #4a90e2; color: white; }
-                .btn-edit:hover { background-color: #357abd; }
-                .btn-delete { background-color: #e74c3c; color: white; margin-left: 5px; }
-                .btn-delete:hover { background-color: #c0392b; }
-                .btn-back { background: #6c757d; color: white; border-radius: 8px; padding: 10px 20px; font-weight: 500; }
+                .btn-action {
+                    padding: 6px 14px;
+                    border-radius: 6px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 0.85rem;
+                    margin-right: 5px;
+                    transition: 0.2s;
+                }
+                .btn-edit { background: #4a90e2; color: white; }
+                .btn-edit:hover { background: #357abd; }
+                .btn-delete { background: #e74c3c; color: white; }
+                .btn-delete:hover { background: #c0392b; }
             </style>
 
-            <div class="rph-container">
-                <div class="rph-header">
-                    <h2 style="color: #2c3e50; margin: 0;">📚 Senarai RPH Saya</h2>
-                    <button class="action-btn btn-back" onclick="router.navigate('guru-home')">
-                        ⬅️ Kembali ke Dashboard
-                    </button>
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 style="margin: 0; color: #2c3e50;">Senarai RPH Saya</h2>
+                    <button class="btn btn-secondary" onclick="router.navigate('guru-home')">Kembali ke Dashboard</button>
                 </div>
         `;
         
         if (querySnapshot.empty) {
             html += `
-                <div style="text-align: center; padding: 50px; background: white; border-radius: 12px; border: 2px dashed #ccc;">
-                    <p style="color: #7f8c8d; font-size: 1.1rem;">Anda belum mempunyai sebarang RPH.</p>
-                    <button class="action-btn btn-edit" onclick="router.navigate('guru-rph-generator')" style="margin-top: 15px;">Jana RPH Sekarang</button>
+                <div style="text-align: center; padding: 50px; border: 2px dashed #eee; border-radius: 10px;">
+                    <p style="color: #7f8c8d;">Anda belum mempunyai sebarang RPH.</p>
+                    <button class="btn btn-primary" onclick="router.navigate('guru-rph-generator')">Jana RPH Sekarang</button>
                 </div>`;
         } else {
             html += `
@@ -99,23 +141,19 @@ export async function loadRphHistory() {
             querySnapshot.docs.forEach(doc => {
                 const data = doc.data();
                 const tarikh = data.tarikh.toDate ? data.tarikh.toDate().toLocaleDateString('ms-MY') : 'N/A';
-                const status = data.status ? data.status.toLowerCase() : 'draft';
-                const statusClass = status === 'submitted' ? 'badge-submitted' : 'badge-draft';
-                const statusLabel = status === 'submitted' ? 'Dihantar' : 'Draf';
+                const statusStr = (data.status || 'draft').toLowerCase();
+                const statusLabel = statusStr === 'submitted' ? 'DIHANTAR' : 'DRAF';
+                const statusClass = statusStr === 'submitted' ? 'status-submitted' : 'status-draft';
                 
                 html += `
                     <tr>
-                        <td style="font-weight: 500;">${tarikh}</td>
+                        <td style="font-weight: 600;">${tarikh}</td>
                         <td>${data.matapelajaran}</td>
-                        <td><span style="background: #f0f2f5; padding: 4px 8px; border-radius: 4px;">${data.kelas}</span></td>
-                        <td><span class="badge ${statusClass}">${statusLabel}</span></td>
+                        <td>${data.kelas}</td>
+                        <td><span class="status-badge ${statusClass}">${statusLabel}</span></td>
                         <td>
-                            <button class="action-btn btn-edit" onclick="router.navigate('guru-rph-edit', '${doc.id}')">
-                                ✏️ Edit
-                            </button>
-                            <button class="action-btn btn-delete" onclick="deleteRph('${doc.id}')">
-                                🗑️ Padam
-                            </button>
+                            <button class="btn-action btn-edit" onclick="router.navigate('guru-rph-edit', '${doc.id}')">Edit</button>
+                            <button class="btn-action btn-delete" onclick="deleteRph('${doc.id}')">Padam</button>
                         </td>
                     </tr>
                 `;
@@ -128,6 +166,7 @@ export async function loadRphHistory() {
         
     } catch (e) {
         console.error("Ralat memuatkan sejarah RPH:", e);
-        content.innerHTML = `<div class="rph-container"><p class="error">Ralat: ${e.message}</p></div>`;
+        content.innerHTML = `<p class="error">Ralat memuatkan senarai RPH: ${e.message}</p>
+        <button class="btn btn-secondary" onclick="router.navigate('guru-home')">Kembali ke Dashboard</button>`;
     }
 }
