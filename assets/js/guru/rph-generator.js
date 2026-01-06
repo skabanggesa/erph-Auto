@@ -1,31 +1,105 @@
 // assets/js/guru/rph-generator.js
 
-import { auth, db, getTemplateUrl, getFullSubjectName } from '../config.js';
+import { auth, db, getTemplateUrl } from '../config.js';
 import { 
   doc, getDoc, collection, addDoc, query, where, getDocs
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// 🔑 IMPORT TAMBAHAN
-import { createLog } from '../utils.js'; 
+// Import fungsi dari rph-history.js
 import { loadRphHistory } from './rph-history.js'; 
 
-/**
- * Memuatkan Antaramuka Penjana RPH
- */
 export function loadRphGenerator() {
   const content = document.getElementById('content');
+  
   content.innerHTML = `
-    <div class="guru-section">
-      <h2>Jana RPH Automatik</h2>
+    <style>
+      .generator-container { 
+        max-width: 800px; 
+        margin: 20px auto; 
+        background: white; 
+        padding: 30px; 
+        border-radius: 12px; 
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+        font-family: 'Segoe UI', system-ui, sans-serif; 
+      }
+      .generator-header { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        border-bottom: 2px solid #f0f2f5; 
+        margin-bottom: 25px; 
+        padding-bottom: 15px; 
+      }
+      .form-group { margin-bottom: 25px; }
+      .form-group label { display: block; margin-bottom: 10px; font-weight: 600; color: #333; font-size: 0.95rem; }
+      .form-group input[type="date"] { 
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ced4da; 
+        border-radius: 8px; 
+        font-size: 1rem; 
+      }
+      .btn-main { 
+        width: 100%; 
+        padding: 15px; 
+        border-radius: 8px; 
+        border: none; 
+        cursor: pointer; 
+        font-weight: 600; 
+        font-size: 1rem; 
+        transition: 0.2s; 
+      }
+      .btn-generate { background: #28a745; color: white; }
+      .btn-generate:hover { background: #218838; }
+      .btn-generate:disabled { background: #6c757d; cursor: not-allowed; }
+      
+      .btn-back-dashboard { 
+        background: #f8f9fa; 
+        color: #333; 
+        border: 1px solid #ddd; 
+        padding: 8px 15px; 
+        border-radius: 6px; 
+        font-size: 0.85rem; 
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .btn-back-dashboard:hover { background: #e2e6ea; }
+
+      #generatorResult { 
+        margin-top: 25px; 
+        padding: 20px; 
+        background: #f8f9fa; 
+        border-radius: 10px; 
+        border: 1px solid #e9ecef; 
+      }
+      .session-list { list-style: none; padding: 0; }
+      .session-item { 
+        background: white; 
+        padding: 12px; 
+        margin-bottom: 8px; 
+        border-radius: 6px; 
+        border-left: 4px solid #4a90e2;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      }
+    </style>
+
+    <div class="generator-container">
+      <div class="generator-header">
+        <h2 style="margin: 0; color: #2c3e50;">🚀 Jana RPH Automatik</h2>
+        <button class="btn-back-dashboard" onclick="router.navigate('guru-home')">🏠 Kembali Ke Dashboard</button>
+      </div>
+      
       <div class="form-group">
         <label>Pilih Tarikh Pengajaran</label>
         <input type="date" id="rphDate" />
       </div>
       
-      <button id="btnGenerateAll" class="btn btn-save" style="margin-bottom: 20px;">Jana SEMUA RPH</button>
+      <button id="btnGenerateAll" class="btn-main btn-generate">Jana SEMUA RPH Sekarang</button>
       
-      <div id="generatorResult" style="margin-top:20px;">
-          <p>Sila pilih tarikh untuk melihat sesi yang dijadualkan.</p>
+      <div id="generatorResult">
+          <p style="text-align: center; color: #666;">Sila pilih tarikh untuk melihat sesi yang dijadualkan.</p>
       </div>
     </div>
   `;
@@ -38,32 +112,29 @@ export function loadRphGenerator() {
   document.getElementById('rphDate').addEventListener('change', loadScheduledSessions);
   document.getElementById('btnGenerateAll').addEventListener('click', generateAllRphInBatch);
   
-  // Muatkan sesi secara automatik untuk tarikh hari ini
   loadScheduledSessions();
 }
 
 /**
- * 🔄 FUNGSI 1: Memuatkan dan memaparkan sesi yang dijadualkan mengikut jadual guru.
+ * 🔄 FUNGSI 1: Memuatkan dan memaparkan sesi yang dijadualkan.
  */
 async function loadScheduledSessions() {
     const dateInput = document.getElementById('rphDate').value;
     const resultDiv = document.getElementById('generatorResult');
-    
     if (!dateInput) {
-        resultDiv.innerHTML = '<p class="warning">Sila pilih tarikh.</p>';
+        resultDiv.innerHTML = '<p style="color: #856404;">Sila pilih tarikh.</p>';
         return;
     }
 
     const selectedDate = new Date(dateInput);
     const hari = selectedDate.toLocaleDateString('ms-MY', { weekday: 'long' });
     
-    // Hadkan kepada hari bekerja sahaja
     if (!['Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat'].includes(hari)) {
-        resultDiv.innerHTML = '<p class="error">RPH hanya boleh dijana untuk Isnin hingga Jumaat.</p>';
+        resultDiv.innerHTML = '<p style="color: #dc3545; font-weight: bold;">RPH hanya boleh dijana untuk hari persekolahan (Isnin - Jumaat).</p>';
         return;
     }
     
-    resultDiv.innerHTML = `<p class="info">Mencari sesi untuk <strong>${hari}</strong>...</p>`;
+    resultDiv.innerHTML = `<p>Mencari sesi untuk <strong>${hari}</strong>...</p>`;
     
     try {
         const user = auth.currentUser;
@@ -71,60 +142,49 @@ async function loadScheduledSessions() {
         const jadualSnap = await getDoc(jadualRef);
 
         if (!jadualSnap.exists() || !jadualSnap.data() || !jadualSnap.data().senarai) {
-            resultDiv.innerHTML = `<p class="error">Jadual mingguan belum diisi. Sila isi jadual di menu 'Jadual' dahulu.</p>`;
+            resultDiv.innerHTML = `<p style="color: #dc3545;">Jadual mingguan belum diisi. Sila kemaskini jadual anda dahulu.</p>`;
             return;
         }
 
         const senaraiJadual = jadualSnap.data().senarai;
         const sesiHari = senaraiJadual.filter(s => s.hari === hari);
         
-        let html = `<h3>Sesi untuk ${hari}, ${selectedDate.toLocaleDateString('ms-MY')}</h3>`;
+        let html = `<h3 style="margin-top: 0; color: #2c3e50;">Sesi untuk ${hari}, ${selectedDate.toLocaleDateString('ms-MY')}</h3>`;
         
         if (sesiHari.length === 0) {
             html += '<p>Tiada sesi mengajar dijadualkan pada hari ini.</p>';
         } else {
-             // 🔑 KEMASKINI: Menggunakan getFullSubjectName() untuk paparan yang lebih profesional
-             html += `<ul style="padding-left: 20px; list-style-type: none;">
+             html += `<div class="session-list">
                  ${sesiHari.map((sesi) => `
-                     <li style="margin-bottom: 12px; padding: 10px; background: #f8f9fa; border-radius: 5px; border-left: 4px solid #3498db;">
-                         <span style="font-weight: bold; color: #2c3e50;">${sesi.masaMula} - ${sesi.masaTamat}</span><br>
-                         <span style="color: #e67e22; font-weight: bold;">${getFullSubjectName(sesi.matapelajaran)}</span> | 
-                         <span style="color: #7f8c8d;">${sesi.kelas}</span>
-                     </li>
+                     <div class="session-item">
+                         <strong>${sesi.masaMula} - ${sesi.masaTamat}</strong> | ${sesi.matapelajaran} | ${sesi.kelas}
+                     </div>
                  `).join('')}
-             </ul>
-             <p class="success" style="margin-top: 15px; font-weight: bold;">
-                Klik butang "Jana SEMUA RPH" untuk memproses ${sesiHari.length} sesi ini.
-             </p>`;
+             </div>
+             <p style="margin-top: 15px; color: #28a745; font-weight: 600;">Klik butang di atas untuk menjana ${sesiHari.length} RPH draf.</p>`;
         }
         
-        document.getElementById('generatorResult').innerHTML = html;
+        resultDiv.innerHTML = html;
 
     } catch (error) {
         console.error("Ralat memuatkan sesi:", error);
-        resultDiv.innerHTML = `<p class="error">Gagal memuatkan sesi jadual: ${error.message}</p>`;
+        resultDiv.innerHTML = `<p style="color: #dc3545;">Gagal memuatkan sesi jadual: ${error.message}</p>`;
     }
 }
 
 /**
- * 🔑 FUNGSI 2: Menjana SEMUA RPH secara berkelompok (Batch Processing).
+ * 🔑 FUNGSI 2: Menjana SEMUA RPH (BATCH PROCESS).
  */
 async function generateAllRphInBatch() {
     const dateInput = document.getElementById('rphDate').value;
     const resultDiv = document.getElementById('generatorResult');
     
-    if (!dateInput) {
-        alert('Sila pilih tarikh.');
-        return;
-    }
+    if (!dateInput) return;
 
     const selectedDate = new Date(dateInput);
-    const hari = selectedDate.toLocaleDateString('ms-MY', { weekday: 'long' });
-    
     const btn = document.getElementById('btnGenerateAll');
     btn.disabled = true;
-    btn.textContent = 'Memproses... Sila Tunggu';
-    resultDiv.innerHTML = `<p class="info">Menjana RPH untuk ${hari}, ${selectedDate.toLocaleDateString('ms-MY')}...</p>`;
+    btn.textContent = '⏳ Sedang Menjana...';
     
     try {
         const user = auth.currentUser;
@@ -132,6 +192,7 @@ async function generateAllRphInBatch() {
         const jadualSnap = await getDoc(jadualRef);
 
         const senaraiJadual = jadualSnap.data().senarai;
+        const hari = selectedDate.toLocaleDateString('ms-MY', { weekday: 'long' });
         const sesiHari = senaraiJadual.filter(s => s.hari === hari);
         
         let successCount = 0;
@@ -142,60 +203,50 @@ async function generateAllRphInBatch() {
                 await generateRphForSingleSession(selectedDate, sesi); 
                 successCount++;
             } catch (err) {
-                if (err.message.includes('sudah wujud')) {
+                if (err.message.includes('RPH sudah wujud')) {
                     skipCount++;
-                } else {
-                    console.error(`Gagal pada sesi ${sesi.matapelajaran}:`, err);
                 }
             }
         }
 
-        // 🔑 REKOD AKTIVITI KE LOG (Audit Trail)
-        if (successCount > 0) {
-            await createLog('GENERATE_RPH', `Berjaya menjana ${successCount} draf RPH untuk tarikh ${dateInput}`);
-        }
-
         resultDiv.innerHTML = `
-            <div style="background: #d4edda; color: #155724; padding: 15px; border-radius: 8px;">
-                <p style="font-weight: bold; margin-bottom: 5px;">✅ Penjanaan Selesai!</p>
-                <p>Berjaya disimpan: <strong>${successCount} sesi</strong></p>
-                ${skipCount > 0 ? `<p style="color: #856404;">Dilangkau (sudah wujud): <strong>${skipCount} sesi</strong></p>` : ''}
-            </div>
-            
-            <div style="margin-top: 20px;">
-                <button id="btnViewRphList" class="btn btn-primary">Lihat Senarai RPH</button>
+            <div style="text-align: center;">
+                <h3 style="color: #28a745;">✅ Penjanaan Selesai!</h3>
+                <p>Berjaya dijana: <strong>${successCount} sesi</strong></p>
+                ${skipCount > 0 ? `<p style="color: #856404;">Dilangkau (sudah ada): <strong>${skipCount} sesi</strong></p>` : ''}
+                
+                <div style="margin-top: 20px;">
+                    <button id="btnViewRphList" class="btn-main" style="background: #007bff; color: white;">Lihat Senarai RPH Saya</button>
+                </div>
             </div>
         `;
         
-        // Pasang event listener pada butang yang baru dicipta
-        const btnViewRphList = document.getElementById('btnViewRphList');
-        if (btnViewRphList) {
-             btnViewRphList.addEventListener('click', loadRphHistory);
-        }
+        document.getElementById('btnViewRphList').addEventListener('click', () => {
+             loadRphHistory(); 
+        });
         
     } catch (error) {
-        console.error("Ralat utama:", error);
-        resultDiv.innerHTML = `<p class="error">Ralat Kritikal: ${error.message}</p>`;
+        resultDiv.innerHTML = `<p style="color: #dc3545;">Ralat: ${error.message}</p>`;
     } finally {
         btn.disabled = false;
-        btn.textContent = 'Jana SEMUA RPH';
+        btn.textContent = 'Jana SEMUA RPH Sekarang';
     }
 }
 
 /**
- * 🔄 FUNGSI 3: Logik pemprosesan untuk satu sesi tunggal.
+ * 🔄 FUNGSI 3: Logik simpan ke Firestore.
  */
 async function generateRphForSingleSession(selectedDate, sesi) {
     const month = selectedDate.getMonth() + 1; 
     
-    // 1. Semakan pertindihan data
     const existingRphQuery = query(
         collection(db, 'rph'),
         where('uid', '==', auth.currentUser.uid),
         where('tarikh', '==', selectedDate),
         where('kelas', '==', sesi.kelas),
         where('matapelajaran', '==', sesi.matapelajaran),
-        where('masaMula', '==', sesi.masaMula)
+        where('masaMula', '==', sesi.masaMula),
+        where('masaTamat', '==', sesi.masaTamat)
     );
 
     const existingRphSnap = await getDocs(existingRphQuery);
@@ -203,19 +254,13 @@ async function generateRphForSingleSession(selectedDate, sesi) {
         throw new Error(`RPH sudah wujud.`);
     }
     
-    // 2. Ambil Template (Kini menyokong tas.json secara automatik melalui config.js)
     const res = await fetch(getTemplateUrl(sesi.matapelajaran));
     if (!res.ok) throw new Error('Template tidak dijumpai.');
     
     const topics = await res.json();
-    if (!Array.isArray(topics) || topics.length === 0) throw new Error('Topik kosong.');
-
-    // 3. Pemilihan topik berdasarkan bulan semasa
     const topicIndex = (month - 1) % topics.length;
-    const selectedTopic = topics[topicIndex];
 
-    // 4. Struktur data draf RPH
-    const rphData = {
+    await addDoc(collection(db, 'rph'), {
       uid: auth.currentUser.uid, 
       tarikh: selectedDate, 
       matapelajaran: sesi.matapelajaran,
@@ -223,10 +268,8 @@ async function generateRphForSingleSession(selectedDate, sesi) {
       masaMula: sesi.masaMula,
       masaTamat: sesi.masaTamat,
       status: 'draft',
-      dataRPH: selectedTopic,
+      dataRPH: topics[topicIndex],
       refleksi: '',
       updatedAt: new Date() 
-    };
-    
-    await addDoc(collection(db, 'rph'), rphData);
+    });
 }
