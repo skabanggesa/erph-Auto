@@ -44,7 +44,7 @@ export async function navigate(routeName, param) {
     let key = routeName;
     
     if (routeName === 'home') {
-        key = role === 'admin' ? 'admin-home' : 'guru-jadual'; 
+        key = role === 'admin' ? 'admin-home' : 'guru-home'; 
     }
     
     const route = routes[key];
