@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penyelenggaraan Sistem erph-Auto</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #eee;
+        }
+
+        .container {
+            background: #252535;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #444;
+            max-width: 80%;
+        }
+
+        h1 {
+            color: #ff4c4c;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Gaya untuk pautan (link) */
+        .version-link {
+            color: #4db8ff;
+            text-decoration: underline;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .version-link:hover {
+            color: #fff; /* Warna bertukar putih apabila tetikus di atasnya */
+        }
+
+        .date-info {
+            font-weight: bold;
+            color: #4db8ff;
+            font-size: 1.2rem;
+            margin-top: 30px;
+        }
+
+        .scan-line {
+            position: absolute;
+            top: -50%;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to bottom, transparent, rgba(0, 255, 255, 0.5), transparent);
+            animation: scanAnimation 3s linear infinite;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        @keyframes scanAnimation {
+            0% { top: -50%; }
+            100% { top: 150%; }
+        }
+
+        .tech-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: rgba(0, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="tech-overlay">/// SYSTEM OVERRIDE ENGAGED ///</div>
+
+        <div class="scan-line"></div>
+
+        <h1>HARAP MAAF.</h1>
+        <p>Sistem sedang dikemaskini.</p>
+        
+        <p>Sila gunakan sistem 
+            <a href="https://script.google.com/a/macros/moe-dl.edu.my/s/AKfycbyHQXZpsa0Zoz53mFNyN8HIkfM-12bqw2-VXsh82HfB179lzID8mxFYH0zUQULND0YY/exec" class="version-link">
+                <u>e-RPH Versi 2.0</u>
+            </a>
+        </p>
+
+        <p class="date-info">Terima kasih.</p>
+    </div>
+
+</body>
+</html>
