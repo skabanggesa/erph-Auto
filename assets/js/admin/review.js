@@ -1,4 +1,4 @@
-// assets/js/admin/review.js (KOD LENGKAP & PEMBETULAN PARAMETER ROUTER)
+// assets/js/admin/review.js (DIBETULKAN: PEMETAAN DATA FIRESTORE)
 
 import { auth, db } from '../config.js';
 import { 
@@ -9,26 +9,19 @@ import { loadRphListPage } from './rph-list.js';
 
 let currentRphId = null;
 
-// Fungsi pembantu KRITIKAL untuk memaparkan data (string, array, atau kosong)
+// Fungsi pembantu untuk memaparkan data
 function renderData(data) {
     if (!data) return '–';
     
     let items = [];
-
-    // Jika data adalah array (contoh: standards)
     if (Array.isArray(data)) {
         items = data;
     } 
-    // Jika data adalah string (contoh: activities, objectives)
     else if (typeof data === 'string') {
-        // Cuba pecahkan string berdasarkan koma atau baris baru
         let parts = data.split(/[\n,]/).map(s => s.trim()).filter(s => s.length > 0);
-        
         if (parts.length > 1) {
-             // Jika terdapat pemisah yang ditemui, gunakan senarai
              items = parts;
         } else {
-             // Jika tiada pemisah (atau hanya satu item), pulangkan sebagai string biasa
              return String(data).trim() || '–';
         }
     } 
@@ -37,49 +30,46 @@ function renderData(data) {
     }
 
     if (items.length === 0) return '–';
-    
-    // Paparkan item dalam senarai tidak berturutan
     return `<ul style="margin: 0; padding-left: 20px;">${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
 }
 
-
-// 🔑 PEMBETULAN KRITIKAL: Tukar 'rphId' kepada 'params' untuk menerima Objek Router
 export async function loadReviewPage(params) {
-  
-  // Ekstrak ID sebenar. Jika params adalah objek {id: '...'}, ambil .id. Jika ia string, gunakannya terus.
   const rphId = params?.id || params;
-  
   const content = document.getElementById('adminContent');
   currentRphId = rphId; 
 
-  // Sekarang semak sama ada rphId adalah string ID yang sah
   if (!rphId || typeof rphId !== 'string') {
-    content.innerHTML = '<p class="error">Ralat: ID RPH tidak sah. Sila kembali ke senarai RPH. (Masalah Router/Parameter)</p>';
+    content.innerHTML = '<p class="error">Ralat: ID RPH tidak sah.</p>';
     return;
   }
 
   content.innerHTML = '<p>Memuatkan RPH...</p>';
 
   try {
-    const docSnap = await getDoc(doc(db, 'rph', rphId)); // Ini kini akan menerima string ID yang sah
+    const docSnap = await getDoc(doc(db, 'rph', rphId));
     if (!docSnap.exists()) {
       content.innerHTML = '<p>RPH tidak dijumpai.</p>';
       return;
     }
 
     const rph = docSnap.data();
-    const tarikh = rph.tarikh.toDate ? rph.tarikh.toDate().toLocaleDateString('ms-MY') : '–';
+
+    // 1. PEMBETULAN TARIKH: Firestore anda simpan String, bukan Timestamp
+    // Kita semak jika ia string, jika tidak baru guna toDate()
+    const tarikh = (typeof rph.tarikh === 'string') ? rph.tarikh : 
+                   (rph.tarikh?.toDate ? rph.tarikh.toDate().toLocaleDateString('ms-MY') : '–');
     
-    // AKSES DATA RPH: Guna rph.dataRPH.medan_sebenar
+    // 2. PEMBETULAN STRUKTUR: Berdasarkan screenshot, data berada di root, bukan dataRPH
+    // Jika anda masih mahu guna dataRPH sebagai fallback, gunakan logik di bawah
     const dataRPH = rph.dataRPH || {}; 
 
-    // Logik paparan status - KEMASKINI KRITIKAL (Menghalang ralat jenis data)
+    // 3. PEMBETULAN STATUS
     let statusDisplay = '';
     const currentStatus = String(rph.status || 'N/A').toLowerCase(); 
 
     switch (currentStatus) {
         case 'submitted':
-            statusDisplay = '<span style="color: blue;">MENUNGGU SEMAKAN</span>';
+            statusDisplay = '<span style="color: blue; font-weight: bold;">MENUNGGU SEMAKAN</span>';
             break;
         case 'approved':
             statusDisplay = '<span style="color: green; font-weight: bold;">LULUS</span>';
@@ -91,11 +81,9 @@ export async function loadReviewPage(params) {
             statusDisplay = 'DRAF';
             break;
         default:
-            // Jika status lain (cth: PRA), paparkan nilai UPPERCASEnya
             statusDisplay = currentStatus.toUpperCase(); 
             break;
     }
-
 
     content.innerHTML = `
       <div class="admin-section">
@@ -104,7 +92,9 @@ export async function loadReviewPage(params) {
             <p><strong>Guru:</strong> <span id="guruNamePlaceholder">Memuatkan...</span></p>
             <p><strong>Kelas:</strong> ${rph.kelas || '–'}</p>
             <p><strong>Mata Pelajaran:</strong> ${rph.matapelajaran || '–'}</p>
-            <p><strong>Topik:</strong> ${dataRPH.topic_name || '–'}</p>
+            
+            <p><strong>Topik:</strong> ${rph.tajuk || rph.topik || dataRPH.topic_name || '–'}</p>
+            
             <p><strong>Tarikh:</strong> ${tarikh}</p>
             <p><strong>Status Semasa:</strong> ${statusDisplay}</p>
             <hr>
@@ -112,16 +102,16 @@ export async function loadReviewPage(params) {
             <div style="background:#f9f9f9; padding:15px; border-radius:5px; margin:10px 0;">
                 
                 <h4>1. Sasaran Pembelajaran (Objectives & Skills)</h4>
-                <p><strong>Objektif:</strong> ${renderData(dataRPH.objectives)}</p>
-                <p><strong>Standard:</strong> ${renderData(dataRPH.standards)}</p>
-                <p><strong>Nama Kemahiran:</strong> ${renderData(dataRPH.skill_name)}</p>
+                <p><strong>Objektif:</strong> ${renderData(rph.objektif || dataRPH.objectives)}</p>
+                <p><strong>Standard:</strong> ${renderData(rph.standard || dataRPH.standards)}</p>
+                <p><strong>Nama Kemahiran:</strong> ${renderData(rph.namaKemahiran || dataRPH.skill_name)}</p>
                 
                 <h4>2. Kandungan & Aktiviti</h4>
-                <p><strong>Aktiviti P&P:</strong> ${renderData(dataRPH.activities)}</p>
-                <p><strong>Bahan Bantu Mengajar (BBM):</strong> ${renderData(dataRPH.aids)}</p>
+                <p><strong>Aktiviti P&P:</strong> ${renderData(rph.aktiviti || dataRPH.activities)}</p>
+                <p><strong>Bahan Bantu Mengajar (BBM):</strong> ${renderData(rph.bbm || dataRPH.aids)}</p>
 
                 <h4>3. Penilaian & Refleksi</h4>
-                <p><strong>Penilaian:</strong> ${renderData(dataRPH.assessments)}</p>
+                <p><strong>Penilaian:</strong> ${renderData(rph.penilaian || dataRPH.assessments)}</p>
                 <p><strong>Refleksi:</strong> ${renderData(rph.refleksi)}</p> 
             </div>
             
@@ -134,8 +124,8 @@ export async function loadReviewPage(params) {
                 <textarea id="adminComment" rows="3" style="width:100%; padding:8px;" placeholder="Masukkan komen penolakan di sini, jika ada.">${rph.reviewerComment || ''}</textarea>
             </div>
             ${(currentStatus === 'submitted' || currentStatus === 'rejected') ? `
-                <button id="btnApprove" class="btn btn-success" style="margin-right: 10px;">Luluskan</button>
-                <button id="btnReject" class="btn btn-danger" style="margin-right: 10px;">Tolak</button>
+                <button id="btnApprove" class="btn btn-success" style="margin-right: 10px; background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Luluskan</button>
+                <button id="btnReject" class="btn btn-danger" style="margin-right: 10px; background-color: #dc3545; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Tolak</button>
             ` : `<p>RPH ini telah ${currentStatus.toUpperCase()}.</p>`}
             <button id="btnBack" class="btn btn-secondary">Kembali ke Senarai</button>
         </div>
@@ -151,7 +141,7 @@ export async function loadReviewPage(params) {
       document.getElementById('guruNamePlaceholder').textContent = 'Nama Guru Tidak Diketahui';
     }
 
-    // Pasang Event Listeners
+    // Event Listeners
     document.getElementById('btnBack').addEventListener('click', () => {
       loadRphListPage(); 
     });
@@ -165,41 +155,28 @@ export async function loadReviewPage(params) {
     }
 
   } catch (err) {
-    console.error("Ralat memuatkan RPH untuk semakan:", err);
+    console.error("Ralat memuatkan RPH:", err);
     content.innerHTML = `<p class="error">Gagal memuatkan RPH: ${err.message}</p>`;
   }
 }
 
-
-/**
- * Mengemaskini status RPH.
- * @param {string} newStatus - Status baharu ('approved' atau 'rejected').
- */
 async function updateRphStatus(newStatus) {
     if (!currentRphId || !auth.currentUser) return;
-
     const comment = document.getElementById('adminComment').value;
     const statusDiv = document.getElementById('reviewStatusMessage');
     statusDiv.innerHTML = '<p>Mengemaskini status...</p>';
 
-    const rphRef = doc(db, 'rph', currentRphId);
     try {
-        await updateDoc(rphRef, {
+        await updateDoc(doc(db, 'rph', currentRphId), {
             status: newStatus,
             reviewDate: new Date(),
             reviewerUid: auth.currentUser.uid,
-            reviewerComment: comment // Simpan komen Admin
+            reviewerComment: comment
         });
 
-        statusDiv.innerHTML = `<p class="success">Status RPH berjaya dikemaskini kepada: ${newStatus.toUpperCase()}</p>`;
-        
-        // Muat semula senarai semakan selepas kemaskini
-        setTimeout(() => {
-            loadRphListPage(); 
-        }, 1000);
-
+        statusDiv.innerHTML = `<p class="success">Berjaya dikemaskini kepada: ${newStatus.toUpperCase()}</p>`;
+        setTimeout(() => { loadRphListPage(); }, 1000);
     } catch (e) {
-        console.error("Gagal mengemaskini status RPH:", e);
-        statusDiv.innerHTML = `<p class="error">Gagal mengemaskini status: ${e.message}</p>`;
+        statusDiv.innerHTML = `<p class="error">Gagal: ${e.message}</p>`;
     }
 }
