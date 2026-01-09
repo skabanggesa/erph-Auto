@@ -149,12 +149,13 @@ async function generateAllRphInBatch() {
 }
 
 /**
+/**
  * 🔄 Logik menjana satu RPH dan simpan ke Firestore
  */
 async function generateRphForSingleSession(dateStr, sesi) {
     const user = auth.currentUser;
 
-    // 1. Cek jika sudah wujud (Guna String Date agar query tepat)
+    // 1. Cek jika sudah wujud
     const q = query(collection(db, 'rph'), 
         where('uid', '==', user.uid),
         where('tarikh', '==', dateStr), 
@@ -164,8 +165,7 @@ async function generateRphForSingleSession(dateStr, sesi) {
     const snap = await getDocs(q);
     if (!snap.empty) throw new Error('RPH sudah wujud');
 
-    // 2. Dapatkan Template URL (Perlu Subject Code & Year)
-    // Andaikan 'sesi.tahun' ada dalam jadual, jika tiada, kita ambil dari nama kelas
+    // 2. Dapatkan Template JSON
     const year = sesi.tahun || sesi.kelas.match(/\d+/)?.[0] || "1"; 
     const url = getTemplateUrl(sesi.matapelajaran, year);
     
@@ -175,27 +175,41 @@ async function generateRphForSingleSession(dateStr, sesi) {
     if (!res.ok) throw new Error('Gagal muat turun template JSON');
     
     const topics = await res.json();
-    
-    // Logik Pilih Topik: Contoh guna minggu dalam setahun
     const currentWeek = getWeekNumber(new Date(dateStr));
     const topicIndex = (currentWeek - 1) % topics.length;
+    
+    // Ambil data mentah dari JSON
+    const rawData = topics[topicIndex];
 
-    // 3. Simpan ke Firestore
+    // 3. PROSES PEMETAAN (MAPPING) 
+    // Di sini kita tukar 'unit' -> 'tajuk' dan 'assessment' -> 'penilaian'
+    // Kita juga tukar Array kepada String (koma-separated) supaya muncul dalam borang
+    const mappedData = {
+        tajuk: rawData.unit || "", 
+        standards: rawData.standards || "",
+        objectives: rawData.objectives || "",
+        // Tukar array [a, b] kepada "a, b"
+        activities: Array.isArray(rawData.activities) ? rawData.activities.join(', ') : rawData.activities,
+        penilaian: Array.isArray(rawData.assessment) ? rawData.assessment.join(', ') : rawData.assessment,
+        aids: Array.isArray(rawData.aids) ? rawData.aids.join(', ') : rawData.aids,
+        kategori: rawData.kategori || ""
+    };
+
+    // 4. Simpan ke Firestore
     await addDoc(collection(db, 'rph'), {
       uid: user.uid,
-      tarikh: dateStr, // Simpan sebagai String "YYYY-MM-DD"
+      tarikh: dateStr,
       matapelajaran: sesi.matapelajaran,
       kelas: sesi.kelas,
       tahun: year,
       masaMula: sesi.masaMula,
       masaTamat: sesi.masaTamat,
       status: 'draft',
-      dataRPH: topics[topicIndex], // Ambil satu data dari array JSON
+      dataRPH: mappedData, // Gunakan data yang telah dipetakan
       refleksi: '',
       createdAt: Timestamp.now()
     });
 }
-
 /**
  * Fungsi Pembantu: Dapatkan nombor minggu untuk pilih topik yang berbeza setiap minggu
  */
@@ -205,3 +219,4 @@ function getWeekNumber(d) {
     var yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
     return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
 }
+
