@@ -73,6 +73,14 @@ export const MAP_SUBJECT_TO_FILE = {
   'PAI_5': 'sp-pai-5',
   'PAI_6': 'sp-pai-6',
 
+    // --- TASMIK (TAS) ---
+  'TAS_1': 'sp-tas-1',
+  'TAS_2': 'sp-tas-2',
+  'TAS_3': 'sp-tas-3',
+  'TAS_4': 'sp-tas-4',
+  'TAS_5': 'sp-tas-5',
+  'TAS_6': 'sp-tas-6',
+
   // --- PENDIDIKAN JASMANI (PJ) ---
   'PJ_1': 'sp-pj-1',
   'PJ_2': 'sp-pj-2',
@@ -150,7 +158,7 @@ export const MAP_SUBJECT_TO_FULLNAME = {
   'SJ': 'SEJARAH',
   'RBT': 'REKA BENTUK DAN TEKNOLOGI',
   'TMK': 'TEKNOLOGI MAKLUMAT & KOMUNIKASI',
-  'TAS': 'TASAWWUR ISLAM',
+  'TAS': 'TASMIK',
 
   // --- ALIRAN PRASEKOLAH (PRA) ---
   'BMP': 'BAHASA MELAYU (PRA)',
