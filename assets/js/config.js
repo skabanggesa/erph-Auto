@@ -185,21 +185,36 @@ export function getFullSubjectName(code) {
   return MAP_SUBJECT_TO_FULLNAME[code.toUpperCase()] || code.toUpperCase();
 }
 
+// --- KOD YANG DIKEMASKINI ---
+
 // Fungsi untuk dapatkan URL template JSON dari GitHub
 export const getTemplateUrl = (subjectCode, year) => {
+  if (!subjectCode) return null;
+
   let lookupKey;
+  const code = subjectCode.toUpperCase();
+
+  // Senarai subjek PPKI yang menggunakan fail tunggal (tanpa tahun)
+  const ppkiSubjects = [
+    'BMK', 'BIK', 'MTK', 'PAIK', 'PMK', 'MZK', 'PJK', 
+    'KMK', 'KHA', 'PD', 'TMK', 'PSAS', 'PRA'
+  ];
 
   // 1. Logik untuk subjek yang tiada pecahan tahun (Perdana)
-  if (subjectCode === 'PM' || subjectCode === 'PSV') {
-    lookupKey = subjectCode.toUpperCase();
+  if (code === 'PM' || code === 'PSV') {
+    lookupKey = code;
   } 
   // 2. Logik untuk subjek Prasekolah (Sentiasa guna suffix _P)
-  else if (['BMP', 'BIP', 'EST', 'FIZ', 'KOG', 'NIL', 'SOS', 'WAR'].includes(subjectCode.toUpperCase())) {
-    lookupKey = `${subjectCode.toUpperCase()}_P`;
+  else if (['BMP', 'BIP', 'EST', 'FIZ', 'KOG', 'NIL', 'SOS', 'WAR'].includes(code)) {
+    lookupKey = `${code}_P`;
   }
-  // 3. Logik untuk subjek lain (Perdana & PPKI yang ada tahun 1-6)
+  // 3. Logik untuk subjek PPKI (Single File - Tiada pecahan tahun)
+  else if (ppkiSubjects.includes(code)) {
+    lookupKey = code;
+  }
+  // 4. Logik untuk subjek lain (Perdana: BM, BI, SN, MT, dll yang ada tahun 1-6)
   else {
-    lookupKey = `${subjectCode.toUpperCase()}_${year}`;
+    lookupKey = `${code}_${year}`;
   }
 
   const filename = MAP_SUBJECT_TO_FILE[lookupKey];
@@ -209,6 +224,5 @@ export const getTemplateUrl = (subjectCode, year) => {
     return null;
   }
 
-  // URL GitHub anda
   return `https://raw.githubusercontent.com/skabanggesa/erph-Auto/main/templates/rph/${filename}.json`;
 };
