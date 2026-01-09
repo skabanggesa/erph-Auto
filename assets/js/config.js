@@ -6,7 +6,7 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-aut
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // Konfigurasi Firebase projek anda
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyAo-FyVocjOa8rD-ALoTeDdkJCqDyvQSt0", // Gantikan dengan kunci anda yang sebenar
   authDomain: "erph-auto.firebaseapp.com",
   projectId: "erph-auto",
