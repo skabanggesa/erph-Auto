@@ -101,7 +101,7 @@ export const MAP_SUBJECT_TO_FILE = {
 
   // --- SUBJEK UMUM (Satu fail untuk semua tahun) ---
   'PM': 'sp-pm',
-  'PSV': 'sp-psv'
+  'PSV': 'sp-psv',
 
   // --- ALIRAN PRASEKOLAH (pra-) ---
   'BMP_P': 'pra-bm',     // Bahasa Melayu Pra
@@ -173,7 +173,6 @@ export const MAP_SUBJECT_TO_FULLNAME = {
   'KMK': 'KEMAHIRAN MANIPULATIF (PPKI)',
   'KHA': 'KEMAHIRAN HIDUP (PPKI)',
   'PD': 'PENGURUSAN DIRI (PPKI)',
-  'PSAS': 'PENDIDIKAN SAINS SOSIAL & ALAM SEKITAR (PPKI)',
   'PRA': 'PRAVOCATIONAL'
 };
 /**
