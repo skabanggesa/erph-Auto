@@ -1,5 +1,3 @@
-// assets/js/guru/rph-generator.js
-
 import { auth, db, getTemplateUrl } from '../config.js';
 import { 
   doc, getDoc, collection, addDoc, query, where, getDocs, Timestamp 
@@ -8,6 +6,9 @@ import {
 // Import fungsi dari rph-history.js
 import { loadRphHistory } from './rph-history.js'; 
 
+/**
+ * Memaparkan antaramuka Penjana RPH
+ */
 export function loadRphGenerator() {
   const content = document.getElementById('content');
   
@@ -60,7 +61,7 @@ export function loadRphGenerator() {
  * 🔄 Memuatkan sesi berdasarkan hari dalam jadual mingguan
  */
 async function loadScheduledSessions() {
-    const dateValue = document.getElementById('rphDate').value; // Contoh: "2023-10-25"
+    const dateValue = document.getElementById('rphDate').value;
     const resultDiv = document.getElementById('generatorResult');
     if (!dateValue) return;
 
@@ -122,12 +123,11 @@ async function generateAllRphInBatch() {
 
         for (const sesi of sesiHari) {
             try {
-                // Kita hantar dateValue (string) untuk konsistensi di Firestore
                 await generateRphForSingleSession(dateValue, sesi); 
                 successCount++;
             } catch (err) {
                 if (err.message.includes('sudah wujud')) skipCount++;
-                else console.error(err);
+                else console.error("Ralat sesi:", err);
             }
         }
 
@@ -148,7 +148,6 @@ async function generateAllRphInBatch() {
     }
 }
 
-/**
 /**
  * 🔄 Logik menjana satu RPH dan simpan ke Firestore
  */
@@ -178,21 +177,39 @@ async function generateRphForSingleSession(dateStr, sesi) {
     const currentWeek = getWeekNumber(new Date(dateStr));
     const topicIndex = (currentWeek - 1) % topics.length;
     
-    // Ambil data mentah dari JSON
     const rawData = topics[topicIndex];
 
-    // 3. PROSES PEMETAAN (MAPPING) 
-    // Di sini kita tukar 'unit' -> 'tajuk' dan 'assessment' -> 'penilaian'
-    // Kita juga tukar Array kepada String (koma-separated) supaya muncul dalam borang
+    // 🔍 LOG UNTUK PENYEMAKAN
+    console.log(`Menjana RPH Minggu ${currentWeek}:`, rawData);
+
+    // 3. PROSES PEMETAAN (MAPPING) - VERSI ROBUST
+    // Logik Fallback: Cari A, jika tiada cari B, jika tiada cari C
     const mappedData = {
-        tajuk: rawData.tajuk || "", 
-        standards: rawData.standards || "",
-        objectives: rawData.objectives || "",
-        // Tukar array [a, b] kepada "a, b"
-        activities: Array.isArray(rawData.activities) ? rawData.activities.join(', ') : rawData.activities,
-        penilaian: Array.isArray(rawData.assessment) ? rawData.assessment.join(', ') : rawData.assessment,
-        aids: Array.isArray(rawData.aids) ? rawData.aids.join(', ') : rawData.aids,
-        kategori: rawData.kategori || ""
+        // Pemetaan Tajuk (Utama)
+        tajuk: rawData.tajuk || rawData.topic || rawData.unit || "–",
+
+        // Pemetaan Standard Kandungan/Pembelajaran
+        standards: rawData.standard || rawData.standards || rawData.learning_standard || "–",
+
+        // Pemetaan Objektif
+        objectives: rawData.objektif || rawData.objectives || "–",
+
+        // Pemetaan Aktiviti (Sokong String & Array)
+        activities: Array.isArray(rawData.aktiviti) ? rawData.aktiviti.join(', ') : 
+                   (Array.isArray(rawData.activities) ? rawData.activities.join(', ') : 
+                   (rawData.aktiviti || rawData.activities || "–")),
+
+        // Pemetaan Penilaian
+        penilaian: Array.isArray(rawData.penilaian) ? rawData.penilaian.join(', ') : 
+                  (Array.isArray(rawData.assessment) ? rawData.assessment.join(', ') : 
+                  (rawData.penilaian || rawData.assessment || "–")),
+
+        // Pemetaan BBM
+        aids: Array.isArray(rawData.bbm) ? rawData.bbm.join(', ') : 
+             (Array.isArray(rawData.aids) ? rawData.aids.join(', ') : 
+             (rawData.bbm || rawData.aids || "–")),
+
+        kategori: rawData.kategori || rawData.category || ""
     };
 
     // 4. Simpan ke Firestore
@@ -205,13 +222,14 @@ async function generateRphForSingleSession(dateStr, sesi) {
       masaMula: sesi.masaMula,
       masaTamat: sesi.masaTamat,
       status: 'draft',
-      dataRPH: mappedData, // Gunakan data yang telah dipetakan
+      dataRPH: mappedData,
       refleksi: '',
       createdAt: Timestamp.now()
     });
 }
+
 /**
- * Fungsi Pembantu: Dapatkan nombor minggu untuk pilih topik yang berbeza setiap minggu
+ * Fungsi Pembantu: Dapatkan nombor minggu
  */
 function getWeekNumber(d) {
     d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
@@ -219,5 +237,3 @@ function getWeekNumber(d) {
     var yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
     return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
 }
-
-
