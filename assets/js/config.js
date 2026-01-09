@@ -111,7 +111,7 @@ export const MAP_SUBJECT_TO_FILE = {
   'KOG_P': 'pra-kog',    // Sains & Teknologi (Kognitif)
   'NIL_P': 'pra-nilai',  // Pendidikan Moral / Nilai
   'SOS_P': 'pra-sosio',  // Perkembangan Sosioemosi
-  'WAR_P': 'pra-warga'   // Kemanusiaan / Kewarganegaraan
+  'WAR_P': 'pra-warga',   // Kemanusiaan / Kewarganegaraan
 
 // --- ALIRAN PPKI (ppki-) ---
 
