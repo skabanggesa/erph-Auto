@@ -186,12 +186,29 @@ export function getFullSubjectName(code) {
 }
 
 // Fungsi untuk dapatkan URL template JSON dari GitHub
-export const getTemplateUrl = (subjectDisplayName) => {
-  const filename = MAP_SUBJECT_TO_FILE[subjectDisplayName]; // <<< Menggunakan MAP_SUBJECT_TO_FILE yang dieksport
+export const getTemplateUrl = (subjectCode, year) => {
+  let lookupKey;
+
+  // 1. Logik untuk subjek yang tiada pecahan tahun (Perdana)
+  if (subjectCode === 'PM' || subjectCode === 'PSV') {
+    lookupKey = subjectCode.toUpperCase();
+  } 
+  // 2. Logik untuk subjek Prasekolah (Sentiasa guna suffix _P)
+  else if (['BMP', 'BIP', 'EST', 'FIZ', 'KOG', 'NIL', 'SOS', 'WAR'].includes(subjectCode.toUpperCase())) {
+    lookupKey = `${subjectCode.toUpperCase()}_P`;
+  }
+  // 3. Logik untuk subjek lain (Perdana & PPKI yang ada tahun 1-6)
+  else {
+    lookupKey = `${subjectCode.toUpperCase()}_${year}`;
+  }
+
+  const filename = MAP_SUBJECT_TO_FILE[lookupKey];
+
   if (!filename) {
-    console.warn(`Tiada template fail JSON untuk matapelajaran: ${subjectDisplayName}`);
+    console.warn(`Tiada template fail JSON untuk kunci: ${lookupKey}`);
     return null;
   }
+
   // URL GitHub anda
   return `https://raw.githubusercontent.com/skabanggesa/erph-Auto/main/templates/rph/${filename}.json`;
 };
