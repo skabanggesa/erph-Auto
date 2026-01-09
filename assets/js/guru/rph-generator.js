@@ -185,7 +185,7 @@ async function generateRphForSingleSession(dateStr, sesi) {
     // Di sini kita tukar 'unit' -> 'tajuk' dan 'assessment' -> 'penilaian'
     // Kita juga tukar Array kepada String (koma-separated) supaya muncul dalam borang
     const mappedData = {
-        tajuk: rawData.unit || "", 
+        tajuk: rawData.tajuk || "", 
         standards: rawData.standards || "",
         objectives: rawData.objectives || "",
         // Tukar array [a, b] kepada "a, b"
@@ -219,4 +219,5 @@ function getWeekNumber(d) {
     var yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
     return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
 }
+
 
