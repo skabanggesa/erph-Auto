@@ -121,25 +121,18 @@ export const MAP_SUBJECT_TO_FILE = {
   'SOS_P': 'pra-sosio',  // Perkembangan Sosioemosi
   'WAR_P': 'pra-warga',   // Kemanusiaan / Kewarganegaraan
 
-// --- ALIRAN PPKI (ppki-) ---
-
-  // Bahasa (Tahun 1 - 6)
-  'BMK_1': 'ppki-bm', 'BMK_2': 'ppki-bm', 'BMK_3': 'ppki-bm', 'BMK_4': 'ppki-bm', 'BMK_5': 'ppki-bm', 'BMK_6': 'ppki-bm',
-  'BIK_1': 'ppki-bi', 'BIK_2': 'ppki-bi', 'BIK_3': 'ppki-bi', 'BIK_4': 'ppki-bi', 'BIK_5': 'ppki-bi', 'BIK_6': 'ppki-bi',
-
-  // Kemahiran & Pengurusan (Tahun 1 - 6)
-  'KHA_1': 'ppki-kha', 'KHA_2': 'ppki-kha', 'KHA_3': 'ppki-kha', 'KHA_4': 'ppki-kha', 'KHA_5': 'ppki-kha', 'KHA_6': 'ppki-kha',
-  'KMK_1': 'ppki-km',  'KMK_2': 'ppki-km',  'KMK_3': 'ppki-km',  'KMK_4': 'ppki-km',  'KMK_5': 'ppki-km',  'KMK_6': 'ppki-km',
-  'PD_1': 'ppki-pd',   'PD_2': 'ppki-pd',   'PD_3': 'ppki-pd',   'PD_4': 'ppki-pd',   'PD_5': 'ppki-pd',   'PD_6': 'ppki-pd',
-
-  // STEM & Agama/Moral (Tahun 1 - 6)
-  'MTK_1': 'ppki-mt', 'MTK_2': 'ppki-mt', 'MTK_3': 'ppki-mt', 'MTK_4': 'ppki-mt', 'MTK_5': 'ppki-mt', 'MTK_6': 'ppki-mt',
-  'PAIK_1': 'ppki-pai', 'PAIK_2': 'ppki-pai', 'PAIK_3': 'ppki-pai', 'PAIK_4': 'ppki-pai', 'PAIK_5': 'ppki-pai', 'PAIK_6': 'ppki-pai',
-  'PMK_1': 'ppki-pm', 'PMK_2': 'ppki-pm', 'PMK_3': 'ppki-pm', 'PMK_4': 'ppki-pm', 'PMK_5': 'ppki-pm', 'PMK_6': 'ppki-pm',
-
-  // Kesenian & Jasmani (Tahun 1 - 6)
-  'MZK_1': 'ppki-mz', 'MZK_2': 'ppki-mz', 'MZK_3': 'ppki-mz', 'MZK_4': 'ppki-mz', 'MZK_5': 'ppki-mz', 'MZK_6': 'ppki-mz',
-  'PJK_1': 'ppki-pjk', 'PJK_2': 'ppki-pjk', 'PJK_3': 'ppki-pjk', 'PJK_4': 'ppki-pjk', 'PJK_5': 'ppki-pjk', 'PJK_6': 'ppki-pjk'
+// --- ALIRAN PPKI (Single File - Dikemaskini) ---
+  'BMK': 'ppki-bm',
+  'BIK': 'ppki-bi',
+  'MTK': 'ppki-mt',
+  'PAIK': 'ppki-pai',
+  'PMK': 'ppki-pm',
+  'MZK': 'ppki-mz',
+  'PJK': 'ppki-pjk',
+  'KMK': 'ppki-km',
+  'KHA': 'ppki-kha',
+  'PD': 'ppki-pd',
+  'TMK': 'ppki-tmk'
 };
 
 // Kamus Singkatan → Nama Penuh untuk paparan (UI)
