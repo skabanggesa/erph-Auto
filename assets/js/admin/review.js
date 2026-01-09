@@ -1,4 +1,4 @@
-// assets/js/admin/review.js (DIBETULKAN: PEMETAAN DATA FIRESTORE)
+// assets/js/admin/review.js (VERSI BERSIH & PEMBETULAN SYNTAX)
 
 import { auth, db } from '../config.js';
 import { 
@@ -9,7 +9,7 @@ import { loadRphListPage } from './rph-list.js';
 
 let currentRphId = null;
 
-// Fungsi pembantu untuk memaparkan data
+// Fungsi pembantu untuk memaparkan data (String atau Array)
 function renderData(data) {
     if (!data) return '–';
     
@@ -33,6 +33,9 @@ function renderData(data) {
     return `<ul style="margin: 0; padding-left: 20px;">${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
 }
 
+/**
+ * Memuatkan maklumat terperinci RPH untuk disemak oleh Admin
+ */
 export async function loadReviewPage(params) {
   const rphId = params?.id || params;
   const content = document.getElementById('adminContent');
@@ -48,32 +51,30 @@ export async function loadReviewPage(params) {
   try {
     const docSnap = await getDoc(doc(db, 'rph', rphId));
     if (!docSnap.exists()) {
-      content.innerHTML = '<p>RPH tidak dijumpai.</p>';
+      content.innerHTML = '<p>RPH tidak dijumpai dalam pangkalan data.</p>';
       return;
     }
 
     const rph = docSnap.data();
     
-    // 🔍 DEBUG: Sila tekan F12 di browser, buka tab 'Console' dan lihat apa yang keluar.
-    // Ini akan menunjukkan semua kunci (keys) yang ada dalam Firestore anda.
-    console.log("Data RPH yang diterima:", rph);
+    // DEBUG: Gunakan ini untuk semak nama field di Console (F12)
+    console.log("Data Firestore yang diterima:", rph);
 
-    // 1. PEMBETULAN TARIKH (Sudah Berjaya)
+    // 1. Pemetaan Tarikh
     const tarikh = (typeof rph.tarikh === 'string') ? rph.tarikh : 
                    (rph.tarikh?.toDate ? rph.tarikh.toDate().toLocaleDateString('ms-MY') : '–');
     
-    // 2. PEMBETULAN STRUKTUR DATA
+    // 2. Pemetaan Objek dataRPH (jika ada)
     const dataRPH = rph.dataRPH || {}; 
 
-    // 3. PEMBETULAN STATUS
+    // 3. Logik Paparan Status
     let statusDisplay = '';
     const currentStatus = String(rph.status || 'N/A').toLowerCase(); 
 
-    // ... (Logik switch status kekal sama)
     switch (currentStatus) {
         case 'submitted': statusDisplay = '<span style="color: blue; font-weight: bold;">MENUNGGU SEMAKAN</span>'; break;
         case 'approved': statusDisplay = '<span style="color: green; font-weight: bold;">LULUS</span>'; break;
-        case 'rejected': statusDisplay = `<span style="color: red; font-weight: bold;">DITOLAK</span> <br> <em>Komen: ${rph.reviewerComment || 'Tiada komen'}</em>`; break;
+        case 'rejected': statusDisplay = `<span style="color: red; font-weight: bold;">DITOLAK</span> <br> <small>Komen: ${rph.reviewerComment || 'Tiada'}</small>`; break;
         case 'draft': statusDisplay = 'DRAF'; break;
         default: statusDisplay = currentStatus.toUpperCase(); break;
     }
@@ -86,25 +87,25 @@ export async function loadReviewPage(params) {
             <p><strong>Kelas:</strong> ${rph.kelas || '–'}</p>
             <p><strong>Mata Pelajaran:</strong> ${rph.matapelajaran || rph.mataPelajaran || '–'}</p>
             
-            <p><strong>Topik:</strong> ${rph.tajuk || rph.topik || rph.topic || dataRPH.topic_name || dataRPH.tajuk || '–'}</p>
+            <p><strong>Topik:</strong> ${rph.tajuk || rph.topik || dataRPH.topic_name || '–'}</p>
             
             <p><strong>Tarikh:</strong> ${tarikh}</p>
             <p><strong>Status Semasa:</strong> ${statusDisplay}</p>
             <hr>
             
             <h3>Isi RPH</h3>
-            <div style="background:#f9f9f9; padding:15px; border-radius:5px; margin:10px 0;">
+            <div style="background:#f9f9f9; padding:15px; border-radius:5px; margin:10px 0; border: 1px solid #ddd;">
                 <h4>1. Sasaran Pembelajaran</h4>
-                <p><strong>Objektif:</strong> ${renderData(rph.objektif || dataRPH.objectives || rph.objectives)}</p>
-                <p><strong>Standard:</strong> ${renderData(rph.standard || dataRPH.standards || rph.standards)}</p>
-                <p><strong>Nama Kemahiran:</strong> ${renderData(rph.namaKemahiran || dataRPH.skill_name || rph.skill_name)}</p>
+                <p><strong>Objektif:</strong> ${renderData(rph.objektif || dataRPH.objectives)}</p>
+                <p><strong>Standard:</strong> ${renderData(rph.standard || dataRPH.standards)}</p>
+                <p><strong>Nama Kemahiran:</strong> ${renderData(rph.namaKemahiran || dataRPH.skill_name)}</p>
                 
                 <h4>2. Kandungan & Aktiviti</h4>
-                <p><strong>Aktiviti P&P:</strong> ${renderData(rph.aktiviti || dataRPH.activities || rph.activities)}</p>
-                <p><strong>Bahan Bantu Mengajar (BBM):</strong> ${renderData(rph.bbm || dataRPH.aids || rph.aids)}</p>
+                <p><strong>Aktiviti P&P:</strong> ${renderData(rph.aktiviti || dataRPH.activities)}</p>
+                <p><strong>Bahan Bantu Mengajar (BBM):</strong> ${renderData(rph.bbm || dataRPH.aids)}</p>
 
                 <h4>3. Penilaian & Refleksi</h4>
-                <p><strong>Penilaian:</strong> ${renderData(rph.penilaian || dataRPH.assessments || rph.assessments)}</p>
+                <p><strong>Penilaian:</strong> ${renderData(rph.penilaian || dataRPH.assessments)}</p>
                 <p><strong>Refleksi:</strong> ${renderData(rph.refleksi)}</p> 
             </div>
             
@@ -112,45 +113,31 @@ export async function loadReviewPage(params) {
         </div>
         
         <div id="reviewActions" style="margin-top: 20px;">
-            <div class="form-group">
-                <label>Komen Pentadbir (Pilihan)</label>
-                <textarea id="adminComment" rows="3" style="width:100%; padding:8px;" placeholder="Masukkan komen penolakan di sini...">${rph.reviewerComment || ''}</textarea>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label><strong>Komen Pentadbir:</strong></label><br>
+                <textarea id="adminComment" rows="3" style="width:100%; padding:8px; border-radius:4px; border:1px solid #ccc;" placeholder="Masukkan komen jika perlu...">${rph.reviewerComment || ''}</textarea>
             </div>
             ${(currentStatus === 'submitted' || currentStatus === 'rejected') ? `
-                <button id="btnApprove" class="btn btn-success" style="margin-right: 10px; background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Luluskan</button>
-                <button id="btnReject" class="btn btn-danger" style="margin-right: 10px; background-color: #dc3545; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Tolak</button>
-            ` : `<p>RPH ini telah ${currentStatus.toUpperCase()}.</p>`}
-            <button id="btnBack" class="btn btn-secondary">Kembali ke Senarai</button>
+                <button id="btnApprove" class="btn btn-success" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px;">Luluskan</button>
+                <button id="btnReject" class="btn btn-danger" style="background-color: #dc3545; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px;">Tolak</button>
+            ` : `<p class="info">RPH ini sudah berstatus ${currentStatus.toUpperCase()}.</p>`}
+            <button id="btnBack" class="btn btn-secondary">Kembali</button>
         </div>
         <div id="reviewStatusMessage" style="margin-top: 15px;"></div>
       </div>
     `;
 
-    // Ambil nama guru
+    // Ambil nama guru dari koleksi 'users'
     const teacherSnap = await getDoc(doc(db, 'users', rph.uid)); 
     if (teacherSnap.exists()) {
       document.getElementById('guruNamePlaceholder').textContent = teacherSnap.data().name;
     }
 
-    // Pasang listener (Pastikan fungsi loadRphListPage diimport)
+    // Set Listeners
     document.getElementById('btnBack').addEventListener('click', () => loadRphListPage());
-    if (document.getElementById('btnApprove')) document.getElementById('btnApprove').addEventListener('click', () => updateRphStatus('approved'));
-    if (document.getElementById('btnReject')) document.getElementById('btnReject').addEventListener('click', () => updateRphStatus('rejected'));
-
-  } catch (err) {
-    console.error("Ralat:", err);
-    content.innerHTML = `<p class="error">Gagal memuatkan RPH: ${err.message}</p>`;
-  }
-}
-    // Event Listeners
-    document.getElementById('btnBack').addEventListener('click', () => {
-      loadRphListPage(); 
-    });
-    
     if (document.getElementById('btnApprove')) {
         document.getElementById('btnApprove').addEventListener('click', () => updateRphStatus('approved'));
     }
-
     if (document.getElementById('btnReject')) {
         document.getElementById('btnReject').addEventListener('click', () => updateRphStatus('rejected'));
     }
@@ -161,11 +148,15 @@ export async function loadReviewPage(params) {
   }
 }
 
+/**
+ * Fungsi untuk mengemaskini status lulus/tolak
+ */
 async function updateRphStatus(newStatus) {
     if (!currentRphId || !auth.currentUser) return;
+    
     const comment = document.getElementById('adminComment').value;
     const statusDiv = document.getElementById('reviewStatusMessage');
-    statusDiv.innerHTML = '<p>Mengemaskini status...</p>';
+    statusDiv.innerHTML = '<p>Sedang mengemaskini...</p>';
 
     try {
         await updateDoc(doc(db, 'rph', currentRphId), {
@@ -175,11 +166,9 @@ async function updateRphStatus(newStatus) {
             reviewerComment: comment
         });
 
-        statusDiv.innerHTML = `<p class="success">Berjaya dikemaskini kepada: ${newStatus.toUpperCase()}</p>`;
-        setTimeout(() => { loadRphListPage(); }, 1000);
+        statusDiv.innerHTML = `<p style="color: green;">Berjaya dikemaskini kepada: ${newStatus.toUpperCase()}</p>`;
+        setTimeout(() => { loadRphListPage(); }, 1200);
     } catch (e) {
         statusDiv.innerHTML = `<p class="error">Gagal: ${e.message}</p>`;
     }
 }
-
-
