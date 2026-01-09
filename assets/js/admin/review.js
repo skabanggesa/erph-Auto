@@ -93,7 +93,7 @@ export async function loadReviewPage(params) {
             <p><strong>Kelas:</strong> ${rph.kelas || '–'}</p>
             <p><strong>Mata Pelajaran:</strong> ${rph.matapelajaran || '–'}</p>
             
-            <p><strong>Topik:</strong> ${rph.tajuk || rph.topik || dataRPH.topic_name || '–'}</p>
+            <p><strong>Topik:</strong> ${rph.tajuk || rph.topik || '–'}</p>
             
             <p><strong>Tarikh:</strong> ${tarikh}</p>
             <p><strong>Status Semasa:</strong> ${statusDisplay}</p>
@@ -180,3 +180,4 @@ async function updateRphStatus(newStatus) {
         statusDiv.innerHTML = `<p class="error">Gagal: ${e.message}</p>`;
     }
 }
+
