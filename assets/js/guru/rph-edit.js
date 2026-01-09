@@ -5,8 +5,13 @@ import {
   doc, updateDoc, getDoc 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+/**
+ * Memaparkan borang suntingan RPH
+ */
 export async function loadRphEdit(rphId, rphData = null) {
   let data = rphData;
+  
+  // Jika data tidak dihantar, ambil dari Firestore
   if (!data) {
     const docSnap = await getDoc(doc(db, 'rph', rphId));
     if (!docSnap.exists()) {
@@ -17,6 +22,7 @@ export async function loadRphEdit(rphId, rphData = null) {
     data = docSnap.data();
   }
 
+  // Format tarikh untuk paparan
   const tarikh = data.tarikh.toDate ? data.tarikh.toDate().toLocaleDateString('ms-MY') : data.tarikh;
 
   let html = `
@@ -58,11 +64,13 @@ export async function loadRphEdit(rphId, rphData = null) {
   `;
 
   const rph = data.dataRPH || {};
+
+  // PENGEMASKINIAN KUNCI (KEY) DI SINI
   const fields = [
-    { key: 'topic_name', label: 'Tajuk / Fokus Utama' },
+    { key: 'tajuk', label: 'Tajuk / Fokus Utama' }, 
     { key: 'objectives', label: 'Objektif Pembelajaran' },
     { key: 'activities', label: 'Aktiviti Pengajaran & Pembelajaran' },
-    { key: 'assessments', label: 'Penilaian / Pentaksiran' },
+    { key: 'penilaian', label: 'Penilaian / Pentaksiran' },
     { key: 'aids', label: 'Bahan Bantu Mengajar (BBM)' }
   ];
 
@@ -101,18 +109,28 @@ export async function loadRphEdit(rphId, rphData = null) {
   });
 }
 
+/**
+ * Fungsi untuk menyimpan data ke Firestore
+ */
 async function saveRph(rphId, originalData, submit = false) {
   const errorDiv = document.getElementById('editError');
   errorDiv.textContent = '';
 
   const updatedRPH = { ...originalData.dataRPH };
-  const fields = ['topic_name', 'objectives', 'activities', 'assessments', 'aids'];
+  
+  // PENGEMASKINIAN SENARAI KUNCI UNTUK SIMPANAN
+  const fields = ['tajuk', 'objectives', 'activities', 'penilaian', 'aids'];
+  
   fields.forEach(key => {
-    updatedRPH[key] = document.getElementById(`field_${key}`).value.trim();
+    const element = document.getElementById(`field_${key}`);
+    if (element) {
+        updatedRPH[key] = element.value.trim();
+    }
   });
 
   const refleksi = document.getElementById('refleksi').value.trim();
 
+  // Validasi jika mahu dihantar (Submit)
   if (submit && !refleksi) {
     errorDiv.textContent = '⚠️ Sila isi refleksi sebelum menghantar RPH.';
     document.getElementById('refleksi').focus();
