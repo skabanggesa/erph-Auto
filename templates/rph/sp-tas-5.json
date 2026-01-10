@@ -1,5 +1,6 @@
 [
   {
+    "unit": "Unit 1: Tahsin dan Makhraj Al-Quran",
     "standards": "5.1.1 Memperbaiki sebutan kalimah sukar.",
     "objectives": "Murid membaca dengan makhraj sempurna.",
     "activities": [
@@ -14,6 +15,7 @@
     ]
   },
   {
+    "unit": "Unit 2: Hukum Bacaan Ra'",
     "standards": "5.2.1 Membaca Ra' berbaris atas/depan.",
     "objectives": "Murid melafazkan bunyi Ra' yang tebal.",
     "activities": [
@@ -28,6 +30,7 @@
     ]
   },
   {
+    "unit": "Unit 2: Hukum Bacaan Ra'",
     "standards": "5.2.2 Membaca Ra' berbaris bawah.",
     "objectives": "Murid melafazkan bunyi Ra' yang nipis.",
     "activities": [
@@ -42,6 +45,7 @@
     ]
   },
   {
+    "unit": "Unit 3: Mad Silah",
     "standards": "5.3.1 Membaca mad pada Ha Dhamir.",
     "objectives": "Murid membezakan panjang 2 dan 5 harakat.",
     "activities": [
@@ -56,6 +60,7 @@
     ]
   },
   {
+    "unit": "Unit 4: Kelancaran Tilawah",
     "standards": "5.4.1 Membaca mengikut Mushaf bertanda.",
     "objectives": "Murid lancar membaca tanpa tersekat.",
     "activities": [
@@ -70,6 +75,7 @@
     ]
   },
   {
+    "unit": "Unit 5: Hukum Qalqalah",
     "standards": "5.5.1 Lantunan kuat di akhir ayat.",
     "objectives": "Murid melantunkan huruf waqaf dengan kuat.",
     "activities": [
@@ -84,6 +90,7 @@
     ]
   },
   {
+    "unit": "Unit 6: Mad Lazim",
     "standards": "5.6.1 Membaca tanda mad ombak (6 harakat).",
     "objectives": "Murid membaca kalimah 'Waladhollin'.",
     "activities": [
@@ -98,6 +105,7 @@
     ]
   },
   {
+    "unit": "Unit 7: Bacaan Saktah",
     "standards": "5.7.1 Berhenti sejenak tanpa ambil nafas.",
     "objectives": "Murid berhenti 1 saat pada tanda Saktah.",
     "activities": [
@@ -112,6 +120,7 @@
     ]
   },
   {
+    "unit": "Unit 8: Adab dan Istiqamah",
     "standards": "5.8.1 Istiqamah membaca setiap hari.",
     "objectives": "Murid menjadikan Quran amalan harian.",
     "activities": [
@@ -126,6 +135,7 @@
     ]
   },
   {
+    "unit": "Unit 9: Sasaran dan Pencapaian Akhir",
     "standards": "5.9.1 Mencapai sasaran 20 Juzuk.",
     "objectives": "Murid bersedia memasuki tahun akhir.",
     "activities": [
