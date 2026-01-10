@@ -1,5 +1,6 @@
 [
   {
+    "unit": "Unit 1: Kemahiran Tilawah dan Kelancaran",
     "standards": "6.1.1 Mencapai tahap kelancaran tinggi.",
     "objectives": "Murid membaca dengan sebutan fasih.",
     "activities": [
@@ -14,6 +15,7 @@
     ]
   },
   {
+    "unit": "Unit 2: Bacaan Gharib (Imalah, Isymam, Tashil)",
     "standards": "6.2.1 Membaca bunyi 'e' (Imalah) & muncung (Isymam).",
     "objectives": "Murid membaca kalimah 'Majreha'.",
     "activities": [
@@ -28,6 +30,7 @@
     ]
   },
   {
+    "unit": "Unit 2: Bacaan Gharib (Imalah, Isymam, Tashil)",
     "standards": "6.2.2 Membaca kalimah khusus dalam Al-Quran.",
     "objectives": "Murid menyebut 'A-a'jamiyun'.",
     "activities": [
@@ -42,6 +45,7 @@
     ]
   },
   {
+    "unit": "Unit 3: Pembudayaan Al-Quran (Istiqamah)",
     "standards": "6.3.1 Membaca berterusan (Istiqamah).",
     "objectives": "Murid membaca 3-4 muka surat sehari.",
     "activities": [
@@ -56,6 +60,7 @@
     ]
   },
   {
+    "unit": "Unit 4: Aplikasi Tajwid Menyeluruh",
     "standards": "6.4.1 Mengaplikasi semua hukum tajwid.",
     "objectives": "Murid membaca secara spontan dengan tajwid.",
     "activities": [
@@ -70,6 +75,7 @@
     ]
   },
   {
+    "unit": "Unit 5: Tilawah Surah-Surah Lazim",
     "standards": "6.5.1 Membaca surah lazim dengan tartil.",
     "objectives": "Murid bersedia untuk hafazan surah pilihan.",
     "activities": [
@@ -84,6 +90,7 @@
     ]
   },
   {
+    "unit": "Unit 6: Persediaan Khatam 30 Juzuk",
     "standards": "6.6.1 Menyempurnakan baki bacaan.",
     "objectives": "Murid menghabiskan 30 Juzuk.",
     "activities": [
@@ -98,6 +105,7 @@
     ]
   },
   {
+    "unit": "Unit 7: Adab dan Penghayatan Khatam",
     "standards": "6.7.1 Membaca doa khatam & syukur.",
     "objectives": "Murid menghargai pencapaian rohani.",
     "activities": [
@@ -112,6 +120,7 @@
     ]
   },
   {
+    "unit": "Unit 8: Protokol Majlis Khatam",
     "standards": "6.8.1 Memahami tatacara khatam.",
     "objectives": "Murid tahu protokol majlis.",
     "activities": [
@@ -126,6 +135,7 @@
     ]
   },
   {
+    "unit": "Unit 9: Penilaian Akhir dan Pengiktirafan",
     "standards": "6.9.1 Lulus UTQ Akhir.",
     "objectives": "Murid mendapat sijil Khatam Al-Quran.",
     "activities": [
