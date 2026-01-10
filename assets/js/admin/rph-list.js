@@ -1,14 +1,20 @@
-// assets/js/admin/rph-list.js (VERSI TINDAKAN PUKAL LENGKAP)
+// assets/js/admin/rph-list.js (VERSI TINDAKAN PUKAL + PENAPISAN AGIHAN)
 
 import { auth, db } from '../config.js';
 import { 
   collection, getDocs, query, where, orderBy, 
-  doc, writeBatch, serverTimestamp 
+  doc, getDoc, writeBatch, serverTimestamp 
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 export async function loadRphListPage() {
   const content = document.getElementById('adminContent');
-  
+  const user = auth.currentUser;
+
+  if (!user) {
+    content.innerHTML = '<p class="error">Sesi tamat. Sila log masuk semula.</p>';
+    return;
+  }
+
   // 1. Bina struktur HTML termasuk Panel Tindakan Pukal
   content.innerHTML = `
     <div class="admin-section">
@@ -37,31 +43,64 @@ export async function loadRphListPage() {
             </tr>
           </thead>
           <tbody>
-            <tr><td colspan="7">Memuatkan RPH...</td></tr>
+            <tr><td colspan="7">Memuatkan data seliaan...</td></tr>
           </tbody>
         </table>
       </div>
     </div>
   `;
 
+  const tbody = document.querySelector('#rphTable tbody');
+
   try {
-    // 2. Ambil data RPH (Submitted sahaja)
-    const q = query(
-      collection(db, 'rph'),
-      where('status', '==', 'submitted'),
-      orderBy('tarikh', 'desc')
-    );
+    // 2. Logik Penapisan Distributor (Agihan Guru)
+    const distRef = doc(db, 'distributor', user.uid);
+    const distSnap = await getDoc(distRef);
+    
+    let teacherUids = [];
+    let isSuperAdmin = false;
+
+    // Semak peranan user (Admin atau PK)
+    const userProfile = await getDoc(doc(db, 'users', user.uid));
+    const userData = userProfile.data();
+
+    if (userData.role === 'admin' && !distSnap.exists()) {
+        // Jika Super Admin (Tiada agihan spesifik), nampak SEMUA
+        isSuperAdmin = true;
+    } else if (distSnap.exists()) {
+        // Jika ada agihan (PK/Penyemak), ambil senarai guru seliaan
+        teacherUids = distSnap.data().teacherUids || [];
+    }
+
+    // 3. Bina Query Firestore berdasarkan Agihan
+    let q;
+    if (isSuperAdmin) {
+        q = query(
+            collection(db, 'rph'), 
+            where('status', '==', 'submitted'), 
+            orderBy('tarikh', 'desc')
+        );
+    } else if (teacherUids.length > 0) {
+        // Hanya ambil RPH dari guru-guru dalam list seliaan PK ini
+        q = query(
+            collection(db, 'rph'), 
+            where('status', '==', 'submitted'), 
+            where('uid', 'in', teacherUids)
+        );
+    } else {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;">Tiada guru diagahkan di bawah seliaan anda.</td></tr>';
+        return;
+    }
+
     const querySnapshot = await getDocs(q);
     
-    // 3. Muatkan senarai guru untuk rujukan nama
+    // 4. Muatkan senarai guru untuk rujukan nama (Mapping UID -> Name)
     const teachers = {};
     const teacherSnap = await getDocs(collection(db, 'users'));
-    teacherSnap.forEach(doc => {
-      const d = doc.data();
-      if (d.role === 'guru') teachers[doc.id] = d.name; 
+    teacherSnap.forEach(dDoc => {
+      teachers[dDoc.id] = dDoc.data().name; 
     });
 
-    const tbody = document.querySelector('#rphTable tbody');
     tbody.innerHTML = '';
 
     if (querySnapshot.empty) {
@@ -69,7 +108,7 @@ export async function loadRphListPage() {
         return;
     }
 
-    // 4. Paparkan data ke dalam jadual
+    // 5. Paparkan data ke dalam jadual
     querySnapshot.forEach(docSnap => {
       const data = docSnap.data();
       const tarikh = data.tarikh && data.tarikh.toDate ? data.tarikh.toDate().toLocaleDateString('ms-MY') : (data.tarikh || '–');
@@ -77,7 +116,7 @@ export async function loadRphListPage() {
       const row = tbody.insertRow();
       row.innerHTML = `
         <td style="text-align:center;"><input type="checkbox" class="rph-checkbox" value="${docSnap.id}"></td>
-        <td>${teachers[data.uid] || '–'}</td> 
+        <td>${teachers[data.uid] || 'Guru Tidak Dikenali'}</td> 
         <td>${data.kelas || '–'}</td>
         <td>${data.matapelajaran || '–'}</td>
         <td>${tarikh}</td>
@@ -88,17 +127,17 @@ export async function loadRphListPage() {
       `;
     });
 
-    // 5. Aktifkan Listeners (Checkbox & Butang)
+    // 6. Aktifkan Listeners
     setupEventListeners();
 
   } catch (error) {
     console.error("Ralat memuatkan senarai:", error);
-    document.querySelector('#rphTable tbody').innerHTML = `<tr><td colspan="7" class="error">Gagal: ${error.message}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="7" class="error">Ralat: ${error.message}</td></tr>`;
   }
 }
 
 /**
- * Fungsi untuk menguruskan interaksi UI
+ * Fungsi untuk menguruskan interaksi UI (Checkbox & Buttons)
  */
 function setupEventListeners() {
   const selectAll = document.getElementById('selectAll');
@@ -126,7 +165,7 @@ function setupEventListeners() {
     bulkContainer.style.display = checked.length > 0 ? 'block' : 'none';
   }
 
-  // Butang "Semak" Individu (Fungsi Asal)
+  // Butang "Semak" Individu
   document.querySelectorAll('.btn-review').forEach(btn => {
     btn.addEventListener('click', (e) => {
       const rphId = e.target.dataset.id;
@@ -163,7 +202,6 @@ async function handleBulkApprove() {
     const rphId = cb.value;
     const rphRef = doc(db, 'rph', rphId);
     
-    // Kemaskini data mengikut struktur review.js
     batch.update(rphRef, {
       status: 'approved',
       reviewerComment: comment,
@@ -175,7 +213,7 @@ async function handleBulkApprove() {
   try {
     await batch.commit();
     statusMsg.style.color = "green";
-    statusMsg.innerHTML = "✅ Berjaya!";
+    statusMsg.innerHTML = "✅ Berjaya Meluluskan!";
     
     // Muat semula senarai selepas 1 saat
     setTimeout(loadRphListPage, 1000);
