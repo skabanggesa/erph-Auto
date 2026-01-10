@@ -1,4 +1,4 @@
-// assets/js/admin/dashboard.js (KOD LENGKAP DENGAN AUDIT LOG)
+// assets/js/admin/dashboard.js (KOD LENGKAP DIKEMASKINI DENGAN MODUL AGIHAN)
 
 import { auth, db } from '../config.js'; 
 import { 
@@ -22,7 +22,7 @@ export async function loadAdminDashboard() {
     }
 
     // Gantikan kandungan utama dengan template dashboard
-    // Menambah butang ke-5: Audit Log (Aktiviti)
+    // Menambah butang ke-6: Agihan Guru (Distributor)
     content.innerHTML = `
         <div class="admin-section">
             <h2>Dashboard Pentadbir</h2>
@@ -34,6 +34,7 @@ export async function loadAdminDashboard() {
                 <button id="viewAnalyticsBtn" class="btn btn-secondary">3. Analisis & Laporan</button>
                 <button id="viewMaintenanceBtn" class="btn btn-warning">4. Penyelenggaraan & Statistik</button>
                 <button id="viewAuditLogsBtn" class="btn btn-info" style="background-color: #17a2b8; color: white; border: none;">5. Audit Log (Aktiviti)</button>
+                <button id="viewAgihanBtn" class="btn btn-dark" style="background-color: #6c757d; color: white; border: none;">6. Agihan Guru (Distributor)</button>
             </div>
             
             <div id="adminContent" style="margin-top: 30px;">
@@ -68,17 +69,30 @@ export async function loadAdminDashboard() {
         window.router.navigate('admin-maintenance'); 
     });
 
-    // 5. Audit Log (Aktiviti Sistem) - PENAMBAHBAIKAN BARU
+    // 5. Audit Log (Aktiviti Sistem)
     document.getElementById('viewAuditLogsBtn').addEventListener('click', () => {
         document.getElementById('adminContent').innerHTML = '<p>Memuatkan Audit Log...</p>';
         
-        // Import fail audit-logs.js secara dinamik
         import('./audit-logs.js').then(m => {
             m.loadAuditLogs();
         }).catch(err => {
             console.error("Gagal memuatkan modul Audit Log:", err);
             document.getElementById('adminContent').innerHTML = 
-                `<p class="error">Ralat: Gagal memuatkan fail audit-logs.js. Sila pastikan fail wujud di folder assets/js/admin/.</p>`;
+                `<p class="error">Ralat: Gagal memuatkan fail audit-logs.js. Sila pastikan fail wujud.</p>`;
+        });
+    });
+
+    // 6. Agihan Guru (agihan.js) - PENAMBAHBAIKAN BARU
+    document.getElementById('viewAgihanBtn').addEventListener('click', () => {
+        document.getElementById('adminContent').innerHTML = '<p>Memuatkan modul Agihan Guru...</p>';
+        
+        // Import fail agihan.js secara dinamik
+        import('./agihan.js').then(m => {
+            m.loadAgihanPage();
+        }).catch(err => {
+            console.error("Gagal memuatkan modul Agihan:", err);
+            document.getElementById('adminContent').innerHTML = 
+                `<p class="error">Ralat: Gagal memuatkan fail agihan.js. Sila pastikan fail wujud di folder assets/js/admin/.</p>`;
         });
     });
 
