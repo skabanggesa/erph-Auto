@@ -1,10 +1,13 @@
-// assets/js/router.js (KOD LENGKAP & STABIL DENGAN LALUAN ADMIN BARU)
+// assets/js/router.js (KOD LENGKAP & STABIL DENGAN SOKONGAN MULTI-ROLE ADMIN)
 
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { app, db } from './config.js'; 
 
 const firebaseAuth = getAuth(app); 
+
+// Senarai peranan yang dibenarkan masuk ke Dashboard Pentadbir
+const ADMIN_ROLES = ['admin', 'PK1', 'PKHEM', 'PKKK'];
 
 // Map routes
 const routes = {
@@ -19,23 +22,21 @@ const routes = {
     'admin-home': { file: 'admin/dashboard.js', func: 'loadAdminDashboard' },
     'admin-teachers': { file: 'admin/teachers.js', func: 'loadTeachersPage' }, 
     
-    // [1] ADMIN RPH LIST VIEW (untuk penapisan dari Analisis)
-    // Fail: assets/js/admin/rph-review.js (Yang perlu anda cipta)
-    'admin-rph-review': { file: 'admin/rph-review.js', func: 'loadRphReviewPage' }, 
+    // [1] ADMIN RPH LIST VIEW
+    'admin-rph-review': { file: 'admin/rph-list.js', func: 'loadRphListPage' }, 
     
-    // [2] ADMIN RPH DETAIL VIEW (untuk semakan perincian satu RPH)
-    // Fail: assets/js/admin/review.js (Fail yang telah anda muat naik)
+    // [2] ADMIN RPH DETAIL VIEW
     'admin-rph-detail': { file: 'admin/review.js', func: 'loadReviewPage' },
     
     // [3] ANALISIS & LAPORAN
     'admin-analytics': { file: 'admin/analytics.js', func: 'loadAnalytics' },
 
-    // [4] PENYELENGGARAAN & STATISTIK (Laluan Baharu)
+    // [4] PENYELENGGARAAN & STATISTIK
     'admin-maintenance': { file: 'admin/admin-maintenance.js', func: 'loadAdminMaintenancePage' },
 };
 
 /**
- * Handles navigation by dynamically importing the required module.
+ * Menguruskan navigasi dengan mengimport modul secara dinamik.
  */
 export async function navigate(routeName, param) { 
     const role = localStorage.getItem('userRole');
@@ -43,8 +44,9 @@ export async function navigate(routeName, param) {
     
     let key = routeName;
     
+    // PEMBETULAN: Jika 'home', semak jika role berada dalam senarai ADMIN_ROLES
     if (routeName === 'home') {
-        key = role === 'admin' ? 'admin-home' : 'guru-home'; 
+        key = ADMIN_ROLES.includes(role) ? 'admin-home' : 'guru-home'; 
     }
     
     const route = routes[key];
@@ -55,11 +57,11 @@ export async function navigate(routeName, param) {
     }
 
     try {
-        // Paparkan kawasan kandungan yang betul
-        const targetDivId = routeName.startsWith('admin-') ? 'adminContent' : 'content';
+        // Tentukan kawasan kandungan (adminContent untuk modul dalam dashboard admin)
+        const targetDivId = key.startsWith('admin-') ? 'adminContent' : 'content';
         const targetDiv = document.getElementById(targetDivId) || document.getElementById('content');
 
-        targetDiv.innerHTML = '<p class="loading-message">Memuatkan modul...</p>'; // Tunjukkan pemuatan
+        targetDiv.innerHTML = '<p class="loading-message">Memuatkan modul...</p>'; 
 
         const module = await import(`./${route.file}`);
 
@@ -84,7 +86,6 @@ window.router = {
 
 // Logik pemuatan awal selepas DOM dimuatkan
 document.addEventListener('DOMContentLoaded', () => {
-    // Hanya berjalan jika kita berada di dashboard.html
     if (!window.location.pathname.includes('dashboard.html')) return;
 
     const contentDiv = document.getElementById('content');
@@ -94,67 +95,60 @@ document.addEventListener('DOMContentLoaded', () => {
     contentDiv.innerHTML = '<p class="guru-section">Memuatkan sesi...</p>';
     navbar.style.display = 'none';
 
-    // KRITIKAL: Tunggu sehingga status pengesahan Firebase dipastikan
     onAuthStateChanged(firebaseAuth, async (user) => { 
         const userNameEl = document.getElementById('userName'); 
         
         if (user) {
             let role = localStorage.getItem('userRole');
             
-            // FALLBACK: Dapatkan role dari Firestore jika localStorage hilang
-            if (!role) {
-                try {
-                    const userDoc = await getDoc(doc(db, 'users', user.uid));
-                    if (userDoc.exists()) {
-                        const userData = userDoc.data();
-                        
-                        // Semak Status Nyahaktif (seperti yang ditunjukkan dalam teachers.js)
-                        if (userData.status === 'disabled') {
-                            // Mengeluarkan mesej Akaun tidak sah
-                            alert("Akaun tidak sah. Sila hubungi pentadbir."); 
-                            firebaseAuth.signOut();
-                            window.location.href = 'index.html';
-                            return;
-                        }
-                        
-                        role = userData.role;
-                        
-                        // Simpan semula di localStorage (termasuk nama)
-                        localStorage.setItem('userRole', role); 
-                        localStorage.setItem('userName', userData.name); 
-                    } else {
-                        // Mengeluarkan mesej Data peranan pengguna tidak dijumpai
-                        alert("Data peranan pengguna tidak dijumpai. Sila hubungi pentadbir.");
+            // FALLBACK & RE-SYNC: Sentiasa ambil data terkini dari Firestore untuk memastikan role tepat
+            try {
+                const userDoc = await getDoc(doc(db, 'users', user.uid));
+                if (userDoc.exists()) {
+                    const userData = userDoc.data();
+                    
+                    if (userData.status === 'disabled') {
+                        alert("Akaun tidak sah. Sila hubungi pentadbir."); 
                         firebaseAuth.signOut();
                         window.location.href = 'index.html';
                         return;
                     }
-                } catch (e) {
-                    console.error("Gagal membaca role/nama dari Firestore sebagai fallback:", e);
+                    
+                    role = userData.role;
+                    
+                    // Kemaskini localStorage dengan data Firestore terbaru
+                    localStorage.setItem('userRole', role); 
+                    localStorage.setItem('userName', userData.name); 
+                } else {
+                    alert("Data peranan pengguna tidak dijumpai.");
+                    firebaseAuth.signOut();
+                    window.location.href = 'index.html';
+                    return;
                 }
+            } catch (e) {
+                console.error("Gagal membaca dari Firestore:", e);
             }
 
             if (role) {
-                // Sesi sah & Role ada
                 navbar.style.display = 'flex';
-                roleStyle.href = role === 'admin' 
+                
+                // PEMBETULAN: Gunakan CSS Admin jika role adalah admin atau mana-mana PK
+                roleStyle.href = ADMIN_ROLES.includes(role) 
                     ? 'assets/css/admin.css' 
                     : 'assets/css/guru.css';
                 
-                // PAPARKAN NAMA PENGGUNA
                 const name = localStorage.getItem('userName');
                 if (userNameEl && name) {
                     userNameEl.textContent = name;
                 }
 
+                // Navigasi ke home mengikut role yang telah dikemaskini
                 navigate('home');
             } else {
-                // Sesi sah, tetapi peranan tidak dijumpai di mana-mana
-                contentDiv.innerHTML = '<div class="guru-section"><p class="error">Sesi sah, tetapi peranan tidak dapat ditentukan. Sila <a href="index.html">log masuk semula</a>.</p></div>';
+                contentDiv.innerHTML = '<div class="guru-section"><p class="error">Peranan tidak dapat ditentukan. Sila <a href="index.html">log masuk semula</a>.</p></div>';
             }
 
         } else {
-            // Pengguna tidak log masuk atau sesi tamat
             contentDiv.innerHTML = '<div class="guru-section"><p class="error">Sesi tamat. Sila <a href="index.html">log masuk semula</a>.</p></div>';
         }
     });
